@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 옷 카테고리-등대 -->
+	<ThingCategoryDef>
+		<defName>Moyo_ApparelCategory_LightHouse</defName>
+		<label>Lighthouse Apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo_ApparelCategory_LightHouseHead</defName>
+		<label>Lighthouse Headgear</label>
+		<parent>Moyo_ApparelCategory_LightHouse</parent>
+	</ThingCategoryDef>
+	<!-- - -->
+	<ThingDef Abstract="True" Name="Moyo_ApparelCategory_LightHouse" ParentName="ApparelMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo_ApparelCategory_LightHouse</li>
+		</thingCategories>		
+	</ThingDef>
+	<ThingDef Abstract="True" Name="Moyo_ApparelCategory_LightHouseHead" ParentName="ApparelMakeableBase">
+		<thingCategories Inherit="False">
+			<li>Moyo_ApparelCategory_LightHouse</li>
+		</thingCategories>
+	</ThingDef>
+	<!-- 옷 카테고리-카르텔 -->
+	<ThingCategoryDef>
+		<defName>Moyo_ApparelCategory_Cartel</defName>
+		<label>Cartel Apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo_ApparelCategory_CartelHead</defName>
+		<label>Cartel Headgear</label>
+		<parent>Moyo_ApparelCategory_Cartel</parent>
+	</ThingCategoryDef>
+	<!-- - -->
+	<ThingDef Abstract="True" Name="Moyo_ApparelCategory_Cartel" ParentName="ApparelMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo_ApparelCategory_Cartel</li>
+		</thingCategories>		
+	</ThingDef>
+	<ThingDef Abstract="True" Name="Moyo_ApparelCategory_CartelHead" ParentName="ApparelMakeableBase">
+		<thingCategories Inherit="False">
+			<li>Moyo_ApparelCategory_CartelHead</li>
+		</thingCategories>
+	</ThingDef>	
+</Defs>

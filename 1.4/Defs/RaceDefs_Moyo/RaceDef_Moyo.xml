@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Moyo</defName>
+		<label>Moyo</label>
+		<description>A humanoid race living in cities under the sea. Having traits similar to sea creatures, their blood contains substances that can be used for various medical uses.\n\nDescendants of glitterworld explorers who settled in the deep sea, generations of body modifications has led to their current form. Spreading far and wide into the rim, they built many cities and prospered. Until now.</description>
+		<!-- <descriptionHyperlinks> -->
+		<!-- <ThingDef>Moyo_BloodBag</ThingDef> -->
+		<!-- </descriptionHyperlinks> -->
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.3</maleGenderProbability>
+				<humanRecipeImport>true</humanRecipeImport>
+				<!-- <chemicalSettings> -->
+				<!-- <li> -->
+				<!-- <chemical>DeepBlue</chemical> -->
+				<!-- <reactions> -->
+				<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
+				<!-- <hediffDef>Moyo_DeepBlueReaction</hediffDef> -->
+				<!-- <severity>0.23</severity> -->
+				<!-- </li> -->
+				<!-- </reactions> -->
+				<!-- </li> -->
+				<!-- <li> -->
+				<!-- <chemical>BlueBurstC</chemical> -->
+				<!-- <reactions> -->
+				<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
+				<!-- <hediffDef>BlueBurstHighPrecursor</hediffDef> -->
+				<!-- <severity>0.01</severity> -->
+				<!-- </li> -->
+				<!-- </reactions> -->
+				<!-- <ingestible>false</ingestible> -->
+				<!-- </li> -->
+				<!-- </chemicalSettings> -->
+				<!--=파트제네레이터==========================================================================================-->
+				<alienPartGenerator>
+					<!-- 컬러채널 -->
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(255,255,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<only>(56,55,78)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<!-- 폰 해상도 -->
+					<atlasScale>4</atlasScale>
+					<borderScale>1</borderScale>
+					<!-- 머리 타입 -->
+					<headTypes Inherit="False">
+						<li>MoyoHead</li>
+						<li>MoyoHead1</li>
+						<li>MoyoHead2</li>
+						<li>MoyoHead3</li>
+						<li>MoyoHead4</li>
+						<li>MoyoHead5</li>
+						<li>MoyoHead6</li>
+						<li>MoyoHead7</li>
+					</headTypes>
+					<!-- 몸 타입 -->
+					<bodyTypes Inherit="False">
+						<li>Female</li>
+						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<!-- 신체 출력 위치 조정 -->
+					<headOffset>(-0.07, -0.09)</headOffset>					
+					<headOffsetSpecific>
+						<north>
+							<offset>(0, 0.03)</offset>
+						</north>
+						<south>
+							<offset>(0, 0.03)</offset>
+						</south>					
+					</headOffsetSpecific>
+					<!-- 흰머리 설정 -->
+					<oldHairAgeRange>65~95</oldHairAgeRange>
+					<oldHairColorGen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<min>(0.65,0.65,0.65)</min>
+								<max>(0.85,0.85,0.85)</max>
+							</li>
+						</options>
+					</oldHairColorGen>
+					<!-- 오프셋 프리셋 만들기 -->
+					<offsetDefaults>
+						<li>
+							<name>MoyoTail</name>
+							<offsets>
+								<south>
+									<layerOffset>0</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>-0.29</layerOffset>
+									<bodyTypes>
+										<Female>(0.1,-0.04)</Female>
+										<Thin>(0.1,-0.04)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Child>
+									</bodyTypes>
+								</east>
+								<west>
+									<layerOffset>-0.29</layerOffset>
+									<bodyTypes>
+										<Female>(0.1,-0.04)</Female>
+										<Thin>(0.1,-0.04)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Child>
+									</bodyTypes>
+								</west>
+							</offsets>
+						</li>
+						<li>
+							<name>MoyoAntennae</name>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Baby MayRequire="ludeon.rimworld.biotech">(-0.02,0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(-0.02,0)</Child>
+									</bodyTypes>
+								</south>
+							</offsets>
+						</li>
+						<li>
+							<name>MoyoAntennaeGlow</name>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Baby MayRequire="ludeon.rimworld.biotech">(-0.02,0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(-0.02,0)</Child>
+									</bodyTypes>
+								</south>
+							</offsets>
+						</li>
+					</offsetDefaults>
+					<bodyAddons>
+						<!-- 꼬리 -->
+						<li>
+							<bodyPartLabel>tail</bodyPartLabel>
+							<path>Moyo/Tail/MoyoTail</path>
+							<shaderType>Cutout</shaderType>
+							<!-- - -->
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>MoyoTail</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+						</li>
+						<li>
+							<bodyPartLabel>tail</bodyPartLabel>
+							<path>Moyo/Tail/MoyoTailGlow</path>
+							<shaderType>MoteGlow</shaderType>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<!-- - -->
+							<colorChannel>base</colorChannel>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>MoyoTail</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+						</li>
+						<!--더듬이-->
+						<li>
+							<bodyPartLabel>left antennae</bodyPartLabel>
+							<path>Moyo/Head/MoyoAtenna_Left</path>
+							<shaderType>Cutout</shaderType>
+							<!-- - -->
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Center</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<li>
+							<bodyPartLabel>left antennae</bodyPartLabel>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Moyo/Head/MoyoAtennaGlow_Left</path>
+							<shaderType>MoteGlow</shaderType>
+							<!-- - -->
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>Base</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Center</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<li>
+							<bodyPartLabel>right antennae</bodyPartLabel>
+							<path>Moyo/Head/MoyoAtenna_Right</path>
+							<shaderType>Cutout</shaderType>
+							<!-- - -->
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Center</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<li>
+							<bodyPartLabel>right antennae</bodyPartLabel>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Moyo/Head/MoyoAtennaGlow_Right</path>
+							<shaderType>MoteGlow</shaderType>
+							<!-- - -->
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>Base</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Center</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<!-- 머리 발광 -->
+						<li>
+							<bodyPart>Head</bodyPart>
+							<path>Moyo/Head/MoyoHeadGlow</path>
+							<shaderType>MoteGlow</shaderType>
+							<!-- - -->
+							<colorChannel>Base</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<south>
+									<layerOffset>-0.325</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.325</layerOffset>
+								</east>
+							</offsets>
+							<!-- - -->
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+						<!-- 몸 발광 -->
+						<li>
+							<bodyPart>Torso</bodyPart>
+							<path>Moyo/Body/MoyoGlowFemale</path>
+							<shaderType>MoteGlow</shaderType>
+							<!-- - -->
+							<colorChannel>Base</colorChannel>
+							<defaultOffset>Center</defaultOffset>
+							<drawnDesiccated>false</drawnDesiccated>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<layerOffset>-0.32</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>-0.32</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>-0.32</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Child>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+							<hiddenUnderApparelFor>
+								<li>Torso</li>
+							</hiddenUnderApparelFor>
+							<bodytypeGraphics>
+								<Female>Moyo/Body/MoyoGlowFemale</Female>
+								<Thin>Moyo/Body/MoyoGlowThin</Thin>
+								<Baby MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoGlowFemale</Baby>
+								<Child MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoGlowFemale</Child>
+							</bodytypeGraphics>
+						</li>
+						<!-- 머리카락 -->
+						<li>
+							<bodyPart>Head</bodyPart>
+							<path>Moyo/Hair/MoyoHair</path>
+							<shaderType>CutoutComplex</shaderType>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>hair</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<ageGraphics>
+								<HumanlikeBaby>
+									<path>Moyo/Hairs/MYFluffy</path>
+								</HumanlikeBaby>
+							</ageGraphics>
+							<offsets>
+								<north>
+									<layerOffset>-0.325</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.273</layerOffset>
+								</west>
+							</offsets>
+							<!-- - -->
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+						<li>
+							<bodyPart>Head</bodyPart>
+							<path>Moyo/Hair/MoyoBackHair</path>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<shaderType>CutoutComplex</shaderType>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>hair</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawnDesiccated>false</drawnDesiccated>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<!-- <ageGraphics> -->
+							<!-- <HumanlikeBaby> -->
+							<!-- <path>Moyo/Hairs/MYFluffy</path> -->
+							<!-- </HumanlikeBaby> -->
+							<!-- </ageGraphics> -->
+							<offsets>
+								<north>
+									<layerOffset>-0.325</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.325</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.325</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.325</layerOffset>
+								</west>
+							</offsets>
+							<!-- - -->
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<!-- 텍스쳐 그래픽 경로 -->
+			<graphicPaths>
+				<head>Moyo/Head/</head>
+				<body>Moyo/Body/</body>
+				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
+				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
+				<stump>Moyo_Dummy/Dummy</stump>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>SoakingWet</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Moyo_HairDummyCategory</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<apparelList>
+				</apparelList>
+				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+				</blackEndoCategories>
+				<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+				</blackGeneList>
+				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+				</blackGeneTags>
+			</raceRestriction>
+		</alienRace>
+		<!--=============================================================================================================================-->
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>100</lifeExpectancy>
+			<!-- Gore -->
+			<leatherDef>Leather_Human</leatherDef>
+			<bloodDef>Moyo_Blood</bloodDef>
+			<fleshType>Moyo_Flesh</fleshType>
+			<meatMarketValue>0.8</meatMarketValue>
+			<meatColor>(53, 89, 180)</meatColor>
+			<!-- - -->
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<body>Moyo</body>
+			<baseHungerRate>0.8</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1.2</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>24</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+					<headOffset>(0, -0.06)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+					<headOffset>(0, -0.09)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+					<headOffset>(0, -0.09)</headOffset>
+					<customDrawSize>(1.25,1.25)</customDrawSize>
+					<customPortraitDrawSize>(1.25,1.25)</customPortraitDrawSize>
+					<customHeadDrawSize>(1.25,1.25)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(1.25,1.25)</customPortraitHeadDrawSize>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(14,0)</li>
+					<li>(16,60)</li>
+					<li>(22,100)</li>
+					<li>(30,30)</li>
+					<li>(60,5)</li>
+					<li>(80,1)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<!--=============================================================================================================================-->
+		<statBases>
+			<!--기본-->
+			<MarketValue>2800</MarketValue>
+			<RoyalFavorValue>4</RoyalFavorValue>
+			<Mass>75</Mass>
+			<MoveSpeed>4.2</MoveSpeed>
+			<Flammability>0.5</Flammability>
+			<ComfyTemperatureMax>21</ComfyTemperatureMax>
+			<ComfyTemperatureMin>6</ComfyTemperatureMin>
+			<MeatAmount>80</MeatAmount>
+			<LeatherAmount>50</LeatherAmount>
+			<CarryingCapacity>75</CarryingCapacity>
+			<!-- 배수 -->
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<PsychicSensitivity>1.2</PsychicSensitivity>
+			<MeleeDodgeChance>0.8</MeleeDodgeChance>
+			<GeneralLaborSpeed>0.9</GeneralLaborSpeed>
+			<DrugSynthesisSpeed>1.35</DrugSynthesisSpeed>
+			<ResearchSpeed>1.45</ResearchSpeed>
+			<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.25</HackingSpeed>
+			<MedicalTendSpeed>1.25</MedicalTendSpeed>
+			<MedicalTendQuality>1.25</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>1.15</MedicalSurgerySuccessChance>
+			<!-- 전투 -->
+			<AimingDelayFactor>1.125</AimingDelayFactor>
+			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+		</statBases>
+		<!--=============================================================================================================================-->
+		<!-- <comps> -->
+		<!-- <li Class="HPF_Moyo.CompProperties_ResourceHarvestable"> -->
+		<!-- <harvestJobDef>ExtractDeepBlue_Job</harvestJobDef> -->
+		<!-- <saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey> -->
+		<!-- <thingDef>Moyo_BloodBag</thingDef> -->
+		<!-- <intervalDays>6.666666667</intervalDays> -->
+		<!-- <amount>1</amount> -->
+		<!-- <inspectText>Moyo BloodBag</inspectText> -->
+		<!-- <constraints> -->
+		<!-- <li Class="HPF_Moyo.ConstraintPawnAgeOver"> -->
+		<!-- <age>7</age> -->
+		<!-- </li> -->
+		<!-- </constraints> -->
+		<!-- <productAffectedStats> -->
+		<!-- <li> -->
+		<!-- <statDef>ImmunityGainSpeed</statDef> -->
+		<!-- <multiplier>2.0</multiplier> -->
+		<!-- <offset>-1.0</offset> -->
+		<!-- </li> -->
+		<!-- <li> -->
+		<!-- <statDef>DeepblueStat</statDef> -->
+		<!-- <multiplier>1.0</multiplier> -->
+		<!-- <offset>-1.0</offset> -->
+		<!-- </li> -->
+		<!-- </productAffectedStats> -->
+		<!-- <speedAffectedStats> -->
+		<!-- <li> -->
+		<!-- <statDef>DeepblueStatSpeed</statDef> -->
+		<!-- <multiplier>1.0</multiplier> -->
+		<!-- <offset>-1.0</offset> -->
+		<!-- </li> -->
+		<!-- </speedAffectedStats> -->
+		<!-- </li> -->
+		<!-- </comps> -->
+		<!--=============================================================================================================================-->
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+		<!--==맨손전투===================================================================================================================-->
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

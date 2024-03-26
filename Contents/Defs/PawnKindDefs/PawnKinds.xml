@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<PawnKindDef Abstract="True" Name="MoyoPlayerBasePawnKind">
+		<race>Alien_Moyo</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>Moyo_PlayerFaction</defaultFactionType>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+	<!-- 정착민 -->
+	<PawnKindDef ParentName="MoyoPlayerBasePawnKind">
+		<defName>Moyo_ColonistPawn</defName>
+		<label>moyo colonist</label>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelTags>
+			<li>Moyo_Starting</li>
+		</apparelTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_Dummy</li>
+					<!-- <li>Moyo_TopCivil</li> -->
+					<!-- <li>Moyo_MiddleCivil</li> -->
+					<!-- <li>Moyo_BotCivil</li> -->
+					<!-- <li>Moyo_Engineer</li> -->
+					<!-- <li>Moyo_Resercher</li> -->
+					<!-- <li>Moyo_TopCriminal</li> -->
+					<!-- <li>Moyo_MiddleCriminal</li> -->
+					<!-- <li>Moyo_FullCrime</li> -->
+					<!-- <li>Moyo_SoldierKind</li> -->
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>600~800</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelRequired>
+		</apparelRequired>
+	</PawnKindDef>
+</Defs>

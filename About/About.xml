@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+	<name>Moyo2.0-Blood stained business</name>
+	<author>Nemonian</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Nemonian.MY2</packageId>
+	<description>
+Moyo-Blood stained business
+
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>HumanoidAlienRaces</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
+</ModMetaData>

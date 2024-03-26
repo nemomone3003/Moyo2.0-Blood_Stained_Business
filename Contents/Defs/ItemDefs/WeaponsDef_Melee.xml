@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 근접 -->
+	<!-- 모요 렌치 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo_Wrench</defName>
+		<label>heavy wrench</label>
+		<description>A heavy tool for bending metal and tightening bolts. Or bashing in heads, if you need to.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Wrench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo_MeleeIndustrial</li>
+		</weaponTags>
+	</ThingDef>
+	<!-- 모요 나이프 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo_Knife</defName>
+		<label>diving knife</label>
+		<description>A knife is always handy to have, and under the sea is no exception. The sharp and light blade made from plasteel is a favorite among moyo divers.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo_MeleeIndustrial</li>
+		</weaponTags>
+	</ThingDef>
+	<!-- 라미너 글레이브 -->
+	<ThingDef ParentName="MoyoBaseMeleeLMR">
+		<defName>Moyo_LMRGlaive</defName>
+		<label>laminar glaive</label>
+		<description>Heavy battleaxe prototype forged with abysteel. Has a cryogenic blade intended to minimize bleeding from cuts. well, so said the development team. Its a weapon that can split open a diving suit helmet, bloodloss will be the least concern.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Glaive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>9</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>34</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo_MeleeSpacer</li>
+		</weaponTags>
+	</ThingDef>
+</Defs>

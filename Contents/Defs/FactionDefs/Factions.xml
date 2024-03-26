@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="Moyo_PlayerBase">
+		<settlementTexturePath>Icon/Moyo_PlayerIcon</settlementTexturePath>
+		<colorSpectrum>
+			<li>(65, 65, 150)</li>
+		</colorSpectrum>
+	</FactionDef>
+	<!-- 정착민 -->
+	<FactionDef ParentName="Moyo_PlayerBase">
+		<defName>Moyo_PlayerFaction</defName>
+		<label>Refugees</label>
+		<description>A settlement made by the moyo who have left the lighthouse for various reasons.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Moyo_ColonistPawn</basicMemberKind>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>Icon/Moyo_PlayerIcon</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<li>MoyoStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+</Defs>

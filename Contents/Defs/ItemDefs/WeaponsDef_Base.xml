@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 무기 카테고리 -->
+	<ThingCategoryDef>
+		<defName>Moyo_WeaponsCategory</defName>
+		<label>Moyo weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo_WeaponsCategory_Ranged</defName>
+		<label>Moyo ranged weapons</label>
+		<parent>Moyo_WeaponsCategory</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo_WeaponsCategory_Melee</defName>
+		<label>Moyo melee weapons</label>
+		<parent>Moyo_WeaponsCategory</parent>
+	</ThingCategoryDef>
+	<!-- 무기 베이스-원거리 -->
+	<ThingDef Name="MoyoBaseGunIDR" Abstract="true" ParentName="BaseHumanMakeableGun">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsCategory_Ranged</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef Name="MoyoBaseGunLMR" Abstract="true" ParentName="BaseHumanMakeableGun">
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsCategory_Ranged</li>
+		</thingCategories>
+	</ThingDef>
+	<!-- 무기 베이스-근접 -->
+	<ThingDef Name="MoyoBaseMelee" Abstract="true" ParentName="BaseMeleeWeapon">
+		<techLevel>Industrial</techLevel>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsCategory_Melee</li>
+		</thingCategories>
+		<!-- - -->
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<!-- - -->
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef Name="MoyoBaseMeleeIDR" Abstract="true" ParentName="MoyoBaseMelee">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsCategory_Melee</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef Name="MoyoBaseMeleeLMR" Abstract="true" ParentName="MoyoBaseMelee">
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsCategory_Melee</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<DamageDef>
+		<defName>Damage_MoyoLMRBolt</defName>
+		<label>Laminar bolt</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<harmsHealth>true</harmsHealth>
+		<impactSoundType>Electric</impactSoundType>
+		<defaultDamage>50</defaultDamage>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<makesBlood>true</makesBlood>
+		<hediff>Gunshot</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+	</DamageDef>	
+</Defs>
