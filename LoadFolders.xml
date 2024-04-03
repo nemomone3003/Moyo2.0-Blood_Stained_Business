@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <loadFolders>
-	<v1.4>
-		<li>1.4</li>
+	<v1.5>
+		<li>1.5</li>
 		<li>Contents</li>
-	</v1.4>
+		<li IfModActive="Royalty">Contents_Royalty</li>
+		<li IfModActive="Ideology">Contents_Ideology</li>
+		<li IfModActive="Biotech">Contents_Biotech</li>		
+	</v1.5>	
 </loadFolders>

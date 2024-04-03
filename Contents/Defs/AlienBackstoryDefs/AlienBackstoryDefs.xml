@@ -4,34 +4,46 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</AlienRace.AlienBackstoryDef>
-
 	<!-- 유년기 -->
 	<!-- 더미 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseMoyoBackStory">
 		<defName>Moyo_DummyChild</defName>
 		<title>moyo dummy</title>
 		<titleShort>dummy</titleShort>
-		<baseDesc>Dummy backstory</baseDesc>
+		<description>Dummy backstory</description>
 		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>2</Crafting>
+			<Mining>2</Mining>
+			<Plants>2</Plants>
+			<Artistic>-1</Artistic>
+			<Cooking>-1</Cooking>
+			<Shooting>-1</Shooting>
+		</skillGains>
 		<workDisables>
 		</workDisables>
-		<spawnCategories>
-			<li>Moyo_Dummy</li>
-		</spawnCategories>
+		<spawnCategories><li>Moyo_Dummy</li></spawnCategories>
 	</AlienRace.AlienBackstoryDef>
-
 	<!--성년기-->
 	<!-- 더미 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseMoyoBackStory">
 		<defName>Moyo_DummyAdult</defName>
 		<title>moyo dummy</title>
 		<titleShort>dummy</titleShort>
-		<baseDesc>Dummy backstory</baseDesc>
+		<description>Dummy backstory</description>
 		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>2</Crafting>
+			<Mining>2</Mining>
+			<Plants>2</Plants>
+			<Artistic>-1</Artistic>
+			<Cooking>-1</Cooking>
+			<Shooting>-1</Shooting>
+		</skillGains>
 		<workDisables>
 		</workDisables>
-		<spawnCategories>
-			<li>Moyo_Dummy</li>
-		</spawnCategories>
-	</AlienRace.AlienBackstoryDef>	
+		<spawnCategories><li>Moyo_Dummy</li></spawnCategories>
+	</AlienRace.AlienBackstoryDef>
 </Defs>

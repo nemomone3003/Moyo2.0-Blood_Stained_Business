@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>MoyoStart</defName>
+	</ResearchProjectTagDef>
+	<ResearchTabDef>
+		<defName>Abysstech</defName>
+		<label>Abysstech</label>
+	</ResearchTabDef>
+	<ResearchProjectDef Name="Abysstech"  Abstract="True">
+		<tab>Abysstech</tab>
+		<techLevel>Spacer</techLevel>
+	</ResearchProjectDef>
+	<!-- 딥블루 연구 -->
+	<!-- 기본 딥블루 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_Deepbluesimple</defName>
+		<label>basic deepblue refining</label>
+		<description>Research production of basic deepblue compounds.</description>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tags>
+			<li>MoyoStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- 고급 딥블루 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_DeepblueAdvanced</defName>
+		<label>advanced deepblue refining</label>
+		<description>Research production of advanced deepblue compounds.</description>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Abysstech_Deepbluesimple</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	<!-- 딥블루 정제 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_DeepblueSynthesis</defName>
+		<label>deepblue sysnthesis</label>
+		<description>Research means of synthesysing complex deepblue compound.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>Abysstech_DeepblueAdvanced</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>	
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	<!-- 산업 연구 -->
+	<!-- 개선된 유압펌프 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_Pneumatic</defName>
+		<label>improved pneumatic pump</label>
+		<description>Research for more efficient both powerful pneumatic pump.</description>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1500</baseCost>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<tags>
+			<li>MoyoStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- 라미너 이론 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_LaminarTheory</defName>
+		<label>laminar theory</label>
+		<description>Research ways to produce laminar field. A directional field of energy that can be used as a virtual rail that guide matters through it.</description>
+		<baseCost>2000</baseCost>
+		<prerequisites>
+			<li>Abysstech_Pneumatic</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	<!-- 라미너 역장 조작 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_LaminarManipulation</defName>
+		<label>laminar field manipulation</label>
+		<description>Research ways to manipulate lamianr field. This will allow more flexible use of the technology.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>Abysstech_LaminarTheory</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	<!-- 어비스테크 주조소 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_Foundry</defName>
+		<label>abysstech foundry</label>
+		<description>Replicate abysstech's ways of production. Especially production of their valuable alloy, abyssteel.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>Fabrication</li>
+			<li>Abysstech_Pneumatic</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<discoveredLetterTitle>About: Getting abyssteel</discoveredLetterTitle>
+		<discoveredLetterText>Now you have access to the powerful abysstech of The lighthouse. You need some abyssteel to kickstart the whole process, here are some ways to get it:\n\n-All Moyo settlements are most likely to sell abyssteel.\n-Melt down things made from abyssteel(weapons, armor and abysstech mechs).\n-Some quests are rewarded with abyssteel.</discoveredLetterText>
+	</ResearchProjectDef>
+	<!-- 다이빙 쉘 -->
+	<ResearchProjectDef ParentName="Abysstech">
+		<defName>Abysstech_DivingShell</defName>
+		<label>repurposed diving shell</label>
+		<description>Craft abysstech diving shells. Used as a substitute for armor in the civil war, it went through many modifications to be adapted for surface use, including removal of the tail piece.</description>
+		<baseCost>1500</baseCost>
+		<prerequisites>
+			<li>ReconArmor</li>
+			<li>Abysstech_Foundry</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+</Defs>
