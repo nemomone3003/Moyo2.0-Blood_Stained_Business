@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qSXdimBs2P30vivVT6CwX3FrD6R2MR8GQc5RaV4HTf8B5GZsnxd5RM9qEAyK3WI4dud4WG7am7O7FGihgUsKNw==",
+  "success": true,
+  "projectFilePath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Moyo2.0-Blood_Stained_Business\\1.5\\Source\\Moyo2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4055-beta\\krafs.rimworld.ref.1.5.4055-beta.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\lib.harmony\\2.3.3\\lib.harmony.2.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}
