@@ -551,12 +551,64 @@
 			</generalSettings>
 			<!-- 텍스쳐 그래픽 경로 -->
 			<graphicPaths>
-				<head>Moyo/Head/</head>
+				<head>
+					<path>Moyo/Head/MoyoHead</path>
+					<extendedGraphics>
+						<Job For="Wait_Downed">Moyo/Head/MoyoHeadHurt</Job>
+						<Job For="LayDown">Moyo/Head/MoyoHeadLaying</Job>
+					</extendedGraphics>
+				</head>
 				<body>Moyo/Body/</body>
 				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
 				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
 				<stump>Moyo_Dummy/Dummy/</stump>
 				<skinShader>Cutout</skinShader>
+				<apparel>
+					<individualPaths>
+						<li>
+							<key>Apparel_CowboyHat</key>
+							<value>Apparel/ApparelReplacer/MoyoHatCow</value>
+						</li>
+						<li>
+							<key>Apparel_BowlerHat</key>
+							<value>Apparel/ApparelReplacer/MoyoHatBowler</value>
+						</li>
+						<li>
+							<key>Apparel_Tuque</key>
+							<value>Apparel/ApparelReplacer/MoyoHatTuque</value>
+						</li>
+						<li>
+							<key>Apparel_TribalA</key>
+							<value>Apparel/ApparelReplacer/MoyoWearTribal</value>
+						</li>
+						<li>
+							<key>Apparel_Parka</key>
+							<value>Apparel/ApparelReplacer/MoyoWearParka</value>
+						</li>
+						<li>
+							<key>Apparel_Pants</key>
+							<value>Apparel/ApparelReplacer/MoyoWearPants</value>
+						</li>
+						<!-- <li> -->
+						<!-- <key>Apparel_BasicShirt</key> -->
+						<!-- <value>PApparel/ApparelReplacer/MoyoWearDuster</value> -->
+						<!-- </li> -->
+						<li>
+							<key>Apparel_CollarShirt</key>
+							<value>Apparel/ApparelReplacer/MoyoWearShirt</value>
+						</li>
+						<li>
+							<key>Apparel_Duster</key>
+							<value>Apparel/ApparelReplacer/MoyoWearDuster</value>
+						</li>
+						<li>
+							<key>Apparel_Jacket</key>
+							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
+						</li>
+					</individualPaths>
+					<bodyTypeFallback>Thin</bodyTypeFallback>
+					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>
+				</apparel>
 			</graphicPaths>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
