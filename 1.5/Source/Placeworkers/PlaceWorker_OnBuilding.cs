@@ -26,7 +26,6 @@
                 return true;
             }
             return "Placeworker_OnBuilding_Failed".Translate();
-            // Add a key translation here
         }
     }
 }
