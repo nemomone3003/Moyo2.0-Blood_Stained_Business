@@ -180,6 +180,8 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -203,6 +205,8 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -533,11 +537,12 @@
 									<layerOffset>0.03</layerOffset>
 								</south>
 								<east>
-									<layerOffset>-0.273</layerOffset>
-								</east>
-								<west>
-									<layerOffset>-0.273</layerOffset>
-								</west>
+									<layerOffset>0.01</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, -0.02)</Female>
+										<Thin>(0.0, -0.02)</Thin>
+									</bodyTypes>
+								</east>	
 							</offsets>
 							<!-- - -->
 							<hediffGraphics>
@@ -545,6 +550,7 @@
 							</hediffGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<userCustomizable>false</userCustomizable>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -555,6 +561,7 @@
 					<path>Moyo/Head/MoyoHead</path>
 					<extendedGraphics>
 						<Job For="Wait_Downed">Moyo/Head/MoyoHeadHurt</Job>
+						<Job For="Wait_Asleep">Moyo/Head/MoyoHeadLaying</Job>
 						<Job For="LayDown">Moyo/Head/MoyoHeadLaying</Job>
 					</extendedGraphics>
 				</head>
@@ -563,52 +570,52 @@
 				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
 				<stump>Moyo_Dummy/Dummy/</stump>
 				<skinShader>Cutout</skinShader>
-				<!-- <apparel> -->
-					<!-- <individualPaths> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_CowboyHat</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoHatCow</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_BowlerHat</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoHatBowler</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_Tuque</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoHatTuque</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_TribalA</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoWearTribal</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_Parka</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoWearParka</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_Pants</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoWearPants</value> -->
-						<!-- </li> -->
+				<apparel>
+					<individualPaths>
+						<li>
+							<key>Apparel_CowboyHat</key>
+							<value>Apparel/ApparelReplacer/MoyoHatCow</value>
+						</li>
+						<li>
+							<key>Apparel_BowlerHat</key>
+							<value>Apparel/ApparelReplacer/MoyoHatBowler</value>
+						</li>
+						<li>
+							<key>Apparel_Tuque</key>
+							<value>Apparel/ApparelReplacer/MoyoHatTuque</value>
+						</li>
+						<li>
+							<key>Apparel_TribalA</key>
+							<value>Apparel/ApparelReplacer/MoyoWearTribal</value>
+						</li>
+						<li>
+							<key>Apparel_Parka</key>
+							<value>Apparel/ApparelReplacer/MoyoWearParka</value>
+						</li>
+						<li>
+							<key>Apparel_Pants</key>
+							<value>Apparel/ApparelReplacer/MoyoWearPants</value>
+						</li>
 						<!-- <li> -->
 						<!-- <key>Apparel_BasicShirt</key> -->
-						<!-- <value>PApparel/ApparelReplacer/MoyoWearDuster</value> -->
+						<!-- <value>Apparel/ApparelReplacer/MoyoWearDuster</value> -->
 						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_CollarShirt</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoWearShirt</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_Duster</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoWearDuster</value> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <key>Apparel_Jacket</key> -->
-							<!-- <value>Apparel/ApparelReplacer/MoyoWearJacket</value> -->
-						<!-- </li> -->
-					<!-- </individualPaths> -->
-					<!-- <bodyTypeFallback>Thin</bodyTypeFallback> -->
-					<!-- <femaleBodyTypeFallback>Female</femaleBodyTypeFallback> -->
-				<!-- </apparel> -->
+						<li>
+							<key>Apparel_CollarShirt</key>
+							<value>Apparel/ApparelReplacer/MoyoWearShirt</value>
+						</li>
+						<li>
+							<key>Apparel_Duster</key>
+							<value>Apparel/ApparelReplacer/MoyoWearDuster</value>
+						</li>
+						<li>
+							<key>Apparel_Jacket</key>
+							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
+						</li>
+					</individualPaths>
+					<bodyTypeFallback>Thin</bodyTypeFallback>
+					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>
+				</apparel>
 			</graphicPaths>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
@@ -668,7 +675,7 @@
 			<lifeExpectancy>100</lifeExpectancy>
 			<!-- 피 -->
 			<bloodDef>Moyo_Blood</bloodDef>
-			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+			<bloodSmearDef>Moyo_BloodSmear</bloodSmearDef>
 			<fleshType>Moyo_Flesh</fleshType>
 			<meatColor>(53, 89, 180)</meatColor>
 			<leatherDef>Leather_Human</leatherDef>

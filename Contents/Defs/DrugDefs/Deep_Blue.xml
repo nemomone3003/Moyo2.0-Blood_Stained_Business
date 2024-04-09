@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 혈액팩 -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>BlueBloodBag</defName>
+		<label>blue bloodbag</label>
+		<description>A bag of moyo blood extracted by various means. There is a saying that it contains a substance called deepblue.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Alien_Moyo</ThingDef>
+			<ThingDef>BlueSerum</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/BlueBloodBag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>5</DeteriorationRate>
+			<Mass>0.5</Mass>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>0</Beauty>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<ingestible>
+			<foodType>Fluid</foodType>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<specialThoughtDirect>IngestedBlueBloodBag</specialThoughtDirect>
+			<ingestSound MayRequire="Ludeon.RimWorld.Biotech">HemogenPack_Consume</ingestSound>
+			<outcomeDoers>
+				<li MayRequire="Ludeon.RimWorld.Biotech" Class="IngestionOutcomeDoer_OffsetHemogen">
+					<offset>0.2</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+	</ThingDef>
+	<!-- 혈액팩 섭취 무드 -->
+	<ThoughtDef>
+		<defName>IngestedBlueBloodBag</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>5</stackLimit>
+		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<nullifyingGenes>
+			<li>Hemogenic</li>
+		</nullifyingGenes>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+		</nullifyingPrecepts>
+		<stages>
+			<li>
+				<label>ingested blue bloodbag</label>
+				<description>I ingested a bloodbag. It might keep me alive, but it was absolutely disgusting.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- 딥블루___________________________________________________________________________________________________________________________________________________________________________________________________ -->
+	<!-- 딥블루 데프 -->
+	<ChemicalDef>
+		<defName>DeepBlue</defName>
+		<label>Deep Blue</label>
+		<addictionHediff>DeepBlueAddiction</addictionHediff>
+		<toleranceHediff>DeepBlueTolerance</toleranceHediff>
+		<canBinge>false</canBinge>
+		<generateAddictionGenes>false</generateAddictionGenes>
+	</ChemicalDef>
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Deepblue</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Deepblue</label>
+		<description>Constant supply of deepblue is needed due to deepblue injection. Beacuse there are no known ways to reverse the modification caused by deepblue, This effect cannot be reversed.</description>
+		<listPriority>60</listPriority>
+		<fallPerDay>0.15</fallPerDay>
+	</NeedDef>
+	<!-- 푸른혈청 -->
+	<ThingDef ParentName="DrugPillBase">
+		<defName>BlueSerum</defName>
+		<label>blue serum</label>
+		<description>Deepblue extracted from moyo blood. When injected, deepblue modifies the subject’s body, increasing their metabolism. There is no known way to reverse this process.\n\nA substance discovered by the moyo while researching their origins. It has many uses medically, but nothing is known about the substance itself.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueBloodBag</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/BlueSerum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Mass>0.02</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>30</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.06</minToleranceToAddict>
+				<existingAddictionSeverityOffset>1</existingAddictionSeverityOffset>
+				<needLevelOffset>1.00</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<BlueBloodBag>1</BlueBloodBag>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Surgery</effectWorking>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<workAmount>350</workAmount>
+			<productCount>2</productCount>
+			<targetCountAdjustment>2</targetCountAdjustment>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_Deepbluesimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>5</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 딥블루 축적 -->
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>DeepBlueTolerance</defName>
+		<label>deepblue buildup</label>
+		<descriptionHyperlinks>
+			<ThingDef>BlueSerum</ThingDef>
+		</descriptionHyperlinks>
+		<description>Injested deepblue accumulated inside the body. It will not decay by natural means and needs special enzyme to clear.</description>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>DeepBlue</chemical>
+			</li>
+			<li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+				<discoverLetterLabel>deepblue buildup</discoverLetterLabel>
+				<discoverLetterText>{0} has injested a deepblue substance.\n\n[PAWN_pronoun] will develop deepblue-related symtoms with 1~2 more injests.</discoverLetterText>
+			</li>
+		</comps>
+		<stages Inherit="False">
+			<li>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+					<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+				</statOffsets>
+				<hungerRateFactor>0.95</hungerRateFactor>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+					<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+				</statOffsets>
+				<hungerRateFactor>0.9</hungerRateFactor>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+					<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+				</statOffsets>
+				<hungerRateFactor>0.85</hungerRateFactor>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+					<ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+				</statOffsets>
+				<hungerRateFactor>0.8</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AddictionBase">
+		<defName>DeepBlueAddiction</defName>
+		<label>deepblue instability</label>
+		<descriptionHyperlinks>
+			<ThingDef>BlueSerum</ThingDef>
+		</descriptionHyperlinks>
+		<description>Injested deepblue acts as a part of its host's metabolism. Deepblue decays over time lowering its stability and needs replacements for the body to work as normal.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<minSeverity>0.01</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<causesNeed>Chemical_Deepblue</causesNeed>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+				<discoverLetterLabel>Deepblue stability</discoverLetterLabel>
+				<discoverLetterText>{0} now requires deepblue for the body to function properly .\n\n[PAWN_pronoun] now has a need for deepblue, visible on [PAWN_pronoun] Needs tab. [PAWN_pronoun] will automatically consume the drug to fulfil [PAWN_pronoun] need. If [PAWN_pronoun] cannot get any deepblue, [PAWN_pronoun] will suffer from mental deterioration.</discoverLetterText>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.125</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.76</minSeverity>
+				<statOffsets>
+					<MentalBreakThreshold>-0.03</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+
+			<li>
+				<minSeverity>0.26</minSeverity>
+			</li>	
+
+			<li>
+				<minSeverity>0.02</minSeverity>
+				<statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+				</statOffsets>
+			</li>			
+			<li>
+				<statOffsets>
+					<MentalBreakThreshold>0.07</MentalBreakThreshold>
+					<PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>3</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDeF>
+		<defName>DeepBlueAddiction_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DeepBlueAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>deepblue stability(calm)</label>
+				<description>My mind is clear.</description>
+			</li>
+			<li>
+				<label>deepblue stability(stable)</label>
+				<description>Im feeing blue.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>deepblue stability(decaying)</label>
+				<description>Things look more and more blue.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>			
+			<li>
+				<label>deepblue stability(critical)</label>
+				<description>Something is calling me. My mind is not my own.</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>
+	<!--딥블루 과다-->
+	<HediffDef>
+		<defName>DeepBlueOverFlow</defName>
+		<label>Deepblue overflow</label>
+		<description>An overflow of deepblue in a moyo's body. They will not produce more deepblue until the effect dissapears.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueBloodBag</ThingDef>
+			<ThingDef>BlueSerum</ThingDef>
+		</descriptionHyperlinks>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.8</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>MoyoDrunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
