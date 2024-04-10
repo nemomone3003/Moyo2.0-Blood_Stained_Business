@@ -59,4 +59,12 @@
 		<!-- <PackageReference Include="Zetrith.Prepatcher" Version="1.*" /> -->
 		<!-- Details with wiki here: https://github.com/Zetrith/Prepatcher -->
 	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="AlienRace">
+	    <HintPath>..\..\..\..\..\..\workshop\content\294100\2640710953\1.5\Assemblies\AlienRace.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="CompProperties\" />
+	</ItemGroup>
 </Project>

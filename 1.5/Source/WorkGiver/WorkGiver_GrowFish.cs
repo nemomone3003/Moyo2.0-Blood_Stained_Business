@@ -1,7 +1,7 @@
 ﻿using Verse.AI;
 
 namespace Moyo2
-{
+{/*
     public class WorkGiver_GrowFish : WorkGiver_Scanner
     {
         public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_BuildingDefOfs.Moyo_FishTank);
@@ -60,5 +60,5 @@ namespace Moyo2
             return JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo_GrowFish, t);
             // Quite literally gives the pawn the growing job
         }
-    }
+    }*/
 }

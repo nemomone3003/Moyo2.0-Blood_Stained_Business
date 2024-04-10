@@ -22,4 +22,15 @@
 
         public static ThingDef Moyo_FishTank;
     }
+
+    [DefOf]
+    public static class Moyo2_RaceDefOf
+    {
+        static Moyo2_RaceDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(Moyo2_RaceDefOf));
+        }
+
+        public static AlienRace.ThingDef_AlienRace Alien_Moyo;
+    }
 }
