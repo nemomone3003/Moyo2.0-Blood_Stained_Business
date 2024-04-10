@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <WorkGiverDef>
+        <defName>Moyo_GrowFish</defName>
+        <label>Grow fish</label>
+        <giverClass>Moyo2.WorkGiver_GrowFish</giverClass>
+        <workType>Handling</workType>
+        <verb>grow</verb>
+        <gerund>growing</gerund>
+        <priorityInType>50</priorityInType>
+        <requiredCapacities>
+          <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+        <canBeDoneByMutants>false</canBeDoneByMutants>
+      </WorkGiverDef>
+
+      <WorkGiverDef>
+        <defName>Moyo_TakeFish</defName>
+        <label>Collect grown fish</label>
+        <giverClass>Moyo2.WorkGiver_EmptyFishTank</giverClass>
+        <workType>Hauling</workType>
+        <verb>collect</verb>
+        <gerund>collecting from</gerund>
+        <priorityInType>19</priorityInType>
+        <requiredCapacities>
+          <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+        <canBeDoneByMutants>false</canBeDoneByMutants>
+      </WorkGiverDef>
+
+</Defs>

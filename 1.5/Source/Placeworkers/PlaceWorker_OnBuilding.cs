@@ -1,8 +1,8 @@
-﻿namespace Moyo
+﻿namespace Moyo2
 {
     /// <summary>
     /// <para>Warning: Everything in vanilla assumes there's only 1 building per tile. Stuff might break</para>
-    /// Remeber to give the building you're giving this placeworker:<br></br>
+    /// Remember to give the building you're giving this placeworker:<br></br>
     /// 1. The <isEdifice>false</isEdifice> field.<br></br>
     /// 2. The <altitudeLayer>BuildingOnTop</altitudeLayer> field, or other layer that's high.
     /// </summary>
