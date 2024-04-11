@@ -1,7 +1,7 @@
 ﻿using Verse.AI;
 
 namespace Moyo2
-{/*
+{
     public class WorkGiver_EmptyFishTank : WorkGiver_Scanner
     {
         public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_BuildingDefOfs.Moyo_FishTank);
@@ -53,5 +53,5 @@ namespace Moyo2
             return JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo_EmptyFishTank, t);
             // Quite literally the jobdef we give to the pawn, nothing else
         }
-    }*/
+    }
 }
