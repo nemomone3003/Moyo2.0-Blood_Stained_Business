@@ -265,8 +265,8 @@ namespace Moyo2
                 return null;
             }
 
-            Thing fish = ThingMaker.MakeThing(LockedFishDef);
-            fish.stackCount = LockedFishDef.fishTankSettings.amountPerHarvest;
+            Thing fish = ThingMaker.MakeThing(LockedFishDef.race.corpseDef);
+            //fish.stackCount = LockedFishDef.fishTankSettings.amountPerHarvest;
             Reset();
             return fish;
         }
