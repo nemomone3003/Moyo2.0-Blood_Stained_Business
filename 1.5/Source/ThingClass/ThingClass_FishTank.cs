@@ -257,7 +257,7 @@ namespace Moyo2
         /// Handles reseting the building when the pawn takes the fish out.
         /// </summary>
         /// <returns>A thing made from the lockedFishDef, or null if the pawn has tried to unload the fish without it being fully grown somehow</returns>
-        public Thing UnloadFish()
+        public Corpse UnloadFish()
         {
             if (!FinishedGrowing)
             {
@@ -265,7 +265,8 @@ namespace Moyo2
                 return null;
             }
 
-            Thing fish = ThingMaker.MakeThing(LockedFishDef.race.corpseDef);
+            Corpse fish = (Corpse)ThingMaker.MakeThing(LockedFishDef.race.corpseDef);
+            fish.InnerPawn = PawnGenerator.GeneratePawn(lockedFishDef.fishTankSettings.pawnKindDef);
             Reset();
             return fish;
         }

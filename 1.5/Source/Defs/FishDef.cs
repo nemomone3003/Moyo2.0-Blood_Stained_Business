@@ -31,5 +31,6 @@
         public int ticksToGrow; // ticks that the fish needs to grow
         public GraphicData graphicData; // This is where the texture of the fish growing inside the fish tank goes, not the fish itself.
         // IMPORTANT: Use Graphic_Single
+        public PawnKindDef pawnKindDef; // Fish kinddef to spawn the inner pawn from
     }
 }

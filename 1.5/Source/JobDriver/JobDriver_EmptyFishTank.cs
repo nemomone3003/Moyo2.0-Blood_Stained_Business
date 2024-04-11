@@ -33,8 +33,8 @@ namespace Moyo2
             // Unloads the fish
             toil.initAction = delegate
             {
-                Thing fish = FishTank.UnloadFish();
-                GenPlace.TryPlaceThing(fish, pawn.Position, Map, ThingPlaceMode.Near);
+                Corpse fish = FishTank.UnloadFish();
+                GenSpawn.Spawn(fish, pawn.Position, Map);
                 StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(fish);
                 // Tries to find a good place to haul the fish stack to
                 if (StoreUtility.TryFindBestBetterStoreCellFor(fish, pawn, Map, currentPriority, pawn.Faction, out var foundCell))

@@ -158,6 +158,7 @@
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+				<pawnKindDef>MoyoFish_2Tuna</pawnKindDef>
 			</graphicData>
 		</fishTankSettings>
 		<!-- <hediffGiverSets> -->
