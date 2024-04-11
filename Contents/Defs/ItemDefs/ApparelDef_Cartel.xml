@@ -58,14 +58,14 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<!-- <Moyo_Depthweave>60</Moyo_Depthweave> -->
+			<Cloth_Depthweave>60</Cloth_Depthweave>
 		</costList>
-		<!-- <comps> -->
-			<!-- <li Class="CompProperties_CauseHediff_Apparel"> -->
-				<!-- <hediff>Moyo_CartelHood</hediff> -->
-				<!-- <part>Head</part> -->
-			<!-- </li> -->
-		<!-- </comps> -->
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Moyo_CartelHood</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
 	</ThingDef>
 	<!--후드 헤디프-->
 	<HediffDef>

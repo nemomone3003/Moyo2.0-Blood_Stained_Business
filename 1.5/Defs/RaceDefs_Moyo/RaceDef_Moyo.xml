@@ -11,27 +11,27 @@
 			<generalSettings>
 				<maleGenderProbability>0.3</maleGenderProbability>
 				<humanRecipeImport>true</humanRecipeImport>
-				<!-- <chemicalSettings> -->
-				<!-- <li> -->
-				<!-- <chemical>DeepBlue</chemical> -->
-				<!-- <reactions> -->
-				<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
-				<!-- <hediffDef>Moyo_DeepBlueReaction</hediffDef> -->
-				<!-- <severity>0.23</severity> -->
-				<!-- </li> -->
-				<!-- </reactions> -->
-				<!-- </li> -->
-				<!-- <li> -->
-				<!-- <chemical>BlueBurstC</chemical> -->
-				<!-- <reactions> -->
-				<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
-				<!-- <hediffDef>BlueBurstHighPrecursor</hediffDef> -->
-				<!-- <severity>0.01</severity> -->
-				<!-- </li> -->
-				<!-- </reactions> -->
-				<!-- <ingestible>false</ingestible> -->
-				<!-- </li> -->
-				<!-- </chemicalSettings> -->
+				<chemicalSettings>
+					<li>
+						<chemical>DeepBlue</chemical>
+						<reactions>
+							<li Class="IngestionOutcomeDoer_GiveHediff">
+								<hediffDef>DeepBlueOverFlow</hediffDef>
+								<severity>0.23</severity>
+							</li>
+						</reactions>
+					</li>
+					<!-- <li> -->
+					<!-- <chemical>BlueBurstC</chemical> -->
+					<!-- <reactions> -->
+					<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
+					<!-- <hediffDef>BlueBurstHighPrecursor</hediffDef> -->
+					<!-- <severity>0.01</severity> -->
+					<!-- </li> -->
+					<!-- </reactions> -->
+					<!-- <ingestible>false</ingestible> -->
+					<!-- </li> -->
+				</chemicalSettings>
 				<!--=파트제네레이터==========================================================================================-->
 				<alienPartGenerator>
 					<!-- 컬러채널 -->
@@ -248,7 +248,6 @@
 						</li>
 						<li>
 							<name>glow(moyo left antennae)</name>
-							<bodyPartLabel>left antennae</bodyPartLabel>
 							<path>Moyo/Head/MoyoAtennaGlow_Left</path>
 							<shaderType>MoteGlow</shaderType>
 							<colorChannel>Base</colorChannel>
@@ -504,7 +503,7 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
-								<Apparel For="Moyo_CartelHood">Apparel/Cartel/CartelHoodBack</Apparel>
+								<Hediff For="Moyo_CartelHood">Apparel/Cartel/CartelHoodBack</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -547,7 +546,7 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
-								<Apparel For="Moyo_CartelHood">Apparel/Cartel/CartelHood</Apparel>
+								<Hediff For="Moyo_CartelHood">Apparel/Cartel/CartelHood</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>

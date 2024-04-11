@@ -182,9 +182,16 @@
 				<discoverLetterLabel>deepblue buildup</discoverLetterLabel>
 				<discoverLetterText>{0} has injested a deepblue substance.\n\n[PAWN_pronoun] will develop deepblue-related symtoms with 1~2 more injests.</discoverLetterText>
 			</li>
+			<li>
+				<compClass>Moyo2.HediffComp_DestroyOnMoyo</compClass>
+			</li>
 		</comps>
 		<stages Inherit="False">
 			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>0.03</minSeverity>
 			</li>
 			<li>
 				<minSeverity>0.2</minSeverity>
@@ -242,6 +249,9 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.125</severityPerDay>
 			</li>
+			<li>
+				<compClass>Moyo2.HediffComp_DestroyOnMoyo</compClass>
+			</li>			
 		</comps>
 		<stages>
 			<li>
