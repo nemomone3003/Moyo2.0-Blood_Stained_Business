@@ -29,7 +29,6 @@
     public class FishTankSettings
     {
         public int ticksToGrow; // ticks that the fish needs to grow
-        public int amountPerHarvest; // amount of fish given per harvest
         public GraphicData graphicData; // This is where the texture of the fish growing inside the fish tank goes, not the fish itself.
         // IMPORTANT: Use Graphic_Single
     }
