@@ -45,7 +45,6 @@
 			<tags>
 				<li>Cartel_Hood</li>
 				<li>Moyo_Military</li>
-				<li>Moyo_Starting</li>
 				<li>Moyo_Spacer</li>
 			</tags>
 		</apparel>
@@ -61,12 +60,12 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<!-- <Moyo_Depthweave>60</Moyo_Depthweave> -->
 		</costList>
-		<comps>
-			<li Class="CompProperties_CauseHediff_Apparel">
-				<hediff>Moyo_CartelHood</hediff>
-				<part>Head</part>
-			</li>
-		</comps>
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_CauseHediff_Apparel"> -->
+				<!-- <hediff>Moyo_CartelHood</hediff> -->
+				<!-- <part>Head</part> -->
+			<!-- </li> -->
+		<!-- </comps> -->
 	</ThingDef>
 	<!--후드 헤디프-->
 	<HediffDef>

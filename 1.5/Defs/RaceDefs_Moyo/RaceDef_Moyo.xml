@@ -189,7 +189,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<defaultOffset>MoyoTail</defaultOffset>
 							<!-- - -->
-							<!-- <userCustomizable>false</userCustomizable> -->
+							<userCustomizable>false</userCustomizable>
 						</li>
 						<li>
 							<name>glow(moyo tail)</name>
@@ -214,7 +214,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<defaultOffset>MoyoTail</defaultOffset>
 							<!-- - -->
-							<!-- <userCustomizable>false</userCustomizable> -->
+							<userCustomizable>false</userCustomizable>
 						</li>
 						<!--더듬이-->
 						<li>
@@ -503,11 +503,12 @@
 								</west>
 							</offsets>
 							<!-- - -->
-							<hediffGraphics>
-								<Moyo_CartelHood>Apparel/Cartel/CartelHoodBack</Moyo_CartelHood>
-							</hediffGraphics>
+							<extendedGraphics>
+								<Apparel For="Moyo_CartelHood">Apparel/Cartel/CartelHoodBack</Apparel>
+							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<userCustomizable>false</userCustomizable>
 						</li>
 						<!-- 더미 -->
 						<li>
@@ -542,12 +543,12 @@
 										<Female>(0.0, -0.02)</Female>
 										<Thin>(0.0, -0.02)</Thin>
 									</bodyTypes>
-								</east>	
+								</east>
 							</offsets>
 							<!-- - -->
-							<hediffGraphics>
-								<Moyo_CartelHood>Apparel/Cartel/CartelHood</Moyo_CartelHood>
-							</hediffGraphics>
+							<extendedGraphics>
+								<Apparel For="Moyo_CartelHood">Apparel/Cartel/CartelHood</Apparel>
+							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<userCustomizable>false</userCustomizable>
