@@ -203,7 +203,7 @@ namespace Moyo2
             {
                 new (0f, 0.25f),
                 // When the fish isn't at all progressed it will be 1/4 of the original size
-                new (LockedFishDef.fishTankSettings.ticksToGrow, 1f)
+                new (LockedFishDef.fishTankSettings.ticksToGrow, 8f)
                 // And it will get to the original size when it reaches the ticks it needs to finish growing
             };
         }

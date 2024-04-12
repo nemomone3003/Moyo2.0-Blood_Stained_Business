@@ -12,7 +12,7 @@
      * 
      *   <fishTankSettings>
      *     <ticksToGrow>800</ticksToGrow>
-     *     <amountPerHarvest>6</amountPerHarvest>
+     *     <pawnKindDef>fishDef_PawnKindDef</pawnKindDef>
      *     <graphicData>
      *       <texPath>Things/Pawn/Animal/Chicken/Chicken_east</texPath>
      *       <graphicClass>Graphic_Single</graphicClass>

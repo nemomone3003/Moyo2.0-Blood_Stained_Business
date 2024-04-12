@@ -154,11 +154,10 @@
 		<!-- </tools> -->
 		<fishTankSettings>
 			<ticksToGrow>800</ticksToGrow>
-			<amountPerHarvest>1</amountPerHarvest>
+			<pawnKindDef>MoyoFish_2Tuna</pawnKindDef>
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<pawnKindDef>MoyoFish_2Tuna</pawnKindDef>
 			</graphicData>
 		</fishTankSettings>
 		<!-- <hediffGiverSets> -->
