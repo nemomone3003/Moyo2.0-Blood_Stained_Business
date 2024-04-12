@@ -4,9 +4,9 @@
 		<defName>Alien_Moyo</defName>
 		<label>Moyo</label>
 		<description>A humanoid race living in cities under the sea. Having traits similar to sea creatures, their blood contains substances that can be used for various medical uses.\n\nDescendants of glitterworld explorers who settled in the deep sea, generations of body modifications has led to their current form. Spreading far and wide into the rim, they built many cities and prospered. Until now.</description>
-		<!-- <descriptionHyperlinks> -->
-		<!-- <ThingDef>Moyo_BloodBag</ThingDef> -->
-		<!-- </descriptionHyperlinks> -->
+		<descriptionHyperlinks>
+			<ThingDef>BlueBloodBag</ThingDef>
+		</descriptionHyperlinks>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.3</maleGenderProbability>
@@ -785,6 +785,7 @@
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
+				<li>MoyoInate</li>
 				<li>OrganicStandard</li>
 				<li>Human</li>
 			</hediffGiverSets>
@@ -818,37 +819,41 @@
 			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
 		</statBases>
 		<!--=============================================================================================================================-->
-		<!-- <comps> -->
-		<!-- <li Class="HPF_Moyo.CompProperties_ResourceHarvestable"> -->
-		<!-- <harvestJobDef>ExtractDeepBlue_Job</harvestJobDef> -->
-		<!-- <saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey> -->
-		<!-- <thingDef>Moyo_BloodBag</thingDef> -->
-		<!-- <intervalDays>6.666666667</intervalDays> -->
-		<!-- <amount>1</amount> -->
-		<!-- <inspectText>Moyo BloodBag</inspectText> -->
-		<!-- <constraints> -->
-		<!-- <li Class="HPF_Moyo.ConstraintPawnAgeOver"> -->
-		<!-- <age>7</age> -->
-		<!-- </li> -->
-		<!-- </constraints> -->
-		<!-- <productAffectedStats> -->
-		<!-- <li> -->
-		<!-- <statDef>DeepblueStat</statDef> -->
-		<!-- <multiplier>1.0</multiplier> -->
-		<!-- <offset>-1.0</offset> -->
-		<!-- </li> -->
-		<!-- </productAffectedStats> -->
-		<!-- <speedAffectedStats> -->
-		<!-- <li> -->
-		<!-- <statDef>DeepblueStatSpeed</statDef> -->
-		<!-- <multiplier>1.0</multiplier> -->
-		<!-- <offset>-1.0</offset> -->
-		<!-- </li> -->
-		<!-- </speedAffectedStats> -->
-		<!-- </li> -->
-		<!-- </comps> -->
+		<comps>
+			<li Class="HPF_Moyo.CompProperties_ResourceHarvestable">
+				<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
+				<saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey>
+				<thingDef>BlueSerum</thingDef>
+				<intervalDays>8</intervalDays>
+				<amount>2</amount>
+				<inspectText>BlueSerum</inspectText>
+				<constraints>
+					<li Class="HPF_Moyo.ConstraintPawnAgeOver">
+						<age>7</age>
+					</li>
+				</constraints>
+				<productAffectedStats>
+					<li>
+						<statDef>DeepblueStat</statDef>
+						<multiplier>1.0</multiplier>
+						<offset>-1.0</offset>
+					</li>
+				</productAffectedStats>
+				<speedAffectedStats>
+					<li>
+						<statDef>DeepblueStatSpeed</statDef>
+						<multiplier>1.0</multiplier>
+						<offset>-1.0</offset>
+					</li>
+				</speedAffectedStats>
+			</li>
+		</comps>
 		<!--=============================================================================================================================-->
 		<recipes>
+			<!-- <li>Install_TailProsthesis_Moyo</li> -->
+			<!-- <li>Install_TailBionic_Moyo</li> -->
+			<!-- <li>Install_CrudeDeepBlueExtracter</li> -->
+			<!-- <li>Install_DeepBlueExtracter</li> -->
 		</recipes>
 		<!--==맨손전투===================================================================================================================-->
 		<tools>

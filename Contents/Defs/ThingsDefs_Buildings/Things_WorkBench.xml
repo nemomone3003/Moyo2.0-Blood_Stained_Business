@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BenchBase">
+		<defName>Moyo_FabricationBench</defName>
+		<label>abysstech production bench</label>
+		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>		
+		<graphicData>
+			<texPath>Building/MoyoBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>	
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>Abysstech_Pneumatic</li>
+		</researchPrerequisites>
+		<recipes>
+			<li>Make_ComponentIndustrial</li>
+			<li>Make_ComponentSpacer</li>
+		</recipes>
+		<designationCategory>Production</designationCategory>
+		<minifiedDef/>
+		<thingCategories Inherit="false"/>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+					<li>Moyo_FabricationAddon</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<surfaceType>Item</surfaceType>
+		<!-- <designationHotKey>Misc12</designationHotKey> -->
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moyo_FabricationAddon</defName>
+		<label>abysstech fabrication module</label>
+		<description>Installed on abysstech production bench to boost its production capabilities.</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>		
+		<graphicData>
+			<texPath>Building/MoyoBenchUpgrade</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<costList>
+			<Steel>50</Steel>
+			<Abyssteel>50</Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<isEdifice>false</isEdifice>
+		</building>
+		<researchPrerequisites>
+			<li>Abysstech_Foundry</li>
+		</researchPrerequisites>
+		<designationCategory>Production</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+</Defs>

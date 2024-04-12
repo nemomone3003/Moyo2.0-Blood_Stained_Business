@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 물고기 질식 -->
+	<HediffDef>
+		<defName>MoyoFish_Kill</defName>
+		<label>fishkill</label>
+		<description>fish dies./n/nUgeh</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<lethalSeverity>1</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>9999</severityPerDay>
+			</li>			
+		</comps>	
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffGiverSetDef>
+		<defName>MoyoFish_KillGiver</defName>
+		<hediffGivers>
+			<li Class="HediffGiver_Random">
+				<hediff>MoyoFish_Kill</hediff>
+				<mtbDays>0.001</mtbDays>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+	<!-- 물고기 -->
+	<Moyo2.FishDef ParentName="AnimalThingBase">
+		<defName>MoyoFish_Tuna</defName>
+		<label>tidal tuna</label>
+		<description>A large domesticated fish, cows have been bred for millennia to produce huge amounts of milk, meat, and leather. They are exceptionally gentle creatures and will never seek revenge, no matter how many times they are harmed. Most of them are so adapted to farm life that they cannot survive in the wild.</description>
+		<statBases>
+			<MoveSpeed>0.1</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<MarketValue>300</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<body>Fish_Body</body>
+			<hasGenders>false</hasGenders>
+			<baseBodySize>2.3</baseBodySize>
+			<baseHungerRate>0.01</baseHungerRate>
+			<baseHealthScale>1.5</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Plain</leatherDef>
+			<wildness>0</wildness>
+			<trainability>None</trainability>
+			<meatLabel>tuna fillet</meatLabel>
+			<lifeExpectancy>0.01</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>MoyoFish_KillGiver</li>
+			</hediffGiverSets>			
+		</race>
+		<fishTankSettings>
+			<ticksToGrow>800</ticksToGrow>
+			<graphicData>
+				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+		</fishTankSettings>
+	</Moyo2.FishDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MoyoFishKind_Tuna</defName>
+		<label>stillwater tuna</label>
+		<race>MoyoFish_Tuna</race>
+		<combatPower>75</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Item/Fish/MoyoFish_Tuna</texPath>
+					<drawSize>2.7</drawSize>
+					<color>(255, 255, 255)</color>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Item/Fish/MoyoFish_TunaBone</texPath>
+					<drawSize>2.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

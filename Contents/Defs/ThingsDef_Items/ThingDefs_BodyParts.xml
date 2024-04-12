@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 모요 꼬리보철물 -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>TailProsthesis_Moyo</defName>
+		<label>moyo tail prosthesis</label>
+		<labelNoun>a tail prosthesis</labelNoun>
+		<description>A crude tail prosthesis for moyo. Not anyway perfect but it serves its purpose well.</description>
+		<descriptionHyperlinks>
+			<ThingDef>TailProsthesis_Moyo</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>TailProsthesis_Moyo</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>TailProsthesis_Moyo</defName>
+		<label>moyo tail prosthesis</label>
+		<description>A crude tail prosthesis for moyo. Not anyway perfect but it serves its purpose well.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Cloth_Depthweave>20</Cloth_Depthweave>
+			<Steel>10</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Install_TailProsthesis_Moyo</defName>
+		<label>install moyo tail prosthesis</label>
+		<description>Install tail prosthesis.</description>
+		<descriptionHyperlinks>
+			<ThingDef>TailProsthesis_Moyo</ThingDef>
+			<HediffDef>TailProsthesis_Moyo</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing tail prosthesis.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TailProsthesis_Moyo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>TailProsthesis_Moyo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Moyo_Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TailProsthesis_Moyo</addsHediff>
+	</RecipeDef>
+	<!-- 모요 생체공학 꼬리 -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>TailBionic_Moyo</defName>
+		<label>moyo bionic tail</label>
+		<labelNoun>a tail prosthesis</labelNoun>
+		<description>An advanced artificial tail for moyo. Improved in nearly every way possible.</description>
+		<descriptionHyperlinks>
+			<ThingDef>TailBionic_Moyo</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>TailBionic_Moyo</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>TailBionic_Moyo</defName>
+		<label>moyo bionic tail</label>
+		<description>An advanced artificial tail for moyo. Improved in nearly every way possible.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Install_TailBionic_Moyo</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Cloth_Depthweave>40</Cloth_Depthweave>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>Install_TailBionic_Moyo</defName>
+		<label>install moyo bionic tail</label>
+		<description>Install a bionic tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>TailBionic_Moyo</ThingDef>
+			<HediffDef>TailBionic_Moyo</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing a bionic tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TailBionic_Moyo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>TailBionic_Moyo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Moyo_Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TailBionic_Moyo</addsHediff>
+	</RecipeDef>
+</Defs>

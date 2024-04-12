@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- moyo med -->
+	<!-- 혈액부패랑 운동마비 레시피 추가 필요 -->
+	<ThingDef ParentName="MedicineBase">
+		<defName>BlueMedicine</defName>
+		<label>Bluemed</label>
+		<description>A medicine containing deepblue. deepblue increases the medicine's effectiveness while having no worries of deepblue dependancy.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BlueSerum</ThingDef>
+		</descriptionHyperlinks>				
+		<graphicData>
+			<texPath>Item/BlueMedicine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>42</MarketValue>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>1.60</MedicalPotency>
+			<MedicalQualityMax>1.30</MedicalQualityMax>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>1500</WorkToMake>
+		</statBases>
+		<costList>
+			<MedicineIndustrial>1</MedicineIndustrial>
+			<BlueSerum>2</BlueSerum>
+			<Neutroamine>2</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

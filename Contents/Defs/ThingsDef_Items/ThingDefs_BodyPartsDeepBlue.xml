@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 모요 간단한 딥블루 추출기 -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>CrudeDeepBlueExtracter</defName>
+		<label>crude deepblue extracter</label>
+		<labelNoun>a crude deepblue extracter</labelNoun>
+		<description>A crude deepblue extracter installed. It will produce deepblue every often.\n\nUnistalling will break the extracter.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CrudeDeepBlueExtracter</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<painOffset>0.05</painOffset>
+				<statOffsets>
+					<DeepblueStatSpeed>1</DeepblueStatSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DeepBlueExtracter</li>
+		</tags>
+	</HediffDef>
+	<ThoughtDef>
+		<defName>Thought_CrudeDeepBlueExtracter</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>CrudeDeepBlueExtracter</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>Masochist</li>
+		</nullifyingTraits>
+		<!-- <nullifyingPrecepts> -->
+		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>\ -->
+		<!-- </nullifyingPrecepts> -->
+		<stages>
+			<li>
+				<label>uncomfortable attachment</label>
+				<description>Is this really necessary? I know my blood's worth but this isnt it.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>CrudeDeepBlueExtracter</defName>
+		<label>crude deepblue extracter</label>
+		<description>A crude deepblue extracter. Install this to a moyo to begin deepblue production.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body. Lets call it, Investment for profit.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>DeepblueCrude</li>
+		</techHediffsTags>
+	</ThingDef>
+	<!-- 모요 딥블루 추출기 -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>DeepBlueExtracter</defName>
+		<label>deepblue extracter</label>
+		<labelNoun>a deepblue extracter</labelNoun>
+		<description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
+		<descriptionHyperlinks>
+			<ThingDef>DeepBlueExtracter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DeepBlueExtracter</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<DeepblueStatSpeed>1</DeepblueStatSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DeepBlueExtracter</li>
+		</tags>
+	</HediffDef>
+	<ThoughtDef>
+		<defName>Thought_DeepBlueExtracter</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DeepBlueExtracter</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>Masochist</li>
+		</nullifyingTraits>
+		<!-- <nullifyingPrecepts> -->
+		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>\ -->
+		<!-- </nullifyingPrecepts> -->
+		<stages>
+			<li>
+				<label>itchy attachment</label>
+				<description>Its bit of a nusiance but I can't ask for more.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>DeepBlueExtracter</defName>
+		<label>deepblue extracter</label>
+		<description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>5</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>DeepblueSimple</li>
+		</techHediffsTags>
+	</ThingDef>
+</Defs>
