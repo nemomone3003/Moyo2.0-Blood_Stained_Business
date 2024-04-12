@@ -14,7 +14,7 @@
 	<!-- 딥블루 연구 -->
 	<!-- 기본 딥블루 -->
 	<ResearchProjectDef ParentName="Abysstech">
-		<defName>Abysstech_Deepbluesimple</defName>
+		<defName>Abysstech_DeepblueSimple</defName>
 		<label>basic deepblue refining</label>
 		<description>Research production of basic deepblue compounds.</description>
 		<techLevel>Industrial</techLevel>
@@ -36,7 +36,7 @@
 		<techLevel>Industrial</techLevel>
 		<baseCost>1000</baseCost>
 		<prerequisites>
-			<li>Abysstech_Deepbluesimple</li>
+			<li>Abysstech_DeepblueSimple</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>
