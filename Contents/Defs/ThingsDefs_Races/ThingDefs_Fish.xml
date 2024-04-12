@@ -70,7 +70,9 @@
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>2, 2</drawSize>
 			</graphicData>
+			<pawnKindDef>MoyoFishKind_Tuna</pawnKindDef>
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<PawnKindDef ParentName="AnimalKindBase">

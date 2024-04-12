@@ -31,9 +31,18 @@ namespace Moyo2
 
             Toil toil = ToilMaker.MakeToil("MakeNewToils");
             // Unloads the fish
+            toil.AddEndCondition(() =>
+            {
+                if (FishTank.LockedFishDef.fishTankSettings.pawnKindDef == null)
+                {
+                    Log.Error("Moyo2: Selected fishDef doesn't have a defined pawnKindDef in fishTankSettings");
+                    return JobCondition.Errored;
+                }
+                return JobCondition.Ongoing;
+            });
             toil.initAction = delegate
             {
-                Corpse fish = FishTank.UnloadFish();
+                Thing fish = FishTank.UnloadFish();
                 GenSpawn.Spawn(fish, pawn.Position, Map);
                 StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(fish);
                 // Tries to find a good place to haul the fish stack to

@@ -28,8 +28,9 @@ namespace Moyo2
         private int ticksToDie = 15000;
         private CompPowerTrader compPowerTrader;
 
-        // Field for a curve that makes the fish grow in size
-        private SimpleCurve drawSizeCurve;
+        // Field for curves to change the fish size the more grown it is
+        private SimpleCurve xSizeCurve;
+        private SimpleCurve ySizeCurve;
 
         // Sets the drawloc.y to building on top so the textures don't clip inside eachother
         private readonly float altitude = AltitudeLayer.BuildingOnTop.AltitudeFor();
@@ -121,12 +122,18 @@ namespace Moyo2
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            drawSizeCurve = new()
+
+            xSizeCurve = new()
             {
                 new (0f, 0.25f),
-                // When the fish isn't at all progressed it will be 1/4 of the original size
-                new (LockedFishDef.fishTankSettings.ticksToGrow, 1f)
-                // And it will get to the original size when it reaches the ticks it needs to finish growing
+                // When the fish isn't at all progressed it will be 1/4 of the original X size
+                new (LockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.x)
+                // And it will get to the original X size when it reaches the ticks it needs to finish growing
+            };
+            ySizeCurve = new()
+            {
+                new (0f, 0.25f),
+                new (lockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.y)
             };
         }
 
@@ -199,12 +206,17 @@ namespace Moyo2
             tickProgress = 0;
             GrowingFish = true;
             LockedFishDef = FishDef; // We save a reference to the fishDef selected, so they don't immediately change unless the pawn loads the fish again.
-            drawSizeCurve = new()
+            xSizeCurve = new()
             {
                 new (0f, 0.25f),
-                // When the fish isn't at all progressed it will be 1/4 of the original size
-                new (LockedFishDef.fishTankSettings.ticksToGrow, 8f)
-                // And it will get to the original size when it reaches the ticks it needs to finish growing
+                // When the fish isn't at all progressed it will be 1/4 of the original X size
+                new (LockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.x)
+                // And it will get to the original X size when it reaches the ticks it needs to finish growing
+            };
+            ySizeCurve = new()
+            {
+                new (0f, 0.25f),
+                new (lockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.y)
             };
         }
 
@@ -243,12 +255,24 @@ namespace Moyo2
             if (growingFish || finishedGrowing)
             {
                 drawLoc.y = altitude;
-                float curvePoint = drawSizeCurve.Evaluate(tickProgress);
-                // This gets the value of the curve we have to change the drawsize, based on how progressed the growth is
-                Vector2 vector2 = new(curvePoint, curvePoint);
-                // And with that value we get a new drawsize, which is the same point twice as we want the texture to be squared
 
-                LockedFishDef.fishTankSettings.graphicData.Graphic.drawSize = vector2;
+                int lastTick = -1;
+                float Xsize;
+                float Ysize;
+                if (lastTick != tickProgress) // Every 250 ticks
+                {
+#pragma warning disable IDE0059
+                    lastTick = (int)tickProgress;
+#pragma warning restore IDE0059
+
+                    Xsize = xSizeCurve.Evaluate(tickProgress);
+                    Ysize = ySizeCurve.Evaluate(tickProgress);
+                    // This gets the value of the X and Y curves, based on how progressed the growth is
+                    Vector2 vector2 = new(Xsize, Ysize);
+                    // With those values we change the fish' drawsize incrementally
+
+                    LockedFishDef.fishTankSettings.graphicData.Graphic.drawSize = vector2;
+                }
                 LockedFishDef.fishTankSettings.graphicData.Graphic.Draw(drawLoc, Rotation, this);
             }
         }
@@ -257,7 +281,7 @@ namespace Moyo2
         /// Handles reseting the building when the pawn takes the fish out.
         /// </summary>
         /// <returns>A thing made from the lockedFishDef, or null if the pawn has tried to unload the fish without it being fully grown somehow</returns>
-        public Corpse UnloadFish()
+        public Thing UnloadFish()
         {
             if (!FinishedGrowing)
             {
@@ -265,8 +289,8 @@ namespace Moyo2
                 return null;
             }
 
-            Corpse fish = (Corpse)ThingMaker.MakeThing(LockedFishDef.race.corpseDef);
-            fish.InnerPawn = PawnGenerator.GeneratePawn(lockedFishDef.fishTankSettings.pawnKindDef);
+            Pawn fish = PawnGenerator.GeneratePawn(lockedFishDef.fishTankSettings.pawnKindDef);
+            fish.Kill(null);
             Reset();
             return fish;
         }
