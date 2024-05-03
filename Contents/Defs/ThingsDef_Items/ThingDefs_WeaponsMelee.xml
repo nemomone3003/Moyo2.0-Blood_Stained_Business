@@ -14,11 +14,12 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>6500</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>2.25</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
 		</equippedStatOffsets>
 		<tools>
 			<li>
@@ -34,7 +35,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>18.2</power>
+				<power>19.2</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -42,14 +43,14 @@
 		<recipeMaker>
 			<researchPrerequisite>Machining</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
+				<li>Moyo_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Steel>50</Steel>
+			<Steel>65</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<!-- - -->
@@ -70,7 +71,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>6500</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 		<tools>
@@ -103,15 +104,15 @@
 		<recipeMaker>
 			<researchPrerequisite>Machining</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
+				<li>Moyo_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Plasteel>25</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>15</Plasteel>
+			<Steel>20</Steel>
 		</costList>
 		<!-- - -->
 		<weaponTags>
@@ -163,12 +164,12 @@
 		</tools>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
+				<li>Moyo_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>

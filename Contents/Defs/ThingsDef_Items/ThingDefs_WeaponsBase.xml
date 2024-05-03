@@ -87,5 +87,16 @@
 		<armorCategory>Sharp</armorCategory>
 		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
 		<isRanged>true</isRanged>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>2</plantDamageFactor>		
 	</DamageDef>	
+	
+  <DamageDef ParentName="Bullet">
+    <defName>Damage_MoyoHarpoon</defName>
+    <label>heavy harpoon</label>
+    <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+  </DamageDef>	
 </Defs>

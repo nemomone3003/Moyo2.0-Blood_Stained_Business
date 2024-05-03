@@ -58,7 +58,7 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Cloth_Depthweave>60</Cloth_Depthweave>
+			<Cloth_Depthweave>80</Cloth_Depthweave>
 		</costList>
 		<comps>
 			<li Class="CompProperties_CauseHediff_Apparel">

@@ -70,7 +70,7 @@
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>2, 2</drawSize>
+				<drawSize>2.7</drawSize>
 			</graphicData>
 			<pawnKindDef>MoyoFishKind_Tuna</pawnKindDef>
 		</fishTankSettings>

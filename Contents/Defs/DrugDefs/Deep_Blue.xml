@@ -132,8 +132,8 @@
 				<chemical>DeepBlue</chemical>
 				<addictiveness>1</addictiveness>
 				<minToleranceToAddict>0.06</minToleranceToAddict>
-				<existingAddictionSeverityOffset>1</existingAddictionSeverityOffset>
-				<needLevelOffset>1.00</needLevelOffset>
+				<existingAddictionSeverityOffset>0.33</existingAddictionSeverityOffset>
+				<needLevelOffset>0.33</needLevelOffset>
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
@@ -327,12 +327,20 @@
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.8</severityPerDay>
+				<severityPerDay>-1.5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>MoyoDrunk</stateEffecter>
 				<severityIndices>3~5</severityIndices>
 			</li>
 		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<DeepblueStatSpeed>-1</DeepblueStatSpeed>
+				</statOffsets>
+			</li>
+		</stages>	
 	</HediffDef>
 </Defs>

@@ -101,6 +101,25 @@
 				</pitchRange>
 			</li>
 		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Industrial_HarpoonGun</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>WeaponSound/Industrial_HarpoonGun</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
 	</SoundDef>	
 	<SoundDef>
 		<defName>Laminar_Pistol</defName>

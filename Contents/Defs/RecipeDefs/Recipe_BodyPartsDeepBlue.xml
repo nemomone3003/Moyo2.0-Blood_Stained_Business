@@ -55,19 +55,19 @@
 	</RecipeDef>
 	<!-- 조잡한 딥블루 추출기 -->
 	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
-		<defName>Install_CrudeDeepBlueExtracter</defName>
+		<defName>Install_DeepBlueExtracter_Crude</defName>
 		<label>install crude deepblue extracter</label>
 		<description>Install a crude deepblue extracter.</description>
 		<descriptionHyperlinks>
-			<ThingDef>CrudeDeepBlueExtracter</ThingDef>
-			<HediffDef>CrudeDeepBlueExtracter</HediffDef>
+			<ThingDef>DeepBlueExtracter_Crude</ThingDef>
+			<HediffDef>DeepBlueExtracter_Crude</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing crude deepblue extracter.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>CrudeDeepBlueExtracter</li>
+						<li>DeepBlueExtracter_Crude</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -75,27 +75,27 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>CrudeDeepBlueExtracter</li>
+				<li>DeepBlueExtracter_Crude</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Torso</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>CrudeDeepBlueExtracter</addsHediff>
+		<addsHediff>DeepBlueExtracter_Crude</addsHediff>
 		<incompatibleWithHediffTags>
 			<li>DeepBlueExtracter</li>
 		</incompatibleWithHediffTags>
 	</RecipeDef>
 	<RecipeDef ParentName="SurgeryRemoveImplant_Moyo">
-		<defName>Remove_CrudeDeepBlueExtracter</defName>
+		<defName>Remove_DeepBlueExtracter_Crude</defName>
 		<label>remove crude deepblue extracter</label>
 		<description>Remove crude deepblue extracter.</description>
 		<descriptionHyperlinks>
-			<ThingDef>CrudeDeepBlueExtracter</ThingDef>
-			<HediffDef>CrudeDeepBlueExtracter</HediffDef>
+			<ThingDef>DeepBlueExtracter_Crude</ThingDef>
+			<HediffDef>DeepBlueExtracter_Crude</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Removing crude deepblue extracter.</jobString>
-		<removesHediff>CrudeDeepBlueExtracter</removesHediff>
+		<removesHediff>DeepBlueExtracter_Crude</removesHediff>
 	</RecipeDef>	
 	<!-- 딥블루 추출기 -->
 	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
@@ -106,7 +106,7 @@
 			<ThingDef>DeepBlueExtracter</ThingDef>
 			<HediffDef>DeepBlueExtracter</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing crude deepblue extracter.</jobString>
+		<jobString>Installing deepblue extracter.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -140,5 +140,93 @@
 		</descriptionHyperlinks>
 		<jobString>Removing deepblue extracter.</jobString>
 		<removesHediff>DeepBlueExtracter</removesHediff>
-	</RecipeDef>		
+	</RecipeDef>
+	<!-- 어비스테크 딥블루 추출기 -->
+	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
+		<defName>Install_DeepBlueExtracter_Abysstech</defName>
+		<label>install abysstech deepblue extracter</label>
+		<description>Install an abysstech deepblue extracter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DeepBlueExtracter_Abysstech</ThingDef>
+			<HediffDef>DeepBlueExtracter_Abysstech</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing abysstech deepblue extracter.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DeepBlueExtracter_Abysstech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DeepBlueExtracter_Abysstech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DeepBlueExtracter_Abysstech</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>DeepBlueExtracter</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryRemoveImplant_Moyo">
+		<defName>Remove_DeepBlueExtracter_Abysstech</defName>
+		<label>remove abysstech deepblue extracter</label>
+		<description>Remove abysstech deepblue extracter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DeepBlueExtracter_Abysstech</ThingDef>
+			<HediffDef>DeepBlueExtracter_Abysstech</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing deepblue extracter.</jobString>
+		<removesHediff>DeepBlueExtracter_Abysstech</removesHediff>
+	</RecipeDef>
+	<!-- 블루버스터 수확기 -->
+	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
+		<defName>Install_DeepBlueExtracter_Blueburst</defName>
+		<label>install blueburster harvester</label>
+		<description>Install a blueburster harvester.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DeepBlueExtracter_Blueburst</ThingDef>
+			<HediffDef>DeepBlueExtracter_Blueburst</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing blueburster harvester.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DeepBlueExtracter_Blueburst</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DeepBlueExtracter_Blueburst</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DeepBlueExtracter_Blueburst</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>DeepBlueExtracter</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryRemoveImplant_Moyo">
+		<defName>Remove_DeepBlueExtracter_Blueburst</defName>
+		<label>remove blueburster harvester</label>
+		<description>Remove blueburster harvester.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DeepBlueExtracter_Blueburst</ThingDef>
+			<HediffDef>DeepBlueExtracter_Blueburst</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing blueburster harvester.</jobString>
+		<removesHediff>DeepBlueExtracter_Blueburst</removesHediff>
+	</RecipeDef>	
 </Defs>

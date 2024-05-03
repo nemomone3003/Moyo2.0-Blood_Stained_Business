@@ -6,7 +6,7 @@
 		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>		
+		<passability>PassThroughOnly</passability>
 		<graphicData>
 			<texPath>Building/MoyoBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -17,11 +17,12 @@
 				<cornerBL>Damage/Corner</cornerBL>
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
-		</graphicData>	
+		</graphicData>
 		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>8000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
 			<Flammability>0.5</Flammability>
+			<WorkTableEfficiencyFactor>1.1</WorkTableEfficiencyFactor>
 		</statBases>
 		<size>(3,1)</size>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -35,6 +36,7 @@
 		</costList>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
 		<researchPrerequisites>
@@ -44,6 +46,9 @@
 			<li>Make_ComponentIndustrial</li>
 			<li>Make_ComponentSpacer</li>
 		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<designationCategory>Production</designationCategory>
 		<minifiedDef/>
 		<thingCategories Inherit="false"/>
@@ -81,7 +86,7 @@
 		<label>abysstech fabrication module</label>
 		<description>Installed on abysstech production bench to boost its production capabilities.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<passability>PassThroughOnly</passability>		
+		<passability>PassThroughOnly</passability>
 		<graphicData>
 			<texPath>Building/MoyoBenchUpgrade</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -131,9 +136,104 @@
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>800</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>			
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>Moyo2.PlaceWorker_OnBuilding</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- 모요 아크화로 -->
+	<ThingDef ParentName="BenchBase">
+		<defName>Moyo_ArcFurnace</defName>
+		<label>abysstech arc furnace</label>
+		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<graphicData>
+			<texPath>Building/MoyoFurnace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5, 4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<WorkTableEfficiencyFactor>1.5</WorkTableEfficiencyFactor>
+		</statBases>
+		<size>(2,3)</size>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<costList>
+			<Steel>200</Steel>
+			<Uranium>50</Uranium>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>Abysstech_Foundry</li>
+		</researchPrerequisites>
+		<recipes>
+			<li>ExtractMetalFromSlag</li>
+			<li>CremateCorpse</li>
+			<li>BurnDrugs</li>
+			<li>SmeltOrDestroyThing</li>
+			<li>SmeltWeapon</li>
+			<li>SmeltApparel</li>
+			<li>DestroyWeapon</li>
+			<li>DestroyApparel</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<designationCategory>Production</designationCategory>
+		<minifiedDef/>
+		<thingCategories Inherit="false"/>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<surfaceType>Item</surfaceType>
+		<!-- <designationHotKey>Misc12</designationHotKey> -->
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>
 </Defs>

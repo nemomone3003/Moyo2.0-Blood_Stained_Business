@@ -15,7 +15,7 @@
 		<!-- - -->
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
@@ -46,15 +46,14 @@
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<!-- <Moyo_Depthweave>60</Moyo_Depthweave> -->
+			<Cloth_Depthweave>80</Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!--개선형 바디슈트-->
@@ -70,8 +69,8 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>125</MaxHitPoints>
-			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
@@ -80,9 +79,6 @@
 			<Insulation_Heat>22.5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.1</MoveSpeed>
-		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
@@ -105,7 +101,7 @@
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<researchPrerequisite>Abysstech_LaminarTheory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -115,9 +111,9 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<!-- <Moyo_Depthweave>90</Moyo_Depthweave> -->
-			<Steel>15</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Cloth_Depthweave>90</Cloth_Depthweave>
+			<DevilstrandCloth>15</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!--고위 바디슈트-->
@@ -133,18 +129,18 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>125</MaxHitPoints>
-			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
 			<Mass>0.5</Mass>
-			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.60</ArmorRating_Heat>
-			<Insulation_Cold>35</Insulation_Cold>
-			<Insulation_Heat>22.5</Insulation_Heat>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>27.5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.1</MoveSpeed>
+			<SocialImpact>0.2</SocialImpact>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -168,7 +164,7 @@
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -178,9 +174,9 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<!-- <Moyo_Depthweave>90</Moyo_Depthweave> -->
-			<Steel>15</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Cloth_Depthweave>90</Cloth_Depthweave>
+			<DevilstrandCloth>30</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!--홀로그램 바디슈트-->
@@ -196,8 +192,8 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>125</MaxHitPoints>
-			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
 			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
@@ -207,7 +203,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.1</MoveSpeed>
+			<SocialImpact>0.35</SocialImpact>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -231,7 +227,7 @@
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -241,9 +237,9 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<!-- <Moyo_Depthweave>90</Moyo_Depthweave> -->
-			<Steel>15</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Cloth_Depthweave>90</Cloth_Depthweave>
+			<DevilstrandCloth>30</DevilstrandCloth>
 		</costList>
 	</ThingDef>	
 	<!-- 엔지니어 하네스-->
@@ -259,15 +255,15 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
+			<WorkToMake>15000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>3.5</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Heat>15</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<!-- - -->
@@ -301,8 +297,8 @@
 		</recipeMaker>		
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>90</Steel>
-			<!-- <Moyo_Depthweave>25</Moyo_Depthweave> -->
+			<Steel>45</Steel>
+			<Cloth_Depthweave>150</Cloth_Depthweave>
 		</costList>
 	</ThingDef>	
 	<!-- 엔지니어 재킷-->
@@ -318,16 +314,16 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
+			<WorkToMake>15000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>3.5</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>4</EquipDelay>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>21</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<!-- - -->
 		<apparel>
@@ -360,15 +356,97 @@
 		</recipeMaker>		
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>90</Steel>
-			<!-- <Moyo_Depthweave>25</Moyo_Depthweave> -->
+			<Steel>45</Steel>
+			<Cloth_Depthweave>150</Cloth_Depthweave>
 		</costList>
 	</ThingDef>
+	<!-- 엔지니어 헬멧-->
+	<ThingDef ParentName="Moyo_ApparelCategory_LightHouseHead">
+		<defName>Moyo_EGHelmet</defName>
+		<label>depth engineer welding helmet</label>
+		<description>A welding helmet worn by moyo engineers. Grants protection from the heat of the foundry, as well as any accidents</description>
+		<graphicData>
+			<texPath>Apparel/LighthouseArmor/EGhelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>21</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>73</layer>
+				</defaultData>
+			</drawData>		
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LighthouseArmor/EGhelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo_Industrial</li>
+				<li>Moyo_Engineer</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
+		</recipeMaker>		
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>45</Steel>
+			<Cloth_Depthweave>150</Cloth_Depthweave>
+		</costList>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Moyo_EGHelmet</hediff>
+				<part>Head</part>
+			</li>
+		</comps>		
+	</ThingDef>
+	<!--헬멧 헤디프-->
+	<HediffDef>
+		<defName>Moyo_EGHelmet</defName>
+		<label>welding helmet</label>
+		<description>Debug.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>		
 	<!-- 유선형 잠수용 쉘-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_StreamlineDivingShell</defName>
-		<label>streamline diving shell</label>
-		<description>A diving suit worn by abyssstriders of the lighthouse.</description>
+		<label>depth engineer welding hemet</label>
+		<description>A welding hemet worn by moyo engineers. Grants protection from the heat of the foundry, as well as any accidents.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -419,11 +497,11 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
 		</recipeMaker>		
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>90</Steel>
-			<!-- <Moyo_Depthweave>25</Moyo_Depthweave> -->
-		</costList>
-	</ThingDef>	
+			<ComponentSpacer>3</ComponentSpacer>
+			<Abyssteel>90</Abyssteel>
+			<Cloth_Depthweave>25</Cloth_Depthweave>
+		</costList>		
+	</ThingDef>
 	<!-- 유선형 잠수용 헬멧-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_StreamlineDivingHelmet</defName>
@@ -475,9 +553,9 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
 		</recipeMaker>		
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>90</Steel>
-			<!-- <Moyo_Depthweave>25</Moyo_Depthweave> -->
+			<ComponentSpacer>1</ComponentSpacer>
+			<Abyssteel>45</Abyssteel>
+			<Cloth_Depthweave>10</Cloth_Depthweave>
 		</costList>
 	</ThingDef>	
 	<!-- 심층 잠수용 쉘-->
@@ -535,9 +613,9 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
 		</recipeMaker>		
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>90</Steel>
-			<!-- <Moyo_Depthweave>25</Moyo_Depthweave> -->
+			<ComponentSpacer>3</ComponentSpacer>
+			<Abyssteel>120</Abyssteel>
+			<Cloth_Depthweave>10</Cloth_Depthweave>
 		</costList>
 	</ThingDef>	
 	<!-- 심층 잠수용 헬멧-->
@@ -591,9 +669,9 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
 		</recipeMaker>		
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>90</Steel>
-			<!-- <Moyo_Depthweave>25</Moyo_Depthweave> -->
+			<ComponentSpacer>1</ComponentSpacer>
+			<Abyssteel>60</Abyssteel>
+			<Cloth_Depthweave>5</Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 </Defs>

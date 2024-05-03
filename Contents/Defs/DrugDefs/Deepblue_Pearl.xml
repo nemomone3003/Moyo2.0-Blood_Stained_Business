@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="Moyo_DrugPearl" ParentName="MakeableDrugPillBase" Abstract="True">
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsPearl</li>
+		</tradeTags>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<baseIngestTicks>50</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+		</ingestible>
+		<recipeMaker>
+			<workAmount>400</workAmount>
+			<productCount>3</productCount>
+			<targetCountAdjustment>3</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<!-- 조이펄 -->
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBPearl_Joy</defName>
+		<label>joypearl</label>
+		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Joy</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/JoyPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<BlueSerum>2</BlueSerum>
+			<PsychoidLeaves>10</PsychoidLeaves>
+		</costList>
+		<recipeMaker>
+			<workAmount>600</workAmount>
+			<productCount>3</productCount>
+			<targetCountAdjustment>3</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<ingestible>
+			<baseIngestTicks>50</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<joyKind>Chemical</joyKind>
+			<joy>0.25</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Joy</hediffDef>
+					<severity>0.2</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.11</existingAddictionSeverityOffset>
+				<needLevelOffset>0.11</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsPearl</li>
+		</tradeTags>
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Joy</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on joypearl</label>
+		<labelNoun>a joypearl high</labelNoun>
+		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBPearl_Joy</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<painFactor>0.95</painFactor>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<painFactor>0.75</painFactor>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<painFactor>0.55</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painFactor>0.1</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.35</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDeF>
+		<defName>DBThought_Joy</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DBHediff_Joy</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<description>A pill a day keeps the worries away.</description>
+				<baseMoodEffect>18</baseMoodEffect>
+			</li>
+			<li>
+				<description>A numbing sense of happiness.</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+			<li>
+				<description>there are no excess for hapiness. More the merrier.</description>
+				<baseMoodEffect>37</baseMoodEffect>
+			</li>
+			<li>
+				<description>I can feel the rainbow in my hands!</description>
+				<baseMoodEffect>55</baseMoodEffect>
+			</li>
+			<li>
+				<description>IM HAPPY!!</description>
+				<baseMoodEffect>77</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>
+	<!-- 크리스탈펄 -->
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBPearl_Crystal</defName>
+		<label>crystal pearl</label>
+		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Crystal</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/CrystalPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>22</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<BlueSerum>2</BlueSerum>
+			<Neutroamine>6</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workAmount>600</workAmount>
+			<productCount>3</productCount>
+			<targetCountAdjustment>3</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<ingestible>
+			<baseIngestTicks>50</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<joyKind>Chemical</joyKind>
+			<joy>0.1</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.33</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Crystal</hediffDef>
+					<severity>0.2</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.11</existingAddictionSeverityOffset>
+				<needLevelOffset>0.11</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Crystal</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on crystal pearl</label>
+		<labelNoun>a crystal pearl high</labelNoun>
+		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBPearl_Crystal</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+					<MentalBreakThreshold>0.01</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>-0.1</GlobalLearningFactor>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+					<MentalBreakThreshold>0.03</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>-0.2</GlobalLearningFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+					<MentalBreakThreshold>0.9</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>-0.45</GlobalLearningFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>1</WorkSpeedGlobal>
+					<MentalBreakThreshold>0.15</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>-0.8</GlobalLearningFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- 싱커펄 -->
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBPearl_Thinker</defName>
+		<label>thinker pearl</label>
+		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Thinker</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/ThinkerPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>22</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<BlueSerum>2</BlueSerum>
+			<Neutroamine>6</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workAmount>600</workAmount>
+			<productCount>3</productCount>
+			<targetCountAdjustment>3</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<ingestible>
+			<baseIngestTicks>50</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<joyKind>Chemical</joyKind>
+			<joy>0.1</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.33</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Thinker</hediffDef>
+					<severity>0.2</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.11</existingAddictionSeverityOffset>
+				<needLevelOffset>0.11</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Thinker</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on thinker pearl</label>
+		<labelNoun>a thinker pearl high</labelNoun>
+		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBPearl_Thinker</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ResearchSpeed>0.1</ResearchSpeed>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">0.05</HackingSpeed>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<ResearchSpeed>0.15</ResearchSpeed>
+					<MentalBreakThreshold>0.01</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">0.15</HackingSpeed>
+				</statFactors>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<ResearchSpeed>0.2</ResearchSpeed>
+					<MentalBreakThreshold>0.03</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">0.3</HackingSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<ResearchSpeed>0.3</ResearchSpeed>
+					<MentalBreakThreshold>0.09</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>0.4</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">0.55</HackingSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<ResearchSpeed>0.45</ResearchSpeed>
+					<MentalBreakThreshold>0.15</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<GlobalLearningFactor>0.65</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">0.70</HackingSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- 알루링펄 -->
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBPearl_Alluring</defName>
+		<label>alluring pearl</label>
+		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Alluring</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/AlluringPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>22</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<BlueSerum>2</BlueSerum>
+			<Neutroamine>6</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workAmount>600</workAmount>
+			<productCount>3</productCount>
+			<targetCountAdjustment>3</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<ingestible>
+			<baseIngestTicks>50</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<joyKind>Chemical</joyKind>
+			<joy>0.1</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.33</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Alluring</hediffDef>
+					<severity>0.2</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.11</existingAddictionSeverityOffset>
+				<needLevelOffset>0.11</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Alluring</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on alluring pearl</label>
+		<labelNoun>a alluring pearl high</labelNoun>
+		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBPearl_Alluring</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>0.1</SocialImpact>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<SocialImpact>0.15</SocialImpact>
+					<PawnBeauty>1</PawnBeauty>
+					<MentalBreakThreshold>0.01</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<statOffsets>
+					<SocialImpact>0.25</SocialImpact>
+					<PawnBeauty>1</PawnBeauty>
+					<MentalBreakThreshold>0.03</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<SocialImpact>0.35</SocialImpact>
+					<PawnBeauty>2</PawnBeauty>
+					<MentalBreakThreshold>0.09</MentalBreakThreshold>
+				</statOffsets>
+				<mentalStateGivers>
+					<li>
+						<mentalState>BedroomTantrum</mentalState>
+						<mtbDays>10</mtbDays>
+					</li>
+					<li>
+						<mentalState>Wander_OwnRoom</mentalState>
+						<mtbDays>3</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<statOffsets>
+					<SocialImpact>0.55</SocialImpact>
+					<PawnBeauty>2</PawnBeauty>
+					<MentalBreakThreshold>0.15</MentalBreakThreshold>
+				</statOffsets>
+				<mentalStateGivers>
+					<li>
+						<mentalState>BedroomTantrum</mentalState>
+						<mtbDays>5</mtbDays>
+					</li>
+					<li>
+						<mentalState>Wander_OwnRoom</mentalState>
+						<mtbDays>2</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- 넘펄 -->
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBPearl_Numb</defName>
+		<label>numb pearl</label>
+		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Numb</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/NumbPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<costList>
+			<BlueSerum>2</BlueSerum>
+			<PsychoidLeaves>10</PsychoidLeaves>
+		</costList>
+		<recipeMaker>
+			<workAmount>600</workAmount>
+			<productCount>3</productCount>
+			<targetCountAdjustment>3</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<ingestible>
+			<baseIngestTicks>50</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<joyKind>Chemical</joyKind>
+			<joy>0.25</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Numb</hediffDef>
+					<severity>0.2</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.11</existingAddictionSeverityOffset>
+				<needLevelOffset>0.11</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsPearl</li>
+		</tradeTags>
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Numb</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on numb pearl</label>
+		<labelNoun>a numb pearl high</labelNoun>
+		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBPearl_Numb</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.7</painFactor>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<painFactor>0.55</painFactor>
+				<forgetMemoryThoughtMtbDays>5</forgetMemoryThoughtMtbDays>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<painFactor>0.2</painFactor>
+				<forgetMemoryThoughtMtbDays>3</forgetMemoryThoughtMtbDays>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<painFactor>0.05</painFactor>
+				<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painFactor>0</painFactor>
+				<forgetMemoryThoughtMtbDays>0.5</forgetMemoryThoughtMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>DBHediff_NumbDown</hediff>
+						<mtbDays>0.2</mtbDays>
+					</li>
+				</hediffGivers>				
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>DBHediff_NumbDown</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>numbing hibernation</label>
+		<labelNoun>a numbing hibernation</labelNoun>
+		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBPearl_Numb</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<hungerRateFactor>0.3</hungerRateFactor>
+				<forgetMemoryThoughtMtbDays>0.5</forgetMemoryThoughtMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDeF>
+		<defName>DBThought_Numb</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DBHediff_Numb</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<description>A numbing feel.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>
+</Defs>

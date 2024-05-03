@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="Moyo_DrugBooster" ParentName="MakeableDrugPillBase" Abstract="True">
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>
+		<techLevel>Industrial</techLevel>		
+		<ingestible>
+			<baseIngestTicks>100</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+		</ingestible>
+		<stackLimit>25</stackLimit>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<productCount>1</productCount>
+			<targetCountAdjustment>1</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>		
+	</ThingDef>
+	
+	<!-- 바이탈 부스터 -->	
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBBooster_Medi</defName>
+		<label>medi booster</label>
+		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Medi</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>	
+		<graphicData>
+			<texPath>Item/BlueSerum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>72</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<costList>
+			<BlueSerum>1</BlueSerum>
+			<GoJuice>2</GoJuice>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<productCount>1</productCount>
+			<targetCountAdjustment>1</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>			
+		<ingestible>
+			<baseIngestTicks>100</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>		
+			<outcomeDoers>		
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Medi</hediffDef>
+					<severity>0.6</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>	
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
+				<needLevelOffset>0.25</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>		
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Medi</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on medi booster</label>
+		<labelNoun>a medi booster high</labelNoun>
+		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBBooster_Medi</ThingDef>
+		</descriptionHyperlinks>	
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_HealPermanentWounds"/>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>1.5</InjuryHealingFactor>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.34</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<InjuryHealingFactor>2</InjuryHealingFactor>
+					<ImmunityGainSpeed>1</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.68</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.6</setMax>
+					</li>
+				</capMods>
+				<statOffsets>
+					<InjuryHealingFactor>3</InjuryHealingFactor>
+					<ImmunityGainSpeed>2</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- 오르카 부스터 -->	
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBBooster_Orca</defName>
+		<label>orca booster</label>
+		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Orca</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/BlueSerum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<costList>
+			<BlueSerum>1</BlueSerum>
+			<GoJuice>2</GoJuice>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<productCount>1</productCount>
+			<targetCountAdjustment>1</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>			
+		<ingestible>
+			<baseIngestTicks>100</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.45</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.15</offset>
+				</li>				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Orca</hediffDef>
+					<severity>0.6</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>	
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
+				<needLevelOffset>0.25</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>		
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Orca</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on orca booster</label>
+		<labelNoun>a orca booster high</labelNoun>
+		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBBooster_Orca</ThingDef>
+		</descriptionHyperlinks>	
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.25</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.2</painFactor>
+				<statOffsets>
+					<MeleeHitChance>2</MeleeHitChance>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.4</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.34</minSeverity>
+				<painFactor>0.1</painFactor>
+				<statOffsets>
+					<MeleeHitChance>3</MeleeHitChance>
+					<MeleeDodgeChance>3</MeleeDodgeChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.68</minSeverity>
+				<painFactor>0</painFactor>
+				<statOffsets>
+					<MeleeHitChance>5</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.6</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- 히드라 부스터 -->	
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBBooster_Hydra</defName>
+		<label>hydra booster</label>
+		<description>Penoxycyline modified with deepblue to act as an antibiotic. Cures/blocks malaria, sleeping sicknes and plague for a single time. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Hydra</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>		
+		<graphicData>
+			<texPath>Item/BlueSerum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>		
+		<costList>
+			<BlueSerum>1</BlueSerum>
+			<Penoxycyline>4</Penoxycyline>
+			<Neutroamine>5</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<productCount>1</productCount>
+			<targetCountAdjustment>1</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>			
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.45</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.15</offset>
+				</li>				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Hydra</hediffDef>
+					<severity>0.6</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>	
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
+				<needLevelOffset>0.25</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags inherit="false">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>		
+	</ThingDef>
+	<!-- penoxy-blue hediff-->
+	<HediffDef>
+		<defName>DBHediff_Hydra</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on hydra booster</label>
+		<labelNoun>a hydra booster high</labelNoun>
+		<description>Penoxyblue-induced cure/immunity to certain illnesses. This is a One-time effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBBooster_Hydra</ThingDef>
+		</descriptionHyperlinks>	
+		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.25</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.2</painFactor>
+				<statOffsets>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<RangedCooldownFactor>-0.1</RangedCooldownFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>					
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.34</minSeverity>
+				<painFactor>0.1</painFactor>
+				<statOffsets>
+					<AimingDelayFactor>-0.15</AimingDelayFactor>
+					<RangedCooldownFactor>-0.15</RangedCooldownFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>					
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.68</minSeverity>
+				<painFactor>0</painFactor>
+				<statOffsets>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
+					<RangedCooldownFactor>-0.2</RangedCooldownFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>					
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

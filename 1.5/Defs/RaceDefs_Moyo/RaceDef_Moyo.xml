@@ -17,7 +17,7 @@
 						<reactions>
 							<li Class="IngestionOutcomeDoer_GiveHediff">
 								<hediffDef>DeepBlueOverFlow</hediffDef>
-								<severity>0.23</severity>
+								<severity>0.1</severity>
 							</li>
 						</reactions>
 					</li>
@@ -80,7 +80,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</bodyTypes>
 					<!-- 흰머리 설정 -->
-					<oldHairAgeRange>65~95</oldHairAgeRange>
+					<oldHairAgeRange>75~95</oldHairAgeRange>
 					<oldHairColorGen Class="ColorGenerator_Options">
 						<options>
 							<li>
@@ -444,9 +444,9 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Moyo_BigHelmet</li>
+									</hiddenUnderApparelTag>
 								</Apparel>
 							</conditions>
 							<offsets>
@@ -482,9 +482,9 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Moyo_BigHelmet</li>
+									</hiddenUnderApparelTag>
 								</Apparel>
 							</conditions>
 							<offsets>
@@ -528,6 +528,7 @@
 										<li>Moyo_BigHelmet</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Drafted>false</Drafted>
 							</conditions>
 							<offsets>
 								<north>
@@ -546,6 +547,12 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
+								<Hediff For="Moyo_EGHelmet">
+									<path>Apparel/LighthouseArmor/EGvisor_up</path>
+									<extendedGraphics>
+										<Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted>
+									</extendedGraphics>
+								</Hediff>
 								<Hediff For="Moyo_CartelHood">Apparel/Cartel/CartelHood</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
@@ -596,10 +603,10 @@
 							<key>Apparel_Pants</key>
 							<value>Apparel/ApparelReplacer/MoyoWearPants</value>
 						</li>
-						<!-- <li> -->
-						<!-- <key>Apparel_BasicShirt</key> -->
-						<!-- <value>Apparel/ApparelReplacer/MoyoWearDuster</value> -->
-						<!-- </li> -->
+						<li>
+						<key>Apparel_BasicShirt</key>
+						<value>Apparel/ApparelReplacer/MoyoWearTShirt</value>
+						</li>
 						<li>
 							<key>Apparel_CollarShirt</key>
 							<value>Apparel/ApparelReplacer/MoyoWearShirt</value>
@@ -612,6 +619,10 @@
 							<key>Apparel_Jacket</key>
 							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
 						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_BodyStrap</key>
+							<value>Apparel/ApparelReplacer/MoyoWearSlave</value>
+						</li>						
 					</individualPaths>
 					<bodyTypeFallback>Thin</bodyTypeFallback>
 					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>
@@ -648,6 +659,18 @@
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<apparelList>
+					<li>Moyo_BasicSuit</li>
+					<li>Moyo_AdvancedSuit</li>
+					<li>Moyo_RoyalSuit</li>
+					<li>Moyo_HololSuit</li>
+					<li>Moyo_EGHarness</li>
+					<li>Moyo_EGJacket</li>
+					<li>Moyo_EGHelmet</li>
+					<li>Moyo_StreamlineDivingShell</li>
+					<li>Moyo_StreamlineDivingHelmet</li>
+					<li>Moyo_DeepDivingShell</li>
+					<li>Moyo_DeepDivingHelmet</li>
+					<li>Moyo_CartelHood</li>
 				</apparelList>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
 					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>

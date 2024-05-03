@@ -16,12 +16,22 @@
 		<techLevel>Industrial</techLevel>
 		<thingCategories Inherit="False">
 			<li>Moyo_ApparelCategory_LightHouse</li>
-		</thingCategories>		
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="Moyo_ApparelCategory_LightHouseHead" ParentName="ApparelMakeableBase">
 		<thingCategories Inherit="False">
-			<li>Moyo_ApparelCategory_LightHouse</li>
+			<li>Moyo_ApparelCategory_LightHouseHead</li>
 		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	<!-- 옷 카테고리-카르텔 -->
 	<ThingCategoryDef>
@@ -39,11 +49,11 @@
 		<techLevel>Industrial</techLevel>
 		<thingCategories Inherit="False">
 			<li>Moyo_ApparelCategory_Cartel</li>
-		</thingCategories>		
+		</thingCategories>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="Moyo_ApparelCategory_CartelHead" ParentName="ApparelMakeableBase">
 		<thingCategories Inherit="False">
 			<li>Moyo_ApparelCategory_CartelHead</li>
 		</thingCategories>
-	</ThingDef>	
+	</ThingDef>
 </Defs>
