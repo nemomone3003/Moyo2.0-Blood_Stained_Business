@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>HoverCraftWreak</defName>
+    <label>ruined hovercraft</label>
+    <description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(5,3)</size>
+    <drawHighlight>true</drawHighlight>
+    <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+    <graphicData>
+      <texPath>Building/HoverCraft_Wreak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255,255,255)</color>
+	  <drawSize>(7,7)</drawSize>	  
+      <shadowData>
+        <volume>(4.1, 1.0, 1.8)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>true</canOverlapZones>
+    <killedLeavings Inherit="False">
+      <Steel>225</Steel>
+      <Abyssteel>15</Abyssteel>
+      <ChunkSlagSteel>15</ChunkSlagSteel>
+      <ComponentIndustrial>15</ComponentIndustrial>
+	  <MedicineIndustrial>15</MedicineIndustrial>
+	  <MealSurvivalPack>25</MealSurvivalPack>	  
+    </killedLeavings>
+    <costList>
+      <Steel>900</Steel>
+      <Abyssteel>100</Abyssteel>
+      <ComponentIndustrial>60</ComponentIndustrial>
+	  <MedicineIndustrial>60</MedicineIndustrial>
+	  <MealSurvivalPack>100</MealSurvivalPack>
+    </costList>
+    <building Inherit="False">
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <claimable>false</claimable>
+      <alwaysDeconstructible>true</alwaysDeconstructible>
+    </building>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <drawerType>RealtimeOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>1.4</uiIconScale>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>VoidSpire</defName>
+    <label>voidshard spire</label>
+    <description>The remains of some ancient, collapsed structure. Rich in steel.</description>
+    <graphicData>
+      <texPath>Building/VoidSpire</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <drawSize>5</drawSize>
+    </graphicData> 
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+	  <Flammability>0</Flammability>
+    </statBases>	
+    <thingClass>Mineable</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <!-- <castEdgeShadows>true</castEdgeShadows> -->
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+    <saveCompressible>true</saveCompressible>
+    <!-- <staticSunShadowHeight>1.0</staticSunShadowHeight> -->
+    <mineable>true</mineable>
+    <fertility>0</fertility>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>true</isNaturalRock>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <deconstructible>false</deconstructible>
+      <destroyShakeAmount>0</destroyShakeAmount>
+      <supportsWallAttachments>true</supportsWallAttachments>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Abyssteel</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
+      <veinMineable>false</veinMineable>	  
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>4</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>  
+</Defs>

@@ -186,7 +186,7 @@
 		<pathCost>42</pathCost>
 		<costList>
 			<Steel>200</Steel>
-			<Uranium>50</Uranium>
+			<Abyssteel>50</Abyssteel>
 			<ComponentSpacer>1</ComponentSpacer>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>

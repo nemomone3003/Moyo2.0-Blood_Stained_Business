@@ -36,7 +36,7 @@
 			<HediffDef>DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>	
 		<graphicData>
-			<texPath>Item/BlueSerum</texPath>
+			<texPath>Item/MediBooster</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
