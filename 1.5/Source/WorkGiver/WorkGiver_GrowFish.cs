@@ -4,7 +4,7 @@ namespace Moyo2
 {
     public class WorkGiver_GrowFish : WorkGiver_Scanner
     {
-        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_BuildingDefOfs.Moyo_FishTank);
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_ThingDefOfs.Moyo_FishTank);
         // This looks for all the fish tanks that could be worked on
 
         public override PathEndMode PathEndMode => PathEndMode.Touch;

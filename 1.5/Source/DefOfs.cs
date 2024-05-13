@@ -13,14 +13,15 @@
     }
 
     [DefOf]
-    public static class Moyo2_BuildingDefOfs
+    public static class Moyo2_ThingDefOfs
     {
-        static Moyo2_BuildingDefOfs()
+        static Moyo2_ThingDefOfs()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(Moyo2_BuildingDefOfs));
+            DefOfHelper.EnsureInitializedInCtor(typeof(Moyo2_ThingDefOfs));
         }
 
         public static ThingDef Moyo_FishTank;
+        public static ThingDef HadalSpire;
     }
 
     [DefOf]

@@ -4,7 +4,7 @@ namespace Moyo2
 {
     public class WorkGiver_EmptyFishTank : WorkGiver_Scanner
     {
-        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_BuildingDefOfs.Moyo_FishTank);
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_ThingDefOfs.Moyo_FishTank);
         // This looks for all the fish tanks that could be worked on
 
         public override PathEndMode PathEndMode => PathEndMode.Touch;
@@ -12,7 +12,7 @@ namespace Moyo2
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
-            List<Thing> fishTanksOnMap = pawn.Map.listerThings.ThingsOfDef(Moyo2_BuildingDefOfs.Moyo_FishTank);
+            List<Thing> fishTanksOnMap = pawn.Map.listerThings.ThingsOfDef(Moyo2_ThingDefOfs.Moyo_FishTank);
             for (int i = 0; i < fishTanksOnMap.Count; i++)
             {
                 if (((ThingClass_FishTank)fishTanksOnMap[i]).FinishedGrowing)
