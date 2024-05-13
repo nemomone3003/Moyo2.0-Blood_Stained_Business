@@ -41,7 +41,7 @@
 		<race>
 			<body>Fish_Body</body>
 			<hasGenders>false</hasGenders>
-			<baseBodySize>2.3</baseBodySize>
+			<baseBodySize>1.6</baseBodySize>
 			<baseHungerRate>0.01</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -112,7 +112,7 @@
 		<race>
 			<body>Cephalopod_Body</body>
 			<hasGenders>false</hasGenders>
-			<baseBodySize>1.6</baseBodySize>
+			<baseBodySize>1.45</baseBodySize>
 			<baseHungerRate>0.01</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -137,7 +137,7 @@
 			</hediffGiverSets>			
 		</race>
 		<butcherProducts>
-			<Neutroamine>25</Neutroamine>
+			<Neutroamine>10</Neutroamine>
 		</butcherProducts>		
 		<fishTankSettings>
 			<ticksToGrow>800</ticksToGrow>

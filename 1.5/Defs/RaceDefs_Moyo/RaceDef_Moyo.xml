@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Alien_Moyo</defName>
 		<label>Moyo</label>
-		<description>A humanoid race living in cities under the sea. Having traits similar to sea creatures, their blood contains substances that can be used for various medical uses.\n\nDescendants of glitterworld explorers who settled in the deep sea, generations of body modifications has led to their current form. Spreading far and wide into the rim, they built many cities and prospered. Until now.</description>
+		<description>Inhabitants of the 'Lighthouse', a city submerged beneath the waves, has emerged to pursue their own interests. A substance known as Deepblue flows in their veins, serving a variety of pharmaceutical and medical purposes, not to mention producing drugs.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BlueBloodBag</ThingDef>
 		</descriptionHyperlinks>
@@ -528,7 +528,7 @@
 										<li>Moyo_BigHelmet</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
-								<Drafted>false</Drafted>
+								<!-- <Drafted>false</Drafted> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -622,7 +622,7 @@
 						<li MayRequire="Ludeon.RimWorld.Ideology">
 							<key>Apparel_BodyStrap</key>
 							<value>Apparel/ApparelReplacer/MoyoWearSlave</value>
-						</li>						
+						</li>
 					</individualPaths>
 					<bodyTypeFallback>Thin</bodyTypeFallback>
 					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>
@@ -873,10 +873,8 @@
 		</comps>
 		<!--=============================================================================================================================-->
 		<recipes>
-			<!-- <li>Install_TailProsthesis_Moyo</li> -->
-			<!-- <li>Install_TailBionic_Moyo</li> -->
-			<!-- <li>Install_CrudeDeepBlueExtracter</li> -->
-			<!-- <li>Install_DeepBlueExtracter</li> -->
+			<!-- <li>CureBloodRot_BlueMed</li> -->
+			<!-- <li>CureAbasia_BlueMed</li> -->
 		</recipes>
 		<!--==맨손전투===================================================================================================================-->
 		<tools>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- 모요 심장이식 -->
-
 	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
 		<defName>InstallNaturalHeart_Moyo</defName>
 		<label>install heart</label>
@@ -94,5 +93,39 @@
 			<li>MoyoHeart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicHeart</addsHediff>
+	</RecipeDef>
+
+	<!-- 딥블루 축적 제거 -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CureDeepBlueTolerance</defName>
+		<label>clear deepblue buildup</label>
+		<description>Administer special enzymes that can clear residue deepblue in the body.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Clearing deepblue residue</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>DeepBlueTolerance</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cleared {1}'s deepblue buildup.</successfullyRemovedHediffMessage>
+		<surgerySuccessChanceFactor>4</surgerySuccessChanceFactor>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Abyssteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Abyssteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
 	</RecipeDef>	
 </Defs>

@@ -5,7 +5,7 @@
 	<ThingDef ParentName="MedicineBase">
 		<defName>BlueMedicine</defName>
 		<label>Bluemed</label>
-		<description>A medicine containing deepblue. deepblue increases the medicine's effectiveness while having no worries of deepblue dependancy.</description>
+		<description>Potent medicine utilizing deepblue. deepblue increases the medicine's effectiveness while having no worries of deepblue dependancy.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BlueSerum</ThingDef>
 		</descriptionHyperlinks>				

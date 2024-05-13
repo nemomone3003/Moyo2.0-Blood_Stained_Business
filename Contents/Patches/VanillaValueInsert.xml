@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Apparel_Pants"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath>
 		<value>
 			<wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
+		<xpath>Defs/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
 		<value>
 			<li>Moyo_FabricationBench</li>
 			<li>Moyo_ArcFurnace</li>
 		</value>
 	</Operation>
-
-	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath> -->
-		<!-- <value> -->
-			<!-- <li>MoyoGRModule</li> -->
-		<!-- </value> -->
-	<!-- </Operation>	 -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+		<value>
+			<li>HadalSpire</li>
+		</value>
+	</Operation>
+	
+	<!-- 딥블루 축적 제거 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
+		<value>
+			<li>CureDeepBlueTolerance</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+		<value>
+			<li>CureDeepBlueTolerance</li>
+		</value>
+	</Operation>	
 
 	<!-- <Operation Class="PatchOperationConditional"> -->
 		<!-- <xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]</xpath> -->

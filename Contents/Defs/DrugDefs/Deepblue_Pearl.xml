@@ -26,7 +26,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Joy</defName>
 		<label>joypearl</label>
-		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Joy</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -99,11 +99,11 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on joypearl</label>
 		<labelNoun>a joypearl high</labelNoun>
-		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Joy</ThingDef>
 		</descriptionHyperlinks>
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -179,7 +179,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Crystal</defName>
 		<label>crystal pearl</label>
-		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Crystal</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -252,11 +252,11 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on crystal pearl</label>
 		<labelNoun>a crystal pearl high</labelNoun>
-		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Crystal</ThingDef>
 		</descriptionHyperlinks>
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -336,7 +336,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Thinker</defName>
 		<label>thinker pearl</label>
-		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Thinker</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -409,11 +409,11 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on thinker pearl</label>
 		<labelNoun>a thinker pearl high</labelNoun>
-		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Thinker</ThingDef>
 		</descriptionHyperlinks>
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -501,7 +501,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Alluring</defName>
 		<label>alluring pearl</label>
-		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Alluring</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -574,11 +574,11 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on alluring pearl</label>
 		<labelNoun>a alluring pearl high</labelNoun>
-		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Alluring</ThingDef>
 		</descriptionHyperlinks>
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -652,7 +652,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Numb</defName>
 		<label>numb pearl</label>
-		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Numb</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -725,11 +725,11 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on numb pearl</label>
 		<labelNoun>a numb pearl high</labelNoun>
-		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Numb</ThingDef>
 		</descriptionHyperlinks>
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -788,15 +788,16 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>numbing hibernation</label>
 		<labelNoun>a numbing hibernation</labelNoun>
-		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<description>Over consuming numb pearls a little too much has led the body extra numb to stimulation. This includes signals from the brain. Until the effect clears they will sleep soundly for a while. At the very least, they require less food.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Numb</ThingDef>
 		</descriptionHyperlinks>
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
+		<preventsCrawling>true</preventsCrawling>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.2</severityPerDay>
@@ -807,7 +808,7 @@
 			<li>
 				<painFactor>0</painFactor>
 				<hungerRateFactor>0.3</hungerRateFactor>
-				<forgetMemoryThoughtMtbDays>0.5</forgetMemoryThoughtMtbDays>
+				<forgetMemoryThoughtMtbDays>0.1</forgetMemoryThoughtMtbDays>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>

@@ -51,6 +51,9 @@
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth_Depthweave>80</Cloth_Depthweave>
@@ -105,9 +108,6 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
@@ -168,9 +168,6 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
@@ -231,9 +228,6 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
@@ -241,7 +235,7 @@
 			<Cloth_Depthweave>90</Cloth_Depthweave>
 			<DevilstrandCloth>30</DevilstrandCloth>
 		</costList>
-	</ThingDef>	
+	</ThingDef>
 	<!-- 엔지니어 하네스-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_EGHarness</defName>
@@ -290,17 +284,14 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>45</Steel>
 			<Cloth_Depthweave>150</Cloth_Depthweave>
 		</costList>
-	</ThingDef>	
+	</ThingDef>
 	<!-- 엔지니어 재킷-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_EGJacket</defName>
@@ -349,11 +340,8 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>45</Steel>
@@ -390,7 +378,7 @@
 				<defaultData>
 					<layer>73</layer>
 				</defaultData>
-			</drawData>		
+			</drawData>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -409,11 +397,8 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>45</Steel>
@@ -424,7 +409,7 @@
 				<hediff>Moyo_EGHelmet</hediff>
 				<part>Head</part>
 			</li>
-		</comps>		
+		</comps>
 	</ThingDef>
 	<!--헬멧 헤디프-->
 	<HediffDef>
@@ -441,7 +426,7 @@
 			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
 		</comps>
 		<isBad>false</isBad>
-	</HediffDef>		
+	</HediffDef>
 	<!-- 유선형 잠수용 쉘-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_StreamlineDivingShell</defName>
@@ -491,16 +476,13 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
 			<Abyssteel>90</Abyssteel>
 			<Cloth_Depthweave>25</Cloth_Depthweave>
-		</costList>		
+		</costList>
 	</ThingDef>
 	<!-- 유선형 잠수용 헬멧-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
@@ -547,17 +529,14 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
 			<Abyssteel>45</Abyssteel>
 			<Cloth_Depthweave>10</Cloth_Depthweave>
 		</costList>
-	</ThingDef>	
+	</ThingDef>
 	<!-- 심층 잠수용 쉘-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_DeepDivingShell</defName>
@@ -607,17 +586,14 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
 			<Abyssteel>120</Abyssteel>
 			<Cloth_Depthweave>10</Cloth_Depthweave>
 		</costList>
-	</ThingDef>	
+	</ThingDef>
 	<!-- 심층 잠수용 헬멧-->
 	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
 		<defName>Moyo_DeepDivingHelmet</defName>
@@ -663,11 +639,8 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>			
-		</recipeMaker>		
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
 			<Abyssteel>60</Abyssteel>

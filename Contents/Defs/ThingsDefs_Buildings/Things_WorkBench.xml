@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>Moyo_FabricationBench</defName>
 		<label>abysstech production bench</label>
-		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
+		<description>A workbench for producing abysstech items. It is capable of handling a variety of tasks, from producing tools, components, and apparel to dismantling mechanoids.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -43,8 +43,8 @@
 			<li>Abysstech_Pneumatic</li>
 		</researchPrerequisites>
 		<recipes>
-			<li>Make_ComponentIndustrial</li>
 			<li>Make_ComponentSpacer</li>
+			<li>ButcherCorpseMechanoid</li>
 		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
@@ -84,7 +84,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Moyo_FabricationAddon</defName>
 		<label>abysstech fabrication module</label>
-		<description>Installed on abysstech production bench to boost its production capabilities.</description>
+		<description>An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<graphicData>
@@ -157,7 +157,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>Moyo_ArcFurnace</defName>
 		<label>abysstech arc furnace</label>
-		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
+		<description>Powerful arc furnace used to craft abyssteel. It can extract metals from various items and burn unwanted materials without leaving any ash.. Just throw it in here. *Consumes significant amount of power.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -217,7 +217,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>500</basePowerConsumption>
+				<basePowerConsumption>1800</basePowerConsumption>
 				<shortCircuitInRain>true</shortCircuitInRain>
 			</li>
 			<li Class="CompProperties_Glower">

@@ -51,6 +51,9 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<Mass>1</Mass>
@@ -110,6 +113,9 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<Mass>1</Mass>
@@ -156,6 +162,9 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>			
 		</recipeMaker>
 		<statBases>
 			<Mass>1</Mass>
@@ -176,6 +185,9 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Moyo_FabricationBench</li>
+			</recipeUsers>			
 		</recipeMaker>
 		<statBases>
 			<Mass>1</Mass>

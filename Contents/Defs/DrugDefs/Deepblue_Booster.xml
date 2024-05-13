@@ -28,7 +28,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Medi</defName>
 		<label>medi booster</label>
-		<description>A drug that puts a moyos cardiovascular system in overdrive. it's effect only works on moyo, and other races will simply be dependant to deepblue. More blood can be harvested thanks to this effect but this puts the heart in a great stress, making it burst eventually.\n\n*USE WITH CAUTION*</description>
+		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advice to inject additional doses.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Medi</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -95,13 +95,13 @@
 	<HediffDef>
 		<defName>DBHediff_Medi</defName>
 		<hediffClass>Hediff_High</hediffClass>
-		<label>high on medi booster</label>
-		<labelNoun>a medi booster high</labelNoun>
-		<description>A cardiovascular overdrive in progress. a great amount of blood is being made, putting the heart in great stress. This effect is fatal.</description>
+		<label>active medi booster</label>
+		<labelNoun>active medi booster</labelNoun>
+		<description>Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Medi</ThingDef>
 		</descriptionHyperlinks>	
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -152,7 +152,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Orca</defName>
 		<label>orca booster</label>
-		<description>A medicinal drug which slows bleeding and aids the healing of wounds. Works on every race. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.\n\nA completed form of blueburst, achiving the intended effect of healing without busting someone's heart.</description>
+		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Orca</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -160,7 +160,7 @@
 			<HediffDef>DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Item/BlueSerum</texPath>
+			<texPath>Item/OrcaBooster</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
@@ -227,11 +227,11 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on orca booster</label>
 		<labelNoun>a orca booster high</labelNoun>
-		<description>Regeneration boosting in progress. This will reduce overall bleeding and help the recovery of wounds and infection.</description>
+		<description>Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Orca</ThingDef>
 		</descriptionHyperlinks>	
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
@@ -303,7 +303,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Hydra</defName>
 		<label>hydra booster</label>
-		<description>Penoxycyline modified with deepblue to act as an antibiotic. Cures/blocks malaria, sleeping sicknes and plague for a single time. This comes With the cost of deepblue dependancy and a massive boost to its tolerance.</description>
+		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull's eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Hydra</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -311,7 +311,7 @@
 			<HediffDef>DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>		
 		<graphicData>
-			<texPath>Item/BlueSerum</texPath>
+			<texPath>Item/HydraBooster</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
@@ -372,17 +372,16 @@
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>		
 	</ThingDef>
-	<!-- penoxy-blue hediff-->
 	<HediffDef>
 		<defName>DBHediff_Hydra</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on hydra booster</label>
 		<labelNoun>a hydra booster high</labelNoun>
-		<description>Penoxyblue-induced cure/immunity to certain illnesses. This is a One-time effect.</description>
+		<description>Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Hydra</ThingDef>
 		</descriptionHyperlinks>	
-		<defaultLabelColor>(55,255,165)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>

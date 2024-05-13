@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 푸른약품 수술 -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CureBloodRot_BlueMed</defName>
+		<label>cure blood rot(bluemed)</label>
+		<description>This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing blood rot.</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>BloodRot</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s blood rot.</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlueMedicine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CureAbasia_BlueMed</defName>
+		<label>anti-abasia mechanite infusion(bluemed)</label>
+		<description>This special medical operation uses a massive dose of mechanites to saturate brain tissue and execute a coordinated restructure of neural activity without damaging the brain. It permanently cures a patient's abasia-induced paralysis, but consumes a large amount of bluemeds.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Infusing anti-abasia mechanites.</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>Abasia</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s paralytic abasia.</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlueMedicine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

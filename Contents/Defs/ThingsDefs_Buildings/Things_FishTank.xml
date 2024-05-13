@@ -3,7 +3,7 @@
 	<!-- 물고기 양식장 -->
 	<ThingDef ParentName="BenchBase">
 		<defName>Moyo_FishTank</defName>
-		<label>abysstech fabrication bench</label>
+		<label>abysstech aquaculture tank</label>
 		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
 		<thingClass>Moyo2.ThingClass_FishTank</thingClass>
 		<tickerType>Rare</tickerType>

@@ -32,9 +32,6 @@
 		<defName>Moyo_Heart</defName>
 		<label>moyo heart</label>
 		<description>A biological moyo heart. Pumps blood around the body.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>InstallNaturalHeart_Moyo</RecipeDef>
-		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItem</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

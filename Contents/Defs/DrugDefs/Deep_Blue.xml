@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BlueBloodBag</defName>
 		<label>blue bloodbag</label>
-		<description>A bag of moyo blood extracted by various means. There is a saying that it contains a substance called deepblue.</description>
+		<description>A bag of moyo blood, can be refined to produce deepblue.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Alien_Moyo</ThingDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -89,7 +89,7 @@
 	<ThingDef ParentName="DrugPillBase">
 		<defName>BlueSerum</defName>
 		<label>blue serum</label>
-		<description>Deepblue extracted from moyo blood. When injected, deepblue modifies the subject’s body, increasing their metabolism. There is no known way to reverse this process.\n\nA substance discovered by the moyo while researching their origins. It has many uses medically, but nothing is known about the substance itself.</description>
+		<description>Deepblue extracted from moyo blood. Its useful in various area of pharmaceutical and medical purposes.\n\nInjected to lifeforms other than moyos, it will slowly cause a change in metabolism eventually causing permanent dependancy to deepblue. It doesn't affect moyos in any significant ways. So don't waste it on moyos.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BlueBloodBag</ThingDef>
 			<HediffDef>DeepBlueTolerance</HediffDef>
@@ -172,7 +172,7 @@
 			<ThingDef>BlueSerum</ThingDef>
 		</descriptionHyperlinks>
 		<description>Injested deepblue accumulated inside the body. It will not decay by natural means and needs special enzyme to clear.</description>
-		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_DrugEffectFactor">
 				<chemical>DeepBlue</chemical>
@@ -235,11 +235,12 @@
 		</descriptionHyperlinks>
 		<description>Injested deepblue acts as a part of its host's metabolism. Deepblue decays over time lowering its stability and needs replacements for the body to work as normal.</description>
 		<hediffClass>Hediff_Addiction</hediffClass>
-		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
-		<minSeverity>0.01</minSeverity>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
+		<minSeverity>0.001</minSeverity>
 		<initialSeverity>1</initialSeverity>
 		<causesNeed>Chemical_Deepblue</causesNeed>
 		<everCurableByItem>false</everCurableByItem>
+		<isBad>true</isBad>
 		<comps>
 			<li Class="HediffCompProperties_Discoverable">
 				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
@@ -322,7 +323,7 @@
 			<ThingDef>BlueSerum</ThingDef>
 		</descriptionHyperlinks>
 		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(0.55,0.55,0.80)</defaultLabelColor>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<comps>
