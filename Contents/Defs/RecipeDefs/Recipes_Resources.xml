@@ -4,8 +4,8 @@
 	<RecipeDef>
 		<defName>Make_AbyssteelA</defName>
 		<label>refine abyssteel</label>
-		<description>Make a batch of chemfuel by extracting and condensing wood gas from logs.</description>
-		<jobString>Refining chemfuel from wood.</jobString>
+		<description>Craft abyssteel, a commonly used alloy in the lighthouse.</description>
+		<jobString>Crafting abyssteel.</jobString>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
@@ -47,7 +47,7 @@
 	<RecipeDef>
 		<defName>Make_AbyssteelABulk</defName>
 		<label>refine abyssteel x4</label>
-		<description>Make a batch of chemfuel by extracting and condensing wood gas from logs.</description>
+		<description>Bulk craft abyssteel, a commonly used alloy in the lighthouse.</description>
 		<jobString>Refining chemfuel from wood.</jobString>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -90,7 +90,7 @@
 	<RecipeDef>
 		<defName>Make_AbyssteelB</defName>
 		<label>refine abyssteel(HadalShard)</label>
-		<description>Make a batch of chemfuel by extracting and condensing wood gas from logs.</description>
+		<description>Craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.</description>
 		<jobString>Refining chemfuel from wood.</jobString>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -133,7 +133,7 @@
 	<RecipeDef>
 		<defName>Make_AbyssteelBBulk</defName>
 		<label>refine abyssteel(HadalShard) x4</label>
-		<description>Make a batch of chemfuel by extracting and condensing wood gas from logs.</description>
+		<description>Bulk craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.</description>
 		<jobString>Refining chemfuel from wood.</jobString>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -176,7 +176,7 @@
 	<RecipeDef>
 		<defName>Make_ComponentIndustrial_Moyo</defName>
 		<label>make component(crude)</label>
-		<description>Make a component.</description>
+		<description>Craft component with crude method. It takes a long time.</description>
 		<jobString>Making component.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>

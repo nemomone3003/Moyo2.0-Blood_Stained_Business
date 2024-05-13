@@ -873,8 +873,9 @@
 		</comps>
 		<!--=============================================================================================================================-->
 		<recipes>
-			<!-- <li>CureBloodRot_BlueMed</li> -->
-			<!-- <li>CureAbasia_BlueMed</li> -->
+			<li>CureDeepBlueTolerance</li>
+			<!-- <li>InstallSimpleProstheticHeart_Moyo</li> -->
+			<!-- <li>InstallBionicHeart_Moyo</li>	 -->
 		</recipes>
 		<!--==맨손전투===================================================================================================================-->
 		<tools>

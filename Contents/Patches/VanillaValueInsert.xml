@@ -24,13 +24,7 @@
 	
 	<!-- 딥블루 축적 제거 -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
-		<value>
-			<li>CureDeepBlueTolerance</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes/li</xpath>
 		<value>
 			<li>CureDeepBlueTolerance</li>
 		</value>

@@ -185,6 +185,9 @@
 			<li>
 				<compClass>Moyo2.HediffComp_DestroyOnMoyo</compClass>
 			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0</severityPerDay>
+			</li>			
 		</comps>
 		<stages Inherit="False">
 			<li>

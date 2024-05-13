@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>Moyo_FishTank</defName>
 		<label>abysstech aquaculture tank</label>
-		<description>A workbench for producing abysstech items. Equipped with various advanced tools, it can handle precise production like components to complex production of making abysteel.</description>
+		<description>A tank used for cultivating fish and seaweed in a confined space using various equipment such as water quality management, oxygen filtration, and nutrient supply. It can rear various types of aquatic organisms. If the electricity is cut off, even the growing organisms will die.</description>
 		<thingClass>Moyo2.ThingClass_FishTank</thingClass>
 		<tickerType>Rare</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>
