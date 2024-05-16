@@ -2,7 +2,7 @@
 <Defs>
 	<!-- 푸른약품 수술 -->
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>CureBloodRot_BlueMed</defName>
+		<defName>Moyo2_CureBloodRot_BlueMed</defName>
 		<label>cure blood rot(bluemed)</label>
 		<description>This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.</description>
 		<workerClass>Recipe_RemoveHediff</workerClass>
@@ -20,7 +20,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BlueMedicine</li>
+						<li>Moyo2_BlueMedicine</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -33,7 +33,7 @@
 		</fixedIngredientFilter>
 	</RecipeDef>
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>CureAbasia_BlueMed</defName>
+		<defName>Moyo2_CureAbasia_BlueMed</defName>
 		<label>anti-abasia mechanite infusion(bluemed)</label>
 		<description>This special medical operation uses a massive dose of mechanites to saturate brain tissue and execute a coordinated restructure of neural activity without damaging the brain. It permanently cures a patient's abasia-induced paralysis, but consumes a large amount of bluemeds.</description>
 		<workerClass>Recipe_RemoveHediff</workerClass>
@@ -51,7 +51,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BlueMedicine</li>
+						<li>Moyo2_BlueMedicine</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>

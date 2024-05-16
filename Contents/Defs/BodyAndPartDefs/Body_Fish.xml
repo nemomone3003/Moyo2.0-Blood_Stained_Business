@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BodyDef>
-		<defName>Fish_Body</defName>
+		<defName>Moyo2_FishBody</defName>
 		<label>fish</label>
 		<corePart>
 			<def>Torso</def>
@@ -48,7 +48,7 @@
 					</groups>
 				</li>
 				<li>
-					<def>Moyo_Tail</def>
+					<def>Moyo2_Tail</def>
 					<customLabel>tail</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
@@ -236,7 +236,7 @@
 		</corePart>
 	</BodyDef>
 	<BodyDef>
-		<defName>Cephalopod_Body</defName>
+		<defName>Moyo2_CephalopodBody</defName>
 		<label>cephalopod</label>
 		<corePart>
 			<def>Torso</def>

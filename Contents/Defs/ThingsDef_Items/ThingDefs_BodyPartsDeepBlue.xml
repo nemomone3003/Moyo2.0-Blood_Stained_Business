@@ -2,12 +2,12 @@
 <Defs>
 	<!-- 모요 간단한 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
-		<defName>DeepBlueExtracter_Crude</defName>
+		<defName>Moyo2_DeepBlueExtracter_Crude</defName>
 		<label>crude deepblue extracter</label>
 		<labelNoun>a crude deepblue extracter</labelNoun>
 		<description>A crude deepblue extracter installed. It will produce deepblue every often.\n\nUnistalling will break the extracter.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body.</description>
 		<descriptionHyperlinks>
-			<ThingDef>DeepBlueExtracter_Crude</ThingDef>
+			<ThingDef>Moyo2_DeepBlueExtracter_Crude</ThingDef>
 		</descriptionHyperlinks>
 		<stages>
 			<li>
@@ -18,13 +18,13 @@
 			</li>
 		</stages>
 		<tags>
-			<li>DeepBlueExtracter</li>
+			<li>Moyo2_DeepBlueExtracter</li>
 		</tags>
 	</HediffDef>
 	<ThoughtDef>
-		<defName>Thought_DeepBlueExtracter_Crude</defName>
+		<defName>Thought_Moyo2_DeepBlueExtracter_Crude</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>DeepBlueExtracter_Crude</hediff>
+		<hediff>Moyo2_DeepBlueExtracter_Crude</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li>Masochist</li>
@@ -41,16 +41,16 @@
 		</stages>
 	</ThoughtDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>DeepBlueExtracter_Crude</defName>
+		<defName>Moyo2_DeepBlueExtracter_Crude</defName>
 		<label>crude deepblue extracter</label>
-		<description>A crude deepblue extracter. Install this to a moyo to begin deepblue production.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body. Lets call it, Investment for profit.</description>
+		<description>This crude device filters out deep blue from Moyo's blood. Very few Moyos would actually use this themselves unless they're truly desperate for money, as it's painful and uncomfortable</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
 			<Steel>10</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>TableMachining</li>
 			</recipeUsers>
@@ -64,14 +64,14 @@
 	</ThingDef>
 	<!-- 모요 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
-		<defName>DeepBlueExtracter</defName>
+		<defName>Moyo2_DeepBlueExtracter</defName>
 		<label>deepblue extracter</label>
 		<labelNoun>a deepblue extracter</labelNoun>
-		<description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
+		<description>This device filters out deep blue from Moyo's blood. It's a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.</description>
 		<descriptionHyperlinks>
-			<ThingDef>DeepBlueExtracter</ThingDef>
+			<ThingDef>Moyo2_DeepBlueExtracter</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>DeepBlueExtracter</spawnThingOnRemoved>
+		<spawnThingOnRemoved>Moyo2_DeepBlueExtracter</spawnThingOnRemoved>
 		<stages>
 			<li>
 				<statOffsets>
@@ -80,13 +80,13 @@
 			</li>
 		</stages>
 		<tags>
-			<li>DeepBlueExtracter</li>
+			<li>Moyo2_DeepBlueExtracter</li>
 		</tags>
 	</HediffDef>
 	<ThoughtDef>
 		<defName>Thought_DeepBlueExtracter</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>DeepBlueExtracter</hediff>
+		<hediff>Moyo2_DeepBlueExtracter</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li>Masochist</li>
@@ -103,18 +103,18 @@
 		</stages>
 	</ThoughtDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>DeepBlueExtracter</defName>
+		<defName>Moyo2_DeepBlueExtracter</defName>
 		<label>deepblue extracter</label>
-		<description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
+		<description>This device filters out deep blue from Moyo's blood. It's a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
 			<Steel>5</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite>
 			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
+				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<statBases>
@@ -126,14 +126,14 @@
 	</ThingDef>
 	<!-- 어비스테크 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
-		<defName>DeepBlueExtracter_Abysstech</defName>
+		<defName>Moyo2_DeepBlueExtracter_Abysstech</defName>
 		<label>abysstech deepblue extracter</label>
 		<labelNoun>an abysstech deepblue extracter</labelNoun>
-		<description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
+		<description>This advanced device filters out deep blue from Moyo's blood. It boasts such comfortable usability that you won't feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering real-time body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.</description>
 		<descriptionHyperlinks>
-			<ThingDef>DeepBlueExtracter_Abysstech</ThingDef>
+			<ThingDef>Moyo2_DeepBlueExtracter_Abysstech</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>DeepBlueExtracter_Abysstech</spawnThingOnRemoved>
+		<spawnThingOnRemoved>Moyo2_DeepBlueExtracter_Abysstech</spawnThingOnRemoved>
 		<stages>
 			<li>
 				<statOffsets>
@@ -148,22 +148,22 @@
 			</li>
 		</stages>
 		<tags>
-			<li>DeepBlueExtracter</li>
+			<li>Moyo2_DeepBlueExtracter</li>
 		</tags>
 	</HediffDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>DeepBlueExtracter_Abysstech</defName>
+		<defName>Moyo2_DeepBlueExtracter_Abysstech</defName>
 		<label>abysstech deepblue extracter</label>
-		<description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
+		<description>This advanced device filters out deep blue from Moyo's blood. It boasts such comfortable usability that you won't feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering real-time body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
 			<Steel>5</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite>
 			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
+				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>			
 		</recipeMaker>
 		<statBases>
@@ -174,73 +174,73 @@
 		</techHediffsTags>
 	</ThingDef>
 	<!-- 블루버스터 수확기 -->
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>DeepBlueExtracter_Blueburst</defName>
-		<label>blueburster deepblue harvester</label>
-		<description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
-		<techLevel>Industrial</techLevel>
-		<costList>
-			<Steel>5</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>			
-		</recipeMaker>
-		<statBases>
-			<Mass>1</Mass>
-		</statBases>
-		<techHediffsTags>
-			<li>DeepblueSimple</li>
-		</techHediffsTags>
-	</ThingDef>
-	<HediffDef ParentName="ImplantHediffBase">
-		<defName>DeepBlueExtracter_Blueburst</defName>
-		<label>blueburster deepblue harvester</label>
-		<labelNoun>a deepblue extracter</labelNoun>
-		<description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description>
-		<descriptionHyperlinks>
-			<ThingDef>DeepBlueExtracter_Blueburst</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>DeepBlueExtracter_Blueburst</spawnThingOnRemoved>
-		<stages>
-			<li>
-				<painOffset>0.3</painOffset>
-				<statOffsets>
-					<DeepblueStatSpeed>1</DeepblueStatSpeed>
-					<DeepblueStat>0.5</DeepblueStat>
-				</statOffsets>
-				<capMods>
-					<li>
-						<capacity>BloodPumping</capacity>
-						<offset>0.15</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-		<tags>
-			<li>DeepBlueExtracter</li>
-		</tags>
-	</HediffDef>
-	<ThoughtDef>
-		<defName>Thought_DeepBlueExtracter_Blueburst</defName>
-		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>DeepBlueExtracter_Blueburst</hediff>
-		<validWhileDespawned>true</validWhileDespawned>
-		<nullifyingTraits>
-			<li>Masochist</li>
-		</nullifyingTraits>
+	<!-- <ThingDef ParentName="BodyPartProstheticMakeableBase"> -->
+		<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
+		<!-- <label>blueburster deepblue harvester</label> -->
+		<!-- <description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
+		<!-- <techLevel>Industrial</techLevel> -->
+		<!-- <costList> -->
+			<!-- <Steel>5</Steel> -->
+			<!-- <ComponentIndustrial>3</ComponentIndustrial> -->
+		<!-- </costList> -->
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite> -->
+			<!-- <recipeUsers Inherit="False"> -->
+				<!-- <li>Moyo2_FabricationBench</li> -->
+			<!-- </recipeUsers>			 -->
+		<!-- </recipeMaker> -->
+		<!-- <statBases> -->
+			<!-- <Mass>1</Mass> -->
+		<!-- </statBases> -->
+		<!-- <techHediffsTags> -->
+			<!-- <li>DeepblueSimple</li> -->
+		<!-- </techHediffsTags> -->
+	<!-- </ThingDef> -->
+	<!-- <HediffDef ParentName="ImplantHediffBase"> -->
+		<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
+		<!-- <label>blueburster deepblue harvester</label> -->
+		<!-- <labelNoun>a deepblue extracter</labelNoun> -->
+		<!-- <description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
+		<!-- <descriptionHyperlinks> -->
+			<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
+		<!-- </descriptionHyperlinks> -->
+		<!-- <spawnThingOnRemoved>DeepBlueExtracter_Blueburst</spawnThingOnRemoved> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <painOffset>0.3</painOffset> -->
+				<!-- <statOffsets> -->
+					<!-- <DeepblueStatSpeed>1</DeepblueStatSpeed> -->
+					<!-- <DeepblueStat>0.5</DeepblueStat> -->
+				<!-- </statOffsets> -->
+				<!-- <capMods> -->
+					<!-- <li> -->
+						<!-- <capacity>BloodPumping</capacity> -->
+						<!-- <offset>0.15</offset> -->
+					<!-- </li> -->
+				<!-- </capMods> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+		<!-- <tags> -->
+			<!-- <li>Moyo2_DeepBlueExtracter</li> -->
+		<!-- </tags> -->
+	<!-- </HediffDef> -->
+	<!-- <ThoughtDef> -->
+		<!-- <defName>Thought_DeepBlueExtracter_Blueburst</defName> -->
+		<!-- <workerClass>ThoughtWorker_Hediff</workerClass> -->
+		<!-- <hediff>DeepBlueExtracter_Blueburst</hediff> -->
+		<!-- <validWhileDespawned>true</validWhileDespawned> -->
+		<!-- <nullifyingTraits> -->
+			<!-- <li>Masochist</li> -->
+		<!-- </nullifyingTraits> -->
 		<!-- <nullifyingPrecepts> -->
-		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>\ -->
+		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li> -->
 		<!-- </nullifyingPrecepts> -->
-		<stages>
-			<li>
-				<label>itchy attachment</label>
-				<description>Its bit of a nusiance but I can't ask for more.</description>
-				<baseMoodEffect>-10</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <label>itchy attachment</label> -->
+				<!-- <description>Its bit of a nusiance but I can't ask for more.</description> -->
+				<!-- <baseMoodEffect>-10</baseMoodEffect> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </ThoughtDef> -->
 </Defs>

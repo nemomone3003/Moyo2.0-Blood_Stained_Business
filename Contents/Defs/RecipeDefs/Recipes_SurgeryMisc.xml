@@ -2,11 +2,11 @@
 <Defs>
 	<!-- 모요 심장이식 -->
 	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
-		<defName>InstallNaturalHeart_Moyo</defName>
+		<defName>Moyo2_InstallNaturalHeart</defName>
 		<label>install heart</label>
 		<description>Install a biological heart.</description>
 		<descriptionHyperlinks>
-			<ThingDef>Moyo_Heart</ThingDef>
+			<ThingDef>Moyo2_Heart</ThingDef>
 		</descriptionHyperlinks>
 		<jobString>Installing heart.</jobString>
 		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
@@ -17,7 +17,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Moyo_Heart</li>
+						<li>Moyo2_Heart</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -25,19 +25,19 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Moyo_Heart</li>
+				<li>Moyo2_Heart</li>
 			</thingDefs>
 			<categories>
 				<li>Medicine</li>
 			</categories>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>MoyoHeart</li>
+			<li>Moyo2_Heart</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-		<defName>InstallSimpleProstheticHeart_Moyo</defName>
+		<defName>Moyo2_InstallSimpleProstheticHeart</defName>
 		<label>install prosthetic heart</label>
 		<description>Install a prosthetic heart.</description>
 		<descriptionHyperlinks>
@@ -61,13 +61,13 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>MoyoHeart</li>
+			<li>Moyo2_Heart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticHeart</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallBionicHeart_Moyo</defName>
+		<defName>Moyo2_InstallBionicHeart</defName>
 		<label>install bionic heart</label>
 		<description>Install a bionic heart.</description>
 		<descriptionHyperlinks>
@@ -90,7 +90,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>MoyoHeart</li>
+			<li>Moyo2_Heart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicHeart</addsHediff>
 	</RecipeDef>	

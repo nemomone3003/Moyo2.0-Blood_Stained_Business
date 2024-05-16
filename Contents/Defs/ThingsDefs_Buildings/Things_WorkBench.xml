@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BenchBase">
-		<defName>Moyo_FabricationBench</defName>
+		<defName>Moyo2_FabricationBench</defName>
 		<label>abysstech production bench</label>
 		<description>A workbench for producing abysstech items. It is capable of handling a variety of tasks, from producing tools, components, and apparel to dismantling mechanoids.</description>
 		<thingClass>Building_WorkTable</thingClass>
@@ -40,7 +40,7 @@
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
 		<researchPrerequisites>
-			<li>Abysstech_Pneumatic</li>
+			<li>Moyo2_Abysstech_Pneumatic</li>
 		</researchPrerequisites>
 		<recipes>
 			<li>Make_ComponentSpacer</li>
@@ -56,7 +56,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
-					<li>Moyo_FabricationAddon</li>
+					<li>Moyo2_FabricationAddon</li>
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_Power">
@@ -82,7 +82,7 @@
 		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
-		<defName>Moyo_FabricationAddon</defName>
+		<defName>Moyo2_FabricationAddon</defName>
 		<label>abysstech fabrication module</label>
 		<description>An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -112,7 +112,7 @@
 		<pathCost>42</pathCost>
 		<costList>
 			<Steel>50</Steel>
-			<Abyssteel>50</Abyssteel>
+			<Moyo2_Abyssteel>50</Moyo2_Abyssteel>
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -122,7 +122,7 @@
 			<isEdifice>false</isEdifice>
 		</building>
 		<researchPrerequisites>
-			<li>Abysstech_Foundry</li>
+			<li>Moyo2_Abysstech_Foundry</li>
 		</researchPrerequisites>
 		<designationCategory>Production</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -146,7 +146,7 @@
 				<glowColor>(80,80,217,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>			
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -155,7 +155,7 @@
 	</ThingDef>
 	<!-- 모요 아크화로 -->
 	<ThingDef ParentName="BenchBase">
-		<defName>Moyo_ArcFurnace</defName>
+		<defName>Moyo2_ArcFurnace</defName>
 		<label>abysstech arc furnace</label>
 		<description>Powerful arc furnace used to craft abyssteel. It can extract metals from various items and burn unwanted materials without leaving any ash.. Just throw it in here. *Consumes significant amount of power.</description>
 		<thingClass>Building_WorkTable</thingClass>
@@ -186,7 +186,7 @@
 		<pathCost>42</pathCost>
 		<costList>
 			<Steel>200</Steel>
-			<Abyssteel>50</Abyssteel>
+			<Moyo2_Abyssteel>50</Moyo2_Abyssteel>
 			<ComponentSpacer>1</ComponentSpacer>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
@@ -196,7 +196,7 @@
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
 		<researchPrerequisites>
-			<li>Abysstech_Foundry</li>
+			<li>Moyo2_Abysstech_Foundry</li>
 		</researchPrerequisites>
 		<recipes>
 			<li>ExtractMetalFromSlag</li>

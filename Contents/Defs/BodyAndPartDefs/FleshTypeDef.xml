@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<ThingDef ParentName="BaseFilth">
-		<defName>Moyo_Blood</defName>
+		<defName>Moyo2_Blood</defName>
 		<label>blood</label>
 		<statBases>
 			<Beauty>-30</Beauty>
@@ -20,7 +20,7 @@
 		</filth>
 	</ThingDef>
 	<ThingDef ParentName="FilthBlood">
-		<defName>Moyo_BloodSmear</defName>
+		<defName>Moyo2_BloodSmear</defName>
 		<label>blood smear</label>
 		<graphicData>
 			<texPath>Things/Filth/CrawlSmear</texPath>
@@ -30,7 +30,7 @@
 		</graphicData>
 	</ThingDef>
 	<FleshTypeDef>
-		<defName>Moyo_Flesh</defName>
+		<defName>Moyo2_Flesh</defName>
 		<corpseCategory>CorpsesAnimal</corpseCategory>
 		<damageEffecter>Damage_HitFlesh</damageEffecter>
 		<isOrganic>true</isOrganic>

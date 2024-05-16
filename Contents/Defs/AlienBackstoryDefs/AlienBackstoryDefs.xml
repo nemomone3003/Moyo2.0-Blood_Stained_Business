@@ -7,7 +7,7 @@
 	<!-- 유년기 -->
 	<!-- 더미 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseMoyoBackStory">
-		<defName>Moyo_DummyChild</defName>
+		<defName>Moyo2_DummyChild</defName>
 		<title>moyo dummy</title>
 		<titleShort>dummy</titleShort>
 		<description>Dummy backstory</description>
@@ -23,12 +23,12 @@
 		</skillGains>
 		<workDisables>
 		</workDisables>
-		<spawnCategories><li>Moyo_Dummy</li></spawnCategories>
+		<spawnCategories><li>Moyo2_Dummy</li></spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!--성년기-->
 	<!-- 더미 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseMoyoBackStory">
-		<defName>Moyo_DummyAdult</defName>
+		<defName>Moyo2_DummyAdult</defName>
 		<title>moyo dummy</title>
 		<titleShort>dummy</titleShort>
 		<description>Dummy backstory</description>
@@ -44,6 +44,6 @@
 		</skillGains>
 		<workDisables>
 		</workDisables>
-		<spawnCategories><li>Moyo_Dummy</li></spawnCategories>
+		<spawnCategories><li>Moyo2_Dummy</li></spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>

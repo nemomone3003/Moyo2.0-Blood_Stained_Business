@@ -2,7 +2,7 @@
 <Defs>
 	<!-- 어비스틸 제작 -->
 	<RecipeDef>
-		<defName>Make_AbyssteelA</defName>
+		<defName>Moyo2_Make_AbyssteelA</defName>
 		<label>refine abyssteel</label>
 		<description>Craft abyssteel, a commonly used alloy in the lighthouse.</description>
 		<jobString>Crafting abyssteel.</jobString>
@@ -11,7 +11,7 @@
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<workAmount>2500</workAmount>
 		<recipeUsers>
-			<li>Moyo_ArcFurnace</li>
+			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -38,14 +38,14 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Abyssteel>20</Abyssteel>
+			<Moyo2_Abyssteel>20</Moyo2_Abyssteel>
 		</products>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef>
-		<defName>Make_AbyssteelABulk</defName>
+		<defName>Moyo2_Make_AbyssteelABulk</defName>
 		<label>refine abyssteel x4</label>
 		<description>Bulk craft abyssteel, a commonly used alloy in the lighthouse.</description>
 		<jobString>Refining chemfuel from wood.</jobString>
@@ -54,7 +54,7 @@
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<workAmount>10000</workAmount>
 		<recipeUsers>
-			<li>Moyo_ArcFurnace</li>
+			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -81,7 +81,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Abyssteel>80</Abyssteel>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
 		</products>
 		<skillRequirements>
 			<Crafting>6</Crafting>
@@ -97,13 +97,13 @@
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<workAmount>2500</workAmount>
 		<recipeUsers>
-			<li>Moyo_ArcFurnace</li>
+			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>HadalShard</li>
+						<li>Moyo2_HadalShard</li>
 					</thingDefs>
 				</filter>
 				<count>15</count>
@@ -119,12 +119,12 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>HadalShard</li>
+				<li>Moyo2_HadalShard</li>
 				<li>Steel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Abyssteel>20</Abyssteel>
+			<Moyo2_Abyssteel>20</Moyo2_Abyssteel>
 		</products>
 		<skillRequirements>
 			<Crafting>6</Crafting>
@@ -140,13 +140,13 @@
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<workAmount>10000</workAmount>
 		<recipeUsers>
-			<li>Moyo_ArcFurnace</li>
+			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>HadalShard</li>
+						<li>Moyo2_HadalShard</li>
 					</thingDefs>
 				</filter>
 				<count>60</count>
@@ -162,12 +162,12 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>HadalShard</li>
+				<li>Moyo2_HadalShard</li>
 				<li>Steel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Abyssteel>80</Abyssteel>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
 		</products>
 		<skillRequirements>
 			<Crafting>6</Crafting>
@@ -184,7 +184,7 @@
 		<workAmount>10000</workAmount>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
-			<li>Moyo_FabricationBench</li>
+			<li>Moyo2_FabricationBench</li>
 		</recipeUsers>
 		<ingredients>
 			<li>

@@ -10,15 +10,15 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
 		<value>
-			<li>Moyo_FabricationBench</li>
-			<li>Moyo_ArcFurnace</li>
+			<li>Moyo2_FabricationBench</li>
+			<li>Moyo2_ArcFurnace</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
 		<value>
-			<li>HadalSpire</li>
+			<li>Moyo2_HadalSpire</li>
 		</value>
 	</Operation>
 	
@@ -26,7 +26,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes/li</xpath>
 		<value>
-			<li>CureDeepBlueTolerance</li>
+			<li>Moyo2_CureDeepBlueTolerance</li>
 		</value>
 	</Operation>	
 

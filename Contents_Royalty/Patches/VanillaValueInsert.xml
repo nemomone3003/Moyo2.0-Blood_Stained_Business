@@ -3,15 +3,15 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 		<value>
-			<li>CureBloodRot_BlueMed</li>
+			<li>Moyo2_CureBloodRot_BlueMed</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
 		<value>
-			<li>CureBloodRot_BlueMed</li>
-			<li>CureAbasia_BlueMed</li>
+			<li>Moyo2_CureBloodRot_BlueMed</li>
+			<li>Moyo2_CureAbasia_BlueMed</li>
 		</value>
 	</Operation>	
 </Patch>

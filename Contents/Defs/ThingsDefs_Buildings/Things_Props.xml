@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BuildingBase">
-		<defName>HoverCraftWreak</defName>
+		<defName>Moyo2_HoverCraftWreak</defName>
 		<label>ruined hovercraft</label>
-		<description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+		<description>This is the remains of a hovercraft damaged beyond repair. Departing from the lighthouse, this craft held off pirates and raiders until it finally sank here.</description>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>50</pathCost>
 		<blockWind>true</blockWind>
@@ -31,15 +31,15 @@
 		<canOverlapZones>true</canOverlapZones>
 		<killedLeavings Inherit="False">
 			<Steel>225</Steel>
-			<Abyssteel>15</Abyssteel>
+			<Moyo2_Abyssteel>15</Moyo2_Abyssteel>
 			<ChunkSlagSteel>15</ChunkSlagSteel>
 			<ComponentIndustrial>15</ComponentIndustrial>
 		</killedLeavings>
 		<costList>
 			<Steel>900</Steel>
-			<Abyssteel>100</Abyssteel>
+			<Moyo2_Abyssteel>100</Moyo2_Abyssteel>
 			<ComponentIndustrial>60</ComponentIndustrial>
-			<BlueMedicine>40</BlueMedicine>
+			<Moyo2_BlueMedicine>40</Moyo2_BlueMedicine>
 			<MealSurvivalPack>100</MealSurvivalPack>
 		</costList>
 		<building Inherit="False">
@@ -57,11 +57,11 @@
 		<forceDebugSpawnable>true</forceDebugSpawnable>
 		<uiIconScale>1.4</uiIconScale>
 	</ThingDef>
-	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>HadalSpire</defName>
+	<ThingDef ParentName="RockBase">
+		<defName>Moyo2_HadalSpire</defName>
 		<label>hadalshard spire</label>
 		<description>A spire of metallic coral indigenous to the hadal trenches. It can be mined as a whole or pick the shards shed from it.  Moyos have scoured the abyss in search of these coral reef grown over centuries to fuel their industries.</description>
-		<graphicData>
+		<graphicData Inherit="False">
 			<texPath>Building/VoidSpire</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>Cutout</shaderType>
@@ -69,44 +69,21 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>9600</MaxHitPoints>
-			<Flammability>0</Flammability>
 		</statBases>
-		<thingClass>Mineable</thingClass>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<!-- <castEdgeShadows>true</castEdgeShadows> -->
-		<fillPercent>1</fillPercent>
-		<rotatable>false</rotatable>
-		<saveCompressible>true</saveCompressible>
-		<!-- <staticSunShadowHeight>1.0</staticSunShadowHeight> -->
-		<mineable>true</mineable>
-		<fertility>0</fertility>
-		<canOverlapZones>false</canOverlapZones>
+		<coversFloor>false</coversFloor>
+		<neverMultiSelect>false</neverMultiSelect>
 		<building>
-			<isInert>true</isInert>
-			<isNaturalRock>true</isNaturalRock>
-			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-			<deconstructible>false</deconstructible>
-			<destroyShakeAmount>0</destroyShakeAmount>
-			<supportsWallAttachments>true</supportsWallAttachments>
 			<isResourceRock>true</isResourceRock>
-			<mineableThing>HadalShard</mineableThing>
+			<mineableThing>Moyo2_HadalShard</mineableThing>
 			<mineableYield>120</mineableYield>
-			<mineableScatterCommonality>0.2</mineableScatterCommonality>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>1~3</mineableScatterLumpSizeRange>
 			<veinMineable>false</veinMineable>
 		</building>
-		<damageMultipliers>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>4</multiplier>
-			</li>
-		</damageMultipliers>
 		<comps>
 			<li Class="CompProperties_Spawner">
 				<requiresPower>false</requiresPower>
-				<thingToSpawn>HadalShard</thingToSpawn>
+				<thingToSpawn>Moyo2_HadalShard</thingToSpawn>
 				<spawnCount>15</spawnCount>
 				<spawnIntervalRange>
 					<min>600000</min>

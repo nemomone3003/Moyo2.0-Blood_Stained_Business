@@ -2,10 +2,10 @@
 <Defs>
 	<!-- 내의 -->
 	<!--기본형 바디슈트-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_BasicSuit</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_BasicSuit</defName>
 		<label>standard bodysuit</label>
-		<description>Protective suit for temperature-sensitive moyos. Looks stylish as well.</description>
+		<description>This bodysuit represents the lighthouse's attire culture. Made with depthweave, it's both sturdy and elastic. It's worn by people of all ages and genders, with various products being marketed for funtions such as ease of wear and body-shaping.</description>
 		<graphicData>
 			<texPath>Apparel/Lighthouse/BasicSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -22,7 +22,7 @@
 			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Insulation_Cold>21.5</Insulation_Cold>
 			<Insulation_Heat>12</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<!-- - -->
 		<apparel>
@@ -38,15 +38,15 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Military</li>
-				<li>Moyo_Starting</li>
-				<li>Moyo_Spacer</li>
+				<li>Moyo2_Industrial</li>
+				<li>Moyo2_Military</li>
+				<li>Moyo2_Starting</li>
+				<li>Moyo2_Spacer</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -56,14 +56,14 @@
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Cloth_Depthweave>80</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!--개선형 바디슈트-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_AdvancedSuit</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_AdvancedSuit</defName>
 		<label>advanced bodysuit</label>
-		<description>Protective suit for temperature-sensitive moyos. Looks stylish as well.</description>
+		<description>A bodysuit that focuses on user protection with its thick fabric and temperature regulation features. It's rarely used as casual wear and is predominantly utilized by military personnel, police officers, or high-risk laborers who could afford this.</description>
 		<graphicData>
 			<texPath>Apparel/Lighthouse/AdvancedSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -96,15 +96,15 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo_Spacer</li>
-				<li>Moyo_SpacerLight</li>
-				<li>Moyo_SpacerHeavy</li>
+				<li>Moyo2_Spacer</li>
+				<li>Moyo2_SpacerLight</li>
+				<li>Moyo2_SpacerHeavy</li>
 				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarTheory</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -112,15 +112,15 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
-			<Cloth_Depthweave>90</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
 			<DevilstrandCloth>15</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!--고위 바디슈트-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_RoyalSuit</defName>
-		<label>royal bodysuit</label>
-		<description>Protective suit for temperature-sensitive moyos. Looks stylish as well.</description>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_RoyalSuit</defName>
+		<label>exquisite bodysuit</label>
+		<description>The most precious bodysuit obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.</description>
 		<graphicData>
 			<texPath>Apparel/Lighthouse/RoyalSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -156,15 +156,15 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo_Spacer</li>
-				<li>Moyo_SpacerLight</li>
-				<li>Moyo_SpacerHeavy</li>
+				<li>Moyo2_Spacer</li>
+				<li>Moyo2_SpacerLight</li>
+				<li>Moyo2_SpacerHeavy</li>
 				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -172,15 +172,15 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Cloth_Depthweave>90</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
 			<DevilstrandCloth>30</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!--홀로그램 바디슈트-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_HololSuit</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_HololSuit</defName>
 		<label>lighthouse holosuit</label>
-		<description>Protective suit for temperature-sensitive moyos. Looks stylish as well.</description>
+		<description>The most precious bodysuit obtainable in the lighthouse. Focused on aesthetic value, it boasts numerous holographic displays, enabling the suit to be presented in variety of ways. It's primarily used by top-tier artists and influencers of the lighthouse; others before them simply cannot afford it.</description>
 		<graphicData>
 			<texPath>Apparel/Lighthouse/HoloSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -216,15 +216,15 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo_Spacer</li>
-				<li>Moyo_SpacerLight</li>
-				<li>Moyo_SpacerHeavy</li>
+				<li>Moyo2_Spacer</li>
+				<li>Moyo2_SpacerLight</li>
+				<li>Moyo2_SpacerHeavy</li>
 				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -232,15 +232,15 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Cloth_Depthweave>90</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
 			<DevilstrandCloth>30</DevilstrandCloth>
 		</costList>
 	</ThingDef>
 	<!-- 엔지니어 하네스-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_EGHarness</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_EGHarness</defName>
 		<label>depth engineer harness</label>
-		<description>A overall worn by moyo engineers. Grants protection from the heat of the foundry, as well as any accidents.</description>
+		<description>This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage.\n\nIndustrial zone workers are strongly encouraged to have protective gear while working. Attempting self-harm for insurance claims not only results in voided insurance but also leads to prosecution.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGharness1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -249,7 +249,7 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>15000</WorkToMake>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
@@ -263,10 +263,6 @@
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGharness</wornGraphicPath>
@@ -274,13 +270,13 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
+				<li>Moyo2_Industrial</li>
+				<li>Moyo2_Engineer</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -289,14 +285,14 @@
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>45</Steel>
-			<Cloth_Depthweave>150</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!-- 엔지니어 재킷-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_EGJacket</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_EGJacket</defName>
 		<label>depth engineer jacket</label>
-		<description>A jacket worn by moyo engineers. Grants protection from the heat of the foundry, as well as any accidents.</description>
+		<description>This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage. Some wears this for fashion purpose.n\nThis gear is designed to be worn in conjunction with a bodysuit. Failure to adhere to this can lead to concerns of abrasions and bruises.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGjacket1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -305,7 +301,7 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>15000</WorkToMake>
+			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
@@ -323,20 +319,19 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
-				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGjacket</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
+				<li>Moyo2_Industrial</li>
+				<li>Moyo2_Engineer</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -345,14 +340,14 @@
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>45</Steel>
-			<Cloth_Depthweave>150</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!-- 엔지니어 헬멧-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouseHead">
-		<defName>Moyo_EGHelmet</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
+		<defName>Moyo2_EGHelmet</defName>
 		<label>depth engineer welding helmet</label>
-		<description>A welding helmet worn by moyo engineers. Grants protection from the heat of the foundry, as well as any accidents</description>
+		<description>This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage.\n\nThis product is an upgraded model that enhances design without compromising performance compared to its predecessor. It's designed for those who want to look stylish even amidst oil stains.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGhelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -361,12 +356,12 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>15000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>6</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
 			<Insulation_Heat>21</Insulation_Heat>
@@ -387,33 +382,33 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
+				<li>Moyo2_Industrial</li>
+				<li>Moyo2_Engineer</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>45</Steel>
-			<Cloth_Depthweave>150</Cloth_Depthweave>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>70</Steel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 		<comps>
 			<li Class="CompProperties_CauseHediff_Apparel">
-				<hediff>Moyo_EGHelmet</hediff>
+				<hediff>Moyo2_EGHelmet</hediff>
 				<part>Head</part>
 			</li>
 		</comps>
 	</ThingDef>
 	<!--헬멧 헤디프-->
 	<HediffDef>
-		<defName>Moyo_EGHelmet</defName>
+		<defName>Moyo2_EGHelmet</defName>
 		<label>welding helmet</label>
 		<description>Debug.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -428,10 +423,10 @@
 		<isBad>false</isBad>
 	</HediffDef>
 	<!-- 유선형 잠수용 쉘-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_StreamlineDivingShell</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_StreamlineDivingShell</defName>
 		<label>depth engineer welding hemet</label>
-		<description>A welding hemet worn by moyo engineers. Grants protection from the heat of the foundry, as well as any accidents.</description>
+		<description>A diving suit worn by abyssstriders of the lighthouse.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -440,16 +435,16 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>6</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>3.5</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>4</EquipDelay>
+			<WorkToMake>30000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>24</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>7</EquipDelay>
 		</statBases>
 		<!-- - -->
 		<apparel>
@@ -466,27 +461,26 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
+				<li>Moyo2_Shell</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DivingShell</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Abyssteel>90</Abyssteel>
-			<Cloth_Depthweave>25</Cloth_Depthweave>
+			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>50</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!-- 유선형 잠수용 헬멧-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_StreamlineDivingHelmet</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_StreamlineDivingHelmet</defName>
 		<label>streamline diving helmet</label>
 		<description>A helmet worn by abyssstriders of the lighthouse.</description>
 		<graphicData>
@@ -497,16 +491,15 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>6</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>3.5</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>4</EquipDelay>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<!-- - -->
 		<apparel>
@@ -518,28 +511,27 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
-				<li>Moyo_BigHelmet</li>
+				<li>Moyo2_Shell</li>
+				<li>Moyo2_BigHelmet</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DivingShell</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Abyssteel>45</Abyssteel>
-			<Cloth_Depthweave>10</Cloth_Depthweave>
+			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!-- 심층 잠수용 쉘-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_DeepDivingShell</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_DeepDivingShell</defName>
 		<label>depth diving shell</label>
 		<description>A heavy diving suit worn by abyssstriders of the lighthouse.</description>
 		<graphicData>
@@ -550,17 +542,21 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>6</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<WorkToMake>55000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>18</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>3.5</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>4</EquipDelay>
+			<Insulation_Cold>36</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<EquipDelay>12</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
@@ -576,27 +572,26 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
+				<li>Moyo2_HeavyShell</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DivingShell</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Abyssteel>120</Abyssteel>
-			<Cloth_Depthweave>10</Cloth_Depthweave>
+			<Moyo2_Abyssteel>120</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!-- 심층 잠수용 헬멧-->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_DeepDivingHelmet</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_DeepDivingHelmet</defName>
 		<label>depth diving helmet</label>
 		<description>A heavy diving helmet worn by abyssstriders of the lighthouse.</description>
 		<graphicData>
@@ -607,17 +602,20 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>6</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>3.5</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>4</EquipDelay>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
@@ -628,23 +626,22 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Moyo_Industrial</li>
-				<li>Moyo_Engineer</li>
-				<li>Moyo_BigHelmet</li>
+				<li>Moyo2_HeavyShell</li>
+				<li>Moyo2_BigHelmet</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_DivingShell</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Abyssteel>60</Abyssteel>
-			<Cloth_Depthweave>5</Cloth_Depthweave>
+			<Moyo2_Abyssteel>40</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>25</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 </Defs>

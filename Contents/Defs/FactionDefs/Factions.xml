@@ -8,11 +8,11 @@
 	</FactionDef>
 	<!-- 정착민 -->
 	<FactionDef ParentName="Moyo_PlayerBase">
-		<defName>Moyo_PlayerFaction</defName>
+		<defName>Moyo2_PlayerFaction</defName>
 		<label>Refugees</label>
 		<description>A settlement made by the moyo who have left the lighthouse for various reasons.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Moyo_ColonistPawn</basicMemberKind>
+		<basicMemberKind>Moyo2_ColonistPawn</basicMemberKind>
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
@@ -39,7 +39,7 @@
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<startingResearchTags>
 			<li>ClassicStart</li>
-			<li>MoyoStart</li>
+			<li>Moyo2_Start</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 			<li>ClassicStart</li>

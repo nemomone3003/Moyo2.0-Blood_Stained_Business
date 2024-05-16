@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<HediffGiverSetDef>
-		<defName>MoyoInate</defName>
+		<defName>Moyo2_Inate</defName>
 		<hediffGivers>
 			<!-- Environmental -->
 			<li Class="HediffGiver_Bleeding">
-				<hediff>BloodLoss_Moyo</hediff>
+				<hediff>Moyo2_BloodLoss</hediff>
 			</li>
 			<li Class="HediffGiver_Hypothermia">
 				<hediff>Hypothermia</hediff>

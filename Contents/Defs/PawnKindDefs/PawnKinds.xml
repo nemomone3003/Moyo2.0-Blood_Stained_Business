@@ -2,34 +2,25 @@
 <Defs>
 	<!-- 정착민 -->
 	<PawnKindDef>
-		<defName>Moyo_ColonistPawn</defName>
+		<defName>Moyo2_ColonistPawn</defName>
 		<label>moyo colonist</label>
 		<race>Alien_Moyo</race>
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<defaultFactionType>Moyo_PlayerFaction</defaultFactionType>
+		<defaultFactionType>Moyo2_PlayerFaction</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>		
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<apparelTags>
-			<li>Moyo_Starting</li>
+			<li>Moyo2_Starting</li>
 		</apparelTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo_Dummy</li>
-					<!-- <li>Moyo_TopCivil</li> -->
-					<!-- <li>Moyo_MiddleCivil</li> -->
-					<!-- <li>Moyo_BotCivil</li> -->
-					<!-- <li>Moyo_Engineer</li> -->
-					<!-- <li>Moyo_Resercher</li> -->
-					<!-- <li>Moyo_TopCriminal</li> -->
-					<!-- <li>Moyo_MiddleCriminal</li> -->
-					<!-- <li>Moyo_FullCrime</li> -->
-					<!-- <li>Moyo_SoldierKind</li> -->
+					<li>Moyo2_Dummy</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -51,7 +42,7 @@
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<defaultFactionType>Moyo_PlayerFaction</defaultFactionType>
+		<defaultFactionType>Moyo2_PlayerFaction</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>

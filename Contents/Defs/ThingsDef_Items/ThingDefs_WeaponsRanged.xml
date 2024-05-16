@@ -3,9 +3,9 @@
 	<!-- 원거리 -->
 	<!-- 모요 네일건 -->
 	<ThingDef ParentName="MoyoBaseGunIDR">
-		<defName>Moyo_NailGun</defName>
-		<label>nail gun</label>
-		<description>A common contruction tool of the Lighthouse. It has strong firing mechanism to make it reliable in most places. which also makes it fantastic as a improvised weapon.</description>
+		<defName>Moyo2_NailGun</defName>
+		<label>depthtool nailgun</label>
+		<description>dummy text.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_NailGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -27,7 +27,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoNailGun</defaultProjectile>
+				<defaultProjectile>Moyo2_Bullet_NailGun</defaultProjectile>
 				<warmupTime>0.2</warmupTime>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -58,12 +58,12 @@
 		</tools>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
+				<li>Moyo2_FabricationBench</li>
 				<li>TableMachining</li>
 			</recipeUsers>
 		</recipeMaker>
@@ -77,7 +77,7 @@
 		</weaponTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoNailGun</defName>
+		<defName>Moyo2_Bullet_NailGun</defName>
 		<label>nailgun rivet</label>
 		<graphicData>
 			<texPath>Weapon/MoyoNail</texPath>
@@ -96,9 +96,9 @@
 	</ThingDef>
 	<!-- 모요 스피어잭 -->
 	<ThingDef ParentName="MoyoBaseGunIDR">
-		<defName>Moyo_SpearGun</defName>
-		<label>spear-jack</label>
-		<description>A common contruction tool of the Lighthouse. It has strong firing mechanism to make it reliable in most places. which also makes it fantastic as a improvised weapon.</description>
+		<defName>Moyo2_SpearGun</defName>
+		<label>depthtool spearjack</label>
+		<description>dummy text.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Spearjack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -121,7 +121,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoSpearGun</defaultProjectile>
+				<defaultProjectile>Moyo2_Bullet_SpearGun</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
 				<range>24.9</range>
 				<soundCast>Industrial_SpearGun</soundCast>
@@ -150,12 +150,12 @@
 		</tools>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
+				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -168,8 +168,8 @@
 		</weaponTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoSpearGun</defName>
-		<label>spear-jack spear</label>
+		<defName>Moyo2_Bullet_SpearGun</defName>
+		<label>spearjack spear</label>
 		<graphicData>
 			<texPath>Weapon/MoyoSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -188,9 +188,9 @@
 	</ThingDef>
 	<!-- 모요 쉽잭 -->
 	<ThingDef ParentName="MoyoBaseGunIDR">
-		<defName>Moyo_HarpoonGun</defName>
-		<label>ship-jack</label>
-		<description>A common contruction tool of the Lighthouse. It has strong firing mechanism to make it reliable in most places. which also makes it fantastic as a improvised weapon.</description>
+		<defName>Moyo2_HarpoonGun</defName>
+		<label>depthtool ship-jack</label>
+		<description>dummy text.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Harpoonjack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -212,7 +212,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoHarpoonGun</defaultProjectile>
+				<defaultProjectile>Moyo2_Bullet_HarpoonGun</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<range>37.9</range>
 				<soundCast>Industrial_HarpoonGun</soundCast>
@@ -241,12 +241,12 @@
 		</tools>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Abysstech_Pneumatic</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
+				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -259,7 +259,7 @@
 		</weaponTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoHarpoonGun</defName>
+		<defName>Moyo2_Bullet_HarpoonGun</defName>
 		<label>spear-jack harpoon</label>
 		<graphicData>
 			<texPath>Weapon/MoyoHarpoon</texPath>
@@ -267,7 +267,7 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile>
-			<damageDef>Damage_MoyoHarpoon</damageDef>
+			<damageDef>Moyo2_Damage_MoyoHarpoon</damageDef>
 			<damageAmountBase>36</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 			<speed>120</speed>
@@ -277,516 +277,5 @@
 				<effecterDef>Effecter_IDRFireB</effecterDef>
 			</li>
 		</comps>
-	</ThingDef>
-	<!-- 모요 커스텀라이플 -->
-	<ThingDef ParentName="MoyoBaseGunIDR">
-		<defName>Moyo_CustomGun</defName>
-		<label>abysstech rifle</label>
-		<description>A common contruction tool of the Lighthouse. It has strong firing mechanism to make it reliable in most places. which also makes it fantastic as a improvised weapon.</description>
-		<graphicData>
-			<texPath>Weapon/IDR_Rifle</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.9</drawSize>
-		</graphicData>
-		<uiIconScale>1.5</uiIconScale>
-		<equippedAngleOffset>45</equippedAngleOffset>
-		<!-- <soundInteract>moyo_smallWeaponInteract</soundInteract> -->
-		<!-- - -->
-		<statBases>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>3.5</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
-			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
-				<range>30.9</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<soundCast>Shot_AssaultRifle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>grip</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker Inherit="False">
-			<researchPrerequisites>
-				<li>PrecisionRifling</li>
-			</researchPrerequisites>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<Steel>60</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
-		</costList>
-		<!-- - -->
-		<weaponTags>
-			<li>MoyoCustomGun</li>
-		</weaponTags>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoCustom</defName>
-		<label>abysstech bullet</label>
-		<graphicData>
-			<texPath>Weapon/MoyoNail</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>8</damageAmountBase>
-			<speed>120</speed>
-		</projectile>
-	</ThingDef>
-	<!-- 우주 -->
-	<!-- 라미너 슬러그 -->
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoLMRSlugA</defName>
-		<label>laminar slug</label>
-		<graphicData>
-			<texPath>Weapon/MoyoBullet1</texPath>
-			<graphicClass>Graphic_Single_AgeSecs</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>14</damageAmountBase>
-			<armorPenetrationBase>0.38</armorPenetrationBase>
-			<stoppingPower>1</stoppingPower>
-			<speed>80</speed>
-		</projectile>
-		<comps>
-			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireA</effecterDef>
-			</li>
-		</comps>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoLMRSlugB</defName>
-		<label>laminar slug</label>
-		<graphicData>
-			<texPath>Weapon/MoyoBullet1</texPath>
-			<graphicClass>Graphic_Single_AgeSecs</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>14</damageAmountBase>
-			<armorPenetrationBase>0.38</armorPenetrationBase>
-			<stoppingPower>1</stoppingPower>
-			<speed>80</speed>
-		</projectile>
-		<comps>
-			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireB</effecterDef>
-			</li>
-		</comps>
-	</ThingDef>
-	<!--모요 볼트 -->
-	<ThingDef ParentName="BaseBullet">
-		<defName>Bullet_MoyoLMRBolt</defName>
-		<label>heavy laminar slug</label>
-		<graphicData>
-			<texPath>Weapon/MoyoBullet1</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<explosionRadius>0.9</explosionRadius>
-			<damageDef>Damage_MoyoLMRBolt</damageDef>
-			<damageAmountBase>36</damageAmountBase>
-			<armorPenetrationBase>0.62</armorPenetrationBase>
-			<stoppingPower>3</stoppingPower>
-			<speed>120</speed>
-		</projectile>
-		<comps>
-			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireA</effecterDef>
-			</li>
-		</comps>
-	</ThingDef>	
-	<!-- 라미너 권총 -->
-	<ThingDef ParentName="MoyoBaseGunLMR">
-		<defName>Moyo_LMRPistol</defName>
-		<label>laminar pistol</label>
-		<description>Moyo assult rifle that shows much similarities with a traditional charge rifle. The charged bolt and accelerated through the barrel and fired. Each bolt is designed to minimize energy loss over distance.\n\nThe lighthouse uses traditional charge rifles as well, but once the new rifles proved its efficiency, the moyo charge rifles became the standard.</description>
-		<graphicData>
-			<texPath>Weapon/LMR_Pistol</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<uiIconScale>1.5</uiIconScale>
-		<soundInteract>Laminar_Activate</soundInteract>
-		<!-- - -->
-		<statBases>
-			<WorkToMake>49500</WorkToMake>
-			<Mass>6.5</Mass>
-			<AccuracyTouch>0.48</AccuracyTouch>
-			<AccuracyShort>0.61</AccuracyShort>
-			<AccuracyMedium>0.48</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoLMRSlugB</defaultProjectile>
-				<warmupTime>1.5</warmupTime>
-				<range>26.5</range>
-				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
-				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
-				<soundCast>Laminar_Pistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>body</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarTheory</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>55</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>Moyo_SpacerGun</li>
-		</weaponTags>
-	</ThingDef>
-	<!-- 라미너 라이플 -->
-	<ThingDef ParentName="MoyoBaseGunLMR">
-		<defName>Moyo_LMRRifle</defName>
-		<label>laminar rifle</label>
-		<description>Moyo assult rifle that shows much similarities with a traditional charge rifle. The charged bolt and accelerated through the barrel and fired. Each bolt is designed to minimize energy loss over distance.\n\nThe lighthouse uses traditional charge rifles as well, but once the new rifles proved its efficiency, the moyo charge rifles became the standard.</description>
-		<graphicData>
-			<texPath>Weapon/LMR_RifleMod</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<uiIconScale>1.2</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
-		<!-- - -->
-		<statBases>
-			<WorkToMake>49500</WorkToMake>
-			<Mass>6.5</Mass>
-			<AccuracyTouch>0.48</AccuracyTouch>
-			<AccuracyShort>0.61</AccuracyShort>
-			<AccuracyMedium>0.48</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoLMRSlugA</defaultProjectile>
-				<warmupTime>1.5</warmupTime>
-				<range>31.9</range>
-				<burstShotCount>1</burstShotCount>
-				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
-				<soundCast>Laminar_Rifle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarTheory</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>55</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>Moyo_SpacerGun</li>
-		</weaponTags>
-	</ThingDef>
-	<!-- 라미너 샷건 -->
-	<ThingDef ParentName="MoyoBaseGunLMR">
-		<defName>Moyo_LMRShotgun</defName>
-		<label>laminar shotgun</label>
-		<description>Moyo assult rifle that shows much similarities with a traditional charge rifle. The charged bolt and accelerated through the barrel and fired. Each bolt is designed to minimize energy loss over distance.\n\nThe lighthouse uses traditional charge rifles as well, but once the new rifles proved its efficiency, the moyo charge rifles became the standard.</description>
-		<graphicData>
-			<texPath>Weapon/LMR_Shotgun</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<uiIconScale>1.2</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
-		<!-- - -->
-		<statBases>
-			<WorkToMake>49500</WorkToMake>
-			<Mass>6.5</Mass>
-			<AccuracyTouch>0.48</AccuracyTouch>
-			<AccuracyShort>0.61</AccuracyShort>
-			<AccuracyMedium>0.48</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoLMRSlugA</defaultProjectile>
-				<warmupTime>1.5</warmupTime>
-				<range>17.9</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<soundCast>Laminar_Rifle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>55</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>Moyo_SpacerGun</li>
-		</weaponTags>
-	</ThingDef>
-	<!-- 라미너 SMG -->
-	<ThingDef ParentName="MoyoBaseGunLMR">
-		<defName>Moyo_LMRSMG</defName>
-		<label>laminar SMG</label>
-		<description>Moyo assult rifle that shows much similarities with a traditional charge rifle. The charged bolt and accelerated through the barrel and fired. Each bolt is designed to minimize energy loss over distance.\n\nThe lighthouse uses traditional charge rifles as well, but once the new rifles proved its efficiency, the moyo charge rifles became the standard.</description>
-		<graphicData>
-			<texPath>Weapon/LMR_SMGMod</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<uiIconScale>1.5</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
-		<!-- - -->
-		<statBases>
-			<WorkToMake>49500</WorkToMake>
-			<Mass>6.5</Mass>
-			<AccuracyTouch>0.48</AccuracyTouch>
-			<AccuracyShort>0.61</AccuracyShort>
-			<AccuracyMedium>0.48</AccuracyMedium>
-			<AccuracyLong>0.36</AccuracyLong>
-			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoLMRSlugB</defaultProjectile>
-				<warmupTime>1.5</warmupTime>
-				<range>21</range>
-				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
-				<burstShotCount>2</burstShotCount>
-				<!-- <soundAiming>moyo_smallWeaponCharge</soundAiming> -->
-				<soundCast>Laminar_Rifle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarTheory</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>55</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>Moyo_SpacerGun</li>
-		</weaponTags>
-	</ThingDef>
-	<!-- 라미너 발리스타 -->
-	<ThingDef ParentName="MoyoBaseGunLMR">
-		<defName>Moyo_LMRBalista</defName>
-		<label>laminar balista</label>
-		<description>Large boltcaster made to fight off the leviathans that threaten the lighthouse. The weapon accelerates overcharged energy bolts through the barrel and fires them. On impact, the bolts release the stored energy in a violent explosion.\n\nBoltcaster weapons were developed when traditional charge weapons proved less effective underwater. This boltcaster is the first charge bolt weapon, and every subsequent moyo firearm can be traced back to it..</description>
-		<graphicData>
-			<texPath>Weapon/LMR_Balista</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<uiIconScale>1.3</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
-		<statBases>
-			<WorkToMake>75000</WorkToMake>
-			<Mass>9.5</Mass>
-			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.82</AccuracyShort>
-			<AccuracyMedium>0.91</AccuracyMedium>
-			<AccuracyLong>0.78</AccuracyLong>
-			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.3</MoveSpeed>
-		</equippedStatOffsets>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MoyoLMRBolt</defaultProjectile>
-				<forcedMissRadius>0.01</forcedMissRadius>
-				<warmupTime>4</warmupTime>
-				<range>47.5</range>
-				<!-- <soundAiming>Laminar_Charge</soundAiming> -->
-				<soundCast>Laminar_Balista</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>12</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>body</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Abysstech_LaminarManipulation</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>80</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
-		<weaponTags>
-			<li>Moyo_SpacerHeavyGun</li>
-		</weaponTags>
 	</ThingDef>
 </Defs>

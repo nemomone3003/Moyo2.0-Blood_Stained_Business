@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<StyleItemCategoryDef>
-		<defName>Moyo_HairDummyCategory</defName>
+		<defName>Moyo2_HairDummyCategory</defName>
 		<label>Moyo hair</label>
 	</StyleItemCategoryDef>
 	<!-- <StyleItemCategoryDef> -->
@@ -10,11 +10,11 @@
 	<!-- </StyleItemCategoryDef>	 -->
 
 	<HairDef>
-		<defName>Moyohair_Dummy</defName>
+		<defName>Moyo2_hairDummy</defName>
 		<label>Moyo_DummyHair</label>
 		<texPath>Moyo_Dummy/Dummy</texPath>
 		<styleTags>
-			<li>Moyo_HairDummyCategory</li>
+			<li>Moyo2_HairDummyCategory</li>
 		</styleTags>
 	</HairDef>	
 

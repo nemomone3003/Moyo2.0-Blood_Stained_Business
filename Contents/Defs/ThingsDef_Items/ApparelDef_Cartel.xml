@@ -2,8 +2,8 @@
 <Defs>
 	<!-- 내의 -->
 	<!-- 카르텔 망토 -->
-	<ThingDef ParentName="Moyo_ApparelCategory_LightHouse">
-		<defName>Moyo_CartelHood</defName>
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_CartelHood</defName>
 		<label>hooded black cloak</label>
 		<description>Protective suit for temperature-sensitive moyos. Looks stylish as well.</description>
 		<graphicData>
@@ -14,16 +14,20 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>0.5</Mass>
-			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.40</ArmorRating_Heat>
-			<Insulation_Cold>21.5</Insulation_Cold>
-			<Insulation_Heat>12</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>2.5</Mass>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>22.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<HuntingStealth>0.25</HuntingStealth>
+		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<drawData>
@@ -44,13 +48,11 @@
 			</layers>
 			<tags>
 				<li>Cartel_Hood</li>
-				<li>Moyo_Military</li>
-				<li>Moyo_Spacer</li>
 			</tags>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -58,18 +60,18 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Cloth_Depthweave>80</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>120</Moyo2_Cloth_Depthweave>
 		</costList>
 		<comps>
 			<li Class="CompProperties_CauseHediff_Apparel">
-				<hediff>Moyo_CartelHood</hediff>
+				<hediff>Moyo2_CartelHood</hediff>
 				<part>Head</part>
 			</li>
 		</comps>
 	</ThingDef>
 	<!--후드 헤디프-->
 	<HediffDef>
-		<defName>Moyo_CartelHood</defName>
+		<defName>Moyo2_CartelHood</defName>
 		<label>CartelHood</label>
 		<description>Debug.</description>
 		<hediffClass>HediffWithComps</hediffClass>

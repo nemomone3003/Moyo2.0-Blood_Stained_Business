@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BodyDef>
-		<defName>Moyo</defName>
+		<defName>Moyo2_MoyoBody</defName>
 		<label>moyo</label>
 		<corePart>
 			<def>Torso</def>
@@ -45,7 +45,7 @@
 					</groups>
 				</li>
 				<li>
-					<def>Moyo_Tail</def>
+					<def>Moyo2_Tail</def>
 					<customLabel>tail</customLabel>
 					<coverage>0.1</coverage>
 					<height>Bottom</height>
@@ -62,7 +62,7 @@
 					</groups>
 				</li>
 				<li>
-					<def>MoyoHeart</def>
+					<def>Moyo2_Heart</def>
 					<coverage>0.020</coverage>
 					<depth>Inside</depth>
 					<groups>

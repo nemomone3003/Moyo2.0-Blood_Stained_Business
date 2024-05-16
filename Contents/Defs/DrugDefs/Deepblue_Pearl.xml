@@ -16,7 +16,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
@@ -53,7 +53,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<skillRequirements>
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
@@ -206,7 +206,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
@@ -363,7 +363,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
@@ -528,7 +528,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
@@ -679,7 +679,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueSimple</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 			<skillRequirements>
 				<Intellectual>6</Intellectual>
 			</skillRequirements>

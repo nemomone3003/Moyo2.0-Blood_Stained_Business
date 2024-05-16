@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ResourceBase">
-		<defName>Abyssteel</defName>
+		<defName>Moyo2_Abyssteel</defName>
 		<label>abyssteel</label>
 		<description>A dense alloy commonly used in the lighthouse. Able to withstand immense amount of pressure, it is used to produce things that needs the most durabilty. From this alloy the lighthouse was founded.</description>
 		<graphicData>
@@ -48,7 +48,7 @@
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
-		<defName>HadalShard</defName>
+		<defName>Moyo2_HadalShard</defName>
 		<label>hadalshard</label>
 		<description>A fragment of metallic coral indigenous to the hadal trenches. Its extremely sharp and hard but being brittle makes it hard to use. Able to be used in abyssteel production, The mining operations have drastically expanded alongside the growth of the lighthouse.\n\nThere are numerous reports of hallucination and mental health disorder among the shard miners, even claiming that they have seen monsters dwelling among the coral spires. Further reports tell that their hallucinations and delusions caused by fatigue was quickly cured by few doses of joypearls.</description>
 		<graphicData>
@@ -96,7 +96,7 @@
 	</ThingDef>	
 	
   <ThingDef ParentName="ResourceBase">
-    <defName>Cloth_Depthweave</defName>
+    <defName>Moyo2_Cloth_Depthweave</defName>
     <label>depthweave</label>
     <description>A tough fabric commonly utilised in the lighthouse. Having great elasticity and insulating capabilities, this fabric is the basis of moyo's signature bodysuits.</description>
     <graphicData>

@@ -3,7 +3,7 @@
 	<!-- moyo med -->
 	<!-- 혈액부패랑 운동마비 레시피 추가 필요 -->
 	<ThingDef ParentName="MedicineBase">
-		<defName>BlueMedicine</defName>
+		<defName>Moyo2_BlueMedicine</defName>
 		<label>Bluemed</label>
 		<description>Potent medicine utilizing deepblue. deepblue increases the medicine's effectiveness while having no worries of deepblue dependancy.</description>
 		<descriptionHyperlinks>
@@ -35,7 +35,7 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
-			<researchPrerequisite>Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 				<Intellectual>6</Intellectual>

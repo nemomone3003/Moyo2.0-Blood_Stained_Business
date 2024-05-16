@@ -2,7 +2,7 @@
 <Defs>
 	<!-- 물고기 질식 -->
 	<HediffDef>
-		<defName>MoyoFish_Kill</defName>
+		<defName>Moyo2_FishKill</defName>
 		<label>fishkill</label>
 		<description>fish dies./n/nUgeh</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -19,19 +19,19 @@
 		</stages>
 	</HediffDef>
 	<HediffGiverSetDef>
-		<defName>MoyoFish_KillGiver</defName>
+		<defName>Moyo2_FishKillGiver</defName>
 		<hediffGivers>
 			<li Class="HediffGiver_Random">
-				<hediff>MoyoFish_Kill</hediff>
+				<hediff>Moyo2_FishKill</hediff>
 				<mtbDays>0.001</mtbDays>
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
 	<!-- 참치 -->
 	<Moyo2.FishDef ParentName="AnimalThingBase">
-		<defName>MoyoFish_Tuna</defName>
+		<defName>Moyo2_Tuna</defName>
 		<label>tidal tuna</label>
-		<description>A large domesticated fish, cows have been bred for millennia to produce huge amounts of milk, meat, and leather. They are exceptionally gentle creatures and will never seek revenge, no matter how many times they are harmed. Most of them are so adapted to farm life that they cannot survive in the wild.</description>
+		<description>dummy text.</description>
 		<statBases>
 			<MoveSpeed>0.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -39,7 +39,7 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<race>
-			<body>Fish_Body</body>
+			<body>Moyo2_FishBody</body>
 			<hasGenders>false</hasGenders>
 			<baseBodySize>1.6</baseBodySize>
 			<baseHungerRate>0.01</baseHungerRate>
@@ -62,7 +62,7 @@
 			</lifeStageAges>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-				<li>MoyoFish_KillGiver</li>
+				<li>Moyo2_FishKillGiver</li>
 			</hediffGiverSets>			
 		</race>
 		<fishTankSettings>
@@ -72,13 +72,13 @@
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.7</drawSize>
 			</graphicData>
-			<pawnKindDef>MoyoFishKind_Tuna</pawnKindDef>
+			<pawnKindDef>Moyo2_FishKindTuna</pawnKindDef>
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MoyoFishKind_Tuna</defName>
+		<defName>Moyo2_FishKindTuna</defName>
 		<label>stillwater tuna</label>
-		<race>MoyoFish_Tuna</race>
+		<race>Moyo2_Tuna</race>
 		<combatPower>75</combatPower>
 		<lifeStages>
 			<li>
@@ -100,9 +100,9 @@
 	</PawnKindDef>
 	<!-- 데미크라켄 -->
 	<Moyo2.FishDef ParentName="AnimalThingBase">
-		<defName>MoyoFish_DemiKraken</defName>
+		<defName>Moyo2_DemiKraken</defName>
 		<label>demi kraken</label>
-		<description>A large domesticated fish, cows have been bred for millennia to produce huge amounts of milk, meat, and leather. They are exceptionally gentle creatures and will never seek revenge, no matter how many times they are harmed. Most of them are so adapted to farm life that they cannot survive in the wild.</description>
+		<description>dummy text.</description>
 		<statBases>
 			<MoveSpeed>0.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -110,7 +110,7 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<race>
-			<body>Cephalopod_Body</body>
+			<body>Moyo2_CephalopodBody</body>
 			<hasGenders>false</hasGenders>
 			<baseBodySize>1.45</baseBodySize>
 			<baseHungerRate>0.01</baseHungerRate>
@@ -133,7 +133,7 @@
 			</lifeStageAges>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-				<li>MoyoFish_KillGiver</li>
+				<li>Moyo2_FishKillGiver</li>
 			</hediffGiverSets>			
 		</race>
 		<butcherProducts>
@@ -146,13 +146,13 @@
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.2</drawSize>
 			</graphicData>
-			<pawnKindDef>MoyoFishKind_DemiKraken</pawnKindDef>
+			<pawnKindDef>Moyo2_FishKindDemiKraken</pawnKindDef>
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MoyoFishKind_DemiKraken</defName>
+		<defName>Moyo2_FishKindDemiKraken</defName>
 		<label>demi kraken</label>
-		<race>MoyoFish_DemiKraken</race>
+		<race>Moyo2_DemiKraken</race>
 		<combatPower>75</combatPower>
 		<lifeStages>
 			<li>

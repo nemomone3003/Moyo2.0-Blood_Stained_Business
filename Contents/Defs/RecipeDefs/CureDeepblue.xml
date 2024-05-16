@@ -2,7 +2,7 @@
 <Defs>
 	<!-- 딥블루 축적 제거 -->
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>CureDeepBlueTolerance</defName>
+		<defName>Moyo2_CureDeepBlueTolerance</defName>
 		<label>clear deepblue buildup</label>
 		<description>Administer special enzymes to clear and flush out residue deepblue in the body.</description>
 		<workerClass>Recipe_RemoveHediff</workerClass>
@@ -19,12 +19,12 @@
 		</skillRequirements>
 		<recipeUsers>
 			<li>Human</li>
-		</recipeUsers>		
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Abyssteel</li>
+						<li>Moyo2_Abyssteel</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -32,7 +32,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Abyssteel</li>
+				<li>Moyo2_Abyssteel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

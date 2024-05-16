@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <CultureDef>
-    <defName>Moyo_RefugeeCulture</defName>
+    <defName>Moyo2_RefugeeCulture</defName>
     <label>nautilios</label>
     <description>Cultures of the refugees who seek haven on the surface.</description>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>

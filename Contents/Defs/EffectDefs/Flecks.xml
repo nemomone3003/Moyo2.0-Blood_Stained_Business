@@ -210,7 +210,7 @@
 	</EffecterDef>
 	<EffecterDef>
 		<defName>Effecter_LMRFireB</defName>
-		<offsetTowardsTarget>0.4</offsetTowardsTarget>
+		<offsetTowardsTarget>0.7</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>

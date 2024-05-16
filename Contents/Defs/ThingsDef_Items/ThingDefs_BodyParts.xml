@@ -2,26 +2,26 @@
 <Defs>
 	<!-- 모요 꼬리보철물 -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>TailProsthesis_Moyo</defName>
+		<defName>Moyo2_TailProsthesis</defName>
 		<label>moyo tail prosthesis</label>
 		<labelNoun>a tail prosthesis</labelNoun>
-		<description>A crude tail prosthesis for moyo. Not anyway perfect but it serves its purpose well.</description>
+		<description>A simple tail prosthesis for moyos. it doesnt repond fast but better than nothing.</description>
 		<descriptionHyperlinks>
-			<ThingDef>TailProsthesis_Moyo</ThingDef>
+			<ThingDef>Moyo2_TailProsthesis</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>TailProsthesis_Moyo</spawnThingOnRemoved>
+		<spawnThingOnRemoved>Moyo2_TailProsthesis</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.85</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>TailProsthesis_Moyo</defName>
+		<defName>Moyo2_TailProsthesis</defName>
 		<label>moyo tail prosthesis</label>
-		<description>A crude tail prosthesis for moyo. Not anyway perfect but it serves its purpose well.</description>
+		<description>A simple tail prosthesis for moyos. it doesnt repond fast but better than nothing.</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
-			<Cloth_Depthweave>20</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>20</Moyo2_Cloth_Depthweave>
 			<Steel>10</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
@@ -33,19 +33,19 @@
 		</techHediffsTags>
 	</ThingDef>
 	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-		<defName>Install_TailProsthesis_Moyo</defName>
+		<defName>Install_Moyo2_TailProsthesis</defName>
 		<label>install moyo tail prosthesis</label>
 		<description>Install tail prosthesis.</description>
 		<descriptionHyperlinks>
-			<ThingDef>TailProsthesis_Moyo</ThingDef>
-			<HediffDef>TailProsthesis_Moyo</HediffDef>
+			<ThingDef>Moyo2_TailProsthesis</ThingDef>
+			<HediffDef>Moyo2_TailProsthesis</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing tail prosthesis.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>TailProsthesis_Moyo</li>
+						<li>Moyo2_TailProsthesis</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -53,38 +53,38 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>TailProsthesis_Moyo</li>
+				<li>Moyo2_TailProsthesis</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Moyo_Tail</li>
+			<li>Moyo2_Tail</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>TailProsthesis_Moyo</addsHediff>
+		<addsHediff>Moyo2_TailProsthesis</addsHediff>
 	</RecipeDef>
 	<!-- 모요 생체공학 꼬리 -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>TailBionic_Moyo</defName>
+		<defName>Moyo2_TailBionic</defName>
 		<label>moyo bionic tail</label>
 		<labelNoun>a tail prosthesis</labelNoun>
-		<description>An advanced artificial tail for moyo. Improved in nearly every way possible.</description>
+		<description>artificial tail made with advanced technology. This tail is indistinguishable by looks and its powerful servo combined with neural interface makes it superior compared to natural ones.</description>
 		<descriptionHyperlinks>
-			<ThingDef>TailBionic_Moyo</ThingDef>
+			<ThingDef>Moyo2_TailBionic</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>TailBionic_Moyo</spawnThingOnRemoved>
+		<spawnThingOnRemoved>Moyo2_TailBionic</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>TailBionic_Moyo</defName>
+		<defName>Moyo2_TailBionic</defName>
 		<label>moyo bionic tail</label>
-		<description>An advanced artificial tail for moyo. Improved in nearly every way possible.</description>
+		<description>artificial tail made with advanced technology. This tail is indistinguishable by looks and its powerful servo combined with neural interface makes it superior compared to natural ones.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>Install_TailBionic_Moyo</RecipeDef>
+			<RecipeDef>Install_Moyo2_TailBionic</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Cloth_Depthweave>40</Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>40</Moyo2_Cloth_Depthweave>
 			<Plasteel>5</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
@@ -93,19 +93,19 @@
 		</statBases>
 	</ThingDef>
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>Install_TailBionic_Moyo</defName>
+		<defName>Install_Moyo2_TailBionic</defName>
 		<label>install moyo bionic tail</label>
 		<description>Install a bionic tail.</description>
 		<descriptionHyperlinks>
-			<ThingDef>TailBionic_Moyo</ThingDef>
-			<HediffDef>TailBionic_Moyo</HediffDef>
+			<ThingDef>Moyo2_TailBionic</ThingDef>
+			<HediffDef>Moyo2_TailBionic</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing a bionic tail.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>TailBionic_Moyo</li>
+						<li>Moyo2_TailBionic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -113,12 +113,12 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>TailBionic_Moyo</li>
+				<li>Moyo2_TailBionic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Moyo_Tail</li>
+			<li>Moyo2_Tail</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>TailBionic_Moyo</addsHediff>
+		<addsHediff>Moyo2_TailBionic</addsHediff>
 	</RecipeDef>
 </Defs>

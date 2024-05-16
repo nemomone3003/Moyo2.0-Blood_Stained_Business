@@ -63,14 +63,14 @@
 					<borderScale>1</borderScale>
 					<!-- 머리 타입 -->
 					<headTypes Inherit="False">
-						<li>MoyoHead</li>
-						<li>MoyoHead1</li>
-						<li>MoyoHead2</li>
-						<li>MoyoHead3</li>
-						<li>MoyoHead4</li>
-						<li>MoyoHead5</li>
-						<li>MoyoHead6</li>
-						<li>MoyoHead7</li>
+						<li>Moyo2_Head</li>
+						<li>Moyo2_Head1</li>
+						<li>Moyo2_Head2</li>
+						<li>Moyo2_Head3</li>
+						<li>Moyo2_Head4</li>
+						<li>Moyo2_Head5</li>
+						<li>Moyo2_Head6</li>
+						<li>Moyo2_Head7</li>
 					</headTypes>
 					<!-- 몸 타입 -->
 					<bodyTypes Inherit="False">
@@ -323,9 +323,6 @@
 									<hiddenUnderApparelFor>
 										<li>FullHead</li>
 									</hiddenUnderApparelFor>
-									<hiddenUnderApparelTag>
-										<li>MoyoTuque</li>
-									</hiddenUnderApparelTag>
 								</Apparel>
 							</conditions>
 							<!-- - -->
@@ -445,7 +442,7 @@
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<hiddenUnderApparelTag>
-										<li>Moyo_BigHelmet</li>
+										<li>Moyo2_BigHelmet</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
 							</conditions>
@@ -483,7 +480,7 @@
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<hiddenUnderApparelTag>
-										<li>Moyo_BigHelmet</li>
+										<li>Moyo2_BigHelmet</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
 							</conditions>
@@ -503,7 +500,7 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
-								<Hediff For="Moyo_CartelHood">Apparel/Cartel/CartelHoodBack</Hediff>
+								<Hediff For="Moyo2_CartelHood">Apparel/Cartel/CartelHoodBack</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -525,7 +522,7 @@
 								<RotStage>Fresh,Rotting,Dessicated</RotStage>
 								<Apparel>
 									<hiddenUnderApparelTag>
-										<li>Moyo_BigHelmet</li>
+										<li>Moyo2_BigHelmet</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<!-- <Drafted>false</Drafted> -->
@@ -547,13 +544,13 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
-								<Hediff For="Moyo_EGHelmet">
+								<Hediff For="Moyo2_EGHelmet">
 									<path>Apparel/LighthouseArmor/EGvisor_up</path>
 									<extendedGraphics>
 										<Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted>
 									</extendedGraphics>
 								</Hediff>
-								<Hediff For="Moyo_CartelHood">Apparel/Cartel/CartelHood</Hediff>
+								<Hediff For="Moyo2_CartelHood">Apparel/Cartel/CartelHood</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -604,8 +601,8 @@
 							<value>Apparel/ApparelReplacer/MoyoWearPants</value>
 						</li>
 						<li>
-						<key>Apparel_BasicShirt</key>
-						<value>Apparel/ApparelReplacer/MoyoWearTShirt</value>
+							<key>Apparel_BasicShirt</key>
+							<value>Apparel/ApparelReplacer/MoyoWearTShirt</value>
 						</li>
 						<li>
 							<key>Apparel_CollarShirt</key>
@@ -639,7 +636,7 @@
 					<value>
 						<hasStyle>true</hasStyle>
 						<styleTagsOverride>
-							<li>Moyo_HairDummyCategory</li>
+							<li>Moyo2_HairDummyCategory</li>
 						</styleTagsOverride>
 					</value>
 				</li>
@@ -659,18 +656,18 @@
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<apparelList>
-					<li>Moyo_BasicSuit</li>
-					<li>Moyo_AdvancedSuit</li>
-					<li>Moyo_RoyalSuit</li>
-					<li>Moyo_HololSuit</li>
-					<li>Moyo_EGHarness</li>
-					<li>Moyo_EGJacket</li>
-					<li>Moyo_EGHelmet</li>
-					<li>Moyo_StreamlineDivingShell</li>
-					<li>Moyo_StreamlineDivingHelmet</li>
-					<li>Moyo_DeepDivingShell</li>
-					<li>Moyo_DeepDivingHelmet</li>
-					<li>Moyo_CartelHood</li>
+					<li>Moyo2_BasicSuit</li>
+					<li>Moyo2_AdvancedSuit</li>
+					<li>Moyo2_RoyalSuit</li>
+					<li>Moyo2_HololSuit</li>
+					<li>Moyo2_EGHarness</li>
+					<li>Moyo2_EGJacket</li>
+					<li>Moyo2_EGHelmet</li>
+					<li>Moyo2_StreamlineDivingShell</li>
+					<li>Moyo2_StreamlineDivingHelmet</li>
+					<li>Moyo2_DeepDivingShell</li>
+					<li>Moyo2_DeepDivingHelmet</li>
+					<li>Moyo2_CartelHood</li>
 				</apparelList>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
 					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
@@ -697,13 +694,13 @@
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>100</lifeExpectancy>
 			<!-- 피 -->
-			<bloodDef>Moyo_Blood</bloodDef>
-			<bloodSmearDef>Moyo_BloodSmear</bloodSmearDef>
-			<fleshType>Moyo_Flesh</fleshType>
+			<bloodDef>Moyo2_Blood</bloodDef>
+			<bloodSmearDef>Moyo2_BloodSmear</bloodSmearDef>
+			<fleshType>Moyo2_Flesh</fleshType>
 			<meatColor>(53, 89, 180)</meatColor>
 			<leatherDef>Leather_Human</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
-			<body>Moyo</body>
+			<body>Moyo2_MoyoBody</body>
 			<!-- 피 -->
 			<renderTree>Humanlike</renderTree>
 			<baseBodySize>1</baseBodySize>
@@ -808,7 +805,7 @@
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
-				<li>MoyoInate</li>
+				<li>Moyo2_Inate</li>
 				<li>OrganicStandard</li>
 				<li>Human</li>
 			</hediffGiverSets>
@@ -873,9 +870,6 @@
 		</comps>
 		<!--=============================================================================================================================-->
 		<recipes>
-			<li>CureDeepBlueTolerance</li>
-			<!-- <li>InstallSimpleProstheticHeart_Moyo</li> -->
-			<!-- <li>InstallBionicHeart_Moyo</li>	 -->
 		</recipes>
 		<!--==맨손전투===================================================================================================================-->
 		<tools>

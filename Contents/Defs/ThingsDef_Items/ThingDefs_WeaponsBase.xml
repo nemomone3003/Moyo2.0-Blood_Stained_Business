@@ -2,31 +2,31 @@
 <Defs>
 	<!-- 무기 카테고리 -->
 	<ThingCategoryDef>
-		<defName>Moyo_WeaponsCategory</defName>
+		<defName>Moyo2_WeaponsCategory</defName>
 		<label>Moyo weapons</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
-		<defName>Moyo_WeaponsCategory_Ranged</defName>
+		<defName>Moyo2_WeaponsCategory_Ranged</defName>
 		<label>Moyo ranged weapons</label>
-		<parent>Moyo_WeaponsCategory</parent>
+		<parent>Moyo2_WeaponsCategory</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
-		<defName>Moyo_WeaponsCategory_Melee</defName>
+		<defName>Moyo2_WeaponsCategory_Melee</defName>
 		<label>Moyo melee weapons</label>
-		<parent>Moyo_WeaponsCategory</parent>
+		<parent>Moyo2_WeaponsCategory</parent>
 	</ThingCategoryDef>
 	<!-- 무기 베이스-원거리 -->
 	<ThingDef Name="MoyoBaseGunIDR" Abstract="true" ParentName="BaseHumanMakeableGun">
 		<techLevel>Industrial</techLevel>
 		<thingCategories Inherit="False">
-			<li>Moyo_WeaponsCategory_Ranged</li>
+			<li>Moyo2_WeaponsCategory_Ranged</li>
 		</thingCategories>
 	</ThingDef>
 	<ThingDef Name="MoyoBaseGunLMR" Abstract="true" ParentName="BaseHumanMakeableGun">
 		<techLevel>Spacer</techLevel>
 		<thingCategories Inherit="False">
-			<li>Moyo_WeaponsCategory_Ranged</li>
+			<li>Moyo2_WeaponsCategory_Ranged</li>
 		</thingCategories>
 	</ThingDef>
 	<!-- 무기 베이스-근접 -->
@@ -34,7 +34,7 @@
 		<techLevel>Industrial</techLevel>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<thingCategories Inherit="False">
-			<li>Moyo_WeaponsCategory_Melee</li>
+			<li>Moyo2_WeaponsCategory_Melee</li>
 		</thingCategories>
 		<!-- - -->
 		<smeltable>true</smeltable>
@@ -57,34 +57,59 @@
 	<ThingDef Name="MoyoBaseMeleeIDR" Abstract="true" ParentName="MoyoBaseMelee">
 		<techLevel>Industrial</techLevel>
 		<thingCategories Inherit="False">
-			<li>Moyo_WeaponsCategory_Melee</li>
+			<li>Moyo2_WeaponsCategory_Melee</li>
 		</thingCategories>
 	</ThingDef>
 	<ThingDef Name="MoyoBaseMeleeLMR" Abstract="true" ParentName="MoyoBaseMelee">
 		<techLevel>Spacer</techLevel>
 		<thingCategories Inherit="False">
-			<li>Moyo_WeaponsCategory_Melee</li>
+			<li>Moyo2_WeaponsCategory_Melee</li>
 		</thingCategories>
 	</ThingDef>
 	
 	<DamageDef>
-		<defName>Damage_MoyoLMRBolt</defName>
-		<label>Laminar bolt</label>
+		<defName>Moyo2_Damage_LMRBolt</defName>
+		<label>laminar bolt</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been shot to death.</deathMessage>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
 		<harmsHealth>true</harmsHealth>
 		<impactSoundType>Electric</impactSoundType>
 		<defaultDamage>50</defaultDamage>
-		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionSnowMeltAmount>10</explosionSnowMeltAmount>
 		<explosionCellFleck>BlastEMP</explosionCellFleck>
 		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
 		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
 		<soundExplosion>Explosion_EMP</soundExplosion>
 		<makesBlood>true</makesBlood>
-		<hediff>Gunshot</hediff>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>	
+	</DamageDef>
+	<DamageDef>
+		<defName>Moyo2_Damage_LMRBoltDemolish</defName>
+		<label>laminar bolt</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<harmsHealth>true</harmsHealth>
+		<impactSoundType>Electric</impactSoundType>
+		<defaultDamage>50</defaultDamage>
+		<explosionSnowMeltAmount>10</explosionSnowMeltAmount>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<makesBlood>true</makesBlood>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
 		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
 		<isRanged>true</isRanged>
 		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
@@ -93,7 +118,7 @@
 	</DamageDef>	
 	
   <DamageDef ParentName="Bullet">
-    <defName>Damage_MoyoHarpoon</defName>
+    <defName>Moyo2_Damage_MoyoHarpoon</defName>
     <label>heavy harpoon</label>
     <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
     <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
