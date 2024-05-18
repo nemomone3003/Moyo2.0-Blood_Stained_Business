@@ -146,7 +146,7 @@ namespace Moyo2
 
             Command_Action command_Action = new()
             {
-                defaultLabel = "FishTank_GizmoLabel".Translate(),
+                defaultLabel = "Moyo2_FishTank_GizmoLabel".Translate(),
                 icon = FishDef.uiIcon,
                 action = delegate
                 {
@@ -228,7 +228,7 @@ namespace Moyo2
             {
                 if (ticksToDie <= 0) // If ticksToDie is 0 it will reset the fish, esentially killing it and having to plant it again
                 {
-                    Messages.Message("FishTank_FishDied".Translate(), MessageTypeDefOf.NegativeEvent);
+                    Messages.Message("Moyo2_FishTank_FishDied".Translate(), MessageTypeDefOf.NegativeEvent);
                     Reset();
                 }
                 if (GrowingFish && !FinishedGrowing)
@@ -320,25 +320,25 @@ namespace Moyo2
             {
                 if (!finishedGrowing)
                 {
-                    stringBuilder.AppendLine("FishTank_NotGrowingAnything".Translate());
+                    stringBuilder.AppendLine("Moyo2_FishTank_NotGrowingAnything".Translate());
                     // Not growing anything
                 }
                 else
                 {
-                    stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("FishTank_FinishedGrowing", LockedFishDef.label.CapitalizeFirst().Named("FishName")));
+                    stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_FinishedGrowing", LockedFishDef.label.CapitalizeFirst().Named("FishName")));
                     // Fish fully grown
                 }
             }
             else
             {
                 float growthPercent = (tickProgress / LockedFishDef.fishTankSettings.ticksToGrow) * 100;
-                stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("FishTank_GrowthPercent", Mathf.Min(growthPercent, 100f).Named("%age")));
+                stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_GrowthPercent", Mathf.Min(growthPercent, 100f).Named("%age")));
                 // Fish are growing
             }
             if ((GrowingFish || finishedGrowing) && CompPowerTrader != null && !CompPowerTrader.PowerOn)
             {
                 GenDate.TicksToPeriod(ticksToDie, out int _, out int _, out int _, out float hours);
-                stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("FishTank_HoursFishDie", hours.Named("Hours")));
+                stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_HoursFishDie", hours.Named("Hours")));
                 // Time left until the harvest is lost
             }
             

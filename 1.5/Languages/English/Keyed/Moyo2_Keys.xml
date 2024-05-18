@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <Placeworker_OnBuilding_Failed>This linkable has to be built over its designated building</Placeworker_OnBuilding_Failed>
+    <Moyo2_Placeworker_OnBuilding_Failed>This linkable has to be built over its designated building</Moyo2_Placeworker_OnBuilding_Failed>
 
-    <FishTank_GizmoLabel>Change fish</FishTank_GizmoLabel>
-    <FishTank_NotGrowingAnything>Inactive.</FishTank_NotGrowingAnything>
-    <FishTank_FinishedGrowing>{FishName} ready to harvest.</FishTank_FinishedGrowing>
-    <FishTank_GrowthPercent>Growth progress: {%age}%</FishTank_GrowthPercent>
-    <FishTank_FishDied>The fish harvest has been lost</FishTank_FishDied>
-    <FishTank_HoursFishDie>Hours before the harvest is lost: {Hours}</FishTank_HoursFishDie>
+    <Moyo2_FishTank_GizmoLabel>Change fish</Moyo2_FishTank_GizmoLabel>
+    <Moyo2_FishTank_NotGrowingAnything>Inactive.</Moyo2_FishTank_NotGrowingAnything>
+    <Moyo2_FishTank_FinishedGrowing>{FishName} ready to harvest.</Moyo2_FishTank_FinishedGrowing>
+    <Moyo2_FishTank_GrowthPercent>Growth progress: {%age}%</Moyo2_FishTank_GrowthPercent>
+    <Moyo2_FishTank_FishDied>The fish harvest has been lost</Moyo2_FishTank_FishDied>
+    <Moyo2_FishTank_HoursFishDie>Hours before the harvest is lost: {Hours}</Moyo2_FishTank_HoursFishDie>
 </LanguageData>

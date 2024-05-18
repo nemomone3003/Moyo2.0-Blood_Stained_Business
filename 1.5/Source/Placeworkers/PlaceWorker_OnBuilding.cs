@@ -25,7 +25,7 @@
             {
                 return true;
             }
-            return "Placeworker_OnBuilding_Failed".Translate();
+            return "Moyo2_Placeworker_OnBuilding_Failed".Translate();
         }
     }
 }
