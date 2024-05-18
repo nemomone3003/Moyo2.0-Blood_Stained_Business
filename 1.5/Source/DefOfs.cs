@@ -1,5 +1,6 @@
 ﻿namespace Moyo2
 {
+#pragma warning disable CA2211
     [DefOf]
     public static class Moyo2_JobDefOfs
     {
@@ -21,7 +22,7 @@
         }
 
         public static ThingDef Moyo_FishTank;
-        public static ThingDef HadalSpire;
+        public static ThingDef Moyo2_HadalSpire;
     }
 
     [DefOf]
@@ -34,4 +35,5 @@
 
         public static AlienRace.ThingDef_AlienRace Alien_Moyo;
     }
+#pragma warning restore CA2211 
 }

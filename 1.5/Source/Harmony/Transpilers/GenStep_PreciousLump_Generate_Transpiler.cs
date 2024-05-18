@@ -4,7 +4,9 @@ namespace Moyo2
 {
     /// <summary>
     /// The point of this transpiler is to change how the GenStep_PreciousLump generates the lump for Hadal spires.<br></br>
-    /// We do that by checking if forcedDefToScatter is the def we want, and if it is, we change how it generates the lumps of ore.<br></br>
+    /// We do that by checking if forcedDefToScatter is the def we want, and if it is, we change the count of generated lumps to 3
+    /// and the set the forced lump size to 1.<br></br>
+    /// This spawns 3 individual spires instead of one lump of 3 spires close together.<br></br>
     /// kill me
     /// </summary>
     [HarmonyPatch(typeof(GenStep_PreciousLump), nameof(GenStep_PreciousLump.Generate))]
@@ -47,7 +49,7 @@ namespace Moyo2
                 // keyword -this-, because we're loading a field on the class, and not on the method
                 new(OpCodes.Ldfld, AccessTools.Field(typeof(GenStep_ScatterLumpsMineable), nameof(GenStep_ScatterLumpsMineable.forcedDefToScatter))),
                 // Loads the field GenStep_ScatterLumpsMineable.forcedDefToScatter into the stack, the def that's going to get scattered
-                new(OpCodes.Ldsfld, AccessTools.Field(typeof(Moyo2_ThingDefOfs), nameof(Moyo2_ThingDefOfs.HadalSpire))),
+                new(OpCodes.Ldsfld, AccessTools.Field(typeof(Moyo2_ThingDefOfs), nameof(Moyo2_ThingDefOfs.Moyo2_HadalSpire))),
                 // Loads the static field Moyo2_ThingDefOfs.HadalSpire into the stack, the def that we're checking to change the generation behavior.
                 new(OpCodes.Ceq),
                 // Check equals. if forcedDefToScatter == HadalSpire.

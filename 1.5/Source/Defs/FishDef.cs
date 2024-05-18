@@ -1,5 +1,7 @@
 ﻿namespace Moyo2
 {
+#pragma warning disable CA1051
+
     /// <summary>
     /// This is a custom ThingDef made for the fish tank, due to having problems when saving data.<br></br>
     /// It inherits from ThingDef, which means anything that works in ThingDef works for this one, including stuff like ParentName="".<br></br>
@@ -33,4 +35,5 @@
         // IMPORTANT: Use Graphic_Single
         public PawnKindDef pawnKindDef; // Fish kinddef to spawn the inner pawn from
     }
+#pragma warning restore CA1051
 }
