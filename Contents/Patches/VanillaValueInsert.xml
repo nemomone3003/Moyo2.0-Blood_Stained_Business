@@ -1,44 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath>
-		<value>
-			<wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
-		<value>
-			<li>Moyo2_FabricationBench</li>
-			<li>Moyo2_ArcFurnace</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
-		<value>
-			<li>Moyo2_HadalSpire</li>
-		</value>
-	</Operation>
-	
-	<!-- 딥블루 축적 제거 -->
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes/li</xpath>
 		<value>
 			<li>Moyo2_CureDeepBlueTolerance</li>
 		</value>
-	</Operation>	
-
+	</Operation>
 	<!-- <Operation Class="PatchOperationConditional"> -->
-		<!-- <xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]</xpath> -->
-		<!-- <match Class="PatchOperationAdd"> -->
-			<!-- <xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]/defs</xpath> -->
-			<!-- <value> -->
-				<!-- <li>PearlSculptureSmall</li> -->
-				<!-- <li>PearlSculptureLarge</li> -->
-				<!-- <li>PearlSculptureGrand</li> -->
-			<!-- </value> -->
-		<!-- </match> -->
+	<!-- <xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]</xpath> -->
+	<!-- <match Class="PatchOperationAdd"> -->
+	<!-- <xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]/defs</xpath> -->
+	<!-- <value> -->
+	<!-- <li>PearlSculptureSmall</li> -->
+	<!-- <li>PearlSculptureLarge</li> -->
+	<!-- <li>PearlSculptureGrand</li> -->
+	<!-- </value> -->
+	<!-- </match> -->
 	<!-- </Operation> -->
 </Patch>

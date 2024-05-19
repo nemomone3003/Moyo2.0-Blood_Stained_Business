@@ -116,12 +116,21 @@
 		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
 		<plantDamageFactor>2</plantDamageFactor>		
 	</DamageDef>	
-	
-  <DamageDef ParentName="Bullet">
-    <defName>Moyo2_Damage_MoyoHarpoon</defName>
-    <label>heavy harpoon</label>
-    <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
-    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
-    <plantDamageFactor>2</plantDamageFactor>
-  </DamageDef>	
+	<DamageDef ParentName="Bullet">
+		<defName>Moyo2_Damage_MoyoHarpoon</defName>
+		<label>heavy harpoon</label>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>2</plantDamageFactor>
+	</DamageDef>
+	<DamageDef ParentName="BluntBase">
+		<defName>Moyo2_Damage_WrenchThrow</defName>
+		<label>blunt</label>
+		<impactSoundType>WrenchThrow</impactSoundType>
+	</DamageDef>
+	<ImpactSoundTypeDef>
+		<defName>WrenchThrow</defName>
+		<playOnlyIfHitPawn>true</playOnlyIfHitPawn>
+		<soundDef>Industrial_WrenchThrow</soundDef>
+	</ImpactSoundTypeDef>
 </Defs>

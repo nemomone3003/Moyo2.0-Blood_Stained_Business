@@ -15,7 +15,7 @@
 		<initialResistanceRange>10~17</initialResistanceRange>		
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<apparelTags>
-			<li>Moyo2_Starting</li>
+			<li>Moyo2_SuitBasic</li>
 		</apparelTags>
 		<backstoryFiltersOverride>
 			<li>

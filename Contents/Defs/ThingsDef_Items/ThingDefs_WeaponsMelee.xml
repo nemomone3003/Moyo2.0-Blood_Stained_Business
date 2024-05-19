@@ -4,7 +4,7 @@
 	<!-- 모요 렌치 -->
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
 		<defName>Moyo2_Wrench</defName>
-		<label>heavy wrench</label>
+		<label>depthtool heavy wrench</label>
 		<description>dummy text.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Wrench</texPath>
@@ -15,7 +15,7 @@
 		<!-- - -->
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
-			<Mass>2.25</Mass>
+			<Mass>3</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<ConstructionSpeed>0.1</ConstructionSpeed>
@@ -39,6 +39,28 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>Moyo2_WrenchThrow</abilityDef>
+				<maxCharges>1</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>wrench</chargeNoun>
+				<ammoDef>Steel</ammoDef>
+				<ammoCountPerCharge>10</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
 		<!-- - -->
 		<recipeMaker>
 			<researchPrerequisite>Machining</researchPrerequisite>
@@ -56,8 +78,49 @@
 		</costList>
 		<!-- - -->
 		<weaponTags>
-			<li>Moyo2_MeleeIndustrial</li>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_WrenchIDR</li>
 		</weaponTags>
+	</ThingDef>
+	<AbilityDef>
+		<defName>Moyo2_WrenchThrow</defName>
+		<label>wrench throw</label>
+		<description>Throw a wrench at your target. That should hurt.</description>
+		<iconPath>Weapon/IDR_Wrench</iconPath>
+		<displayOrder>201</displayOrder>
+		<aiCanUse>false</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>6</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>ThrowGrenade</soundCast>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Moyo2_Bullet_WrenchThrow</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_WrenchThrow</defName>
+		<label>thrown wrench</label>
+		<graphicData>
+			<texPath>Weapon/IDR_Wrench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Moyo2_Damage_WrenchThrow</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>30</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>5</amount>
+				</li>
+			</extraDamages>
+		</projectile>
 	</ThingDef>
 	<!-- 모요 나이프 -->
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
@@ -118,7 +181,57 @@
 		</costList>
 		<!-- - -->
 		<weaponTags>
-			<li>Moyo2_MeleeIndustrial</li>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_KnifeIDR</li>
+		</weaponTags>
+	</ThingDef>
+	<!-- 모요 톱 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_Saw</defName>
+		<label>depthtool sawjack</label>
+		<description>dummy text.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Saw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>3.5</Mass>
+		</statBases>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>		
+		<tools>
+			<li>
+				<label>sawblade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>0.3</cooldownTime>
+				<armorPenetration>0.01</armorPenetration>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>40</Steel>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_SawIDR</li>
 		</weaponTags>
 	</ThingDef>
 	<!-- 라미너 글레이브 -->
@@ -138,6 +251,8 @@
 			<WorkToMake>60000</WorkToMake>
 			<Mass>9</Mass>
 		</statBases>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			
 		<tools>
 			<li>
 				<label>handle</label>
@@ -180,7 +295,68 @@
 		</costList>
 		<!-- - -->
 		<weaponTags>
-			<li>Moyo2_MeleeSpacer</li>
+			<li>Moyo2_MeleeLMR</li>
+			<li>Moyo2_GlaiveLMR</li>
 		</weaponTags>
 	</ThingDef>
+	<!-- 모요 파워건틀릿 -->
+	<ThingDef ParentName="MoyoBaseMeleeLMR">
+		<defName>Moyo2_LMRFist</defName>
+		<label>depthtool power gauntlet</label>
+		<description>dummy text.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Gauntlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>			
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+			<CarryingCapacity>45</CarryingCapacity>
+		</equippedStatOffsets>		
+		<tools>
+			<li>
+				<label>Fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->	
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeLMR</li>
+			<li>Moyo2_GaunteltLMR</li>
+		</weaponTags>		
+	</ThingDef>		
 </Defs>

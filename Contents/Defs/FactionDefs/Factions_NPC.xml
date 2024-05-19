@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 모요 팩션베이스 -->
+	<FactionDef ParentName="FactionBase" Name="MoyoFactionBase" Abstract="True">
+		<pawnSingular>Refugee</pawnSingular>
+		<pawnsPlural>Refugees</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>4</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<leaderTitle>Refugee elder</leaderTitle>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<techLevel>Spacer</techLevel>
+		<allowedCultures>
+			<li>Moyo2_RefugeeCulture</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Moyo2_Cloth_Depthweave</li>
+				<li>Synthread</li>
+			</thingDefs>
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>Leather_Thrumbo</li>
+				<li>Hyperweave</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>	
+		<caravanTraderKinds>
+			<li>Moyo2_Caravan_BulkGoods</li>
+			<li>Moyo2_Caravan_CombatSupplier</li>
+			<li>Moyo2_Caravan_Exotic</li>
+			<li>Moyo2_Caravan_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Moyo2_Base_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 100)</li>
+				<li>(1000, 150)</li>
+				<li>(2000, 250)</li>
+				<li>(2001, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- 기본 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Moyo2_NPCTechnician>10</Moyo2_NPCTechnician>
+					<Moyo2_NPCEngineer>2</Moyo2_NPCEngineer>
+					<Moyo2_NPCEngineerMelee>2</Moyo2_NPCEngineerMelee>
+					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
+					<Moyo2_NPCOutlawJunkie>5</Moyo2_NPCOutlawJunkie>
+					<Moyo2_NPCOutlawBoss>1</Moyo2_NPCOutlawBoss>
+				</options>
+			</li>
+			<li>
+				<!-- 무법자 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
+					<Moyo2_NPCOutlawJunkie>10</Moyo2_NPCOutlawJunkie>
+					<Moyo2_NPCOutlawBoss>3</Moyo2_NPCOutlawBoss>					
+				</options>
+			</li>
+			<li>
+				<!-- 잠수부 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Moyo2_NPCDiverRecon>25</Moyo2_NPCDiverRecon>
+					<Moyo2_NPCDiverReconMelee>10</Moyo2_NPCDiverReconMelee>				
+				</options>
+			</li>			
+			<li>
+				<!-- 일반 주둔지 -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Moyo2_NPCTechnician>25</Moyo2_NPCTechnician>
+					<Moyo2_NPCEngineer>10</Moyo2_NPCEngineer>
+					<Moyo2_NPCEngineerMelee>10</Moyo2_NPCEngineerMelee>
+					<Moyo2_NPCMiddleCivil>20</Moyo2_NPCMiddleCivil>
+					<Moyo2_NPCTopCivil>10</Moyo2_NPCTopCivil>
+					<Moyo2_NPCFlooded>3</Moyo2_NPCFlooded>
+					<Moyo2_NPCNegotiator>1</Moyo2_NPCNegotiator>
+				</options>
+			</li>
+			<li>
+				<!-- 무법자 주둔지 -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
+					<Moyo2_NPCOutlawJunkie>5</Moyo2_NPCOutlawJunkie>
+					<Moyo2_NPCOutlawBoss>5</Moyo2_NPCOutlawBoss>
+					<Moyo2_NPCTopCivil>10</Moyo2_NPCTopCivil>
+					<Moyo2_NPCFlooded>8</Moyo2_NPCFlooded>
+				</options>
+			</li>			
+			<li>
+				<!-- 일반 방문 -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Moyo2_NPCBottomCivil>1</Moyo2_NPCBottomCivil>
+					<Moyo2_NPCTechnician>25</Moyo2_NPCTechnician>
+					<Moyo2_NPCEngineer>5</Moyo2_NPCEngineer>
+					<Moyo2_NPCEngineerMelee>5</Moyo2_NPCEngineerMelee>
+					<Moyo2_NPCMiddleCivil>10</Moyo2_NPCMiddleCivil>
+					<Moyo2_NPCTopCivil>5</Moyo2_NPCTopCivil>
+					<Moyo2_NPCFlooded>1</Moyo2_NPCFlooded>
+					<Moyo2_NPCNegotiator>1</Moyo2_NPCNegotiator>
+				</options>
+			</li>
+			<li>
+				<!-- 무법자 방문 -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
+					<Moyo2_NPCOutlawJunkie>10</Moyo2_NPCOutlawJunkie>
+					<Moyo2_NPCOutlawBoss>3</Moyo2_NPCOutlawBoss>
+				</options>
+			</li>
+			<li>
+				<!-- 거지 방문 -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Moyo2_NPCTopCivil>5</Moyo2_NPCTopCivil>
+					<Moyo2_NPCFlooded>1</Moyo2_NPCFlooded>
+				</options>
+			</li>			
+			<li>
+				<!-- 일반 상단 -->
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Moyo2_NPCNegotiator>1</Moyo2_NPCNegotiator>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Moyo2_NPCTechnician>15</Moyo2_NPCTechnician>
+					<Moyo2_NPCEngineer>10</Moyo2_NPCEngineer>
+					<Moyo2_NPCEngineerMelee>10</Moyo2_NPCEngineerMelee>
+				</guards>
+			</li>
+			<li>
+				<!-- 무법자 상단 -->
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Moyo2_NPCOutlawBoss>1</Moyo2_NPCOutlawBoss>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
+					<Moyo2_NPCOutlawJunkie>5</Moyo2_NPCOutlawJunkie>
+				</guards>
+			</li>			
+		</pawnGroupMakers>
+	</FactionDef>
+	<FactionDef ParentName="MoyoFactionBase">
+		<defName>Moyo2_HavenFaction</defName>
+		<label>moyo refugee haven</label>
+		<description>A settlement of moyo who left the lighthouse for the surface.\n\nThe moyos who have left the lighthouse, whether it be to escape the civil war or simply to trade with the surface, have banded together for survival.</description>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementTexturePath>Icon/Moyo_FactionIcon</settlementTexturePath>
+		<factionIconPath>Icon/Moyo_FactionIcon</factionIconPath>
+		<leaderTitle>Refugee Haven elder</leaderTitle>
+		<colorSpectrum>
+			<li>(79, 183, 181)</li>
+		</colorSpectrum>
+		<pawnGroupMakers>
+			<li>
+				<!-- 더미 -->
+				<kindDef>Combat</kindDef>
+				<commonality>0</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Moyo2_NPCSiren>1</Moyo2_NPCSiren>
+					<Moyo2_NPCBottomCivil>1</Moyo2_NPCBottomCivil>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<ThingSetMakerDef>
+		<defName>MoyoRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>MedicineIndustrial</li>
+						<li>Moyo2_BlueMedicine</li>
+						<li>ComponentIndustrial</li>
+						<li>MealSurvivalPack</li>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>	
+</Defs>

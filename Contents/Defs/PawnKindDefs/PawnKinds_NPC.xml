@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 모요 폰카인드 베이스 -->
+	<PawnKindDef Name="Moyo2_NPCBase" Abstract="True">
+		<race>Alien_Moyo</race>
+		<isFighter>false</isFighter>
+		<defaultFactionType>Moyo2_HavenFaction</defaultFactionType>
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<invNutrition>2</invNutrition>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>75</maxGenerationAge>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>		
+	</PawnKindDef>
+	<!-- 하급 폰카인드 -->
+	<!-- 모요 침수민	-->
+	<PawnKindDef ParentName="Moyo2_NPCBase">
+		<defName>Moyo2_NPCFlooded</defName>
+		<label>moyo floodzone dweller</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>Moyo2_SuitBasic</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<gearHealthRange>0.2~0.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>200~400</apparelMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>
+		<chemicalAddictionChance>0.3</chemicalAddictionChance>
+		<invNutrition>1</invNutrition>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.2</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Flake</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+	<!-- 모요 상층민	-->
+	<PawnKindDef ParentName="Moyo2_NPCBase">
+		<defName>Moyo2_NPCTopCivil</defName>
+		<label>moyo toplayer civilian</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>Moyo2_SuitBasic</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_BasicSuit</li>
+		</apparelRequired>		
+		<gearHealthRange>0.5~0.9</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>300~500</apparelMoney>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<invNutrition>1</invNutrition>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBPearl_Joy</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>			
+	</PawnKindDef>
+	<!-- 중급 폰카인드 -->
+	<!-- 모요 중층민	-->
+	<PawnKindDef ParentName="Moyo2_NPCBase">
+		<defName>Moyo2_NPCMiddleCivil</defName>
+		<label>moyo midlayer civilian</label>
+		<combatPower>50</combatPower>
+		<apparelTags>
+			<li>Moyo2_SuitBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_BasicSuit</li>
+		</apparelRequired>			
+		<gearHealthRange>0.7~0.9</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>600~1500</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>Moyo2_NailIDR</li>
+			<li>Moyo2_MeleeIDR</li>
+		</weaponTags>
+		<weaponMoney>250~350</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.2</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBPearl_Joy</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	<!-- 모요 중급 전투원 -->
+	<PawnKindDef ParentName="Moyo2_NPCBase" Name="Moyo2_NPCFighterMid" Abstract="true">
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>Moyo2_Engineer</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_EGHelmet</li>
+			<li>Moyo2_EGHarness</li>
+			<li>Moyo2_BasicSuit</li>
+		</apparelRequired>
+		<gearHealthRange>0.7~95</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>400~1500</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_SpearIDR</li>
+			<li>Moyo2_NailIDR</li>
+			<li>Moyo2_MeleeIDR</li>
+		</weaponTags>
+		<weaponMoney>500~800</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBPearl_Crystal</thingDef>
+					<countRange>1</countRange>
+				</li>				
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+	<!-- 모요 기술자 -->
+	<PawnKindDef ParentName="Moyo2_NPCFighterMidPlus">
+		<defName>Moyo2_NPCTechnician</defName>
+		<label>moyo technician</label>
+	</PawnKindDef>	
+	<!-- 모요 무법자 -->
+	<PawnKindDef ParentName="Moyo2_NPCFighterMid">
+		<defName>Moyo2_NPCOutlaw</defName>
+		<label>moyo outlaw</label>
+		<combatPower>110</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponMoney>500~800</weaponMoney>
+	</PawnKindDef>	
+	<PawnKindDef ParentName="Moyo2_NPCFighterMid">
+		<defName>Moyo2_NPCOutlawJunkie</defName>
+		<label>moyo outlaw junkie</label>
+		<combatPower>110</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>Moyo2_SuitBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelMoney>400~800</apparelMoney>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<weaponMoney>200~800</weaponMoney>
+		<chemicalAddictionChance>1</chemicalAddictionChance>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Flake</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>			
+	</PawnKindDef>
+	<!-- 모요 중급+ 전투원 -->
+	<PawnKindDef ParentName="Moyo2_NPCFighterMid" Name="Moyo2_NPCFighterMidPlus" Abstract="true">
+		<combatPower>130</combatPower>
+		<itemQuality>Good</itemQuality>
+		<apparelTags Inherit="false">
+			<li>Moyo2_Engineer</li>
+		</apparelTags>
+		<apparelRequired Inherit="false">
+			<li>Moyo2_EGHelmet</li>
+			<li>Moyo2_EGJacket</li>
+			<li>Moyo2_EGHarness</li>
+			<li>Moyo2_AdvancedSuit</li>
+		</apparelRequired>
+		<gearHealthRange>0.7~95</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>400~1500</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_SpearIDR</li>
+			<li>Moyo2_NailIDR</li>
+		</weaponTags>
+		<weaponMoney>500~1000</weaponMoney>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBPearl_Thinker</thingDef>
+					<countRange>1</countRange>
+				</li>		
+			</subOptionsChooseOne>
+		</inventoryOptions>			
+	</PawnKindDef>
+	<!-- 모요 엔지니어 -->
+	<PawnKindDef ParentName="Moyo2_NPCFighterMidPlus">
+		<defName>Moyo2_NPCEngineer</defName>
+		<label>moyo engineer</label>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Moyo2_NPCFighterMidPlus">
+		<defName>Moyo2_NPCEngineerMelee</defName>
+		<label>moyo engineer</label>
+		<apparelTags>
+			<li>BeltDefense</li>
+		</apparelTags>		
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- 모요 무법자 보스 -->
+	<PawnKindDef ParentName="Moyo2_NPCFighterMidPlus">
+		<defName>Moyo2_NPCOutlawBoss</defName>
+		<label>moyo outlaw boss</label>
+		<combatPower>150</combatPower>
+		<trader>true</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>800~2200</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_HarpoonIDR</li>
+		</weaponTags>
+		<weaponMoney>500~1500</weaponMoney>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>55~120</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>3</combatEnhancingDrugsCount>			
+	</PawnKindDef>	
+	<!-- 모요 협상가 -->
+	<PawnKindDef ParentName="Moyo2_NPCBase">
+		<defName>Moyo2_NPCNegotiator</defName>
+		<label>moyo negotiator</label>
+		<combatPower>70</combatPower>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Moyo2_SuitBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>BeltDefense</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_BowlerHat</li>
+			<li>Moyo2_EGJacket</li>
+			<li>Moyo2_AdvancedSuit</li>
+		</apparelRequired>
+		<gearHealthRange>0.7~95</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>400~1500</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+		</weaponTags>
+		<weaponMoney>500~800</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	<!-- 상급 폰카인드 -->
+	<!-- 모요 하층시민 -->
+	<PawnKindDef ParentName="Moyo2_NPCBase">
+		<defName>Moyo2_NPCBottomCivil</defName>
+		<label>moyo bottomlayer civilian</label>
+		<combatPower>70</combatPower>
+		<trader>true</trader>
+		<factionLeader>true</factionLeader>
+		<apparelTags>
+			<li>Moyo2_SuitAdvanced</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_AdvancedSuit</li>
+		</apparelRequired>
+		<gearHealthRange>1.5~3</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>1500~3000</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_PistolLMR</li>
+		</weaponTags>
+		<weaponMoney>1180~1400</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>225~520</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	<!-- 모요 세이렌 -->
+	<PawnKindDef ParentName="Moyo2_NPCBase">
+		<defName>Moyo2_NPCSiren</defName>
+		<label>moyo siren</label>
+		<combatPower>70</combatPower>
+		<trader>true</trader>
+		<factionLeader>true</factionLeader>
+		<apparelTags>
+			<li>Moyo2_SuitHolo</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_HoloSuit</li>
+		</apparelRequired>
+		<gearHealthRange>1.5~3</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>1500~3000</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_PistolLMR</li>
+		</weaponTags>
+		<weaponMoney>1180~1400</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBPearl_Alluring</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>		
+	<!-- 모요타격대 -->
+	<PawnKindDef ParentName="Moyo2_NPCBase" Name="Moyo2_NPCDiverLight" Abstract="true">
+		<combatPower>190</combatPower>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>Moyo_SpacerLight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_StreamlineDivingHelmet</li>
+			<li>Moyo2_StreamlineDivingShell</li>
+			<li>Moyo2_AdvancedSuit</li>
+		</apparelRequired>
+		<gearHealthRange>2~3</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Dummy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>2500~3800</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_PistolLMR</li>
+			<li>Moyo2_RifleLMR</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>
+		<biocodeWeaponChance>0.2</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~2000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>1</invNutrition>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Moyo2_NPCDiverLight">
+		<defName>Moyo2_NPCDiverRecon</defName>
+		<label>moyo combat diver recon</label>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBBooster_Hydra</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>		
+	<PawnKindDef ParentName="Moyo2_NPCDiverLight">
+		<defName>Moyo2_NPCDiverReconMelee</defName>
+		<label>moyo combat diver vanguard</label>
+		<apparelTags>
+			<li>BeltDefense</li>
+		</apparelTags>		
+		<weaponTags Inherit="false">
+			<li>Moyo2_GauntletLMR</li>
+		</weaponTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBBooster_Orca</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>	
+</Defs>

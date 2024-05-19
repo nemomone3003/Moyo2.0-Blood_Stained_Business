@@ -92,7 +92,8 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 		<weaponTags>
-			<li>Moyo_SpacerGun</li>
+			<li>Moyo2_GunLMR</li>
+			<li>Moyo2_RifleLMR</li>
 		</weaponTags>
 	</ThingDef>
 	<ThingDef ParentName="Moyo2_LMRRifle">

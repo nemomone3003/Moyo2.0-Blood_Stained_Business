@@ -38,10 +38,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Industrial</li>
-				<li>Moyo2_Military</li>
-				<li>Moyo2_Starting</li>
-				<li>Moyo2_Spacer</li>
+				<li>Moyo2_SuitBasic</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -96,9 +93,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Spacer</li>
-				<li>Moyo2_SpacerLight</li>
-				<li>Moyo2_SpacerHeavy</li>
+				<li>Moyo2_SuitAdvanced</li>
 				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
@@ -156,9 +151,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Spacer</li>
-				<li>Moyo2_SpacerLight</li>
-				<li>Moyo2_SpacerHeavy</li>
+				<li>Moyo2_SuitRoyal</li>
 				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
@@ -178,7 +171,7 @@
 	</ThingDef>
 	<!--홀로그램 바디슈트-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
-		<defName>Moyo2_HololSuit</defName>
+		<defName>Moyo2_HoloSuit</defName>
 		<label>lighthouse holosuit</label>
 		<description>The most precious bodysuit obtainable in the lighthouse. Focused on aesthetic value, it boasts numerous holographic displays, enabling the suit to be presented in variety of ways. It's primarily used by top-tier artists and influencers of the lighthouse; others before them simply cannot afford it.</description>
 		<graphicData>
@@ -216,9 +209,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Spacer</li>
-				<li>Moyo2_SpacerLight</li>
-				<li>Moyo2_SpacerHeavy</li>
+				<li>Moyo2_SuitHolo</li>
 				<li>RoyalTier5</li>
 			</tags>
 		</apparel>
@@ -270,8 +261,8 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Industrial</li>
 				<li>Moyo2_Engineer</li>
+				<li>Moyo2_EngineerNoHead</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -325,8 +316,8 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Industrial</li>
 				<li>Moyo2_Engineer</li>
+				<li>Moyo2_EngineerNoHead</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -382,7 +373,6 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Industrial</li>
 				<li>Moyo2_Engineer</li>
 			</tags>
 		</apparel>
@@ -461,7 +451,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Shell</li>
+				<li>Moyo2_DiverLight</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -511,7 +501,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Moyo2_Shell</li>
+				<li>Moyo2_DiverLight</li>
 				<li>Moyo2_BigHelmet</li>
 			</tags>
 		</apparel>
@@ -572,7 +562,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>Moyo2_HeavyShell</li>
+				<li>Moyo2_DiverHeavy</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -626,7 +616,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Moyo2_HeavyShell</li>
+				<li>Moyo2_DiverHeavy</li>
 				<li>Moyo2_BigHelmet</li>
 			</tags>
 		</apparel>
