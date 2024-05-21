@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=wrench throw-->
+  <Moyo2_WrenchThrow.label>렌치 던지기</Moyo2_WrenchThrow.label>
+  <!--Original=Throw a wrench at your target. That should hurt.-->
+  <Moyo2_WrenchThrow.description>상대에게 렌치를 던집니다. 많이 아프겠네요.</Moyo2_WrenchThrow.description>
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=Deeplbue production amount-->
+  <DeepblueStat.label>딥블루 생산량</DeepblueStat.label>
+  <!--Original=How much deepblue this pawn provides.-->
+  <DeepblueStat.description>생산되는 딥블루의 양입니다.</DeepblueStat.description>
+  <!--Original=Deeplbue production speed-->
+  <DeepblueStatSpeed.label>딥블루 생산속도</DeepblueStatSpeed.label>
+  <!--Original=How fast this pawn provides deepblue.-->
+  <DeepblueStatSpeed.description>딥블루를 생산하는 속도입니다.</DeepblueStatSpeed.description>
+</LanguageData>

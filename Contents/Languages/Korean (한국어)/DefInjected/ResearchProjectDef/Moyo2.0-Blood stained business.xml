@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=basic deepblue refining-->
+  <Moyo2_Abysstech_DeepblueSimple.label>기초적 딥블루 정제법</Moyo2_Abysstech_DeepblueSimple.label>
+  <!--Original=Research production of basic deepblue compounds.-->
+  <Moyo2_Abysstech_DeepblueSimple.description>기초적인 딥블루 화합물을 제작하는 방법을 연구합니다.</Moyo2_Abysstech_DeepblueSimple.description>
+  <!--Original=advanced deepblue refining-->
+  <Moyo2_Abysstech_DeepblueAdvanced.label>개선된 딥블루 정제법</Moyo2_Abysstech_DeepblueAdvanced.label>
+  <!--Original=Research production of advanced deepblue compounds.-->
+  <Moyo2_Abysstech_DeepblueAdvanced.description>복잡한 딥블루 화합물을 제작하는 방법을 연구합니다</Moyo2_Abysstech_DeepblueAdvanced.description>
+  <!--Original=deepblue sysnthesis-->
+  <Moyo2_Abysstech_DeepblueSynthesis.label>딥블루 합성</Moyo2_Abysstech_DeepblueSynthesis.label>
+  <!--Original=Research means of synthesysing complex deepblue compound.-->
+  <Moyo2_Abysstech_DeepblueSynthesis.description>복잡한 딥블루 화합물을 합성하는 방법을 연구합니다.</Moyo2_Abysstech_DeepblueSynthesis.description>
+  <!--Original=improved pneumatic pump-->
+  <Moyo2_Abysstech_Pneumatic.label>개선된 유압 펌프</Moyo2_Abysstech_Pneumatic.label>
+  <!--Original=Research for more efficient both powerful pneumatic pump.-->
+  <Moyo2_Abysstech_Pneumatic.description>더 효율적이고 강력한 유압 펌프를 개발합니다.</Moyo2_Abysstech_Pneumatic.description>
+  <!--Original=laminar theory-->
+  <Moyo2_Abysstech_LaminarTheory.label>라미너 역장 이론</Moyo2_Abysstech_LaminarTheory.label>
+  <!--Original=Research ways to produce laminar field. A directional field of energy that can be used as a virtual rail that guide matters through it.-->
+  <Moyo2_Abysstech_LaminarTheory.description>역장 내부를 통해 이동하는 물체를 마치 레일처럼 유도할 수 있는 라미너 역장을 발생시키는 방법을 연구합니다.</Moyo2_Abysstech_LaminarTheory.description>
+  <!--Original=laminar field manipulation-->
+  <Moyo2_Abysstech_LaminarManipulation.label>라미너 역장 조작</Moyo2_Abysstech_LaminarManipulation.label>
+  <!--Original=Research ways to manipulate lamianr field. This will allow more flexible use of the technology.-->
+  <Moyo2_Abysstech_LaminarManipulation.description>라미너 역장을 조작하는 방법을 연구합니다. 이를 통해 역장을 더욱 많은 곳에 응용할 수 있습니다.</Moyo2_Abysstech_LaminarManipulation.description>
+  <!--Original=abysstech foundry-->
+  <Moyo2_Abysstech_Foundry.label>어비스테크 주조소</Moyo2_Abysstech_Foundry.label>
+  <!--Original=Replicate abysstech&apos;s ways of production. Especially production of their valuable alloy, abyssteel.-->
+  <Moyo2_Abysstech_Foundry.description>어비스테크의 주조법을 연구합니다.</Moyo2_Abysstech_Foundry.description>
+  <!--Original=About: Getting abyssteel-->
+  <Moyo2_Abysstech_Foundry.discoveredLetterTitle>어비스틸 수급에 대하여</Moyo2_Abysstech_Foundry.discoveredLetterTitle>
+  <!--Original=Now you have access to the powerful abysstech of The lighthouse. You need some abyssteel to kickstart the whole process, here are some ways to get it:\n\nーAll Moyo settlements are most likely to sell abyssteel.\nーMelt down things made from abyssteel(weapons, armor and abysstech mechs).\nーSome quests are rewarded with abyssteel.-->
+  <Moyo2_Abysstech_Foundry.discoveredLetterText>어비스틸을 생산하기 위한 어비스테크 아크 화로를 만들기 위해 약간의 어비스틸이 필요합니다. 어비스틸은 이러한 방법을 통해 수급할 수 있습니다:\n\n-모든 모요 정착지는 소량의 어비스틸을 판매할 것입니다.\n-어비스틸제 물건을 분해하기(무기, 방어구와 건물들).\n-퀘스트를 통해 어비스틸을 입수할 수 있습니다.</Moyo2_Abysstech_Foundry.discoveredLetterText>
+  <!--Original=repurposed diving shell-->
+  <Moyo2_Abysstech_DivingShell.label>잠수복 개조</Moyo2_Abysstech_DivingShell.label>
+  <!--Original=Craft abysstech diving shells. Used as a substitute for armor in the civil war, it went through many modifications to be adapted for surface use, including removal of the tail piece.-->
+  <Moyo2_Abysstech_DivingShell.description>어비스테크 잠수복을 제작하는 방법을 연구합니다. 지상에서 사용하기 위해 꼬리 부분을 제거하는 등 여러 개조를 거쳤습니다.</Moyo2_Abysstech_DivingShell.description>
+</LanguageData>

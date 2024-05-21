@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=depthweed-->
+  <Moyo2_DepthWeed.label>뎁스위드</Moyo2_DepthWeed.label>
+  <!--Original=dummy text.-->
+  <Moyo2_DepthWeed.description>dummy text.</Moyo2_DepthWeed.description>
+  <!--Original=depthweed-->
+  <Moyo2_DepthWeed.race.meatLabel>뎁스위드</Moyo2_DepthWeed.race.meatLabel>
+  <!--Original=tidal tuna-->
+  <Moyo2_Tuna.label>파도다랑어</Moyo2_Tuna.label>
+  <!--Original=dummy text.-->
+  <Moyo2_Tuna.description>dummy text.</Moyo2_Tuna.description>
+  <!--Original=tuna fillet-->
+  <Moyo2_Tuna.race.meatLabel>파도다랑어 살점</Moyo2_Tuna.race.meatLabel>
+  <!--Original=demi kraken-->
+  <Moyo2_DemiKraken.label>데미크라켄</Moyo2_DemiKraken.label>
+  <!--Original=dummy text.-->
+  <Moyo2_DemiKraken.description>dummy text.</Moyo2_DemiKraken.description>
+  <!--Original=kraken chop-->
+  <Moyo2_DemiKraken.race.meatLabel>크라켄 토막</Moyo2_DemiKraken.race.meatLabel>
+</LanguageData>

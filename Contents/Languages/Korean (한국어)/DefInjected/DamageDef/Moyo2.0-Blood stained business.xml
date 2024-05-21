@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=heavy bolt-->
+  <Moyo_DemolishBullet.label>대형 볼트</Moyo_DemolishBullet.label>
+  <!--Original={0} has been shot to death.-->
+  <Moyo_DemolishBullet.deathMessage>{0}총에 맞아 죽었습니다.</Moyo_DemolishBullet.deathMessage>
+  <!--Original=laminar bolt-->
+  <Moyo2_Damage_LMRBolt.label>라미너 볼트</Moyo2_Damage_LMRBolt.label>
+  <!--Original={0} has died in an explosion.-->
+  <Moyo2_Damage_LMRBolt.deathMessage>{0}는 폭발로 인해 죽었습니다.</Moyo2_Damage_LMRBolt.deathMessage>
+  <!--Original=laminar bolt-->
+  <Moyo2_Damage_LMRBoltDemolish.label>라미너 볼트</Moyo2_Damage_LMRBoltDemolish.label>
+  <!--Original={0} has died in an explosion.-->
+  <Moyo2_Damage_LMRBoltDemolish.deathMessage>{0}는 폭발로 인해 죽었습니다.</Moyo2_Damage_LMRBoltDemolish.deathMessage>
+  <!--Original=heavy harpoon-->
+  <Moyo2_Damage_MoyoHarpoon.label>대형 작살</Moyo2_Damage_MoyoHarpoon.label>
+  <!--Original=blunt-->
+  <Moyo2_Damage_WrenchThrow.label>둔탁함</Moyo2_Damage_WrenchThrow.label>
+</LanguageData>

@@ -6,6 +6,7 @@
 		<description>A reduction in the normal blood volume. Minor blood loss has relatively mild effects, but when blood loss becomes severe, oxygen transport becomes badly impaired and the victim loses the ability to move. Extreme blood loss leads to death.
 \nBlood loss naturally recovers over time as the body slowly regenerates its blood supply.</description>
 		<lethalSeverity>1</lethalSeverity>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<stages>
 			<li>
 				<label>minor</label>

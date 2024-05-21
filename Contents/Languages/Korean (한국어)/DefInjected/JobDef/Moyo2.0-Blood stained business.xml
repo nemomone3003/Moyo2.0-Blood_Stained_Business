@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=filling TargetA.-->
+  <Moyo_GrowFish.reportString>TargetA를 채우는 중.</Moyo_GrowFish.reportString>
+  <!--Original=emptying out fish tank.-->
+  <Moyo_EmptyFishTank.reportString>수조 비우는 중.</Moyo_EmptyFishTank.reportString>
+</LanguageData>

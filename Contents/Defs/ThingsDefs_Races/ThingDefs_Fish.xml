@@ -153,7 +153,7 @@
 	</Moyo2.FishDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Moyo2_FishKindTuna</defName>
-		<label>stillwater tuna</label>
+		<label>tidal tuna</label>
 		<race>Moyo2_Tuna</race>
 		<combatPower>75</combatPower>
 		<lifeStages>

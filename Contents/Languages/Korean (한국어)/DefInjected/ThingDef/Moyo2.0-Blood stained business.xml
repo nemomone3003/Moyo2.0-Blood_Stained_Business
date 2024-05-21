@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=Moyo-->
+  <Alien_Moyo.label>Moyo</Alien_Moyo.label>
+  <!--Original=Inhabitants of the &apos;Lighthouse&apos;, a city submerged beneath the waves, has emerged to pursue their own interests. A substance known as Deepblue flows in their veins, serving a variety of pharmaceutical and medical purposes, not to mention producing drugs.-->
+  <Alien_Moyo.description>깊은 바다의 도시인 등대의 거주자입니다. 저마다의 이유로 지상으로 올라온 이들의 피엔 딥블루라는 성분이 피와 함께 흐릅니다. 이 성분은 의학과 제약의 영역에서 매우 유용하며 특정한 부류의 약물을 만드는 데에도 훌륭합니다.</Alien_Moyo.description>
+  <!--Original=left fist-->
+  <Alien_Moyo.tools.0.label>왼주먹</Alien_Moyo.tools.0.label>
+  <!--Original=right fist-->
+  <Alien_Moyo.tools.1.label>오른주먹</Alien_Moyo.tools.1.label>
+  <!--Original=teeth-->
+  <Alien_Moyo.tools.2.label>이빨</Alien_Moyo.tools.2.label>
+  <!--Original=head-->
+  <Alien_Moyo.tools.3.label>머리</Alien_Moyo.tools.3.label>
+  <!--Original=MoyoTail-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.offsetDefaults.0.name>꼬리</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.offsetDefaults.0.name>
+  <!--Original=MoyoAntennae-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.offsetDefaults.1.name>더듬이</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.offsetDefaults.1.name>
+  <!--Original=MoyoAntennaeGlow-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.offsetDefaults.2.name>더듬이 발광부</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.offsetDefaults.2.name>
+  <!--Original=moyo tail-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.name>꼬리</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.name>
+  <!--Original=glow(moyo tail)-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.name>꼬리 발광부</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.name>
+  <!--Original=moyo left antennae-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.2.name>왼쪽 더듬이</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.2.name>
+  <!--Original=glow(moyo left antennae)-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.name>왼쪽 더듬이 발광부</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.name>
+  <!--Original=moyo right antennae-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.name>오른쪽 더듬이</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.name>
+  <!--Original=glow(moyo right antennae)-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.name>오른쪽 더듬이 발광부</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.name>
+  <!--Original=glow(face)-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.6.name>얼굴 발광부</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.6.name>
+  <!--Original=glow(몸체)-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.7.name>몸 발광부</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.7.name>
+  <!--Original=hair-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.8.name>머리카락</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.8.name>
+  <!--Original=hair(back)-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.9.name>뒷머리카락</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.9.name>
+  <!--Original=dummy-->
+  <Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.10.name>더미</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.10.name>
+  <!--Original=moyo heart-->
+  <Moyo2_Heart.label>모요 심장</Moyo2_Heart.label>
+  <!--Original=A heart of moyo. Its blue.-->
+  <Moyo2_Heart.description>모요 심장입니다. 파랗습니다.</Moyo2_Heart.description>
+  <!--Original=blood-->
+  <Moyo2_Blood.label>피</Moyo2_Blood.label>
+  <!--Original=blood smear-->
+  <Moyo2_BloodSmear.label>번진 피</Moyo2_BloodSmear.label>
+  <!--Original=blue bloodbag-->
+  <BlueBloodBag.label>푸른 혈액팩</BlueBloodBag.label>
+  <!--Original=A bag of moyo blood, can be refined to produce deepblue.-->
+  <BlueBloodBag.description>모요의 피가 담긴 혈액팩입니다. 딥블루를 정제할 수 있습니다.</BlueBloodBag.description>
+  <!--Original=blue serum-->
+  <BlueSerum.label>푸른 혈청</BlueSerum.label>
+  <!--Original=Deepblue extracted from moyo blood. Its useful in various area of pharmaceutical and medical purposes.\n\nInjected to lifeforms other than moyos, it will slowly cause a change in metabolism eventually causing permanent dependancy to deepblue. It doesn&apos;t affect moyos in any significant ways. So don&apos;t waste it on moyos.-->
+  <BlueSerum.description>모요의 피에서 추출한 딥블루입니다. 의학과 제약의 여러 분야에서 이용하기에 좋습니다.\n\n모요를 제외한 생물에게 투여시 천천히 대사구조의 변화를 유발하며 결국 딥블루에  영구적인 의존성을 지니게 됩니다. 모요에겐 별 효과가 없습니다. 낭비하지 마세요.</BlueSerum.description>
+  <!--Original=Inject {0}-->
+  <BlueSerum.ingestible.ingestCommandString>{0} 투여</BlueSerum.ingestible.ingestCommandString>
+  <!--Original=Injecting {0}.-->
+  <BlueSerum.ingestible.ingestReportString>{0} 투여중.</BlueSerum.ingestible.ingestReportString>
+  <!--Original=medi 부스터-->
+  <DBBooster_Medi.label>메디 부스터</DBBooster_Medi.label>
+  <!--Original=A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the 몸체 for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven&apos;t granted your desired effects, we advice to inject additional doses.-->
+  <DBBooster_Medi.description>빠른 투여와 신속한 효과가 특징인 의료용 약물입니다. 신체의 회복능력을 강화해 상처와 질병을 빠르게 극복할 수 있도록 도와줍니다. 중복해서 복용하면 효과가 더욱 좋으며 지속적으로 투여할 시 흉터 역시 치유가 가능합니다. 그 특성상 수요가 매우 높으며 일부 전문가들은 암, 당뇨, 고혈압, 뇌졸증, 치매 예방, 다이어트, 정력 증진등 여러 분야에 효과가 있다 주장합니다.\n\n지속적인 투여를 통해 만족할만한 효과를 얻지 못했다면 추가적인 투여를 시도해보시기 바랍니다.</DBBooster_Medi.description>
+  <!--Original=orca 부스터-->
+  <DBBooster_Orca.label>오르카 부스터</DBBooster_Orca.label>
+  <!--Original=A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.-->
+  <DBBooster_Orca.description>빠른 투여와 신속한 효과가 특징인 전투 약물입니다. 격투기 선수들의 능력을 증진하기 위해 만들어져 근접 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다. 격투기 대회는 대부분 누가 양질의 부스터를 더 많이 구했느냐에 따라 승패가 갈리게 되었습니다. 소비자들은 더욱 짜릿하고 격렬한 경기에 열광했습니다.\n\n오르카부스터의사용은이로인해발생하는모든결과에대해회사가아무책임이없음에 동의하는것입니다.</DBBooster_Orca.description>
+  <!--Original=hydra 부스터-->
+  <DBBooster_Hydra.label>히드라 부스터</DBBooster_Hydra.label>
+  <!--Original=A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull&apos;s eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.-->
+  <DBBooster_Hydra.description>빠른 투여와 신속한 효과가 특징인 전투 약물입니다. 사격 선수들의 능력을 증진하기 위해 만들어져 원거리 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다. 이 부스터만 있다면 일반인도 명사수로 탈바꿈합니다. 이로 인해 의회에서도 대량으로 구매하는 히트 상품입니다.\n\n히드라부스터의사용은이로인해발생하는모든결과에대해회사가아무책임이없음에 동의하는것입니다.</DBBooster_Hydra.description>
+  <!--Original=joypearl-->
+  <DBPearl_Joy.label>조이펄</DBPearl_Joy.label>
+  <!--Original=&quot;Objectively the best way to start your day&quot; ー an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the goーto of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.-->
+  <DBPearl_Joy.description>"하루를 시작하는 최고의 방법!" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 등대의 베스트셀러 약물로 등대의 모요들은 대부분 이 약과 함께 하루를 시작합니다.\n과도한행복감으로인해발생하는모든사고의책임은소비자에게있습니다.</DBPearl_Joy.description>
+  <!--Original=crystal 펄-->
+  <DBPearl_Crystal.label>크리스탈 펄</DBPearl_Crystal.label>
+  <!--Original=&quot;For your potential to shine like a gem!&quot; ー an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.-->
+  <DBPearl_Crystal.description>"원석을 보석으로, 당신을 깨우는 방법!" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 작업 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 무언가를 성취하려는 모요들에겐 필수품입니다.\n\n과도한작업열망으로인해발생하는모든사고의책임은소비자에게있습니다.</DBPearl_Crystal.description>
+  <!--Original=thinker 펄-->
+  <DBPearl_Thinker.label>싱커 펄</DBPearl_Thinker.label>
+  <!--Original=&quot;Enlightenment is just a pill away.&quot; ー an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.-->
+  <DBPearl_Thinker.description>"진리는 한 알 너머에" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 학습 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 무언가를 성취하려는 모요들에겐 필수품입니다.\n\n과도한학업열망으로인해발생하는모든사고의책임은소비자에게있습니다.</DBPearl_Thinker.description>
+  <!--Original=alluring 펄-->
+  <DBPearl_Alluring.label>알루링 펄</DBPearl_Alluring.label>
+  <!--Original=&quot;Struggling to be the center of the party?guess why.&quot; ー an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.-->
+  <DBPearl_Alluring.description>"파티에서 중심이 되는 사람들이 있지, 왜일까?" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 매력을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 이것 없이 사교계에 입문하는 것은 어불성설입니다.\n\n파괴적인자아도취로인해발생하는모든사고의책임은소비자에게있습니다.</DBPearl_Alluring.description>
+  <!--Original=numb 펄-->
+  <DBPearl_Numb.label>넘 펄</DBPearl_Numb.label>
+  <!--Original=&quot;True friend of the poor and suffering.&quot; ー an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.-->
+  <DBPearl_Numb.description>"고통과 고뇌에 시달리는 이들의 진정한 친구이자 가족" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 고통과 고뇌를 잊게 해주며 부작용의 우려 또한 적습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 이 작은 친구의 존재 하나만으로 수많은 모요들이 하루를 살아갈 힘을 얻고 있습니다.\n\n감각과감정의상실로인해발생하는모든사고의책임은소비자에게있습니다.</DBPearl_Numb.description>
+  <!--Original=hooded black cloak-->
+  <Moyo2_CartelHood.label>카르텔 후드망토</Moyo2_CartelHood.label>
+  <!--Original=A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term &quot;cartel&quot; refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel&apos;s influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse&apos;s downfall, they have agreed to cooperate—for now, at least on the surface.-->
+  <Moyo2_CartelHood.description>후드가 달린 두꺼운 뎁스위브 망토입니다. 등대의 그림자 속에서 활동하는 카르텔 요원들이 주로 사용합니다. 제한적인 방탄 기능도 갖추고 있습니다.\n\n카르텔은 현재 등대의 질서인 의회와 반목하는 거대 기업들을 부르는 호칭입니다. 카르텔은 세력은 의회에 비등할 만큼 커지고 있으며 서로간의 충돌은 등대의 몰락이 될 것이라는 상호 이해 아래 서로 협력하기로 했습니다. 표면적으로는요.</Moyo2_CartelHood.description>
+  <!--Original=standard 바디슈트-->
+  <Moyo2_BasicSuit.label>기본형 바디슈트</Moyo2_BasicSuit.label>
+  <!--Original=This 바디슈트 represents the lighthouse&apos;s attire culture. Made with depthweave, it&apos;s both sturdy and elastic. It&apos;s worn by people of all ages and genders, with various products being marketed for funtions such as ease of wear and bodyーshaping.-->
+  <Moyo2_BasicSuit.description>등대 의복 문화의 상징인 전신 바디슈트입니다. 뎁스위브로 만들어져 질기고 유연합니다. 남녀노소 입는 의복으로 착용 보조, 체형 보정 등 기능성 제품도 출시되었습니다.</Moyo2_BasicSuit.description>
+  <!--Original=advanced 바디슈트-->
+  <Moyo2_AdvancedSuit.label>개선형 바디슈트</Moyo2_AdvancedSuit.label>
+  <!--Original=A 바디슈트 that focuses on user protection with its thick fabric and temperature regulation features. It&apos;s rarely used as casual wear and is predominantly utilized by military personnel, police officers, or highーrisk laborers who could afford this.-->
+  <Moyo2_AdvancedSuit.description>두꺼운 원단과 열선 등의 체온 조절기능을 통해 사용자 보호에 초점을 맞춘 바디슈트입니다. 평상복으로 이용되는 경우는 적으며 군인, 경찰이나 여유가 있는 고위험군 노동자들에 의해 사용됩니다.</Moyo2_AdvancedSuit.description>
+  <!--Original=exquisite 바디슈트-->
+  <Moyo2_RoyalSuit.label>최고급 바디슈트</Moyo2_RoyalSuit.label>
+  <!--Original=The most precious 바디슈트 obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.-->
+  <Moyo2_RoyalSuit.description>등대에서 구할 수 있는 가장 귀한 바디슈트입니다. 방탄 재질의 아름다운 원단, 체온 조절기능과 극상의 착용감 그리고 매력 보정등 원하는 모든 기능이 들어가있습니다 . 등대에선 이 슈트를 걸친 사람을 감히 건드릴 사람은 몇 되지 않습니다. 눈으로는 보이지 않는 힘이란게 있는 것입니다.</Moyo2_RoyalSuit.description>
+  <!--Original=lighthouse holosuit-->
+  <Moyo2_HoloSuit.label>등대 홀로슈트</Moyo2_HoloSuit.label>
+  <!--Original=The most precious 바디슈트 obtainable in the lighthouse. Focused on aesthetic value, it boasts numerous holographic displays, enabling the suit to be presented in variety of ways. It&apos;s primarily used by topーtier artists and influencers of the lighthouse; others before them simply cannot afford it.-->
+  <Moyo2_HoloSuit.description>등대에서 구할 수 있는 가장 귀한 바디슈트입니다. 미적 가치에 집중한 이 바디슈트는 수많은 홀로그램 디스플레이가 있어 여러가지 연출을 가능하게 합니다. 등대의 정상급 아티스트와 인플루언서들이 주로 사용합니다. 그 이전에 다른 이들은 이걸 구할 방법도 없습니다.</Moyo2_HoloSuit.description>
+  <!--Original=depth engineer harness-->
+  <Moyo2_EGHarness.label>등대 기술자 하네스</Moyo2_EGHarness.label>
+  <!--Original=This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage.\n\nIndustrial zone workers are strongly encouraged to have protective gear while working. Attempting selfーharm for insurance claims not only results in voided insurance but also leads to prosecution.-->
+  <Moyo2_EGHarness.description>등대의 기술자와 노동자들이 애용하는 보호구입니다. 합리적인 가격을 지불하면 뜨겁고 위험한 상황과 기름때 얼룩으로부터 사용자를 보호해줍니다. 널널한 수납공간도 있습니다.\n\n공업지구의 노동자들은 보호구를 갖추고 일을 하기를 강력하게 권장합니다. 보험금을 노린 자해공갈은 보험이 적용되지 않는 것은 물론, 재판에 회부됩니다.</Moyo2_EGHarness.description>
+  <!--Original=depth engineer jacket-->
+  <Moyo2_EGJacket.label>등대 기술자 재킷</Moyo2_EGJacket.label>
+  <!--Original=This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage. Some wears this for fashion purpose.n\nThis gear is designed to be worn in conjunction with a 바디슈트. Failure to adhere to this can lead to concerns of abrasions and bruises.-->
+  <Moyo2_EGJacket.description>등대의 기술자와 노동자들이 애용하는 보호구입니다. 합리적인 가격을 지불하면 뜨겁고 위험한 상황과 기름때 얼룩으로부터 사용자를 보호해줍니다. 널널한 수납공간도 있으며 가끔 패션으로 입는 사람도 있습니다.\n\n기술자 보호구는 바디슈트와 함께 착용하는 것을 전제로 설계되었습니다. 이를 지키지 않을 시 찰과상과 타박상의 우려가 있습니다.</Moyo2_EGJacket.description>
+  <!--Original=depth engineer welding helmet-->
+  <Moyo2_EGHelmet.label>등대 기술자 용접 헬멧</Moyo2_EGHelmet.label>
+  <!--Original=This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage.\n\nThis product is an upgraded model that enhances design without compromising performance compared to its predecessor. It&apos;s designed for those who want to look stylish even amidst oil stains.-->
+  <Moyo2_EGHelmet.description>등대의 기술자와 노동자들이 애용하는 보호구입니다. 합리적인 가격을 지불하면 뜨겁고 위험한 상황과 기름때 얼룩으로부터 사용자를 보호해줍니다. 무려 바이저를 움직일 수 있는 제품입니다!\n\n이 제품은 이전 모델에 비해 성능의 양보 없이 디자인을 개선한 모델입니다. 기름때 속에서도 멋지게 보이고 싶은 당신을 위한 제품입니다.</Moyo2_EGHelmet.description>
+  <!--Original=depth engineer welding hemet-->
+  <Moyo2_StreamlineDivingShell.label>유선형 잠수복 쉘</Moyo2_StreamlineDivingShell.label>
+  <!--Original=Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit&apos;s abysssteel armor plates also make it excellent 몸체 armor. It started being used in combat by the Lighthouse&apos;s security forces, and this trend has spread throughout the entire Lighthouse.-->
+  <Moyo2_StreamlineDivingShell.description>활동성을 중시한 등대의 잠수복입니다. 기동성을 크게 희생하지 않으면서 상당한 방어력을 제공합니다. 잠수복 표면의 저항을 줄이는 설계를 통해, 물 속에서도 비교적 편하게 움직일 수 있습니다. 지상에서는 아무 의미 없는 기능입니다.\n\n잠수복의 어비스틸 장갑판은 훌륭한 방어구이기도 합니다. 등대의 치안유지군에 의해 전투용으로 사용되기 시작하며 이러한 경향은 등대 전체로 퍼졌습니다.</Moyo2_StreamlineDivingShell.description>
+  <!--Original=streamline diving helmet-->
+  <Moyo2_StreamlineDivingHelmet.label>유선형 잠수복 헬멧</Moyo2_StreamlineDivingHelmet.label>
+  <!--Original=Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The builtーin oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit&apos;s design has evolved into a combatーcapable diving suit as the Lighthouse becomes increasingly chaotic.-->
+  <Moyo2_StreamlineDivingHelmet.description>활동성을 중시한 등대의 잠수복 헬멧입니다. 기동성을 크게 희생하지 않으면서 상당한 방어력을 제공합니다. 자체적인 산소 호흡기는 제거되었습니다.\n\n잠수복의 설계는 순수한 작업용도에서 시작했으나, 등대가 점점 혼란스러워지며 잠수가 가능한 전투복으로 방향성이 변해가는 경향을 보이고 있습니다.</Moyo2_StreamlineDivingHelmet.description>
+  <!--Original=depth diving shell-->
+  <Moyo2_DeepDivingShell.label>심층 잠수복 쉘</Moyo2_DeepDivingShell.label>
+  <!--Original=Heavy diving suit of the lighthouse designed for activities on the ocean floor. Although it greatly hinders movement, it offers exceptional protection, to the 칼끝 where the suit would remain intact even if the wearer perished.\n\nThis suit is used in the most extreme situations encountered in the Lighthouse, often seen on the ocean floor, in highーtemperature toxic environments, and under intense enemy fire. As a result, most of the Lighthouse&apos;s inhabitants are reluctant to wear this suit.-->
+  <Moyo2_DeepDivingShell.description>바다 밑바닥에서 활동하기 위한 등대의 중량 잠수복입니다. 움직임이 많이 둔해지지만 그만큼 뛰어난 방어력을 자랑해 만일 착용자가 사망하더라도 이 잠수복은 멀쩡할 겁니다.\n\n등대에서 마주할 수 있는 가장 극한의 상황에 투입되는 보호구로 주로 바다 밑바닥, 고열의 유독성 환경 그리고 적의 집중포화 속에 있는 모습을 자주 볼 수 있습니다. 그렇기에 등대의 대부분이 이 잠수복을 입고 싶어하지 않습니다.</Moyo2_DeepDivingShell.description>
+  <!--Original=depth diving helmet-->
+  <Moyo2_DeepDivingHelmet.label>심층 잠수복 헬멧</Moyo2_DeepDivingHelmet.label>
+  <!--Original=Heavy diving helmetof the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the 칼끝 where the suit would remain intact even if the wearer perished. The builtーin oxygen respirator has been removed.\n\nThe deepーsea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.-->
+  <Moyo2_DeepDivingHelmet.description>바다 밑바닥에서 활동하기 위한 등대의 중량 잠수복 헬멧입니다. 움직임이 많이 둔해지지만 그만큼 뛰어난 방어력을 자랑해 만일 착용자가 사망하더라도 이 잠수복은 멀쩡할 겁니다. 자체적인 산소 호흡기는 제거되었습니다.\n\n헤이달 샤드 채굴 작업에도 투입된 심층 잠수복은 광부들을 보호하며 매우 휼륭하게 역할을 수행했습니다. 문제는 몇몇 인부들이 실종된 이후 깡통처럼 구겨진 이 헬멧이 발견되었다는 것입니다.</Moyo2_DeepDivingHelmet.description>
+  <!--Original=moyo tail prosthesis-->
+  <Moyo2_TailProsthesis.label>모요 꼬리 보철물</Moyo2_TailProsthesis.label>
+  <!--Original=A simple tail prosthesis for moyos. it doesnt repond fast but better than nothing.-->
+  <Moyo2_TailProsthesis.description>모요의 꼬리를 대체하기 위한 간단한 보철물입니다. 반응속도가 느리지만 없는것보다 낫습니다.</Moyo2_TailProsthesis.description>
+  <!--Original=moyo bionic tail-->
+  <Moyo2_TailBionic.label>모요 생체공학 꼬리</Moyo2_TailBionic.label>
+  <!--Original=artificial tail made with advanced technology. This tail is indistinguishable by looks and its powerful servo combined with neural interface makes it superior compared to natural ones.-->
+  <Moyo2_TailBionic.description>발전된 기술로 만든 정교한 모요 꼬리입니다. 사용자의 신경과 연결되어 부드럽고도 힘있게 움직입니다. 외형도 실제의 것과 구분하기 힘듭니다.</Moyo2_TailBionic.description>
+  <!--Original=crude 딥블루 추출기-->
+  <Moyo2_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기</Moyo2_DeepBlueExtracter_Crude.label>
+  <!--Original=This crude device filters out deep blue from Moyo&apos;s blood. Very few Moyos would actually use this themselves unless they&apos;re truly desperate for money, as it&apos;s painful and uncomfortable-->
+  <Moyo2_DeepBlueExtracter_Crude.description>모요의 피에서 딥블루를 걸러내는 조잡한 장치입니다. 아프고 불편하기에 정말 돈이 궁한 모요들이 아닌 이상 이것을 직접 사용하려는 모요들은 거의 없습니다.</Moyo2_DeepBlueExtracter_Crude.description>
+  <!--Original=딥블루 추출기-->
+  <Moyo2_DeepBlueExtracter.label>딥블루 추출기</Moyo2_DeepBlueExtracter.label>
+  <!--Original=This device filters out deep blue from Moyo&apos;s blood. It&apos;s a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.-->
+  <Moyo2_DeepBlueExtracter.description>모요의 피에서 딥블루를 걸러내는 장치입니다. 적당한 가격에 불편감도 크지 않은 표준적인 제품입니다. 딥블루의 공급은 수요에 비해 항상 부족하고, 많은 모요들이 추가적인 수익을 얻고자 추출기를 사용하고 있습니다.</Moyo2_DeepBlueExtracter.description>
+  <!--Original=abysstech 딥블루 추출기-->
+  <Moyo2_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기</Moyo2_DeepBlueExtracter_Abysstech.label>
+  <!--Original=This advanced device filters out deep blue from Moyo&apos;s blood. It boasts such comfortable usability that you won&apos;t feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering realーtime 몸체 monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.-->
+  <Moyo2_DeepBlueExtracter_Abysstech.description>모요의 피에서 딥블루를 걸러내는 정교한 장치입니다. 아무것도 느껴지지 않을 정도의 편안한 사용감을 자랑합니다. 이 딥블루 추출기는 실시간 신체 모니터링, 혈액 내 노폐물 제거,  열량 섭취량 표시 등 딥블루 추출의 기능을 넘어 사용자의 건강한 라이프스타일을 만드는데에 일조합니다.\n\ 지금 바로 서비스에 가입하세요! *딥블루를 통해서도 지불이 가능합니다.</Moyo2_DeepBlueExtracter_Abysstech.description>
+  <!--Original=Bluemed-->
+  <Moyo2_BlueMedicine.label>푸른약품</Moyo2_BlueMedicine.label>
+  <!--Original=Potent medicine utilizing deepblue. deepblue increases the medicine&apos;s effectiveness while having no worries of deepblue dependancy.-->
+  <Moyo2_BlueMedicine.description>딥블루를 활용한 강력한 약품입니다. 딥블루의 후유증을 배제하고 약품의 질과 효율을 끌어올린 결과물입니다.</Moyo2_BlueMedicine.description>
+  <!--Original=라미너 오토캐논-->
+  <Moyo_LMRAutoCannon.label>라미너 오토캐논</Moyo_LMRAutoCannon.label>
+  <!--Original=A large 라미너 라이플 designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When 과충전, it fires even faster but causes a brief 과부하.\n\nResearch aimed at increasing the firing rate of 라미너 라이플 was conducted, developing a method to reduce the 라미너 field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.-->
+  <Moyo_LMRAutoCannon.description>대형 라미너 라이플입니다. 역장 발생기를 조율하여 정확도가 떨어지는 대신 발사 속도를 크게 높였습니다. 과충전시 더욱 빠르게 연사를 하며 짧은 시간 동안 과부하가 걸립니다.\n\n라미너 라이플의 발사 속도를 늘리기 위한 연구 끝에 각 탄의 역장 유도 시간을 줄이는 방안이 나왔습니다. 이로 인해 명중률이 감소하지만 발사 속도를 확보할 수 있었습니다. 여러개의 역장 발사기를 한데 묶는 방안은 폐기되었습니다.</Moyo_LMRAutoCannon.description>
+  <!--Original=몸체-->
+  <Moyo_LMRAutoCannon.tools.0.label>몸체</Moyo_LMRAutoCannon.tools.0.label>
+  <!--Original=총구-->
+  <Moyo_LMRAutoCannon.tools.1.label>총구</Moyo_LMRAutoCannon.tools.1.label>
+  <!--Original=라미너 오토캐논-->
+  <Moyo_LMRAutoCannon.verbs.Verb_Shoot.label>라미너 오토캐논</Moyo_LMRAutoCannon.verbs.Verb_Shoot.label>
+  <!--Original=과충전-->
+  <Moyo_LMRAutoCannon.comps.0.transformData.0.label>과충전</Moyo_LMRAutoCannon.comps.0.transformData.0.label>
+  <!--Original=과충전 시작.-->
+  <Moyo_LMRAutoCannon.comps.0.transformData.0.description>과충전 시작.</Moyo_LMRAutoCannon.comps.0.transformData.0.description>
+  <!--Original=라미너 오토캐논(과충전)-->
+  <Moyo_LMRAutoCannonOver.label>라미너 오토캐논(과충전)</Moyo_LMRAutoCannonOver.label>
+  <!--Original=An 과충전 라미너 오토캐논. Has improved firerate but gets 과부하 after a short period.-->
+  <Moyo_LMRAutoCannonOver.description>라미너 오토캐논이 과충전되어 향상된 발사속도를 지닙니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo_LMRAutoCannonOver.description>
+  <!--Original=몸체-->
+  <Moyo_LMRAutoCannonOver.tools.0.label>몸체</Moyo_LMRAutoCannonOver.tools.0.label>
+  <!--Original=총구-->
+  <Moyo_LMRAutoCannonOver.tools.1.label>총구</Moyo_LMRAutoCannonOver.tools.1.label>
+  <!--Original=라미너 오토캐논(과충전)-->
+  <Moyo_LMRAutoCannonOver.verbs.Verb_Shoot.label>라미너 오토캐논(과충전)</Moyo_LMRAutoCannonOver.verbs.Verb_Shoot.label>
+  <!--Original=과부하-->
+  <Moyo_LMRAutoCannonOver.comps.0.revertData.label>과부하</Moyo_LMRAutoCannonOver.comps.0.revertData.label>
+  <!--Original=총기 시스템 과부하중.-->
+  <Moyo_LMRAutoCannonOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo_LMRAutoCannonOver.comps.0.revertData.description>
+  <!--Original=과충전 해제-->
+  <Moyo_LMRAutoCannonOver.comps.0.transformData.0.label>과충전 해제</Moyo_LMRAutoCannonOver.comps.0.transformData.0.label>
+  <!--Original=과충전을 해제합니다.-->
+  <Moyo_LMRAutoCannonOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo_LMRAutoCannonOver.comps.0.transformData.0.description>
+  <!--Original=라미너 오토캐논(과부하)-->
+  <Moyo_LMRAutoCannonDown.label>라미너 오토캐논(과부하)</Moyo_LMRAutoCannonDown.label>
+  <!--Original=An 과부하 라미너 오토캐논. Firing is temporarily disabled until the system is restored. It&apos;s an expensive pillar in the meantime.-->
+  <Moyo_LMRAutoCannonDown.description>과부하 상태의 라미너 오토캐논입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 통나무네요.</Moyo_LMRAutoCannonDown.description>
+  <!--Original=몸체-->
+  <Moyo_LMRAutoCannonDown.tools.0.label>몸체</Moyo_LMRAutoCannonDown.tools.0.label>
+  <!--Original=총구-->
+  <Moyo_LMRAutoCannonDown.tools.1.label>총구</Moyo_LMRAutoCannonDown.tools.1.label>
+  <!--Original=냉각중-->
+  <Moyo_LMRAutoCannonDown.comps.0.revertData.label>냉각중</Moyo_LMRAutoCannonDown.comps.0.revertData.label>
+  <!--Original=총기 시스템 냉각중.-->
+  <Moyo_LMRAutoCannonDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo_LMRAutoCannonDown.comps.0.revertData.description>
+  <!--Original=heavy 라미너 슬러그-->
+  <Moyo2_Bullet_LMRBolt.label>중형 라미너 슬러그</Moyo2_Bullet_LMRBolt.label>
+  <!--Original=heavy 라미너 슬러그(과충전)-->
+  <Moyo2_Bullet_LMRBoltOver.label>중형 라미너 슬러그(과충전)</Moyo2_Bullet_LMRBoltOver.label>
+  <!--Original=라미너 발리스타-->
+  <Moyo2_LMRBalista.label>라미너 발리스타</Moyo2_LMRBalista.label>
+  <!--Original=A large 라미너 라이플 designed to reliably penetrate the armored plates of small submarines and deepーsea diving suits. When 과충전, it fires a powerful explosive shot but causes a brief 과부하..\n\nThis weapon has been widely used against targets larger than a person, sending numerous threats, from formidable sea creatures to unauthorized submarines, to the ocean floor.-->
+  <Moyo2_LMRBalista.description>대형 라미너 라이플입니다. 소형 잠수정과 심층 잠수복의 장갑판을 확실하게 관통하기 위한 대포입니다. 과충전시 강력한 폭발 사격을 하며 짧은 시간 동안 과부하가 걸립니다.\n\n이 무기는 사람보다 큰 대상이라면 널리 사용되었고, 위협적인 바다의 생물부터 미허가 잠수정까지 수많은 것들을 바다 밑바닥에 가라앚혔습니다.</Moyo2_LMRBalista.description>
+  <!--Original=몸체-->
+  <Moyo2_LMRBalista.tools.0.label>몸체</Moyo2_LMRBalista.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_LMRBalista.tools.1.label>총구</Moyo2_LMRBalista.tools.1.label>
+  <!--Original=라미너 발리스타-->
+  <Moyo2_LMRBalista.verbs.Verb_Shoot.label>라미너 발리스타</Moyo2_LMRBalista.verbs.Verb_Shoot.label>
+  <!--Original=과충전-->
+  <Moyo2_LMRBalista.comps.0.transformData.0.label>과충전</Moyo2_LMRBalista.comps.0.transformData.0.label>
+  <!--Original=과충전 시작.-->
+  <Moyo2_LMRBalista.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRBalista.comps.0.transformData.0.description>
+  <!--Original=라미너 발리스타(과충전)-->
+  <Moyo2_LMRBalistaOver.label>라미너 발리스타(과충전)</Moyo2_LMRBalistaOver.label>
+  <!--Original=An 과충전 라미너 발리스타. Shoots powerful explosive shot but gets 과부하 after a short period.-->
+  <Moyo2_LMRBalistaOver.description>라미너 발리스타가 과충전되어 강력한 폭발 사격을 합니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo2_LMRBalistaOver.description>
+  <!--Original=몸체-->
+  <Moyo2_LMRBalistaOver.tools.0.label>몸체</Moyo2_LMRBalistaOver.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_LMRBalistaOver.tools.1.label>총구</Moyo2_LMRBalistaOver.tools.1.label>
+  <!--Original=라미너 발리스타(과충전)-->
+  <Moyo2_LMRBalistaOver.verbs.Verb_Shoot.label>라미너 발리스타(과충전)</Moyo2_LMRBalistaOver.verbs.Verb_Shoot.label>
+  <!--Original=과부하-->
+  <Moyo2_LMRBalistaOver.comps.0.revertData.label>과부하</Moyo2_LMRBalistaOver.comps.0.revertData.label>
+  <!--Original=총기 시스템 과부하중.-->
+  <Moyo2_LMRBalistaOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRBalistaOver.comps.0.revertData.description>
+  <!--Original=과충전 해제-->
+  <Moyo2_LMRBalistaOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRBalistaOver.comps.0.transformData.0.label>
+  <!--Original=과충전을 해제합니다.-->
+  <Moyo2_LMRBalistaOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRBalistaOver.comps.0.transformData.0.description>
+  <!--Original=라미너 발리스타(과부하)-->
+  <Moyo2_LMRBalistaDown.label>라미너 발리스타(과부하)</Moyo2_LMRBalistaDown.label>
+  <!--Original=An 과부하 라미너 발리스타. Firing is temporarily disabled until the system is restored. It&apos;s an expensive pillar in the meantime.-->
+  <Moyo2_LMRBalistaDown.description>과부하 상태의 라미너 발리스타입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 통나무네요.</Moyo2_LMRBalistaDown.description>
+  <!--Original=몸체-->
+  <Moyo2_LMRBalistaDown.tools.0.label>몸체</Moyo2_LMRBalistaDown.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_LMRBalistaDown.tools.1.label>총구</Moyo2_LMRBalistaDown.tools.1.label>
+  <!--Original=냉각중-->
+  <Moyo2_LMRBalistaDown.comps.0.revertData.label>냉각중</Moyo2_LMRBalistaDown.comps.0.revertData.label>
+  <!--Original=총기 시스템 냉각중.-->
+  <Moyo2_LMRBalistaDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRBalistaDown.comps.0.revertData.description>
+  <!--Original=라미너 슬러그-->
+  <Moyo2_Bullet_LMRSlugB.label>라미너 슬러그</Moyo2_Bullet_LMRSlugB.label>
+  <!--Original=라미너 슬러그(과충전)-->
+  <Moyo2_Bullet_LMRSlugBOver.label>라미너 슬러그(과충전)</Moyo2_Bullet_LMRSlugBOver.label>
+  <!--Original=라미너 핸드캐논-->
+  <Moyo2_LMRPistol.label>라미너 핸드캐논</Moyo2_LMRPistol.label>
+  <!--Original=A largeーcaliber handgun that uses 라미너 field to guide projectiles, suitable for close combat. It can be 과충전, increasing its damage and improving longーrange capabilities but causes a brief 과부하.\n\nIt is easy to carry compared to other firearms of the lighthouse. Being able to penetrate through armored plates of diving suits when 과충전, its popular among both police officers and criminals.-->
+  <Moyo2_LMRPistol.description>라미너 역장을 이용해 탄을 유도하는 등대의 대형 권총입니다. 대구경 탄을 사용하며 근거리 전투에 적합합니다. 과충전시 피해량이 상승하고 장거리 전투능력이 개선되지만 짧은 시간동안 과부하가 걸립니다.\n\n등대의 다른 화기에 비해 휴대가 간편하며, 과충전시 잠수복의 장갑판도 관통하기에 경찰과 범죄자들에게 애용됩니다.</Moyo2_LMRPistol.description>
+  <!--Original=몸체-->
+  <Moyo2_LMRPistol.tools.0.label>몸체</Moyo2_LMRPistol.tools.0.label>
+  <!--Original=라미너 핸드캐논-->
+  <Moyo2_LMRPistol.verbs.Verb_Shoot.label>라미너 핸드캐논</Moyo2_LMRPistol.verbs.Verb_Shoot.label>
+  <!--Original=과충전-->
+  <Moyo2_LMRPistol.comps.0.transformData.0.label>과충전</Moyo2_LMRPistol.comps.0.transformData.0.label>
+  <!--Original=과충전 시작.-->
+  <Moyo2_LMRPistol.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRPistol.comps.0.transformData.0.description>
+  <!--Original=라미너 핸드캐논(과충전)-->
+  <Moyo2_LMRPistolOver.label>라미너 핸드캐논(과충전)</Moyo2_LMRPistolOver.label>
+  <!--Original=An 과충전 라미너 handcannon. Has improved firepower and range but gets 과부하 after a short period.-->
+  <Moyo2_LMRPistolOver.description>라미너 핸드캐논이 과충전되어 향상된 화력과 사거리를 지닙니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo2_LMRPistolOver.description>
+  <!--Original=몸체-->
+  <Moyo2_LMRPistolOver.tools.0.label>몸체</Moyo2_LMRPistolOver.tools.0.label>
+  <!--Original=라미너 핸드캐논(과충전)-->
+  <Moyo2_LMRPistolOver.verbs.Verb_Shoot.label>라미너 핸드캐논(과충전)</Moyo2_LMRPistolOver.verbs.Verb_Shoot.label>
+  <!--Original=과부하-->
+  <Moyo2_LMRPistolOver.comps.0.revertData.label>과부하</Moyo2_LMRPistolOver.comps.0.revertData.label>
+  <!--Original=총기 시스템 과부하중.-->
+  <Moyo2_LMRPistolOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRPistolOver.comps.0.revertData.description>
+  <!--Original=과충전 해제-->
+  <Moyo2_LMRPistolOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRPistolOver.comps.0.transformData.0.label>
+  <!--Original=과충전을 해제합니다.-->
+  <Moyo2_LMRPistolOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRPistolOver.comps.0.transformData.0.description>
+  <!--Original=라미너 핸드캐논(과부하)-->
+  <Moyo2_LMRPistolDown.label>라미너 핸드캐논(과부하)</Moyo2_LMRPistolDown.label>
+  <!--Original=An 과부하 라미너 handcannon. Firing is temporarily disabled until the system is restored. It&apos;s an expensive club in the meantime.-->
+  <Moyo2_LMRPistolDown.description>과부하 상태의 라미너 핸드캐논입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 몽둥이네요.</Moyo2_LMRPistolDown.description>
+  <!--Original=몸체-->
+  <Moyo2_LMRPistolDown.tools.0.label>몸체</Moyo2_LMRPistolDown.tools.0.label>
+  <!--Original=냉각중-->
+  <Moyo2_LMRPistolDown.comps.0.revertData.label>냉각중</Moyo2_LMRPistolDown.comps.0.revertData.label>
+  <!--Original=총기 시스템 냉각중.-->
+  <Moyo2_LMRPistolDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRPistolDown.comps.0.revertData.description>
+  <!--Original=라미너 슬러그-->
+  <Moyo2_Bullet_LMRSlugA.label>라미너 슬러그</Moyo2_Bullet_LMRSlugA.label>
+  <!--Original=라미너 슬러그(과충전)-->
+  <Moyo2_Bullet_LMRSlugAOver.label>라미너 슬러그(과충전)</Moyo2_Bullet_LMRSlugAOver.label>
+  <!--Original=라미너 라이플-->
+  <Moyo2_LMRRifle.label>라미너 라이플</Moyo2_LMRRifle.label>
+  <!--Original=A signature largeーcaliber 라이플 of the lighthouse that uses 라미너 field to guide projectiles, a versitile weapon with high accuracy. It can be 과충전, increasing its damage and range but causes a brief 과부하.\n\nUpon firing, a &apos;rail&apos; or &apos;tunnel&apos; made of a 라미너 field is created, allowing the projectile to travel with minimal resistance. With the right ammunition, a reasonable range can be maintained even underwater.-->
+  <Moyo2_LMRRifle.description>라미너 역장을 이용해 탄을 유도하는 등대의 특징적인 소총입니다. 대구경 탄을 사용하며 명중률이 높은 범용성 무기입니다. 과충전시 피해량이 상승하고 사거리가 늘어나지만 짧은 시간 동안 과부하가 걸립니다.\n\n발사시 역장으로 된 '레일' 또는 '터널'이 생성되며, 탄은 이 안에서 최소한의 저항을 받으며 날아갑니다. 적절한 탄과 함께라면 수중에서도 적당한 사거리가 보장됩니다.</Moyo2_LMRRifle.description>
+  <!--Original=개머리판-->
+  <Moyo2_LMRRifle.tools.0.label>개머리판</Moyo2_LMRRifle.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_LMRRifle.tools.1.label>총구</Moyo2_LMRRifle.tools.1.label>
+  <!--Original=라미너 라이플-->
+  <Moyo2_LMRRifle.verbs.Verb_Shoot.label>라미너 라이플</Moyo2_LMRRifle.verbs.Verb_Shoot.label>
+  <!--Original=과충전-->
+  <Moyo2_LMRRifle.comps.0.transformData.0.label>과충전</Moyo2_LMRRifle.comps.0.transformData.0.label>
+  <!--Original=과충전 시작.-->
+  <Moyo2_LMRRifle.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRRifle.comps.0.transformData.0.description>
+  <!--Original=라미너 라이플(과충전)-->
+  <Moyo2_LMRRifleOver.label>라미너 라이플(과충전)</Moyo2_LMRRifleOver.label>
+  <!--Original=An 과충전 라미너 라이플. Has improved firepower and range but gets 과부하 after a short period.-->
+  <Moyo2_LMRRifleOver.description>라미너 라이플이 과충전되어 향상된 화력과 사거리를 지닙니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo2_LMRRifleOver.description>
+  <!--Original=개머리판-->
+  <Moyo2_LMRRifleOver.tools.0.label>개머리판</Moyo2_LMRRifleOver.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_LMRRifleOver.tools.1.label>총구</Moyo2_LMRRifleOver.tools.1.label>
+  <!--Original=라미너 라이플(과충전)-->
+  <Moyo2_LMRRifleOver.verbs.Verb_Shoot.label>라미너 라이플(과충전)</Moyo2_LMRRifleOver.verbs.Verb_Shoot.label>
+  <!--Original=과부하-->
+  <Moyo2_LMRRifleOver.comps.0.revertData.label>과부하</Moyo2_LMRRifleOver.comps.0.revertData.label>
+  <!--Original=총기 시스템 과부하중.-->
+  <Moyo2_LMRRifleOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRRifleOver.comps.0.revertData.description>
+  <!--Original=과충전 해제-->
+  <Moyo2_LMRRifleOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRRifleOver.comps.0.transformData.0.label>
+  <!--Original=과충전을 해제합니다.-->
+  <Moyo2_LMRRifleOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRRifleOver.comps.0.transformData.0.description>
+  <!--Original=라미너 라이플(과부하)-->
+  <Moyo2_LMRRifleDown.label>라미너 라이플(과부하)</Moyo2_LMRRifleDown.label>
+  <!--Original=An 과부하 라미너 라이플. Firing is temporarily disabled until the system is restored. It&apos;s an expensive club in the meantime.-->
+  <Moyo2_LMRRifleDown.description>과부하 상태의 라미너 라이플입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 몽둥이네요.</Moyo2_LMRRifleDown.description>
+  <!--Original=개머리판-->
+  <Moyo2_LMRRifleDown.tools.0.label>개머리판</Moyo2_LMRRifleDown.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_LMRRifleDown.tools.1.label>총구</Moyo2_LMRRifleDown.tools.1.label>
+  <!--Original=냉각중-->
+  <Moyo2_LMRRifleDown.comps.0.revertData.label>냉각중</Moyo2_LMRRifleDown.comps.0.revertData.label>
+  <!--Original=총기 시스템 냉각중.-->
+  <Moyo2_LMRRifleDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRRifleDown.comps.0.revertData.description>
+  <!--Original=abyssteel-->
+  <Moyo2_Abyssteel.label>어비스틸</Moyo2_Abyssteel.label>
+  <!--Original=A dense alloy commonly used in the lighthouse. Able to withstand immense amount of pressure, it is used to produce things that needs the most durabilty. From this alloy the lighthouse was founded.-->
+  <Moyo2_Abyssteel.description>등대에서 널리 이용되는 고밀도 합금입니다. 엄청난 강도로 인해 최대한의 내구성을 필요로 하는 곳에 적합합니다. 이 합금이야말로 등대가 굳게 버티고 서있는 이유입니다.</Moyo2_Abyssteel.description>
+  <!--Original=hadalshard-->
+  <Moyo2_HadalShard.label>헤이달 샤드</Moyo2_HadalShard.label>
+  <!--Original=A fragment of metallic coral indigenous to the hadal trenches. Its extremely sharp and hard but being brittle makes it hard to use. Able to be used in abyssteel production, The mining operations have drastically expanded alongside the growth of the lighthouse.\n\nThere are numerous reports of hallucination and mental health disorder among the shard miners, even claiming that they have seen monsters dwelling among the coral spires. Further reports tell that their hallucinations and delusions caused by fatigue was quickly cured by few doses of joypearls.-->
+  <Moyo2_HadalShard.description>바다의 심연속에 자생하는 금속 산호의 파편입니다. 매우 날카롭고 단단하지만 깨지기 쉬워 단독으로 활용하긴 힘듭니다. 어비스틸을 만드는데에 사용되며 등대가 성장하며 이 산호의 채굴량 또한 기하급수적으로 늘고 있습니다.\n\n이 산호를 채굴하는 광부들 사이에서 환각을 보았다던가 정신건강이 악화되고 심지어는 괴생명체를 보았다는 보고가 들어오기도 하지만 이들의 피로로 인한 환각과 망상은 조이펄 몇 알이면 치료되었습니다.</Moyo2_HadalShard.description>
+  <!--Original=depthweave-->
+  <Moyo2_Cloth_Depthweave.label>뎁스위브</Moyo2_Cloth_Depthweave.label>
+  <!--Original=A tough fabric commonly utilised in the lighthouse. Having great elasticity and insulating capabilities, this fabric is the basis of moyo&apos;s signature bodysuits.-->
+  <Moyo2_Cloth_Depthweave.description>등대에서  널리 이용되는 질긴 섬유입니다. 단열성과 신축성이 뛰어납니다. 모요의 특징적인 바디슈트를 만드는데엔 이 섬유가 필수입니다.</Moyo2_Cloth_Depthweave.description>
+  <!--Original=depthweed-->
+  <Moyo2_Depthweed.label>뎁스위드</Moyo2_Depthweed.label>
+  <!--Original=dummy text.-->
+  <Moyo2_Depthweed.description>dummy text.</Moyo2_Depthweed.description>
+  <!--Original=뎁스툴 heavy wrench-->
+  <Moyo2_Wrench.label>뎁스툴 헤비 렌치</Moyo2_Wrench.label>
+  <!--Original=It&apos;s a heavy wrench designed to be wielded with both hands. While its primary purpose is tightening bolts, its weight allows it to double as a hammer. It would inflict significant pain if thrown.\n\nIt significantly boosts construction efficiency. Despite being almost a staple among workers, it continues to be a steady seller, leaving many to wonder what it&apos;s being used for.-->
+  <Moyo2_Wrench.description>양손으로 사용하는 무거운 렌치입니다. 볼트를 조이는게 주 용도이나 무게를 이용해 망치로도 사용 가능합니다. 던지면 많이 아플겁니다.\n\n건설 효율을 크게 올려줍니다. 거의 모든 노동자들에게 쥐여지고도 남을 정도로 팔렸음에도 꾸준한 판매량을 보이는 스테디셀러입니다. 어디에 쓰려는 걸까요.</Moyo2_Wrench.description>
+  <!--Original=wrench-->
+  <Moyo2_Wrench.comps.2.chargeNoun>렌치</Moyo2_Wrench.comps.2.chargeNoun>
+  <!--Original=손잡이-->
+  <Moyo2_Wrench.tools.0.label>손잡이</Moyo2_Wrench.tools.0.label>
+  <!--Original=head-->
+  <Moyo2_Wrench.tools.1.label>렌치 머리</Moyo2_Wrench.tools.1.label>
+  <!--Original=thrown wrench-->
+  <Moyo2_Bullet_WrenchThrow.label>던져진 렌치</Moyo2_Bullet_WrenchThrow.label>
+  <!--Original=뎁스툴 diving knife-->
+  <Moyo2_Knife.label>뎁스툴 다이빙 나이</Moyo2_Knife.label>
+  <!--Original=This knife features a 칼날 made of plasteel. It is an excellent product that resists corrosion and maintains its edge well. It is an essential tool for divers and is also favored by chefs. Beware of imitations.\n\nIt boosts cooking and butchering efficiency. With various designs and limited editions, it has become a valuable collectible in the Lighthouse. Rumor has it that top customers of these knives will have the opportunity to buy a prototype of the 라미너 hyperーoscillating knife.-->
+  <Moyo2_Knife.description>플라스틸로 날을 세운 나이프입니다. 부식되지 않고 날이 쉽게 상하지 않는 우수한 제품입니다. 잠수부들의 필수품이며, 셰프들도 애용합니다. 유사품에 주의하세요\n\n요리와 도축 효율을 높여줍니다. 이 나이프는 여러 디자인과 한정판으로 등대에서 가치있는 수집품이 되었습니다. 나이프를 많이 구매한 우수 고객에겐 라미너 초진동 나이프 시제품을 구매할 기회가 주어진다는 소문이 들리고 있습니다.</Moyo2_Knife.description>
+  <!--Original=손잡이-->
+  <Moyo2_Knife.tools.0.label>손잡이</Moyo2_Knife.tools.0.label>
+  <!--Original=칼날-->
+  <Moyo2_Knife.tools.1.label>칼날</Moyo2_Knife.tools.1.label>
+  <!--Original=칼끝-->
+  <Moyo2_Knife.tools.2.label>칼끝</Moyo2_Knife.tools.2.label>
+  <!--Original=뎁스툴 sawjack-->
+  <Moyo2_Saw.label>뎁스툴 쏘잭</Moyo2_Saw.label>
+  <!--Original=A rotary saw with incredible cutting power. Its 칼날, made from ultraーhard materials, can cut and grind through various substances.\n\nIt significantly boosts production efficiency. It was featured as a sponsored tool in the Lighthouse&apos;s famous horror media, &quot;Rotary Saw Killer.&quot; Please use the tool for its intended purposes.-->
+  <Moyo2_Saw.description>굉장한 절삭력의 회전톱입니다. 초경질 재료로 만들어진 날은 여러 재료를 자르고 갈아낼수 있습니다.\n\n제작 효율을 크게 올려줍니다. 등대의 유명한 호러 미디어인 회전톱 살인마에 협찬출연한 도구입니다. 도구는 용도에 맞게 사용하시길 바랍니다.</Moyo2_Saw.description>
+  <!--Original=sawblade-->
+  <Moyo2_Saw.tools.0.label>톱날</Moyo2_Saw.tools.0.label>
+  <!--Original=라미너 glaive-->
+  <Moyo2_LMRGlaive.label>라미너 글레이브</Moyo2_LMRGlaive.label>
+  <!--Original=dummy text.-->
+  <Moyo2_LMRGlaive.description>dummy text.</Moyo2_LMRGlaive.description>
+  <!--Original=손잡이-->
+  <Moyo2_LMRGlaive.tools.0.label>손잡이</Moyo2_LMRGlaive.tools.0.label>
+  <!--Original=칼날-->
+  <Moyo2_LMRGlaive.tools.1.label>창날</Moyo2_LMRGlaive.tools.1.label>
+  <!--Original=칼끝-->
+  <Moyo2_LMRGlaive.tools.2.label>창끝</Moyo2_LMRGlaive.tools.2.label>
+  <!--Original=뎁스툴 power gauntlet-->
+  <Moyo2_LMRFist.label>뎁스툴 파워건틀렛</Moyo2_LMRFist.label>
+  <!--Original=dummy text.-->
+  <Moyo2_LMRFist.description>dummy text.</Moyo2_LMRFist.description>
+  <!--Original=Fist-->
+  <Moyo2_LMRFist.tools.0.label>주먹</Moyo2_LMRFist.tools.0.label>
+  <!--Original=몸체-->
+  <Moyo2_LMRFist.tools.1.label>몸체</Moyo2_LMRFist.tools.1.label>
+  <!--Original=뎁스툴 네일건-->
+  <Moyo2_NailGun.label>뎁스툴 네일건</Moyo2_NailGun.label>
+  <!--Original=It&apos;s a common lighthouse nail gun. It shoots nails with powerful hydraulics. It&apos;s best to spray and pray due to its poor damage and accuracy.\n\nIt boosts construction and production efficiency. Each seemingly trivial tool like this has contributed to the shining lighthouses we see today. Get one for your settlement too!-->
+  <Moyo2_NailGun.description>흔한 등대의 네일건입니다. 강력한 유압으로 못을 쏘아냅니다. 피해량과 명중률이 좋지 않아 난사하는 것이 최선입니다.\n\n건설과 제작 효율을 높여줍니다. 이런 사소해보이는 도구 하나하나가 지금의 빛나는 등대를 만들었습니다. 당신의 정착지에도 하나 장만하세요!</Moyo2_NailGun.description>
+  <!--Original=뎁스툴 네일건-->
+  <Moyo2_NailGun.verbs.Verb_Shoot.label>뎁스툴 네일건</Moyo2_NailGun.verbs.Verb_Shoot.label>
+  <!--Original=손잡이-->
+  <Moyo2_NailGun.tools.0.label>손잡이</Moyo2_NailGun.tools.0.label>
+  <!--Original=총구-->
+  <Moyo2_NailGun.tools.1.label>총구</Moyo2_NailGun.tools.1.label>
+  <!--Original=네일건 rivet-->
+  <Moyo2_Bullet_NailGun.label>네일건 리벳</Moyo2_Bullet_NailGun.label>
+  <!--Original=뎁스툴 스피어잭-->
+  <Moyo2_SpearGun.label>뎁스툴 스피어잭</Moyo2_SpearGun.label>
+  <!--Original=It&apos;s a tool that shoots metal piles with powerful hydraulics to pierce through metal plates. Charging and firing are slow, but the destructive power is considerable. While it&apos;s a niche application, it can also double as a melee weapon when fired at pointーblank range.\n\nIt increases efficiency in construction and mining. However, the use of projectiles modified with explosives or similar alterations is unauthorized and poses serious risks to both personal safety and the company&apos;s interests.-->
+  <Moyo2_SpearGun.description>강력한 유압으로 철판을 뚫는 쇠 말뚝을 쏘아내는 도구입니다. 충전 및 발사가 느리지만 파괴력은 상당합니다. 변칙적인 사용법으로 영점사격을 통해 근접무기로 이용할 수 있습니다.\n\n건설과 채굴 효율을 높여줍니다. 폭발물 등으로 개조된 투사체를 사용하는 것은 허가되지 않은 행위로, 개인의 안전과 회사의 이익에 심각한 위혐을 끼치는 행위입니다.</Moyo2_SpearGun.description>
+  <!--Original=뎁스툴 스피어잭-->
+  <Moyo2_SpearGun.verbs.Verb_Shoot.label>뎁스툴 스피어잭</Moyo2_SpearGun.verbs.Verb_Shoot.label>
+  <!--Original=손잡이-->
+  <Moyo2_SpearGun.tools.0.label>손잡이</Moyo2_SpearGun.tools.0.label>
+  <!--Original=말뚝-->
+  <Moyo2_SpearGun.tools.1.label>말뚝</Moyo2_SpearGun.tools.1.label>
+  <!--Original=스피어잭 spear-->
+  <Moyo2_Bullet_SpearGun.label>스피어잭 말뚝</Moyo2_Bullet_SpearGun.label>
+  <!--Original=뎁스툴 shipーjack-->
+  <Moyo2_HarpoonGun.label>뎁스툴 쉽잭</Moyo2_HarpoonGun.label>
+  <!--Original=It&apos;s an upscaled 스피어잭, horrendously heavy and cumbersome to use, yet it fires piles that can pierce through even a submarine&apos;s hull. It&apos;s the perfect tool for demolishing something. While it&apos;s a niche application that can&apos;t be recommended, it can also double as a melee weapon when fired at pointーblank range.\n\nIt significantly boosts mining efficiency. The tool&apos;s name originates from its primary use in ship dismantling.-->
+  <Moyo2_HarpoonGun.description>대형화된 스피어잭입니다. 끔찍하게 무겁고 사용하기 불편하지만 잠수정의 선체도 뚫어버리는 말뚝을 발사합니다. 무언가를 철거하기에 안성맞춤인 도구입니다. 추천하지 않는 사용법으로 영점사격을 통해 근접무기로 이용할 수 있습니다.\n\n채굴 효율을 크게 높여줍니다.도구의 이름은 함선 해체에 주로 사용된 점에서 기원합니다.</Moyo2_HarpoonGun.description>
+  <!--Original=뎁스툴 shipーjack-->
+  <Moyo2_HarpoonGun.verbs.Verb_Shoot.label>뎁스툴 쉽잭</Moyo2_HarpoonGun.verbs.Verb_Shoot.label>
+  <!--Original=손잡이-->
+  <Moyo2_HarpoonGun.tools.0.label>손잡이</Moyo2_HarpoonGun.tools.0.label>
+  <!--Original=말뚝-->
+  <Moyo2_HarpoonGun.tools.1.label>말뚝</Moyo2_HarpoonGun.tools.1.label>
+  <!--Original=spearーjack harpoon-->
+  <Moyo2_Bullet_HarpoonGun.label>스피어잭 작살</Moyo2_Bullet_HarpoonGun.label>
+  <!--Original=abysstech aquaculture tank-->
+  <Moyo_FishTank.label>어비스테크 수산양식기</Moyo_FishTank.label>
+  <!--Original=A tank used for cultivating fish and seaweed in a confined space using various equipment such as water quality management, oxygen filtration, and nutrient supply. It can rear various types of aquatic organisms. If the electricity is cut off, even the growing organisms will die.-->
+  <Moyo_FishTank.description>수질 관리, 산소 여과, 영양소 공급 등 다양한 장비를 사용하여 좁은 공간에서 물고기와 해초를 양식하기 위한 탱크입니다. 여러 종류의 수산생물을 기를 수 있습니다. 전기가 끊어지면 자라고 있는 생물도 죽습니다.</Moyo_FishTank.description>
+  <!--Original=ruined hovercraft-->
+  <Moyo2_HoverCraftWreak.label>호버크래프트 잔해</Moyo2_HoverCraftWreak.label>
+  <!--Original=This is the remains of a hovercraft damaged beyond repair. Departing from the lighthouse, this craft held off pirates and raiders until it finally sank here.-->
+  <Moyo2_HoverCraftWreak.description>수리가 불가능할 정도로 손상된 호버크래프트의 잔해입니다. 등대에서 출발한 이 기체는 이곳에 주저앉기까지 해적과 습격자들의 공격을 막아주었습니다.</Moyo2_HoverCraftWreak.description>
+  <!--Original=hadalshard spire-->
+  <Moyo2_HadalSpire.label>헤이달샤드 첨탑</Moyo2_HadalSpire.label>
+  <!--Original=A spire of metallic coral indigenous to the hadal trenches. It can be mined as a whole or pick the shards shed from it.  Moyos have scoured the abyss in search of these coral reef grown over centuries to fuel their industries.-->
+  <Moyo2_HadalSpire.description>바다의 심연속에 자생하는 금속 산호 군집입니다.  어비스틸 제작의 주 원료로써 통째로 채굴하거나 떨어지는 파편을 수집할 수 있습니다. 등대의 몸집을 불리려는 모요들은 수 세기동안 자라난 산호 군락지를 찾아 바다의 심연 속을 샅샅이 뒤지고 있습니다.</Moyo2_HadalSpire.description>
+  <!--Original=abysstech production bench-->
+  <Moyo2_FabricationBench.label>어비스테크 제조 작업대</Moyo2_FabricationBench.label>
+  <!--Original=A workbench for producing abysstech items. It is capable of handling a variety of tasks, from producing tools, components, and apparel to dismantling mechanoids.-->
+  <Moyo2_FabricationBench.description>어비스테크 물품들을 제조하는 작업대입니다. 도구, 부품, 의류 등 여러 물품을 제작할 수 있으며 메카노이드 분해 작업 역시 수행 가능합니다.</Moyo2_FabricationBench.description>
+  <!--Original=abysstech fabrication module-->
+  <Moyo2_FabricationAddon.label>어비스테크 조립 모듈</Moyo2_FabricationAddon.label>
+  <!--Original=An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.-->
+  <Moyo2_FabricationAddon.description>어비스테크 제조 작업대에 설치되는 고성능 기기입니다. 기계 팔과 3D 프린터 등 여러 장치를 통해 매우 빠르고 효율적인 작업을 가능하게 합니다.</Moyo2_FabricationAddon.description>
+  <!--Original=abysstech arc furnace-->
+  <Moyo2_ArcFurnace.label>어비스테크 아크 화로</Moyo2_ArcFurnace.label>
+  <!--Original=Powerful arc furnace used to craft abyssteel. It can extract metals from various items and burn unwanted materials without leaving any ash.. Just throw it in here. *Consumes significant amount of power.-->
+  <Moyo2_ArcFurnace.description>어비스틸을 제조하기 위한 강력한 아크 화로입니다. 추가로 잡다한 물건에서 금속을 추출하고, 필요 없는 물건을 재도 남기지 않고 태울 수 있습니다. 그냥 이 안에 던져넣으세요. *굉장한 양의 전력이 소비됩니다.</Moyo2_ArcFurnace.description>
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=bulk goods trader-->
+  <Moyo2_Caravan_BulkGoods.label>물자 상인</Moyo2_Caravan_BulkGoods.label>
+  <!--Original=combat supplier-->
+  <Moyo2_Caravan_CombatSupplier.label>전투 상인</Moyo2_Caravan_CombatSupplier.label>
+  <!--Original=slaver-->
+  <Moyo2_Caravan_PirateMerchant.label>해적 상인</Moyo2_Caravan_PirateMerchant.label>
+  <!--Original=exotic goods trader-->
+  <Moyo2_Caravan_Exotic.label>희귀품 상인</Moyo2_Caravan_Exotic.label>
+</LanguageData>

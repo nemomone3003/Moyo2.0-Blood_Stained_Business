@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=등대 의류-->
+  <Moyo2_ApparelCategory_LightHouse.label>등대 의류</Moyo2_ApparelCategory_LightHouse.label>
+  <!--Original=등대 머리장비-->
+  <Moyo2_ApparelCategory_LightHouseHead.label>등대 머리장비</Moyo2_ApparelCategory_LightHouseHead.label>
+  <!--Original=카르텔 의류-->
+  <Moyo2_ApparelCategory_Cartel.label>카르텔 의류</Moyo2_ApparelCategory_Cartel.label>
+  <!--Original=카르텔 머리장비-->
+  <Moyo2_ApparelCategory_CartelHead.label>카르텔 머리장비</Moyo2_ApparelCategory_CartelHead.label>
+  <!--Original=모요 무기-->
+  <Moyo2_WeaponsCategory.label>모요 무기</Moyo2_WeaponsCategory.label>
+  <!--Original=모요 ranged 무기-->
+  <Moyo2_WeaponsCategory_Ranged.label>모요 원거리 무기</Moyo2_WeaponsCategory_Ranged.label>
+  <!--Original=모요 melee 무기-->
+  <Moyo2_WeaponsCategory_Melee.label>모요 근접 무기</Moyo2_WeaponsCategory_Melee.label>
+</LanguageData>

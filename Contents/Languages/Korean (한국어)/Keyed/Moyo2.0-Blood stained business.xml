@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--English=This linkable has to be built over its designated building-->
+  <Moyo2_Placeworker_OnBuilding_Failed>이 건물은 연결되는 건물 위에 설치되어야 합니다.</Moyo2_Placeworker_OnBuilding_Failed>
+  <!--English=Change fish-->
+  <Moyo2_FishTank_GizmoLabel>물고기 변경</Moyo2_FishTank_GizmoLabel>
+  <!--English=Inactive.-->
+  <Moyo2_FishTank_NotGrowingAnything>대기중.</Moyo2_FishTank_NotGrowingAnything>
+  <!--English={FishName} ready to harvest.-->
+  <Moyo2_FishTank_FinishedGrowing>{FishName}수확 준비됨.</Moyo2_FishTank_FinishedGrowing>
+  <!--English=Growth progress: {%age}%-->
+  <Moyo2_FishTank_GrowthPercent>성장도: {%age}%</Moyo2_FishTank_GrowthPercent>
+  <!--English=The fish harvest has been lost-->
+  <Moyo2_FishTank_FishDied>물고기가 죽었습니다.</Moyo2_FishTank_FishDied>
+  <!--English=Hours before the harvest is lost: {Hours}-->
+  <Moyo2_FishTank_HoursFishDie>물고기가 죽기까지의 시간: {Hours}</Moyo2_FishTank_HoursFishDie>
+</LanguageData>

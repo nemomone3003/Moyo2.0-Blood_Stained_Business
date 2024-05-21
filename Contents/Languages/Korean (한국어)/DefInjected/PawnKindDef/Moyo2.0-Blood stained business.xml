@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=모요 floodzone dweller-->
+  <Moyo2_NPCFlooded.label>모요 침수구역 주민</Moyo2_NPCFlooded.label>
+  <!--Original=모요 toplayer civilian-->
+  <Moyo2_NPCTopCivil.label>모요 상층시민</Moyo2_NPCTopCivil.label>
+  <!--Original=모요 midlayer civilian-->
+  <Moyo2_NPCMiddleCivil.label>모요 중층 시민</Moyo2_NPCMiddleCivil.label>
+  <!--Original=모요 technician-->
+  <Moyo2_NPCTechnician.label>모요 기술자</Moyo2_NPCTechnician.label>
+  <!--Original=모요 무법자-->
+  <Moyo2_NPCOutlaw.label>모요 무법자</Moyo2_NPCOutlaw.label>
+  <!--Original=모요 무법자 junkie-->
+  <Moyo2_NPCOutlawJunkie.label>모요 무법자 중독자</Moyo2_NPCOutlawJunkie.label>
+  <!--Original=모요 엔지니어-->
+  <Moyo2_NPCEngineer.label>모요 엔지니어</Moyo2_NPCEngineer.label>
+  <!--Original=모요 엔지니어-->
+  <Moyo2_NPCEngineerMelee.label>모요 엔지니어</Moyo2_NPCEngineerMelee.label>
+  <!--Original=모요 무법자 boss-->
+  <Moyo2_NPCOutlawBoss.label>모요 무법자 보스</Moyo2_NPCOutlawBoss.label>
+  <!--Original=모요 negotiator-->
+  <Moyo2_NPCNegotiator.label>모요 협상가</Moyo2_NPCNegotiator.label>
+  <!--Original=모요 bottomlayer civilian-->
+  <Moyo2_NPCBottomCivil.label>모요 하층 시민</Moyo2_NPCBottomCivil.label>
+  <!--Original=모요 siren-->
+  <Moyo2_NPCSiren.label>모요 세이렌</Moyo2_NPCSiren.label>
+  <!--Original=모요 전투잠수부 recon-->
+  <Moyo2_NPCDiverRecon.label>모요 전투잠수부 정찰병</Moyo2_NPCDiverRecon.label>
+  <!--Original=모요 전투잠수부 vanguard-->
+  <Moyo2_NPCDiverReconMelee.label>모요 전투잠수부 전위대</Moyo2_NPCDiverReconMelee.label>
+  <!--Original=모요 전투잠수부 heavy infantry-->
+  <Moyo2_NPCDiverInfantry.label>모요 전투잠수부 중장대</Moyo2_NPCDiverInfantry.label>
+  <!--Original=모요 전투잠수부 heavy gunner-->
+  <Moyo2_NPCDiverHeavyGunner.label>모요 전투잠수부 중화기대</Moyo2_NPCDiverHeavyGunner.label>
+  <!--Original=모요 전투잠수부 crusher-->
+  <Moyo2_NPCDiverCrusher.label>모요 전투잠수부 파쇄대</Moyo2_NPCDiverCrusher.label>
+  <!--Original=모요 colonist-->
+  <Moyo2_ColonistPawn.label>모요 정착민</Moyo2_ColonistPawn.label>
+  <!--Original=depthweed-->
+  <Moyo2_FishKindDepthWeed.label>뎁스위드</Moyo2_FishKindDepthWeed.label>
+  <!--Original=stillwater tuna-->
+  <Moyo2_FishKindTuna.label>파도다랑어</Moyo2_FishKindTuna.label>
+  <!--Original=demi kraken-->
+  <Moyo2_FishKindDemiKraken.label>데미크라켄</Moyo2_FishKindDemiKraken.label>
+</LanguageData>

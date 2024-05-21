@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=딥블루 안정성(calm)-->
+  <DeepBlueAddiction_Thought.stages.0.label>딥블루 안정성(맑음)</DeepBlueAddiction_Thought.stages.0.label>
+  <!--Original=My mind is clear.-->
+  <DeepBlueAddiction_Thought.stages.0.description>정신이 맑아.</DeepBlueAddiction_Thought.stages.0.description>
+  <!--Original=딥블루 안정성(stable)-->
+  <DeepBlueAddiction_Thought.stages.1.label>딥블루 안정성(안정됨)</DeepBlueAddiction_Thought.stages.1.label>
+  <!--Original=Im feeing blue.-->
+  <DeepBlueAddiction_Thought.stages.1.description>약간 파란 기분이야.</DeepBlueAddiction_Thought.stages.1.description>
+  <!--Original=딥블루 안정성(decaying)-->
+  <DeepBlueAddiction_Thought.stages.2.label>딥블루 안정성(악화)</DeepBlueAddiction_Thought.stages.2.label>
+  <!--Original=Things look more and more blue.-->
+  <DeepBlueAddiction_Thought.stages.2.description>눈 앞이 점점 더 파래져.</DeepBlueAddiction_Thought.stages.2.description>
+  <!--Original=딥블루 안정성(critical)-->
+  <DeepBlueAddiction_Thought.stages.3.label>딥블루 안정성(불안정)</DeepBlueAddiction_Thought.stages.3.label>
+  <!--Original=Something is calling me. My mind is not my own.-->
+  <DeepBlueAddiction_Thought.stages.3.description>무언가 날 부르고 있어. 내 정신이 내 것이 아닌것 같아.</DeepBlueAddiction_Thought.stages.3.description>
+  <!--Original=A pill a day keeps the worries away.-->
+  <DBThought_Joy.stages.0.description>하루에 한알씩 먹으면 걱정도 사라지지.</DBThought_Joy.stages.0.description>
+  <!--Original=A numbing sense of happiness.-->
+  <DBThought_Joy.stages.1.description>알딸딸한 행복감. 좋아.</DBThought_Joy.stages.1.description>
+  <!--Original=there are no excess for hapiness. More the merrier.-->
+  <DBThought_Joy.stages.2.description>지나친 행복이란 없어. 크면 클수록 좋은 것이 행복이야.</DBThought_Joy.stages.2.description>
+  <!--Original=I can feel the rainbow in my hands!-->
+  <DBThought_Joy.stages.3.description>내 손으로 무지개를 만질 수 있어!</DBThought_Joy.stages.3.description>
+  <!--Original=IM HAPPY!!-->
+  <DBThought_Joy.stages.4.description>행복해!!</DBThought_Joy.stages.4.description>
+  <!--Original=A numbing feel.-->
+  <DBThought_Numb.stages.0.description>무감각해.</DBThought_Numb.stages.0.description>
+</LanguageData>

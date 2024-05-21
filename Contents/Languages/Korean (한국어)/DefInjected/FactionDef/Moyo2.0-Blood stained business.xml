@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=Refugee-->
+  <Moyo2_HavenFaction.pawnSingular>피난민</Moyo2_HavenFaction.pawnSingular>
+  <!--Original=Refugees-->
+  <Moyo2_HavenFaction.pawnsPlural>피난민</Moyo2_HavenFaction.pawnsPlural>
+  <!--Original=refugee&apos;s landfall-->
+  <Moyo2_HavenFaction.label>상륙자 도피처</Moyo2_HavenFaction.label>
+  <!--Original=A community of moyos established  by groups whom made landfall after they were expelled or fled from the lighthouse. Abandoning the lighthouse&apos;s isolationist ways, they thrived by engaging in deepblue and technological trade with other communities. large quantities of deep blue and advanced technology can be traded In their settlements.\n\nThey maintain communication networks within the lighthouse and employ various methods to obtain supplies and bring other moyos to the mainland. Rumors have started circulating within the lighthouse that those &quot;rescued&quot; by these groups Live lives filled with &quot;brighter potential&quot;.-->
+  <Moyo2_HavenFaction.description>여러 이유로 인해 등대를 떠나거나 쫒겨난 모요들 중 일부가 지상에 상륙하여 만들어진 공동체입니다. 이들은 등대의 방식인 고립을 떠나 딥블루와 기술 무역으로 다른 공동체와 협력하며 성장했습니다. 이들의 정착지에선 많은 양의 딥블루와 첨단 기술을 거래할 수 있습니다.\n\n이들은 등대 내부에도 연락망이 있으며, 여러 방법을 통해 등대의 물자를 입수하고 모요들을 지상으로 데려오고 있습니다. 어느날부터 등대 내부에선 이들에 의해 "구조"된 모요들은 더 "밝고 가능성이 넘치는" 삶을 살게 된다는 소문이 돈다고 합니다.</Moyo2_HavenFaction.description>
+  <!--Original=Refugee Haven elder-->
+  <Moyo2_HavenFaction.leaderTitle>도피처 장로</Moyo2_HavenFaction.leaderTitle>
+  <!--Original=Lighthouse deserters-->
+  <Moyo2_PlayerFaction.label>등대 탈주자들</Moyo2_PlayerFaction.label>
+  <!--Original=A settlement made by the moyo who have left the lighthouse for various reasons.-->
+  <Moyo2_PlayerFaction.description>여러 이유로 인해 등대를 떠난 이들의 정착지입니다.</Moyo2_PlayerFaction.description>
+  <!--Original=colonist-->
+  <Moyo2_PlayerFaction.pawnSingular>정착민</Moyo2_PlayerFaction.pawnSingular>
+  <!--Original=colonists-->
+  <Moyo2_PlayerFaction.pawnsPlural>정착민들</Moyo2_PlayerFaction.pawnsPlural>
+</LanguageData>

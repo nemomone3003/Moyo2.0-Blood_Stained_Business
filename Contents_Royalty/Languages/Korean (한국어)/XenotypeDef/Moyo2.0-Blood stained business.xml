@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=depthborn moyo-->
+  <Moyo2_Xenotype_Depthborn.label>뎁스본</Moyo2_Xenotype_Depthborn.label>
+  <!--Original=species born after extensive and prolonged genetic modification, possesses characteristics of deepーsea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.-->
+  <Moyo2_Xenotype_Depthborn.description>광범위하고 장기간에 걸친 유전자 개조로 인해 탄생한 종족으로, 심해 생물의 특성을 가지고 있으며, 대사에 딥 블루를 활용합니다. 광범위한 개조으로 인해 모요의 특정한 형질만이 인간에게 적용될 수 있습니다.</Moyo2_Xenotype_Depthborn.description>
+  <!--Original=Baseline moyos.-->
+  <Moyo2_Xenotype_Depthborn.descriptionShort>기본 모요.</Moyo2_Xenotype_Depthborn.descriptionShort>
+</LanguageData>

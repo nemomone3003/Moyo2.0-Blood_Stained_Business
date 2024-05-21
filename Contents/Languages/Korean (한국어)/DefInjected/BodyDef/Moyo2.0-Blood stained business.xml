@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!--Original=fish-->
+	<Moyo2_FishBody.label>물고기</Moyo2_FishBody.label>
+	<!--Original=등지느러미-->
+	<Moyo2_FishBody.corePart.parts.2.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.2.customLabel>
+	<!--Original=등지느러미-->
+	<Moyo2_FishBody.corePart.parts.3.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.3.customLabel>
+	<!--Original=tail-->
+	<Moyo2_FishBody.corePart.parts.4.customLabel>꼬리</Moyo2_FishBody.corePart.parts.4.customLabel>
+	<!--Original=왼쪽 폐-->
+	<Moyo2_FishBody.corePart.parts.7.customLabel>왼쪽 폐</Moyo2_FishBody.corePart.parts.7.customLabel>
+	<!--Original=오른쪽 폐-->
+	<Moyo2_FishBody.corePart.parts.8.customLabel>오른쪽 폐</Moyo2_FishBody.corePart.parts.8.customLabel>
+	<!--Original=왼쪽 가슴지느러미-->
+	<Moyo2_FishBody.corePart.parts.11.customLabel>왼쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.11.customLabel>
+	<!--Original=오른쪽 가슴지느러미-->
+	<Moyo2_FishBody.corePart.parts.12.customLabel>오른쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.12.customLabel>
+	<!--Original=왼쪽 배지느러미-->
+	<Moyo2_FishBody.corePart.parts.13.customLabel>왼쪽 배지느러미</Moyo2_FishBody.corePart.parts.13.customLabel>
+	<!--Original=오른쪽 배지느러미-->
+	<Moyo2_FishBody.corePart.parts.14.customLabel>오른쪽 배지느러미</Moyo2_FishBody.corePart.parts.14.customLabel>
+	<!--Original=tail fin-->
+	<Moyo2_FishBody.corePart.parts.4.parts.0.customLabel>꼬리지느러미</Moyo2_FishBody.corePart.parts.4.parts.0.customLabel>
+	<!--Original=왼쪽 eye-->
+	<Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel>왼눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel>
+	<!--Original=오른쪽 eye-->
+	<Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel>오른눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel>
+	<!--Original=cephalopod-->
+	<Moyo2_CephalopodBody.label>두족류</Moyo2_CephalopodBody.label>
+	<!--Original=촉수 뿌리-->
+	<Moyo2_CephalopodBody.corePart.parts.0.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.0.customLabel>
+	<!--Original=촉수 뿌리-->
+	<Moyo2_CephalopodBody.corePart.parts.1.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.1.customLabel>
+	<!--Original=왼쪽 폐-->
+	<Moyo2_CephalopodBody.corePart.parts.4.customLabel>왼쪽 폐</Moyo2_CephalopodBody.corePart.parts.4.customLabel>
+	<!--Original=오른쪽 폐-->
+	<Moyo2_CephalopodBody.corePart.parts.5.customLabel>오른쪽 폐</Moyo2_CephalopodBody.corePart.parts.5.customLabel>
+	<!--Original=왼쪽 eye-->
+	<Moyo2_CephalopodBody.corePart.parts.8.customLabel>왼쪽 eye</Moyo2_CephalopodBody.corePart.parts.8.customLabel>
+	<!--Original=오른쪽 eye-->
+	<Moyo2_CephalopodBody.corePart.parts.9.customLabel>오른쪽 eye</Moyo2_CephalopodBody.corePart.parts.9.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel>
+	<!--Original=촉수-->
+	<Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel>
+	<!--Original=moyo-->
+	<Moyo2_MoyoBody.label>모요</Moyo2_MoyoBody.label>
+	<Moyo2_MoyoBody.corePart.parts.4.customLabel>꼬리</Moyo2_MoyoBody.corePart.parts.4.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.7.customLabel>왼쪽 폐</Moyo2_MoyoBody.corePart.parts.7.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.8.customLabel>오른쪽 폐</Moyo2_MoyoBody.corePart.parts.8.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.9.customLabel>왼쪽 신장</Moyo2_MoyoBody.corePart.parts.9.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.10.customLabel>오른쪽 신장</Moyo2_MoyoBody.corePart.parts.10.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.1.customLabel>왼쪽 눈</Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.2.customLabel>오른쪽 눈</Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.3.customLabel>왼쪽 더듬이</Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.3.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.4.customLabel>오른쪽 더듬이</Moyo2_MoyoBody.corePart.parts.12.parts.0.parts.4.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.customLabel>왼쪽 어깨</Moyo2_MoyoBody.corePart.parts.13.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.0.customLabel>왼쪽 쇄골</Moyo2_MoyoBody.corePart.parts.13.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.customLabel>왼팔</Moyo2_MoyoBody.corePart.parts.13.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.0.customLabel>왼쪽 상완골</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.1.customLabel>왼쪽 요골</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.customLabel>왼쪽 손</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>왼쪽 새끼손가락</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>왼쪽 넷째 손가락</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>왼쪽 가운데 손가락</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>왼쪽 집게 손가락</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>왼쪽 엄지손가락</Moyo2_MoyoBody.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.customLabel>오른쪽 어깨</Moyo2_MoyoBody.corePart.parts.14.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.0.customLabel>오른쪽 쇄골</Moyo2_MoyoBody.corePart.parts.14.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.customLabel>오른팔</Moyo2_MoyoBody.corePart.parts.14.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.0.customLabel>오른쪽 상완골</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.1.customLabel>오른쪽 요골</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.customLabel>오른쪽 손</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>오른쪽 새끼손가락</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>오른쪽 넷째 손가락</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>오른쪽 가운데 손가락</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>오른쪽 집게 손가락</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>오른쪽 엄지손가락</Moyo2_MoyoBody.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.customLabel>왼다리</Moyo2_MoyoBody.corePart.parts.16.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.0.customLabel>왼쪽 대퇴골</Moyo2_MoyoBody.corePart.parts.16.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.1.customLabel>왼쪽 경골</Moyo2_MoyoBody.corePart.parts.16.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.2.customLabel>왼발</Moyo2_MoyoBody.corePart.parts.16.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.0.customLabel>왼쪽 새끼발가락</Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.1.customLabel>왼쪽 넷째 발가락</Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.2.customLabel>왼쪽 가운데 발가락</Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.3.customLabel>왼쪽 둘째 발가락</Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.3.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.4.customLabel>왼쪽 엄지 발가락</Moyo2_MoyoBody.corePart.parts.16.parts.2.parts.4.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.customLabel>오른다리</Moyo2_MoyoBody.corePart.parts.17.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.0.customLabel>오른쪽 대퇴골</Moyo2_MoyoBody.corePart.parts.17.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.1.customLabel>오른쪽 경골</Moyo2_MoyoBody.corePart.parts.17.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.2.customLabel>오른발</Moyo2_MoyoBody.corePart.parts.17.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.0.customLabel>오른쪽 새끼발가락</Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.0.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.1.customLabel>오른쪽 넷째 발가락</Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.1.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.2.customLabel>오른쪽 가운데 발가락</Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.2.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.3.customLabel>오른쪽 둘째 발가락</Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.3.customLabel>
+	<Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.4.customLabel>오른쪽 엄지 발가락</Moyo2_MoyoBody.corePart.parts.17.parts.2.parts.4.customLabel>
+</LanguageData>

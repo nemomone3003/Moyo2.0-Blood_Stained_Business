@@ -415,7 +415,7 @@
 	<!-- 유선형 잠수용 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_StreamlineDivingShell</defName>
-		<label>depth engineer welding hemet</label>
+		<label>streamlined diving shell</label>
 		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
@@ -471,7 +471,7 @@
 	<!-- 유선형 잠수용 헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_StreamlineDivingHelmet</defName>
-		<label>streamline diving helmet</label>
+		<label>streamlined diving helmet</label>
 		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineHelmet1</texPath>

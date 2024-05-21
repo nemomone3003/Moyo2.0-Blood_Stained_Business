@@ -3,9 +3,9 @@
 	<ScenarioDef>
 		<defName>Moyo2_DeserterScenario</defName>
 		<label>Lighthouse deserters</label>
-		<description>Dummy. Testing</description>
+		<description>Three moyos who decided to escape the lighthouse for their own reasons. Through some means, they obtained a hovercraft and managed to break through the lighthouse's blockade, evading pirates and raiders on both land and sea to finally reach the mainland.</description>
 		<scenario>
-			<summary>Dummy. Testing</summary>
+			<summary>Three moyos fled from the lighthouse made landfall. Standard moyo scenario.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>Moyo2_PlayerFaction</factionDef>

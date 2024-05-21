@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=cure blood rot(bluemed)-->
+  <Moyo2_CureBloodRot_BlueMed.label>패혈증 치료(푸른 약품)</Moyo2_CureBloodRot_BlueMed.label>
+  <!--Original=This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.-->
+  <Moyo2_CureBloodRot_BlueMed.description>나노 살균제를 대량으로 주입하여 패혈증을 치료합니다.</Moyo2_CureBloodRot_BlueMed.description>
+  <!--Original=Curing blood rot.-->
+  <Moyo2_CureBloodRot_BlueMed.jobString>패혈증 치료 중</Moyo2_CureBloodRot_BlueMed.jobString>
+  <!--Original={0} has successfully cured {1}&apos;s blood rot.-->
+  <Moyo2_CureBloodRot_BlueMed.successfullyRemovedHediffMessage>{0}(은)는 성공적으로 {1}의 패혈증을 치료했습니다.</Moyo2_CureBloodRot_BlueMed.successfullyRemovedHediffMessage>
+  <!--Original=antiーabasia mechanite infusion(bluemed)-->
+  <Moyo2_CureAbasia_BlueMed.label>운동마비 치료(푸른 약품)</Moyo2_CureAbasia_BlueMed.label>
+  <!--Original=This special medical operation uses a massive dose of mechanites to saturate brain tissue and execute a coordinated restructure of neural activity without damaging the brain. It permanently cures a patient&apos;s abasiaーinduced paralysis, but consumes a large amount of bluemeds.-->
+  <Moyo2_CureAbasia_BlueMed.description>대량의 기계입자를 사용하여 뇌를 손상시키지 않고 신경활동을 조정합니다. 이는 운동마비를 영구적으로 치료하지만 많은 푸른 약품을 소모합니다.</Moyo2_CureAbasia_BlueMed.description>
+  <!--Original=Infusing antiーabasia mechanites.-->
+  <Moyo2_CureAbasia_BlueMed.jobString>운동마비 치료 중</Moyo2_CureAbasia_BlueMed.jobString>
+  <!--Original={0} has successfully cured {1}&apos;s paralytic abasia.-->
+  <Moyo2_CureAbasia_BlueMed.successfullyRemovedHediffMessage>{0}(은)는 성공적으로 {1}의 운동마비를 치료했습니다.</Moyo2_CureAbasia_BlueMed.successfullyRemovedHediffMessage>
+</LanguageData>

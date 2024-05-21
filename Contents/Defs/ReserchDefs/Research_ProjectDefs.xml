@@ -77,7 +77,7 @@
 	<!-- 라미너 이론 -->
 	<ResearchProjectDef ParentName="Abysstech">
 		<defName>Moyo2_Abysstech_LaminarTheory</defName>
-		<label>laminar theory</label>
+		<label>laminar field theory</label>
 		<description>Research ways to produce laminar field. A directional field of energy that can be used as a virtual rail that guide matters through it.</description>
 		<baseCost>2000</baseCost>
 		<prerequisites>
@@ -120,7 +120,7 @@
 		<researchViewX>1</researchViewX>
 		<researchViewY>2.5</researchViewY>
 		<discoveredLetterTitle>About: Getting abyssteel</discoveredLetterTitle>
-		<discoveredLetterText>Now you have access to the powerful abysstech of The lighthouse. You need some abyssteel to kickstart the whole process, here are some ways to get it:\n\n-All Moyo settlements are most likely to sell abyssteel.\n-Melt down things made from abyssteel(weapons, armor and abysstech mechs).\n-Some quests are rewarded with abyssteel.</discoveredLetterText>
+		<discoveredLetterText>Now you have the means to produce abyssteel. You need some abyssteel to build your own arc furnace, here are some ways to get it:\n\n-All Moyo settlements are most likely to sell abyssteel.\n-Melt down things made from abyssteel(weapons, armor and abysstech mechs).\n-Some quests are rewarded with abyssteel.</discoveredLetterText>
 	</ResearchProjectDef>
 	<!-- 다이빙 쉘 -->
 	<ResearchProjectDef ParentName="Abysstech">

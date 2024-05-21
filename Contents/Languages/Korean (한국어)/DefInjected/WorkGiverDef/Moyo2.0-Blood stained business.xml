@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Original=Grow fish-->
+  <Moyo_GrowFish.label>물고기 기르기</Moyo_GrowFish.label>
+  <!--Original=grow-->
+  <Moyo_GrowFish.verb>기르기</Moyo_GrowFish.verb>
+  <!--Original=growing-->
+  <Moyo_GrowFish.gerund>기르는 중</Moyo_GrowFish.gerund>
+  <!--Original=Collect grown fish-->
+  <Moyo_TakeFish.label>물고기 수확</Moyo_TakeFish.label>
+  <!--Original=collect-->
+  <Moyo_TakeFish.verb>수확</Moyo_TakeFish.verb>
+  <!--Original=collecting from-->
+  <Moyo_TakeFish.gerund>수확하는 중</Moyo_TakeFish.gerund>
+</LanguageData>
