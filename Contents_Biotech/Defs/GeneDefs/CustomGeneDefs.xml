@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 유전자 카테고리 -->
+	<GeneCategoryDef>
+		<defName>Moyo2_Gene</defName>
+		<label>moyo</label>
+		<displayPriorityInXenotype>1500</displayPriorityInXenotype>
+	</GeneCategoryDef>
+	<!-- 제노타입 아이콘 -->
+	<XenotypeIconDef>
+		<defName>Moyo2_A</defName>
+		<texPath>Icon/Moyo_FactionIcon</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Moyo2_B</defName>
+		<texPath>Icon/Moyo_PlayerIcon</texPath>
+	</XenotypeIconDef>
+	<XenotypeIconDef>
+		<defName>Moyo2_C</defName>
+		<texPath>Icon/Moyo_CartelIcon</texPath>
+	</XenotypeIconDef>
+	<!-- 외형 유전자 -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_DuskBlue</defName> -->
+	<!-- <label>dusk blue hair</label> -->
+	<!-- <hairColorOverride>(56,55,78)</hairColorOverride> -->
+	<!-- <selectionWeight>0.75</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_ShallowBlue</defName> -->
+	<!-- <label>shallow blue hair</label> -->
+	<!-- <hairColorOverride>(51, 59, 84)</hairColorOverride> -->
+	<!-- <selectionWeight>1</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef>	 -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_TwilightBlue</defName> -->
+	<!-- <label>twilight blue hair</label> -->
+	<!-- <hairColorOverride>(41, 43, 68)</hairColorOverride> -->
+	<!-- <selectionWeight>0.3</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_AbyssBlue</defName> -->
+	<!-- <label>abyss blue hair</label> -->
+	<!-- <hairColorOverride>(32, 34, 58)</hairColorOverride> -->
+	<!-- <selectionWeight>0.3</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_HadalBlue</defName> -->
+	<!-- <label>hadal blue hair</label> -->
+	<!-- <hairColorOverride>(22, 24, 41)</hairColorOverride> -->
+	<!-- <selectionWeight>0.1</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_PaleBlue</defName> -->
+	<!-- <label>pale blue hair</label> -->
+	<!-- <hairColorOverride>(71, 90, 145)</hairColorOverride> -->
+	<!-- <selectionWeight>0.5</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_GhostBlue</defName> -->
+	<!-- <label>ghost blue hair</label> -->
+	<!-- <hairColorOverride>(163, 184, 255)</hairColorOverride> -->
+	<!-- <selectionWeight>0.05</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
+	<!-- <defName>Moyo2_Hair_PaleWhite</defName> -->
+	<!-- <label>pale white hair</label> -->
+	<!-- <hairColorOverride>(217, 225, 255)</hairColorOverride> -->
+	<!-- <selectionWeight>0.03</selectionWeight> -->
+	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
+	<!-- </GeneDef> -->
+	<GeneDef ParentName="GeneSkinColorOverride">
+		<defName>Moyo2_Skin_Depthborn</defName>
+		<label>depthborn skin pattern</label>
+		<labelShortAdj>depthborn pattern</labelShortAdj>
+		<description>Moyos with this gene will have depthborn skin pattern.</description>
+		<iconPath>Icon/DepthbornIcon1</iconPath>
+		<skinColorOverride>(255, 255, 255)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<displayOrderInCategory>93</displayOrderInCategory>
+		<displayCategory>Moyo2_Gene</displayCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>depthborn</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>depthborn</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<!-- 스텟 유전자 -->
+	<GeneDef ParentName="GeneMoveSpeedBase">
+		<defName>Moyo2_MoveSpeed_Slug</defName>
+		<label>sluggish runner</label>
+		<labelShortAdj>sluggish</labelShortAdj>
+		<description>Carriers of this gene move much more slowly than normal.</description>
+		<iconPath>Icon/SlugSpeedIcon</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</statOffsets>
+		<biostatMet>5</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>slow</symbol>
+				</li>
+				<li>
+					<symbol>plod</symbol>
+				</li>
+				<li>
+					<symbol>grado</symbol>
+				</li>
+				<li>
+					<symbol>letho</symbol>
+				</li>
+				<li>
+					<symbol>slug</symbol>
+				</li>
+				<li>
+					<symbol>slack</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>slug</symbol>
+				</li>
+				<li>
+					<symbol>plodder</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<GeneDef>
+		<defName>Moyo2_WorkSpeed_Slow</defName>
+		<label>deliberate worker</label>
+		<labelShortAdj>deliberate</labelShortAdj>
+		<description>Carriers of this gene work more slowly than normal.</description>
+		<iconPath>Icon/SlowWorkIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<statOffsets>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+		</statOffsets>
+		<biostatMet>2</biostatMet>
+	</GeneDef>	
+</Defs>

@@ -10,8 +10,8 @@
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>9999</severityPerDay>
-			</li>			
-		</comps>	
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
@@ -27,6 +27,82 @@
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
+	<!-- 해초 -->
+	<Moyo2.FishDef ParentName="AnimalThingBase">
+		<defName>Moyo2_DepthWeed</defName>
+		<label>depthweed</label>
+		<description>dummy text.</description>
+		<statBases>
+			<MoveSpeed>0.1</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<MarketValue>300</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<race>
+			<body>Moyo2_FishBody</body>
+			<hasGenders>false</hasGenders>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>0.01</baseHungerRate>
+			<baseHealthScale>1</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Moyo2_Depthweed</leatherDef>
+			<wildness>0</wildness>
+			<trainability>None</trainability>
+			<meatLabel>depthweed</meatLabel>
+			<lifeExpectancy>0.01</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Moyo2_FishKillGiver</li>
+			</hediffGiverSets>
+			<!-- <hasCorpse>false</hasCorpse> -->
+		</race>
+		<!-- <butcherProducts> -->
+			<!-- <Moyo2_Depthweed>240</Moyo2_Depthweed> -->
+		<!-- </butcherProducts>		 -->
+		<fishTankSettings>
+			<ticksToGrow>720,000</ticksToGrow>
+			<graphicData>
+				<texPath>Item/Fish/MoyoFish_Plant</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>2</drawSize>
+			</graphicData>
+			<pawnKindDef>Moyo2_FishKindDepthWeed</pawnKindDef>
+		</fishTankSettings>
+	</Moyo2.FishDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Moyo2_FishKindDepthWeed</defName>
+		<label>depthweed</label>
+		<race>Moyo2_DepthWeed</race>
+		<combatPower>75</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Item/Fish/MoyoFish_Plant</texPath>
+					<drawSize>2</drawSize>
+					<color>(255, 255, 255)</color>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Item/Fish/MoyoFish_Plant</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- 참치 -->
 	<Moyo2.FishDef ParentName="AnimalThingBase">
 		<defName>Moyo2_Tuna</defName>
@@ -63,10 +139,10 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
 				<li>Moyo2_FishKillGiver</li>
-			</hediffGiverSets>			
+			</hediffGiverSets>
 		</race>
 		<fishTankSettings>
-			<ticksToGrow>800</ticksToGrow>
+			<ticksToGrow>720,000</ticksToGrow>
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
@@ -134,13 +210,13 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
 				<li>Moyo2_FishKillGiver</li>
-			</hediffGiverSets>			
+			</hediffGiverSets>
 		</race>
 		<butcherProducts>
 			<Neutroamine>10</Neutroamine>
-		</butcherProducts>		
+		</butcherProducts>
 		<fishTankSettings>
-			<ticksToGrow>800</ticksToGrow>
+			<ticksToGrow>720,000</ticksToGrow>
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
@@ -171,5 +247,5 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef>	
+	</PawnKindDef>
 </Defs>

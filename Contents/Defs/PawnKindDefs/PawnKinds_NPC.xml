@@ -10,7 +10,25 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<maxGenerationAge>75</maxGenerationAge>
 		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>10~17</initialResistanceRange>		
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">1</Moyo2_Xenotype_Depthborn>
+				<!-- 차단 -->
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>	
 	</PawnKindDef>
 	<!-- 하급 폰카인드 -->
 	<!-- 모요 침수민	-->
@@ -27,7 +45,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_TopCivil</li>
+					<li>Moyo2_TopCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -72,7 +91,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_TopCivil</li>
+					<li>Moyo2_TopCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -118,7 +138,10 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_TopCivil</li>
+					<li>Moyo2_MidCivil</li>
+					<li>Moyo2_TopCrime</li>
+					<li>Moyo2_MidCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -162,7 +185,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_MidCivil</li>
+					<li>Moyo2_Engineer</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -220,7 +244,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_TopCrime</li>
+					<li>Moyo2_MidCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -255,7 +280,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_Engineer</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -298,7 +323,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_MidCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -338,7 +363,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_MidCivil</li>
+					<li>Moyo2_MidCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -373,7 +399,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_BotCivil</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -415,7 +441,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_Siren</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -439,12 +465,12 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>		
-	<!-- 모요타격대 -->
+	<!-- 전투잠수부 경장 -->
 	<PawnKindDef ParentName="Moyo2_NPCBase" Name="Moyo2_NPCDiverLight" Abstract="true">
 		<combatPower>190</combatPower>
 		<isFighter>true</isFighter>
 		<apparelTags>
-			<li>Moyo_SpacerLight</li>
+			<li>Moyo2_DiverLight</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>Moyo2_StreamlineDivingHelmet</li>
@@ -455,7 +481,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<li>Moyo2_Soldier</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -465,7 +491,7 @@
 			<li>Moyo2_PistolLMR</li>
 			<li>Moyo2_RifleLMR</li>
 		</weaponTags>
-		<weaponMoney>1200~1500</weaponMoney>
+		<weaponMoney>1200~1800</weaponMoney>
 		<biocodeWeaponChance>0.2</biocodeWeaponChance>
 		<techHediffsChance>0.3</techHediffsChance>
 		<techHediffsMoney>600~2000</techHediffsMoney>
@@ -494,6 +520,87 @@
 		</apparelTags>		
 		<weaponTags Inherit="false">
 			<li>Moyo2_GauntletLMR</li>
+		</weaponTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBBooster_Orca</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+	<!-- 전투잠수부 중장 -->
+	<PawnKindDef ParentName="Moyo2_NPCBase" Name="Moyo2_NPCDiverheavy" Abstract="true">
+		<combatPower>280</combatPower>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>Moyo2_DiverHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_DeepDivingHelmet</li>
+			<li>Moyo2_DeepDivingShell</li>
+			<li>Moyo2_AdvancedSuit</li>
+		</apparelRequired>
+		<gearHealthRange>2~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_Soldier</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>2800~4000</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_RifleLMR</li>
+		</weaponTags>
+		<weaponMoney>1870~2000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>1</invNutrition>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Moyo2_NPCDiverheavy">
+		<defName>Moyo2_NPCDiverInfantry</defName>
+		<label>moyo combat diver heavy infantry</label>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBBooster_Hydra</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>		
+	<PawnKindDef ParentName="Moyo2_NPCDiverheavy">
+		<defName>Moyo2_NPCDiverHeavyGunner</defName>
+		<label>moyo combat diver heavy gunner</label>	
+		<weaponTags Inherit="false">
+			<li>Moyo2_BalistaLMR</li>
+			<li>Moyo2_AutocannonLMR</li>
+		</weaponTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBBooster_Hydra</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>		
+	</PawnKindDef>
+	<PawnKindDef ParentName="Moyo2_NPCDiverLight">
+		<defName>Moyo2_NPCDiverCrusher</defName>
+		<label>moyo combat diver crusher</label>
+		<apparelTags>
+			<li>BeltDefense</li>
+		</apparelTags>		
+		<weaponTags Inherit="false">
+			<li>Moyo2_GauntletLMR</li>
+			<li>Moyo2_GlaiveLMR</li>
 		</weaponTags>
 		<inventoryOptions>
 			<subOptionsChooseOne>

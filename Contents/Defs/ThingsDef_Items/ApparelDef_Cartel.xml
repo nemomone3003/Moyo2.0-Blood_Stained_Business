@@ -5,7 +5,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CartelHood</defName>
 		<label>hooded black cloak</label>
-		<description>Protective suit for temperature-sensitive moyos. Looks stylish as well.</description>
+		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
 		<graphicData>
 			<texPath>Apparel/Cartel/CartelCloak1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

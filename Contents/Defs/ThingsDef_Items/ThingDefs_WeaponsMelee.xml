@@ -5,7 +5,7 @@
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
 		<defName>Moyo2_Wrench</defName>
 		<label>depthtool heavy wrench</label>
-		<description>dummy text.</description>
+		<description>It's a heavy wrench designed to be wielded with both hands. While its primary purpose is tightening bolts, its weight allows it to double as a hammer. It would inflict significant pain if thrown.\n\nIt significantly boosts construction efficiency. Despite being almost a staple among workers, it continues to be a steady seller, leaving many to wonder what it's being used for.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Wrench</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -18,8 +18,7 @@
 			<Mass>3</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<ConstructionSpeed>0.1</ConstructionSpeed>
-			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+			<ConstructionSpeed>0.2</ConstructionSpeed>
 		</equippedStatOffsets>
 		<tools>
 			<li>
@@ -46,8 +45,8 @@
 				<soundReload>Standard_Reload</soundReload>
 				<chargeNoun>wrench</chargeNoun>
 				<ammoDef>Steel</ammoDef>
-				<ammoCountPerCharge>10</ammoCountPerCharge>
-				<baseReloadTicks>60</baseReloadTicks>
+				<ammoCountPerCharge>5</ammoCountPerCharge>
+				<baseReloadTicks>200</baseReloadTicks>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -92,7 +91,7 @@
 		<showOnCharacterCard>false</showOnCharacterCard>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>6</range>
+			<range>5.5</range>
 			<warmupTime>0.5</warmupTime>
 			<soundCast>ThrowGrenade</soundCast>
 			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -107,7 +106,7 @@
 		<defName>Moyo2_Bullet_WrenchThrow</defName>
 		<label>thrown wrench</label>
 		<graphicData>
-			<texPath>Weapon/IDR_Wrench</texPath>
+			<texPath>Weapon/WrenchThrow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -125,8 +124,8 @@
 	<!-- 모요 나이프 -->
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
 		<defName>Moyo2_Knife</defName>
-		<label>diving knife</label>
-		<description>dummy text.</description>
+		<label>depthtool diving knife</label>
+		<description>This knife features a blade made of plasteel. It is an excellent product that resists corrosion and maintains its edge well. It is an essential tool for divers and is also favored by chefs. Beware of imitations.\n\nIt boosts cooking and butchering efficiency. With various designs and limited editions, it has become a valuable collectible in the Lighthouse. Rumor has it that top customers of these knives will have the opportunity to buy a prototype of the Laminar hyper-oscillating knife.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Knife</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -138,6 +137,10 @@
 			<WorkToMake>8000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.1</CookSpeed>
+			<ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
+		</equippedStatOffsets>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -189,7 +192,7 @@
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
 		<defName>Moyo2_Saw</defName>
 		<label>depthtool sawjack</label>
-		<description>dummy text.</description>
+		<description>A rotary saw with incredible cutting power. Its blade, made from ultra-hard materials, can cut and grind through various substances.\n\nIt significantly boosts production efficiency. It was featured as a sponsored tool in the Lighthouse's famous horror media, "Rotary Saw Killer." Please use the tool for its intended purposes.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Saw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -201,8 +204,11 @@
 			<WorkToMake>8000</WorkToMake>
 			<Mass>3.5</Mass>
 		</statBases>
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+		</equippedStatOffsets>
 		<soundInteract>Interact_MonoSword</soundInteract>
-		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>		
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
 		<tools>
 			<li>
 				<label>sawblade</label>
@@ -252,7 +258,7 @@
 			<Mass>9</Mass>
 		</statBases>
 		<soundInteract>Interact_MonoSword</soundInteract>
-		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -307,7 +313,7 @@
 		<graphicData>
 			<texPath>Weapon/LMR_Gauntlet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>			
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<equippedAngleOffset>-15</equippedAngleOffset>
@@ -316,11 +322,11 @@
 			<Mass>5</Mass>
 		</statBases>
 		<soundInteract>Interact_MonoSword</soundInteract>
-		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
 		<equippedStatOffsets>
 			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
 			<CarryingCapacity>45</CarryingCapacity>
-		</equippedStatOffsets>		
+		</equippedStatOffsets>
 		<tools>
 			<li>
 				<label>Fist</label>
@@ -339,7 +345,7 @@
 				<cooldownTime>1.9</cooldownTime>
 			</li>
 		</tools>
-		<!-- - -->	
+		<!-- - -->
 		<recipeMaker>
 			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
@@ -357,6 +363,6 @@
 		<weaponTags>
 			<li>Moyo2_MeleeLMR</li>
 			<li>Moyo2_GaunteltLMR</li>
-		</weaponTags>		
-	</ThingDef>		
+		</weaponTags>
+	</ThingDef>
 </Defs>

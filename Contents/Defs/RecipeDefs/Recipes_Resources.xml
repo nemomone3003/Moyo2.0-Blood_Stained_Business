@@ -9,7 +9,7 @@
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
-		<workAmount>2500</workAmount>
+		<workAmount>1000</workAmount>
 		<recipeUsers>
 			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
@@ -52,7 +52,7 @@
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
-		<workAmount>10000</workAmount>
+		<workAmount>4000</workAmount>
 		<recipeUsers>
 			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
@@ -88,14 +88,14 @@
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef>
-		<defName>Make_AbyssteelB</defName>
+		<defName>Moyo2_Make_AbyssteelB</defName>
 		<label>refine abyssteel(HadalShard)</label>
 		<description>Craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.</description>
 		<jobString>Refining chemfuel from wood.</jobString>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
-		<workAmount>2500</workAmount>
+		<workAmount>1000</workAmount>
 		<recipeUsers>
 			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
@@ -131,14 +131,14 @@
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef>
-		<defName>Make_AbyssteelBBulk</defName>
+		<defName>Moyo2_Make_AbyssteelBBulk</defName>
 		<label>refine abyssteel(HadalShard) x4</label>
 		<description>Bulk craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.</description>
 		<jobString>Refining chemfuel from wood.</jobString>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
-		<workAmount>10000</workAmount>
+		<workAmount>4000</workAmount>
 		<recipeUsers>
 			<li>Moyo2_ArcFurnace</li>
 		</recipeUsers>
@@ -173,8 +173,9 @@
 			<Crafting>6</Crafting>
 		</skillRequirements>
 	</RecipeDef>
+	<!-- 부품 제작 -->
 	<RecipeDef>
-		<defName>Make_ComponentIndustrial_Moyo</defName>
+		<defName>Moyo2_Make_ComponentIndustrial</defName>
 		<label>make component(crude)</label>
 		<description>Craft component with crude method. It takes a long time.</description>
 		<jobString>Making component.</jobString>
@@ -209,5 +210,248 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<displayPriority>0</displayPriority>
+		<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+	</RecipeDef>
+	<!-- 해초 자르기 -->
+	<RecipeDef>
+		<defName>Moyo2_Butcher_Depthweed</defName>
+		<label>cut depthweed</label>
+		<description>Cut depthweed into small pieces.</description>
+		<jobString>Cutting depthweed.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>100</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Moyo2_FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Corpse_Moyo2_DepthWeed</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<!-- <fixedIngredientFilter> -->
+			<!-- <thingDefs> -->
+				<!-- <li>Chemfuel</li> -->
+			<!-- </thingDefs> -->
+			<!-- <categories> -->
+				<!-- <li>Leathers</li> -->
+			<!-- </categories> -->
+			<!-- <disallowedThingDefs> -->
+				<!-- <li>Leather_Patch</li> -->
+				<!-- <li>Leather_Human</li> -->
+				<!-- <li>Leather_Thrumbo</li> -->
+			<!-- </disallowedThingDefs> -->
+		<!-- </fixedIngredientFilter> -->
+		<products>
+			<Moyo2_Depthweed>240</Moyo2_Depthweed>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Moyo2_Make_DepthweaveA</defName>
+		<label>make depthweave</label>
+		<description>Make depthweave, a tough fabric commonly utilised in the lighthouse.</description>
+		<jobString>Making depthweave.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>250</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Moyo2_FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Leather_Thrumbo</li>
+						<li>Leather_Patch</li>
+						<li>Leather_Human</li>
+					</disallowedThingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Leather_Patch</li>
+				<li>Leather_Human</li>
+				<li>Leather_Thrumbo</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo2_Cloth_Depthweave>20</Moyo2_Cloth_Depthweave>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Moyo2_Make_DepthweaveABulk</defName>
+		<label>make depthweave x4</label>
+		<description>bulk make depthweave, a tough fabric commonly utilised in the lighthouse.</description>
+		<jobString>Making bulk depthweave.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>1000</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Moyo2_FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Leather_Thrumbo</li>
+						<li>Leather_Patch</li>
+						<li>Leather_Human</li>
+					</disallowedThingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Leather_Patch</li>
+				<li>Leather_Human</li>
+				<li>Leather_Thrumbo</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Moyo2_Make_DepthweaveB</defName>
+		<label>make depthweave(depthweed)</label>
+		<description>Make depthweave, a tough fabric commonly utilised in the lighthouse from depthweed.</description>
+		<jobString>Making depthweave from depthweed.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>250</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Moyo2_FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_Depthweed</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo2_Depthweed</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo2_Cloth_Depthweave>20</Moyo2_Cloth_Depthweave>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Moyo2_Make_DepthweaveBBulk</defName>
+		<label>make depthweave(depthweed)</label>
+		<description>bulk make depthweave, a tough fabric commonly utilised in the lighthouse from depthweed.</description>
+		<jobString>Bulk making depthweave from depthweed.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>1000</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Moyo2_FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_Depthweed</li>
+					</thingDefs>
+				</filter>
+				<count>160</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo2_Depthweed</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 	</RecipeDef>
 </Defs>

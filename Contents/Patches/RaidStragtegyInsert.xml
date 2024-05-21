@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RaidStrategyDef[defName="EmergeFromWater"]/selectionWeightCurvesPerFaction</xpath>
+		<value>
+			<li>
+				<faction>Moyo2_HavenFaction</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(1999, 0)</li>
+						<li>(2000, 0.15)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</value>
+	</Operation>
+</Patch>

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath>
-		<value>
-			<wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath>
-		</value>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath> -->
+		<!-- <value> -->
+			<!-- <wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel/wornGraphicPath</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath>
+			<value>
+				<wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath>
+			</value>
+		</nomatch>
 	</Operation>
 </Patch>

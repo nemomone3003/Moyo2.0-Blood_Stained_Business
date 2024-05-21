@@ -14,6 +14,8 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Spacer</techLevel>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>		
 		<allowedCultures>
 			<li>Moyo2_RefugeeCulture</li>
 		</allowedCultures>
@@ -71,21 +73,23 @@
 		<baseTraderKinds>
 			<li>Moyo2_Base_Standard</li>
 		</baseTraderKinds>
-		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
-		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
-				<li>(500, 100)</li>
+				<li>(0, 100)</li>
 				<li>(1000, 150)</li>
-				<li>(2000, 250)</li>
-				<li>(2001, 10000)</li>
+				<li>(2000, 190)</li>
+				<li>(3500, 280)</li>
+				<li>(5000, 1000000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
 			<li>
 				<!-- 기본 습격 -->
 				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
+				<commonality>100</commonality>
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+				</disallowedStrategies>						
 				<options>
 					<Moyo2_NPCTechnician>10</Moyo2_NPCTechnician>
 					<Moyo2_NPCEngineer>2</Moyo2_NPCEngineer>
@@ -98,7 +102,10 @@
 			<li>
 				<!-- 무법자 습격 -->
 				<kindDef>Combat</kindDef>
-				<commonality>5</commonality>
+				<commonality>80</commonality>
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+				</disallowedStrategies>				
 				<options>
 					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
 					<Moyo2_NPCOutlawJunkie>10</Moyo2_NPCOutlawJunkie>
@@ -108,12 +115,24 @@
 			<li>
 				<!-- 잠수부 습격 -->
 				<kindDef>Combat</kindDef>
-				<commonality>5</commonality>
+				<commonality>50</commonality>
 				<options>
 					<Moyo2_NPCDiverRecon>25</Moyo2_NPCDiverRecon>
-					<Moyo2_NPCDiverReconMelee>10</Moyo2_NPCDiverReconMelee>				
+					<Moyo2_NPCDiverReconMelee>10</Moyo2_NPCDiverReconMelee>	
 				</options>
-			</li>			
+			</li>
+			<li>
+				<!--중장 잠수부 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>35</commonality>
+				<options>
+					<Moyo2_NPCDiverRecon>5</Moyo2_NPCDiverRecon>
+					<Moyo2_NPCDiverReconMelee>5</Moyo2_NPCDiverReconMelee>
+					<Moyo2_NPCDiverInfantry>30</Moyo2_NPCDiverInfantry>
+					<Moyo2_NPCDiverHeavyGunner>5</Moyo2_NPCDiverHeavyGunner>
+					<Moyo2_NPCDiverCrusher>10</Moyo2_NPCDiverCrusher>
+				</options>
+			</li>				
 			<li>
 				<!-- 일반 주둔지 -->
 				<kindDef>Settlement</kindDef>
@@ -208,8 +227,8 @@
 	</FactionDef>
 	<FactionDef ParentName="MoyoFactionBase">
 		<defName>Moyo2_HavenFaction</defName>
-		<label>moyo refugee haven</label>
-		<description>A settlement of moyo who left the lighthouse for the surface.\n\nThe moyos who have left the lighthouse, whether it be to escape the civil war or simply to trade with the surface, have banded together for survival.</description>
+		<label>refugee's landfall</label>
+		<description>A community of moyos established  by groups whom made landfall after they were expelled or fled from the lighthouse. Abandoning the lighthouse's isolationist ways, they thrived by engaging in deepblue and technological trade with other communities. large quantities of deep blue and advanced technology can be traded In their settlements.\n\nThey maintain communication networks within the lighthouse and employ various methods to obtain supplies and bring other moyos to the mainland. Rumors have started circulating within the lighthouse that those "rescued" by these groups Live lives filled with "brighter potential".</description>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Moyo_FactionIcon</settlementTexturePath>

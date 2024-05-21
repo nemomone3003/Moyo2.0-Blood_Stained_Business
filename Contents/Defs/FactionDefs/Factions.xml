@@ -9,7 +9,7 @@
 	<!-- 정착민 -->
 	<FactionDef ParentName="Moyo_PlayerBase">
 		<defName>Moyo2_PlayerFaction</defName>
-		<label>Refugees</label>
+		<label>Lighthouse deserters</label>
 		<description>A settlement made by the moyo who have left the lighthouse for various reasons.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>Moyo2_ColonistPawn</basicMemberKind>

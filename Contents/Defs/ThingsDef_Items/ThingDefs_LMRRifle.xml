@@ -91,15 +91,11 @@
 			<Moyo2_Abyssteel>55</Moyo2_Abyssteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-		<weaponTags>
-			<li>Moyo2_GunLMR</li>
-			<li>Moyo2_RifleLMR</li>
-		</weaponTags>
 	</ThingDef>
 	<ThingDef ParentName="Moyo2_LMRRifle">
 		<defName>Moyo2_LMRRifle</defName>
 		<label>laminar rifle</label>
-		<description>dummy text.</description>
+		<description>A signature large-caliber rifle of the lighthouse that uses laminar field to guide projectiles, a versitile weapon with high accuracy. It can be overcharged, increasing its damage and range but causes a brief overload.\n\nUpon firing, a 'rail' or 'tunnel' made of a laminar field is created, allowing the projectile to travel with minimal resistance. With the right ammunition, a reasonable range can be maintained even underwater.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_RifleMod</texPath>
 		</graphicData>
@@ -141,12 +137,16 @@
 					</li>
 				</transformData>
 			</li>
-		</comps>		
+		</comps>
+		<weaponTags>
+			<li>Moyo2_GunLMR</li>
+			<li>Moyo2_RifleLMR</li>
+		</weaponTags>		
 	</ThingDef>
 	<ThingDef ParentName="Moyo2_LMRRifle">
 		<defName>Moyo2_LMRRifleOver</defName>
 		<label>laminar rifle(overcharged)</label>
-		<description>dummy text.</description>
+		<description>An overcharged laminar rifle. Has improved firepower and range but gets overloaded after a short period.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_RifleModOver</texPath>
 		</graphicData>
@@ -203,7 +203,7 @@
 	<ThingDef ParentName="Moyo2_LMRRifle">
 		<defName>Moyo2_LMRRifleDown</defName>
 		<label>laminar rifle(overloaded)</label>
-		<description>dummy text.</description>
+		<description>An overloaded laminar rifle. Firing is temporarily disabled until the system is restored. It's an expensive club in the meantime.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_RifleModDown</texPath>
 		</graphicData>

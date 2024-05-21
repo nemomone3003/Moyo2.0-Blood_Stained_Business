@@ -5,7 +5,7 @@
 	<ThingDef ParentName="MoyoBaseGunIDR">
 		<defName>Moyo2_NailGun</defName>
 		<label>depthtool nailgun</label>
-		<description>dummy text.</description>
+		<description>It's a common lighthouse nail gun. It shoots nails with powerful hydraulics. It's best to spray and pray due to its poor damage and accuracy.\n\nIt boosts construction and production efficiency. Each seemingly trivial tool like this has contributed to the shining lighthouses we see today. Get one for your settlement too!</description>
 		<graphicData>
 			<texPath>Weapon/IDR_NailGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -23,6 +23,10 @@
 			<AccuracyLong>0.01</AccuracyLong>
 			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		</equippedStatOffsets>		
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -98,7 +102,7 @@
 	<ThingDef ParentName="MoyoBaseGunIDR">
 		<defName>Moyo2_SpearGun</defName>
 		<label>depthtool spearjack</label>
-		<description>dummy text.</description>
+		<description>It's a tool that shoots metal piles with powerful hydraulics to pierce through metal plates. Charging and firing are slow, but the destructive power is considerable. While it's a niche application, it can also double as a melee weapon when fired at point-blank range.\n\nIt increases efficiency in construction and mining. However, the use of projectiles modified with explosives or similar alterations is unauthorized and poses serious risks to both personal safety and the company's interests.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Spearjack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -117,6 +121,10 @@
 			<AccuracyLong>0.35</AccuracyLong>
 			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<MiningSpeed>0.1</MiningSpeed>
+		</equippedStatOffsets>		
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -139,12 +147,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
-				<label>barrel</label>
+				<label>pile</label>
 				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
+				<li>Stab</li>
 				</capacities>
-				<power>9</power>
+				<power>20</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -190,7 +197,7 @@
 	<ThingDef ParentName="MoyoBaseGunIDR">
 		<defName>Moyo2_HarpoonGun</defName>
 		<label>depthtool ship-jack</label>
-		<description>dummy text.</description>
+		<description>It's an upscaled Spearjack, horrendously heavy and cumbersome to use, yet it fires piles that can pierce through even a submarine's hull. It's the perfect tool for demolishing something. While it's a niche application that can't be recommended, it can also double as a melee weapon when fired at point-blank range.\n\nIt significantly boosts mining efficiency. The tool's name originates from its primary use in ship dismantling.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Harpoonjack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -208,6 +215,10 @@
 			<AccuracyLong>0.80</AccuracyLong>
 			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.2</MiningSpeed>
+			<DeepDrillingSpeed>0.2</DeepDrillingSpeed>
+		</equippedStatOffsets>			
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -230,13 +241,12 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
-				<label>barrel</label>
+				<label>pile</label>
 				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
+				<li>Stab</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
+				<power>32</power>
+				<cooldownTime>7</cooldownTime>
 			</li>
 		</tools>
 		<!-- - -->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Moyo2_Xenotype_Depthborn</defName>
+		<label>depthborn moyo</label>
+		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.</description>
+		<descriptionShort>Baseline moyos.</descriptionShort>
+		<iconPath>Icon/Moyo_FactionIcon</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<genes>
+			<!-- 외형 -->
+			<li>Moyo2_Skin_Depthborn</li>
+			<!-- <li>Moyo2_Hair_DuskBlue</li> -->
+			<!-- <li>Moyo2_Hair_TwilightBlue</li> -->
+			<!-- <li>Moyo2_Hair_AbyssBlue</li> -->
+			<!-- <li>Moyo2_Hair_HadalBlue</li> -->
+			<!-- <li>Moyo2_Hair_ShallowBlue</li> -->
+			<!-- <li>Moyo2_Hair_PaleBlue</li> -->
+			<!-- <li>Moyo2_Hair_GhostBlue</li> -->
+			<!-- <li>Moyo2_Hair_PaleWhite</li> -->
+			<!-- 스텟 -->
+			<li>MinTemp_SmallDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Moyo2_MoveSpeed_Slug</li>
+			<li>Moyo2_WorkSpeed_Slow</li>
+			<li>PsychicAbility_Enhanced</li>
+			<li>Immunity_Strong</li>
+			<!-- 기타 -->
+			<li>AptitudeStrong_Medicine</li>
+			<li>AptitudeStrong_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/statBases</xpath>
+				<value>
+					<statBases>
+						<MarketValue>2800</MarketValue>
+						<RoyalFavorValue>4</RoyalFavorValue>
+						<Mass>75</Mass>
+						<MoveSpeed>4.6</MoveSpeed>
+						<Flammability>0.5</Flammability>
+						<ComfyTemperatureMax>26</ComfyTemperatureMax>
+						<ComfyTemperatureMin>16</ComfyTemperatureMin>
+						<MeatAmount>80</MeatAmount>
+						<LeatherAmount>50</LeatherAmount>
+						<CarryingCapacity>75</CarryingCapacity>
+						<!-- 배수 -->
+						<ImmunityGainSpeed>1</ImmunityGainSpeed>
+						<PsychicSensitivity>1</PsychicSensitivity>
+						<MeleeDodgeChance>0.8</MeleeDodgeChance>
+						<WorkSpeedGlobal>1</WorkSpeedGlobal>
+						<DrugSynthesisSpeed>1</DrugSynthesisSpeed>
+						<ResearchSpeed>1</ResearchSpeed>
+						<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1</HackingSpeed>
+						<MedicalTendSpeed>1</MedicalTendSpeed>
+						<MedicalTendQuality>1</MedicalTendQuality>
+						<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+						<!-- 전투 -->
+						<AimingDelayFactor>1.125</AimingDelayFactor>
+						<ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
+					</statBases>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/race/baseHungerRate</xpath>
+				<value>
+					<baseHungerRate>1</baseHungerRate>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/statBases</xpath> -->
+		<!-- <value> -->
+			<!-- <statBases> -->
+				<!-- <MarketValue>2800</MarketValue> -->
+				<!-- <RoyalFavorValue>4</RoyalFavorValue> -->
+				<!-- <Mass>75</Mass> -->
+				<!-- <MoveSpeed>4.2</MoveSpeed> -->
+				<!-- <Flammability>0.5</Flammability> -->
+				<!-- <ComfyTemperatureMax>26</ComfyTemperatureMax> -->
+				<!-- <ComfyTemperatureMin>16</ComfyTemperatureMin> -->
+				<!-- <MeatAmount>80</MeatAmount> -->
+				<!-- <LeatherAmount>50</LeatherAmount> -->
+				<!-- <CarryingCapacity>75</CarryingCapacity> -->
+				<!-- 배수 -->
+				<!-- <ImmunityGainSpeed>1</ImmunityGainSpeed> -->
+				<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+				<!-- <MeleeDodgeChance>0.8</MeleeDodgeChance> -->
+				<!-- <WorkSpeedGlobal>1</WorkSpeedGlobal> -->
+				<!-- <DrugSynthesisSpeed>1</DrugSynthesisSpeed> -->
+				<!-- <ResearchSpeed>1</ResearchSpeed> -->
+				<!-- <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1</HackingSpeed> -->
+				<!-- <MedicalTendSpeed>1</MedicalTendSpeed> -->
+				<!-- <MedicalTendQuality>1</MedicalTendQuality> -->
+				<!-- <MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance> -->
+				<!-- 전투 -->
+				<!-- <AimingDelayFactor>1.125</AimingDelayFactor> -->
+				<!-- <ShootingAccuracyPawn>1.25</ShootingAccuracyPawn> -->
+			<!-- </statBases> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/race/baseHungerRate</xpath> -->
+		<!-- <value>1</value> -->
+	<!-- </Operation> -->
+</Patch>

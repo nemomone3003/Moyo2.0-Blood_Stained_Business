@@ -83,15 +83,11 @@
 			<Moyo2_Abyssteel>35</Moyo2_Abyssteel>
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
-		<weaponTags>
-			<li>Moyo2_GunLMR</li>
-			<li>Moyo2_PistolLMR</li>
-		</weaponTags>
 	</ThingDef>
 	<ThingDef ParentName="Moyo2_LMRPistol">
 		<defName>Moyo2_LMRPistol</defName>
 		<label>laminar pistol</label>
-		<description>dummy text.</description>
+		<description>A large-caliber handgun that uses laminar field to guide projectiles, suitable for close combat. It can be overcharged, increasing its damage and improving long-range capabilities but causes a brief overload.\n\nIt is easy to carry compared to other firearms of the lighthouse. Being able to penetrate through armored plates of diving suits when overcharged, its popular among both police officers and criminals.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_Pistol</texPath>
 		</graphicData>
@@ -133,11 +129,15 @@
 				</transformData>
 			</li>
 		</comps>
+		<weaponTags>
+			<li>Moyo2_GunLMR</li>
+			<li>Moyo2_PistolLMR</li>
+		</weaponTags>		
 	</ThingDef>
 	<ThingDef ParentName="Moyo2_LMRPistol">
 		<defName>Moyo2_LMRPistolOver</defName>
 		<label>laminar pistol(overcharged)</label>
-		<description>dummy text.</description>
+		<description>An overcharged laminar handcannon. Has improved firepower and range but gets overloaded after a short period.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_PistolOver</texPath>
 		</graphicData>
@@ -194,7 +194,7 @@
 	<ThingDef ParentName="Moyo2_LMRPistol">
 		<defName>Moyo2_LMRPistolDown</defName>
 		<label>laminar pistol(overloaded)</label>
-		<description>dummy text.</description>
+		<description>An overloaded laminar handcannon. Firing is temporarily disabled until the system is restored. It's an expensive club in the meantime.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_PistolDown</texPath>
 		</graphicData>

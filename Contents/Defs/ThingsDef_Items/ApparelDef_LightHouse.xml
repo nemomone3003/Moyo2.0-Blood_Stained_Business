@@ -416,7 +416,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_StreamlineDivingShell</defName>
 		<label>depth engineer welding hemet</label>
-		<description>A diving suit worn by abyssstriders of the lighthouse.</description>
+		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -472,7 +472,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_StreamlineDivingHelmet</defName>
 		<label>streamline diving helmet</label>
-		<description>A helmet worn by abyssstriders of the lighthouse.</description>
+		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -523,7 +523,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_DeepDivingShell</defName>
 		<label>depth diving shell</label>
-		<description>A heavy diving suit worn by abyssstriders of the lighthouse.</description>
+		<description>Heavy diving suit of the lighthouse designed for activities on the ocean floor. Although it greatly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished.\n\nThis suit is used in the most extreme situations encountered in the Lighthouse, often seen on the ocean floor, in high-temperature toxic environments, and under intense enemy fire. As a result, most of the Lighthouse's inhabitants are reluctant to wear this suit.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/DeepShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -583,7 +583,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_DeepDivingHelmet</defName>
 		<label>depth diving helmet</label>
-		<description>A heavy diving helmet worn by abyssstriders of the lighthouse.</description>
+		<description>Heavy diving helmetof the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished. The built-in oxygen respirator has been removed.\n\nThe deep-sea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/DeepHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

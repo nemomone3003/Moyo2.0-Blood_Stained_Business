@@ -12,7 +12,7 @@
 		<defaultFactionType>Moyo2_PlayerFaction</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>10~17</initialResistanceRange>		
+		<initialResistanceRange>10~17</initialResistanceRange>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<apparelTags>
 			<li>Moyo2_SuitBasic</li>
@@ -20,7 +20,14 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_Dummy</li>
+					<!-- <li>Moyo2_Dummy</li> -->
+					<li>Moyo2_TopCivil</li>
+					<li>Moyo2_MidCivil</li>
+					<li>Moyo2_BotCivil</li>
+					<li>Moyo2_TopCrime</li>
+					<li>Moyo2_MidCrime</li>
+					<li>Moyo2_Engineer</li>
+					<li>Moyo2_Soldier</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -34,17 +41,23 @@
 		</techHediffsTags>
 		<apparelRequired>
 		</apparelRequired>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">1</Moyo2_Xenotype_Depthborn>
+				<!-- 차단 -->
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
-	
-	<PawnKindDef Abstract="True" Name="MoyoPlayerBasePawnKind">
-		<race>Alien_Moyo</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<defaultFactionType>Moyo2_PlayerFaction</defaultFactionType>
-		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>10~17</initialResistanceRange>
-	</PawnKindDef>	
 </Defs>

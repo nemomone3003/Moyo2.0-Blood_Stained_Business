@@ -54,6 +54,34 @@
 										<weight>100</weight>
 										<only>(56,55,78)</only>
 									</li>
+									<li>
+										<weight>100</weight>
+										<only>(51,59,84)</only>
+									</li>
+									<li>
+										<weight>30</weight>
+										<only>(41,43,68)</only>
+									</li>
+									<li>
+										<weight>30</weight>
+										<only>(32,34,58)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(22,24,41)</only>
+									</li>
+									<li>
+										<weight>50</weight>
+										<only>(71,90,145)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(163, 184, 255)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>(217, 225, 255)</only>
+									</li>
 								</options>
 							</first>
 						</li>
@@ -671,12 +699,12 @@
 				</apparelList>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
 					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
 				</blackEndoCategories>
 				<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
 					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
@@ -684,6 +712,12 @@
 				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
 					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
 				</blackGeneTags>
+				<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<li>Moyo2_Xenotype_Depthborn</li>
+				</xenotypeList>
+				<geneList>
+					<li>Moyo2_Skin_Depthborn</li>
+				</geneList>
 			</raceRestriction>
 		</alienRace>
 		<!--=============================================================================================================================-->
@@ -827,7 +861,7 @@
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 			<PsychicSensitivity>1.2</PsychicSensitivity>
 			<MeleeDodgeChance>0.8</MeleeDodgeChance>
-			<GeneralLaborSpeed>0.9</GeneralLaborSpeed>
+			<WorkSpeedGlobal>0.9</WorkSpeedGlobal>
 			<DrugSynthesisSpeed>1.35</DrugSynthesisSpeed>
 			<ResearchSpeed>1.45</ResearchSpeed>
 			<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.25</HackingSpeed>
