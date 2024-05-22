@@ -85,7 +85,7 @@
 		<defName>Moyo2_FabricationAddon</defName>
 		<label>abysstech fabrication module</label>
 		<description>An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.</description>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>ItemImportant</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<graphicData>
 			<texPath>Building/MoyoBenchUpgrade</texPath>
@@ -135,6 +135,7 @@
 					<WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor>
 				</statOffsets>
 				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>1.9</maxDistance>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
