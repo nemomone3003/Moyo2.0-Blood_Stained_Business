@@ -17,15 +17,21 @@
   <!--Original=Something is calling me. My mind is not my own.-->
   <DeepBlueAddiction_Thought.stages.3.description>무언가 날 부르고 있어. 내 정신이 내 것이 아닌것 같아.</DeepBlueAddiction_Thought.stages.3.description>
   <!--Original=A pill a day keeps the worries away.-->
+  <DBThought_Joy.stages.0.label>조이펄(만족함)</DBThought_Joy.stages.0.label>  
   <DBThought_Joy.stages.0.description>하루에 한알씩 먹으면 걱정도 사라지지.</DBThought_Joy.stages.0.description>
   <!--Original=A numbing sense of happiness.-->
+  <DBThought_Joy.stages.1.label>조이펄(즐거움)</DBThought_Joy.stages.1.label>  
   <DBThought_Joy.stages.1.description>알딸딸한 행복감. 좋아.</DBThought_Joy.stages.1.description>
   <!--Original=there are no excess for hapiness. More the merrier.-->
+  <DBThought_Joy.stages.2.label>조이펄(기쁨)</DBThought_Joy.stages.2.label>  
   <DBThought_Joy.stages.2.description>지나친 행복이란 없어. 크면 클수록 좋은 것이 행복이야.</DBThought_Joy.stages.2.description>
   <!--Original=I can feel the rainbow in my hands!-->
+  <DBThought_Joy.stages.3.label>조이펄(짜릿함)</DBThought_Joy.stages.3.label>  
   <DBThought_Joy.stages.3.description>내 손으로 무지개를 만질 수 있어!</DBThought_Joy.stages.3.description>
   <!--Original=IM HAPPY!!-->
+  <DBThought_Joy.stages.4.label>조이펄(황홀함)</DBThought_Joy.stages.4.label>  
   <DBThought_Joy.stages.4.description>행복해!!</DBThought_Joy.stages.4.description>
   <!--Original=A numbing feel.-->
+  <DBThought_Numb.stages.0.label>넘 펄</DBThought_Numb.stages.0.label>  
   <DBThought_Numb.stages.0.description>무감각해.</DBThought_Numb.stages.0.description>
 </LanguageData>

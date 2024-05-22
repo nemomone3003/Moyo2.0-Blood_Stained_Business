@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="Moyo_DrugBooster" ParentName="MakeableDrugPillBase" Abstract="True">
-		<tradeTags inherit="false">
-			<li>Moyo_DrugsBooster</li>
-		</tradeTags>
-		<techLevel>Industrial</techLevel>		
-		<ingestible>
-			<baseIngestTicks>100</baseIngestTicks>
-			<ingestSound>Ingest_Inject</ingestSound>
-		</ingestible>
-		<stackLimit>25</stackLimit>
-		<recipeMaker>
-			<workAmount>800</workAmount>
-			<productCount>1</productCount>
-			<targetCountAdjustment>1</targetCountAdjustment>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite>
-			<skillRequirements>
-				<Intellectual>8</Intellectual>
-			</skillRequirements>
-		</recipeMaker>		
-	</ThingDef>
-	
-	<!-- 바이탈 부스터 -->	
+	<!-- 바이탈 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Medi</defName>
 		<label>medi booster</label>
-		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advice to inject additional doses.</description>
+		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advice to inject additional doses.\n\nInjury healing factor: 150%~300%\n\nImmunity gain speed: +50%~+200%\n\nConsciousness: 100%~60%\n\nCan heal permanent wounds</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Medi</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
 			<HediffDef>DeepBlueTolerance</HediffDef>
 			<HediffDef>DeepBlueAddiction</HediffDef>
-		</descriptionHyperlinks>	
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/MediBooster</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -61,11 +37,12 @@
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
-		</recipeMaker>			
+		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
-			<ingestSound>Ingest_Inject</ingestSound>		
-			<outcomeDoers>		
+			<ingestSound>Ingest_Inject</ingestSound>
+			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>DBHediff_Medi</hediffDef>
 					<severity>0.6</severity>
@@ -75,7 +52,7 @@
 					<hediffDef>DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>true</divideByBodySize>
-				</li>	
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -90,17 +67,17 @@
 		</comps>
 		<tradeTags inherit="false">
 			<li>Moyo_DrugsBooster</li>
-		</tradeTags>		
+		</tradeTags>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Medi</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>active medi booster</label>
 		<labelNoun>active medi booster</labelNoun>
-		<description>Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.</description>
+		<description>Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.\n\nInjury healing factor: 150%~300%\n\nImmunity gain speed: +50%~+200%\n\nConsciousness: 100%~60%\n\nCan heal permanent wounds</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Medi</ThingDef>
-		</descriptionHyperlinks>	
+		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -114,12 +91,14 @@
 		</comps>
 		<stages>
 			<li>
+				<label>low potency</label>
 				<statOffsets>
 					<InjuryHealingFactor>1.5</InjuryHealingFactor>
 					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
 				</statOffsets>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.34</minSeverity>
 				<capMods>
 					<li>
@@ -133,6 +112,7 @@
 				</statOffsets>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.68</minSeverity>
 				<capMods>
 					<li>
@@ -147,12 +127,11 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	<!-- 오르카 부스터 -->	
+	<!-- 오르카 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Orca</defName>
 		<label>orca booster</label>
-		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
+		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.\n\nMelee hit chance: +2~+5\n\nMelee dodge chance:+2~+5\n\nIncoming damage factor: +0%~-15%\n\nConsciousness: +15%~30%\n\nMoving: +40%~60%</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Orca</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -184,10 +163,11 @@
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
-		</recipeMaker>			
+		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
-			<ingestSound>Ingest_Inject</ingestSound>			
+			<ingestSound>Ingest_Inject</ingestSound>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
@@ -195,7 +175,7 @@
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
 					<offset>0.15</offset>
-				</li>				
+				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>DBHediff_Orca</hediffDef>
 					<severity>0.6</severity>
@@ -205,7 +185,7 @@
 					<hediffDef>DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>true</divideByBodySize>
-				</li>	
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -220,17 +200,17 @@
 		</comps>
 		<tradeTags inherit="false">
 			<li>Moyo_DrugsBooster</li>
-		</tradeTags>		
+		</tradeTags>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Orca</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on orca booster</label>
 		<labelNoun>a orca booster high</labelNoun>
-		<description>Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.</description>
+		<description>Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.\n\nMelee hit chance: +2~+5\n\nMelee dodge chance:+2~+5\n\nIncoming damage factor: +0%~-15%\n\nConsciousness: +15%~30%\n\nMoving: +40%~60%</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Orca</ThingDef>
-		</descriptionHyperlinks>	
+		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -243,6 +223,7 @@
 		</comps>
 		<stages>
 			<li>
+				<label>low potency</label>
 				<painFactor>0.2</painFactor>
 				<statOffsets>
 					<MeleeHitChance>2</MeleeHitChance>
@@ -260,6 +241,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.34</minSeverity>
 				<painFactor>0.1</painFactor>
 				<statOffsets>
@@ -278,6 +260,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.68</minSeverity>
 				<painFactor>0</painFactor>
 				<statOffsets>
@@ -298,18 +281,17 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	<!-- 히드라 부스터 -->	
+	<!-- 히드라 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Hydra</defName>
 		<label>hydra booster</label>
-		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull's eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
+		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull's eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.\n\nAiming delay factor: -10%~-20%\n\nRanged cooldown factor: -10%~-20%\n\nConsciousness: +15%~30%\n\nMoving: +5%~20%\n\nSight: +15%~30%</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Hydra</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
 			<HediffDef>DeepBlueTolerance</HediffDef>
 			<HediffDef>DeepBlueAddiction</HediffDef>
-		</descriptionHyperlinks>		
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/HydraBooster</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -319,7 +301,7 @@
 			<MarketValue>70</MarketValue>
 			<Mass>0.05</Mass>
 		</statBases>
-		<stackLimit>25</stackLimit>		
+		<stackLimit>25</stackLimit>
 		<costList>
 			<BlueSerum>1</BlueSerum>
 			<Penoxycyline>4</Penoxycyline>
@@ -336,8 +318,9 @@
 			<skillRequirements>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
-		</recipeMaker>			
+		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
@@ -345,7 +328,7 @@
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
 					<offset>0.15</offset>
-				</li>				
+				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>DBHediff_Hydra</hediffDef>
 					<severity>0.6</severity>
@@ -355,7 +338,7 @@
 					<hediffDef>DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>true</divideByBodySize>
-				</li>	
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -370,17 +353,17 @@
 		</comps>
 		<tradeTags inherit="false">
 			<li>Moyo_DrugsBooster</li>
-		</tradeTags>		
+		</tradeTags>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Hydra</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on hydra booster</label>
 		<labelNoun>a hydra booster high</labelNoun>
-		<description>Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.</description>
+		<description>Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.\n\nAiming delay factor: -10%~-20%\n\nRanged cooldown factor: -10%~-20%\n\nConsciousness: +15%~30%\n\nMoving: +5%~20%\n\nSight: +15%~30%</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Hydra</ThingDef>
-		</descriptionHyperlinks>	
+		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -393,6 +376,7 @@
 		</comps>
 		<stages>
 			<li>
+				<label>low potency</label>
 				<painFactor>0.2</painFactor>
 				<statOffsets>
 					<AimingDelayFactor>-0.1</AimingDelayFactor>
@@ -410,10 +394,11 @@
 					<li>
 						<capacity>Moving</capacity>
 						<offset>0.05</offset>
-					</li>					
+					</li>
 				</capMods>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.34</minSeverity>
 				<painFactor>0.1</painFactor>
 				<statOffsets>
@@ -432,10 +417,11 @@
 					<li>
 						<capacity>Moving</capacity>
 						<offset>0.1</offset>
-					</li>					
+					</li>
 				</capMods>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.68</minSeverity>
 				<painFactor>0</painFactor>
 				<statOffsets>
@@ -454,10 +440,9 @@
 					<li>
 						<capacity>Moving</capacity>
 						<offset>0.2</offset>
-					</li>					
+					</li>
 				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
-
 </Defs>

@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="Moyo_DrugPearl" ParentName="MakeableDrugPillBase" Abstract="True">
-		<tradeTags inherit="false">
-			<li>Moyo_DrugsPearl</li>
-		</tradeTags>
-		<techLevel>Industrial</techLevel>
-		<ingestible>
-			<baseIngestTicks>50</baseIngestTicks>
-			<ingestSound>Ingest_Pill</ingestSound>
-		</ingestible>
-		<recipeMaker>
-			<workAmount>400</workAmount>
-			<productCount>3</productCount>
-			<targetCountAdjustment>3</targetCountAdjustment>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
-			<skillRequirements>
-				<Intellectual>8</Intellectual>
-			</skillRequirements>
-		</recipeMaker>
-	</ThingDef>
 	<!-- 조이펄 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Joy</defName>
 		<label>joypearl</label>
-		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
+		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.\n\nMood effect: +18~+77\n\nPain factor: *100%~*10%\n\nConsciousness: +0~-35%</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Joy</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -59,6 +37,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -99,7 +78,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on joypearl</label>
 		<labelNoun>a joypearl high</labelNoun>
-		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nMood effect: +18~+77\n\nPain factor: *100%~*10%\n\nConsciousness: +0~-35%</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Joy</ThingDef>
 		</descriptionHyperlinks>
@@ -115,16 +94,20 @@
 		</comps>
 		<stages>
 			<li>
+				<label>content</label>
 			</li>
 			<li>
+				<label>joy</label>
 				<minSeverity>0.2</minSeverity>
 				<painFactor>0.95</painFactor>
 			</li>
 			<li>
+				<label>glee</label>
 				<minSeverity>0.4</minSeverity>
 				<painFactor>0.75</painFactor>
 			</li>
 			<li>
+				<label>ecstatic</label>
 				<minSeverity>0.6</minSeverity>
 				<painFactor>0.55</painFactor>
 				<capMods>
@@ -135,6 +118,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>euphoria</label>
 				<minSeverity>0.8</minSeverity>
 				<painFactor>0.1</painFactor>
 				<capMods>
@@ -154,22 +138,27 @@
 		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
 		<stages>
 			<li>
+				<label>high on joypearl(content)</label>
 				<description>A pill a day keeps the worries away.</description>
 				<baseMoodEffect>18</baseMoodEffect>
 			</li>
 			<li>
+				<label>high on joypearl(joy)</label>
 				<description>A numbing sense of happiness.</description>
 				<baseMoodEffect>25</baseMoodEffect>
 			</li>
 			<li>
+				<label>high on joypearl(glee)</label>
 				<description>there are no excess for hapiness. More the merrier.</description>
 				<baseMoodEffect>37</baseMoodEffect>
 			</li>
 			<li>
+				<label>high on joypearl(ecstatic)</label>
 				<description>I can feel the rainbow in my hands!</description>
 				<baseMoodEffect>55</baseMoodEffect>
 			</li>
 			<li>
+				<label>high on joypearl(euphoria)</label>
 				<description>IM HAPPY!!</description>
 				<baseMoodEffect>77</baseMoodEffect>
 			</li>
@@ -179,7 +168,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Crystal</defName>
 		<label>crystal pearl</label>
-		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.</description>
+		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.\n\nGlobal work speed: +15%~+75%\n\nMental break threshold: +0%%~+15%\n\nGlobal learning factor: +0~-80%\n\nConsciousness: +0~+35%</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Crystal</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -212,6 +201,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -252,7 +242,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on crystal pearl</label>
 		<labelNoun>a crystal pearl high</labelNoun>
-		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nGlobal work speed: +15%~+75%\n\nMental break threshold: +0~+15%\n\nGlobal learning factor: +0~-80%\n\nConsciousness: +0~+35%</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Crystal</ThingDef>
 		</descriptionHyperlinks>
@@ -268,11 +258,13 @@
 		</comps>
 		<stages>
 			<li>
+				<label>fading</label>
 				<statOffsets>
 					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
 			<li>
+				<label>low potency</label>
 				<minSeverity>0.2</minSeverity>
 				<statOffsets>
 					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
@@ -283,6 +275,7 @@
 				</statFactors>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.4</minSeverity>
 				<statOffsets>
 					<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
@@ -299,6 +292,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.6</minSeverity>
 				<statOffsets>
 					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
@@ -315,6 +309,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>extreme potency</label>
 				<minSeverity>0.8</minSeverity>
 				<statOffsets>
 					<WorkSpeedGlobal>1</WorkSpeedGlobal>
@@ -336,7 +331,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Thinker</defName>
 		<label>thinker pearl</label>
-		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.</description>
+		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.\n\nResearch Speed: +10%~+45%\n\nHacking Speed: +5%~+55%\n\nGlobal learning factor: +10~+65%\n\nMental break threshold: +0~+15%\n\nConsciousness: +0~+20%</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Thinker</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -369,6 +364,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -409,7 +405,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on thinker pearl</label>
 		<labelNoun>a thinker pearl high</labelNoun>
-		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nResearch Speed: +10%~+45%\n\nHacking Speed: +5%~+55%\n\nGlobal learning factor: +10~+65%\n\nMental break threshold: +0~+15%\n\nConsciousness: +0~+20%</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Thinker</ThingDef>
 		</descriptionHyperlinks>
@@ -425,15 +421,17 @@
 		</comps>
 		<stages>
 			<li>
+				<label>fading</label>
 				<statOffsets>
 					<ResearchSpeed>0.1</ResearchSpeed>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
 					<HackingSpeed MayRequire="Ludeon.Ideology">0.05</HackingSpeed>
 				</statFactors>
 			</li>
 			<li>
+				<label>low potency</label>
 				<minSeverity>0.2</minSeverity>
 				<statOffsets>
 					<ResearchSpeed>0.15</ResearchSpeed>
@@ -445,6 +443,7 @@
 				</statFactors>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.4</minSeverity>
 				<statOffsets>
 					<ResearchSpeed>0.2</ResearchSpeed>
@@ -462,6 +461,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.6</minSeverity>
 				<statOffsets>
 					<ResearchSpeed>0.3</ResearchSpeed>
@@ -479,6 +479,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>extreme potency</label>
 				<minSeverity>0.8</minSeverity>
 				<statOffsets>
 					<ResearchSpeed>0.45</ResearchSpeed>
@@ -501,7 +502,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Alluring</defName>
 		<label>alluring pearl</label>
-		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.</description>
+		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.\n\nSocial impact: +10%~+55%\n\nBeauty: +0~+2\n\nMental break threshold: +0~+15%\n\nMinor mental break MTB</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Alluring</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -534,6 +535,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -574,7 +576,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on alluring pearl</label>
 		<labelNoun>a alluring pearl high</labelNoun>
-		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nSocial impact: +10%~+55%\n\nBeauty: +0~+2\n\nMental break threshold: +0~+15%\n\nMinor mental break MTB</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Alluring</ThingDef>
 		</descriptionHyperlinks>
@@ -590,11 +592,13 @@
 		</comps>
 		<stages>
 			<li>
+				<label>fading</label>
 				<statOffsets>
 					<SocialImpact>0.1</SocialImpact>
 				</statOffsets>
 			</li>
 			<li>
+				<label>low potency</label>
 				<minSeverity>0.2</minSeverity>
 				<statOffsets>
 					<SocialImpact>0.15</SocialImpact>
@@ -603,6 +607,7 @@
 				</statOffsets>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.4</minSeverity>
 				<statOffsets>
 					<SocialImpact>0.25</SocialImpact>
@@ -611,6 +616,7 @@
 				</statOffsets>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.6</minSeverity>
 				<statOffsets>
 					<SocialImpact>0.35</SocialImpact>
@@ -629,6 +635,7 @@
 				</mentalStateGivers>
 			</li>
 			<li>
+				<label>extreme potency</label>
 				<minSeverity>0.8</minSeverity>
 				<statOffsets>
 					<SocialImpact>0.55</SocialImpact>
@@ -652,7 +659,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Numb</defName>
 		<label>numb pearl</label>
-		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.</description>
+		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.\n\nPain factor: *70%~*0%\n\nConsciousness: +0%~-30%\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Numb</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -685,6 +692,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -725,7 +733,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on numb pearl</label>
 		<labelNoun>a numb pearl high</labelNoun>
-		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nPain factor: *70%~*0%\n\nConsciousness: +0%~-30%\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Numb</ThingDef>
 		</descriptionHyperlinks>
@@ -741,19 +749,23 @@
 		</comps>
 		<stages>
 			<li>
+				<label>fading</label>
 				<painFactor>0.7</painFactor>
 			</li>
 			<li>
+				<label>low potency</label>
 				<minSeverity>0.2</minSeverity>
 				<painFactor>0.55</painFactor>
 				<forgetMemoryThoughtMtbDays>5</forgetMemoryThoughtMtbDays>
 			</li>
 			<li>
+				<label>medium potency</label>
 				<minSeverity>0.4</minSeverity>
 				<painFactor>0.2</painFactor>
 				<forgetMemoryThoughtMtbDays>3</forgetMemoryThoughtMtbDays>
 			</li>
 			<li>
+				<label>high potency</label>
 				<minSeverity>0.6</minSeverity>
 				<painFactor>0.05</painFactor>
 				<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
@@ -765,6 +777,7 @@
 				</capMods>
 			</li>
 			<li>
+				<label>extreme potency</label>
 				<minSeverity>0.8</minSeverity>
 				<painFactor>0</painFactor>
 				<forgetMemoryThoughtMtbDays>0.5</forgetMemoryThoughtMtbDays>
@@ -779,7 +792,7 @@
 						<hediff>DBHediff_NumbDown</hediff>
 						<mtbDays>0.2</mtbDays>
 					</li>
-				</hediffGivers>				
+				</hediffGivers>
 			</li>
 		</stages>
 	</HediffDef>
@@ -826,6 +839,7 @@
 		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
 		<stages>
 			<li>
+				<label>high on numb pearl</label>
 				<description>A numbing feel.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>

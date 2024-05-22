@@ -840,7 +840,6 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>Moyo2_Inate</li>
-				<li>OrganicStandard</li>
 				<li>Human</li>
 			</hediffGiverSets>
 		</race>
@@ -872,6 +871,9 @@
 			<AimingDelayFactor>1.125</AimingDelayFactor>
 			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
 		</statBases>
+		<butcherProducts>
+			<BlueBloodBag>2</BlueBloodBag>
+		</butcherProducts>		
 		<!--=============================================================================================================================-->
 		<comps>
 			<li Class="HPF_Moyo.CompProperties_ResourceHarvestable">

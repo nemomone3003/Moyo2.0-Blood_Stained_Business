@@ -44,6 +44,10 @@
   <Moyo2_Remove_DeepBlueExtracter_Abysstech.description>어비스테크 딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter_Abysstech.description>
   <!--Original=딥블루 추출기.-->
   <Moyo2_Remove_DeepBlueExtracter_Abysstech.jobString>딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter_Abysstech.jobString>
+  <!-- 모요 가공 -->
+  <Moyo2_Grind_MoyoMeat.label>모요 고기에서 딥블루 추출</Moyo2_Grind_MoyoMeat.label>
+  <Moyo2_Grind_MoyoMeat.description>딥블루를 추출하기 위해 모요 고기를 갈고 으깨어 마지막 피 한 방울까지 추출합니다.</Moyo2_Grind_MoyoMeat.description>
+  <Moyo2_Grind_MoyoMeat.jobString>모요 고기에서 딥블루 추출중.</Moyo2_Grind_MoyoMeat.jobString>
   <!--Original=어비스틸 정제-->
   <Moyo2_Make_AbyssteelA.label>어비스틸 정제</Moyo2_Make_AbyssteelA.label>
   <!--Original=등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다-->
@@ -75,11 +79,11 @@
   <!--Original=Making component.-->
   <Moyo2_Make_ComponentIndustrial.jobString>부품 제작중</Moyo2_Make_ComponentIndustrial.jobString>
   <!--Original=cut 뎁스위드-->
-  <Moyo2_Butcher_뎁스위드.label>뎁스위드 자르기</Moyo2_Butcher_뎁스위드.label>
+  <Moyo2_Butcher_Depthweed.label>뎁스위드 자르기</Moyo2_Butcher_Depthweed.label>
   <!--Original=Cut 뎁스위드 into small pieces.-->
-  <Moyo2_Butcher_뎁스위드.description>뎁스위드를 작은 조각으로 자릅니다.</Moyo2_Butcher_뎁스위드.description>
+  <Moyo2_Butcher_Depthweed.description>뎁스위드를 작은 조각으로 자릅니다.</Moyo2_Butcher_Depthweed.description>
   <!--Original=Cutting 뎁스위드.-->
-  <Moyo2_Butcher_뎁스위드.jobString>뎁스위드 자르는 중.</Moyo2_Butcher_뎁스위드.jobString>
+  <Moyo2_Butcher_Depthweed.jobString>뎁스위드 자르는 중.</Moyo2_Butcher_Depthweed.jobString>
   <!--Original=뎁스위브 제작-->
   <Moyo2_Make_DepthweaveA.label>뎁스위브 제작</Moyo2_Make_DepthweaveA.label>
   <!--Original=등대에서  널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.-->

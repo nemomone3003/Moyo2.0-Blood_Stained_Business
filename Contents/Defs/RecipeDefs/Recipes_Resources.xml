@@ -1,5 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- 모요 고기 분쇄 -->
+	<RecipeDef>
+		<defName>Moyo2_Grind_MoyoMeat</defName>
+		<label>extract deepblue from moyo flesh</label>
+		<description>Extract deepblue by grinding and squeezing out every little blood left in their flesh.</description>
+		<jobString>Extracting deepblue from moyo flesh.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>MoyoButcherEffect</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<workerCounterClass>RecipeWorkerCounter_ButcherAnimals</workerCounterClass>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Alien_Moyo</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>	
+		<products>
+			<BlueBloodBag>1</BlueBloodBag>
+		</products>
+		<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
+	</RecipeDef>
 	<!-- 어비스틸 제작 -->
 	<RecipeDef>
 		<defName>Moyo2_Make_AbyssteelA</defName>

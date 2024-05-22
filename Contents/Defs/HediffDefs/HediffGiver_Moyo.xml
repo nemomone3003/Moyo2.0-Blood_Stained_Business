@@ -57,6 +57,20 @@
 				</ageFractionChanceCurve>
 			</li>
 			<li Class="HediffGiver_Birthday">
+				<hediff>HearingLoss</hediff>
+				<partsToAffect>
+					<li>Ear</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0.6, 0)</li>
+						<li>(0.75, 0.0053)</li>
+						<li>(0.875, 0.011045)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+			<li Class="HediffGiver_Birthday">
 				<hediff>Dementia</hediff>
 				<partsToAffect>
 					<li>Brain</li>

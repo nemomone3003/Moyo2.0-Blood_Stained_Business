@@ -24,15 +24,15 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Moyo2_Abyssteel</li>
+						<li>Moyo2_BlueMedicine</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Moyo2_Abyssteel</li>
+				<li>Moyo2_BlueMedicine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

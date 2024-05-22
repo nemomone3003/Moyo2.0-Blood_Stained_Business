@@ -22,7 +22,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireA</effecterDef>
+				<effecterDef>Effecter_LMRFireC</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -46,7 +46,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireA</effecterDef>
+				<effecterDef>Effecter_LMRFireC</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -170,6 +170,8 @@
 			<AccuracyLong>0.78</AccuracyLong>
 			<RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
 		</statBases>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>		
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -225,6 +227,8 @@
 			<AccuracyLong>0.78</AccuracyLong>
 			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>		
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>

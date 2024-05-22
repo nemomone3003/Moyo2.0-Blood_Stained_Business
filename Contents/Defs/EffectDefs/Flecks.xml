@@ -265,7 +265,65 @@
 				<rotationRate>1~3</rotationRate>
 			</li>				
 		</children>
-	</EffecterDef>	
+	</EffecterDef>
+	<EffecterDef>
+		<defName>Effecter_LMRFireC</defName>
+		<offsetTowardsTarget>1.1</offsetTowardsTarget>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>MoyoFire_BurstA</fleckDef>
+				<scale>2</scale>
+				<burstCount>1</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<absoluteAngle>false</absoluteAngle>
+				<positionRadius>0</positionRadius>
+				<positionRadiusMin>0</positionRadiusMin>
+				<!-- <positionOffset>(0.7, 0, 0)</positionOffset> -->
+				<angle>0</angle>
+				<speed>0</speed>
+				<rotation>0</rotation>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>MoyoFire_BurstB</fleckDef>
+				<scale>2</scale>
+				<burstCount>1</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<absoluteAngle>false</absoluteAngle>
+				<positionRadius>0</positionRadius>
+				<positionRadiusMin>0</positionRadiusMin>
+				<!-- <positionOffset>(0.7, 0, 0)</positionOffset> -->
+				<angle>0</angle>
+				<speed>0</speed>
+				<rotation>0</rotation>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>MoyoFire_ParticleA</fleckDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>0.5~1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0</angle>
+				<rotation>0~360</rotation>
+				<rotationRate>1~3</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>MoyoFire_ParticleB</fleckDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>0.5~1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0</angle>
+				<rotation>0~360</rotation>
+				<rotationRate>1~3</rotationRate>
+			</li>				
+		</children>
+	</EffecterDef>		
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>MoyoFire_SmokeA</defName>
 		<graphicData>

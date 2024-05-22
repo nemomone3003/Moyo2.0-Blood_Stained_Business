@@ -17,7 +17,7 @@
 	<!-- 유년기 -->
 	<!--템플릿-->
 	<!--<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryBase">
-		<defName>Moyo_Backstory</defName>
+		<defName>Moyo2_Backstory</defName>
 		<title>name</title>
 		<titleShort>name</titleShort>
 		<baseDesc>backstory</baseDesc>
@@ -70,7 +70,7 @@
 	<!-- 유년기 -->
 	<!-- 농장아이 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_FarmChild</defName>
+		<defName>Moyo2_FarmChild</defName>
 		<title>moyo farm child</title>
 		<titleShort>farm child</titleShort>
 		<baseDesc>[PAWN_nameDef] grew up in a seaweed farm in the upper levels. Amidst the rumors and the worried adults [PAWN_pronoun] spent her time tending and harvesting the seaweed.</baseDesc>
@@ -89,7 +89,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 고아 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_Orphan</defName>
+		<defName>Moyo2_Orphan</defName>
 		<title>moyo Orphan</title>
 		<titleShort>Orphan</titleShort>
 		<baseDesc>[PAWN_nameDef] was separated from her parents and grew up in the orphanage. There were many orphans like [PAWN_pronoun]in the orphanage, and some had even seen their parents die before their eyes. [PAWN_pronoun] spent [PAWN_possessive] days waiting for her parents to return.</baseDesc>
@@ -110,7 +110,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 정비공지망생 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_MechanicWannabe</defName>
+		<defName>Moyo2_MechanicWannabe</defName>
 		<title>moyo mechanic wannabe</title>
 		<titleShort>mechanic wannabe</titleShort>
 		<baseDesc>[PAWN_nameDef] had a fascination for various machines and gadgets. Luckily for [PAWN_pronoun] the sea was filled with scrap and parts for her to play with.</baseDesc>
@@ -132,7 +132,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 몽상가 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_Dreamer</defName>
+		<defName>Moyo2_Dreamer</defName>
 		<title>moyo dreamer</title>
 		<titleShort>dreamer</titleShort>
 		<baseDesc>[PAWN_nameDef] used to fantasize about the city shimmering in the depths below. The adults warned [PAWN_pronoun] away from the lower levels, telling [PAWN_objective] it was dangerous and that’d [PAWN_pronoun]’d never make it back, but could not change [PAWN_possessive] mind</baseDesc>
@@ -154,7 +154,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 일진 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_Bully</defName>
+		<defName>Moyo2_Bully</defName>
 		<title>moyo bully</title>
 		<titleShort>bully</titleShort>
 		<baseDesc>[PAWN_nameDef] learned the sweet taste of dominance from an early age. [PAWN_pronoun] enjoyed bullying other kids and stealing their things. The orphanage children where often [PAWN_possessive] victims.</baseDesc>
@@ -180,7 +180,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 좀도둑 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_PettyTheif</defName>
+		<defName>Moyo2_PettyTheif</defName>
 		<title>moyo petty theif</title>
 		<titleShort>petty theif</titleShort>
 		<baseDesc>[PAWN_nameDef] suffered from the civil war. [PAWN_possessive] family was left ravaged, and [PAWN_nameDef] scraped by as a petty thief.</baseDesc>
@@ -205,7 +205,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 사냥보조 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_HuntingAssistant</defName>
+		<defName>Moyo2_HuntingAssistant</defName>
 		<title>moyo hunting assistant</title>
 		<titleShort>hunting assistant</titleShort>
 		<baseDesc>[PAWN_nameDef] followed hunters and did odd jobs for them. [PAWN_pronoun] was able to learn about the surrounding fauna and sometimes even do a little hunting [PAWN_objective]self.</baseDesc>
@@ -226,7 +226,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 산호조각가 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_CoralSculpter</defName>
+		<defName>Moyo2_CoralSculpter</defName>
 		<title>moyo coral sculpter</title>
 		<titleShort>coral sculpter</titleShort>
 		<baseDesc>[PAWN_nameDef] learned to fashion jewelry out of coral. [PAWN_possessive] works were not the most refined, but showed promise.</baseDesc>
@@ -247,7 +247,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 총명한아이 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_BrightChild</defName>
+		<defName>Moyo2_BrightChild</defName>
 		<title>moyo bright child</title>
 		<titleShort>bright child</titleShort>
 		<baseDesc>[PAWN_nameDef] was a clever child. [PAWN_possessive] preference for study over socializing occasionally led to some falling out with other children, but in the end, it’s the ones like [PAWN_possessive] who can move to higher levels.</baseDesc>
@@ -274,11 +274,12 @@
 			<li>Moyo2_MidCrime</li>
 			<li>Moyo2_Engineer</li>
 			<li>Moyo2_Soldier</li>
+			<li>Moyo2_Siren</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 고래 친구 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_WhaleFriend</defName>
+		<defName>Moyo2_WhaleFriend</defName>
 		<title>moyo whale friend</title>
 		<titleShort>whale friend</titleShort>
 		<baseDesc>[PAWN_nameDef] loved to swim with the whales. [PAWN_pronoun] always spent [PAWN_possessive] free time swimming with the whales and taking care of them.</baseDesc>
@@ -297,7 +298,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 어린 셰프 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_ChildChef</defName>
+		<defName>Moyo2_ChildChef</defName>
 		<title>moyo child chef</title>
 		<titleShort>child chef</titleShort>
 		<baseDesc>[PAWN_nameDef] loved to cook. Mixing various spices and ingredients into tasty dishes was [PAWN_possesive] favorite pastime, but as supplies dwindled, it became harder and harder to enjoy.</baseDesc>
@@ -319,7 +320,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 어린 중독자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_YoungJunkie</defName>
+		<defName>Moyo2_YoungJunkie</defName>
 		<title>moyo young junkie</title>
 		<titleShort>young junkie</titleShort>
 		<baseDesc>[PAWN_nameDef] somehow managed to get [PAWN_possessive] hands on some psychite. The euphoric high of the drugs was too much for [Pawn_possessive] young mind, and soon [PAWN_nameDef] was doing anything [PAWN_pronoun] could for [PAWN_possessive] next fix. Soon [PAWN_possessive] normal fix could no longer satisfy [PAWN_possessive], and [PAWN_nameDef] sought out new drugs.</baseDesc>
@@ -340,6 +341,7 @@
 			<li>Moyo2_TopCivil</li>
 			<li>Moyo2_MidCivil</li>
 			<li>Moyo2_BotCivil</li>
+			<li>Moyo2_Siren</li>
 			<li>Moyo2_TopCrime</li>
 			<li>Moyo2_MidCrime</li>
 			<li>Moyo2_Soldier</li>
@@ -347,7 +349,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 병약한 아이 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_SicklyChild</defName>
+		<defName>Moyo2_SicklyChild</defName>
 		<title>moyo sickly child</title>
 		<titleShort>sickly child</titleShort>
 		<baseDesc>[PAWN_nameDef] was born sickly, and spent most of [PAWN_possessive] time in bed. [PAWN_possessive] constant sickness left [PAWN_objective] ill tempered, and long with her lack of interaction with other moyos, resulted in her poor communication skills. The only retreat [PAWN_possessive] has was the pursuit of knowledge.</baseDesc>
@@ -375,7 +377,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 밀수업 협조자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_SmugglerRunner</defName>
+		<defName>Moyo2_SmugglerRunner</defName>
 		<title>moyo smuggler runner</title>
 		<titleShort>smuggler runner</titleShort>
 		<baseDesc>[PAWN_nameDef] did odd jobs for smugglers. Having joined to earn money [PAWN_pronoun] mostly dealt with moving goods and information around. [PAWN_pronoun] quickly learned to leverage [PAWN_possessive] young looks for [PAWN_possessive] job.</baseDesc>
@@ -396,7 +398,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 어린 광부 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_YoungMiner</defName>
+		<defName>Moyo2_YoungMiner</defName>
 		<title>moyo young miner</title>
 		<titleShort>young miner</titleShort>
 		<baseDesc>[PAWN_nameDef] became a miner to earn money for [PAWN_possessive] family. [PAWN_nameDef]’s dreams and aspirations meant nothing as a miner. The only thing that mattered was bringing in more ores for the lighthouse.</baseDesc>
@@ -418,7 +420,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 소년병 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_ChildSoldier</defName>
+		<defName>Moyo2_ChildSoldier</defName>
 		<title>moyo child soldier</title>
 		<titleShort>child soldier</titleShort>
 		<baseDesc>While other children where given toys [PAWN_nameDef] was handed a gun. Kidnapped and sent to fight in the civil war, [PAWN_pronoun] learned it was kill or be killed out in the battlefield, and fought only to survive.</baseDesc>
@@ -445,7 +447,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 고위층 자녀 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_HighbonChild</defName>
+		<defName>Moyo2_HighbonChild</defName>
 		<title>moyo highborn child</title>
 		<titleShort>highborn child</titleShort>
 		<baseDesc>[PAWN_nameDef] was a highborn moyo from the lower levels. Housework was done by the servants, and all [PAWN_pronoun] had to do was enjoy [PAWN_possessive] live. Neither the civil war, nor the moyo that died in it where any of [PAWN_possessive] concern. Probably.</baseDesc>
@@ -461,13 +463,14 @@
 		</workDisables>
 		<spawnCategories>
 			<li>Moyo2_BotCivil</li>
+			<li>Moyo2_Siren</li>
 			<li>Moyo2_TopCrime</li>
 			<li>Moyo2_MidCrime</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 어린 연예인 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_YoungCelebrity</defName>
+		<defName>Moyo2_YoungCelebrity</defName>
 		<title>moyo young celebrity</title>
 		<titleShort>celebrity</titleShort>
 		<baseDesc>[PAWN_nameDef] was famed for [PAWN_possessive] singing, dancing, acting, any many more besides. Countless moyo living in the city once idolized [PAWN_nameDef]. There were many rumors about how [PAWN_nameDef] became so famous at such a young age, but only [PAWN_nameDef] would know the truth.</baseDesc>
@@ -482,13 +485,14 @@
 		</workDisables>
 		<spawnCategories>
 			<li>Moyo2_BotCivil</li>
+			<li>Moyo2_Siren</li>
 			<li>Moyo2_TopCrime</li>
 			<li>Moyo2_MidCrime</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 충격받은 간호사 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_ShockedNurse</defName>
+		<defName>Moyo2_ShockedNurse</defName>
 		<title>moyo shocked nurse</title>
 		<titleShort>nurse</titleShort>
 		<baseDesc>[PAWN_nameDef] was conscripted as a nurse to deal with manpower shortages in the hospital. While [PAWN_pronoun] normally tended to light wounds, [PAWN_pronoun] had to deal with serious wounds as well. The work was taxing on [PAWN_nameDef], both physically and mentally.</baseDesc>
@@ -514,7 +518,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 공학도 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_EngineeringStudent</defName>
+		<defName>Moyo2_EngineeringStudent</defName>
 		<title>moyo engineering student</title>
 		<titleShort>engineering student</titleShort>
 		<baseDesc>The expansion and construction of the lighthouse is no trivial matter, and city engineers are often trained from a young age. [PAWN_nameDef] studied many blueprints as [PAWN_pronoun] prepared to become a engineer.</baseDesc>
@@ -535,7 +539,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 배양된 군인 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
-		<defName>Moyo_VatgrownSoldier</defName>
+		<defName>Moyo2_VatgrownSoldier</defName>
 		<title>moyo vatgrown soldier</title>
 		<titleShort>vatgrown soldier</titleShort>
 		<baseDesc>[PAWN_nameDef] was not a result of love nor lust. [PAWN_pronoun] was grown in a vat, assigned a number, and sent to a facility in the lower levels for military training. More used to her number than the name given on her graduation, [PAWN_pronoun] is the product of the lighthouse’s bloody reality.</baseDesc>
@@ -568,7 +572,7 @@
 	<!--성년기-->
 	<!-- 농부 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Farmer</defName>
+		<defName>Moyo2_Farmer</defName>
 		<title>moyo farmer</title>
 		<titleShort>farmer</titleShort>
 		<baseDesc>[PAWN_nameDef] was a farmer on the upper levels growing food and fiber in the lush kelp farms. Although idealistic at first glance, the thick kelp gave plenty of cover to potential trespassers, was a constant source of headaches for [PAWN_nameDef].</baseDesc>
@@ -587,7 +591,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 공방일꾼 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_FactoryWorker</defName>
+		<defName>Moyo2_FactoryWorker</defName>
 		<title>moyo factory worker</title>
 		<titleShort>factory worker</titleShort>
 		<baseDesc>The middle levels of the lighthouse are a source of constant light and heat in the cold ocean depths. [PAWN_nameDef] worked in the factories on the middle level, producing all sorts of gear and products. [PAWN_possessive] most recent job was producing firearms.</baseDesc>
@@ -606,7 +610,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 메카노이드 정비공 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_MechanoidMaintainer</defName>
+		<defName>Moyo2_MechanoidMaintainer</defName>
 		<title>moyo mechanoid maintainer</title>
 		<titleShort>mechanoid maintainer</titleShort>
 		<baseDesc>Mechanoids are the foundations of moyo cities. [PAWN_nameDef] job was the to maintain the aging mechanoids as best [PAWN_pronoun] could. The centuries old but still functioning mechanoids made [PAWN_nameDef] realize how frail the flesh was.</baseDesc>
@@ -629,7 +633,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 공학자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Engineer</defName>
+		<defName>Moyo2_Engineer</defName>
 		<title>moyo engineer</title>
 		<titleShort>engineer</titleShort>
 		<baseDesc>[PAWN_nameDef] was one of the engineers in charge of R&amp;D. [PAWN_pronoun] a part of the firearms development, helping in the testing and creation of many prototypes. No one questioned what effects such a creation would have.</baseDesc>
@@ -652,7 +656,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 사냥꾼 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Hunter</defName>
+		<defName>Moyo2_Hunter</defName>
 		<title>moyo hunter</title>
 		<titleShort>hunter</titleShort>
 		<baseDesc>[PAWN_nameDef] wandered the seas hunting or capturing marine creatures. [PAWN_possessive] mainly brought back meat, luxury items, or rare animals. When dangerous creatures threatened the lighthouse, [PAWN_pronoun] was drafted by the council to aid in repelling the beast.</baseDesc>
@@ -674,7 +678,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 밀수업자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Smuggler</defName>
+		<defName>Moyo2_Smuggler</defName>
 		<title>moyo smuggler</title>
 		<titleShort>smuggler</titleShort>
 		<baseDesc>The surface is full of treasures. [PAWN_nameDef] brought those treasures to the lighthouse. The council forbade all unauthorized trading with the surface, but for [PAWN_nameDef], the money brought in by the goods where more important than the law, and [PAWN_pronoun] continued to sneak out to the surface.</baseDesc>
@@ -697,7 +701,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 군인 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Soldier</defName>
+		<defName>Moyo2_Soldier</defName>
 		<title>moyo soldier</title>
 		<titleShort>soldier</titleShort>
 		<baseDesc>[PAWN_nameDef] was a professional soldier, tasked with maintaining order within the lighthouse and fighting off attacking creatures. But as smugglers rose in numbers and civil unrest grew, a civil war broke out and [PAWN_pronoun] had to fight other moyos.</baseDesc>
@@ -720,7 +724,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 심층광부 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_DeepCoreMiner</defName>
+		<defName>Moyo2_DeepCoreMiner</defName>
 		<title>moyo deep core miner</title>
 		<titleShort>deep core miner</titleShort>
 		<baseDesc>[PAWN_nameDef] is a miner who gathers ore from the core. Equipped with a heavy duty diving suit, deep core mining is a relatively new job that appeared as operating mechanoids became less and less feasible, and became one of the main reasons for moving between levels.</baseDesc>
@@ -742,7 +746,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 지리학자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Geologist</defName>
+		<defName>Moyo2_Geologist</defName>
 		<title>moyo geologist</title>
 		<titleShort>geologist</titleShort>
 		<baseDesc>[PAWN_nameDef]’s job is to survey and study the ocean floor. [PAWN_possessive] job meant spending many hours in the submarine with her team, and [PAWN_pronoun] had to get accustomed to a lot of things.</baseDesc>
@@ -765,7 +769,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 지상 무역가 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_SurfaceTrader</defName>
+		<defName>Moyo2_SurfaceTrader</defName>
 		<title>moyo surface trader</title>
 		<titleShort>surface trader</titleShort>
 		<baseDesc>Trade between the surface and the lighthouse is strictly regulated by the council and official traders like [PAWN_nameDef]. As most of the goods from the surface where considered luxury items [PAWN_pronoun] was able to reap massive profits. [PAWN_pronoun] was ruthless in suppressing smugglers that threatened her trade, and personally took care of some as well.</baseDesc>
@@ -785,7 +789,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 생물학자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Biologist</defName>
+		<defName>Moyo2_Biologist</defName>
 		<title>moyo biologist</title>
 		<titleShort>biologist</titleShort>
 		<baseDesc>[PAWN_nameDef]’s research was about the modifications that made the moyo race. This into the ‘evolution’ of the moyo allowed [PAWN_objective] and [PAWN_possessive] team to discover deepblue, a discovery that had far-reaching effects in the moyo society.</baseDesc>
@@ -808,7 +812,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 착한고아원장 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_KindOrphanageMaster</defName>
+		<defName>Moyo2_KindOrphanageMaster</defName>
 		<title>moyo orphanage master</title>
 		<titleShort>orphanage master</titleShort>
 		<baseDesc>[PAWN_nameDef] took care of orphans separated from their parents. [PAWN_pronoun] worked hard to reunite the children with their parents, or teach them so they could be proud members of society. No one knows why [PAWN_pronoun] started this job, but assume it has something to do with [PAWN_possessive] personal experiences.</baseDesc>
@@ -832,7 +836,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 나쁜고아원장 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_EvilOrphanageMaster</defName>
+		<defName>Moyo2_EvilOrphanageMaster</defName>
 		<title>moyo orphanage master</title>
 		<titleShort>orphanage master</titleShort>
 		<baseDesc>[PAWN_nameDef] took care of orphans separated from their parents. [PAWN_pronoun] taught the children that the outside was dangerous, and abandoned children would be hunted. After all, the children where precious resources both for the lighthouse and for [PAWN_possessive].</baseDesc>
@@ -859,7 +863,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 하인 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Servant</defName>
+		<defName>Moyo2_Servant</defName>
 		<title>moyo servant</title>
 		<titleShort>servant</titleShort>
 		<baseDesc>[PAWN_nameDef] was a servant for rich moyos. [PAWN_pronoun] took care of everything from cleaning to cooking, to any special requests [PAWN_possessive] masters might have. Unable to deal with the ever more demanding requests, [PAWN_pronoun] disappeared one day, leaving only a dead body behind.</baseDesc>
@@ -884,7 +888,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 칵테일제조가 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_CocktailMixer</defName>
+		<defName>Moyo2_CocktailMixer</defName>
 		<title>moyo cocktail mixer</title>
 		<titleShort>cocktail mixer</titleShort>
 		<baseDesc>[PAWN_nameDef] experimented mixing surface drugs with deepblue to make new substances. Usually made with psychite, [PAWN_possessive] chemical cocktails where a big hit, both in the lighthouse and on the surface.</baseDesc>
@@ -907,7 +911,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 수경재배 농부 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_HydroponicsFarmer</defName>
+		<defName>Moyo2_HydroponicsFarmer</defName>
 		<title>moyo hydroponics farmer</title>
 		<titleShort>hydroponics farmer</titleShort>
 		<baseDesc>[PAWN_nameDef] grew surface crops in a hydroponics system. [PAWN_pronoun] was unable to sell [PAWN_possessive] produce for the full price, and occasionally faced hardships from the moyos who traded in surface goods. In the light of things, [PAWN_nameDef] set [PAWN_possessive] sights on obtaining a farm on the surface.</baseDesc>
@@ -927,7 +931,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 지상 예술가 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_SurfaceArtist</defName>
+		<defName>Moyo2_SurfaceArtist</defName>
 		<title>moyo surface artist</title>
 		<titleShort>surface artist</titleShort>
 		<baseDesc>[PAWN_nameDef] made artwork based on scenery from the surface. [PAWN_pronoun] never saw the surface [PAWN_objective]self, nor did [PAWN_pronoun] have much material on it. The artwork of the surface [PAWN_pronoun] created were based almost solely on her imagination and quite fantastical. [PAWN_pronoun] never faced much problems, as [PAWN_possessive] had never seen the surface either.</baseDesc>
@@ -944,7 +948,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 세이렌 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Siren</defName>
+		<defName>Moyo2_Siren</defName>
 		<title>moyo Siren</title>
 		<titleShort>Siren</titleShort>
 		<baseDesc>[PAWN_nameDef] was known throughout the entire lower level. With her beautiful looks and voice, [PAWN_nameDef] made [PAWN_possessive] way through the lighthouse’s high society. The moyo gave [PAWN_nameDef] the name Siren in reverence to [PAWN_possessive] beauty.</baseDesc>
@@ -964,7 +968,7 @@
 	</AlienRace.AlienBackstoryDef>
 	<!-- 청부업자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo_Hitman</defName>
+		<defName>Moyo2_Hitman</defName>
 		<title>moyo hitman</title>
 		<titleShort>hitman</titleShort>
 		<baseDesc>[PAWN_nameDef] is a gun for hire. Someone is bound to need some dirt work done for them, and that is [PAWN_nameDef]’s specialty. What happened between the client and target doesn’t matter. What matters is that [PAWN_pronoun] gets payed.</baseDesc>

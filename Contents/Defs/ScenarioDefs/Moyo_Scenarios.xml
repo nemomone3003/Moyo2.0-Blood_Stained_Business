@@ -64,12 +64,12 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>DBPearl_Crystal</thingDef>
 					<count>4</count>
-				</li>	
+				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>DBPearl_Thinker</thingDef>
 					<count>4</count>
-				</li>	
+				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>DBBooster_Hydra</thingDef>
@@ -95,7 +95,7 @@
 					<thingDef>Steel</thingDef>
 					<count>520</count>
 				</li>
-			</parts>	
+			</parts>
 		</scenario>
 	</ScenarioDef>
 </Defs>

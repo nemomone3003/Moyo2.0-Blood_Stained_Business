@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="Moyo2_DeserterScenario"]/scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]</xpath>
+		<value>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<overrideKinds>
+						<li>
+							<xenotype>Moyo2_Xenotype_Depthborn</xenotype>
+							<pawnKind>Moyo2_ColonistPawn</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>Moyo2_Xenotype_Depthborn</xenotype>
+							<count>3</count>
+							<requiredAtStart>false</requiredAtStart>
+						</li>
+					</xenotypeCounts>
+				</li>
+		</value>
+	</Operation>
+</Patch>

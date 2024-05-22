@@ -74,7 +74,7 @@
 		<label>Deep Blue</label>
 		<addictionHediff>DeepBlueAddiction</addictionHediff>
 		<toleranceHediff>DeepBlueTolerance</toleranceHediff>
-		<canBinge>false</canBinge>
+		<canBinge>true</canBinge>
 		<generateAddictionGenes>false</generateAddictionGenes>
 	</ChemicalDef>
 	<NeedDef ParentName="DrugAddictionNeedBase">
