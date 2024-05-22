@@ -342,7 +342,7 @@ namespace Moyo2
                 // Time left until the harvest is lost
             }
             
-            if (true)//DebugSettings.showHiddenInfo) // Only shows with godmode on
+            if (DebugSettings.showHiddenInfo) // Only shows with godmode on
             {
                 stringBuilder.AppendLine($"Is growing now? {GrowingFish}");
                 stringBuilder.AppendLine($"has finished growing? {FinishedGrowing}");
