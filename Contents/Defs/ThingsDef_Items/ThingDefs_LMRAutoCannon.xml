@@ -71,7 +71,7 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="Moyo_LMRAutoCannon">
-		<defName>Moyo_LMRAutoCannon</defName>
+		<defName>Moyo2_LMRAutoCannon</defName>
 		<label>laminar autocannon</label>
 		<description>A large laminar rifle designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When overcharged, it fires even faster but causes a brief overload.\n\nResearch aimed at increasing the firing rate of laminar rifle was conducted, developing a method to reduce the laminar field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.</description>
 		<graphicData>
@@ -122,7 +122,7 @@
 		</weaponTags>			
 	</ThingDef>
 	<ThingDef ParentName="Moyo_LMRAutoCannon">
-		<defName>Moyo_LMRAutoCannonOver</defName>
+		<defName>Moyo2_LMRAutoCannonOver</defName>
 		<label>laminar autocannon(overcharged)</label>
 		<description>An overcharged laminar autocannon. Has improved firerate but gets overloaded after a short period.</description>
 		<graphicData>
@@ -178,7 +178,7 @@
 		</comps>		
 	</ThingDef>
 	<ThingDef ParentName="Moyo_LMRAutoCannon">
-		<defName>Moyo_LMRAutoCannonDown</defName>
+		<defName>Moyo2_LMRAutoCannonDown</defName>
 		<label>laminar autocannon(overloaded)</label>
 		<description>An overloaded laminar autocannon. Firing is temporarily disabled until the system is restored. It's an expensive pillar in the meantime.</description>
 		<graphicData>
