@@ -207,8 +207,8 @@
 		<equippedStatOffsets>
 			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
 		</equippedStatOffsets>	
-		<soundInteract>Interact_MonoSword</soundInteract>
-		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>		
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>		 -->
 		<tools>
 			<li>
 				<label>sawblade</label>
@@ -257,8 +257,8 @@
 			<WorkToMake>60000</WorkToMake>
 			<Mass>9</Mass>
 		</statBases>
-		<soundInteract>Interact_MonoSword</soundInteract>
-		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			 -->
 		<tools>
 			<li>
 				<label>handle</label>
@@ -321,8 +321,8 @@
 			<WorkToMake>45000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
-		<soundInteract>Interact_MonoSword</soundInteract>
-		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound> -->
 		<equippedStatOffsets>
 			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
 			<CarryingCapacity>45</CarryingCapacity>

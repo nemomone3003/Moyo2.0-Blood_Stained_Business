@@ -67,9 +67,9 @@
 			</hediffGiverSets>
 			<!-- <hasCorpse>false</hasCorpse> -->
 		</race>
-		<!-- <butcherProducts> -->
-			<!-- <Moyo2_Depthweed>240</Moyo2_Depthweed> -->
-		<!-- </butcherProducts>		 -->
+		<butcherProducts>
+			<Moyo2_Depthweed>240</Moyo2_Depthweed>
+		</butcherProducts>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
 			<graphicData>

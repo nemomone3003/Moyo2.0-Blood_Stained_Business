@@ -40,8 +40,4 @@
   <Moyo2_WorkSpeed_Slow.labelShortAdj>신중함</Moyo2_WorkSpeed_Slow.labelShortAdj>
   <!--Original=Carriers of this gene work more slowly than normal.-->
   <Moyo2_WorkSpeed_Slow.description>이 유전자의 보유자는 다른 이들보다 느리게 일을 합니다.</Moyo2_WorkSpeed_Slow.description>
-  <!-- 제노타입 -->
-  <Moyo2_Xenotype_Depthborn.label>뎁스본 모요</Moyo2_Xenotype_Depthborn.label>
-  <Moyo2_Xenotype_Depthborn.description>길고 긴 유전자 개조 끝에 탄생한 종족입니다. 심해 생물의 특징을 가지고 있으며 딥블루를 생산 및 활용하는 특징을 가지고 있습니다.  심한 개조로 인해 모요의 형질중 일부만 인간에게 적용할 수 있습니다.</Moyo2_Xenotype_Depthborn.description>
-  <Moyo2_Xenotype_Depthborn.descriptionShort>일반 모요</Moyo2_Xenotype_Depthborn.descriptionShort>
 </LanguageData>

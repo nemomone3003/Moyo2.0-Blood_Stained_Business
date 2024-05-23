@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>latta.infusion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- CompQuality를 복제하는 CompPropertiesFormChange에 대해서만 ITab 추가 -->
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[starts-with(defName, "Moyo2_") and boolean(comps/li[@Class="Moyo2_ItemFormChange.CompPropertiesFormChange" and ./sharedComps//text()="RimWorld.CompQuality"])]/inspectorTabs</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[starts-with(defName, "Moyo2_") and boolean(comps/li[@Class="Moyo2_ItemFormChange.CompPropertiesFormChange" and ./sharedComps//text()="RimWorld.CompQuality"])]/inspectorTabs</xpath>
+						<value>
+							<li>Infusion.ITab+Infused</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[starts-with(defName, "Moyo2_") and boolean(comps/li[@Class="Moyo2_ItemFormChange.CompPropertiesFormChange" and ./sharedComps//text()="RimWorld.CompQuality"])]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>Infusion.ITab+Infused</li>
+							</inspectorTabs>
+						</value>
+					</nomatch>
+				</li>
+				<!-- ... CompInfusion 추가 -->
+				<li Class="PatchOperationInsert">
+					<xpath>/Defs/ThingDef[starts-with(defName, "Moyo2_")]/comps/li[@Class="Moyo2_ItemFormChange.CompPropertiesFormChange" and ./sharedComps//text()="RimWorld.CompQuality"]</xpath>
+					<value>
+						<li>
+							<compClass>Infusion.CompInfusion</compClass>
+						</li>
+					</value>
+				</li>
+				<!-- ... CompInfusion 복제 명시 -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[starts-with(defName, "Moyo2_")]/comps/li[@Class="Moyo2_ItemFormChange.CompPropertiesFormChange"]/sharedComps[//text()="RimWorld.CompQuality"]</xpath>
+					<value>
+						<li>Infusion.CompInfusion</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

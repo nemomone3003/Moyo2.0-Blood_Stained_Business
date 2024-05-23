@@ -30,7 +30,7 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 			<specialThoughtDirect>IngestedBlueBloodBag</specialThoughtDirect>
-			<ingestSound MayRequire="Ludeon.RimWorld.Biotech">HemogenPack_Consume</ingestSound>
+			<ingestSound MayRequire="Ludeon.RimWorld.Biotech">Ingest_Inject</ingestSound>
 			<outcomeDoers>
 				<li MayRequire="Ludeon.RimWorld.Biotech" Class="IngestionOutcomeDoer_OffsetHemogen">
 					<offset>0.2</offset>
@@ -51,7 +51,7 @@
 			<li>Cannibal</li>
 		</nullifyingTraits>
 		<nullifyingGenes>
-			<li>Hemogenic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Hemogenic</li>
 		</nullifyingGenes>
 		<nullifyingPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>
@@ -187,7 +187,7 @@
 			</li>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>0</severityPerDay>
-			</li>			
+			</li>
 		</comps>
 		<stages Inherit="False">
 			<li>
@@ -255,7 +255,7 @@
 			</li>
 			<li>
 				<compClass>Moyo2.HediffComp_DestroyOnMoyo</compClass>
-			</li>			
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -264,17 +264,15 @@
 					<MentalBreakThreshold>-0.03</MentalBreakThreshold>
 				</statOffsets>
 			</li>
-
 			<li>
 				<minSeverity>0.26</minSeverity>
-			</li>	
-
+			</li>
 			<li>
 				<minSeverity>0.02</minSeverity>
 				<statOffsets>
 					<PsychicSensitivity>0.1</PsychicSensitivity>
 				</statOffsets>
-			</li>			
+			</li>
 			<li>
 				<statOffsets>
 					<MentalBreakThreshold>0.07</MentalBreakThreshold>
@@ -308,7 +306,7 @@
 				<label>deepblue stability(decaying)</label>
 				<description>Things look more and more blue.</description>
 				<baseMoodEffect>-7</baseMoodEffect>
-			</li>			
+			</li>
 			<li>
 				<label>deepblue stability(critical)</label>
 				<description>Something is calling me. My mind is not my own.</description>
@@ -345,6 +343,6 @@
 					<DeepblueStatSpeed>-1</DeepblueStatSpeed>
 				</statOffsets>
 			</li>
-		</stages>	
+		</stages>
 	</HediffDef>
 </Defs>

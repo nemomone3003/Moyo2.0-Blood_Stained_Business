@@ -644,7 +644,7 @@
 							<key>Apparel_Jacket</key>
 							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
 						</li>
-						<li MayRequire="Ludeon.RimWorld.Ideology">
+						<li MayRequire="Ludeon.RimWorld.Royalty">
 							<key>Apparel_BodyStrap</key>
 							<value>Apparel/ApparelReplacer/MoyoWearSlave</value>
 						</li>
@@ -697,7 +697,7 @@
 					<li>Moyo2_DeepDivingHelmet</li>
 					<li>Moyo2_CartelHood</li>
 				</apparelList>
-				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+				<blackEndoCategories>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
@@ -706,17 +706,17 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
 				</blackEndoCategories>
-				<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
 				</blackGeneList>
-				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+				<blackGeneTags>
 					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
 				</blackGeneTags>
-				<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-					<li>Moyo2_Xenotype_Depthborn</li>
+				<xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Moyo2_Xenotype_Depthborn</li>
 				</xenotypeList>
 				<geneList>
-					<li>Moyo2_Skin_Depthborn</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Moyo2_Skin_Depthborn</li>
 				</geneList>
 			</raceRestriction>
 		</alienRace>

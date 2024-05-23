@@ -22,7 +22,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>4000</WorkToBuild>
 			<Flammability>0.5</Flammability>
-			<WorkTableEfficiencyFactor>1.1</WorkTableEfficiencyFactor>
+			<WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
 		</statBases>
 		<size>(3,1)</size>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -50,8 +50,10 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<designationCategory>Production</designationCategory>
-		<minifiedDef/>
-		<thingCategories Inherit="false"/>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -73,7 +75,6 @@
 		</comps>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<surfaceType>Item</surfaceType>
 		<!-- <designationHotKey>Misc12</designationHotKey> -->
 		<placeWorkers>
@@ -213,8 +214,10 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<designationCategory>Production</designationCategory>
-		<minifiedDef/>
-		<thingCategories Inherit="false"/>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>

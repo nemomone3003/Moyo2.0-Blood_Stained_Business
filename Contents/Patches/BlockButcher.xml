@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>
+<Patch>	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
-		<value>
-			<li>Moyo2_CureDeepBlueTolerance</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[@Name="ButcherCorpseFlesh"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="ButcherCorpseFlesh"]/fixedIngredientFilter</xpath>
 		<value>
 			<disallowedThingDefs>
 				<li>Corpse_Moyo2_DepthWeed</li>
