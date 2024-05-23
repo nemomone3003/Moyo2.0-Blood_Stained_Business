@@ -108,7 +108,7 @@
 					<li>
 						<label>overcharge</label>
 						<description>initiate overcharge.</description>
-						<thingDef>Moyo_LMRAutoCannonOver</thingDef>
+						<thingDef>Moyo2_LMRAutoCannonOver</thingDef>
 						<transformCooldown>100</transformCooldown>
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
 						<soundOnTransform>Laminar_Activate2</soundOnTransform>
@@ -160,7 +160,7 @@
 				<revertData>
 					<label>overload</label>
 					<description>gun system overloading.</description>
-					<thingDef>Moyo_LMRAutoCannonDown</thingDef>
+					<thingDef>Moyo2_LMRAutoCannonDown</thingDef>
 					<revertAfterTicks>700</revertAfterTicks>
 					<soundOnTransform>Laminar_Activate2</soundOnTransform>
 				</revertData>				
@@ -168,7 +168,7 @@
 					<li>
 						<label>quick discharge</label>
 						<description>disable overcharge.</description>
-						<thingDef>Moyo_LMRAutoCannonDown</thingDef>
+						<thingDef>Moyo2_LMRAutoCannonDown</thingDef>
 						<transformCooldown>100</transformCooldown>
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
 						<soundOnTransform>Laminar_Activate2</soundOnTransform>
@@ -195,7 +195,7 @@
 				<revertData>
 					<label>cooling</label>
 					<description>gun system cooling.</description>
-					<thingDef>Moyo_LMRAutoCannon</thingDef>
+					<thingDef>Moyo2_LMRAutoCannon</thingDef>
 					<revertAfterTicks>1200</revertAfterTicks>
 					<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
 					<soundOnTransform>Laminar_Activate2</soundOnTransform>
