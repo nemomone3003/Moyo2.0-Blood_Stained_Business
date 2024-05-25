@@ -151,6 +151,7 @@
 		</statBases>
 		<recipeMaker Inherit="False"></recipeMaker>
 		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>	
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -201,6 +202,7 @@
 		<!-- - -->
 		<recipeMaker Inherit="False"></recipeMaker>
 		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>	
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>

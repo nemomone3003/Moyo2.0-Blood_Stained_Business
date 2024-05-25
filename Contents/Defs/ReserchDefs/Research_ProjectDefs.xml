@@ -49,6 +49,7 @@
 		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>Moyo2_Abysstech_DeepblueAdvanced</li>
+			<li>Bionics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -82,9 +83,10 @@
 		<baseCost>2000</baseCost>
 		<prerequisites>
 			<li>Moyo2_Abysstech_Pneumatic</li>
+			<li>Moyo2_Abysstech_Foundry</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>1.5</researchViewY>
 	</ResearchProjectDef>
 	<!-- 라미너 역장 조작 -->
@@ -100,7 +102,7 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>1.5</researchViewY>
 	</ResearchProjectDef>
 	<!-- 어비스테크 주조소 -->

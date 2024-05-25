@@ -361,9 +361,9 @@
 		<!-- - -->
 		<apparel>
 			<drawData>
-				<defaultData>
-					<layer>73</layer>
-				</defaultData>
+				<!-- <defaultData> -->
+				<!-- <layer>73</layer> -->
+				<!-- </defaultData> -->
 			</drawData>
 			<bodyPartGroups>
 				<li>FullHead</li>

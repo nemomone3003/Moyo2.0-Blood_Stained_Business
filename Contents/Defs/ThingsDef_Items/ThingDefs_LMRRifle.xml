@@ -159,7 +159,8 @@
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker Inherit="False"></recipeMaker>
-		<thingCategories Inherit="False"></thingCategories>		
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>			
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -209,7 +210,8 @@
 		</graphicData>
 		<!-- - -->
 		<recipeMaker Inherit="False"></recipeMaker>
-		<thingCategories Inherit="False"></thingCategories>				
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>					
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>

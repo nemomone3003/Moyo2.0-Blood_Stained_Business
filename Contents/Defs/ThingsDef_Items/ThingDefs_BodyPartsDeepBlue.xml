@@ -19,6 +19,7 @@
 		</stages>
 		<tags>
 			<li>Moyo2_DeepBlueExtracter</li>
+			<li>Moyo2_DeepBlueExtracterCrude</li>
 		</tags>
 	</HediffDef>
 	<ThoughtDef>
@@ -149,6 +150,7 @@
 		</stages>
 		<tags>
 			<li>Moyo2_DeepBlueExtracter</li>
+			<li>Moyo2_DeepBlueExtracterAdvanced</li>
 		</tags>
 	</HediffDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
@@ -157,11 +159,11 @@
 		<description>This advanced device filters out deep blue from Moyo's blood. It boasts such comfortable usability that you won't feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering real-time body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
-			<Steel>5</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueSynthesis</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>			

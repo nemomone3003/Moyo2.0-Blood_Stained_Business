@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CultureDef/styleItemTags</xpath>
+		<value>
+			<li>
+				<tag>Moyo2_HairDummyCategory</tag>
+				<baseWeight>0.01</baseWeight>
+				<weightFactor>0.01</weightFactor>
+			</li>
+		</value>
+	</Operation>
+</Patch>

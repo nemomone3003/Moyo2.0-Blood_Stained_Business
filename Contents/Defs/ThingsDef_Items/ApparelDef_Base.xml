@@ -32,6 +32,13 @@
 				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
+		<!-- <apparel> -->
+			<!-- <drawData> -->
+				<!-- <defaultData> -->
+					<!-- <layer>160</layer> -->
+				<!-- </defaultData> -->
+			<!-- </drawData> -->
+		<!-- </apparel>	 -->
 	</ThingDef>
 	<!-- 옷 카테고리-카르텔 -->
 	<ThingCategoryDef>
@@ -50,10 +57,27 @@
 		<thingCategories Inherit="False">
 			<li>Moyo2_ApparelCategory_Cartel</li>
 		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
 	</ThingDef>
 	<ThingDef Abstract="True" Name="Moyo2_ApparelCategory_CartelHead" ParentName="ApparelMakeableBase">
 		<thingCategories Inherit="False">
 			<li>Moyo2_ApparelCategory_CartelHead</li>
 		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<!-- <apparel> -->
+			<!-- <drawData> -->
+				<!-- <defaultData> -->
+					<!-- <layer>160</layer> -->
+				<!-- </defaultData> -->
+			<!-- </drawData> -->
+		<!-- </apparel>			 -->
 	</ThingDef>
 </Defs>

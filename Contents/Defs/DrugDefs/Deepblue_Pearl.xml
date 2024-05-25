@@ -37,7 +37,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -201,7 +201,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -364,7 +364,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -535,7 +535,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
@@ -692,7 +692,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>

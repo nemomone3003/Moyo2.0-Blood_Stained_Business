@@ -165,7 +165,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
 			<ingestSound>Ingest_Inject</ingestSound>
 			<outcomeDoers>
@@ -320,7 +320,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Medical</drugCategory>
+			<drugCategory>Hard</drugCategory>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>

@@ -5,15 +5,6 @@
 		<value>
 			<li>Moyo2_CureDeepBlueTolerance</li>
 		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[@Name="ButcherCorpseFlesh"]/fixedIngredientFilter</xpath>
-		<value>
-			<disallowedThingDefs>
-				<li>Corpse_Moyo2_DepthWeed</li>
-			</disallowedThingDefs>
-		</value>
 	</Operation>	
 	<!-- <Operation Class="PatchOperationConditional"> -->
 	<!-- <xpath>Defs/ThingDef[@Name="SculptureBase"]/comps/li[@Class = "CompProperties_MeditationFocus"]/offsets/li[@Class = "FocusStrengthOffset_BuildingDefsWithQuality"]</xpath> -->

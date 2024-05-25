@@ -55,7 +55,7 @@
   <!--Original=thinker 펄-->
   <DBPearl_Thinker.label>싱커 펄</DBPearl_Thinker.label>
   <!--Original=&quot;Enlightenment is just a pill away.&quot; ー an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.-->
-  <DBPearl_Thinker.description>"진리는 한 알 너머에" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 학습 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 무언가를 성취하려는 모요들에겐 필수품입니다.\n\n과도한학업열망으로인해발생하는모든사고의책임은소비자에게있습니다.\n\n연구 속도: +10%~+45%\n\n해킹 속도: +5%~+55%\n\n전역 학습 속도: +10~+65%\n\n정신이상 임계치: +0~+15%\n\의식: +0~+20%</DBPearl_Thinker.description>
+  <DBPearl_Thinker.description>"진리는 한 알 너머에" - 등대의 한 광고\n\n딥블루를 함유한 알약으로 학습 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 무언가를 성취하려는 모요들에겐 필수품입니다.\n\n과도한학업열망으로인해발생하는모든사고의책임은소비자에게있습니다.\n\n연구 속도: +10%~+45%\n\n해킹 속도: +5%~+55%\n\n전역 학습 속도: +10~+65%\n\n정신이상 임계치: +0~+15%\n\n의식: +0~+20%</DBPearl_Thinker.description>
   <!--Original=alluring 펄-->
   <DBPearl_Alluring.label>알루링 펄</DBPearl_Alluring.label>
   <!--Original=&quot;Struggling to be the center of the party?guess why.&quot; ー an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.-->
@@ -139,49 +139,49 @@
   <!--Original=라미너 슬러그-->
   <Moyo2_Bullet_LMRSlugC.label>라미너 슬러그</Moyo2_Bullet_LMRSlugC.label>
   <!--Original=라미너 오토캐논-->
-  <Moyo_LMRAutoCannon.label>라미너 오토캐논</Moyo_LMRAutoCannon.label>
+  <Moyo2_LMRAutoCannon.label>라미너 오토캐논</Moyo2_LMRAutoCannon.label>
   <!--Original=A large 라미너 라이플 designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When 과충전, it fires even faster but causes a brief 과부하.\n\nResearch aimed at increasing the firing rate of 라미너 라이플 was conducted, developing a method to reduce the 라미너 field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.-->
-  <Moyo_LMRAutoCannon.description>대형 라미너 라이플입니다. 역장 발생기를 조율하여 정확도가 떨어지는 대신 발사 속도를 크게 높였습니다. 과충전시 더욱 빠르게 연사를 하며 짧은 시간 동안 과부하가 걸립니다.\n\n라미너 라이플의 발사 속도를 늘리기 위한 연구 끝에 각 탄의 역장 유도 시간을 줄이는 방안이 나왔습니다. 이로 인해 명중률이 감소하지만 발사 속도를 확보할 수 있었습니다. 여러개의 역장 발사기를 한데 묶는 방안은 폐기되었습니다.</Moyo_LMRAutoCannon.description>
+  <Moyo2_LMRAutoCannon.description>대형 라미너 라이플입니다. 역장 발생기를 조율하여 정확도가 떨어지는 대신 발사 속도를 크게 높였습니다. 과충전시 더욱 빠르게 연사를 하며 짧은 시간 동안 과부하가 걸립니다.\n\n라미너 라이플의 발사 속도를 늘리기 위한 연구 끝에 각 탄의 역장 유도 시간을 줄이는 방안이 나왔습니다. 이로 인해 명중률이 감소하지만 발사 속도를 확보할 수 있었습니다. 여러개의 역장 발사기를 한데 묶는 방안은 폐기되었습니다.</Moyo2_LMRAutoCannon.description>
   <!--Original=몸체-->
-  <Moyo_LMRAutoCannon.tools.0.label>몸체</Moyo_LMRAutoCannon.tools.0.label>
+  <Moyo2_LMRAutoCannon.tools.0.label>몸체</Moyo2_LMRAutoCannon.tools.0.label>
   <!--Original=총구-->
-  <Moyo_LMRAutoCannon.tools.1.label>총구</Moyo_LMRAutoCannon.tools.1.label>
+  <Moyo2_LMRAutoCannon.tools.1.label>총구</Moyo2_LMRAutoCannon.tools.1.label>
   <!--Original=라미너 오토캐논-->
-  <Moyo_LMRAutoCannon.verbs.Verb_Shoot.label>라미너 오토캐논</Moyo_LMRAutoCannon.verbs.Verb_Shoot.label>
+  <Moyo2_LMRAutoCannon.verbs.Verb_Shoot.label>라미너 오토캐논</Moyo2_LMRAutoCannon.verbs.Verb_Shoot.label>
   <!--Original=과충전-->
-  <!-- <Moyo_LMRAutoCannon.comps.0.transformData.0.label>과충전</Moyo_LMRAutoCannon.comps.0.transformData.0.label> -->
+  <!-- <Moyo2_LMRAutoCannon.comps.0.transformData.0.label>과충전</Moyo2_LMRAutoCannon.comps.0.transformData.0.label> -->
   <!-- Original=과충전 시작. -->
-  <!-- <Moyo_LMRAutoCannon.comps.0.transformData.0.description>과충전 시작.</Moyo_LMRAutoCannon.comps.0.transformData.0.description> -->
+  <!-- <Moyo2_LMRAutoCannon.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRAutoCannon.comps.0.transformData.0.description> -->
   <!--Original=라미너 오토캐논(과충전)-->
-  <Moyo_LMRAutoCannonOver.label>라미너 오토캐논(과충전)</Moyo_LMRAutoCannonOver.label>
+  <Moyo2_LMRAutoCannonOver.label>라미너 오토캐논(과충전)</Moyo2_LMRAutoCannonOver.label>
   <!--Original=An 과충전 라미너 오토캐논. Has improved firerate but gets 과부하 after a short period.-->
-  <Moyo_LMRAutoCannonOver.description>라미너 오토캐논이 과충전되어 향상된 발사속도를 지닙니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo_LMRAutoCannonOver.description>
+  <Moyo2_LMRAutoCannonOver.description>라미너 오토캐논이 과충전되어 향상된 발사속도를 지닙니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo2_LMRAutoCannonOver.description>
   <!--Original=몸체-->
-  <Moyo_LMRAutoCannonOver.tools.0.label>몸체</Moyo_LMRAutoCannonOver.tools.0.label>
+  <Moyo2_LMRAutoCannonOver.tools.0.label>몸체</Moyo2_LMRAutoCannonOver.tools.0.label>
   <!--Original=총구-->
-  <Moyo_LMRAutoCannonOver.tools.1.label>총구</Moyo_LMRAutoCannonOver.tools.1.label>
+  <Moyo2_LMRAutoCannonOver.tools.1.label>총구</Moyo2_LMRAutoCannonOver.tools.1.label>
   <!--Original=라미너 오토캐논(과충전)-->
-  <Moyo_LMRAutoCannonOver.verbs.Verb_Shoot.label>라미너 오토캐논(과충전)</Moyo_LMRAutoCannonOver.verbs.Verb_Shoot.label>
+  <Moyo2_LMRAutoCannonOver.verbs.Verb_Shoot.label>라미너 오토캐논(과충전)</Moyo2_LMRAutoCannonOver.verbs.Verb_Shoot.label>
   <!--Original=과부하-->
-  <!-- <Moyo_LMRAutoCannonOver.comps.0.revertData.label>과부하</Moyo_LMRAutoCannonOver.comps.0.revertData.label> -->
+  <!-- <Moyo2_LMRAutoCannonOver.comps.0.revertData.label>과부하</Moyo2_LMRAutoCannonOver.comps.0.revertData.label> -->
   <!--Original=총기 시스템 과부하중.-->
-  <!-- <Moyo_LMRAutoCannonOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo_LMRAutoCannonOver.comps.0.revertData.description> -->
+  <!-- <Moyo2_LMRAutoCannonOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRAutoCannonOver.comps.0.revertData.description> -->
   <!--Original=과충전 해제-->
-  <!-- <Moyo_LMRAutoCannonOver.comps.0.transformData.0.label>과충전 해제</Moyo_LMRAutoCannonOver.comps.0.transformData.0.label> -->
+  <!-- <Moyo2_LMRAutoCannonOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRAutoCannonOver.comps.0.transformData.0.label> -->
   <!--Original=과충전을 해제합니다.-->
-  <!-- <Moyo_LMRAutoCannonOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo_LMRAutoCannonOver.comps.0.transformData.0.description> -->
+  <!-- <Moyo2_LMRAutoCannonOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRAutoCannonOver.comps.0.transformData.0.description> -->
   <!--Original=라미너 오토캐논(과부하)-->
-  <Moyo_LMRAutoCannonDown.label>라미너 오토캐논(과부하)</Moyo_LMRAutoCannonDown.label>
+  <Moyo2_LMRAutoCannonDown.label>라미너 오토캐논(과부하)</Moyo2_LMRAutoCannonDown.label>
   <!--Original=An 과부하 라미너 오토캐논. Firing is temporarily disabled until the system is restored. It&apos;s an expensive pillar in the meantime.-->
-  <Moyo_LMRAutoCannonDown.description>과부하 상태의 라미너 오토캐논입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 통나무네요.</Moyo_LMRAutoCannonDown.description>
+  <Moyo2_LMRAutoCannonDown.description>과부하 상태의 라미너 오토캐논입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 통나무네요.</Moyo2_LMRAutoCannonDown.description>
   <!--Original=몸체-->
-  <Moyo_LMRAutoCannonDown.tools.0.label>몸체</Moyo_LMRAutoCannonDown.tools.0.label>
+  <Moyo2_LMRAutoCannonDown.tools.0.label>몸체</Moyo2_LMRAutoCannonDown.tools.0.label>
   <!--Original=총구-->
-  <Moyo_LMRAutoCannonDown.tools.1.label>총구</Moyo_LMRAutoCannonDown.tools.1.label>
+  <Moyo2_LMRAutoCannonDown.tools.1.label>총구</Moyo2_LMRAutoCannonDown.tools.1.label>
   <!--Original=냉각중-->
-  <!-- <Moyo_LMRAutoCannonDown.comps.0.revertData.label>냉각중</Moyo_LMRAutoCannonDown.comps.0.revertData.label> -->
+  <!-- <Moyo2_LMRAutoCannonDown.comps.0.revertData.label>냉각중</Moyo2_LMRAutoCannonDown.comps.0.revertData.label> -->
   <!--Original=총기 시스템 냉각중.-->
-  <!-- <Moyo_LMRAutoCannonDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo_LMRAutoCannonDown.comps.0.revertData.description> -->
+  <!-- <Moyo2_LMRAutoCannonDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRAutoCannonDown.comps.0.revertData.description> -->
   <!--Original=heavy 라미너 슬러그-->
   <Moyo2_Bullet_LMRBolt.label>중형 라미너 슬러그</Moyo2_Bullet_LMRBolt.label>
   <!--Original=heavy 라미너 슬러그(과충전)-->

@@ -514,7 +514,8 @@
 							</conditions>
 							<offsets>
 								<north>
-									<layerOffset>-0.345</layerOffset>
+									<!-- <layerOffset>-0.345</layerOffset> -->
+									<layerOffset>-0.324</layerOffset>
 								</north>
 								<south>
 									<layerOffset>-0.325</layerOffset>
@@ -528,7 +529,13 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
-								<Hediff For="Moyo2_CartelHood">Apparel/Cartel/CartelHoodBack</Hediff>
+								<Hediff For="Moyo2_CartelHood">
+									<path>Apparel/Cartel/CartelHoodBack</path>
+									<extendedGraphics>
+										<Job For="LayDownResting">Moyo/Hair/MoyoBackHair</Job>
+										<Job For="Wait_Asleep">Moyo/Hair/MoyoBackHair</Job>
+									</extendedGraphics>									
+								</Hediff>								
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -553,7 +560,6 @@
 										<li>Moyo2_BigHelmet</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
-								<!-- <Drafted>false</Drafted> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -576,9 +582,23 @@
 									<path>Apparel/LighthouseArmor/EGvisor_up</path>
 									<extendedGraphics>
 										<Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted>
+										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
+										<Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job>
+										<Job For="LayDownAwake">Moyo_Dummy/Dummy</Job>
+										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
+										<Job For="LayDown">Moyo_Dummy/Dummy</Job>	
 									</extendedGraphics>
 								</Hediff>
-								<Hediff For="Moyo2_CartelHood">Apparel/Cartel/CartelHood</Hediff>
+								<Hediff For="Moyo2_CartelHood">
+									<path>Apparel/Cartel/CartelHood</path>
+									<extendedGraphics>
+										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
+										<Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job>
+										<Job For="LayDownAwake">Moyo_Dummy/Dummy</Job>
+										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
+										<Job For="LayDown">Moyo_Dummy/Dummy</Job>										
+									</extendedGraphics>									
+								</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -594,6 +614,8 @@
 					<extendedGraphics>
 						<Job For="Wait_Downed">Moyo/Head/MoyoHeadHurt</Job>
 						<Job For="Wait_Asleep">Moyo/Head/MoyoHeadLaying</Job>
+						<Job For="LayDownAwake">Moyo/Head/MoyoHead</Job>
+						<Job For="LayDownResting">Moyo/Head/MoyoHeadLaying</Job>
 						<Job For="LayDown">Moyo/Head/MoyoHeadLaying</Job>
 					</extendedGraphics>
 				</head>
@@ -840,6 +862,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>Moyo2_Inate</li>
+				<li>OrganicStandard</li>
 				<li>Human</li>
 			</hediffGiverSets>
 		</race>

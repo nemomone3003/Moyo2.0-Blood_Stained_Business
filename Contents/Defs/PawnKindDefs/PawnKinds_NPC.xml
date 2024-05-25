@@ -58,11 +58,11 @@
 		</weaponTags>
 		<weaponMoney>65~250</weaponMoney>
 		<chemicalAddictionChance>0.3</chemicalAddictionChance>
-		<invNutrition>1</invNutrition>
-		<techHediffsChance>0.06</techHediffsChance>
-		<techHediffsMoney>50~600</techHediffsMoney>
+		<invNutrition>1</invNutrition>		
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>105</techHediffsMoney>
 		<techHediffsTags>
-			<li>simple</li>
+			<li>Moyo2_DeepBlueExtracter_Crude</li>
 		</techHediffsTags>
 		<inventoryOptions>
 			<skipChance>0.2</skipChance>
@@ -106,10 +106,10 @@
 		<weaponMoney>65~250</weaponMoney>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>
 		<invNutrition>1</invNutrition>
-		<techHediffsChance>0.06</techHediffsChance>
-		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>105</techHediffsMoney>
 		<techHediffsTags>
-			<li>simple</li>
+			<li>Moyo2_DeepBlueExtracter_Crude</li>
 		</techHediffsTags>
 		<inventoryOptions>
 			<skipChance>0.8</skipChance>
@@ -153,10 +153,10 @@
 			<li>Moyo2_MeleeIDR</li>
 		</weaponTags>
 		<weaponMoney>250~350</weaponMoney>
-		<techHediffsChance>0.02</techHediffsChance>
-		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsChance>0.8</techHediffsChance>
+		<techHediffsMoney>105~160</techHediffsMoney>
 		<techHediffsTags>
-			<li>Advanced</li>
+			<li>Moyo2_DeepBlueExtracter</li>
 		</techHediffsTags>
 		<inventoryOptions>
 			<skipChance>0.2</skipChance>
@@ -198,10 +198,10 @@
 			<li>Moyo2_MeleeIDR</li>
 		</weaponTags>
 		<weaponMoney>500~800</weaponMoney>
-		<techHediffsChance>0.02</techHediffsChance>
-		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsChance>0.8</techHediffsChance>
+		<techHediffsMoney>105~160</techHediffsMoney>
 		<techHediffsTags>
-			<li>Advanced</li>
+			<li>Moyo2_DeepBlueExtracter</li>
 		</techHediffsTags>
 		<inventoryOptions>
 			<subOptionsChooseOne>
@@ -216,6 +216,7 @@
 	<PawnKindDef ParentName="Moyo2_NPCFighterMidPlus">
 		<defName>Moyo2_NPCTechnician</defName>
 		<label>moyo technician</label>
+		<techHediffsMoney>160</techHediffsMoney>
 	</PawnKindDef>	
 	<!-- 모요 무법자 -->
 	<PawnKindDef ParentName="Moyo2_NPCFighterMid">
@@ -230,6 +231,8 @@
 			</li>
 		</backstoryFiltersOverride>
 		<weaponMoney>500~800</weaponMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>105~160</techHediffsMoney>
 	</PawnKindDef>	
 	<PawnKindDef ParentName="Moyo2_NPCFighterMid">
 		<defName>Moyo2_NPCOutlawJunkie</defName>
@@ -253,6 +256,8 @@
 			<li>GrenadeDestructive</li>
 		</weaponTags>
 		<weaponMoney>200~800</weaponMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>105</techHediffsMoney>
 		<chemicalAddictionChance>1</chemicalAddictionChance>
 		<inventoryOptions>
 			<subOptionsChooseOne>
@@ -290,6 +295,7 @@
 			<li>Moyo2_NailIDR</li>
 		</weaponTags>
 		<weaponMoney>500~1000</weaponMoney>
+		<techHediffsMoney>160</techHediffsMoney>
 		<inventoryOptions>
 			<subOptionsChooseOne>
 				<li>
@@ -332,6 +338,7 @@
 			<li>Moyo2_HarpoonIDR</li>
 		</weaponTags>
 		<weaponMoney>500~1500</weaponMoney>
+		<techHediffsChance>1</techHediffsChance>
 		<inventoryOptions>
 			<subOptionsChooseOne>
 				<li>
@@ -374,10 +381,10 @@
 			<li>Moyo2_MeleeIDR</li>
 		</weaponTags>
 		<weaponMoney>500~800</weaponMoney>
-		<techHediffsChance>0.02</techHediffsChance>
-		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsChance>0.6</techHediffsChance>
+		<techHediffsMoney>160~300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Advanced</li>
+			<li>Moyo2_DeepBlueExtracter</li>
 		</techHediffsTags>
 	</PawnKindDef>
 	<!-- 상급 폰카인드 -->
@@ -409,10 +416,10 @@
 			<li>Moyo2_PistolLMR</li>
 		</weaponTags>
 		<weaponMoney>1180~1400</weaponMoney>
-		<techHediffsChance>0.06</techHediffsChance>
-		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsChance>0.6</techHediffsChance>
+		<techHediffsMoney>300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Advanced</li>
+			<li>Moyo2_DeepBlueExtracterAdvanced</li>
 		</techHediffsTags>
 		<inventoryOptions>
 			<subOptionsChooseOne>
@@ -451,10 +458,10 @@
 			<li>Moyo2_PistolLMR</li>
 		</weaponTags>
 		<weaponMoney>1180~1400</weaponMoney>
-		<techHediffsChance>0.06</techHediffsChance>
-		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Advanced</li>
+			<li>Moyo2_DeepBlueExtracterAdvanced</li>
 		</techHediffsTags>
 		<inventoryOptions>
 			<subOptionsChooseOne>
