@@ -666,7 +666,7 @@
 							<key>Apparel_Jacket</key>
 							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
 						</li>
-						<li MayRequire="Ludeon.RimWorld.Royalty">
+						<li MayRequire="Ludeon.RimWorld.Ideology">
 							<key>Apparel_BodyStrap</key>
 							<value>Apparel/ApparelReplacer/MoyoWearSlave</value>
 						</li>
