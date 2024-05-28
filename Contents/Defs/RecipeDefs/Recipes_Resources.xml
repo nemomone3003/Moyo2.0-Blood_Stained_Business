@@ -265,7 +265,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Corpse_Moyo2_DepthWeed</li>
+						<li>Moyo2_DepthWeedCorpse</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
