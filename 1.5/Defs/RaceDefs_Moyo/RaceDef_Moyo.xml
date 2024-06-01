@@ -666,10 +666,6 @@
 							<key>Apparel_Jacket</key>
 							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
 						</li>
-						<li MayRequire="Ludeon.RimWorld.Royalty">
-							<key>Apparel_BodyStrap</key>
-							<value>Apparel/ApparelReplacer/MoyoWearSlave</value>
-						</li>
 					</individualPaths>
 					<bodyTypeFallback>Thin</bodyTypeFallback>
 					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>

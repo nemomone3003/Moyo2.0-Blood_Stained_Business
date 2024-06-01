@@ -4,7 +4,7 @@
 		<xpath>Defs/RecipeDef[defName="ButcherCorpseFlesh"]/fixedIngredientFilter</xpath>
 		<value>
 			<disallowedThingDefs>
-				<li>Corpse_Moyo2_DepthWeed</li>
+				<li>Moyo2_DepthWeedCorpse</li>
 			</disallowedThingDefs>
 		</value>
 	</Operation>	

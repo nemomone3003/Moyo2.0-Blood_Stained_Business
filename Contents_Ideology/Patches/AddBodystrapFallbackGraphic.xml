@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+        <value>
+          <li>
+            <key>Apparel_BodyStrap</key>
+            <value>Apparel/ApparelReplacer/MoyoWearSlave</value>
+        </li>
+        </value>
+      </Operation>
+
+</Patch>

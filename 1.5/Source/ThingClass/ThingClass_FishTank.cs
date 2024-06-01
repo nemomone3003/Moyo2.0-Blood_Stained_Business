@@ -289,8 +289,7 @@ namespace Moyo2
                 return null;
             }
 
-            Pawn fish = PawnGenerator.GeneratePawn(lockedFishDef.fishTankSettings.pawnKindDef);
-            fish.Kill(null);
+            Thing fish = ThingMaker.MakeThing(LockedFishDef);
             Reset();
             return fish;
         }
