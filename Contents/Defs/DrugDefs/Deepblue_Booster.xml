@@ -23,8 +23,8 @@
 		<stackLimit>25</stackLimit>
 		<costList>
 			<BlueSerum>1</BlueSerum>
-			<GoJuice>2</GoJuice>
-			<Chemfuel>10</Chemfuel>
+			<MedicineHerbal>2</MedicineHerbal>
+			<Neutroamine>3</Neutroamine>
 		</costList>
 		<recipeMaker>
 			<workAmount>800</workAmount>
@@ -150,7 +150,8 @@
 		<stackLimit>25</stackLimit>
 		<costList>
 			<BlueSerum>1</BlueSerum>
-			<GoJuice>2</GoJuice>
+			<GoJuice>1</GoJuice>
+			<Neutroamine>3</Neutroamine>
 		</costList>
 		<recipeMaker>
 			<workAmount>800</workAmount>
@@ -304,8 +305,8 @@
 		<stackLimit>25</stackLimit>
 		<costList>
 			<BlueSerum>1</BlueSerum>
-			<Penoxycyline>4</Penoxycyline>
-			<Neutroamine>5</Neutroamine>
+			<GoJuice>1</GoJuice>
+			<Neutroamine>3</Neutroamine>
 		</costList>
 		<recipeMaker>
 			<workAmount>800</workAmount>

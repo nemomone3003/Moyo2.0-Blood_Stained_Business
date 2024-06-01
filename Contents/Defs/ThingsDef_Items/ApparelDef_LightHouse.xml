@@ -242,7 +242,7 @@
 		<statBases>
 			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>6</Mass>
+			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
 			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
@@ -294,7 +294,7 @@
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>6</Mass>
+			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
 			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
@@ -349,7 +349,7 @@
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>6</Mass>
+			<Mass>1.5</Mass>
 			<Flammability>0.6</Flammability>
 			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>

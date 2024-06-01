@@ -178,7 +178,7 @@
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>10000</WorkToBuild>
 			<Flammability>0.5</Flammability>
-			<WorkTableEfficiencyFactor>1.5</WorkTableEfficiencyFactor>
+			<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
 		</statBases>
 		<size>(2,3)</size>
 		<castEdgeShadows>true</castEdgeShadows>

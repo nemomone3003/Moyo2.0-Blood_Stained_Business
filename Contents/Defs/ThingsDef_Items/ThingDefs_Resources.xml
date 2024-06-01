@@ -36,12 +36,12 @@
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
-				<MaxHitPoints>2.8</MaxHitPoints>
+				<MaxHitPoints>3</MaxHitPoints>
 				<Beauty>1.2</Beauty>
 				<Flammability>0</Flammability>
 				<WorkToMake>2.5</WorkToMake>
 				<WorkToBuild>2.5</WorkToBuild>
-				<DoorOpenSpeed>0.7</DoorOpenSpeed>
+				<DoorOpenSpeed>0.9</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
