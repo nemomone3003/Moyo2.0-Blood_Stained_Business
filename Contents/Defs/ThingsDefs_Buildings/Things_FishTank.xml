@@ -74,8 +74,8 @@
 		<modExtensions>
 			<li Class="Moyo2.ModExtension_FishTank">
 				<FishDefs>
-					<!--<li>Moyo2_Tuna</li>
-					<li>Moyo2_DemiKraken</li>-->
+					<li>Moyo2_TunaCorpse</li>
+					<li>Moyo2_DemiKrakenCorpse</li>
 					<li>Moyo2_DepthWeedCorpse</li>
 				</FishDefs>
 			</li>
