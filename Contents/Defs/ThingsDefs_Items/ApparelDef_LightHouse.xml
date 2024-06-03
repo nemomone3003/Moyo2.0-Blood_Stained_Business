@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Apparel/Lighthouse/BasicSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -65,7 +65,7 @@
 		<graphicData>
 			<texPath>Apparel/Lighthouse/AdvancedSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -120,7 +120,7 @@
 		<graphicData>
 			<texPath>Apparel/Lighthouse/RoyalSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -178,7 +178,7 @@
 		<graphicData>
 			<texPath>Apparel/Lighthouse/HoloSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -236,7 +236,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGharness1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -288,7 +288,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGjacket1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -343,7 +343,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGhelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -421,7 +421,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -477,7 +477,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/StreamlineHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -528,7 +528,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/DeepShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
@@ -588,7 +588,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/DeepHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->

@@ -67,9 +67,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Booster</li>
+		</thingCategories>			
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Medi</defName>
@@ -203,9 +206,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Booster</li>
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Orca</defName>
@@ -358,9 +364,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Booster</li>
+		</thingCategories>			
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Hydra</defName>

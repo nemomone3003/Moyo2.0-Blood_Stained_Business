@@ -69,9 +69,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsPearl</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Pearl</li>
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Joy</defName>
@@ -233,9 +236,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Pearl</li>
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Crystal</defName>
@@ -396,9 +402,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Pearl</li>
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Thinker</defName>
@@ -567,9 +576,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsBooster</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Pearl</li>
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Alluring</defName>
@@ -724,9 +736,12 @@
 				<listOrder>1012</listOrder>
 			</li>
 		</comps>
-		<tradeTags inherit="false">
+		<tradeTags Inherit="False">
 			<li>Moyo_DrugsPearl</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Pearl</li>
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Numb</defName>

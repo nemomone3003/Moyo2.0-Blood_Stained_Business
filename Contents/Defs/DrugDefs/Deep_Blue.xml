@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<ThingCategoryDef>
+		<defName>Moyo2_DrugCategory</defName>
+		<label>deep blue</label>
+		<parent>Drugs</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo2_DrugCategory_Booster</defName>
+		<label>deep blue-booster</label>
+		<parent>Moyo2_DrugCategory</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo2_DrugCategory_Pearl</defName>
+		<label>deep blue-pearl</label>
+		<parent>Moyo2_DrugCategory</parent>
+	</ThingCategoryDef>
 	<!-- 혈액팩 -->
 	<ThingDef ParentName="ResourceBase">
 		<defName>BlueBloodBag</defName>
@@ -166,6 +181,9 @@
 				<Intellectual>5</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory</li>
+		</thingCategories>		
 	</ThingDef>
 	<!-- 딥블루 축적 -->
 	<HediffDef ParentName="DrugToleranceBase">
