@@ -200,21 +200,93 @@
 							<replacement>
 								<rotation>South</rotation>
 								<tag>LeftEye</tag>
-								<offset>(0, 0, -1)</offset>
 							</replacement>
-							<!-- <offsets> -->
-							<!-- </offsets> -->
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>							
 						</li>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<replacement>
+								<rotation>West</rotation>
+								<tag>LeftEye</tag>
+							</replacement>
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>								
+						</li>						
 						<li>
 							<originalTag>RightEye</originalTag>
 							<replacement>
 								<rotation>South</rotation>
 								<tag>RightEye</tag>
-								<offset>(0, 0, -1)</offset>
 							</replacement>
-							<!-- <offsets> -->
-							<!-- </offsets> -->
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>	
 						</li>
+						<li>
+							<originalTag>RightEye</originalTag>
+							<replacement>
+								<rotation>East</rotation>
+								<tag>RightEye</tag>
+							</replacement>
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>	
+						</li>						
 					</anchorReplacements>
 					<bodyAddons>
 						<!-- 꼬리 -->
