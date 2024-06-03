@@ -50,6 +50,7 @@
 			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
 			<recipeUsers Inherit="False">
 				<li>TableMachining</li>
+				<li>Moyo2_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>

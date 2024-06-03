@@ -244,7 +244,7 @@
 	<ThingDef ParentName="MoyoBaseMeleeLMR">
 		<defName>Moyo2_LMRGlaive</defName>
 		<label>laminar glaive</label>
-		<description>dummy text.</description>
+		<description>A large spear made with abyssteel. It is large and heavy, but easy to handle thanks to a powerful laminar force field generator. Additionally, using the force field, you can fix the angle of the strike for a much stronger blow, capable of even splitting diving suit helmets. With a brief charge, you can unleash a devastating cleaving attack. or so they says in RnD.\n\nDue to its intimidating appearance, this weapon is issued to the guards of the council.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_Glaive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -296,8 +296,8 @@
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Plasteel>25</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<!-- - -->
 		<weaponTags>
@@ -309,7 +309,7 @@
 	<ThingDef ParentName="MoyoBaseMeleeLMR">
 		<defName>Moyo2_LMRFist</defName>
 		<label>depthtool power gauntlet</label>
-		<description>dummy text.</description>
+		<description>A large gauntlet made with abyssteel. It can crumple steel plates like paper using hydraulic systems and a laminar force field generator. It is ideal for clearing obstacles such as walls and people in front of you. Just charge it briefly and strike.\n\nThis equipment is compatible with diving suits, and bare-handed use is not recommended. But of course, not many people adhere to this guideline.</description>
 		<graphicData>
 			<texPath>Weapon/LMR_Gauntlet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -356,8 +356,8 @@
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Plasteel>25</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<!-- - -->
 		<weaponTags>

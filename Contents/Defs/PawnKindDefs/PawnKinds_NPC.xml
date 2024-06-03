@@ -599,7 +599,7 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>		
 	</PawnKindDef>
-	<PawnKindDef ParentName="Moyo2_NPCDiverLight">
+	<PawnKindDef ParentName="Moyo2_NPCDiverheavy">
 		<defName>Moyo2_NPCDiverCrusher</defName>
 		<label>moyo combat diver crusher</label>
 		<apparelTags>

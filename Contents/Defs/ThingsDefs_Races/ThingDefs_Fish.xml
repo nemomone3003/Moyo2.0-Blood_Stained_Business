@@ -1,65 +1,124 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- 물고기 질식 -->
-	<HediffDef>
-		<defName>Moyo2_FishKill</defName>
-		<label>fishkill</label>
-		<description>fish dies./n/nUgeh</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<lethalSeverity>1</lethalSeverity>
+	<!-- 물고기 고기 베이스 -->
+	<ThingDef ParentName="OrganicProductBase" Name="Moyo2_MeatBase" Abstract="True">
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<!-- Can be used like meat in recipes -->
+			<Mass>0.03</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>9999</severityPerDay>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-		<stages>
-			<li>
-				<becomeVisible>false</becomeVisible>
-			</li>
-		</stages>
-	</HediffDef>
-	<HediffGiverSetDef>
-		<defName>Moyo2_FishKillGiver</defName>
-		<hediffGivers>
-			<li Class="HediffGiver_Random">
-				<hediff>Moyo2_FishKill</hediff>
-				<mtbDays>0.001</mtbDays>
-			</li>
-		</hediffGivers>
-	</HediffGiverSetDef>
-
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>CarnivoreAnimal</foodType>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+	<!-- 물고기 고기 -->
+	<ThingDef ParentName="Moyo2_MeatBase">
+		<defName>Moyo2_TunaMeat</defName>
+		<label>tuna fillet</label>
+		<description>fillet of a tidal tuna. Its considered a delicacy in the lighthouse.</description>
+		<graphicData>
+			<texPath>Item/TunaMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.2</drawSize> 
+		</graphicData>
+		<statBases>
+			<MarketValue>2.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<tasteThought>Moyo2_AteRawTuna</tasteThought>
+		</ingestible>		
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_MeatBase">
+		<defName>Moyo2_KrakenMeat</defName>
+		<label>kraken chop</label>
+		<description>chopped demi kraken. Even Moyos won't try eating this raw.</description>
+		<graphicData>
+			<texPath>Item/KrakenChop</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.2</drawSize> 
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+	</ThingDef>	
+	<!-- 물고기 질식 -->
 	<Moyo2.FishDef Name="FishBase" Abstract="True" ParentName="ResourceBase">
 		<thingClass>Moyo2.ThingClass_Fish</thingClass>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>CorpsesAnimal</li>
+		</thingCategories>
 		<stackLimit>1</stackLimit>
 		<statBases>
 			<Nutrition>1</Nutrition>
 		</statBases>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<ingestible>
 			<foodType>Corpse</foodType>
 			<preferability>DesperateOnly</preferability>
+			<tasteThought>AteCorpse</tasteThought>
 		</ingestible>
 	</Moyo2.FishDef>
-
 	<!-- 해초 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_DepthWeedCorpse</defName>
 		<label>depthweed</label>
-		<description>dummy text.</description>
+		<description>A cultivated variation of seaweed that grows in the deep sea. It is the main raw material for Depthweave and must be processed before use.\n\nThis seaweed is cultivated in deep-sea hydrothermal vents and can also be grown indoors with appropriate facilities.</description>
 		<graphicData>
 			<texPath>Item/Fish/MoyoFish_Plant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>3</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
+		<thingCategories Inherit="False">
+			<li>FoodRaw</li>
+		</thingCategories>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>10</Mass>
 			<MarketValue>300</MarketValue>
 		</statBases>
+		<ingestible>
+			<foodType>Plant</foodType>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
 		<butcherProducts>
 			<Moyo2_Depthweed>240</Moyo2_Depthweed>
 		</butcherProducts>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Plant</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
@@ -68,148 +127,72 @@
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<!-- 참치 -->
-	<!--<Moyo2.FishDef ParentName="FishBase">
-		<defName>Moyo2_Tuna</defName>
-		<label>tidal tuna</label>
-		<description>dummy text.</description>
+	<Moyo2.FishDef ParentName="FishBase">
+		<defName>Moyo2_TunaCorpse</defName>
+		<label>tidal tuna corpse</label>
+		<description>A domesticated tuna. Through modifications, many of the natural needs of this creature have been suppressed, allowing it to live comfortably even in small tanks. Due to its excellent characteristics, many tidal tunas are being farmed in lighthouses. With their population exploding, they surely have become a biologically thriving species.\n\nThis creature is not suitable as a pet. It will die if taken out of the water, so please do not ask obvious questions.</description>
+		<graphicData>
+			<texPath>Item/Fish/MoyoFish_Tuna</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.7</drawSize>
+		</graphicData>
 		<statBases>
-			<MoveSpeed>0.1</MoveSpeed>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10</Mass>
 			<MarketValue>300</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
 		</statBases>
-		<race>
-			<body>Moyo2_FishBody</body>
-			<hasGenders>false</hasGenders>
-			<baseBodySize>1.6</baseBodySize>
-			<baseHungerRate>0.01</baseHungerRate>
-			<baseHealthScale>1.5</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0</wildness>
-			<trainability>None</trainability>
-			<meatLabel>tuna fillet</meatLabel>
-			<lifeExpectancy>0.01</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-					<soundDeath>Pawn_Muffalo_Death</soundDeath>
-					<soundCall>Pawn_Muffalo_Call</soundCall>
-					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<hediffGiverSets>
-				<li>OrganicStandard</li>
-				<li>Moyo2_FishKillGiver</li>
-			</hediffGiverSets>
-		</race>
+		<butcherProducts>
+			<Moyo2_TunaMeat>320</Moyo2_TunaMeat>
+		</butcherProducts>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.7</drawSize>
 			</graphicData>
-			<pawnKindDef>Moyo2_FishKindTuna</pawnKindDef>
 		</fishTankSettings>
 	</Moyo2.FishDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Moyo2_FishKindTuna</defName>
-		<label>tidal tuna</label>
-		<race>Moyo2_Tuna</race>
-		<combatPower>75</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Item/Fish/MoyoFish_Tuna</texPath>
-					<drawSize>2.7</drawSize>
-					<color>(255, 255, 255)</color>
-					<shadowData>
-						<volume>(0.8, 0.6, 0.6)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Item/Fish/MoyoFish_TunaBone</texPath>
-					<drawSize>2.7</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
 	<!-- 데미크라켄 -->
-	<!--<Moyo2.FishDef ParentName="AnimalThingBase">
-		<defName>Moyo2_DemiKraken</defName>
-		<label>demi kraken</label>
-		<description>dummy text.</description>
+	<Moyo2.FishDef ParentName="FishBase">
+		<defName>Moyo2_DemiKrakenCorpse</defName>
+		<label>demi kraken corpse</label>
+		<description>A domesticated deep-sea octopus, genetically modified to barely function as a living organism. Useful chemicals are synthesized within this creature's body.\n\nRaising this creature as a pet is highly discouraged. There are much better, miniaturized products available for pet purposes.</description>
+		<graphicData>
+			<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
 		<statBases>
-			<MoveSpeed>0.1</MoveSpeed>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10</Mass>
 			<MarketValue>300</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
 		</statBases>
-		<race>
-			<body>Moyo2_CephalopodBody</body>
-			<hasGenders>false</hasGenders>
-			<baseBodySize>1.45</baseBodySize>
-			<baseHungerRate>0.01</baseHungerRate>
-			<baseHealthScale>1.5</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0</wildness>
-			<trainability>None</trainability>
-			<meatLabel>kraken chop</meatLabel>
-			<lifeExpectancy>0.01</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-					<soundDeath>Pawn_Muffalo_Death</soundDeath>
-					<soundCall>Pawn_Muffalo_Call</soundCall>
-					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<hediffGiverSets>
-				<li>OrganicStandard</li>
-				<li>Moyo2_FishKillGiver</li>
-			</hediffGiverSets>
-		</race>
 		<butcherProducts>
+			<Moyo2_KrakenMeat>240</Moyo2_KrakenMeat>
 			<Neutroamine>10</Neutroamine>
 		</butcherProducts>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.2</drawSize>
 			</graphicData>
-			<pawnKindDef>Moyo2_FishKindDemiKraken</pawnKindDef>
 		</fishTankSettings>
 	</Moyo2.FishDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Moyo2_FishKindDemiKraken</defName>
-		<label>demi kraken</label>
-		<race>Moyo2_DemiKraken</race>
-		<combatPower>75</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
-					<drawSize>2.2</drawSize>
-					<color>(255, 255, 255)</color>
-					<shadowData>
-						<volume>(0.8, 0.6, 0.6)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Item/Fish/MoyoFish_DemiBone</texPath>
-					<drawSize>2.2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
 </Defs>

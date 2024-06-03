@@ -91,6 +91,9 @@
 		<label>blue serum</label>
 		<description>Deepblue extracted from moyo blood. Its useful in various area of pharmaceutical and medical purposes.\n\nInjected to lifeforms other than moyos, it will slowly cause a change in metabolism eventually causing permanent dependancy to deepblue. It doesn't affect moyos in any significant ways. So don't waste it on moyos.</description>
 		<descriptionHyperlinks>
+			<ThingDef>Moyo2_DeepBlueExtracter_Crude</ThingDef>
+			<ThingDef>Moyo2_DeepBlueExtracter</ThingDef>
+			<ThingDef>Moyo2_DeepBlueExtracter_Abysstech</ThingDef>
 			<ThingDef>BlueBloodBag</ThingDef>
 			<HediffDef>DeepBlueTolerance</HediffDef>
 			<HediffDef>DeepBlueAddiction</HediffDef>

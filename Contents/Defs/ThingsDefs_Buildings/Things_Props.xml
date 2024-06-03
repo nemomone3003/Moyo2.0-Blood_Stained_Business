@@ -67,6 +67,7 @@
 			<shaderType>Cutout</shaderType>
 			<drawSize>4</drawSize>
 		</graphicData>
+		<tickerType>Rare</tickerType>
 		<statBases>
 			<MaxHitPoints>9600</MaxHitPoints>
 		</statBases>
@@ -82,13 +83,13 @@
 		</building>
 		<comps>
 			<li Class="CompProperties_Spawner">
-				<requiresPower>false</requiresPower>
 				<thingToSpawn>Moyo2_HadalShard</thingToSpawn>
 				<spawnCount>15</spawnCount>
 				<spawnIntervalRange>
-					<min>600000</min>
+					<min>599999</min>
 					<max>600000</max>
 				</spawnIntervalRange>
+				<spawnForbidden>true</spawnForbidden>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 			</li>
 			<li Class="CompProperties_Glower">

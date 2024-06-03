@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>Moyo2_AteRawTuna</defName>
+    <thoughtClass>Thought_FoodEaten</thoughtClass>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingGenes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+    </nullifyingGenes>
+    <stages>
+      <li>
+        <label>ate raw food</label>
+        <description>I had to eat raw food. We should be cooking that kind of food before eating it. We're not animals.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Moyo2_AteRawTuna_Moyo</defName>
+    <thoughtClass>Thought_FoodEaten</thoughtClass>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate delicate raw food</label>
+        <description>I ate a delicate food, the tender flesh melts in my mouth.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>  
+  <ThoughtDef>
+    <defName>Moyo2_AteRawKraken</defName>
+    <thoughtClass>Thought_FoodEaten</thoughtClass>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingGenes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+    </nullifyingGenes>
+    <stages>
+      <li>
+        <label>ate unpleasant raw food</label>
+        <description>I ate a raw and disgusting food. Its chewy outside and slimy inside, I hope to never eat it again.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

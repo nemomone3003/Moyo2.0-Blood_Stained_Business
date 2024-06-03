@@ -39,6 +39,8 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>		
 			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
 			<ingestSound>Ingest_Inject</ingestSound>
@@ -166,6 +168,8 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>			
 			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
 			<ingestSound>Ingest_Inject</ingestSound>
@@ -321,6 +325,8 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>			
 			<drugCategory>Hard</drugCategory>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">

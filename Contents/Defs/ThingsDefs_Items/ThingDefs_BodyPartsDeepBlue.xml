@@ -85,7 +85,7 @@
 		</tags>
 	</HediffDef>
 	<ThoughtDef>
-		<defName>Thought_DeepBlueExtracter</defName>
+		<defName>Thought_Moyo2_DeepBlueExtracter</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>Moyo2_DeepBlueExtracter</hediff>
 		<validWhileDespawned>true</validWhileDespawned>

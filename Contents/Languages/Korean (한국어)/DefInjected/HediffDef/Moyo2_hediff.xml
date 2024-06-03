@@ -1,168 +1,154 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!--Original=deepblue buildup-->
-  <DeepBlueTolerance.label>딥블루 축적</DeepBlueTolerance.label>
-  <!--Original=Injested deepblue accumulated inside the body. It will not decay by natural means and needs special enzyme to clear.-->
-  <DeepBlueTolerance.description>딥블루가 몸에 축적되고 있습니다. 분해를 위해선 특수한 효소가 필요합니다.</DeepBlueTolerance.description>
-  <!--Original=deepblue buildup-->
-  <DeepBlueTolerance.comps.1.discoverLetterLabel>d딥블루 축적</DeepBlueTolerance.comps.1.discoverLetterLabel>
-  <!--Original={0} has injested a deepblue substance.\n\n[PAWN_pronoun] will develop deepblueーrelated symtoms with 1~2 more injests.-->
-  <DeepBlueTolerance.comps.1.discoverLetterText>{0}이 딥블루 성분을 섭취했습니다.\n\n[PAWN_pronoun]는 1~2회의 추가 투여 이후 딥블루와 관련된 증상을 보일 것입니다.</DeepBlueTolerance.comps.1.discoverLetterText>
-  <!--Original=deepblue instability-->
-  <DeepBlueAddiction.label>딥블루 불안정성</DeepBlueAddiction.label>
-  <!--Original=Injested deepblue acts as a part of its host&apos;s metabolism. Deepblue decays over time lowering its stability and needs replacements for the body to work as normal.-->
-  <DeepBlueAddiction.description>딥블루가 신진대사에 깊이 관여하고 있습니다. 딥블루는 시간이 지남에 따라 불안정해지며 이를 보완하기 위한 추가적인 투여를 필요로 합니다.</DeepBlueAddiction.description>
-  <!--Original=Deepblue stability-->
-  <DeepBlueAddiction.comps.0.discoverLetterLabel>딥블루 불안정성</DeepBlueAddiction.comps.0.discoverLetterLabel>
-  <!--Original={0} now requires deepblue for the body to function properly .\n\n[PAWN_pronoun] now has a need for deepblue, visible on [PAWN_pronoun] Needs tab. [PAWN_pronoun] will automatically consume the drug to fulfil [PAWN_pronoun] need. If [PAWN_pronoun] cannot get any deepblue, [PAWN_pronoun] will suffer from mental deterioration.-->
-  <DeepBlueAddiction.comps.0.discoverLetterText>{0}은 이제 정상적인 신체 기능을 위해 딥블루를 필요로 합니다.\n\n딥블루를 주기적으로 투여하지 않으면 정신적인 피해에 시달릴 것입니다.</DeepBlueAddiction.comps.0.discoverLetterText>
-  <!--Original=Deepblue overflow-->
-  <DeepBlueOverFlow.label>딥블루 과다</DeepBlueOverFlow.label>
-  <!--Original=An overflow of deepblue in a moyo&apos;s body. They will not produce more deepblue until the effect dissapears.-->
-  <DeepBlueOverFlow.description>딥블루 과다로 인해 해소되기 전까지 추가적인 딥블루 생산이 멈추었습니다.</DeepBlueOverFlow.description>
-  <!--Original=active medi booster-->
-  <DBHediff_Medi.label>메디 부스터</DBHediff_Medi.label>
-  <!--Original=active medi booster-->
-  <DBHediff_Medi.labelNoun>메디 부스터</DBHediff_Medi.labelNoun>
-  <!--Original=Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.-->
-  <DBHediff_Medi.description>혈액에 메디 부스터의 활성성분이 존재합니다. 신체의 회복능력을 강화해 상처와 질병을 빠르게 극복할 수 있도록 도와줍니다. 중복해서 복용하면 효과가 더욱 좋으며 지속적으로 투여할 시 흉터 역시 치유가 가능합니다.\n\n부상 회복 속도: 150%~300%\n\n항체 생성 속도: +50%~+200%\n\n의식: 100%~60%\n\n영구적 흉터 제거 가능</DBHediff_Medi.description>
-  <DBHediff_Medi.stages.low_potency.label>약한 효과</DBHediff_Medi.stages.low_potency.label>
-  <DBHediff_Medi.stages.medium_potency.label>적당한 효과</DBHediff_Medi.stages.medium_potency.label>
-  <DBHediff_Medi.stages.high_potency.label>강한 효과</DBHediff_Medi.stages.high_potency.label> 
-  <!--Original=high on orca booster-->
-  <DBHediff_Orca.label>오르카 부스터</DBHediff_Orca.label>
-  <!--Original=a orca booster high-->
-  <DBHediff_Orca.labelNoun>오르카 부스터</DBHediff_Orca.labelNoun>
-  <!--Original=Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.-->
-  <DBHediff_Orca.description>혈액에 오르카 부스터의 활성성분이 존재합니다. 근접 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다.\n\n근접 명중률: +2~+5\n\n근접 회피율:+2~+5\n\n받는 피해 계수: +0%~-15%\n\n의식: +15%~30%\n\n이동: +40%~60%</DBHediff_Orca.description>
-  <DBHediff_Orca.stages.low_potency.label>약한 효과</DBHediff_Orca.stages.low_potency.label>
-  <DBHediff_Orca.stages.medium_potency.label>적당한 효과</DBHediff_Orca.stages.medium_potency.label>
-  <DBHediff_Orca.stages.high_potency.label>강한 효과</DBHediff_Orca.stages.high_potency.label>   
-  <!--Original=high on hydra booster-->
-  <DBHediff_Hydra.label>히드라 부스터</DBHediff_Hydra.label>
-  <!--Original=a hydra booster high-->
-  <DBHediff_Hydra.labelNoun>히드라 부스터</DBHediff_Hydra.labelNoun>
-  <!--Original=Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.-->
-  <DBHediff_Hydra.description>혈액에 히드라 부스터의 활성성분이 존재합니다. 원거리 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다.\n\n조준 지연: -10%~-20%\n\n원거리 재사용 대기시간 배수: -10%~-20%\n\n의식: +15%~30%\n\n이동: +5%~20%\n\n시력: +15%~30%</DBHediff_Hydra.description>
-  <DBHediff_Hydra.stages.low_potency.label>약한 효과</DBHediff_Hydra.stages.low_potency.label>
-  <DBHediff_Hydra.stages.medium_potency.label>적당한 효과</DBHediff_Hydra.stages.medium_potency.label>
-  <DBHediff_Hydra.stages.high_potency.label>강한 효과</DBHediff_Hydra.stages.high_potency.label>   
-  <!--Original=high on joypearl-->
-  <DBHediff_Joy.label>조이펄</DBHediff_Joy.label>
-  <!--Original=a joypearl high-->
-  <DBHediff_Joy.labelNoun>조이펄</DBHediff_Joy.labelNoun>
-  <!--Original=Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
-  <DBHediff_Joy.description>혈액에 조이펄의 활성성분이 존재합니다. 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n무드 효과: +18~+77\n\n통증: *100%~*10%\n\n의식: +0%~-35%</DBHediff_Joy.description>
-  <DBHediff_Joy.stages.content.label>만족함</DBHediff_Joy.stages.content.label>
-  <DBHediff_Joy.stages.joy.label>즐거움</DBHediff_Joy.stages.joy.label>
-  <DBHediff_Joy.stages.glee.label>기쁨</DBHediff_Joy.stages.glee.label>
-  <DBHediff_Joy.stages.ecstatic.label>짜릿함</DBHediff_Joy.stages.ecstatic.label>
-  <DBHediff_Joy.stages.euphoria.label>황홀함</DBHediff_Joy.stages.euphoria.label>
-  <!--Original=high on crystal pearl-->
-  <DBHediff_Crystal.label>크리스탈 펄</DBHediff_Crystal.label>
-  <!--Original=a crystal pearl high-->
-  <DBHediff_Crystal.labelNoun>크리스탈 펄</DBHediff_Crystal.labelNoun>
-  <!--Original=Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
-  <DBHediff_Crystal.description>혈액에 크리스탈 펄의 활성성분이 존재합니다.  작업 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n전역 작업 속도: +15%~+75%\n\n정신이상 임계치: +0~+15%\n\n전역 학습 속도: +0%~-80%\n\n의식: +0%~+35%</DBHediff_Crystal.description>
-  <DBHediff_Crystal.stages.fading.label>희미함</DBHediff_Crystal.stages.fading.label>
-  <DBHediff_Crystal.stages.low_potency.label>약한 효과</DBHediff_Crystal.stages.low_potency.label>
-  <DBHediff_Crystal.stages.medium_potency.label>적당한 효과</DBHediff_Crystal.stages.medium_potency.label>
-  <DBHediff_Crystal.stages.high_potency.label>강한 효과</DBHediff_Crystal.stages.high_potency.label>
-  <DBHediff_Crystal.stages.extreme_potency.label>매우 강한 효과</DBHediff_Crystal.stages.extreme_potency.label>  
-  <!--Original=high on thinker pearl-->
-  <DBHediff_Thinker.label>싱커 펄</DBHediff_Thinker.label>
-  <!--Original=a thinker pearl high-->
-  <DBHediff_Thinker.labelNoun>싱커 펄</DBHediff_Thinker.labelNoun>
-  <!--Original=Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
-  <DBHediff_Thinker.description>혈액에 싱커 펄의 활성성분이 존재합니다. 학습 능률을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n연구 속도: +10%~+45%\n\n해킹 속도: +5%~+55%\n\n전역 학습 속도: +10~+65%\n\n정신이상 임계치: +0~+15%\n\의식: +0~+20%</DBHediff_Thinker.description>
-  <DBHediff_Thinker.stages.fading.label>희미함</DBHediff_Thinker.stages.fading.label>
-  <DBHediff_Thinker.stages.low_potency.label>약한 효과</DBHediff_Thinker.stages.low_potency.label>
-  <DBHediff_Thinker.stages.medium_potency.label>적당한 효과</DBHediff_Thinker.stages.medium_potency.label>
-  <DBHediff_Thinker.stages.high_potency.label>강한 효과</DBHediff_Thinker.stages.high_potency.label>
-  <DBHediff_Thinker.stages.extreme_potency.label>매우 강한 효과</DBHediff_Thinker.stages.extreme_potency.label>  
-  <!--Original=high on alluring pearl-->
-  <DBHediff_Alluring.label>알루링 펄</DBHediff_Alluring.label>
-  <!--Original=a alluring pearl high-->
-  <DBHediff_Alluring.labelNoun>알루링 펄</DBHediff_Alluring.labelNoun>
-  <!--Original=Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
-  <DBHediff_Alluring.description>혈액에 알루링 펄의 활성성분이 존재합니다. 매력을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n사회적 영향력: +10%~+55%\n\n매력: +0~+2\n\n정신이상 임계치: +0~+15%\n\n가벼운 정신불안 가능</DBHediff_Alluring.description>
-  <DBHediff_Alluring.stages.fading.label>희미함</DBHediff_Alluring.stages.fading.label>
-  <DBHediff_Alluring.stages.low_potency.label>약한 효과</DBHediff_Alluring.stages.low_potency.label>
-  <DBHediff_Alluring.stages.medium_potency.label>적당한 효과</DBHediff_Alluring.stages.medium_potency.label>
-  <DBHediff_Alluring.stages.high_potency.label>강한 효과</DBHediff_Alluring.stages.high_potency.label>
-  <DBHediff_Alluring.stages.extreme_potency.label>매우 강한 효과</DBHediff_Alluring.stages.extreme_potency.label>  
-  <!--Original=high on numb pearl-->
-  <DBHediff_Numb.label>넘 펄</DBHediff_Numb.label>
-  <!--Original=a numb pearl high-->
-  <DBHediff_Numb.labelNoun>넘 펄</DBHediff_Numb.labelNoun>
-  <!--Original=Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
-  <DBHediff_Numb.description>혈액에 조이펄의 활성성분이 존재합니다. 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n통증: *70%~*0%\n\n의식: +0%~-30%\n\n기억 상실 가능\n\n마비성 동면 가능</DBHediff_Numb.description>
-  <DBHediff_Numb.stages.fading.label>희미함</DBHediff_Numb.stages.fading.label>
-  <DBHediff_Numb.stages.low_potency.label>약한 효과</DBHediff_Numb.stages.low_potency.label>
-  <DBHediff_Numb.stages.medium_potency.label>적당한 효과</DBHediff_Numb.stages.medium_potency.label>
-  <DBHediff_Numb.stages.high_potency.label>강한 효과</DBHediff_Numb.stages.high_potency.label>
-  <DBHediff_Numb.stages.extreme_potency.label>매우 강한 효과</DBHediff_Numb.stages.extreme_potency.label>    
-  <!--Original=numbing hibernation-->
-  <DBHediff_NumbDown.label>마비성 동면</DBHediff_NumbDown.label>
-  <!--Original=a numbing hibernation-->
-  <DBHediff_NumbDown.labelNoun>마비성 동면</DBHediff_NumbDown.labelNoun>
-  <!--Original=Over consuming numb pearls a little too much has led the body extra numb to stimulation. This includes signals from the brain. Until the effect clears they will sleep soundly for a while. At the very least, they require less food.-->
-  <DBHediff_NumbDown.description>넘 펄을 약간 과도하게 섭취하여 내외부의 자극에 지나치게 무감각해졌습니다. 뇌로부터 오는 신호에 대해서도요. 약물의 효과가 약해져 다시 정신을 차릴 때까지 한동안 잠을 자고 있을 것입니다. 적어도 밥은 덜 먹네요.</DBHediff_NumbDown.description>
-  <!--Original=blood loss-->
-  <Moyo2_BloodLoss.label>출혈</Moyo2_BloodLoss.label>
-  <!--Original=A reduction in the normal blood volume. Minor blood loss has relatively mild effects, but when blood loss becomes severe, oxygen transport becomes badly impaired and the victim loses the ability to move. Extreme blood loss leads to death.
+	<!--Original=deepblue buildup-->
+	<DeepBlueTolerance.label>딥블루 축적</DeepBlueTolerance.label>
+	<!--Original=Injested deepblue accumulated inside the body. It will not decay by natural means and needs special enzyme to clear.-->
+	<DeepBlueTolerance.description>딥블루가 몸에 축적되고 있습니다. 분해를 위해선 특수한 효소가 필요합니다.</DeepBlueTolerance.description>
+	<!--Original=deepblue buildup-->
+	<DeepBlueTolerance.comps.1.discoverLetterLabel>딥블루 축적</DeepBlueTolerance.comps.1.discoverLetterLabel>
+	<!--Original={0} has injested a deepblue substance.\n\n[PAWN_pronoun] will develop deepblueーrelated symtoms with 1~2 more injests.-->
+	<DeepBlueTolerance.comps.1.discoverLetterText>{0}이 딥블루 성분을 섭취했습니다.\n\n[PAWN_pronoun]는 1~2회의 추가 투여 이후 딥블루와 관련된 증상을 보일 것입니다.</DeepBlueTolerance.comps.1.discoverLetterText>
+	<!--Original=deepblue instability-->
+	<DeepBlueAddiction.label>딥블루 불안정성</DeepBlueAddiction.label>
+	<!--Original=Injested deepblue acts as a part of its host&apos;s metabolism. Deepblue decays over time lowering its stability and needs replacements for the body to work as normal.-->
+	<DeepBlueAddiction.description>딥블루가 신진대사에 깊이 관여하고 있습니다. 딥블루는 시간이 지남에 따라 불안정해지며 이를 보완하기 위한 추가적인 투여를 필요로 합니다.</DeepBlueAddiction.description>
+	<!--Original=Deepblue stability-->
+	<DeepBlueAddiction.comps.0.discoverLetterLabel>딥블루 불안정성</DeepBlueAddiction.comps.0.discoverLetterLabel>
+	<!--Original={0} now requires deepblue for the body to function properly .\n\n[PAWN_pronoun] now has a need for deepblue, visible on [PAWN_pronoun] Needs tab. [PAWN_pronoun] will automatically consume the drug to fulfil [PAWN_pronoun] need. If [PAWN_pronoun] cannot get any deepblue, [PAWN_pronoun] will suffer from mental deterioration.-->
+	<DeepBlueAddiction.comps.0.discoverLetterText>{0}은 이제 정상적인 신체 기능을 위해 딥블루를 필요로 합니다.\n\n딥블루를 주기적으로 투여하지 않으면 정신적인 피해에 시달릴 것입니다.</DeepBlueAddiction.comps.0.discoverLetterText>
+	<!--Original=Deepblue overflow-->
+	<DeepBlueOverFlow.label>딥블루 과다</DeepBlueOverFlow.label>
+	<!--Original=An overflow of deepblue in a moyo&apos;s body. They will not produce more deepblue until the effect dissapears.-->
+	<DeepBlueOverFlow.description>딥블루 과다로 인해 해소되기 전까지 추가적인 딥블루 생산이 멈추었습니다.</DeepBlueOverFlow.description>
+	<!--Original=active medi booster-->
+	<DBHediff_Medi.label>메디 부스터</DBHediff_Medi.label>
+	<!--Original=active medi booster-->
+	<DBHediff_Medi.labelNoun>메디 부스터</DBHediff_Medi.labelNoun>
+	<!--Original=Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.-->
+	<DBHediff_Medi.description>혈액에 메디 부스터의 활성성분이 존재합니다. 신체의 회복능력을 강화해 상처와 질병을 빠르게 극복할 수 있도록 도와줍니다. 중복해서 복용하면 효과가 더욱 좋으며 지속적으로 투여할 시 흉터 역시 치유가 가능합니다.\n\n부상 회복 속도: 150%~300%\n\n항체 생성 속도: +50%~+200%\n\n의식: 100%~60%\n\n영구적 흉터 제거 가능</DBHediff_Medi.description>
+	<DBHediff_Medi.stages.low_potency.label>약한 효과</DBHediff_Medi.stages.low_potency.label>
+	<DBHediff_Medi.stages.medium_potency.label>적당한 효과</DBHediff_Medi.stages.medium_potency.label>
+	<DBHediff_Medi.stages.high_potency.label>강한 효과</DBHediff_Medi.stages.high_potency.label>
+	<!--Original=high on orca booster-->
+	<DBHediff_Orca.label>오르카 부스터</DBHediff_Orca.label>
+	<!--Original=a orca booster high-->
+	<DBHediff_Orca.labelNoun>오르카 부스터</DBHediff_Orca.labelNoun>
+	<!--Original=Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.-->
+	<DBHediff_Orca.description>혈액에 오르카 부스터의 활성성분이 존재합니다. 근접 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다.\n\n근접 명중률: +2~+5\n\n근접 회피율:+2~+5\n\n받는 피해 계수: +0%~-15%\n\n의식: +15%~30%\n\n이동: +40%~60%</DBHediff_Orca.description>
+	<DBHediff_Orca.stages.low_potency.label>약한 효과</DBHediff_Orca.stages.low_potency.label>
+	<DBHediff_Orca.stages.medium_potency.label>적당한 효과</DBHediff_Orca.stages.medium_potency.label>
+	<DBHediff_Orca.stages.high_potency.label>강한 효과</DBHediff_Orca.stages.high_potency.label>
+	<!--Original=high on hydra booster-->
+	<DBHediff_Hydra.label>히드라 부스터</DBHediff_Hydra.label>
+	<!--Original=a hydra booster high-->
+	<DBHediff_Hydra.labelNoun>히드라 부스터</DBHediff_Hydra.labelNoun>
+	<!--Original=Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.-->
+	<DBHediff_Hydra.description>혈액에 히드라 부스터의 활성성분이 존재합니다. 원거리 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다.\n\n조준 지연: -10%~-20%\n\n원거리 재사용 대기시간 배수: -10%~-20%\n\n의식: +15%~30%\n\n이동: +5%~20%\n\n시력: +15%~30%</DBHediff_Hydra.description>
+	<DBHediff_Hydra.stages.low_potency.label>약한 효과</DBHediff_Hydra.stages.low_potency.label>
+	<DBHediff_Hydra.stages.medium_potency.label>적당한 효과</DBHediff_Hydra.stages.medium_potency.label>
+	<DBHediff_Hydra.stages.high_potency.label>강한 효과</DBHediff_Hydra.stages.high_potency.label>
+	<!--Original=high on joypearl-->
+	<DBHediff_Joy.label>조이펄</DBHediff_Joy.label>
+	<!--Original=a joypearl high-->
+	<DBHediff_Joy.labelNoun>조이펄</DBHediff_Joy.labelNoun>
+	<!--Original=Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<DBHediff_Joy.description>혈액에 조이펄의 활성성분이 존재합니다. 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n무드 효과: +18~+77\n\n통증: *100%~*10%\n\n의식: +0%~-35%</DBHediff_Joy.description>
+	<DBHediff_Joy.stages.content.label>만족함</DBHediff_Joy.stages.content.label>
+	<DBHediff_Joy.stages.joy.label>즐거움</DBHediff_Joy.stages.joy.label>
+	<DBHediff_Joy.stages.glee.label>기쁨</DBHediff_Joy.stages.glee.label>
+	<DBHediff_Joy.stages.ecstatic.label>짜릿함</DBHediff_Joy.stages.ecstatic.label>
+	<DBHediff_Joy.stages.euphoria.label>황홀함</DBHediff_Joy.stages.euphoria.label>
+	<!--Original=high on crystal pearl-->
+	<DBHediff_Crystal.label>크리스탈 펄</DBHediff_Crystal.label>
+	<!--Original=a crystal pearl high-->
+	<DBHediff_Crystal.labelNoun>크리스탈 펄</DBHediff_Crystal.labelNoun>
+	<!--Original=Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<DBHediff_Crystal.description>혈액에 크리스탈 펄의 활성성분이 존재합니다.  작업 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n전역 작업 속도: +15%~+75%\n\n정신이상 임계치: +0~+15%\n\n전역 학습 속도: +0%~-80%\n\n의식: +0%~+35%</DBHediff_Crystal.description>
+	<DBHediff_Crystal.stages.fading.label>희미함</DBHediff_Crystal.stages.fading.label>
+	<DBHediff_Crystal.stages.low_potency.label>약한 효과</DBHediff_Crystal.stages.low_potency.label>
+	<DBHediff_Crystal.stages.medium_potency.label>적당한 효과</DBHediff_Crystal.stages.medium_potency.label>
+	<DBHediff_Crystal.stages.high_potency.label>강한 효과</DBHediff_Crystal.stages.high_potency.label>
+	<DBHediff_Crystal.stages.extreme_potency.label>매우 강한 효과</DBHediff_Crystal.stages.extreme_potency.label>
+	<!--Original=high on thinker pearl-->
+	<DBHediff_Thinker.label>싱커 펄</DBHediff_Thinker.label>
+	<!--Original=a thinker pearl high-->
+	<DBHediff_Thinker.labelNoun>싱커 펄</DBHediff_Thinker.labelNoun>
+	<!--Original=Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<DBHediff_Thinker.description>혈액에 싱커 펄의 활성성분이 존재합니다. 학습 능률을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n연구 속도: +10%~+45%\n\n해킹 속도: +5%~+55%\n\n전역 학습 속도: +10~+65%\n\n정신이상 임계치: +0~+15%\n\의식: +0~+20%</DBHediff_Thinker.description>
+	<DBHediff_Thinker.stages.fading.label>희미함</DBHediff_Thinker.stages.fading.label>
+	<DBHediff_Thinker.stages.low_potency.label>약한 효과</DBHediff_Thinker.stages.low_potency.label>
+	<DBHediff_Thinker.stages.medium_potency.label>적당한 효과</DBHediff_Thinker.stages.medium_potency.label>
+	<DBHediff_Thinker.stages.high_potency.label>강한 효과</DBHediff_Thinker.stages.high_potency.label>
+	<DBHediff_Thinker.stages.extreme_potency.label>매우 강한 효과</DBHediff_Thinker.stages.extreme_potency.label>
+	<!--Original=high on alluring pearl-->
+	<DBHediff_Alluring.label>알루링 펄</DBHediff_Alluring.label>
+	<!--Original=a alluring pearl high-->
+	<DBHediff_Alluring.labelNoun>알루링 펄</DBHediff_Alluring.labelNoun>
+	<!--Original=Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<DBHediff_Alluring.description>혈액에 알루링 펄의 활성성분이 존재합니다. 매력을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n사회적 영향력: +10%~+55%\n\n매력: +0~+2\n\n정신이상 임계치: +0~+15%\n\n가벼운 정신불안 가능</DBHediff_Alluring.description>
+	<DBHediff_Alluring.stages.fading.label>희미함</DBHediff_Alluring.stages.fading.label>
+	<DBHediff_Alluring.stages.low_potency.label>약한 효과</DBHediff_Alluring.stages.low_potency.label>
+	<DBHediff_Alluring.stages.medium_potency.label>적당한 효과</DBHediff_Alluring.stages.medium_potency.label>
+	<DBHediff_Alluring.stages.high_potency.label>강한 효과</DBHediff_Alluring.stages.high_potency.label>
+	<DBHediff_Alluring.stages.extreme_potency.label>매우 강한 효과</DBHediff_Alluring.stages.extreme_potency.label>
+	<!--Original=high on numb pearl-->
+	<DBHediff_Numb.label>넘 펄</DBHediff_Numb.label>
+	<!--Original=a numb pearl high-->
+	<DBHediff_Numb.labelNoun>넘 펄</DBHediff_Numb.labelNoun>
+	<!--Original=Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<DBHediff_Numb.description>혈액에 조이펄의 활성성분이 존재합니다. 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n통증: *70%~*0%\n\n의식: +0%~-30%\n\n기억 상실 가능\n\n마비성 동면 가능</DBHediff_Numb.description>
+	<DBHediff_Numb.stages.fading.label>희미함</DBHediff_Numb.stages.fading.label>
+	<DBHediff_Numb.stages.low_potency.label>약한 효과</DBHediff_Numb.stages.low_potency.label>
+	<DBHediff_Numb.stages.medium_potency.label>적당한 효과</DBHediff_Numb.stages.medium_potency.label>
+	<DBHediff_Numb.stages.high_potency.label>강한 효과</DBHediff_Numb.stages.high_potency.label>
+	<DBHediff_Numb.stages.extreme_potency.label>매우 강한 효과</DBHediff_Numb.stages.extreme_potency.label>
+	<!--Original=numbing hibernation-->
+	<DBHediff_NumbDown.label>마비성 동면</DBHediff_NumbDown.label>
+	<!--Original=a numbing hibernation-->
+	<DBHediff_NumbDown.labelNoun>마비성 동면</DBHediff_NumbDown.labelNoun>
+	<!--Original=Over consuming numb pearls a little too much has led the body extra numb to stimulation. This includes signals from the brain. Until the effect clears they will sleep soundly for a while. At the very least, they require less food.-->
+	<DBHediff_NumbDown.description>넘 펄을 약간 과도하게 섭취하여 내외부의 자극에 지나치게 무감각해졌습니다. 뇌로부터 오는 신호에 대해서도요. 약물의 효과가 약해져 다시 정신을 차릴 때까지 한동안 잠을 자고 있을 것입니다. 적어도 밥은 덜 먹네요.</DBHediff_NumbDown.description>
+	<!--Original=blood loss-->
+	<Moyo2_BloodLoss.label>딥블루 손실</Moyo2_BloodLoss.label>
+	<!--Original=A reduction in the normal blood volume. Minor blood loss has relatively mild effects, but when blood loss becomes severe, oxygen transport becomes badly impaired and the victim loses the ability to move. Extreme blood loss leads to death.
 \nBlood loss naturally recovers over time as the body slowly regenerates its blood supply.-->
-  <Moyo2_BloodLoss.description>혈액량이 정상 수준보다 적습니다. 경미한 혈액 손실은 비교적 가벼운 영향만 주지만, 손실량이 커지면 산소 공급력이 심각하게 저하되고 이동능력을 상실합니다. 극심한 혈액 손실은 사망으로 이어집니다.\n\n혈액 손실은 시간에 지나면서 점차 회복됩니다.</Moyo2_BloodLoss.description>
-  <!--Original=minor-->
-  <Moyo2_BloodLoss.stages.0.label>가벼움</Moyo2_BloodLoss.stages.0.label>
-  <!--Original=minor-->
-  <Moyo2_BloodLoss.stages.1.label>가벼움</Moyo2_BloodLoss.stages.1.label>
-  <!--Original=moderate-->
-  <Moyo2_BloodLoss.stages.2.label>진행됨</Moyo2_BloodLoss.stages.2.label>
-  <!--Original=severe-->
-  <Moyo2_BloodLoss.stages.3.label>심각함</Moyo2_BloodLoss.stages.3.label>
-  <!--Original=extreme-->
-  <Moyo2_BloodLoss.stages.4.label>극심함</Moyo2_BloodLoss.stages.4.label>
-  <!--Original=CartelHood-->
-  <Moyo2_CartelHood.label>카르텔 후드</Moyo2_CartelHood.label>
-  <!--Original=Debug.-->
-  <Moyo2_CartelHood.description>Debug.</Moyo2_CartelHood.description>
-  <!--Original=welding helmet-->
-  <Moyo2_EGHelmet.label>용접 헬멧</Moyo2_EGHelmet.label>
-  <!--Original=Debug.-->
-  <Moyo2_EGHelmet.description>Debug.</Moyo2_EGHelmet.description>
-  <!--Original=moyo tail prosthesis-->
-  <Moyo2_TailProsthesis.label>모요 꼬리 보철물</Moyo2_TailProsthesis.label>
-  <!--Original=a tail prosthesis-->
-  <Moyo2_TailProsthesis.labelNoun>꼬리 보철물</Moyo2_TailProsthesis.labelNoun>
-  <!--Original=A simple tail prosthesis for moyos. it doesnt repond fast but better than nothing.-->
-  <Moyo2_TailProsthesis.description>모요의 꼬리를 대체하기 위한 간단한 보철물입니다. 반응속도가 느리지만 없는것보다 낫습니다.</Moyo2_TailProsthesis.description>
-  <!--Original=moyo bionic tail-->
-  <Moyo2_TailBionic.label>모요 생체공학 꼬리</Moyo2_TailBionic.label>
-  <!--Original=a tail prosthesis-->
-  <Moyo2_TailBionic.labelNoun>생체공학 꼬리</Moyo2_TailBionic.labelNoun>
-  <!--Original=artificial tail made with advanced technology. This tail is indistinguishable by looks and its powerful servo combined with neural interface makes it superior compared to natural ones.-->
-  <Moyo2_TailBionic.description>발전된 기술로 만든 정교한 모요 꼬리입니다. 사용자의 신경과 연결되어 부드럽고도 힘있게 움직입니다. 외형도 실제의 것과 구분하기 힘듭니다.</Moyo2_TailBionic.description>
-  <!--Original=조잡한 딥블루 추출기-->
-  <Moyo2_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기</Moyo2_DeepBlueExtracter_Crude.label>
-  <!--Original=a 조잡한 딥블루 추출기-->
-  <Moyo2_DeepBlueExtracter_Crude.labelNoun>조잡한 딥블루 추출기</Moyo2_DeepBlueExtracter_Crude.labelNoun>
-  <!--Original=A 조잡한 딥블루 추출기 installed. It will produce deepblue every often.\n\nUnistalling will break the extracter.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body.-->
-  <Moyo2_DeepBlueExtracter_Crude.description>모요의 피에서 딥블루를 걸러내는 조잡한 장치입니다. 아프고 불편하기에 정말 돈이 궁한 모요들이 아닌 이상 이것을 직접 사용하려는 모요들은 거의 없습니다.</Moyo2_DeepBlueExtracter_Crude.description>
-  <!--Original=딥블루 추출기-->
-  <Moyo2_DeepBlueExtracter.label>딥블루 추출기</Moyo2_DeepBlueExtracter.label>
-  <!--Original=a 딥블루 추출기-->
-  <Moyo2_DeepBlueExtracter.labelNoun>딥블루 추출기</Moyo2_DeepBlueExtracter.labelNoun>
-  <!--Original=This device filters out deep blue from Moyo&apos;s blood. It&apos;s a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.-->
-  <Moyo2_DeepBlueExtracter.description>모요의 피에서 딥블루를 걸러내는 장치입니다. 적당한 가격에 불편감도 크지 않은 표준적인 제품입니다. 딥블루의 공급은 수요에 비해 항상 부족하고, 많은 모요들이 추가적인 수익을 얻고자 추출기를 사용하고 있습니다.</Moyo2_DeepBlueExtracter.description>
-  <!--Original=어비스테크 딥블루 추출기-->
-  <Moyo2_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기</Moyo2_DeepBlueExtracter_Abysstech.label>
-  <!--Original=an 어비스테크 딥블루 추출기-->
-  <Moyo2_DeepBlueExtracter_Abysstech.labelNoun>어비스테크 딥블루 추출기</Moyo2_DeepBlueExtracter_Abysstech.labelNoun>
-  <!--Original=This advanced device filters out deep blue from Moyo&apos;s blood. It boasts such comfortable usability that you won&apos;t feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering realーtime body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.-->
-  <Moyo2_DeepBlueExtracter_Abysstech.description>모요의 피에서 딥블루를 걸러내는 정교한 장치입니다. 아무것도 느껴지지 않을 정도의 편안한 사용감을 자랑합니다. 이 딥블루 추출기는 실시간 신체 모니터링, 혈액 내 노폐물 제거,  열량 섭취량 표시 등 딥블루 추출의 기능을 넘어 사용자의 건강한 라이프스타일을 만드는데에 일조합니다.\n\ 지금 바로 서비스에 가입하세요! *딥블루를 통해서도 지불이 가능합니다.</Moyo2_DeepBlueExtracter_Abysstech.description>
-  <!--Original=fishkill-->
-  <Moyo2_FishKill.label>생선죽음</Moyo2_FishKill.label>
-  <!--Original=fish dies./n/nUgeh-->
-  <Moyo2_FishKill.description>생선 죽는다./n/으엑.</Moyo2_FishKill.description>
+	<Moyo2_BloodLoss.description>출혈로 인해 딥블루 생산이 멈추었습니다.</Moyo2_BloodLoss.description>
+	<!--Original=CartelHood-->
+	<Moyo2_CartelHood.label>카르텔 후드</Moyo2_CartelHood.label>
+	<!--Original=Debug.-->
+	<Moyo2_CartelHood.description>Debug.</Moyo2_CartelHood.description>
+	<!--Original=welding helmet-->
+	<Moyo2_EGHelmet.label>용접 헬멧</Moyo2_EGHelmet.label>
+	<!--Original=Debug.-->
+	<Moyo2_EGHelmet.description>Debug.</Moyo2_EGHelmet.description>
+	<!--Original=moyo tail prosthesis-->
+	<Moyo2_TailProsthesis.label>모요 꼬리 보철물</Moyo2_TailProsthesis.label>
+	<!--Original=a tail prosthesis-->
+	<Moyo2_TailProsthesis.labelNoun>꼬리 보철물</Moyo2_TailProsthesis.labelNoun>
+	<!--Original=A simple tail prosthesis for moyos. it doesnt repond fast but better than nothing.-->
+	<Moyo2_TailProsthesis.description>모요의 꼬리를 대체하기 위한 간단한 보철물입니다. 반응속도가 느리지만 없는것보다 낫습니다.</Moyo2_TailProsthesis.description>
+	<!--Original=moyo bionic tail-->
+	<Moyo2_TailBionic.label>모요 생체공학 꼬리</Moyo2_TailBionic.label>
+	<!--Original=a tail prosthesis-->
+	<Moyo2_TailBionic.labelNoun>생체공학 꼬리</Moyo2_TailBionic.labelNoun>
+	<!--Original=artificial tail made with advanced technology. This tail is indistinguishable by looks and its powerful servo combined with neural interface makes it superior compared to natural ones.-->
+	<Moyo2_TailBionic.description>발전된 기술로 만든 정교한 모요 꼬리입니다. 사용자의 신경과 연결되어 부드럽고도 힘있게 움직입니다. 외형도 실제의 것과 구분하기 힘듭니다.</Moyo2_TailBionic.description>
+	<!--Original=조잡한 딥블루 추출기-->
+	<Moyo2_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기</Moyo2_DeepBlueExtracter_Crude.label>
+	<!--Original=a 조잡한 딥블루 추출기-->
+	<Moyo2_DeepBlueExtracter_Crude.labelNoun>조잡한 딥블루 추출기</Moyo2_DeepBlueExtracter_Crude.labelNoun>
+	<!--Original=A 조잡한 딥블루 추출기 installed. It will produce deepblue every often.\n\nUnistalling will break the extracter.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body.-->
+	<Moyo2_DeepBlueExtracter_Crude.description>모요의 피에서 딥블루를 걸러내는 조잡한 장치입니다. 아프고 불편하기에 정말 돈이 궁한 모요들이 아닌 이상 이것을 직접 사용하려는 모요들은 거의 없습니다.</Moyo2_DeepBlueExtracter_Crude.description>
+	<!--Original=딥블루 추출기-->
+	<Moyo2_DeepBlueExtracter.label>딥블루 추출기</Moyo2_DeepBlueExtracter.label>
+	<!--Original=a 딥블루 추출기-->
+	<Moyo2_DeepBlueExtracter.labelNoun>딥블루 추출기</Moyo2_DeepBlueExtracter.labelNoun>
+	<!--Original=This device filters out deep blue from Moyo&apos;s blood. It&apos;s a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.-->
+	<Moyo2_DeepBlueExtracter.description>모요의 피에서 딥블루를 걸러내는 장치입니다. 적당한 가격에 불편감도 크지 않은 표준적인 제품입니다. 딥블루의 공급은 수요에 비해 항상 부족하고, 많은 모요들이 추가적인 수익을 얻고자 추출기를 사용하고 있습니다.</Moyo2_DeepBlueExtracter.description>
+	<!--Original=어비스테크 딥블루 추출기-->
+	<Moyo2_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기</Moyo2_DeepBlueExtracter_Abysstech.label>
+	<!--Original=an 어비스테크 딥블루 추출기-->
+	<Moyo2_DeepBlueExtracter_Abysstech.labelNoun>어비스테크 딥블루 추출기</Moyo2_DeepBlueExtracter_Abysstech.labelNoun>
+	<!--Original=This advanced device filters out deep blue from Moyo&apos;s blood. It boasts such comfortable usability that you won&apos;t feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering realーtime body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.-->
+	<Moyo2_DeepBlueExtracter_Abysstech.description>모요의 피에서 딥블루를 걸러내는 정교한 장치입니다. 아무것도 느껴지지 않을 정도의 편안한 사용감을 자랑합니다. 이 딥블루 추출기는 실시간 신체 모니터링, 혈액 내 노폐물 제거,  열량 섭취량 표시 등 딥블루 추출의 기능을 넘어 사용자의 건강한 라이프스타일을 만드는데에 일조합니다.\n\ 지금 바로 서비스에 가입하세요! *딥블루를 통해서도 지불이 가능합니다.</Moyo2_DeepBlueExtracter_Abysstech.description>
 </LanguageData>

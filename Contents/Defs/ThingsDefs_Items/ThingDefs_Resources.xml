@@ -134,8 +134,8 @@
 	</ThingDef>
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>Moyo2_Depthweed</defName>
-		<label>depthweed</label>
-		<description>dummy text.</description>
+		<label>processed depthweed</label>
+		<description>A cut and organized pile of processed depthweed for easy storing. The fibers of this seaweed can be used to make depthweave, a common fiber in lighthouses. It can also be used as animal feed but it's very tough, so it may not digest well.\n\nInitially, Moyos primarily used synthread, but after the establishment of lighthouses, they began using Depthweave, which was more accessible. Which resulted to mass plantation, spreading depthweed to countless locations.</description>
 		<stackLimit>200</stackLimit>
 		<graphicData>
 			<texPath>Item/Depthweed</texPath>

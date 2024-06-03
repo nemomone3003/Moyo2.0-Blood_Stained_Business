@@ -193,6 +193,29 @@
 							</offsets>
 						</li>
 					</offsetDefaults>
+					<!-- 상처 앵커 오버라이드 -->
+					<anchorReplacements>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<replacement>
+								<rotation>South</rotation>
+								<tag>LeftEye</tag>
+								<offset>(0, 0, -1)</offset>
+							</replacement>
+							<!-- <offsets> -->
+							<!-- </offsets> -->
+						</li>
+						<li>
+							<originalTag>RightEye</originalTag>
+							<replacement>
+								<rotation>South</rotation>
+								<tag>RightEye</tag>
+								<offset>(0, 0, -1)</offset>
+							</replacement>
+							<!-- <offsets> -->
+							<!-- </offsets> -->
+						</li>
+					</anchorReplacements>
 					<bodyAddons>
 						<!-- 꼬리 -->
 						<li>
@@ -534,8 +557,8 @@
 									<extendedGraphics>
 										<Job For="LayDownResting">Moyo/Hair/MoyoBackHair</Job>
 										<Job For="Wait_Asleep">Moyo/Hair/MoyoBackHair</Job>
-									</extendedGraphics>									
-								</Hediff>								
+									</extendedGraphics>
+								</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -586,7 +609,7 @@
 										<Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job>
 										<Job For="LayDownAwake">Moyo_Dummy/Dummy</Job>
 										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDown">Moyo_Dummy/Dummy</Job>	
+										<Job For="LayDown">Moyo_Dummy/Dummy</Job>
 									</extendedGraphics>
 								</Hediff>
 								<Hediff For="Moyo2_CartelHood">
@@ -596,8 +619,8 @@
 										<Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job>
 										<Job For="LayDownAwake">Moyo_Dummy/Dummy</Job>
 										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDown">Moyo_Dummy/Dummy</Job>										
-									</extendedGraphics>									
+										<Job For="LayDown">Moyo_Dummy/Dummy</Job>
+									</extendedGraphics>
 								</Hediff>
 							</extendedGraphics>
 							<inFrontOfBody>true</inFrontOfBody>
@@ -622,7 +645,7 @@
 				<body>Moyo/Body/</body>
 				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
 				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
-				<stump>Moyo_Dummy/Dummy/</stump>
+				<stump>Moyo_Dummy/Dummy</stump>
 				<skinShader>Cutout</skinShader>
 				<apparel>
 					<individualPaths>
@@ -675,6 +698,12 @@
 				<cannotReceiveThoughts>
 					<li>SoakingWet</li>
 				</cannotReceiveThoughts>
+				<replacerList>
+					<li>
+						<original>Moyo2_AteRawTuna</original>
+						<replacer>Moyo2_AteRawTuna_Moyo</replacer>
+					</li>
+				</replacerList>
 			</thoughtSettings>
 			<styleSettings>
 				<li>
@@ -892,10 +921,10 @@
 		</statBases>
 		<butcherProducts>
 			<BlueBloodBag>2</BlueBloodBag>
-		</butcherProducts>		
+		</butcherProducts>
 		<!--=============================================================================================================================-->
 		<comps>
-			<li Class="HPF_Moyo.CompProperties_ResourceHarvestable">
+			<li Class="Moyo2_HPF.CompProperties_ResourceHarvestable">
 				<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
 				<saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey>
 				<thingDef>BlueSerum</thingDef>
@@ -903,7 +932,7 @@
 				<amount>2</amount>
 				<inspectText>BlueSerum</inspectText>
 				<constraints>
-					<li Class="HPF_Moyo.ConstraintPawnAgeOver">
+					<li Class="Moyo2_HPF.ConstraintPawnAgeOver">
 						<age>7</age>
 					</li>
 				</constraints>

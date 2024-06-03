@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- HPF.HPFJobDef is inheritance of JobDef with some additional arguments -->
-	<HPF_Moyo.HPFJobDef Name="HPFJobBase" Abstract="True">
-		<driverClass>HPF_Moyo.JobDriver_GatherPawnResources</driverClass>
+	<Moyo2_HPF.HPFJobDef Name="HPFJobBase" Abstract="True">
+		<driverClass>Moyo2_HPF.JobDriver_GatherPawnResources</driverClass>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 		<isSelf>false</isSelf>
-	</HPF_Moyo.HPFJobDef>
+	</Moyo2_HPF.HPFJobDef>
 	
-	<!-- <HPF_Moyo.HPFJobDef Name="HPFSelfJobBase" Abstract="True"> -->
-		<!-- <driverClass>HPF_Moyo.JobDriver_GatherPawnSelfResources</driverClass> -->
+	<!-- <Moyo2_HPF.HPFJobDef Name="HPFSelfJobBase" Abstract="True"> -->
+		<!-- <driverClass>Moyo2_HPF.JobDriver_GatherPawnSelfResources</driverClass> -->
 		<!-- <allowOpportunisticPrefix>true</allowOpportunisticPrefix> -->
 		<!-- <isSelf>true</isSelf> -->
-	<!-- </HPF_Moyo.HPFJobDef>	 -->
+	<!-- </Moyo2_HPF.HPFJobDef>	 -->
 	
-    <HPF_Moyo.HPFJobDef ParentName="HPFJobBase">
+    <Moyo2_HPF.HPFJobDef ParentName="HPFJobBase">
         <defName>ExtractDeepBlue_Job</defName>
 		<reportString>extracting Deep blue from TargetA.</reportString>
 		<totalWork>50</totalWork>
         <activeSkill>Medicine</activeSkill>
         <activeStat>MedicalTendSpeed</activeStat>
-    </HPF_Moyo.HPFJobDef>
+    </Moyo2_HPF.HPFJobDef>
 	
-    <!-- <HPF_Moyo.HPFJobDef ParentName="HPFSelfJobBase"> -->
+    <!-- <Moyo2_HPF.HPFJobDef ParentName="HPFSelfJobBase"> -->
         <!-- <defName>ExtractDeepBlue_JobSelf</defName> -->
 		<!-- <reportString>extracting Deep blue from TargetA.</reportString> -->
 		<!-- <totalWork>400</totalWork> -->
         <!-- <activeSkill>Medicine</activeSkill> -->
         <!-- <activeStat>MedicalTendSpeed</activeStat> -->
-    <!-- </HPF_Moyo.HPFJobDef>	 -->
+    <!-- </Moyo2_HPF.HPFJobDef>	 -->
 </Defs>
