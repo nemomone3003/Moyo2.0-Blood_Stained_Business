@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	<!--Original=depthweed-->
-	<Moyo2_DepthWeed.label>뎁스위드</Moyo2_DepthWeed.label>
+	<Moyo2_DepthWeedCorpse.label>뎁스위드</Moyo2_DepthWeedCorpse.label>
 	<!--Original=dummy text.-->
-	<Moyo2_DepthWeed.description>심해에 자생하는 해초의 개량종입니다. 뎁스위브의 주 원료이며 사용하기 전에 가공해야합니다.\n\n이 해초는 심해의 열수구에서 재배가 되고 있으며 적절한 설비가 갖춰질 경우 실내 재배도 가능합니다.</Moyo2_DepthWeed.description>
+	<Moyo2_DepthWeedCorpse.description>심해에 자생하는 해초의 개량종입니다. 뎁스위브의 주 원료이며 사용하기 전에 가공해야합니다.\n\n이 해초는 심해의 열수구에서 재배가 되고 있으며 적절한 설비가 갖춰질 경우 실내 재배도 가능합니다.</Moyo2_DepthWeedCorpse.description>
 	<!--Original=tidal tuna-->
-	<Moyo2_Tuna.label>파도다랑어</Moyo2_Tuna.label>
+	<Moyo2_TunaCorpse.label>파도다랑어</Moyo2_TunaCorpse.label>
 	<!--Original=dummy text.-->
-	<Moyo2_Tuna.description>가축화된 참치입니다. 개조를 통해 생물로서의 수많은 욕구가 억제된 이 생물은 좁은 탱크 안에서도 편안한 삶을 누립니다. 그 우수한 특성으로 인해 수많은 파도다랑어가 등대에서 양식되고 있습니다. 개체수도 폭발적으로 증가했으니, 생물학적으로도 매우 번성한 종이 되겠네요.\n\n이 생물은 애완용으로 적합하지 않습니다. 물 밖으로 꺼내면 죽습니다, 당연한 것을 물어보지 마세요.</Moyo2_Tuna.description>
-	<!--Original=moyo heart-->
-	<Moyo2_TunaMeat.label>파도다랑어 살코기</Moyo2_TunaMeat.label>
-	<!--Original=A heart of moyo. Its blue.-->
-	<Moyo2_TunaMeat.description>모요 심장입니다. 파랗습니다.</Moyo2_TunaMeat.description>
+	<Moyo2_TunaCorpse.description>가축화된 참치입니다. 개조를 통해 생물로서의 수많은 욕구가 억제된 이 생물은 좁은 탱크 안에서도 편안한 삶을 누립니다. 그 우수한 특성으로 인해 수많은 파도다랑어가 등대에서 양식되고 있습니다. 개체수도 폭발적으로 증가했으니, 생물학적으로도 매우 번성한 종이 되겠네요.\n\n이 생물은 애완용으로 적합하지 않습니다. 물 밖으로 꺼내면 죽습니다, 당연한 것을 물어보지 마세요.</Moyo2_TunaCorpse.description>
 	<!--Original=demi kraken-->
-	<Moyo2_DemiKraken.label>데미크라켄</Moyo2_DemiKraken.label>
+	<Moyo2_DemiKrakenCorpse.label>데미크라켄</Moyo2_DemiKrakenCorpse.label>
 	<!--Original=dummy text.-->
-	<Moyo2_DemiKraken.description>가축화된 심해 문어입니다. 개조를 통해 생물로서 간신히 기능하도록 만들어졌습니다. 이 생물의 몸속에선 유용한 화학물이 합성됩니다.\n\n이 생물을 애완용으로 사육하는 것은 심히 권장되지 않습니다. 애완용으론 소형화된 더욱 좋은 상품이 준비되어 있습니다.</Moyo2_DemiKraken.description>
-	<!--Original=moyo heart-->
-	<Moyo2_KrakenMeat.label>데미크라켄 토막</Moyo2_KrakenMeat.label>
-	<!--Original=A heart of moyo. Its blue.-->
-	<Moyo2_KrakenMeat.description>토막낸 데미크라켄입니다. 모요들도 생으로 먹는 것은 부담스러워 합니다.</Moyo2_KrakenMeat.description>
+	<Moyo2_DemiKrakenCorpse.description>가축화된 심해 문어입니다. 개조를 통해 생물로서 간신히 기능하도록 만들어졌습니다. 이 생물의 몸속에선 유용한 화학물이 합성됩니다.\n\n이 생물을 애완용으로 사육하는 것은 심히 권장되지 않습니다. 애완용으론 소형화된 더욱 좋은 상품이 준비되어 있습니다.</Moyo2_DemiKrakenCorpse.description>
 </LanguageData>

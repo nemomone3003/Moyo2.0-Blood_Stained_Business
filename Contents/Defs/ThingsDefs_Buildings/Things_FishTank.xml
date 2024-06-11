@@ -9,10 +9,10 @@
 		<tickerType>Rare</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/Crematorium</texPath>
+			<texPath>Building/MoyoTank</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3,2)</drawSize>
+			<drawSize>(4, 3.5)</drawSize>
 			<shadowData>
 				<volume>(1.95,0.5,1.3)</volume>
 			</shadowData>

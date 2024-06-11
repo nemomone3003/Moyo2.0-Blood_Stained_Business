@@ -368,6 +368,14 @@
 	<Moyo2_Depthweed.label>가공된 뎁스위드</Moyo2_Depthweed.label>
 	<!--Original=dummy text.-->
 	<Moyo2_Depthweed.description>뎁스위드를 잘라서 정리한 것입니다. 보관이 용이합니다. 이 해초의 섬유는 등대의 보편적인 섬유인 뎁스위브를 만들 수 있으며, 필요한 경우 동물의 먹이로 이용할수도 있습니다. 매우 질기기에 소화는 잘 되지 않을겁니다.\n\n최초의 모요들은 합성원단을 주로 사용했으나, 등대가 세워진 이후 접근성이 더 좋은 뎁스위브를 사용하기 시작했습니다. 그에 따라 뎁스위드도 수없이 많은 곳에 퍼지게 되었습니다.</Moyo2_Depthweed.description>
+	<!--Original=moyo heart-->
+	<Moyo2_KrakenMeat.label>데미크라켄 토막</Moyo2_KrakenMeat.label>
+	<!--Original=A heart of moyo. Its blue.-->
+	<Moyo2_KrakenMeat.description>토막낸 데미크라켄입니다. 모요들도 생으로 먹는 것은 부담스러워 합니다.</Moyo2_KrakenMeat.description>
+	<!--Original=moyo heart-->
+	<Moyo2_TunaMeat.label>파도다랑어 살코기</Moyo2_TunaMeat.label>
+	<!--Original=A heart of moyo. Its blue.-->
+	<Moyo2_TunaMeat.description>파도다랑어의 살점입니다. 등대에서 별미로 취급됩니다.</Moyo2_TunaMeat.description>		
 	<!--Original=뎁스툴 heavy wrench-->
 	<Moyo2_Wrench.label>뎁스툴 헤비 렌치</Moyo2_Wrench.label>
 	<!--Original=It&apos;s a heavy wrench designed to be wielded with both hands. While its primary purpose is tightening bolts, its weight allows it to double as a hammer. It would inflict significant pain if thrown.\n\nIt significantly boosts construction efficiency. Despite being almost a staple among workers, it continues to be a steady seller, leaving many to wonder what it&apos;s being used for.-->

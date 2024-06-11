@@ -120,7 +120,7 @@
 			<ticksToGrow>720,000</ticksToGrow>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Item/Fish/MoyoFish_Plant</texPath>
+				<texPath>Item/Fish/MoyoFish_Plant1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2</drawSize>
 			</graphicData>
@@ -129,7 +129,7 @@
 	<!-- 참치 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_TunaCorpse</defName>
-		<label>tidal tuna corpse</label>
+		<label>tidal tuna</label>
 		<description>A domesticated tuna. Through modifications, many of the natural needs of this creature have been suppressed, allowing it to live comfortably even in small tanks. Due to its excellent characteristics, many tidal tunas are being farmed in lighthouses. With their population exploding, they surely have become a biologically thriving species.\n\nThis creature is not suitable as a pet. It will die if taken out of the water, so please do not ask obvious questions.</description>
 		<graphicData>
 			<texPath>Item/Fish/MoyoFish_Tuna</texPath>
@@ -154,7 +154,7 @@
 			<ticksToGrow>720,000</ticksToGrow>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Item/Fish/MoyoFish_Tuna</texPath>
+				<texPath>Item/Fish/MoyoFish_Tuna1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.7</drawSize>
 			</graphicData>
@@ -163,7 +163,7 @@
 	<!-- 데미크라켄 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_DemiKrakenCorpse</defName>
-		<label>demi kraken corpse</label>
+		<label>demi kraken</label>
 		<description>A domesticated deep-sea octopus, genetically modified to barely function as a living organism. Useful chemicals are synthesized within this creature's body.\n\nRaising this creature as a pet is highly discouraged. There are much better, miniaturized products available for pet purposes.</description>
 		<graphicData>
 			<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
@@ -189,7 +189,7 @@
 			<ticksToGrow>720,000</ticksToGrow>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
+				<texPath>Item/Fish/MoyoFish_DemiKraken1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.2</drawSize>
 			</graphicData>

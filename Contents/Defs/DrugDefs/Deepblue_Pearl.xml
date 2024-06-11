@@ -277,7 +277,7 @@
 					<MentalBreakThreshold>0.01</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>-0.1</GlobalLearningFactor>
+					<GlobalLearningFactor>0.9</GlobalLearningFactor>
 				</statFactors>
 			</li>
 			<li>
@@ -288,7 +288,7 @@
 					<MentalBreakThreshold>0.03</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>-0.2</GlobalLearningFactor>
+					<GlobalLearningFactor>0.8</GlobalLearningFactor>
 				</statFactors>
 				<capMods>
 					<li>
@@ -305,7 +305,7 @@
 					<MentalBreakThreshold>0.9</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>-0.45</GlobalLearningFactor>
+					<GlobalLearningFactor>0.55</GlobalLearningFactor>
 				</statFactors>
 				<capMods>
 					<li>
@@ -322,7 +322,7 @@
 					<MentalBreakThreshold>0.15</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>-0.8</GlobalLearningFactor>
+					<GlobalLearningFactor>0.2</GlobalLearningFactor>
 				</statFactors>
 				<capMods>
 					<li>
@@ -435,8 +435,8 @@
 					<ResearchSpeed>0.1</ResearchSpeed>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>0.1</GlobalLearningFactor>
-					<HackingSpeed MayRequire="Ludeon.Ideology">0.05</HackingSpeed>
+					<GlobalLearningFactor>1.1</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">1.05</HackingSpeed>
 				</statFactors>
 			</li>
 			<li>
@@ -447,8 +447,8 @@
 					<MentalBreakThreshold>0.01</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>0.15</GlobalLearningFactor>
-					<HackingSpeed MayRequire="Ludeon.Ideology">0.15</HackingSpeed>
+					<GlobalLearningFactor>1.15</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">1.15</HackingSpeed>
 				</statFactors>
 			</li>
 			<li>
@@ -459,8 +459,8 @@
 					<MentalBreakThreshold>0.03</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>0.25</GlobalLearningFactor>
-					<HackingSpeed MayRequire="Ludeon.Ideology">0.3</HackingSpeed>
+					<GlobalLearningFactor>1.25</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">1.3</HackingSpeed>
 				</statFactors>
 				<capMods>
 					<li>
@@ -477,8 +477,8 @@
 					<MentalBreakThreshold>0.09</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>0.4</GlobalLearningFactor>
-					<HackingSpeed MayRequire="Ludeon.Ideology">0.55</HackingSpeed>
+					<GlobalLearningFactor>1.4</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">1.55</HackingSpeed>
 				</statFactors>
 				<capMods>
 					<li>
@@ -495,8 +495,8 @@
 					<MentalBreakThreshold>0.15</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
-					<GlobalLearningFactor>0.65</GlobalLearningFactor>
-					<HackingSpeed MayRequire="Ludeon.Ideology">0.70</HackingSpeed>
+					<GlobalLearningFactor>1.65</GlobalLearningFactor>
+					<HackingSpeed MayRequire="Ludeon.Ideology">1.70</HackingSpeed>
 				</statFactors>
 				<capMods>
 					<li>

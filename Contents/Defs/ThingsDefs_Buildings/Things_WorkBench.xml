@@ -166,7 +166,7 @@
 		<graphicData>
 			<texPath>Building/MoyoFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5, 4)</drawSize>
+			<drawSize>(4, 3.5)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>

@@ -4,16 +4,19 @@
 		<defName>Moyo2_DrugCategory</defName>
 		<label>deep blue</label>
 		<parent>Drugs</parent>
+		<iconPath>Icon/BlueSerum</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>Moyo2_DrugCategory_Booster</defName>
 		<label>deep blue-booster</label>
 		<parent>Moyo2_DrugCategory</parent>
+		<iconPath>Icon/MediBooster</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>Moyo2_DrugCategory_Pearl</defName>
 		<label>deep blue-pearl</label>
 		<parent>Moyo2_DrugCategory</parent>
+		<iconPath>Icon/JoyPearl</iconPath>
 	</ThingCategoryDef>
 	<!-- 혈액팩 -->
 	<ThingDef ParentName="ResourceBase">
