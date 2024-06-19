@@ -89,7 +89,7 @@
 		<label>depthweed</label>
 		<description>A cultivated variation of seaweed that grows in the deep sea. It is the main raw material for Depthweave and must be processed before use.\n\nThis seaweed is cultivated in deep-sea hydrothermal vents and can also be grown indoors with appropriate facilities.</description>
 		<graphicData>
-			<texPath>Item/Fish/MoyoFish_Plant</texPath>
+			<texPath>Pawn/DepthWeed/MoyoFish_Plant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
@@ -120,7 +120,7 @@
 			<ticksToGrow>720,000</ticksToGrow>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Item/Fish/MoyoFish_Plant1</texPath>
+				<texPath>Pawn/DepthWeed/MoyoFish_Plant1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2</drawSize>
 			</graphicData>
@@ -132,7 +132,7 @@
 		<label>tidal tuna</label>
 		<description>A domesticated tuna. Through modifications, many of the natural needs of this creature have been suppressed, allowing it to live comfortably even in small tanks. Due to its excellent characteristics, many tidal tunas are being farmed in lighthouses. With their population exploding, they surely have become a biologically thriving species.\n\nThis creature is not suitable as a pet. It will die if taken out of the water, so please do not ask obvious questions.</description>
 		<graphicData>
-			<texPath>Item/Fish/MoyoFish_Tuna</texPath>
+			<texPath>Pawn/Tuna/MoyoFish_Tuna</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2.7</drawSize>
 		</graphicData>
@@ -154,7 +154,7 @@
 			<ticksToGrow>720,000</ticksToGrow>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Item/Fish/MoyoFish_Tuna1</texPath>
+				<texPath>Pawn/Tuna/MoyoFish_Tuna1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.7</drawSize>
 			</graphicData>
@@ -166,7 +166,7 @@
 		<label>demi kraken</label>
 		<description>A domesticated deep-sea octopus, genetically modified to barely function as a living organism. Useful chemicals are synthesized within this creature's body.\n\nRaising this creature as a pet is highly discouraged. There are much better, miniaturized products available for pet purposes.</description>
 		<graphicData>
-			<texPath>Item/Fish/MoyoFish_DemiKraken</texPath>
+			<texPath>Pawn/DemiKraken/MoyoFish_DemiKraken</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2.2</drawSize>
 		</graphicData>
@@ -189,7 +189,7 @@
 			<ticksToGrow>720,000</ticksToGrow>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Item/Fish/MoyoFish_DemiKraken1</texPath>
+				<texPath>Pawn/DemiKraken/MoyoFish_DemiKraken1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>2.2</drawSize>
 			</graphicData>
