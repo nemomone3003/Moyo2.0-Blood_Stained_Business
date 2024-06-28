@@ -9,7 +9,7 @@ namespace Moyo2
     public class ThingClass_FishTank : Building
     {
 #nullable enable
-        private ModExtension_FishTank? ModExtension => def.GetModExtension<ModExtension_FishTank>();
+        private Moyo2_modExtension? ModExtension => def.GetModExtension<Moyo2_modExtension>();
 #nullable disable
 
 
@@ -25,7 +25,7 @@ namespace Moyo2
         private bool finishedGrowing;
 
         // Fields for making the fish die when the power goes away
-        private int ticksToDie = 15000;
+        private int ticksDie;
         private CompPowerTrader compPowerTrader;
 
         // Field for curves to change the fish size the more grown it is
@@ -64,7 +64,7 @@ namespace Moyo2
                     }
                     else
                     {
-                        fishDef = ModExtension.FishDefs.FirstOrDefault();
+                        fishDef = ModExtension.FishDefs.First();
                     }
                 }
                 return fishDef;
@@ -123,18 +123,18 @@ namespace Moyo2
         {
             base.SpawnSetup(map, respawningAfterLoad);
 
-            xSizeCurve = new()
-            {
+            xSizeCurve =
+            [
                 new (0f, 0.25f),
                 // When the fish isn't at all progressed it will be 1/4 of the original X size
                 new (LockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.x)
                 // And it will get to the original X size when it reaches the ticks it needs to finish growing
-            };
-            ySizeCurve = new()
-            {
+            ];
+            ySizeCurve =
+            [
                 new (0f, 0.25f),
                 new (lockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.y)
-            };
+            ];
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -153,16 +153,24 @@ namespace Moyo2
                     List<FloatMenuOption> options = new();
                     foreach (FishDef fish in ModExtension.FishDefs)
                     {
-                        options.Add(new FloatMenuOption(fish.label.CapitalizeFirst(), delegate
+                        if (!IsFishResearchLocked(fish))
                         {
-                            FishDef = fish;
-                        })); ;
+                            options.Add(new FloatMenuOption(fish.fishTankSettings.label.CapitalizeFirst(), delegate
+                            {
+                                FishDef = fish;
+                            }));
+                        }
+                    }
+                    if (options.Count <= 0)
+                    {
+                        options.Add(new FloatMenuOption("Moyo2_FishTank_NoAvailableFish".Translate(), null));
                     }
                     Find.WindowStack.Add(new FloatMenu(options));
                 },
             };
             yield return command_Action;
             // This is the gizmo to change between the fish.
+
 
             // Devmode buttons
             if (!DebugSettings.ShowDevGizmos)
@@ -187,7 +195,18 @@ namespace Moyo2
                 }
             };
             yield return devGizmoUnloadFish;
-            // This gizmo calls the same code the ojb does when getting the fish
+            // This gizmo calls the same code the job does when getting the fish
+
+            Command_Action devGizmoFullyGrowFish = new()
+            {
+                defaultLabel = "Fully grow fish",
+                action = delegate
+                {
+                    tickProgress = lockedFishDef.fishTankSettings.ticksToGrow;
+                }
+            };
+            yield return devGizmoFullyGrowFish;
+            // This gizmo makes the fish instantly grow
 
             Command_Action devGizmoReset = new()
             {
@@ -226,7 +245,7 @@ namespace Moyo2
             // If the building has CompPowerTrader
             if (CompPowerTrader != null)
             {
-                if (ticksToDie <= 0) // If ticksToDie is 0 it will reset the fish, esentially killing it and having to plant it again
+                if (ticksDie >= lockedFishDef.fishTankSettings.ticksToDie) // If ticksToDie is 0 it will reset the fish, esentially killing it and having to plant it again
                 {
                     Messages.Message("Moyo2_FishTank_FishDied".Translate(), MessageTypeDefOf.NegativeEvent);
                     Reset();
@@ -239,7 +258,7 @@ namespace Moyo2
                     }
                     else // When the building isn't on it won't grow at all
                     {
-                        ticksToDie -= 250;
+                        ticksDie += 250;
                     }
                 }
             }
@@ -302,7 +321,7 @@ namespace Moyo2
             GrowingFish = false;
             FinishedGrowing = false;
             tickProgress = 0;
-            ticksToDie = 15000;
+            ticksDie = 0;
         }
 
         public override string GetInspectString()
@@ -324,19 +343,21 @@ namespace Moyo2
                 }
                 else
                 {
-                    stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_FinishedGrowing", LockedFishDef.label.CapitalizeFirst().Named("FishName")));
+                    stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_FinishedGrowing", LockedFishDef.fishTankSettings.label.CapitalizeFirst().Named("FishName")));
                     // Fish fully grown
                 }
             }
             else
             {
+                stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_NowGrowingFish", LockedFishDef.fishTankSettings.label.CapitalizeFirst().Named("FishName"))); 
+                // Now growing: fish
                 float growthPercent = (tickProgress / LockedFishDef.fishTankSettings.ticksToGrow) * 100;
                 stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_GrowthPercent", Mathf.Min(growthPercent, 100f).Named("%age")));
                 // Fish are growing
             }
             if ((GrowingFish || finishedGrowing) && CompPowerTrader != null && !CompPowerTrader.PowerOn)
             {
-                GenDate.TicksToPeriod(ticksToDie, out int _, out int _, out int _, out float hours);
+                GenDate.TicksToPeriod(lockedFishDef.fishTankSettings.ticksToDie - ticksDie, out int _, out int _, out int _, out float hours);
                 stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_HoursFishDie", hours.Named("Hours")));
                 // Time left until the harvest is lost
             }
@@ -351,12 +372,35 @@ namespace Moyo2
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            Reset();
+            base.DeSpawn(mode);
+        }
+
+        private static bool IsFishResearchLocked(FishDef fishDef)
+        {
+            List<ResearchProjectDef> farmResearchPrerequisites = fishDef.researchPrerequisites;
+            if (farmResearchPrerequisites == null)
+            {
+                return false;
+            }
+            for (int i = 0; i <  farmResearchPrerequisites.Count; i++)
+            {
+                if (!farmResearchPrerequisites[i].IsFinished)
+                {
+                    return true;
+                }
+            }
+            return true;
+        }
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Defs.Look(ref lockedFishDef, "Moyo2_FishTank_SelectedFishDef");
             Scribe_Values.Look(ref tickProgress, "Moyo2_FishTank_tickProgress");
-            Scribe_Values.Look(ref ticksToDie, "Moyo2_FishTank_ticksToDie");
+            Scribe_Values.Look(ref ticksDie, "Moyo2_FishTank_ticksToDie");
             Scribe_Values.Look(ref growingFish, "Moyo2_FishTank_growingFish");
         }
     }

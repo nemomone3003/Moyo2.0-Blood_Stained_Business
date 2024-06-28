@@ -72,7 +72,7 @@
 			<li>Electricity</li>
 		</researchPrerequisites>
 		<modExtensions>
-			<li Class="Moyo2.ModExtension_FishTank">
+			<li Class="Moyo2.Moyo2_modExtension">
 				<FishDefs>
 					<li>Moyo2_TunaCorpse</li>
 					<li>Moyo2_DemiKrakenCorpse</li>

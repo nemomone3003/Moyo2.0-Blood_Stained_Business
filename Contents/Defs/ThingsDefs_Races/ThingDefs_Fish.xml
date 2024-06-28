@@ -65,6 +65,9 @@
 	<!-- 물고기 질식 -->
 	<Moyo2.FishDef Name="FishBase" Abstract="True" ParentName="ResourceBase">
 		<thingClass>Moyo2.ThingClass_Fish</thingClass>
+		<researchPrerequisites>
+			<li>SecurityDoor</li>
+		  </researchPrerequisites>
 		<graphicData>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
@@ -86,7 +89,7 @@
 	<!-- 해초 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_DepthWeedCorpse</defName>
-		<label>depthweed</label>
+		<label>depthweed corpse</label>
 		<description>A cultivated variation of seaweed that grows in the deep sea. It is the main raw material for Depthweave and must be processed before use.\n\nThis seaweed is cultivated in deep-sea hydrothermal vents and can also be grown indoors with appropriate facilities.</description>
 		<graphicData>
 			<texPath>Pawn/DepthWeed/MoyoFish_Plant</texPath>
@@ -118,6 +121,7 @@
 		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<label>depthweed</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/DepthWeed/MoyoFish_Plant1</texPath>
@@ -129,7 +133,7 @@
 	<!-- 참치 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_TunaCorpse</defName>
-		<label>tidal tuna</label>
+		<label>tidal tuna corpse</label>
 		<description>A domesticated tuna. Through modifications, many of the natural needs of this creature have been suppressed, allowing it to live comfortably even in small tanks. Due to its excellent characteristics, many tidal tunas are being farmed in lighthouses. With their population exploding, they surely have become a biologically thriving species.\n\nThis creature is not suitable as a pet. It will die if taken out of the water, so please do not ask obvious questions.</description>
 		<graphicData>
 			<texPath>Pawn/Tuna/MoyoFish_Tuna</texPath>
@@ -152,6 +156,7 @@
 		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<label>tidal tuna</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/Tuna/MoyoFish_Tuna1</texPath>
@@ -163,7 +168,7 @@
 	<!-- 데미크라켄 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_DemiKrakenCorpse</defName>
-		<label>demi kraken</label>
+		<label>demi kraken corpse</label>
 		<description>A domesticated deep-sea octopus, genetically modified to barely function as a living organism. Useful chemicals are synthesized within this creature's body.\n\nRaising this creature as a pet is highly discouraged. There are much better, miniaturized products available for pet purposes.</description>
 		<graphicData>
 			<texPath>Pawn/DemiKraken/MoyoFish_DemiKraken</texPath>
@@ -187,6 +192,7 @@
 		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<label>demi kraken</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/DemiKraken/MoyoFish_DemiKraken1</texPath>

@@ -14,4 +14,8 @@
   <Moyo2_FishTank_FishDied>물고기가 죽었습니다.</Moyo2_FishTank_FishDied>
   <!--English=Hours before the harvest is lost: {Hours}-->
   <Moyo2_FishTank_HoursFishDie>물고기가 죽기까지의 시간: {Hours}</Moyo2_FishTank_HoursFishDie>
+  <!--English=Now growing: {FishName}-->
+  <Moyo2_FishTank_NowGrowingFish>CHANGE ME NEMONIAN</Moyo2_FishTank_NowGrowingFish>
+  <!-- English=Cannot farm. There isn't any fish available.-->
+  <Moyo2_FishTank_NoAvailableFish>CHANGE ME NEMONIAN</Moyo2_FishTank_NoAvailableFish>
 </LanguageData>
