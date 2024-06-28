@@ -3,9 +3,6 @@ using System.Text;
 
 namespace Moyo2
 {
-    // IMPORTANT
-    // Remember to put <thingClass>ThingClass_FishTank</thingClass> on the def
-    // and changing the ticker to <TickerType>Rare</TickerType>.
     public class ThingClass_FishTank : Building
     {
 #nullable enable

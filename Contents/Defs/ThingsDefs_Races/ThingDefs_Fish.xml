@@ -65,9 +65,6 @@
 	<!-- 물고기 질식 -->
 	<Moyo2.FishDef Name="FishBase" Abstract="True" ParentName="ResourceBase">
 		<thingClass>Moyo2.ThingClass_Fish</thingClass>
-		<researchPrerequisites>
-			<li>SecurityDoor</li>
-		  </researchPrerequisites>
 		<graphicData>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
