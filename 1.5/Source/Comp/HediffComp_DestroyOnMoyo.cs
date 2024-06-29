@@ -1,6 +1,5 @@
 ﻿namespace Moyo2
 {
-    /*
     public class HediffComp_DestroyOnMoyo : HediffComp
     {
         public override void CompPostPostAdd(DamageInfo? dinfo)
@@ -12,5 +11,4 @@
             }
         }
     }
-    */
 }
