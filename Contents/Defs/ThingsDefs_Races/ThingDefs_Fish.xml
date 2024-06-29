@@ -82,11 +82,17 @@
 			<preferability>DesperateOnly</preferability>
 			<tasteThought>AteCorpse</tasteThought>
 		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>		
 	</Moyo2.FishDef>
 	<!-- 해초 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_DepthWeedCorpse</defName>
-		<label>depthweed corpse</label>
+		<label>depthweed pile</label>
 		<description>A cultivated variation of seaweed that grows in the deep sea. It is the main raw material for Depthweave and must be processed before use.\n\nThis seaweed is cultivated in deep-sea hydrothermal vents and can also be grown indoors with appropriate facilities.</description>
 		<graphicData>
 			<texPath>Pawn/DepthWeed/MoyoFish_Plant</texPath>
@@ -110,19 +116,14 @@
 		<butcherProducts>
 			<Moyo2_Depthweed>240</Moyo2_Depthweed>
 		</butcherProducts>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>0.1</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<ticksToDie>120,000</ticksToDie>
 			<label>depthweed</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/DepthWeed/MoyoFish_Plant1</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
+				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>2</drawSize>
 			</graphicData>
 		</fishTankSettings>
@@ -145,19 +146,14 @@
 		<butcherProducts>
 			<Moyo2_TunaMeat>320</Moyo2_TunaMeat>
 		</butcherProducts>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>0.1</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<ticksToDie>55,000</ticksToDie>
 			<label>tidal tuna</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/Tuna/MoyoFish_Tuna1</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
+				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>2.7</drawSize>
 			</graphicData>
 		</fishTankSettings>
@@ -181,19 +177,14 @@
 			<Moyo2_KrakenMeat>240</Moyo2_KrakenMeat>
 			<Neutroamine>10</Neutroamine>
 		</butcherProducts>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>0.1</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
+			<ticksToDie>55,000</ticksToDie>
 			<label>demi kraken</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/DemiKraken/MoyoFish_DemiKraken1</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
+				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>2.2</drawSize>
 			</graphicData>
 		</fishTankSettings>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- 물고기 양식장 -->
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>Moyo_FishTank</defName>
-		<label>abysstech aquaculture tank</label>
+		<label>abysstech cultivation tank</label>
 		<description>A tank used for cultivating fish and seaweed in a confined space using various equipment such as water quality management, oxygen filtration, and nutrient supply. It can rear various types of aquatic organisms. If the electricity is cut off, even the growing organisms will die.</description>
 		<thingClass>Moyo2.ThingClass_FishTank</thingClass>
 		<tickerType>Rare</tickerType>
@@ -29,20 +29,22 @@
 		<statBases>
 			<WorkToBuild>4500</WorkToBuild>
 			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>20</Mass>
 			<Cleanliness>-20</Cleanliness>
 			<Beauty>-10</Beauty>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<size>(3,2)</size>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
 		<designationCategory>Production</designationCategory>
 		<fillPercent>1</fillPercent>
 		<passability>Impassable</passability>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<interactionCellIcon>DiningChair</interactionCellIcon>
 		<surfaceType>Item</surfaceType>
 		<canOverlapZones>false</canOverlapZones>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -52,24 +54,21 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
-				<glowColor>(80,80,217,0)</glowColor>
+				<glowColor>(142,194,194,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<forceShowRoomStats>true</forceShowRoomStats>
 			<buildingTags>
 				<li>Production</li>
 			</buildingTags>
 			<paintable>false</paintable>
 		</building>
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
 		<researchPrerequisites>
-			<li>Electricity</li>
+			<li>Moyo2_Abysstech_Pneumatic</li>
+			<li>Hydroponics</li>
 		</researchPrerequisites>
 		<modExtensions>
 			<li Class="Moyo2.Moyo2_modExtension">

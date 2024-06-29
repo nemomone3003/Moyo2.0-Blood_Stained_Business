@@ -84,7 +84,7 @@
 		<comps>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>Moyo2_HadalShard</thingToSpawn>
-				<spawnCount>15</spawnCount>
+				<spawnCount>5</spawnCount>
 				<spawnIntervalRange>
 					<min>599999</min>
 					<max>600000</max>

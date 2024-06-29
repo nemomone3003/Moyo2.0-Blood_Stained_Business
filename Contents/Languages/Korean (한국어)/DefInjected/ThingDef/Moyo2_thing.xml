@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	<!--Original=Moyo-->
-	<Alien_Moyo.label>Moyo</Alien_Moyo.label>
+	<Alien_Moyo.label>모요</Alien_Moyo.label>
 	<!--Original=Inhabitants of the &apos;Lighthouse&apos;, a city submerged beneath the waves, has emerged to pursue their own interests. A substance known as Deepblue flows in their veins, serving a variety of pharmaceutical and medical purposes, not to mention producing drugs.-->
 	<Alien_Moyo.description>깊은 바다의 도시인 등대의 거주자입니다. 저마다의 이유로 지상으로 올라온 이들의 피엔 딥블루라는 성분이 피와 함께 흐릅니다. 이 성분은 의학과 제약의 영역에서 매우 유용하며 특정한 부류의 약물을 만드는 데에도 훌륭합니다.</Alien_Moyo.description>
 	<!--Original=left fist-->
@@ -459,9 +459,9 @@
 	<!--Original=spearーjack harpoon-->
 	<Moyo2_Bullet_HarpoonGun.label>스피어잭 작살</Moyo2_Bullet_HarpoonGun.label>
 	<!--Original=abysstech aquaculture tank-->
-	<Moyo_FishTank.label>어비스테크 수산양식기</Moyo_FishTank.label>
+	<Moyo_FishTank.label>어비스테크 배양기</Moyo_FishTank.label>
 	<!--Original=A tank used for cultivating fish and seaweed in a confined space using various equipment such as water quality management, oxygen filtration, and nutrient supply. It can rear various types of aquatic organisms. If the electricity is cut off, even the growing organisms will die.-->
-	<Moyo_FishTank.description>수질 관리, 산소 여과, 영양소 공급 등 다양한 장비를 사용하여 좁은 공간에서 물고기와 해초를 양식하기 위한 탱크입니다. 여러 종류의 수산생물을 기를 수 있습니다. 전기가 끊어지면 자라고 있는 생물도 죽습니다.</Moyo_FishTank.description>
+	<Moyo_FishTank.description>수질 관리, 산소 여과, 영양소 공급 등 다양한 장비를 사용하여 좁은 공간에서 물고기와 해초를 배양하기 위한 탱크입니다. 여러 종류의 수산생물을 기를 수 있습니다. 전기가 끊어지면 자라고 있는 생물도 죽습니다.</Moyo_FishTank.description>
 	<!--Original=ruined hovercraft-->
 	<Moyo2_HoverCraftWreak.label>호버크래프트 잔해</Moyo2_HoverCraftWreak.label>
 	<!--Original=This is the remains of a hovercraft damaged beyond repair. Departing from the lighthouse, this craft held off pirates and raiders until it finally sank here.-->
