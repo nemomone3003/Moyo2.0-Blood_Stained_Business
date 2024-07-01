@@ -11,6 +11,12 @@
 				<factionDef>Moyo2_PlayerFaction</factionDef>
 			</playerFaction>
 			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The broken hovercraft comes to a halt with one final jolt. It had protected you from attacks since your escape from the lighthouse, but accumulated damage has caused it to sink here. You can no longer rely on this hovercraft for transportation.\n\nYou must now figure out how to survive on land. At the very least, looks like you can salvage useful items from the wreckage.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>3</pawnCount>

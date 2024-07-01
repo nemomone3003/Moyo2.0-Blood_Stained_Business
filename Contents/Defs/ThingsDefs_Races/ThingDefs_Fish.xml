@@ -189,4 +189,43 @@
 			</graphicData>
 		</fishTankSettings>
 	</Moyo2.FishDef>
+	<!-- 살점 -->
+	<Moyo2.FishDef ParentName="FishBase">
+		<defName>Moyo2_FleshMass</defName>
+		<label>cultivated fleshmass</label>
+		<description>A cultivated mass of flesh. cultivated from a Moyo's biomass, it can be used to extact deepblue or various organs.\n\nDemands for deepblue is always high, while keeping prodiction to meet that demand is challanging. So the brightest minds came up with a solution.</description>
+		<graphicData>
+			<texPath>Pawn/FleshMass/MoyoFish_FleshMass</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>CorpsesAnimal</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10</Mass>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		<ingestible>
+			<tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<butcherProducts>
+			<Meat_Alien_Moyo>80</Meat_Alien_Moyo>
+		</butcherProducts>
+		<researchPrerequisites>
+			<li>Moyo2_Abysstech_DeepblueSynthesis</li>
+		</researchPrerequisites>
+		<fishTankSettings>
+			<ticksToGrow>1,440,000</ticksToGrow>
+			<ticksToDie>20000</ticksToDie>
+			<label>depthweed</label>
+			<!-- <ticksToGrow>600</ticksToGrow> -->
+			<graphicData>
+				<texPath>Pawn/DepthWeed/MoyoFish_FleshMass1</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>1</drawSize>
+			</graphicData>
+		</fishTankSettings>
+	</Moyo2.FishDef>	
 </Defs>

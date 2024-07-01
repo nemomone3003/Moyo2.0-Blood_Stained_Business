@@ -6,4 +6,5 @@
   <Moyo2_DeserterScenario.scenario.description>각자의 이유로 인해 등대를 탈주하기로 한 3인의 모요입니다. 모종의 방법을 통해 호버크래프트를 얻은 이들은 등대의 봉쇄망, 지상과 바다의 해적과 습격자들을 뚫고 지상에 도착했습니다.</Moyo2_DeserterScenario.scenario.description>
   <!--Original=Dummy. Testing-->
   <Moyo2_DeserterScenario.scenario.summary>세 명의 모요가 등대를 탈출하여 육지에 도착했습니다. 표준 모요 시나리오입니다.</Moyo2_DeserterScenario.scenario.summary>
+  <Moyo2_DeserterScenario.scenario.parts.GameStartDialog.text>망가진 호버크래프트가 마지막 덜컹임과 함께 작동을 정지합니다. 등대의 탈출에서부터 이곳에 도착하기까지 당신을 습격에서 지켜주었지만 누적된 피해로 인해 이곳에 가라앉았습니다. 더 이상 이 호버크래프트를 통해선 이동할 수 없습니다.\n\n당신은 앞으로 지상에서 살아나갈 방법을 생각해야 합니다, 적어도 이 잔해에서 유용한 물건들을 회수할 수 있을 것입니다.</Moyo2_DeserterScenario.scenario.parts.GameStartDialog.text>
 </LanguageData>
