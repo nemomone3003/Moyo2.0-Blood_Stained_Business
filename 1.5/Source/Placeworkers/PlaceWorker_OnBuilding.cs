@@ -14,9 +14,9 @@ namespace Moyo2
 
             if (buildingOnCursor != null
                 && compAffectedByFacilitiesOfBuilding != null // Incase the building found doesn't have CompProperties_AffectedByFacilities
-                && compAffectedByFacilitiesOfBuilding.linkableFacilities.Any(building => building.defName == checkingDef.defName)
+                && compAffectedByFacilitiesOfBuilding.linkableFacilities.Any(building => building == checkingDef)
                 // Incase the CompProperties_AffectedByFacilities found doesn't have this building on it's linkableFacilities list.
-                && GenAdj.CellsOccupiedBy(loc, rot, checkingDef.Size).All(cell => cell.GetFirstBuilding(map) == buildingOnCursor))
+                && GenAdj.CellsOccupiedBy(loc, rot, checkingDef.Size).All(cell => cell.GetThingList(map).Any(t => t == buildingOnCursor)))
             {
                 return true;
             }
