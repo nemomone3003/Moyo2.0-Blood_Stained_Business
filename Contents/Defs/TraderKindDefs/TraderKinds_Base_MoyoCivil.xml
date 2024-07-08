@@ -125,15 +125,34 @@
       <li Class="StockGenerator_Techprints">
         <countChances>
           <li>
-            <count>2</count>
+            <count>3</count>
             <chance>0.5</chance>
           </li>
           <li>
-            <count>3</count>
+            <count>4</count>
             <chance>0.5</chance>
           </li>
         </countChances>
       </li>
+	 
+      <!-- Books -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Books</categoryDef>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li> <!-- only available in Anomaly, handled seperately -->
+        </excludedThingDefs>
+        <thingDefCountRange>2</thingDefCountRange>
+        <countRange>-2~1</countRange>
+      </li>  
+      
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
+        <countRange>-2~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>1~1</countRange>
+      </li>	 
 
       <!-- Weapons -->
       <li Class="StockGenerator_MarketValue">
@@ -206,6 +225,22 @@
           <Hyperweave>50~200</Hyperweave>
         </customCountRanges>
       </li>
+	  
+      <!-- Genepacks -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>4~6</countRange>
+      </li>
+
+      <!-- Serums -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
+        <tradeTag>Serum</tradeTag>
+        <thingDefCountRange>4~4</thingDefCountRange>
+        <countRange>-3~1</countRange> <!-- 20% chance of appearing -->
+        <excludedThingDefs>
+          <li>VoidsightSerum</li>
+        </excludedThingDefs>
+      </li>	  
 
       <!-- Slaves -->
       <li Class="StockGenerator_Slaves">
@@ -218,13 +253,24 @@
         <tradeTagsSell>
           <li>AnimalFarm</li>
           <li>AnimalPet</li>
+		  <li>Moyo2_AnimalPet</li>
         </tradeTagsSell>
         <tradeTagsBuy>
           <li>AnimalUncommon</li>
           <li>AnimalExotic</li>
+		  <li>Moyo2_AnimalPet</li>
         </tradeTagsBuy>
         <kindCountRange>2~4</kindCountRange>
         <countRange>3~8</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+
+      <!-- Archite capsule2 -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
       </li>
 
       <!-- Buying -->
@@ -233,6 +279,12 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
     </stockGenerators>
   </TraderKindDef>
 
