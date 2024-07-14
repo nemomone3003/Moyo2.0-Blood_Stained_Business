@@ -4,7 +4,7 @@
 		<defName>Moyo2_FabricationBench</defName>
 		<label>abysstech production bench</label>
 		<description>A workbench for producing abysstech items. It is capable of handling a variety of tasks, from producing tools, components, and apparel to dismantling mechanoids.</description>
-		<thingClass>Building_WorkTable</thingClass>
+		<thingClass>Moyo2.ThingClass_MoyoFabricationBench</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<graphicData>
@@ -88,6 +88,7 @@
 		<description>An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.</description>
 		<altitudeLayer>ItemImportant</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<selectable>false</selectable>
 		<graphicData>
 			<texPath>Building/MoyoBenchUpgrade</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

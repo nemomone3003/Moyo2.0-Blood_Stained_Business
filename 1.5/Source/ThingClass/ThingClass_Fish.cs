@@ -1,6 +1,4 @@
-﻿using Verse.Sound;
-
-namespace Moyo2
+﻿namespace Moyo2
 {
     public class ThingClass_Fish : ThingWithComps
     {

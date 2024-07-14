@@ -9,7 +9,7 @@ namespace Moyo2
 #nullable enable
             Building? buildingOnCursor = loc.GetFirstBuilding(map);
 #nullable disable
-            // Gets CompProperties_AffectedByFacilities from the first building it finds on the tile the shadow's on 
+            // Gets CompProperties_AffectedByFacilities from the first building it finds on the tile the ghost is on 
             CompProperties_AffectedByFacilities compAffectedByFacilitiesOfBuilding = buildingOnCursor?.def?.GetCompProperties<CompProperties_AffectedByFacilities>();
 
             if (buildingOnCursor != null
