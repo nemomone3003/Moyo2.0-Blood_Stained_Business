@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--템플릿-->
+	<!--<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryBase">
+		<defName>Moyo2_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDesc>backstory</baseDesc>
+		<slot>hood</slot>
+		<skillGains>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>-->
+	<!-- 유년기 -->
+	<!-- 모요 세이렌링 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_Sirenling</defName>
+		<title>Moyo Sirenling</title>
+		<titleShort>Sirenling</titleShort>
+		<baseDesc>To become a Siren, the most famous celebrity in the Lighthouse, one must literally make bone-crushing efforts. There must be no external flaws, and one must have an innate talent for the arts. Therefore, it is difficult even to attempt this unless one is from the lower echelons of the Lighthouse. {PAWN_nameDef} has lived under strict supervision as a Siren candidate and has proven {PAWN_possessive} abilities. However, becoming a Siren requires more than just proving oneself. Hope the path {PAWN_pronoun} takes in the future be a worthwhile one.</baseDesc>
+		<skillGains>
+			<Artistic>5</Artistic>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+			<li>Moyo2_Siren</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 문다이버 후보생 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_MoondiverCandidate</defName>
+		<title>Moyo Moondiver candidate</title>
+		<titleShort>Moondiver candidate</titleShort>
+		<baseDesc>{PAWN_nameDef} is a candidate for the top-secret Moondiver project at the Lighthouse. In order to create the perfect pioneer, {PAWN_pronoun} underwent intensive training and has become an exceptionally talented individual. However, it seems that none of the researchers recognized the importance of social interaction.</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+			<Cooking>2</Cooking>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+			<Artistic>-5</Artistic>
+			<Medicine>2</Medicine>
+			<Social>-8</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 성년기 -->
+	<!-- 모요 수석 생물학자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CheifBiologist</defName>
+		<title>Moyo Cheif biologist</title>
+		<titleShort>Cheif biologist</titleShort>
+		<baseDesc>{PAWN_nameDef} excelled in various fields of science and was recognized by the council, becoming a chief researcher. {PAWN_pronoun} was assigned to a research project with full support from the council. However, after seeing the project's content, {PAWN_pronoun} realized that {PAWN_pronoun} would eventually be silenced and decided to flee.\n\nThe project's name was Hadium-blue.</baseDesc>
+		<skillGains>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Artistic>-5</Artistic>
+			<Medicine>3</Medicine>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 수석 공학자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CheifEngineer</defName>
+		<title>Moyo Cheif engineer</title>
+		<titleShort>Cheif engineer</titleShort>
+		<baseDesc>{PAWN_nameDef} excelled in engineering and was recognized by the council, becoming a chief engineer. {PAWN_pronoun} was assigned to a project with full support from the council. Advanced technology, different from the existing Abyss Tech, was developed, but the project itself was discontinued. To maintain secrecy, the council tried to control every aspect of {PAWN_possessive} life, but not wanting this, {PAWN_pronoun} fled to a place beyond the council's reach.\n\nThe project's name was Moondiver.</baseDesc>
+		<skillGains>
+			<Construction>6</Construction>
+			<Mining>1</Mining>
+			<Plants>-1</Plants>
+			<Animals>-1</Animals>
+			<Crafting>6</Crafting>
+			<Medicine>-5</Medicine>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Beauty>1</Beauty>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+			<li>Moyo2_Siren</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!--모요 세이렌-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Siren</defName>
+		<title>Moyo Siren</title>
+		<titleShort>Siren</titleShort>
+		<baseDesc>The true representatives of the Lighthouse are its Sirens, like {PAWN_nameDef}. {PAWN_pronoun} is a master of mesmerizing techniques and has mastered various fields of art, embodying the entertainment of the Lighthouse. However, {PAWN_pronoun} suffered immense stress due to the control and oppression from {PAWN_possessive} agency. When a replacement emerged, {PAWN_pronoun} was discarded like an old shoe. Before being sold on the black market as a product, {PAWN_nameDef} hurriedly fled the Lighthouse.</baseDesc>
+		<skillGains>
+			<Artistic>8</Artistic>
+			<Social>8</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraits>
+			<Beauty>2</Beauty>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_Siren</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 문다이버 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Moondiver</defName>
+		<title>Moyo Moondiver</title>
+		<titleShort>Moondiver</titleShort>
+		<baseDesc>{PAWN_nameDef} is a subject of the top-secret Moondiver project of the Lighthouse. Trained as the elite of the Lighthouse, the goal for those selected was to explore and pioneer beyond the Lighthouse's seas into countless other realms. However, as tensions between the council and the corporations escalated, the council decided to cancel the project and eliminate everyone involved. Moondivers like {PAWN_nameDef} were discarded under the pretense of conducting experiments in remote areas.</baseDesc>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Construction>3</Construction>
+			<Mining>3</Mining>
+			<Cooking>3</Cooking>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+			<Artistic>-7</Artistic>
+			<Medicine>3</Medicine>
+			<Social>-9</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 기업 총수 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CorpoHead</defName>
+		<title>Moyo Corpo head</title>
+		<titleShort>Corpo head</titleShort>
+		<baseDesc>The Lighthouse is the perfect place to fulfill one's greed. {PAWN_nameDef} was the head of the corporation, the epitome of that greed. As the leader of the Lighthouse's corporation, {PAWN_pronoun} did almost everything possible to amass wealth, and any resulting mishaps were resolved by spending just a fraction of the profits. In the end, {PAWN_pronoun} was betrayed and cast out of the Lighthouse, just as {PAWN_pronoun} had ruthlessly done to others.</baseDesc>
+		<skillGains>
+			<Melee>3</Melee>
+			<Construction>-3</Construction>
+			<Mining>-3</Mining>
+			<Plants>-3</Plants>
+			<Medicine>1</Medicine>
+			<Social>3</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 조직 보스 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_SyndicateBoss</defName>
+		<title>Moyo Syndicate boss</title>
+		<titleShort>Syndicate boss</titleShort>
+		<baseDesc>Despite being called an syndicate, {PAWN_nameDef}'s business is no different from any other companies. After all, a corporation is simply a bundle of illegal activities with just a few legal documents to cover them. {PAWN_nameDef} made a fortune mainly from the production and distribution of deepblue, and like other business colleagues, {PAWN_pronoun} was betrayed and forced out. Told you that there’s no difference at all between them.</baseDesc>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 의원 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CouncilMember</defName>
+		<title>Moyo Council member</title>
+		<titleShort>Council member</titleShort>
+		<baseDesc>The position of a Lighthouse council member is extremely demanding. {PAWN_nameDef} spent every day strategizing to expand {PAWN_possessive} network of corporate sponsors and eliminate rivals. At the same time, {PAWN_pronoun} had to continually increase {PAWN_possessive} personal wealth, which made it a grueling task. Now, {PAWN_pronoun} finds {PAWN_possessive}self in a precarious situation due to a full-scale offensive from {PAWN_possessive} enemies. But wise people always take out insurance. {PAWN_nameDef} will never be caught by them.</baseDesc>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>4</Melee>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 지상 무역가 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_SurfaceTrader</defName>
+		<title>Moyo Surface trader</title>
+		<titleShort>Surface trader</titleShort>
+		<baseDesc>The Lighthouse is a very closed society. The Council strictly controlled access to the outside world, especially to the surface. However, {PAWN_nameDef} was one of the few exceptions. {PAWN_pronoun} accumulated immense wealth through items brought from the surface, and {PAWN_pronoun} believed that {PAWN_pronoun} had forged a strong bond with the Council by sharing that wealth. But the Council changed its attitude as easily as flipping a hand, and {PAWN_pronoun} had all {PAWN_possessive} possessions seized. Now, {PAWN_nameDef} has decided to place {PAWN_possessive} last hope in the surface world.</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Crafting>1</Crafting>
+			<Artistic>1</Artistic>
+			<Social>5</Social>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 희귀품 수집가 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_ExoticsCollector</defName>
+		<title>Moyo Exotics collector</title>
+		<titleShort>Exotics collector</titleShort>
+		<baseDesc>People often place great value on trivial things. {PAWN_nameDef} was one of such people, having a hobby of collecting all sorts of rare items. Based on {PAWN_possessive} vast wealth, {PAWN_possessive} hobby created markets that did not previously exist. {PAWN_pronoun} claimed to have come to the surface to collect items by {PAWN_possessive}self, but rumors suggest that the last item collected caused some sort of trouble to {PAWN_possessive}.</baseDesc>
+		<skillGains>
+			<Construction>-4</Construction>
+			<Mining>1</Mining>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Artistic>6</Artistic>
+			<Social>-4</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 메카노이드 마스터 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_MechanoidMaster</defName>
+		<title>Moyo Mechanoid master</title>
+		<titleShort>Mechanoid master</titleShort>
+		<baseDesc>There’s no denying that the most exceptional workers in the Lighthouse are the Mechanoids. Unlike biological workers, powerful and efficient Mechanoids don’t complain or show discontent. {PAWN_nameDef} owned a multitude of Mechanoids and rented them out for a substantial profit. However, for some unknown reason, the Mechanoids ceased to follow {PAWN_possessive} control, and soon {PAWN_pronoun} was left to face ruin.\n\n{PAWN_nameDef}  headed for the surface, believing that if {PAWN_pronoun} could only regain control over the ownerless Mechanoids on the surface, {PAWN_pronoun} might rise once more.</baseDesc>
+		<skillGains>
+			<Mining>-2</Mining>
+			<Cooking>-2</Cooking>
+			<Crafting>5</Crafting>
+			<Medicine>-6</Medicine>
+			<Social>3</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_BotCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

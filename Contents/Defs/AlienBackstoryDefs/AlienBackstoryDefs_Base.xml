@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.AlienBackstoryDef Abstract="True" Name="Moyo2_BackstoryBase">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef Abstract="True" ParentName="Moyo2_BackstoryBase" Name="Moyo2_BackstoryChild">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef Abstract="True" ParentName="Moyo2_BackstoryBase" Name="Moyo2_BackstoryAdult">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 유년기 -->
+	<!--템플릿-->
+	<!--<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryBase">
+		<defName>Moyo2_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDesc>backstory</baseDesc>
+		<slot>hood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>-4</Melee>
+			<Construction>5</Construction>
+			<Crafting>1</Crafting>
+			<Cooking>-2</Cooking>
+			<Medicine>5</Medicine>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Social>5</Social>
+			<Intellectual>-2</Intellectual>			
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>-->
+	<!-- 더미 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_DummyChild</defName>
+		<title>moyo dummy</title>
+		<titleShort>dummy</titleShort>
+		<description>Dummy backstory</description>
+		<skillGains>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo2_Dummy</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_DummyAdult</defName>
+		<title>moyo dummy</title>
+		<titleShort>dummy</titleShort>
+		<description>Dummy backstory</description>
+		<skillGains>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo2_Dummy</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

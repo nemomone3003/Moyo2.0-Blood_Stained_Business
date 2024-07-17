@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--템플릿-->
+	<!--<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryBase">
+		<defName>Moyo2_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDesc>backstory</baseDesc>
+		<slot>hood</slot>
+		<skillGains>	
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>-->
+	<!-- 유년기 -->
+	<!-- 모요 지친 학생 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_TiredStudent</defName>
+		<title>Moyo Tired student</title>
+		<titleShort>Tired student</titleShort>
+		<baseDesc>{PAWN_nameDef} grew tired with the endless competition at the Lighthouse. The body, worn out from studying day and night, was in such a frail state that it was no longer fit to even continue the struggle. {PAWN_pronoun} ultimately gave up and sought a different path.</baseDesc>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>-1</Melee>
+			<Construction>-1</Construction>
+			<Mining>-1</Mining>
+			<Plants>-1</Plants>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 지상 예술가 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_SurfaceArtist</defName>
+		<title>Moyo Surface artist</title>
+		<titleShort>Surface artist</titleShort>
+		<baseDesc>Most Moyos are not familiar with the sights of the surface. {PAWN_nameDef} took advantage of this to create a work based on the surface world. However, since {PAWN_pronoun} is also one of the many who do not know the surface, the result was quite outlandish.</baseDesc>
+		<skillGains>
+			<Mining>-3</Mining>
+			<Artistic>7</Artistic>
+			<Intellectual>-5</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 작은 배달부 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_LittleDeliverer</defName>
+		<title>Moyo Little deliverer</title>
+		<titleShort>Little deliverer</titleShort>
+		<baseDesc>In the Lighthouse’s consumer culture, age does not matter. {PAWN_nameDef} needed some extra cash, so {PAWN_pronoun} took on errands that offered quick and easy money. {PAWN_pronoun} didn’t care at all about the contents of the deliveries. What mattered was the payment.</baseDesc>
+		<skillGains>
+			<Animals>3</Animals>
+			<Crafting>1</Crafting>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 충격받은 간호사 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_ShockedNurse</defName>
+		<title>Moyo Shocked nurse</title>
+		<titleShort>Shocked nurse</titleShort>
+		<baseDesc>{PAWN_nameDef} entered a specialized medical training facility to secure employment. There, {PAWN_pronoun} witnessed scenes too overwhelming for {PAWN_possessive} young mind to bear, leaving deep scars on {PAWN_possessive} heart.</baseDesc>
+		<skillGains>
+			<Shooting>-4</Shooting>
+			<Melee>-4</Melee>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<forcedTraits>
+			<Nerves>-1</Nerves>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 과묵한 아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_MuteChild</defName>
+		<title>Moyo Mute child</title>
+		<titleShort>Mute child</titleShort>
+		<baseDesc>{PAWN_nameDef} was unusually silent from a young age. It wasn’t merely that {PAWN_pronoun} chose not to speak; it was concerning enough that others feared there might be an issue with {PAWN_possessive} language abilities. In reality, {PAWN_pronoun} was simply more sensitive to the supernatural and communicated through telepathy. The only problem was that no one ever responded to {PAWN_possessive} telepathic messages.</baseDesc>
+		<skillGains>
+			<Crafting>1</Crafting>
+			<Artistic>3</Artistic>
+			<Social>-7</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 가출아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_RunawayKid</defName>
+		<title>Moyo Runaway kid</title>
+		<titleShort>Runaway kid</titleShort>
+		<baseDesc>In the Lighthouse, failure means obsolescence. {PAWN_nameDef} was under constant pressure to succeed, and unable to endure it, {PAWN_pronoun} eventually ran away. {PAWN_pronoun} struggled to survive on the streets until {PAWN_pronoun} was introduced to a "decent job."</baseDesc>
+		<skillGains>
+			<Melee>1</Melee>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Plants>1</Plants>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 수습 가정부 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_HousekeeperApprentice</defName>
+		<title>Moyo Housekeeper apprentice</title>
+		<titleShort>Housekeeper apprentice</titleShort>
+		<baseDesc>{PAWN_nameDef} was recently hired as an apprentice housekeeper and, as such, was still quite inexperienced. To avoid losing the hard-earned job, {PAWN_pronoun} had to scrutinize every little detail. While this took a toll on {PAWN_possessive} mental health, it seems that {PAWN_pronoun} managed to hold onto the job.</baseDesc>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Plants>1</Plants>
+			<Intellectual>-4</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Neurotic>2</Neurotic>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 즉석식품 매니아 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_InstantFoodEnthusiast</defName>
+		<title>Moyo Instant food enthusiast</title>
+		<titleShort>Instant food enthusiast</titleShort>
+		<baseDesc>In the highly commercialized society of the Lighthouse, even food is a fierce competition. {PAWN_nameDef} found joy in sampling the many instant foods that emerged from this competition. It’s a hobby that saves money and guarantees taste! And since there are no warnings about consumption, {PAWN_pronoun} assumes there are no health risks either.</baseDesc>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 사관후보생 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Cadet</defName>
+		<title>Moyo Cadet</title>
+		<titleShort>Cadet</titleShort>
+		<baseDesc>The regular army of the Lighthouse offers good pay and benefits, but the requirements are strict. {PAWN_nameDef} completed an educational program from a young age to join the regular army. During this process, {PAWN_pronoun} realized that handling weapons was quite enjoyable.</baseDesc>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>1</Melee>
+			<Cooking>-4</Cooking>
+			<Animals>-2</Animals>
+			<Artistic>2</Artistic>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 성년기 -->
+	<!-- 모요 기업 사무원 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CorporateEmployee</defName>
+		<title>Moyo Corporate employee</title>
+		<titleShort>Corporate employee</titleShort>
+		<baseDesc>In the many companies that exist in the lighthouse, there are countless people like {PAWN_nameDef}. While the packaging may seem impressive, the reality is that they are just cheap labor. Like many others, {PAWN_pronoun} will simply receive a termination notice and will have to find another way to survive.</baseDesc>
+		<skillGains>
+			<Social>1</Social>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 술집 주인 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Bartender</defName>
+		<title>Moyo Bartender</title>
+		<titleShort>Bartender</titleShort>
+		<baseDesc>{PAWN_nameDef} is the owner of a small, tucked-away bar. While {PAWN_possessive} establishment served as a refuge for several regulars, the rising rent forced {PAWN_possessive} to also get involved in drug dealing.</baseDesc>
+		<skillGains>
+			<Melee>2</Melee>
+			<Construction>-3</Construction>
+			<Mining>-3</Mining>
+			<Cooking>2</Cooking>
+			<Social>4</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 클럽 오너 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_ClubMaster</defName>
+		<title>Moyo Club master</title>
+		<titleShort>Club master</titleShort>
+		<baseDesc>After hard labor, a place to relieve stress is necessary. That place is {PAWN_nameDef}’s club. It offers not just alcohol, dancing, and music, but also a variety of drugs. {PAWN_possessive} club thrived and attracted the attention of many organization including gangs. While {PAWN_pronoun} gained significant benefits from these organizations, it wasn’t long before {PAWN_pronoun} had to flee from the club due to the pressures caused by them.</baseDesc>
+		<skillGains>
+			<Cooking>-3</Cooking>
+			<Plants>-3</Plants>
+			<Artistic>3</Artistic>
+			<Social>4</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<DrugDesire>1</DrugDesire>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 무기공장 일꾼 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_WeaponManufacturer</defName>
+		<title>Moyo Weapon manufacturer</title>
+		<titleShort>Weapon manufacturer</titleShort>
+		<baseDesc>Professional weapons like the Laminar firearms are rarely used in the Lighthouse due to their high cost and strict regulation by the Council. {PAWN_nameDef} was a worker at a factory that produced such weapons. Since most of these parts are high-value items that would lead to a lifetime of blood debts if damaged, the work always had to be done perfectly.</baseDesc>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Crafting>7</Crafting>
+			<Medicine>-3</Medicine>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Neurotic>2</Neurotic>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 제약회사 직원 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_PharmaceuticalEmployee</defName>
+		<title>Moyo Pharmaceutical employee</title>
+		<titleShort>Pharmaceutical employee</titleShort>
+		<baseDesc>{PAWN_nameDef} works at a pharmaceutical company in the Lighthouse. The many high-quality medications available in the Lighthouse are produced here. {PAWN_pronoun} knows that while these drugs might save some, they also harm others. {PAWN_pronoun} just believes that the net benefit of the results outweighs the harm.</baseDesc>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Crafting>1</Crafting>
+			<Medicine>1</Medicine>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 연구원 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Researcher</defName>
+		<title>Moyo Researcher</title>
+		<titleShort>Researcher</titleShort>
+		<baseDesc>Thanks to the Council's concentrated investment, Abysstech is advancing day by day. {PAWN_nameDef} is a researcher at the Lighthouse, expected to continuously deliver results. Fearing that declining performance might lead to a loss of support, {PAWN_pronoun} has been diving into increasingly dangerous experiments.</baseDesc>
+		<skillGains>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Medicine>-4</Medicine>
+			<Social>-4</Social>
+			<Intellectual>7</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 천문학자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Astronomer</defName>
+		<title>Moyo Astronomer</title>
+		<titleShort>Astronomer</titleShort>
+		<baseDesc>{PAWN_nameDef} gazed up at the cosmos from the depths of the sea. Although astronomy is a neglected field at the Lighthouse with no support from the Council, {PAWN_pronoun} worked tirelessly, dreaming of one day reaching the stars.</baseDesc>
+		<skillGains>
+			<Construction>-1</Construction>
+			<Mining>-1</Mining>
+			<Artistic>2</Artistic>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 방랑자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Wanderer</defName>
+		<title>Moyo Wanderer</title>
+		<titleShort>Wanderer</titleShort>
+		<baseDesc>{PAWN_nameDef} left the vast prison of the Lighthouse to live on a submarine. Though {PAWN_pronoun} occasionally returned to the Lighthouse for maintenance and resupply, each visit only reaffirmed {PAWN_possessive} conviction. {PAWN_pronoun} is preparing for the day when {PAWN_pronoun} can finally escape the Lighthouse for good.</baseDesc>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>1</Melee>
+			<Cooking>2</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 광부 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Miner</defName>
+		<title>Moyo Miner</title>
+		<titleShort>Miner</titleShort>
+		<baseDesc>To sustain the advancement and consumption at the Lighthouse, a large amount of minerals is required. {PAWN_nameDef} took up this dangerous but well-paying job. {PAWN_pronoun} planned to work only until {PAWN_pronoun} could retire from mining, but with medical expenses and other costs, retirement seems far off.</baseDesc>
+		<skillGains>
+			<Mining>5</Mining>
+			<Plants>-3</Plants>
+			<Social>1</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 심층광부 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CoreMiner</defName>
+		<title>Moyo Core miner</title>
+		<titleShort>Core miner</titleShort>
+		<baseDesc>{PAWN_nameDef} is a notorious core miner of the Lighthouse. Wearing thick diving suits, {PAWN_pronoun} descends to the darkest depths to extract minerals, making it one of the most dreaded jobs in the Lighthouse. However, the high pay drew {PAWN_possessive} to this occupation, and {PAWN_pronoun} was assigned to mine hadal shards. {PAWN_pronoun} said that {PAWN_pronoun} went through a horrifying experience down in the shard trenches.</baseDesc>
+		<skillGains>
+			<Mining>7</Mining>
+			<Plants>-5</Plants>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Nerves>-2</Nerves>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 메카노이드 정비공 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_MechanoidMantainer</defName>
+		<title>Moyo Mechanoid mantainer</title>
+		<titleShort>Mechanoid mantainer</titleShort>
+		<baseDesc>Mechanoids are essential workers who have been part of the Lighthouse’s history. {PAWN_nameDef} maintained these Mechanoids and suffered under the heavy workload it brought, developing a deep admiration for the tireless Mechanodoids, who, despite minor malfunctions, never seem to tire.</baseDesc>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!--모요 해결사 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Fixer</defName>
+		<title>Moyo Fixer</title>
+		<titleShort>Fixer</titleShort>
+		<baseDesc>{PAWN_nameDef} is a fixer who takes on various contracts. By solving dirty and difficult jobs, {PAWN_pronoun} satisfies clients and earns a hefty reward, making it a win-win situation. However, when one of {PAWN_possessive} contracts went terribly wrong, {PAWN_pronoun} had to escape the Lighthouse to save {PAWN_possessive} life.</baseDesc>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+			<Plants>-3</Plants>
+			<Animals>-3</Animals>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 바운서 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Bouncer</defName>
+		<title>Moyo Bouncer</title>
+		<titleShort>Bouncer</titleShort>
+		<baseDesc>{PAWN_nameDef} was a bouncer at a nightclub. In a place with so many people, chaos was inevitable, and {PAWN_pronoun} was very effective at "persuading" drunks, druggies, and unruly customers. That is, until {PAWN_pronoun} was fired for a truly trivial reason.</baseDesc>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Melee>5</Melee>
+			<Medicine>-3</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 계약 의사 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_ContractedDoctor</defName>
+		<title>Moyo Contracted doctor</title>
+		<titleShort>Contracted doctor</titleShort>
+		<baseDesc>{PAWN_nameDef} became a doctor through specialized training. Realizing that working with the general public wouldn’t be profitable, {PAWN_pronoun} decided to enter into a contract with a wealthy patron from the bottom levels.</baseDesc>
+		<skillGains>
+			<Melee>1</Melee>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Medicine>7</Medicine>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 베테랑 간호사 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_VeteranNurse</defName>
+		<title>Moyo Veteran nurse</title>
+		<titleShort>Veteran nurse</titleShort>
+		<baseDesc>{PAWN_nameDef} is a veteran nurse who has weathered countless trials. Having witnessed horrific scenes and endured grueling work, {PAWN_pronoun} decided that suppressing emotions was the best way to avoid breaking down. Through this approach, {PAWN_pronoun} became a seasoned veteran.</baseDesc>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Medicine>5</Medicine>
+			<Social>-6</Social>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 가정부 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Housekeeper</defName>
+		<title>Moyo Housekeeper</title>
+		<titleShort>Housekeeper</titleShort>
+		<baseDesc>Wealthy people can hire many services with their money. {PAWN_nameDef} was employed as a housekeeper, managing various household chores and errands. {PAWN_pronoun} was unable to resist the demands of the employer, who was socially and economically superior. As the employer's demands grew increasingly unreasonable, {PAWN_pronoun} could no longer endure it and eventually killed the employer and escaped.</baseDesc>
+		<skillGains>
+			<Melee>3</Melee>
+			<Mining>-2</Mining>
+			<Cooking>4</Cooking>
+			<Plants>2</Plants>
+			<Crafting>-3</Crafting>
+			<Artistic>-3</Artistic>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 가벼운 꼬리 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_BuoyantTail</defName>
+		<title>Moyo Buoyant tail</title>
+		<titleShort>Buoyant tail</titleShort>
+		<baseDesc>{PAWN_nameDef} found a method for earning money that is both fast and effective. With just a reasonable level of self-management and social skills, it’s a simple job of just slightly lifting a tail to  {PAWN_possessive} customer. While some may criticize this approach, {PAWN_pronoun} is unbothered by their opinions. After all, while those critics can be fired at any time, {PAWN_possessive} clients show no signs of disappearing.</baseDesc>
+		<skillGains>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Social>5</Social>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+			<Beauty>1</Beauty>
+			<Industriousness>-2</Industriousness>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 집행관 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Enforcer</defName>
+		<title>Moyo Enforcer</title>
+		<titleShort>Enforcer</titleShort>
+		<baseDesc>{PAWN_nameDef} serves as an enforcer of the law and order in the Lighthouse. Dressed in uniform, {PAWN_pronoun} goes out to apprehend criminals and maintain public order. Enforcers like {PAWN_nameDef} have various nicknames, the most famous of which is "The Barnacle Cleaner." This nickname comes from their role in clearing out vagrants and beggars who settle in flooded zones and other areas, keeping the environment clean. Many residents of the middle level appreciate the efforts of enforcers like {PAWN_nameDef} for maintaining cleanliness and order.</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Construction>-3</Construction>
+			<Cooking>1</Cooking>
+			<Social>1</Social>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 정규군 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Soldier</defName>
+		<title>Moyo Soldier</title>
+		<titleShort>Soldier</titleShort>
+		<baseDesc>{PAWN_nameDef} is a member of the Lighthouse's regular army, trained to a professional standard. Due to the nature of the Lighthouse, the regular army is rarely deployed, so {PAWN_pronoun} has mostly been assigned to support the enforcers. Many within the Lighthouse question the necessity of a regular army due to the costs involved, but the wise understands that the presence of the regular army, the most powerful military force in the Lighthouse, that ensures order is maintained in this chaotic place.</baseDesc>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>5</Melee>
+			<Plants>-1</Plants>
+			<Animals>-3</Animals>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 정규군 장교 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_ArmyOfficer</defName>
+		<title>Moyo Army officer</title>
+		<titleShort>Army officer</titleShort>
+		<baseDesc>{PAWN_nameDef} was enjoying a very comfortable life as an officer in the regular army. However, this soon degenerated into debauchery, and {PAWN_pronoun} devised a plan to make a big score for downward mobility. Naturally, this plan failed, and {PAWN_pronoun} hurriedly left the Lighthouse before the situation could worsen.</baseDesc>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Melee>1</Melee>
+			<Artistic>-6</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

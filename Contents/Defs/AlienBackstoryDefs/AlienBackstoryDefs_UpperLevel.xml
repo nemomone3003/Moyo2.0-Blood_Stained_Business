@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--템플릿-->
+	<!--<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryBase">
+		<defName>Moyo2_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDesc>backstory</baseDesc>
+		<slot>hood</slot>
+		<skillGains>	
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>-->
+	<!-- 유년기 -->
+	<!-- 모요 양식장 노동자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_AquacultureWorker</defName>
+		<title>Moyo Aquaculture worker</title>
+		<titleShort>Aquaculture worker</titleShort>
+		<baseDesc>Feeding the fish and checking their condition is a job anyone can do. This is why {PAWN_nameDef} was able to find employment. {PAWN_pronoun} spent many hours interacting with the empty-eyed fish beyond the glass, all while equipped with deepblue extractor.</baseDesc>
+		<skillGains>
+			<Animals>3</Animals>
+			<Medicine>1</Medicine>
+			<Social>-5</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 소박한 수집가 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_HumbleCollector</defName>
+		<title>Moyo Humble collector</title>
+		<titleShort>Humble collector</titleShort>
+		<baseDesc>{PAWN_nameDef} has no interest in the lighthouse’s popular collection of colorful, expensive knives, famous Siren cards, or impossible-to-replicate holograms. Instead, {PAWN_pronoun} is creating {PAWN_possessive} own precious and modest collection. While it may be useless to most, {PAWN_pronoun} finds happiness in it.</baseDesc>
+		<skillGains>
+			<Cooking>-1</Cooking>
+			<Crafting>2</Crafting>
+			<Artistic>2</Artistic>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 밀수 협조자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_SmugglingCollaborator</defName>
+		<title>Moyo Smuggling collaborator</title>
+		<titleShort>Smuggling collaborator</titleShort>
+		<baseDesc>{PAWN_nameDef}’s innocent face and quick feet have saved {PAWN_possessive} in many situations. Feeling overconfident, {PAWN_nameDef} began collaborating with smugglers for a more thrilling experience. The risks were great, but the rewards and excitement were even greater, and {PAWN_pronoun} enjoyed it.</baseDesc>
+		<skillGains>
+			<Melee>1</Melee>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 총명한 아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_BrightChild</defName>
+		<title>Moyo Bright child</title>
+		<titleShort>Bright child</titleShort>
+		<baseDesc>{PAWN_nameDef} enjoyed learning and was always at the top of {PAWN_possessive} class. However, {PAWN_nameDef} eventually fell behind. In {PAWN_possessive} frustration, {PAWN_nameDef} discovered that others were using drugs and developed a strong urge to try them.</baseDesc>
+		<skillGains>
+			<Artistic>-2</Artistic>
+			<Social>-2</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<DrugDesire>1</DrugDesire>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 말괄량이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_ArrogantChild</defName>
+		<title>Moyo Arrogant child</title>
+		<titleShort>Arrogant child</titleShort>
+		<baseDesc>{PAWN_nameDef} was a Moyo who pursued what {PAWN_pronoun} wanted with clarity and determination. {PAWN_pronoun} focused solely on social activities, avoiding other concerns. The positive aspect of this was {PAWN_possessive} wide network of relationships, while the negative aspects were abundant.</baseDesc>
+		<skillGains>
+			<Artistic>1</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+			<Industriousness>-1</Industriousness>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 성년기 -->
+	<!-- 모요 해초 농부 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_SeaweedFarmer</defName>
+		<title>Moyo Seaweed farmer</title>
+		<titleShort>Seaweed farmer</titleShort>
+		<baseDesc>{PAWN_nameDef} cultivated various seaweeds, including Depthweeds. Although the nature of {PAWN_possessive} job was far from the grandeur of the lighthouse, there wasn’t much to worry about aside from occasional intruders damaging the seaweed forest. Perhaps it would have been better for {PAWN_possessive} to have stayed there.</baseDesc>
+		<skillGains>
+			<Construction>-3</Construction>
+			<Mining>-3</Mining>
+			<Cooking>1</Cooking>
+			<Plants>5</Plants>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 양식장 주인 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_AquacultureOwner</defName>
+		<title>Moyo Aquaculture owner</title>
+		<titleShort>Aquaculture owner</titleShort>
+		<baseDesc>{PAWN_nameDef} was the owner of a tuna farming operation. The sight of the neatly arranged aquaculture tanks was extremely tedious for {PAWN_possessive}, who desired the grandeur of the lighthouse. {PAWN_pronoun} sought ways to make money more easily, exploring ways to improve the quality and diversity of the fish species and considering connections with other businesses. In the end, {PAWN_pronoun} reached the conclusion of Deep Blue.</baseDesc>
+		<skillGains>
+			<Animals>2</Animals>
+			<Artistic>-3</Artistic>
+			<Social>2</Social>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 연안 탐사자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CoastalExplorer</defName>
+		<title>Moyo Coastal explorer</title>
+		<titleShort>Coastal explorer</titleShort>
+		<baseDesc>To delve into the endlessly deep sea requires a significant amount of resources. {PAWN_nameDef} explored the shallow seas, discovering numerous resources and terrains for the lighthouse to use. However, as the expansion of the lighthouse slowed, {PAWN_possessive} role came to an end. Ultimately, {PAWN_pronoun} was left with nothing even {PAWN_possessive} exploration equipment being taken away, and found {PAWN_possessive}self stuck in the upper levels.</baseDesc>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>-3</Melee>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 어부-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Fisher</defName>
+		<title>Moyo Fisher</title>
+		<titleShort>Fisher</titleShort>
+		<baseDesc>{PAWN_nameDef} plays a crucial role in supplying food to the lighthouse. As the ecosystem around the lighthouse has already been ruined, {PAWN_pronoun} had to fish in ever more distant waters. The price of {PAWN_possessive} efforts is met with complaints and dissatisfaction from consumers over the increased costs.</baseDesc>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Cooking>2</Cooking>
+			<Animals>4</Animals>
+			<Crafting>1</Crafting>
+			<Artistic>-3</Artistic>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 사냥꾼-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Hunter</defName>
+		<title>Moyo Hunter</title>
+		<titleShort>Hunter</titleShort>
+		<baseDesc>Since ordinary fish won’t make much money, {PAWN_nameDef} hunted and captured rarer or more dangerous creatures. As {PAWN_possessive} business grew more famous, {PAWN_pronoun} began to expand the scope of {PAWN_possessive} hunts, driven by the taste of money.</baseDesc>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Cooking>1</Cooking>
+			<Animals>3</Animals>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 알몸 잠수부-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_NakedDiver</defName>
+		<title>Moyo Naked diver</title>
+		<titleShort>Naked diver</titleShort>
+		<baseDesc>{PAWN_nameDef} grew tired of the competition in the lighthouse and took refuge in the upper levels. The natural beauty {PAWN_pronoun} encountered there captivated {PAWN_possessive}. Now, {PAWN_pronoun} plunges into the sea with only a respirator, immersing {PAWN_possessive}self in nature, hoping that one day {PAWN_pronoun} can completely escape the lighthouse.</baseDesc>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>-1</Melee>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Nudist>0</Nudist>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 소박한 선생님-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_HumbleTeacher</defName>
+		<title>Moyo Humble teacher</title>
+		<titleShort>Humble teacher</titleShort>
+		<baseDesc>Though the facilities in the upper levels of the lighthouse are poor, they are nothing compared to the flood slum. Knowing this well, {PAWN_nameDef} is passionately teaching to ensure that no child falls into the flood slum. Regardless of the outcome, {PAWN_nameDef} is a person with a pure intention rarely seen in the lighthouse.</baseDesc>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Cooking>2</Cooking>
+			<Plants>-1</Plants>
+			<Animals>-1</Animals>
+			<Social>1</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 자경단 일원-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Vigilante</defName>
+		<title>Moyo Vigilante</title>
+		<titleShort>Vigilante</titleShort>
+		<baseDesc>In the outer areas like the upper levels of the lighthouse, public authority has little reach. {PAWN_nameDef} joined a volunteer militia to protect what {PAWN_pronoun} holds dear. Although it is nothing more than an unarmed and untrained group, {PAWN_pronoun} worked hard to maintain order.</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Animals>-3</Animals>
+			<Medicine>1</Medicine>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 자경단장-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_VigilanteLeader</defName>
+		<title>Moyo Vigilante leader</title>
+		<titleShort>Vigilante leader</titleShort>
+		<baseDesc>{PAWN_nameDef} led a vigilante group in the upper levels, working to gather members and create a better society. Ironically, the biggest challenge {PAWN_pronoun} faced was dealing with public authority questioning the legality of the vigilante activities.</baseDesc>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Animals>-3</Animals>
+			<Artistic>1</Artistic>
+			<Medicine>1</Medicine>
+			<Social>2</Social>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 부패한 자경단장-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_CorruptVigilanteLeader</defName>
+		<title>Moyo Corrupt vigilante leader</title>
+		<titleShort>Corrupt vigilante</titleShort>
+		<baseDesc>{PAWN_nameDef} is the leader of a powerful vigilante group in the upper levels. They received a modest activity fee as a 'donation' and used it to build connections in various places, allowing them to wield significant influence. All of this was thanks to {PAWN_possessive} exceptional leadership and negotiation skills.</baseDesc>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>-1</Melee>
+			<Social>4</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 지상파-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_SurfaceEnthusiast</defName>
+		<title>Moyo Surface enthusiast</title>
+		<titleShort>Surface enthusiast</titleShort>
+		<baseDesc>{PAWN_nameDef} is an eccentric who insists that they must leave the dark depths of the sea and rise to the surface. They believe that the lighthouse underwater is irreparably chaotic and that a fresh start is needed. Whether realistic or not, {PAWN_pronoun} is convinced that everyone will eventually recognize the truth of {PAWN_possessive} ideas.</baseDesc>
+		<skillGains>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Cooking>1</Cooking>
+			<Plants>1</Plants>
+			<Animals>-3</Animals>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<NaturalMood>-1</NaturalMood>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 지상 접선책-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_SurfaceAdvocate</defName>
+		<title>Moyo Surface advocate</title>
+		<titleShort>Surface advocate</titleShort>
+		<baseDesc>{PAWN_nameDef} is a Moyo who has already left the lighthouse and ascended to the surface. After joining a group of Moyo refugees like {PAWN_possessive}, {PAWN_nameDef} took on the role of an agent, tasked with helping other Moyos escape to the surface.</baseDesc>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>2</Melee>
+			<Plants>-3</Plants>
+			<Animals>-3</Animals>
+			<Artistic>1</Artistic>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 건강식 전문가-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_HealthyMealExpert</defName>
+		<title>Moyo Healthy meal expert</title>
+		<titleShort>Meal expert</titleShort>
+		<baseDesc>{PAWN_nameDef} is an expert in healthy meal, focusing on ingredients sourced directly from nature rather than processed ones. Ironically, {PAWN_pronoun} is not actually interested in healthy food; {PAWN_pronoun} simply aimed to make the best of a limited situation.</baseDesc>
+		<skillGains>
+			<Construction>-1</Construction>
+			<Mining>-1</Mining>
+			<Cooking>5</Cooking>
+			<Crafting>-2</Crafting>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

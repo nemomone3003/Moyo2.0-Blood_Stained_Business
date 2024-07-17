@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--템플릿-->
+	<!--<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryBase">
+		<defName>Moyo2_Backstory</defName>
+		<title>name</title>
+		<titleShort>name</titleShort>
+		<baseDesc>backstory</baseDesc>
+		<slot>hood</slot>
+		<skillGains>		
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li></li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>-->
+	<!-- 유년기 -->
+	<!-- 모요 하수구 민달팽이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_SewerSlug</defName>
+		<title>Moyo Sewer slug</title>
+		<titleShort>Sewer slug</titleShort>
+		<baseDesc>{PAWN_nameDef} lived in the lighthouse sewer. The reason for being there was not important. Surviving in this cold, dirty, and smelly place was {PAWN_possessive} reason for living.</baseDesc>
+		<skillGains>
+			<Melee>1</Melee>
+			<Construction>-1</Construction>
+			<Mining>-1</Mining>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Social>-5</Social>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 따개비 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_Barnacle</defName>
+		<title>Moyo Barnacle</title>
+		<titleShort>Barnacle</titleShort>
+		<baseDesc>{PAWN_nameDef} lived in the flood slum of the lighthouse. Flood slum dwellers like {PAWN_possessive} created makeshift homes on the walls and floors of the flooded area, earning them the nickname "barnacles" because of their resemblance. Everyone there, including {PAWN_possessive}, would do anything to escape being a barnacle.</baseDesc>
+		<skillGains>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Plants>1</Plants>
+			<Crafting>-3</Crafting>
+			<Artistic>-5</Artistic>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 무연고자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_Drifter</defName>
+		<title>Moyo Drifter</title>
+		<titleShort>Drifter</titleShort>
+		<baseDesc>{PAWN_nameDef} is a resident who came from outside the lighthouse. However, no one cared about that fact. Once {PAWN_pronoun} ended up in the flood slum, such stories didn't matter at all. {PAWN_pronoun} just did whatever it took to survive.</baseDesc>
+		<skillGains>
+			<Melee>2</Melee>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Artistic>-3</Artistic>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 좀도둑 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_PettyTheif</defName>
+		<title>Moyo Petty theif</title>
+		<titleShort>Petty theif</titleShort>
+		<baseDesc>The flood slum is a place where you cannot survive without skills. That’s why {PAWN_nameDef} has honed their thieving abilities. After all, you need to have something in hand to eat or sell. Of course, knowing that being caught means having every drop of blood drained from their body, {PAWN_pronoun} had to be extremely meticulous.</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Social>-1</Social>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 유망한 아이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
+		<defName>Moyo2_PromisingChild</defName>
+		<title>Moyo Promising child</title>
+		<titleShort>Moyo Promising child</titleShort>
+		<baseDesc>{PAWN_nameDef} is a very bright child. With enough education and a great teacher, {PAWN_pronoun} will reach the bottom of the lighthouse. Of course, like most hopeful stories, this only makes sense after escaping the flood slum.</baseDesc>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_MidCivil</li>
+			<li>Moyo2_TopCrime</li>
+			<li>Moyo2_MidCrime</li>
+			<li>Moyo2_Engineer</li>
+			<li>Moyo2_Soldier</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!--성년기-->
+	<!-- 모요 부유물 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_Floatsam</defName>
+		<title>Moyo Floatsam</title>
+		<titleShort>Floatsam</titleShort>
+		<baseDesc>The lighthouse is divided into four main levels: the flood slum, the upper level, the middle level, and the bottom level. These four levels differ not only in living conditions but also in their physical locations. Many residents struggle fiercely to move between these levels, and some, like {PAWN_possessive}, fail and end up in worse situations. {PAWN_nameDef}'s plan went disastrously wrong, and {PAWN_possessive}, having been swept into the flood slum, became easy prey for the barnacles.</baseDesc>
+		<skillGains>
+			<Construction>-2</Construction>
+			<Mining>-2</Mining>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<NaturalMood>-2</NaturalMood>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 혈액 채무자 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_BloodDebtor</defName>
+		<title>Moyo Blood debtor</title>
+		<titleShort>Blood debtor</titleShort>
+		<baseDesc>{PAWN_nameDef} incurred a blood debt for various reasons. For the rest of {PAWN_possessive} life, a certain amount of blood must be repaid, with interest. Facing the ongoing exploitation and the risk of losing {PAWN_possessive} body and organs, {PAWN_nameDef} desperately searched for a way to escape the lighthouse.</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>1</Melee>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Neurotic>1</Neurotic>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 고물 수집가-->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_JunkCollector</defName>
+		<title>Moyo Junk collector</title>
+		<titleShort>Junk collector</titleShort>
+		<baseDesc>Broken machines, fallen metal plates, even lost jewelry—these are all {PAWN_nameDef}'s prey. The scrap metal torn and cut from these items provides a modest income and materials to craft means of self-protection. Junk collectors like {PAWN_possessive} always dream of striking it rich with a broken mechanoid.</baseDesc>
+		<skillGains>
+			<Construction>1</Construction>
+			<Plants>-4</Plants>
+			<Animals>-4</Animals>
+			<Crafting>4</Crafting>
+			<Artistic>1</Artistic>
+			<Medicine>-2</Medicine>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 사이비 의사 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_QuackDoctor</defName>
+		<title>Moyo Quack doctor</title>
+		<titleShort>Quack doctor</titleShort>
+		<baseDesc>There is no illness that {PAWN_nameDef} cannot cure, be it cancer, mental illness, hair loss, or erectile dysfunction. There’s no way to verify if this claim is true or false. After all, anyone who goes to {PAWN_possessive} clinic in the flood slum is either already dead or doomed to die anyway.</baseDesc>
+		<skillGains>
+			<Shooting>-3</Shooting>
+			<Melee>2</Melee>
+			<Cooking>3</Cooking>
+			<Animals>-5</Animals>
+			<Artistic>5</Artistic>
+			<Medicine>-5</Medicine>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Neurotic>1</Neurotic>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 야심찬 사업가 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_AmbitiousEntrepreneur</defName>
+		<title>Moyo Ambitious entrepreneur</title>
+		<titleShort>Ambitious entrepreneur</titleShort>
+		<baseDesc>You can’t enter the bottom levels, the middle levels are highly competitive, and the upper levels aren’t very profitable. So what about the flood slum? {PAWN_nameDef} once started their own small business there. There’s a reason it’s mentioned in the past tense.</baseDesc>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Crafting>1</Crafting>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 침수구역 고아원장a -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_OrphanageDirectorA</defName>
+		<title>Moyo Orphanage director</title>
+		<titleShort>Orphanage director</titleShort>
+		<baseDesc>Many Moyo come flowing into the flood slum, including many young children. {PAWN_nameDef} took in these children and cared for them as best as {PAWN_pronoun} could. Eventually, realizing that they could not survive in the flood slum, {PAWN_nameDef} prepared to escape the flood slum with the children.</baseDesc>
+		<skillGains>
+			<Construction>-1</Construction>
+			<Mining>-1</Mining>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+			<Social>2</Social>
+			<Intellectual>-4</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 침수구역 고아원장b -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_OrphanageDirectorB</defName>
+		<title>Moyo Orphanage director</title>
+		<titleShort>Orphanage director</titleShort>
+		<baseDesc>Many Moyo flow into the flood slum, including many young children. {PAWN_nameDef} received support from a corporation to take care of these children. The children were kept safe from the flood slum, provided with education, and sent to the sponsor corporation for employment. What they would do there is unknown, but {PAWN_nameDef} received a generous performance bonus, so there’s no need to worry about it.</baseDesc>
+		<skillGains>
+			<Melee>2</Melee>
+			<Animals>5</Animals>
+			<Medicine>-3</Medicine>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 다정한 의사 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_KindDoctor</defName>
+		<title>Moyo Kind doctor</title>
+		<titleShort>Kind doctor</titleShort>
+		<baseDesc>Life in the flood slum is miserable. Even minor injuries or illnesses can be a matter of life and death. {PAWN_nameDef} tried to improve the situation, using whatever little medical knowledge {PAWN_pronoun} had to help others. {PAWN_pronoun} believed that these small acts of help would make the flood slum a better place.</baseDesc>
+		<skillGains>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 고물 땜장이 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_ScrapTinkerer</defName>
+		<title>Moyo Scrap tinkerer</title>
+		<titleShort>Scrap tinkerer</titleShort>
+		<baseDesc>The items {PAWN_nameDef} made are very useful in the flood slum. They are extremely uncomfortable to use, but having them is better than nothing. {PAWN_pronoun} took on any job, regardless of the conditions, to earn more money. Who cares about what the items will be used for?</baseDesc>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Cooking>-5</Cooking>
+			<Crafting>2</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+		</workDisables>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- 모요 침수교 교주 -->
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+		<defName>Moyo2_FloodCultLeader</defName>
+		<title>Moyo Floodcult leader</title>
+		<titleShort>Floodcult leader</titleShort>
+		<baseDesc>“To be submerged is a blessing!” {PAWN_pronoun} says. {PAWN_nameDef} led a religious group called the Cult of flooding within the flood slum. {PAWN_pronoun} claims that the Moyos were drawn to this place by the divine blessing of the water, and {PAWN_nameDef} argued that building a lighthouse instead of living in the water was rejecting the divine favor. By the way, the main ritual of the Flood Church was to throw a box filled with one’s possessions into the sea.</baseDesc>
+		<skillGains>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
