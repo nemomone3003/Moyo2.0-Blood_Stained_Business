@@ -299,18 +299,11 @@
 		<titleShort>Kind doctor</titleShort>
 		<baseDesc>Life in the flood slum is miserable. Even minor injuries or illnesses can be a matter of life and death. {PAWN_nameDef} tried to improve the situation, using whatever little medical knowledge {PAWN_pronoun} had to help others. {PAWN_pronoun} believed that these small acts of help would make the flood slum a better place.</baseDesc>
 		<skillGains>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-				
+			<Plants>-3</Plants>
+			<Crafting>-3</Crafting>
+			<Medicine>4</Medicine>
+			<Social>1</Social>
+			<Intellectual>2</Intellectual>
 		</skillGains>
 		<workDisables>
 		</workDisables>

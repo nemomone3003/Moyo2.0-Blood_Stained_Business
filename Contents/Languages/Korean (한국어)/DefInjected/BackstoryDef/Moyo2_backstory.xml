@@ -1,175 +1,307 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<!--Original=모요 dummy-->
-	<Moyo2_DummyChild.title>모요 더미</Moyo2_DummyChild.title>
-	<!--Original=dummy-->
-	<Moyo2_DummyChild.titleShort>더미</Moyo2_DummyChild.titleShort>
-	<!--Original=Dummy backstory-->
-	<Moyo2_DummyChild.description>더미 배경</Moyo2_DummyChild.description>
-	<!--Original=모요 dummy-->
-	<Moyo2_DummyAdult.title>모요 더미</Moyo2_DummyAdult.title>
-	<!--Original=dummy-->
-	<Moyo2_DummyAdult.titleShort>더미</Moyo2_DummyAdult.titleShort>
-	<!--Original=Dummy backstory-->
-	<Moyo2_DummyAdult.description>더미 배경</Moyo2_DummyAdult.description>
-	<!-- 농장아이 -->
-	<Moyo2_FarmChild.title>모요 농장아이</Moyo2_FarmChild.title>
-	<Moyo2_FarmChild.titleShort>농장아이</Moyo2_FarmChild.titleShort>
-	<Moyo2_FarmChild.baseDesc>[PAWN_nameDef](은)는 상층의 해초농장에서 자랐습니다. 주변에 어수선한 소문들이 떠돌고 어른들이 걱정에 잠겨있는 와중에도 [PAWN_pronoun](은)는 해초를 가꾸고 수확하는 일에 열중했습니다.</Moyo2_FarmChild.baseDesc>
-	<!-- 고아 -->
-	<Moyo2_Orphan.title>모요 고아</Moyo2_Orphan.title>
-	<Moyo2_Orphan.titleShort>고아</Moyo2_Orphan.titleShort>
-	<Moyo2_Orphan.baseDesc>[PAWN_nameDef](은)는 부모님과 헤어져 고아원에서 자랐습니다. 고아원에는 [PAWN_pronoun]와 같은 처지의 아이들이 많았고, 심지어 자신의 부모가 죽는 모습을 목격한 아이도 있었습니다. [PAWN_pronoun](은)는 그런 아이들 사이에서 부모를 다시 만날 날을 기다렸습니다.</Moyo2_Orphan.baseDesc>
-	<!-- 정비공지망생 -->
-	<Moyo2_MechanicWannabe.title>모요 정비공 지망생</Moyo2_MechanicWannabe.title>
-	<Moyo2_MechanicWannabe.titleShort>정비공 지망생</Moyo2_MechanicWannabe.titleShort>
-	<Moyo2_MechanicWannabe.baseDesc>[PAWN_nameDef](은)는 다양한 기계와 장비에 매료되었습니다. 운좋게도, 바다속에는 수많은 고철들과 부붐들이 널려있었으므로 [PAWN_pronoun](은)는 가지고 놀 장난감을 쉽게 구할 수 있었습니다.</Moyo2_MechanicWannabe.baseDesc>
-	<!-- 몽상가 -->
-	<Moyo2_Dreamer.title>모요 몽상가</Moyo2_Dreamer.title>
-	<Moyo2_Dreamer.titleShort>몽상가</Moyo2_Dreamer.titleShort>
-	<Moyo2_Dreamer.baseDesc>[PAWN_nameDef](은)는 저 아래 심연에서 반짝이는 도시의 경관을 동경했습니다. 하지만 어른들은 [PAWN_pronoun]가 아랫층에 관심을 가지는 것을 달갑지 않아했습니다. 아랫층에 대한 수많은 공포스럽고 과장된 협박과 설득에도 불구하고 [PAWN_pronoun](은)는 뜻을 굽히지 않았습니다.</Moyo2_Dreamer.baseDesc>
-	<!-- 일진 -->
-	<Moyo2_Bully.title>모요 일진</Moyo2_Bully.title>
-	<Moyo2_Bully.titleShort>일진</Moyo2_Bully.titleShort>
-	<Moyo2_Bully.baseDesc>타인을 굴복시키는 것의 달콤함을 [PAWN_nameDef](은)는 일찍 깨달았습니다. [PAWN_pronoun](은)는 또래 아이들을 괴롭히고 물품을 갈취하는 것을 즐겼고, 고아원의 아이들은 주로 피해자의 역할을 감내해야만 했습니다.</Moyo2_Bully.baseDesc>
+
+	<!-- 침수구역 백스토리 -->
+	<!-- 하수구 민달팽이 -->
+	<Moyo2_SewerSlug.title>모요 하수구 민달팽이</Moyo2_SewerSlug.title>
+	<Moyo2_SewerSlug.titleShort>하수구 민달팽이</Moyo2_SewerSlug.titleShort>
+	<Moyo2_SewerSlug.baseDesc>{PAWN_nameDef} (은)는 등대의 하수구 안에서 살았습니다. 어째서 여기 있는 것인지는 중요하지 않았습니다. 그저 이 춥고 더럽고 냄새나는 곳에서 생존하는 것이 {PAWN_pronoun}의 삶의 이유였습니다.</Moyo2_SewerSlug.baseDesc>
+	<!-- 따개비 -->
+	<Moyo2_Barnacle.title>모요 따개비</Moyo2_Barnacle.title>
+	<Moyo2_Barnacle.titleShort>따개비</Moyo2_Barnacle.titleShort>
+	<Moyo2_Barnacle.baseDesc>{PAWN_nameDef} (은)는 등대의 침수구역 빈민촌에 살았습니다. {PAWN_pronoun}와 같은 침수구역 빈민들은 침수구역 벽과 바닥에 임시 주거지를 만들어 살았고, 이 모습이 따개비와 닯았기에 이렇게 불리게 되었습니다. {PAWN_pronoun}를 포함한 그곳의 모든 이들은 따개비에서 벗어나기 위해 무엇이든 할 것입니다.</Moyo2_Barnacle.baseDesc>
+	<!-- 무연고자 -->
+	<Moyo2_Drifter.title>모요 무연고자</Moyo2_Drifter.title>
+	<Moyo2_Drifter.titleShort>무연고자</Moyo2_Drifter.titleShort>
+	<Moyo2_Drifter.baseDesc>{PAWN_nameDef} (은)는 등대의 외부에서 온 모요입니다. 하지만 아무도 그 사실을 신경쓰지 않았습니다. 침수구역에 흘러들어온 이상 그딴 사연은 아무 의미도 없습니다. {PAWN_pronoun}도 그저 살기 위해 무엇이든 하며 살아갔습니다.</Moyo2_Drifter.baseDesc>
 	<!-- 좀도둑 -->
 	<Moyo2_PettyTheif.title>모요 좀도둑</Moyo2_PettyTheif.title>
 	<Moyo2_PettyTheif.titleShort>좀도둑</Moyo2_PettyTheif.titleShort>
-	<Moyo2_PettyTheif.baseDesc>[PAWN_nameDef](은)는 분쟁에 휘말렸습니다. [PAWN_pronoun]의 가정은 황폐화됐고, [PAWN_nameDef](은)는 살아남기 위해 식량이나 돈이 될만한 것들을 훔쳐야만 했습니다.</Moyo2_PettyTheif.baseDesc>
-	<!-- 사냥보조 -->
-	<Moyo2_HuntingAssistant.title>모요 사냥보조</Moyo2_HuntingAssistant.title>
-	<Moyo2_HuntingAssistant.titleShort>사냥보조</Moyo2_HuntingAssistant.titleShort>
-	<Moyo2_HuntingAssistant.baseDesc>[PAWN_nameDef](은)는 사냥꾼들과 함께 다니며 심부름을 도맡아 했습니다. 사냥꾼들과 함께 다니는 동안, [PAWN_pronoun](은)는 동물들에 대해 배우고 직접 사냥을 해보기도 했습니다.</Moyo2_HuntingAssistant.baseDesc>
-	<!-- 산호조각가 -->
-	<Moyo2_CoralSculpter.title>모요 산호 조각가</Moyo2_CoralSculpter.title>
-	<Moyo2_CoralSculpter.titleShort>산호 조각가</Moyo2_CoralSculpter.titleShort>
-	<Moyo2_CoralSculpter.baseDesc>[PAWN_nameDef](은)는 잘 다듬어진 산호를 다양한 귀중품으로 만드는 일을 배웠습니다. [PAWN_pronoun]의 작품은 세련되지는 않았지만 충분히 예술의 재능을 보였고, 공방의 많은 사람들로부터 기대를 받았습니다.</Moyo2_CoralSculpter.baseDesc>
-	<!-- 총명한아이 -->
+	<Moyo2_PettyTheif.baseDesc>침수구역은 능력 없인 살 수 없는 곳입니다. 그렇기에 {PAWN_nameDef} (은)는 도둑질을 연마했습니다. 일단 손에 잡히는 것이 있어야 먹거나 팔거나 할 수 있기 때문이죠. 물론 잡히는 날에는 온몸의 피가 남김없이 쪽쪽 빨릴 것이라는 것을 알기에 {PAWN_pronoun}는 매우 주도면밀해야 했습니다.</Moyo2_PettyTheif.baseDesc>
+	<!-- 유망한 아이 -->
+	<Moyo2_PromisingChild.title>모요 유망한 아이</Moyo2_PromisingChild.title>
+	<Moyo2_PromisingChild.titleShort>유망한 아이</Moyo2_PromisingChild.titleShort>
+	<Moyo2_PromisingChild.baseDesc>{PAWN_nameDef} (은)는 매우 총명한 아이입니다. 충분한 교육과 훌륭한 스승과 함께라면 등대의 바닥까지 도달할 것입니다. 물론 대부분의 희망찬 이야기가 그렇듯이, 침수구역부터 벗어나고 나서야 의미가 생기는 말입니다.</Moyo2_PromisingChild.baseDesc>
+	<!-- 부유물 -->
+	<Moyo2_Floatsam.title>모요 부유물</Moyo2_Floatsam.title>
+	<Moyo2_Floatsam.titleShort>부유물</Moyo2_Floatsam.titleShort>
+	<Moyo2_Floatsam.baseDesc>등대는 크게 4가지의 계층으로 나뉘어 있습니다. 침수구역, 상층, 중층과 하층의 4개의 계층은 생활의 여건뿐만 아니라 물리적인 위치마저 다릅니다. 수많은 모요들이 이 계층 이동을 위해 사투를 벌이고 있고, 개중에는 실패하여 더 안좋은 결과를 보기도 합니다. {PAWN_pronoun} 도 그런 부류입니다. {PAWN_nameDef} (은)는의 계획이 아주 크게 잘못되었고, 침수구역으로 흘러들어온 {PAWN_pronoun}는 따개비들의 손쉬운 전리품이 되었습니다.</Moyo2_Floatsam.baseDesc>
+	<!-- 혈액 채무자 -->
+	<Moyo2_BloodDebtor.title>모요 혈액 채무자</Moyo2_BloodDebtor.title>
+	<Moyo2_BloodDebtor.titleShort>혈액 채무자</Moyo2_BloodDebtor.titleShort>
+	<Moyo2_BloodDebtor.baseDesc>{PAWN_nameDef} (은)는 여러 이유로 인해 혈액 채무를 지게 되었습니다. 앞으로 일평생 일정량의 혈액을 상환해야 하며, 이자는 별도입니다. 계속되는 착취에 신체와 장기마저 빼앗길 위험에 처하자 {PAWN_pronoun}는 사력을 다해 등대를 탈출할 방법을 찾았습니다.</Moyo2_BloodDebtor.baseDesc>
+	<!-- 고물 수집가 -->
+	<Moyo2_JunkCollector.title>모요 고물 수집가</Moyo2_JunkCollector.title>
+	<Moyo2_JunkCollector.titleShort>고물 수집가</Moyo2_JunkCollector.titleShort>
+	<Moyo2_JunkCollector.baseDesc>부서진 기계, 떨어져 나간 철판에서 누군가가 잃어버린 귀금속까지. 이 모든 것들은 {PAWN_nameDef} 의 사냥감입니다. 뜯어내고 잘라낸 고철은 적당한 수입원이 되며, 자신을 보호할 수단을 만들 재료이기도 합니다. {PAWN_pronoun}와 같은 고물 수집가들은 항상 고장난 메카노이드라는 일확천금을 꿈꾸고 있습니다.</Moyo2_JunkCollector.baseDesc>
+	<!-- 사이비 의사 -->
+	<Moyo2_QuackDoctor.title>모요 사이비 의사</Moyo2_QuackDoctor.title>
+	<Moyo2_QuackDoctor.titleShort>사이비 의사</Moyo2_QuackDoctor.titleShort>
+	<Moyo2_QuackDoctor.baseDesc>암, 정신병, 탈모와 발기부전등, {PAWN_nameDef}가 고치치 못하는 병은 없습니다.  이 주장이 사실인지 아닌지 확인할 방법은 없습니다. 어차피 침수구역에 있는 {PAWN_pronoun}의 병원에 가는 놈들은 이미 죽었거나 어차피 죽을 녀석이었으니까요.</Moyo2_QuackDoctor.baseDesc>
+	<!-- 야심찬 사업가  -->
+	<Moyo2_AmbitiousEntrepreneur.title>모요 야심찬 사업가 </Moyo2_AmbitiousEntrepreneur.title>
+	<Moyo2_AmbitiousEntrepreneur.titleShort>야심찬 사업가 </Moyo2_AmbitiousEntrepreneur.titleShort>
+	<Moyo2_AmbitiousEntrepreneur.baseDesc>하층엔 들어갈 수도 없고, 중층은 경쟁이 치열하고, 상층은 장사가 잘 되지 않습니다. 그렇다면 침수구역은 어떨까요? {PAWN_nameDef} (은)는 그곳에 자신만의 작은 사업체를 세운 적이 있습니다. 과거형으로 적힌 데엔 이유가 있습니다.</Moyo2_AmbitiousEntrepreneur.baseDesc>
+	<!-- 침수구역 고아원장a-->
+	<Moyo2_OrphanageDirectorA.title>모요 침수구역 고아원장</Moyo2_OrphanageDirectorA.title>
+	<Moyo2_OrphanageDirectorA.titleShort>침수구역 고아원장</Moyo2_OrphanageDirectorA.titleShort>
+	<Moyo2_OrphanageDirectorA.baseDesc>침수구역엔 여러 모요들이 흘러들어옵니다. 그 중엔 어린 아이도 많죠. {PAWN_nameDef} (은)는 이 아이들을 거두어 최대한 보살폈습니다. 결국 침수구역에선 살 수 없다는 판단 하에, {PAWN_pronoun}는 아이들과 함께 침수구역을 탈출할 준비를 했습니다.</Moyo2_OrphanageDirectorA.baseDesc>
+	<!-- 침수구역 고아원장b -->
+	<Moyo2_OrphanageDirectorB.title>모요 침수구역 고아원장</Moyo2_OrphanageDirectorB.title>
+	<Moyo2_OrphanageDirectorB.titleShort>침수구역 고아원장</Moyo2_OrphanageDirectorB.titleShort>
+	<Moyo2_OrphanageDirectorB.baseDesc>침수구역엔 여러 모요들이 흘러들어옵니다. 그 중엔 어린 아이도 많죠. {PAWN_nameDef} (은)는 기업의 후원을 받아 아이들을 보살폈습니다. 아이들은 침수구역으로부터 안전했으며 교육을 받고 취업을 위해 후원자 기업에 보내졌습니다. 그들이 무슨 일을 하게 될진 모르지만 성과금도 두둑하게 받았으니 신경쓰지 않아도 될겁니다.</Moyo2_OrphanageDirectorB.baseDesc>
+	<!-- 다정한 의사 -->
+	<Moyo2_KindDoctor.title>모요 다정한 의사</Moyo2_KindDoctor.title>
+	<Moyo2_KindDoctor.titleShort>다정한 의사</Moyo2_KindDoctor.titleShort>
+	<Moyo2_KindDoctor.baseDesc>침수구역의 삶은 거지같습니다. 사소한 상처나 질병으로도 목숨이 왔다갔다 할 수 있죠. {PAWN_nameDef} (은)는 그 상황을 조금이라도 개선하려 했습니다. 가지고 있는 조그만 의학 지식이라도 이용하여 다른 이들을 도왔습니다. {PAWN_pronoun}는 이런 사소한 도움 하나하나가 침수구역을 더 나은 곳으로 만들 것이라 믿었습니다.</Moyo2_KindDoctor.baseDesc>
+	<!-- 고물 땜장이 -->
+	<Moyo2_ScrapTinkerer.title>모요 고물 땜장이</Moyo2_ScrapTinkerer.title>
+	<Moyo2_ScrapTinkerer.titleShort>고물 땜장이</Moyo2_ScrapTinkerer.titleShort>
+	<Moyo2_ScrapTinkerer.baseDesc>{PAWN_nameDef}가 만든 물건들은 침수구역에서 매우 유용합니다. 사용하는 것은 불편하기 짝이 없지만, 이것이라도 있는게 어딘가요. {PAWN_pronoun}는 더 많은 돈을 벌기 위해 조건을 가리지 않고 의뢰를 받았습니다. 그 물건으로 무엇을 할지 알게 뭔가요.</Moyo2_ScrapTinkerer.baseDesc>
+	<!-- 침수교 교주 -->
+	<Moyo2_FloodCultLeader.title>모요 침수교 교주</Moyo2_FloodCultLeader.title>
+	<Moyo2_FloodCultLeader.titleShort>침수교 교주</Moyo2_FloodCultLeader.titleShort>
+	<Moyo2_FloodCultLeader.baseDesc>"물에 잠기는 것은 축복입니다!" {PAWN_pronoun}는 말합니다. {PAWN_nameDef} (은)는 침수구역 내에서 침수교라는 종교 단체를 이끌었습니다. 모요들은 신의 가호인 물에 이끌려 이곳에 정착했으며, 물 속에 살지 않고 등대를 건설하는 것이 신의 은총을 거부하는 것이라 주장했었습니다. 참고로, 침수교의 주 의식은 자신의 재물을 담은 상자를 바다에 던지는 것이었습니다.</Moyo2_FloodCultLeader.baseDesc>
+	
+	<!-- 상층 백스토리 -->
+	<!-- 양식장 노동자 -->
+	<Moyo2_AquacultureWorker.title>모요 양식장 노동자</Moyo2_AquacultureWorker.title>
+	<Moyo2_AquacultureWorker.titleShort>양식장 노동자</Moyo2_AquacultureWorker.titleShort>
+	<Moyo2_AquacultureWorker.baseDesc>물고기에게 밥을 주고 상태를 확인하는 일은 누구나 할 수 있는 일입니다. 즉, {PAWN_nameDef}가 일자리를 구할 수 있던 이유입니다. {PAWN_pronoun}는 딥블루 추출기를 단 채로, 유리 너머 물고기의 텅 빈 눈을 응시하며 많은 교감을 나누었습니다.</Moyo2_AquacultureWorker.baseDesc>
+	<!-- 소박한 수집가 -->
+	<Moyo2_HumbleCollector.title>모요 소박한 수집가</Moyo2_HumbleCollector.title>
+	<Moyo2_HumbleCollector.titleShort>소박한 수집가</Moyo2_HumbleCollector.titleShort>
+	<Moyo2_HumbleCollector.baseDesc>{PAWN_nameDef} (은)는 등대의 대중적인 컬렉션인 형형색색의 값비싼 나이프들, 유명한 세이렌들의 카드와 복제 불가능한 홀로그램 등에 관심이 없습니다. {PAWN_pronoun}에겐 자신만의 소중하고 소박한 컬렉션을 만들고 있습니다. 대부분의 사람들에겐 쓸모없지만, {PAWN_pronoun} 이 콜렉션과 함께라면 행복할 수 있을 것입니다.</Moyo2_HumbleCollector.baseDesc>
+	<!-- 밀수 협조자 -->
+	<Moyo2_SmugglingCollaborator.title>모요 밀수 협조자</Moyo2_SmugglingCollaborator.title>
+	<Moyo2_SmugglingCollaborator.titleShort>밀수 협조자</Moyo2_SmugglingCollaborator.titleShort>
+	<Moyo2_SmugglingCollaborator.baseDesc>순진무구한 얼굴과 빠른 발은 여러 상황에서 {PAWN_nameDef}를 구해주었습니다. 자신감이 과해진 {PAWN_pronoun}는 조금 더 짜릿한 경험을 하기 위해 밀수업자들에게 협조했습니다. 위험천만한 만큼 보수와 스릴도 높았고, {PAWN_pronoun}는 이것을 즐겼습니다.</Moyo2_SmugglingCollaborator.baseDesc>
+	<!-- 총명한 아이 -->
 	<Moyo2_BrightChild.title>모요 총명한 아이</Moyo2_BrightChild.title>
 	<Moyo2_BrightChild.titleShort>총명한 아이</Moyo2_BrightChild.titleShort>
-	<Moyo2_BrightChild.baseDesc>[PAWN_nameDef](은)는 또래의 다른 아이들보다 훨씬 총명했습니다. [PAWN_pronoun](은)는 밖에서 친구를 사귀기보다 도서관에서 책읽는 것을 더 선호했습니다. 이러한 [PAWN_pronoun]의 성격은 다른 아이들과 갈등을 빚기도 했지만 대다수의 부모들은 [PAWN_nameDef]과 같은 모요들이 다음 계층으로 넘어갈것임을 믿어 의심치 않았습니다.</Moyo2_BrightChild.baseDesc>
-	<!-- 고래 친구 -->
-	<Moyo2_WhaleFriend.title>모요 고래 친구</Moyo2_WhaleFriend.title>
-	<Moyo2_WhaleFriend.titleShort>고래 친구</Moyo2_WhaleFriend.titleShort>
-	<Moyo2_WhaleFriend.baseDesc>[PAWN_nameDef](은)는 고래와 함께 수영하는 것을 좋아했습니다. [PAWN_nameDef](은)는 가능한 한 많은 시간을 고래들을 돌보고 그들과 함께 노는 데에 소비했습니다.</Moyo2_WhaleFriend.baseDesc>
-	<!-- 어린 셰프 -->
-	<Moyo2_ChildChef.title>모요 어린 셰프</Moyo2_ChildChef.title>
-	<Moyo2_ChildChef.titleShort>어린 셰프</Moyo2_ChildChef.titleShort>
-	<Moyo2_ChildChef.baseDesc>[PAWN_nameDef](은)는 요리를 즐겼습니다. 날이 갈수록 사용할 수 있는 식재료가 줄어들었지만, 다양한 재료의 질감과 풍미를 살려 요리하는 것은 [PAWN_pronoun]에게 가장 즐거운 일이었습니다.</Moyo2_ChildChef.baseDesc>
-	<!-- 어린 중독자 -->
-	<Moyo2_YoungJunkie.title>모요 어린 중독자</Moyo2_YoungJunkie.title>
-	<Moyo2_YoungJunkie.titleShort>어린 중독자</Moyo2_YoungJunkie.titleShort>
-	<Moyo2_YoungJunkie.baseDesc>[PAWN_nameDef](은)는 의문의 경로로 사이카이트 약물을 손에 넣었습니다. 사이카이트의 강력하고 황홀한 화학적 자극은 큰 정신적 타격을 입혔고 [PAWN_pronoun](은)는 약물을 구하기 위해서라면 어떤 일이든 서슴지 않았습니다. 지속적으로 약물에 노출된 뇌는 더욱 강력한 자극을 요구했고, [PAWN_pronoun](은)는 결국 다른 약물에도 눈독을 들이게 되었습니다.</Moyo2_YoungJunkie.baseDesc>
-	<!-- 병약한 아이 -->
-	<Moyo2_SicklyChild.title>모요 병약한 아이</Moyo2_SicklyChild.title>
-	<Moyo2_SicklyChild.titleShort>병약한 아이</Moyo2_SicklyChild.titleShort>
-	<Moyo2_SicklyChild.baseDesc>[PAWN_nameDef](은)는 선천적으로 병약하여 대부분의 시간을 침대 위에서 보내야 했습니다. 지속된 질병으로 인해 날카로워진 신경은 [PAWN_pronoun]를 인간관계에 매우 서투르도록 만들었고, 오직 다양한 지식들만이 그녀를 위로할 수 있었습니다.</Moyo2_SicklyChild.baseDesc>
-	<!-- 밀수업 협조자 -->
-	<Moyo2_SmugglerRunner.title>모요 밀수업 협조자</Moyo2_SmugglerRunner.title>
-	<Moyo2_SmugglerRunner.titleShort>밀수업 협조자</Moyo2_SmugglerRunner.titleShort>
-	<Moyo2_SmugglerRunner.baseDesc>[PAWN_nameDef](은)는 밀수업자의 심부름꾼이었습니다. 돈을 벌기위해 자발적으로 참여한 밀수업에서, [PAWN_pronoun](은)는 밀수품 운반과 정보통 역할을 주로 맡았습니다. 이 과정에서 [PAWN_pronoun](은)는 자신의 외모를 효과적으로 이용하는 법을 배웠습니다.</Moyo2_SmugglerRunner.baseDesc>
-	<!-- 어린 광부 -->
-	<Moyo2_YoungMiner.title>모요 어린 광부</Moyo2_YoungMiner.title>
-	<Moyo2_YoungMiner.titleShort>어린 광부</Moyo2_YoungMiner.titleShort>
-	<Moyo2_YoungMiner.baseDesc>[PAWN_nameDef]의 가정은 가난했습니다. [PAWN_pronoun](은)는 가정을 위해 돈을 벌어야만 했고, 그를 위해 광부일을 하기 시작했습니다. [PAWN_nameDef]이 광부가 된 후, [PAWN_pronoun]의 꿈과 열정은 오로지 더 많은 광물을 캐내는 것과 관련이 있을때에만 의미를 가지게 되었습니다.</Moyo2_YoungMiner.baseDesc>
-	<!-- 소년병 -->
-	<Moyo2_ChildSoldier.title>모요 소년병</Moyo2_ChildSoldier.title>
-	<Moyo2_ChildSoldier.titleShort>소년병</Moyo2_ChildSoldier.titleShort>
-	<Moyo2_ChildSoldier.baseDesc>또래 다른 아이들과는 다르게, [PAWN_nameDef](은)는 장난감 총 대신 진짜 총을 쥐어야만 했습니다. 납치되어 전장에 내던져진 [PAWN_pronoun](은)는 죽여야만 살아남을 수 있다는 것을 경험을 통해 배웠고, 생존을 위한 처절한 싸움을 이어나갔습니다.</Moyo2_ChildSoldier.baseDesc>
-	<!-- 고위층 자녀 -->
-	<Moyo2_HighbonChild.title>모요 고위층 자녀</Moyo2_HighbonChild.title>
-	<Moyo2_HighbonChild.titleShort>고위층 자녀</Moyo2_HighbonChild.titleShort>
-	<Moyo2_HighbonChild.baseDesc>[PAWN_nameDef](은)는 하층에서 귀하게 자란 모요입니다. 허드렛일은 남들이 맡아 해주었고, [PAWN_pronoun](은)는 그저 생활을 즐기기만 하면 됐습니다. 내전으로 이어진 두 세력간의 세력다툼도, 그 사이에 끼어 죽어가는 다른 모요들도 [PAWN_pronoun]가 상관할 일이 아니었을 겁니다. 아마도요.</Moyo2_HighbonChild.baseDesc>
-	<!-- 어린 연예인 -->
-	<Moyo2_YoungCelebrity.title>모요 어린 연예인</Moyo2_YoungCelebrity.title>
-	<Moyo2_YoungCelebrity.titleShort>어린 연예인</Moyo2_YoungCelebrity.titleShort>
-	<Moyo2_YoungCelebrity.baseDesc>[PAWN_nameDef](은)는 노래, 춤 ,연기 등 다양한 분야에 출현한 유명인이었습니다. 도시의 수많은 모요들이 [PAWN_nameDef]의 외모와 명성을 선망했습니다. 어린 [PAWN_nameDef]가 이렇게 유명해진 이유에 대해 많은 소문이 오가지만, 진짜 이유는 [PAWN_nameDef]만이 알고 있을겁니다.</Moyo2_YoungCelebrity.baseDesc>
-	<!-- 충격받은 간호사 -->
-	<Moyo2_ShockedNurse.title>모요 충격받은 간호사</Moyo2_ShockedNurse.title>
-	<Moyo2_ShockedNurse.titleShort>충격받은 간호사</Moyo2_ShockedNurse.titleShort>
-	<Moyo2_ShockedNurse.baseDesc>[PAWN_nameDef](은)는 병실의 인력부족을 매꾸기 위해 간호사로 동원되었습니다. 주로 경증 환자를 맡았지만, 종종 중증환자를 보살펴야 하는 일도 있었습니다. 이 일은 [PAWN_pronoun]의 정신을 피폐하게 만들었지만 동시에 의학적 지식을 습득할 기회를 제공했습니다.</Moyo2_ShockedNurse.baseDesc>
-	<!-- 공학도 -->
-	<Moyo2_EngineeringStudent.title>모요 공학도</Moyo2_EngineeringStudent.title>
-	<Moyo2_EngineeringStudent.titleShort>공학도</Moyo2_EngineeringStudent.titleShort>
-	<Moyo2_EngineeringStudent.baseDesc>등대의 확장과 건축은 쉬운 일이 아닙니다. 그렇기에 도시 건축에 종사하는 인력들은 보통 어릴때부터 전문적인 교육을 받습니다. [PAWN_nameDef](은)는 그러한 사람들 중 한명이 되기 위해 수많은 설계도를 공부하고 적용했습니다.</Moyo2_EngineeringStudent.baseDesc>
-	<!-- 배양된 군인 -->
-	<Moyo2_VatgrownSoldier.title>모요 배양된 군인</Moyo2_VatgrownSoldier.title>
-	<Moyo2_VatgrownSoldier.titleShort>배양된 군인</Moyo2_VatgrownSoldier.titleShort>
-	<Moyo2_VatgrownSoldier.baseDesc>[PAWN_nameDef](은)는 전쟁을 위해 체계적으로 생산된 병기들 중 하나입니다. [PAWN_pronoun](은)는 배양되어 번호를 부여받은 채로 하층의 시설에서 전문적인 군사교육을 받았습니다.</Moyo2_VatgrownSoldier.baseDesc>
-	<!-- 농부 -->
-	<Moyo2_Farmer.title>모요 농부</Moyo2_Farmer.title>
-	<Moyo2_Farmer.titleShort>농부</Moyo2_Farmer.titleShort>
-	<Moyo2_Farmer.baseDesc>[PAWN_nameDef](은)는 상층의 농장에서 식재료나 그 밖에 다양한 식물성 섬유를 수확하는 일을 했습니다. 다분히 목가적으로 보이는 [PAWN_pronoun]의 해초 농장은 지상의 여느 농장들처럼 불법 침입자 문제를 안고 있었고, 이는 그로 하여금 골머리를 썩히게 만들었습니다.</Moyo2_Farmer.baseDesc>
-	<!-- 공방일꾼 -->
-	<Moyo2_FactoryWorker.title>모요 공방 일꾼</Moyo2_FactoryWorker.title>
-	<Moyo2_FactoryWorker.titleShort>공방 일꾼</Moyo2_FactoryWorker.titleShort>
-	<Moyo2_FactoryWorker.baseDesc>심해의 한기와 어둠도 등대 중층의 빛과 열기를 덮을 수는 없습니다. [PAWN_nameDef](은)는 중층의 공방에서 일하는 노동자로, 지금까지 다양한 장비와 제품을 생산해 왔습니다. [PAWN_pronoun]가 기억하는 가장 최근의 의뢰품은 총기입니다.</Moyo2_FactoryWorker.baseDesc>
-	<!-- 메카노이드 정비공 -->
-	<Moyo2_MechanoidMaintainer.title>모요 메카노이드 정비공</Moyo2_MechanoidMaintainer.title>
-	<Moyo2_MechanoidMaintainer.titleShort>메카노이드 정비공</Moyo2_MechanoidMaintainer.titleShort>
-	<Moyo2_MechanoidMaintainer.baseDesc>모요들의 도시의 기반을 닦은것은 뭐니뭐니 해도 메카노이드입니다. [PAWN_nameDef](은)는 노후화되고 있는 메카노이드를 최대한 유지보수 하는 역할을 맡았습니다. 수백년을 버티는 메카노이드의 강인함은 [PAWN_pronoun]에게 육신의 나약함을 깨닫게 해주었습니다.</Moyo2_MechanoidMaintainer.baseDesc>
-	<!-- 공학자 -->
-	<Moyo2_Engineer.title>모요 공학자</Moyo2_Engineer.title>
-	<Moyo2_Engineer.titleShort>공학자</Moyo2_Engineer.titleShort>
-	<Moyo2_Engineer.baseDesc>[PAWN_nameDef](은)는 건축이나 기계에 대한 연구와 설계를 담당하는 공학자입니다. 여러 이론을 시험하고 그 시제품을 만든 팀의 구성원인 [PAWN_pronoun](은)는 자신의 일에 매우 열정적이어서 모요의 화기 개발에 일조했습니다. 그 제품이 가져올 결과는 아무도 그에 대해서 말할 필요가 없을 정도로 명백했습니다.</Moyo2_Engineer.baseDesc>
+	<Moyo2_BrightChild.baseDesc>{PAWN_nameDef} (은)는 배우는 것을 좋아했습니다. 그 열정으로 인해 항상 상위권을 차지했었으나 이내 뒤처지게 되었습니다. 좌절하던 사이, 다른 이들이 약물을 동원하고 있다는 사실을 알고 약물에 대한 강한 충동을 느꼈습니다.</Moyo2_BrightChild.baseDesc>
+	<!-- 말괄량이 -->
+	<Moyo2_ArrogantChild.title>모요 말괄량이</Moyo2_ArrogantChild.title>
+	<Moyo2_ArrogantChild.titleShort>말괄량이</Moyo2_ArrogantChild.titleShort>
+	<Moyo2_ArrogantChild.baseDesc>{PAWN_nameDef} (은)는 자기가 원하는 것을 분명하게 추구하는 모요였습니다. {PAWN_pronoun}는 사교활동 그 외의 것들은 하지 않으려 했습니다. 긍정적인 면은 인간관계가 넓다는 것이고 부정적인 면은 차고 넘칩니다.</Moyo2_ArrogantChild.baseDesc>
+	<!-- 해초 농부 -->
+	<Moyo2_SeaweedFarmer.title>모요 해초 농부</Moyo2_SeaweedFarmer.title>
+	<Moyo2_SeaweedFarmer.titleShort>해초 농부</Moyo2_SeaweedFarmer.titleShort>
+	<Moyo2_SeaweedFarmer.baseDesc>{PAWN_nameDef} (은)는 뎁스위드를 포함한 여러 해초를 길렀습니다. 직업의 특성상 등대의 부귀영화와는 거리가 있었지만, 가끔 해초숲을 망치는 무단칩입자들 외엔 걱정할 것이 많지 않았습니다. 그런 {PAWN_pronoun}는 차라리 그곳에 남아있는게 좋았을 수도 있습니다.</Moyo2_SeaweedFarmer.baseDesc>
+	<!-- 양식장 주인 -->
+	<Moyo2_AquacultureOwner.title>모요 양식장 주인</Moyo2_AquacultureOwner.title>
+	<Moyo2_AquacultureOwner.titleShort>양식장 주인</Moyo2_AquacultureOwner.titleShort>
+	<Moyo2_AquacultureOwner.baseDesc>{PAWN_nameDef} (은)는 파도다랑어 양식장의 주인이었습니다. 줄지어 늘어선 양식 탱크들의 모습은 등대의 호화를 원하는 {PAWN_pronoun}에겐 너무도 지겨웠습니다. 그런 {PAWN_pronoun}는 더 쉽게 많은 돈을 벌기 위해 방법을 모색했습니다. 어종의 품질과 다앙성을 늘려보고 다른 사업과의 연계도 생각했지만, 결국은 딥블루라는 결론에 도달했습니다.</Moyo2_AquacultureOwner.baseDesc>
+	<!-- 연안 탐사자 -->
+	<Moyo2_CoastalExplorer.title>모요 연안 탐사자</Moyo2_CoastalExplorer.title>
+	<Moyo2_CoastalExplorer.titleShort>연안 탐사자</Moyo2_CoastalExplorer.titleShort>
+	<Moyo2_CoastalExplorer.baseDesc>끝없이 깊은 바다를 내려가기 위해선 그만큼의 자원이 필요합니다. {PAWN_nameDef} (은)는 얕은 바다를 탐사하며 등대가 활용할 수많은 자원과 지형을 찾아내었습니다. 하지만 등대의 확장이 느려지면서, {PAWN_pronoun}의 역할도 끝이 났습니다. 결국 탐사정과 장비 하나 남지 않고 상층에 머무르는 신세가 되었습니다.</Moyo2_CoastalExplorer.baseDesc>
+	<!-- 어부 -->
+	<Moyo2_Fisher.title>모요 어부</Moyo2_Fisher.title>
+	<Moyo2_Fisher.titleShort>어부</Moyo2_Fisher.titleShort>
+	<Moyo2_Fisher.baseDesc>{PAWN_nameDef} (은)는 등대에 식량을 공급하는 중요한 역할을 하고 있습니다. 등대 주변의 생태계는 이미 망가졌기에 {PAWN_pronoun}는 더욱 먼 곳에서 조업을 해야만 했습니다. 그런 {PAWN_pronoun}의 노력의 댓가로는 비싸진 가격에 대한 소비자의 불만과 불평이 있습니다.</Moyo2_Fisher.baseDesc>
 	<!-- 사냥꾼 -->
 	<Moyo2_Hunter.title>모요 사냥꾼</Moyo2_Hunter.title>
 	<Moyo2_Hunter.titleShort>사냥꾼</Moyo2_Hunter.titleShort>
-	<Moyo2_Hunter.baseDesc>[PAWN_nameDef](은)는 바다를 떠돌며 해양생물을 사냥하거나 포획하는 일을 했습니다. [PAWN_pronoun](은)는 주로 고기나 사치품, 희귀 동물을 구하러 다녔습니다. 등대의 안전을 위협하는 위험 생물이 등장하면 [PAWN_pronoun](은)는 의회의 명령에 따라 격퇴작전에 참여해야 했습니다.</Moyo2_Hunter.baseDesc>
-	<!-- 밀수업자 -->
-	<Moyo2_Smuggler.title>모요 밀수업자</Moyo2_Smuggler.title>
-	<Moyo2_Smuggler.titleShort>밀수업자</Moyo2_Smuggler.titleShort>
-	<Moyo2_Smuggler.baseDesc>지상은 온갖 보배로 가득합니다. [PAWN_nameDef](은)는 등대를 위해 그 보물을 가져왔습니다. 의회의 허락 없이 지상과 거래하는 것은 불법이었지만, [PAWN_pronoun]에겐 자신의 수중에 들어오는 돈이 더 중요했고, 그 결과 [PAWN_pronoun](은)는 의회의 감시를 피해 지상을 오가며 거래를 계속했습니다.</Moyo2_Smuggler.baseDesc>
-	<!-- 군인 -->
-	<Moyo2_Soldier.title>모요 군인</Moyo2_Soldier.title>
-	<Moyo2_Soldier.titleShort>군인</Moyo2_Soldier.titleShort>
-	<Moyo2_Soldier.baseDesc>[PAWN_nameDef](은)는 전문적인 군인으로 등대의 치안을 유지하고 도시를 위협하는 괴수들을 격퇴하는 임무에 힘썼습니다. 그러나 [PAWN_pronoun]가 일하는 동안 밀수로 인한 사회 불안은 점점 더 심해져만 갔습니다. 결국 불안은 내전이 되어 모요 사회를 덮쳤고 [PAWN_pronoun](은)는 다른 모요들을 향해 총구를 돌려야만 했습니다.</Moyo2_Soldier.baseDesc>
-	<!-- 심층광부 -->
-	<Moyo2_DeepCoreMiner.title>모요 심층광부</Moyo2_DeepCoreMiner.title>
-	<Moyo2_DeepCoreMiner.titleShort>심층광부</Moyo2_DeepCoreMiner.titleShort>
-	<Moyo2_DeepCoreMiner.baseDesc>[PAWN_nameDef](은)는 심연의 광물을 채굴하는 광부입니다. 무겁고 둔중한 잠수복을 입고 광물을 채굴하는 심해광부는 메카노이드 운용에 문제가 생기면서 비교적 최근에 생긴 직업으로, 최근 수많은 가난한 노동자들이 이 직업으로 일자리를 옮기는 것에 대해서 긍정적으로 검토하고 있습니다.</Moyo2_DeepCoreMiner.baseDesc>
-	<!-- 지리학자 -->
-	<Moyo2_Geologist.title>모요 지리학자</Moyo2_Geologist.title>
-	<Moyo2_Geologist.titleShort>지리학자</Moyo2_Geologist.titleShort>
-	<Moyo2_Geologist.baseDesc>[PAWN_nameDef](은)는 심해의 지형을 탐사하며 연구했습니다. 일의 특성상 [PAWN_pronoun](은)는 팀과 함께 잠수함에서 오랜 시간을 보내야 했기에, 다양한 일에 익숙해져야 했습니다.</Moyo2_Geologist.baseDesc>
-	<!-- 지상 무역가 -->
-	<Moyo2_SurfaceTrader.title>모요 지상 무역가</Moyo2_SurfaceTrader.title>
-	<Moyo2_SurfaceTrader.titleShort>지상 무역가</Moyo2_SurfaceTrader.titleShort>
-	<Moyo2_SurfaceTrader.baseDesc>등대와 지상의 거래는 의회와 [PAWN_nameDef]같은 대상인들에 의해 통제되는 사업이었습니다. 지상의 물품은 대부분 사치품으로 여겨지는데, 이 덕분에 [PAWN_pronoun](은)는 돈을 쓸어담을 수 있었습니다. [PAWN_pronoun](은)는 밀수업자를 가차없이 탄압했고, 일부는 직접 처리하기도 했습니다.</Moyo2_SurfaceTrader.baseDesc>
-	<!-- 생물학자 -->
-	<Moyo2_Biologist.title>모요 생물학자</Moyo2_Biologist.title>
-	<Moyo2_Biologist.titleShort>생물학자</Moyo2_Biologist.titleShort>
-	<Moyo2_Biologist.baseDesc>[PAWN_nameDef](은)는 오래 전에 개조되어 지금까지 내려온 모요의 몸을 연구했습니다. [PAWN_pronoun]와 같은 연구원들이 모요의 '진화'과정을 추적하여 발견해 낸 것이 바로 '딥블루'였습니다. 이 발견은 모요 사회에 거대한 영향을 미쳤습니다.</Moyo2_Biologist.baseDesc>
-	<!-- 착한고아원장 -->
-	<Moyo2_KindOrphanageMaster.title>모요 고아원장</Moyo2_KindOrphanageMaster.title>
-	<Moyo2_KindOrphanageMaster.titleShort>고아원장</Moyo2_KindOrphanageMaster.titleShort>
-	<Moyo2_KindOrphanageMaster.baseDesc>[PAWN_nameDef](은)는 부모들과 떨어진 모요 고아들을 보살폈습니다. [PAWN_pronoun](은)는 아이들이 부모님과 재회하거나 사회에 자랑스런 일원으로 나갈 수 있도록 아이들을 교육하는데 힘썼습니다. [PAWN_pronoun]가 왜 이 일을 시작한건진 불명이지만, 아마도 개인적인 경험과 관련이 있을거라 추정됩니다.</Moyo2_KindOrphanageMaster.baseDesc>
-	<!-- 나쁜고아원장 -->
-	<Moyo2_EvilOrphanageMaster.title>모요 고아원장</Moyo2_EvilOrphanageMaster.title>
-	<Moyo2_EvilOrphanageMaster.titleShort>고아원장</Moyo2_EvilOrphanageMaster.titleShort>
-	<Moyo2_EvilOrphanageMaster.baseDesc>[PAWN_nameDef](은)는 부모들과 떨어진 모요 고아들을 보살폈습니다. [PAWN_pronoun](은)는 고아원 밖은 위험하다며, 버림밭은 아이들은 사냥당할 뿐이라는 것을 가르쳤습니다. 왜냐하면 이 아이들은 귀한 재산이니까요. 등대에게도, 그녀에게도.</Moyo2_EvilOrphanageMaster.baseDesc>
-	<!-- 하인 -->
-	<Moyo2_Servant.title>모요 하인</Moyo2_Servant.title>
-	<Moyo2_Servant.titleShort>하인</Moyo2_Servant.titleShort>
-	<Moyo2_Servant.baseDesc>[PAWN_nameDef](은)는 부유한 모요들의 하인이었습니다. 청소와 요리부터 다양한 가사를 도맡고 주인의 특별한 요구를 들어주기도 했습니다. 점점 심해지는 요구를 감당할 수 없었던 [PAWN_pronoun](은)는 한 구의 시체를 남겨두고 홀연히 사라졌습니다.</Moyo2_Servant.baseDesc>
-	<!-- 칵테일제조가 -->
-	<Moyo2_CocktailMixer.title>모요 칵테일 제조가</Moyo2_CocktailMixer.title>
-	<Moyo2_CocktailMixer.titleShort>칵테일 제조가</Moyo2_CocktailMixer.titleShort>
-	<Moyo2_CocktailMixer.baseDesc>[PAWN_nameDef](은)는 새로운 상품을 개발하기 위해 딥블루와 지상의 약물을 섞는 실험을 했습니다. 주로 사이카이트와 합성된 [PAWN_pronoun]의 약물 칵테일은 지상에서도, 등대에서도 폭발적인 인기를 구가했습니다.</Moyo2_CocktailMixer.baseDesc>
-	<!-- 수경재배 농부 -->
-	<Moyo2_HydroponicsFarmer.title>모요 수경재배 농부</Moyo2_HydroponicsFarmer.title>
-	<Moyo2_HydroponicsFarmer.titleShort>수경재배 농부</Moyo2_HydroponicsFarmer.titleShort>
-	<Moyo2_HydroponicsFarmer.baseDesc>[PAWN_nameDef](은)는 지상 식물의 종자를 구해 수경재배실에서 길렀습니다. [PAWN_pronoun]가 기른 작물은 언제나 [PAWN_pronoun]의 기대보다 낮은 가격에 팔렸고 이는 일부 모요들에 의해 거래되는 '원본'지상 작물 때문이었습니다. 이런 상황이 지속될수록, [PAWN_nameDef](은)는 더더욱 강하게 지상의 농장을 원하게 되었습니다.</Moyo2_HydroponicsFarmer.baseDesc>
+	<Moyo2_Hunter.baseDesc>일반적인 물고기는 돈이 되지 않을 것이기에, {PAWN_nameDef} (은)는 더 희귀하거나 위험한 생물을 사냥하고 포획하는 일을 했습니다. {PAWN_pronoun}의 사업이 점점 유명해지면서, 돈의 맛을 본 {PAWN_pronoun}는 사냥의 범위를 점차 넓혀가고 있습니다.</Moyo2_Hunter.baseDesc>
+	<!-- 알몸 잠수부 -->
+	<Moyo2_NakedDiver.title>모요 알몸 잠수부</Moyo2_NakedDiver.title>
+	<Moyo2_NakedDiver.titleShort>알몸 잠수부</Moyo2_NakedDiver.titleShort>
+	<Moyo2_NakedDiver.baseDesc>{PAWN_nameDef} (은)는 등대의 경쟁에 지쳐 상층으로 피신했습니다. 그곳에서 접한 자연의 풍경은 {PAWN_pronoun}를 매료했습니다. {PAWN_pronoun}는 이제 그 자연을 온몸으로 즐기기 위해 호흡기 하나에만 의지해 바다에 뛰어들고 있습니다. 언젠간 등대를 완전히 벗어나기만을 바라며 말입니다.</Moyo2_NakedDiver.baseDesc>
+	<!-- 소박한 선생님 -->
+	<Moyo2_HumbleTeacher.title>모요 소박한 선생님</Moyo2_HumbleTeacher.title>
+	<Moyo2_HumbleTeacher.titleShort>소박한 선생님</Moyo2_HumbleTeacher.titleShort>
+	<Moyo2_HumbleTeacher.baseDesc>등대 상층의 시설이 열약하다 하나 침수구역 만큼은 아닙니다. 그곳의 실상을 잘 알고 있는 {PAWN_nameDef} (은)는 그 어떤 아이도 침수구역에 떨어지는 일이 없도록 열정적으로 교육을 하고 있습니다. 결과가 어떻게 되든, 등대에선 보기 힘든 순수한 의도를 품은 사람입니다.</Moyo2_HumbleTeacher.baseDesc>
+	<!-- 자경단원 -->
+	<Moyo2_Vigilante.title>모요 자경단원</Moyo2_Vigilante.title>
+	<Moyo2_Vigilante.titleShort>자경단원</Moyo2_Vigilante.titleShort>
+	<Moyo2_Vigilante.baseDesc>등대의 상층과 같은 외곽엔 공권력이 잘 닿지 않습니다. {PAWN_nameDef} (은)는 자신에게 소중한 것을 지키고자 자경단에 입단했습니다. 무장도 훈련도 되지 않은 무리일 뿐이지만, 치안을 유지하기 위해 열심히 일했습니다.</Moyo2_Vigilante.baseDesc>
+	<!-- 자경단장 -->
+	<Moyo2_Vigilante.title>모요 자경단장</Moyo2_Vigilante.title>
+	<Moyo2_Vigilante.titleShort>자경단장</Moyo2_Vigilante.titleShort>
+	<Moyo2_Vigilante.baseDesc>{PAWN_nameDef} (은)는 상층에서 자경단 활동을 주도했습니다. 단원들을 모아 더 나은 사회를 만들기 위해 노력했습니다. 아이러니하게도 가장 많이 상대해야했던 것은 자경단 활동의 적법성을 묻는 공권력이었습니다.</Moyo2_Vigilante.baseDesc>
+	<!-- 부패한 자경단장 -->
+	<Moyo2_CorruptVigilanteLeader.title>모요 부패한 자경단장</Moyo2_CorruptVigilanteLeader.title>
+	<Moyo2_CorruptVigilanteLeader.titleShort>부패한 자경단장</Moyo2_CorruptVigilanteLeader.titleShort>
+	<Moyo2_CorruptVigilanteLeader.baseDesc>{PAWN_nameDef} (은)는 강력한 상층 자경대의 단장입니다. 그들은 소정의 활동비를 '기부'받아 여러 곳에 연줄을 만들었고, 이를 통해 많은 영향력을 행사할 수 있었습니다. 모든 것은 {PAWN_pronoun}의 뛰어난 지도력괴 협상 기술 덕분이었습니다.</Moyo2_CorruptVigilanteLeader.baseDesc>
+	<!-- 지상파 -->
+	<Moyo2_SurfaceEnthusiast.title>모요 지상파</Moyo2_SurfaceEnthusiast.title>
+	<Moyo2_SurfaceEnthusiast.titleShort>지상파</Moyo2_SurfaceEnthusiast.titleShort>
+	<Moyo2_SurfaceEnthusiast.baseDesc>{PAWN_nameDef} (은)는 어두컴컴한 바다 밑바닥을 벗어나서 지상으로 올라가야 한다고 주장하는 괴짜입니다. 바다 속의 등대는 이미 돌이킬 수 없이 혼란해졌으니 새로 시작하자는 주장입니다. 현실적이던 아니던, 결국 자신이 맞다는 사실을 모두가 인정할 것입니다.</Moyo2_SurfaceEnthusiast.baseDesc>
+	<!-- 지상 접선책 -->
+	<Moyo2_SurfaceAdvocate.title>모요 지상 접선책</Moyo2_SurfaceAdvocate.title>
+	<Moyo2_SurfaceAdvocate.titleShort>지상 접선책</Moyo2_SurfaceAdvocate.titleShort>
+	<Moyo2_SurfaceAdvocate.baseDesc>{PAWN_nameDef} (은)는 이미 등대를 벗어나 지상으로 올라간 모요입니다. {PAWN_pronoun}와 같은 모요 피난민들의 무리에 합류한 후, {PAWN_pronoun}는 그들의 요원으로써 다른 모요들을 지상으로 탈출시키는 임무를 수행했었습니다.</Moyo2_SurfaceAdvocate.baseDesc>
+	<!-- 건강식 전문가 -->
+	<Moyo2_HealthyMealExpert.title>모요 건강식 전문가</Moyo2_HealthyMealExpert.title>
+	<Moyo2_HealthyMealExpert.titleShort>건강식 전문가</Moyo2_HealthyMealExpert.titleShort>
+	<Moyo2_HealthyMealExpert.baseDesc>여러번 가공된 재료가 아닌 자연에서 직접 공수한 건강식의 전문가인 {PAWN_nameDef}입니다. 아이러니하게도, {PAWN_pronoun}는 건강식에는 관심이 없습니다. 그저 없는 형편에 최대한 맛있게 먹고자 했을 뿐입니다.</Moyo2_HealthyMealExpert.baseDesc>
+	
+	<!-- 중층 백스토리 -->
+	<!-- 지친 학생 -->
+	<Moyo2_TiredStudent.title>모요 지친 학생</Moyo2_TiredStudent.title>
+	<Moyo2_TiredStudent.titleShort>지친 학생</Moyo2_TiredStudent.titleShort>
+	<Moyo2_TiredStudent.baseDesc>{PAWN_nameDef} (은)는 등대의 끝없는 경쟁에 회의감을 느꼈습니다. 밤낮을 가리지 않고 공부한 몸은 허약해져 더 이상 지속하기에도 어려운 상황에 처했습니다. {PAWN_pronoun}는 결국 단념하고 다른 길을 찾았습니다.</Moyo2_TiredStudent.baseDesc>
 	<!-- 지상 예술가 -->
 	<Moyo2_SurfaceArtist.title>모요 지상 예술가</Moyo2_SurfaceArtist.title>
 	<Moyo2_SurfaceArtist.titleShort>지상 예술가</Moyo2_SurfaceArtist.titleShort>
-	<Moyo2_SurfaceArtist.baseDesc>[PAWN_nameDef](은)는 지상의 아름다운 광경을 예술작품으로 만들어 팔았습니다. 지상을 직접 본 적도 없었고, 지상의 풍경을 담은 자료가 많은 것도 아니었습니다. 그러나 [PAWN_pronoun]의 고객들은 지상의 풍경을 몰랐고, 창의력만으로 그려낸 지상은 '환상적'이며 동시에 '몽환적'이었습니다.</Moyo2_SurfaceArtist.baseDesc>
+	<Moyo2_SurfaceArtist.baseDesc>대부분의 모요들은 지상의 광경을 잘 알지 못합니다. {PAWN_nameDef} (은)는 바로 그 점을 이용하여 지상을 소재로 한 작품을 만들었습니다. 하지만 {PAWN_pronoun}도 지상을 모르는 대부분 중 하나이기에, 그 내용은 기상천외했습니다.</Moyo2_SurfaceArtist.baseDesc>
+	<!-- 작은 배달부 -->
+	<Moyo2_LittleDeliverer.title>모요 작은 배달부</Moyo2_LittleDeliverer.title>
+	<Moyo2_LittleDeliverer.titleShort>작은 배달부</Moyo2_LittleDeliverer.titleShort>
+	<Moyo2_LittleDeliverer.baseDesc>등대의 소비주의 문화는 나이를 가리지 않습니다. {PAWN_nameDef} (은)는 용돈이 필요했고, 빠르고 쉽게 많은 양의 돈을 받을 수 있는 심부름을 받고 다녔습니다. {PAWN_pronoun}는 배달의 내용물이 무엇인지는 전혀 신경쓰지 않았습니다. 중요한 것은 보수니까요.</Moyo2_LittleDeliverer.baseDesc>
+	<!-- 충격받은 간호사 -->
+	<Moyo2_ShockedNurse.title>모요 충격받은 간호사</Moyo2_ShockedNurse.title>
+	<Moyo2_ShockedNurse.titleShort>충격받은 간호사</Moyo2_ShockedNurse.titleShort>
+	<Moyo2_ShockedNurse.baseDesc>{PAWN_nameDef} (은)는 취업을 보장받기 위해 의료인 전문 육성 시설에 들어갔습니다. 그곳에서 {PAWN_pronoun}는 어린 마음으론 감당하기 힘든 광경을 보았고, 이것은 {PAWN_pronoun}의 마음에 큰 흉터를 남겼습니다.</Moyo2_ShockedNurse.baseDesc>
+	<!-- 과묵한 아이 -->
+	<Moyo2_MuteChild.title>모요 과묵한 아이</Moyo2_MuteChild.title>
+	<Moyo2_MuteChild.titleShort>과묵한 아이</Moyo2_MuteChild.titleShort>
+	<Moyo2_MuteChild.baseDesc>{PAWN_nameDef} (은)는 어릴 적부터 말이 없었습니다. 단순히 말을 하지 않는 정도를 넘어 언어 능력에 문제가 있는 것이 아닌가 걱정될 정도였습니다. 하지만 {PAWN_pronoun}는 단지 초자연적인 것에 조금 더 민감했고, 텔레파시를 통해 소통하고 있었습니다. 단지 아무도 {PAWN_possesive}에게 답을 해주지 않았을 뿐입니다.</Moyo2_MuteChild.baseDesc>
+	<!-- 가출아이 -->
+	<Moyo2_RunawayKid.title>모요 가출아이</Moyo2_RunawayKid.title>
+	<Moyo2_RunawayKid.titleShort>가출아이</Moyo2_RunawayKid.titleShort>
+	<Moyo2_RunawayKid.baseDesc>등대에선 성공하지 못하면 도태되는 것입니다. {PAWN_nameDef} (은)는 성공에 대한 압박을 지속적으로 받아왔고, 그걸 버티지 못해 결국 가출을 했습니다. {PAWN_pronoun}는 거리를 전전긍긍하며 버티다 "괜찮은 직장"을 소개받았습니다.</Moyo2_RunawayKid.baseDesc>
+	<!-- 수습 가정부 -->
+	<Moyo2_HousekeeperApprentice.title>모요 수습 가정부</Moyo2_HousekeeperApprentice.title>
+	<Moyo2_HousekeeperApprentice.titleShort>수습 가정부</Moyo2_HousekeeperApprentice.titleShort>
+	<Moyo2_HousekeeperApprentice.baseDesc>{PAWN_nameDef} (은)는 가정부로써 고용된 지 얼마 되지 않았고, 그렇기에 미숙한 점이 많았습니다. 하지만 어렵게 얻은 일자리를 잃지 않기 위해 {PAWN_pronoun}는 가장 사소한 것 하나하나 전부 확인해야 했습니다. 이것은 그녀의 정신 건강에 좋지 않았지만, 적어도 일자리를 지켜내는데엔 성공한듯 보입니다.</Moyo2_HousekeeperApprentice.baseDesc>
+	<!-- 즉석식품 매니아 -->
+	<Moyo2_InstantFoodEnthusiast.title>모요 즉석식품 매니아</Moyo2_InstantFoodEnthusiast.title>
+	<Moyo2_InstantFoodEnthusiast.titleShort>즉석식품 매니아</Moyo2_InstantFoodEnthusiast.titleShort>
+	<Moyo2_InstantFoodEnthusiast.baseDesc>고도로 상업화된 등대의 사회에선 식품도 엄청난 경쟁의 대상입니다. {PAWN_nameDef} (은)는 이런 경쟁의 결과로 인해 시장에 나온 수많은 즉석식품들을 즐기는 것이 취미였습니다. 돈도 절약하고 맛도 보장됩니다! 섭취에 대한 주의사항도 적혀있지 않으니 건강에도 아무 이상이 없을 것입니다.</Moyo2_InstantFoodEnthusiast.baseDesc>
+	<!-- 사관후보생 -->
+	<Moyo2_Cadet.title>모요 사관후보생</Moyo2_Cadet.title>
+	<Moyo2_Cadet.titleShort>사관후보생</Moyo2_Cadet.titleShort>
+	<Moyo2_Cadet.baseDesc>등대의 정규군은 보수와 대우가 좋은 만큼 그 조건도 까다롭습니다. {PAWN_nameDef}(은)는 어릴 적부터 정규군에 들어가기 위한 교육 프로그램을 이수했습니다. 그 과정에서  {PAWN_pronoun}는 무기를 다루는 것이 상당히 재밌다는 것을 깨달았습니다.</Moyo2_Cadet.baseDesc>
+	<!-- 기업 사무원 -->
+	<Moyo2_CorporateEmployee.title>모요 기업 사무원</Moyo2_CorporateEmployee.title>
+	<Moyo2_CorporateEmployee.titleShort>기업 사무원</Moyo2_CorporateEmployee.titleShort>
+	<Moyo2_CorporateEmployee.baseDesc>등대에 존재하는 수많은 기업들엔 {PAWN_nameDef}와 같은 사람들이 넘쳐납니다. 포장은 그럴싸해도 저렴하게 이용하는 노동력이란 점은 달라지지 않죠. 다른 많은 이들처럼 {PAWN_pronoun}도 단순하게 해고 통보를 받을 뿐입니다. 먹고 살 다른 방법을 찾아봐야겠네요.</Moyo2_CorporateEmployee.baseDesc>
+	<!-- 술집 주인 -->
+	<Moyo2_Bartender.title>모요 술집 주인</Moyo2_Bartender.title>
+	<Moyo2_Bartender.titleShort>술집 주인</Moyo2_Bartender.titleShort>
+	<Moyo2_Bartender.baseDesc>{PAWN_nameDef} (은)는 구석진 곳에 있는 작은 술집의 주인입니다. {PAWN_pronoun}의 가게는 여러 단골들의 쉼터였지만 점점 오르는 월세에 힘들어하다 약물 장사에도 손을 뻗었습니다.</Moyo2_Bartender.baseDesc>
+	<!-- 클럽 오너 -->
+	<Moyo2_ClubMaster.title>모요 클럽 오너</Moyo2_ClubMaster.title>
+	<Moyo2_ClubMaster.titleShort>클럽 오너</Moyo2_ClubMaster.titleShort>
+	<Moyo2_ClubMaster.baseDesc>고된 노동 후엔 스트레스를 발산할 장소가 필요합니다. 그곳은 바로 {PAWN_nameDef} 의 클럽입니다. 술, 춤, 음악은 기본이고 다양한 약물도 준비되어 있습니다. {PAWN_pronoun}의 클럽은 매우 번성했고 그에 따라 여러 조직들의 관심도 높아졌습니다. {PAWN_pronoun}는 여러 조직들 사이에서 많은 이익을 얻었지만, 머지않아 조직들에 의해 클럽에서 도망쳐나오게 되었습니다.</Moyo2_ClubMaster.baseDesc>
+	<!-- 무기공장 일꾼 -->
+	<Moyo2_WeaponManufacturer.title>모요 무기공장 일꾼</Moyo2_WeaponManufacturer.title>
+	<Moyo2_WeaponManufacturer.titleShort>무기공장 일꾼</Moyo2_WeaponManufacturer.titleShort>
+	<Moyo2_WeaponManufacturer.baseDesc>등대에서 라미너 총기와 같은 전문적인 무기는 잘 사용되지 않습니다, 가격도 비싸고 의회가 눈에 불을 켜고 통제를 하고 있기 때문입니다. {PAWN_nameDef} (은)는 바로 그런 무기를 생산하는 공장의 일꾼입니다. 대부분의 부품이 파손된다면 평생 혈액채무를 지게 될 고가치의 물건이기에 작업은 항상 완벽해야 했습니다.</Moyo2_WeaponManufacturer.baseDesc>
+	<!-- 제약회사 직원 -->
+	<Moyo2_PharmaceuticalEmployee.title>모요 제약회사 직원</Moyo2_PharmaceuticalEmployee.title>
+	<Moyo2_PharmaceuticalEmployee.titleShort>제약회사 직원</Moyo2_PharmaceuticalEmployee.titleShort>
+	<Moyo2_PharmaceuticalEmployee.baseDesc>{PAWN_nameDef} (은)는  등대의 제약회사에서 일하고 있습니다. 등대에 있는 수많은 고품질 약품들은 바로 이런 곳에서 생산되었습니다. {PAWN_pronoun}는 이 약물이 누군가를 구하지만 동시에 다른 누구를 해하고 있다는 사실을 알고 있습니다. 그저 그 결과의 순이익이 더 크기를 믿을 뿐입니다.</Moyo2_PharmaceuticalEmployee.baseDesc>
+	<!-- 연구원 -->
+	<Moyo2_Researcher.title>모요 연구원</Moyo2_Researcher.title>
+	<Moyo2_Researcher.titleShort>연구원</Moyo2_Researcher.titleShort>
+	<Moyo2_Researcher.baseDesc>의회의 집중적인 투자로 어비스테크는 나날히 발전하고 있습니다. {PAWN_nameDef} (은)는 등대의 연구원으로서 지속적으로 성과를 낼 것을 기대받고 있습니다. 점차 떨어지는 연구 성과에 지원이 끊길 것을 우려한 {PAWN_pronoun}는 점점 더 위험한 연구에 빠져들었습니다.</Moyo2_Researcher.baseDesc>
+	<!-- 천문학자 -->
+	<Moyo2_Astronomer.title>모요 천문학자</Moyo2_Astronomer.title>
+	<Moyo2_Astronomer.titleShort>천문학자</Moyo2_Astronomer.titleShort>
+	<Moyo2_Astronomer.baseDesc>{PAWN_nameDef} (은)는 깊은 바다에서 우주를 올려다 보았습니다. 천문학은 등대에선 사장된 학문으로 의회의 그 어떤 지원도 받지 못하지만, {PAWN_pronoun}는 언젠가 직접 우주에 닿기 위해 열심히 노력했습니다.</Moyo2_Astronomer.baseDesc>
+	<!-- 방랑자 -->
+	<Moyo2_Wanderer.title>모요 방랑자</Moyo2_Wanderer.title>
+	<Moyo2_Wanderer.titleShort>방랑자</Moyo2_Wanderer.titleShort>
+	<Moyo2_Wanderer.baseDesc>{PAWN_nameDef} (은)는 등대라는 거대한 감옥을 떠나 잠수정에서 살았습니다. 가끔가다 정비와 재보급을 위해 등대에 들렀지만 그때마다 자신의 신념만 재확인하게 되었습니다. {PAWN_pronoun}는 언젠가 등대를 완전히 벗어날 준비를 하고 있습니다.</Moyo2_Wanderer.baseDesc>
+	<!-- 광부 -->
+	<Moyo2_Miner.title>모요 광부</Moyo2_Miner.title>
+	<Moyo2_Miner.titleShort>광부</Moyo2_Miner.titleShort>
+	<Moyo2_Miner.baseDesc>등대의 발전과 소비를 지탱하기 위해선 많은 양의 광물이 필요합니다. {PAWN_nameDef} (은)는 위험하지만 벌이가 좋은 이 일에 뛰어들었습니다. 광업에서 손을 땔 수 있을 때 까지만 일을 하려 했으나 의료비 등으로 인해 은퇴는 요원해보입니다.</Moyo2_Miner.baseDesc>
+	<!-- 심층광부 -->
+	<Moyo2_CoreMiner.title>모요 심층광부</Moyo2_CoreMiner.title>
+	<Moyo2_CoreMiner.titleShort>심층광부</Moyo2_CoreMiner.titleShort>
+	<Moyo2_CoreMiner.baseDesc>{PAWN_nameDef} (은)는 악명높은 등대의 심층광부입니다. 두꺼운 잠수복을 입고 가장 깊은 곳까지 내려가 광물을 채굴하는 일은 등대에서 가장 기피되는 일입니다. 하지만 굉장한 보수로 인해 {PAWN_pronoun}는 이 일을 택했고 헤이달 샤드 채굴에 투입되었습니다. 그리고 {PAWN_pronoun}는 그곳에서 끔찍한 경험을 했다고 합니다.</Moyo2_CoreMiner.baseDesc>
+	<!-- 메카노이드 정비공 -->
+	<Moyo2_MechanoidMantainer.title>모요 메카노이드 정비공</Moyo2_MechanoidMantainer.title>
+	<Moyo2_MechanoidMantainer.titleShort>메카노이드 정비공</Moyo2_MechanoidMantainer.titleShort>
+	<Moyo2_MechanoidMantainer.baseDesc>메카노이드는 등대의 역사와 함께하는 중요한 일꾼입니다. {PAWN_nameDef} (은)는 메카노이드를 정비하며 격무에 시달렸고, 잔고장이 있을 뿐 지치지 않는 메카노이드를 동경하게 되었습니다.</Moyo2_MechanoidMantainer.baseDesc>
+	<!-- 해결사 -->
+	<Moyo2_Fixer.title>모요 해결사</Moyo2_Fixer.title>
+	<Moyo2_Fixer.titleShort>해결사</Moyo2_Fixer.titleShort>
+	<Moyo2_Fixer.baseDesc>{PAWN_nameDef} (은)는 의뢰를 받는 해결사입니다. 더럽고 힘든 일을 해결하면 의뢰자는 만족하고, 자신은 두둑한 보수를 받으니 누이 좋고 매부 좋고입니다. 하지만 맡은 의뢰가 크게 잘못되며, {PAWN_pronoun}는 목숨이라도 건지기 위해 등대를 탈출했습니다.</Moyo2_Fixer.baseDesc>
+	<!-- 바운서 -->
+	<Moyo2_Bouncer.title>모요 바운서</Moyo2_Bouncer.title>
+	<Moyo2_Bouncer.titleShort>바운서</Moyo2_Bouncer.titleShort>
+	<Moyo2_Bouncer.baseDesc>{PAWN_nameDef} (은)는 클럽의 바운서입니다. 사람이 많은 곳엔 자연스레 소란도 많은 법이고 {PAWN_pronoun}는 주정뱅이, 약쟁이와 주제넘게 덤비는 고객들을 아주 효과적으로 '설득'했습니다. 정말 사소한 이유로 인해 해고되기 전까진 말이죠.</Moyo2_Bouncer.baseDesc>
+	<!-- 계약 의사 -->
+	<Moyo2_ContractedDoctor.title>모요 계약 의사</Moyo2_ContractedDoctor.title>
+	<Moyo2_ContractedDoctor.titleShort>계약 의사</Moyo2_ContractedDoctor.titleShort>
+	<Moyo2_ContractedDoctor.baseDesc>{PAWN_nameDef} (은)는 전문적인 교육을 통해 의사가 되었습니다. 대중을 상대론 장사가 되지 않기에 {PAWN_pronoun}는 하층의 부호와 전속 계약을 맺기로 했습니다.</Moyo2_ContractedDoctor.baseDesc>
+	<!-- 베테랑 간호사 -->
+	<Moyo2_VeteranNurse.title>모요 베테랑 간호사</Moyo2_VeteranNurse.title>
+	<Moyo2_VeteranNurse.titleShort>베테랑 간호사</Moyo2_VeteranNurse.titleShort>
+	<Moyo2_VeteranNurse.baseDesc>{PAWN_nameDef} (은)는 산전수전을 다 겪은 간호사입니다. {PAWN_pronoun}는 끔찍한 모습을 보고 고된 노동을 겪으며 무너지지 않기 위해선 감정을 버리는 것이 최선이라 판단했습니다. 그렇게 {PAWN_pronoun}는 베테랑이 되었습니다.</Moyo2_VeteranNurse.baseDesc>
+	<!-- 가정부 -->
+	<Moyo2_Housekeeper.title>모요 가정부</Moyo2_Housekeeper.title>
+	<Moyo2_Housekeeper.titleShort>가정부</Moyo2_Housekeeper.titleShort>
+	<Moyo2_Housekeeper.baseDesc>부유한 이들은 많은 서비스를 돈으로 고용할 수 있습니다. {PAWN_nameDef} 도 그렇게 고용되어 가정부로써 여러 집안일과 심부름을 담당했습니다. {PAWN_pronoun}는 사회적, 경제적으로 우위에 있는 고용주에게 반항을 할 수 없었습니다. 고용주는 점차 {PAWN_pronoun}에게 더 많은 요구를 했고 버티다 못한 {PAWN_pronoun}는 결국 고용주를 살해하고 도망쳤습니다.</Moyo2_Housekeeper.baseDesc>
+	<!-- 가벼운 꼬리 -->
+	<Moyo2_BuoyantTail.title>모요 가벼운 꼬리</Moyo2_BuoyantTail.title>
+	<Moyo2_BuoyantTail.titleShort>가벼운 꼬리</Moyo2_BuoyantTail.titleShort>
+	<Moyo2_BuoyantTail.baseDesc>{PAWN_nameDef} (은)는 상당히 빠르고 효과적으로 돈을 벌 수 있는 방법을 찾았습니다. 적당한 수준의 자기관리와 사교기술만 있으면, 상대에게 꼬리를 살짝 들어주면 끝나는 간단한 일입니다. 누군가는 비난하겠지만 {PAWN_pronoun}는 개의치 않았습니다, 그들은 언제든 해고될수도 있지만 적어도 {PAWN_pronoun}의 고객이 끊길 일은 없어보이니까요.</Moyo2_BuoyantTail.baseDesc>
+	<!-- 집행관 -->
+	<Moyo2_Enforcer.title>모요 집행관</Moyo2_Enforcer.title>
+	<Moyo2_Enforcer.titleShort>집행관</Moyo2_Enforcer.titleShort>
+	<Moyo2_Enforcer.baseDesc>{PAWN_nameDef} (은)는 등대의 치안을 담당합니다. 복장을 차려입고 출동하여 범죄자를 체포하고 질서를 유지합니다. {PAWN_pronoun}와 같은 집행관들은 여러 별명이 있는데, 가장 유명한 것은 역시 "따개비 청소부"입니다. 침수구역과 같이 여러 구역에 눌러앉은 노숙자와 거지들을 몰아내어 깔끔하게 청소하기 떄문이죠. 중층의 많은 이들은 집행관들의 이런 행동을 마음에 들어합니다.</Moyo2_Enforcer.baseDesc>
+	<!-- 정규군 -->
+	<Moyo2_Soldier.title>모요 정규군</Moyo2_Soldier.title>
+	<Moyo2_Soldier.titleShort>정규군</Moyo2_Soldier.titleShort>
+	<Moyo2_Soldier.baseDesc>{PAWN_nameDef}(은)는 전문적인 훈련을 받은 등대의 정규군입니다. 등대의 특성상 정규군이 출동할 일은 거의 일어나지 않기에  {PAWN_pronoun}는 대부분 집행관들을 지원하는 임무를 받았습니다. 등대의 많은 이들은 비용 등의 이유로 정규군의 필요성에 의문을 제기하지만 현명한 이들은 알고 있습니다. 등대의 가장 강력한 무력집단인 정규군이 존재하기에 이 등대라는 난장판에 질서라는 것이 유지된다는 것을요.</Moyo2_Soldier.baseDesc>
+	<!-- 정규군 장교 -->
+	<Moyo2_ArmyOfficer.title>모요 정규군 장교</Moyo2_ArmyOfficer.title>
+	<Moyo2_ArmyOfficer.titleShort>정규군 장교</Moyo2_ArmyOfficer.titleShort>
+	<Moyo2_ArmyOfficer.baseDesc>{PAWN_nameDef}(은)는 정규군의 장교로써 매우 편안한 생활을 즐기고 있었습니다. 하지만 이는 곧 방탕으로 변질됐고, 신분 상승을 목표로 한번 크게 벌기 위한 계획을 세웠습니다. 물론 이 계획은 실패했고  {PAWN_pronoun}는 상황이 악화되기 전에 서둘러 등대를 빠져나왔습니다.</Moyo2_ArmyOfficer.baseDesc>
+	
+	<!-- 하층 백스토리 -->
+	<!-- 세이렌링 -->
+	<Moyo2_Sirenling.title>모요 세이렌링</Moyo2_Sirenling.title>
+	<Moyo2_Sirenling.titleShort>세이렌링</Moyo2_Sirenling.titleShort>
+	<Moyo2_Sirenling.baseDesc>등대의 최고 유명인사인 세이렌이 되기 위해선 말 그대로 뼈를 깎는 노력을 해야 합니다. 외적인 그 어떤 단점도 없어야 하며 예술에 대한 재능도 타고나야 합니다. 그렇기에 등대의 하층이 아닌이상 시도를 하기조차 힘듭니다. {PAWN_nameDef}(은)는 세이렌 후보로써 엄격한 관리를 받으며 살아왔고 자신의 능력을 증명했습니다. 하지만 세이렌이 되는 것은 자신을 증명하는 것 그 이상을 보여줘야 합니다. 앞으로 {PAWN_pronoun}가 갈 길이 가치있기를 바랍니다.</Moyo2_Sirenling.baseDesc>
+	<!-- 문다이버 후보생 -->
+	<Moyo2_MoondiverCandidate.title>모요 문다이버 후보생</Moyo2_MoondiverCandidate.title>
+	<Moyo2_MoondiverCandidate.titleShort>문다이버 후보생</Moyo2_MoondiverCandidate.titleShort>
+	<Moyo2_MoondiverCandidate.baseDesc>{PAWN_nameDef}(은)는 등대의 기밀인 문다이버 프로젝트의 후보생입니다. 가장 완벽한 개척자를 만들기 위해 {PAWN_pronoun}는 고강도의 훈련을 거쳐야 했고 그로 인해 {PAWN_pronoun}는 객관적으로도 아주 뛰어난 인재가 되었습니다. 하지만 연구진중 그 누구도 사회적 상호작용이 중요하다 생각하지 않았나 봅니다.</Moyo2_MoondiverCandidate.baseDesc>
+	<!-- 수석 생물학자 -->
+	<Moyo2_CheifBiologist.title>모요 수석 생물학자</Moyo2_CheifBiologist.title>
+	<Moyo2_CheifBiologist.titleShort>수석 생물학자</Moyo2_CheifBiologist.titleShort>
+	<Moyo2_CheifBiologist.baseDesc>{PAWN_nameDef}는 과학의 여러 분야에서 두각을 나타내었고, 의회의 인정을 받아 수석 연구원이 되었습니다. {PAWN_pronoun}는 의회의 전폭적인 지원을 받으며 어떤 연구 프로젝트에 투입되었습니다. 하지만 프로젝트의 내용을 본 {PAWN_pronoun}는 결국 자신이 입막음의 대상이 될 것이라는 것을 알고 도망쳤습니다./n/n그 프로젝트의 명칭은 헤이듐-블루였습니다.</Moyo2_CheifBiologist.baseDesc>
+	<!-- 수석 공학자 -->
+	<Moyo2_CheifEngineer.title>모요 수석 공학자</Moyo2_CheifEngineer.title>
+	<Moyo2_CheifEngineer.titleShort>수석 공학자</Moyo2_CheifEngineer.titleShort>
+	<Moyo2_CheifEngineer.baseDesc>{PAWN_nameDef}(은)는 공학에서 두각을 나타내었고, 의회의 인정을 받아 수석 공학자가 되었습니다. {PAWN_pronoun}는 의회의 전폭적인 지원을 받으며 어떤 프로젝트에 투입되었습니다. 기존의 어비스테크와는 다른 최첨단의 기술이 개발되었지만 프로젝트 자체가 중단이 되어버렸습니다. 의회는 기밀을 지키기 위해 {PAWN_possesive}의 모든 것을 통제하려 했고 이를 원치 않았던 {PAWN_pronoun}는 의회의 손길이 닿지 않는 곳으로 도망쳤습니다. /n/n그 프로젝트의 이름은 문다이버 였습니다.</Moyo2_CheifEngineer.baseDesc>
 	<!-- 세이렌 -->
 	<Moyo2_Siren.title>모요 세이렌</Moyo2_Siren.title>
 	<Moyo2_Siren.titleShort>세이렌</Moyo2_Siren.titleShort>
-	<Moyo2_Siren.baseDesc>[PAWN_nameDef](은)는 등대 하층의 유명인사입니다. 아름다운 외모, 환상적인 목소리를 가진 [PAWN_pronoun](은)는 등대의 사교계를 휩쓸었고, [PAWN_nameDef]처럼 매력적인 다른 모요들에게도 그렇게 했듯이 세이렌이라는 별명을 붙여주었습니다.</Moyo2_Siren.baseDesc>
-	<!-- 청부업자 -->
-	<Moyo2_Hitman.title>모요 청부업자</Moyo2_Hitman.title>
-	<Moyo2_Hitman.titleShort>청부업자</Moyo2_Hitman.titleShort>
-	<Moyo2_Hitman.baseDesc>[PAWN_nameDef](은)는 돈을 받고 조용히 일을 처리하는 청부업자입니다. 어느 사회에나 더러운 일은 존재하고, 누군가는 그것을 해야만 합니다. [PAWN_pronoun]에게 있어서 상대의 처지나 상황은 고려할 대상이 아닙니다. 수중에 들어오는 돈의 액수 정도쯤은 되어야 [PAWN_pronoun](은)는 그 문제에 대해서 고려할 것입니다.</Moyo2_Hitman.baseDesc>
+	<Moyo2_Siren.baseDesc>등대를 대표하는 것은 바로 {PAWN_nameDef}와 같은 등대의 세이렌들입니다. {PAWN_pronoun}는 사람을 홀리는 기술의 달인이며 다양한 예술 분야도 섭렵한 등대의 엔터테인먼트 그 자체입니다. 하지만 {PAWN_pronoun}는 소속사에 의한 통제와 억압으로 엄청난 스트레스에 시달렸습니다. 곧이어 다른 대체상품이 나오자 {PAWN_pronoun}는 헌신짝처럼 버려졌고, {PAWN_nameDef}(은)는 암시장에 상품으로써 팔리기 전에 서둘러 등대에서 도망쳤습니다.</Moyo2_Siren.baseDesc>
+	<!-- 문다이버 -->
+	<Moyo2_Moondiver.title>모요 문다이버</Moyo2_Moondiver.title>
+	<Moyo2_Moondiver.titleShort>문다이버</Moyo2_Moondiver.titleShort>
+	<Moyo2_Moondiver.baseDesc>{PAWN_nameDef}(은)는 등대의 기밀인 문다이버 프로젝트의 대상자입니다. 등대 제일의 엘리트로 육성된 이들은 등대의 바다를 넘어 다른 수많은 곳을 개척하는 것이 목표였습니다. 하지만 의회와 기업간의 불화가 깊어지며 의회는 프로젝트를 폐기하기로 결정했고, 관련된 모든 이들을 깔끔히 정리했습니다. {PAWN_nameDef}와 같은 문다이버들은, 실험을 한다는 명목 하에 오지에 폐기되었습니다.</Moyo2_Moondiver.baseDesc>
+	<!-- 기업 총수 -->
+	<Moyo2_CorpoHead.title>모요 기업 총수</Moyo2_CorpoHead.title>
+	<Moyo2_CorpoHead.titleShort>기업 총수</Moyo2_CorpoHead.titleShort>
+	<Moyo2_CorpoHead.baseDesc>등대는 탐욕을 충족하기에 안성맞춤인 곳입니다. {PAWN_nameDef}(은)는 그 탐욕의 정점인 기업의 우두머리였습니다. 등대의 기업으로써 {PAWN_pronoun}는 돈을 긁어모을 수 있는 거의 모든 것을 했고, 그 와중에 발생한 불상사들은 수익의 일부분만 써도 정리가 되었습니다. {PAWN_pronoun}는 결국 {PAWN_pronoun}의 무자비한 방식 그대로 배신당해 등대 밖으로 쫒겨나게 되었습니다.</Moyo2_CorpoHead.baseDesc>
+	<!-- 조직 보스 -->
+	<Moyo2_SyndicateBoss.title>모요 조직 보스</Moyo2_SyndicateBoss.title>
+	<Moyo2_SyndicateBoss.titleShort>조직 보스</Moyo2_SyndicateBoss.titleShort>
+	<Moyo2_SyndicateBoss.baseDesc>조직이라곤 하나, {PAWN_nameDef}의 사업은 여느 사업과 다를 바가 없습니다. 어차피 기업도 범법행위의 집합체이니, 합법적인 서류가 조금 모자란것 외엔 차이가 없습니다. {PAWN_nameDef}(은)는 주로 딥블루의 생산 및 공급을 통해 많은 돈을 벌었고. {PAWN_pronoun} 역시 기업 친구들과 마찬가지로 뒤통수를 맞음으로써 떠나게 됩니다. 둘이 서로 다른 것 하나 없다니까요.</Moyo2_SyndicateBoss.baseDesc>
+	<!-- 의원 -->
+	<Moyo2_CouncilMember.title>모요 의원</Moyo2_CouncilMember.title>
+	<Moyo2_CouncilMember.titleShort>의원</Moyo2_CouncilMember.titleShort>
+	<Moyo2_CouncilMember.baseDesc>등대의 의원직은 매우 고된 일입니다. {PAWN_nameDef}(은)는 자신을 후원하는 기업을 늘리기고 정적을 제거하기 위해 매일 전략을 구상했습니다. 그와 동시에 자신의 재산도 틈틈히 늘려야 하니 아주 중노동이었습니다. 그런 {PAWN_pronoun}는 정적들의 총공세에 위태로운 상황에 놓이게 되었습니다. 하지만 현명한 이들은 모두 보험을 들어두는 법입니다. {PAWN_nameDef}(은)는 절대 그들에게 잡히지 않을 겁니다.</Moyo2_CouncilMember.baseDesc>
+	<!-- 지상 무역가 -->
+	<Moyo2_SurfaceTrader.title>모요 지상 무역가</Moyo2_SurfaceTrader.title>
+	<Moyo2_SurfaceTrader.titleShort>지상 무역가</Moyo2_SurfaceTrader.titleShort>
+	<Moyo2_SurfaceTrader.baseDesc>등대는 매우 폐쇄적인 사회입니다. 의회는 등대 외부, 특히 지상으로 가는 것을 매우 엄격하게 통제했습니다. 하지만 {PAWN_nameDef}(은)는 소수의 예외에 해당됐습니다. {PAWN_pronoun}는 지상에서 들여온 물건들을 통해 엄청난 부를 쌓고 그 부를 의회와 나누며 강한 유착관계를 형성했습니다, 라고 {PAWN_pronoun}는 생각했습니다. 의회는 손바닥 뒤집듯이 태도를 바꾸었고, {PAWN_pronoun}는 모든 소유물을 압류당했습니다. 그리고 {PAWN_nameDef}(은)는 지상에 마지막 희망을 걸어보기로 했습니다.</Moyo2_SurfaceTrader.baseDesc>
+	<!-- 희귀품 수집가 -->
+	<Moyo2_ExoticsCollector.title>모요 희귀품 수집가</Moyo2_ExoticsCollector.title>
+	<Moyo2_ExoticsCollector.titleShort>희귀품 수집가</Moyo2_ExoticsCollector.titleShort>
+	<Moyo2_ExoticsCollector.baseDesc>사람이란 별 것 아닌 것에 대단한 가치를 부여하곤 합니다. {PAWN_nameDef}도 그 중 한명으로, 온갖 희귀한 것을 수집하는 취미가 있었습니다. 넘치는 부를 바탕으로 한 {PAWN_pronoun}의 취미는 없던 시장을 생기게 할 정도였습니다. {PAWN_pronoun}는 직접 수집을 하기 위해 지상에 왔다고 주장하지만, 풍문에 의하면 마지막으로 수집한 물품이 어떠한 문제를 일으켰다고 합니다.</Moyo2_ExoticsCollector.baseDesc>
+	<!-- 메카노이드 마스터 -->
+	<Moyo2_MechanoidMaster.title>모요 메카노이드 마스터</Moyo2_MechanoidMaster.title>
+	<Moyo2_MechanoidMaster.titleShort>메카노이드 마스터</Moyo2_MechanoidMaster.titleShort>
+	<Moyo2_MechanoidMaster.baseDesc>등대의 가장 뛰어난 일꾼은 누가 뭐래도 메카노이드입니다. 강력한 고효율의 메카노이드는 생물 노동자와 다르게 불평불만을 하지 않기 때문입니다. {PAWN_nameDef}(은)는 수많은 메카노이드를 소유하고 있으며 이를 대여하고 엄청난 댓가를 받곤 했습니다. 하지만 무슨 일인지 더이상 메카노이드가 통제를 따르지 않았고 {PAWN_pronoun}는 그대로 망해버렸습니다./n/n{PAWN_nameDef}(은)는 지상의 주인 없는 메카노이드를 통제할 수만 있다면 다시 일어설 수 있으리라 믿으며 지상으로 향했습니다.</Moyo2_MechanoidMaster.baseDesc>
 </LanguageData>
