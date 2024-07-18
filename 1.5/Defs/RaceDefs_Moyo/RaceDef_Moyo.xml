@@ -354,14 +354,28 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>
-									<hiddenUnderApparelTag>
-										<li>MoyoTuque</li>
-									</hiddenUnderApparelTag>
+									<!-- <hiddenUnderApparelFor> -->
+										<!-- <li>FullHead</li> -->
+									<!-- </hiddenUnderApparelFor> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>MoyoTuque</li> -->
+									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
+							<offsets>
+								<north>
+									<layerOffset>-0.274</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.278</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.278</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.278</layerOffset>
+								</west>
+							</offsets>							
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -384,14 +398,28 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>
-									<hiddenUnderApparelTag>
-										<li>MoyoTuque</li>
-									</hiddenUnderApparelTag>
+									<!-- <hiddenUnderApparelFor> -->
+										<!-- <li>FullHead</li> -->
+									<!-- </hiddenUnderApparelFor> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>MoyoTuque</li> -->
+									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
+							<offsets>
+								<north>
+									<layerOffset>-0.2739</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.2779</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.2779</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.2779</layerOffset>
+								</west>
+							</offsets>								
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -413,14 +441,28 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>
-									<hiddenUnderApparelTag>
-										<li>MoyoTuque</li>
-									</hiddenUnderApparelTag>
+									<!-- <hiddenUnderApparelFor> -->
+										<!-- <li>FullHead</li> -->
+									<!-- </hiddenUnderApparelFor> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>MoyoTuque</li> -->
+									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
+							<offsets>
+								<north>
+									<layerOffset>-0.274</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.278</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.278</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.278</layerOffset>
+								</west>
+							</offsets>
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -443,11 +485,28 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>
+									<!-- <hiddenUnderApparelFor> -->
+										<!-- <li>FullHead</li> -->
+									<!-- </hiddenUnderApparelFor> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>MoyoTuque</li> -->
+									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
+							<offsets>
+								<north>
+									<layerOffset>-0.2739</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.2779</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.2779</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.2779</layerOffset>
+								</west>
+							</offsets>
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -574,13 +633,13 @@
 									<layerOffset>-0.325</layerOffset>
 								</north>
 								<south>
-									<layerOffset>-0.273</layerOffset>
+									<layerOffset>-0.278</layerOffset>
 								</south>
 								<east>
-									<layerOffset>-0.273</layerOffset>
+									<layerOffset>-0.278</layerOffset>
 								</east>
 								<west>
-									<layerOffset>-0.273</layerOffset>
+									<layerOffset>-0.278</layerOffset>
 								</west>
 							</offsets>
 							<!-- - -->
@@ -673,17 +732,17 @@
 							</offsets>
 							<!-- - -->
 							<extendedGraphics>
-								<Hediff For="Moyo2_EGHelmet">
-									<path>Apparel/LighthouseArmor/EGvisor_up</path>
-									<extendedGraphics>
-										<Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted>
-										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
-										<Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDownAwake">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDown">Moyo_Dummy/Dummy</Job>
-									</extendedGraphics>
-								</Hediff>
+								<!-- <Hediff For="Moyo2_EGHelmet"> -->
+									<!-- <path>Apparel/LighthouseArmor/EGvisor_up</path> -->
+									<!-- <extendedGraphics> -->
+										<!-- <Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted> -->
+										<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
+										<!-- <Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job> -->
+										<!-- <Job For="LayDownAwake">Moyo_Dummy/Dummy</Job> -->
+										<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
+										<!-- <Job For="LayDown">Moyo_Dummy/Dummy</Job> -->
+									<!-- </extendedGraphics> -->
+								<!-- </Hediff> -->
 								<Hediff For="Moyo2_CartelHood">
 									<path>Apparel/Cartel/CartelHood</path>
 									<extendedGraphics>
@@ -810,6 +869,7 @@
 					<li>Moyo2_EGHarness</li>
 					<li>Moyo2_EGJacket</li>
 					<li>Moyo2_EGHelmet</li>
+					<li>Moyo2_EGMask</li>
 					<li>Moyo2_StreamlineDivingShell</li>
 					<li>Moyo2_StreamlineDivingHelmet</li>
 					<li>Moyo2_DeepDivingShell</li>

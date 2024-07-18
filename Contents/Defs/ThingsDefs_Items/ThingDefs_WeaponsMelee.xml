@@ -80,6 +80,9 @@
 			<li>Moyo2_MeleeIDR</li>
 			<li>Moyo2_WrenchIDR</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>		
 	</ThingDef>
 	<AbilityDef>
 		<defName>Moyo2_WrenchThrow</defName>
@@ -187,6 +190,9 @@
 			<li>Moyo2_MeleeIDR</li>
 			<li>Moyo2_KnifeIDR</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>			
 	</ThingDef>
 	<!-- 모요 톱 -->
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
@@ -239,6 +245,9 @@
 			<li>Moyo2_MeleeIDR</li>
 			<li>Moyo2_SawIDR</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>		
 	</ThingDef>
 	<!-- 라미너 글레이브 -->
 	<ThingDef ParentName="MoyoBaseMeleeLMR">
@@ -304,6 +313,9 @@
 			<li>Moyo2_MeleeLMR</li>
 			<li>Moyo2_GlaiveLMR</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>		
 	</ThingDef>
 	<!-- 모요 파워건틀릿 -->
 	<ThingDef ParentName="MoyoBaseMeleeLMR">
@@ -363,6 +375,9 @@
 		<weaponTags>
 			<li>Moyo2_MeleeLMR</li>
 			<li>Moyo2_GaunteltLMR</li>
-		</weaponTags>		
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>		
 	</ThingDef>		
 </Defs>

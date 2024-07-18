@@ -22,12 +22,18 @@
 		<thingCategories Inherit="False">
 			<li>Moyo2_WeaponsCategory_Ranged</li>
 		</thingCategories>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>		
 	</ThingDef>
 	<ThingDef Name="MoyoBaseGunLMR" Abstract="true" ParentName="BaseHumanMakeableGun">
 		<techLevel>Spacer</techLevel>
 		<thingCategories Inherit="False">
 			<li>Moyo2_WeaponsCategory_Ranged</li>
 		</thingCategories>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>		
 	</ThingDef>
 	<!-- 무기 베이스-근접 -->
 	<ThingDef Name="MoyoBaseMelee" Abstract="true" ParentName="BaseMeleeWeapon">
@@ -59,12 +65,18 @@
 		<thingCategories Inherit="False">
 			<li>Moyo2_WeaponsCategory_Melee</li>
 		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>		
 	</ThingDef>
 	<ThingDef Name="MoyoBaseMeleeLMR" Abstract="true" ParentName="MoyoBaseMelee">
 		<techLevel>Spacer</techLevel>
 		<thingCategories Inherit="False">
 			<li>Moyo2_WeaponsCategory_Melee</li>
 		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>		
 	</ThingDef>
 	
 	<DamageDef>
