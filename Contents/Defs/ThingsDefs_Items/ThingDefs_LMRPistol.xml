@@ -191,6 +191,10 @@
 				</transformData>
 			</li>
 		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
 	</ThingDef>
 	<ThingDef ParentName="Moyo2_LMRPistol">
 		<defName>Moyo2_LMRPistolDown</defName>
@@ -219,5 +223,9 @@
 				</revertData>
 			</li>
 		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
 	</ThingDef>	
 </Defs>

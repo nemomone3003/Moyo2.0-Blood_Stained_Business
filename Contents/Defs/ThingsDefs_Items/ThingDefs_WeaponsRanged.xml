@@ -76,7 +76,7 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<!-- - -->
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>MoyoBasicGun</li>
 		</weaponTags>
 	</ThingDef>
@@ -170,7 +170,7 @@
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<!-- - -->
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>MoyoBasicGun</li>
 		</weaponTags>
 	</ThingDef>
@@ -264,7 +264,7 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<!-- - -->
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>MoyoBasicGun</li>
 		</weaponTags>
 	</ThingDef>

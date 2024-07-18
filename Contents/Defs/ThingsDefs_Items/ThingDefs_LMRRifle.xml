@@ -199,7 +199,11 @@
 					</li>
 				</transformData>
 			</li>
-		</comps>		
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
 	</ThingDef>	
 	<ThingDef ParentName="Moyo2_LMRRifle">
 		<defName>Moyo2_LMRRifleDown</defName>
@@ -227,6 +231,10 @@
 					<soundOnTransform>Laminar_Activate</soundOnTransform>
 				</revertData>
 			</li>
-		</comps>		
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
 	</ThingDef>		
 </Defs>
