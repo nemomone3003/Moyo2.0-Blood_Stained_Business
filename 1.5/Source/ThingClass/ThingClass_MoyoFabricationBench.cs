@@ -2,7 +2,7 @@
 {
     public class ThingClass_MoyoFabricationBench : Building_WorkTable
     {
-        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
             var compAffectedByFacilities = this.TryGetComp<CompAffectedByFacilities>();
 
@@ -24,7 +24,7 @@
                     }
                 }
             }
-            base.Destroy(mode);
+            base.DeSpawn(mode);
         }
     }
 }

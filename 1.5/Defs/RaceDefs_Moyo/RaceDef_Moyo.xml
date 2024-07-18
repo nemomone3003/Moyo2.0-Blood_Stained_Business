@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Alien_Moyo</defName>
 		<label>Moyo</label>
-		<description>Inhabitants of the 'Lighthouse', a city submerged beneath the waves, has emerged to pursue their own interests. A substance known as Deepblue flows in their veins, serving a variety of pharmaceutical and medical purposes, not to mention producing drugs.</description>
+		<description>Inhabitants of the 'Lighthouse', a city submerged beneath the waves, have emerged to pursue their own interests. A substance known as Deepblue flows in their veins, serving a variety of pharmaceutical and medical purposes, not to mention producing drugs.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BlueBloodBag</ThingDef>
 		</descriptionHyperlinks>

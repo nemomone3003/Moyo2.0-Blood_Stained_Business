@@ -6,17 +6,17 @@ namespace Moyo2
     {
         public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
         {
-#nullable enable
-            Building? buildingOnCursor = loc.GetFirstBuilding(map);
-#nullable disable
-            // Gets CompProperties_AffectedByFacilities from the first building it finds on the tile the ghost is on 
-            CompProperties_AffectedByFacilities compAffectedByFacilitiesOfBuilding = buildingOnCursor?.def?.GetCompProperties<CompProperties_AffectedByFacilities>();
+            Building buildingOnCursor = loc.GetEdifice(map); // Only 1 edifice can exist on a tile, saves myself needing to find every thing on the tile
 
-            if (buildingOnCursor != null
-                && compAffectedByFacilitiesOfBuilding != null // Incase the building found doesn't have CompProperties_AffectedByFacilities
-                && compAffectedByFacilitiesOfBuilding.linkableFacilities.Any(building => building == checkingDef)
-                // Incase the CompProperties_AffectedByFacilities found doesn't have this building on it's linkableFacilities list.
+            // Gets CompProperties_AffectedByFacilities from the first building it finds on the tile the ghost is on 
+            CompProperties_AffectedByFacilities compAffectedByFacilities = buildingOnCursor?.def.GetCompProperties<CompProperties_AffectedByFacilities>();
+
+            if (buildingOnCursor is not null
+                && compAffectedByFacilities is not null // Incase the building found doesn't have CompProperties_AffectedByFacilities
+                && compAffectedByFacilities.linkableFacilities.Any(buildingDef => buildingDef == checkingDef)
+                // The building must have the checkingDef (the thing this placeworker is on) in the linkableFacilities list
                 && GenAdj.CellsOccupiedBy(loc, rot, checkingDef.Size).All(cell => cell.GetThingList(map).Any(t => t == buildingOnCursor)))
+                // And the ghost of the building we're trying to place must be built fully on the building on our cursor
             {
                 return true;
             }

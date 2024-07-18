@@ -144,7 +144,7 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
-					<divideByBodySize>true</divideByBodySize>
+					<divideByBodySize>false</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
