@@ -31,7 +31,9 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Lighthouse/BasicSuit</wornGraphicPath>
 			<layers>
@@ -87,7 +89,9 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Lighthouse/AdvancedSuit</wornGraphicPath>
 			<layers>
@@ -145,7 +149,9 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Lighthouse/RoyalSuit</wornGraphicPath>
 			<layers>
@@ -203,7 +209,9 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Lighthouse/HoloSuit</wornGraphicPath>
 			<layers>
@@ -256,6 +264,7 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGharness</wornGraphicPath>
 			<layers>
@@ -311,6 +320,7 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGjacket</wornGraphicPath>
 			<layers>
@@ -357,17 +367,19 @@
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
 			<Insulation_Heat>21</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
+			<EquipDelay>1</EquipDelay>
+		</statBases>		
 		<!-- - -->
 		<apparel>
 			<drawData>
-				<!-- <defaultData> -->
-				<!-- <layer>73</layer> -->
-				<!-- </defaultData> -->
+				<defaultData>
+				<layer>73</layer>
+				</defaultData>
 			</drawData>
 			<bodyPartGroups>
-				<li>FullHead</li>
+				<!-- <li>FullHead</li> -->
+				<li>UpperHead</li>
+				<li>Eyes</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGhelmet</wornGraphicPath>
 			<layers>
@@ -390,29 +402,82 @@
 			<Steel>70</Steel>
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
-		<comps>
-			<li Class="CompProperties_CauseHediff_Apparel">
-				<hediff>Moyo2_EGHelmet</hediff>
-				<part>Head</part>
-			</li>
-		</comps>
+		<!-- <comps> -->
+		<!-- <li Class="CompProperties_CauseHediff_Apparel"> -->
+		<!-- <hediff>Moyo2_EGHelmet</hediff> -->
+		<!-- <part>Head</part> -->
+		<!-- </li> -->
+		<!-- </comps> -->
 	</ThingDef>
 	<!--헬멧 헤디프-->
-	<HediffDef>
-		<defName>Moyo2_EGHelmet</defName>
-		<label>welding helmet</label>
-		<description>Debug.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<stages>
-			<li>
-				<becomeVisible>false</becomeVisible>
-			</li>
-		</stages>
-		<comps>
-			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
-		</comps>
-		<isBad>false</isBad>
-	</HediffDef>
+	<!-- <HediffDef> -->
+	<!-- <defName>Moyo2_EGHelmet</defName> -->
+	<!-- <label>welding helmet</label> -->
+	<!-- <description>Debug.</description> -->
+	<!-- <hediffClass>HediffWithComps</hediffClass> -->
+	<!-- <stages> -->
+	<!-- <li> -->
+	<!-- <becomeVisible>false</becomeVisible> -->
+	<!-- </li> -->
+	<!-- </stages> -->
+	<!-- <comps> -->
+	<!-- <li Class="HediffCompProperties_RemoveIfApparelDropped"/> -->
+	<!-- </comps> -->
+	<!-- <isBad>false</isBad> -->
+	<!-- </HediffDef> -->
+	<!-- 엔지니어 마스크-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
+		<defName>Moyo2_EGMask</defName>
+		<label>depth engineer rebreather</label>
+		<description>This breathing apparatus is favored by engineers and workers at  the lighthouses. It offers protection against toxic gases from factories at a reasonable price and can be used as an underwater breathing device when connected to an oxygen tank. Made from high-strength materials, it also provides some degree of protection against physical hazards.\n\nThe lifespan of the respirator in industrial areas is 30 minutes. Users are strongly advised to familiarize themselves with the proper use of the respirator filter.</description>
+		<graphicData>
+			<texPath>Apparel/LighthouseArmor/EGmask1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Mass>0.4</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<Insulation_Cold>1.5</Insulation_Cold>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Mouth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LighthouseArmor/EGmask</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_Engineer</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>20</Steel>
+			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+	<!-- 우주티어 -->
 	<!-- 유선형 잠수용 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_StreamlineDivingShell</defName>
@@ -445,7 +510,9 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -478,7 +545,7 @@
 					<only>(41,43,67)</only>
 				</li>
 			</options>
-		</colorGenerator>		
+		</colorGenerator>
 	</ThingDef>
 	<!-- 유선형 잠수용 헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -540,7 +607,7 @@
 					<only>(41,43,67)</only>
 				</li>
 			</options>
-		</colorGenerator>		
+		</colorGenerator>
 	</ThingDef>
 	<!-- 심층 잠수용 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -578,7 +645,9 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
 				<li>Legs</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/DeepShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -677,6 +746,6 @@
 					<only>(41,43,67)</only>
 				</li>
 			</options>
-		</colorGenerator>		
+		</colorGenerator>
 	</ThingDef>
 </Defs>
