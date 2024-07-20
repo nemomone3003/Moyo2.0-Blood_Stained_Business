@@ -12,7 +12,7 @@ namespace Moyo2
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
-            List<Thing> fishTanksOnMap = pawn.Map.listerThings.ThingsOfDef(Moyo2_ThingDefOfs.Moyo_FishTank);
+            List<Thing> fishTanksOnMap = pawn?.Map.listerThings.ThingsOfDef(Moyo2_ThingDefOfs.Moyo_FishTank);
             for (int i = 0; i < fishTanksOnMap.Count; i++)
             {
                 if (((ThingClass_FishTank)fishTanksOnMap[i]).FinishedGrowing)

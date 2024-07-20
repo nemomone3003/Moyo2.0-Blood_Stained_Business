@@ -24,7 +24,7 @@ namespace Moyo2
                 // The fish tank has CompPowerTrader and it's turned off
                 return false;
             }
-            if (t.IsForbidden(pawn) || !pawn.CanReserve(t, 1, -1, null, forced))
+            if (pawn is null || t.IsForbidden(pawn) || !pawn.CanReserve(t, 1, -1, null, forced))
             {
                 // The building is forbidden for the pawn
                 // or the pawn can't reserve the fish tank
