@@ -71,7 +71,5 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="CompProperties\" />
-	  <Folder Include="PawnRenderNode\Properties\" />
-	  <Folder Include="PawnRenderNode\Node\" />
 	</ItemGroup>
 </Project>

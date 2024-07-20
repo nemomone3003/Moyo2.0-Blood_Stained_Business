@@ -7,7 +7,7 @@
 		<label>hooded black cloak</label>
 		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
 		<graphicData>
-			<texPath>Apparel/Cartel/CartelCloak1</texPath>
+			<texPath>Apparel/Cartel/CartelCloakFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5</drawSize>
 		</graphicData>
@@ -30,11 +30,33 @@
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
-			<drawData>
-				<defaultData>
-					<layer>73</layer>
-				</defaultData>
-			</drawData>
+			<renderNodeProperties>
+				<!-- Cloak / Body part-->
+				<li>
+					<nodeClass>PawnRenderNode_Apparel</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>21</baseLayer>
+				</li>
+				<!-- Hood / Head part-->
+				<li>
+					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
+					<texPath>Apparel/Cartel/CartelHood</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>73</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<wornGraphicPath>Apparel/Cartel/CartelCloak</wornGraphicPath> <!-- This is needed for the boy part of the renderNodeProperties -->
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -42,7 +64,6 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Cartel/CartelCloak</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -63,14 +84,14 @@
 			<Moyo2_Cloth_Depthweave>120</Moyo2_Cloth_Depthweave>
 		</costList>
 		<comps>
-			<li Class="CompProperties_CauseHediff_Apparel">
+			<!--<li Class="CompProperties_CauseHediff_Apparel">
 				<hediff>Moyo2_CartelHood</hediff>
 				<part>Head</part>
-			</li>
+			</li>-->
 		</comps>
 	</ThingDef>
 	<!--후드 헤디프-->
-	<HediffDef>
+	<!--<HediffDef>
 		<defName>Moyo2_CartelHood</defName>
 		<label>CartelHood</label>
 		<description>Debug.</description>
@@ -84,5 +105,5 @@
 			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
 		</comps>
 		<isBad>false</isBad>
-	</HediffDef>
+	</HediffDef>-->
 </Defs>
