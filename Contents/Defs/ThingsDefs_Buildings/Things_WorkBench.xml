@@ -157,7 +157,7 @@
 		<graphicData>
 			<texPath>Building/MoyoFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4, 3.5)</drawSize>
+			<drawSize>(3.5, 3.5)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -301,4 +301,72 @@
 		<canOverlapZones>false</canOverlapZones>
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
+	<!-- 어비스테크 드릴 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Moyo2_DeepDrill</defName>
+    <label>abysstech core drill</label>
+    <description>Dummy text.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Building/MoyoMiner</texPath>
+      <drawSize>(4.5,4.5)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(0.52, 0.53, 0.09)</volume>
+        <offset>(0,0,-0.43)</offset>
+      </shadowData>
+    </graphicData>
+    <size>(3,3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <!-- <designationCategory>Production</designationCategory> -->
+    <specialDisplayRadius>35.6</specialDisplayRadius>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <uiIconOffset>(0, 0.03)</uiIconOffset>
+    <uiIconScale>0.85</uiIconScale>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <costList>
+      <Steel>100</Steel>
+	  <Moyo2_Abyssteel>50</Moyo2_Abyssteel>
+      <ComponentSpacer>1</ComponentSpacer>
+	  <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_DeepDrill</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <!-- <li>DeepDrilling</li> -->
+	  <!-- <li>Moyo2_Abysstech_Foundry</li> -->
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <WorkToBuild>25000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-25</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>600</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_DeepDrill" />
+      <li Class="CompProperties_CreatesInfestations" />
+    </comps>
+  </ThingDef>	
+	
 </Defs>

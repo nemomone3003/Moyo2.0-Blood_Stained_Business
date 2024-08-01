@@ -52,7 +52,7 @@
 		<soundWorking>Recipe_Surgery</soundWorking>
 		<workAmount>5000</workAmount>
 		<recipeUsers>
-			<li>DrugLab</li>
+			<li>Moyo2_FabricationBench</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -64,7 +64,6 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-		<researchPrerequisite>Moyo2_Abysstech_DeepblueSynthesis</researchPrerequisite>
 	</RecipeDef>
 	<RecipeDef ParentName="Moyo2_OrganRecipe">
 		<defName>Moyo2_Butcher_FleshMassHeart</defName>

@@ -139,12 +139,19 @@
 	<!--Original=a bionic tail.-->
 	<Install_Moyo2_TailBionic.jobString>모요 생체공학 꼬리를 이식하고 있습니다.</Install_Moyo2_TailBionic.jobString>
 	<!-- 장기 추출 -->
-	<Moyo2_Butcher_FleshMassHeart.description>장기 추출(심장).</Moyo2_Butcher_FleshMassHeart.description>
-	<Moyo2_Butcher_FleshMassHeart.jobString>모요 배양체에서 심장을 추출합니다.</Moyo2_Butcher_FleshMassHeart.jobString>
-	<Moyo2_Butcher_FleshMassKidney.description>장기 추출(신장).</Moyo2_Butcher_FleshMassKidney.description>
+	<Moyo2_Butcher_FleshMassHeart.label>장기 추출(심장).</Moyo2_Butcher_FleshMassHeart.label>
+	<Moyo2_Butcher_FleshMassHeart.description>모요 배양체에서 심장을 추출합니다.</Moyo2_Butcher_FleshMassHeart.description>
+	<Moyo2_Butcher_FleshMassHeart.jobString>모요 배양체에서 심장 추출중.</Moyo2_Butcher_FleshMassHeart.jobString>
+	
+	<Moyo2_Butcher_FleshMassKidney.label>장기 추출(신장).</Moyo2_Butcher_FleshMassKidney.label>
 	<Moyo2_Butcher_FleshMassKidney.jobString>모요 배양체에서 신장을 추출합니다.</Moyo2_Butcher_FleshMassKidney.jobString>
-	<Moyo2_Butcher_FleshMassLung.description>장기 추출(폐).</Moyo2_Butcher_FleshMassLung.description>
+	<Moyo2_Butcher_FleshMassKidney.description>모요 배양체에서 신장 추출중.</Moyo2_Butcher_FleshMassKidney.description>
+	
+	<Moyo2_Butcher_FleshMassLung.label>장기 추출(폐).</Moyo2_Butcher_FleshMassLung.label>
 	<Moyo2_Butcher_FleshMassLung.jobString>모요 배양체에서 폐를 추출합니다.</Moyo2_Butcher_FleshMassLung.jobString>
-	<Moyo2_Butcher_FleshMassLiver.description>장기 추출(간).</Moyo2_Butcher_FleshMassLiver.description>
+	<Moyo2_Butcher_FleshMassLung.description>모요 배양체에서 폐 추출중.</Moyo2_Butcher_FleshMassLung.description>
+	
+	<Moyo2_Butcher_FleshMassLiver.label>장기 추출(간).</Moyo2_Butcher_FleshMassLiver.label>
 	<Moyo2_Butcher_FleshMassLiver.jobString>모요 배양체에서 간을 추출합니다.</Moyo2_Butcher_FleshMassLiver.jobString>
+	<Moyo2_Butcher_FleshMassLiver.description>모요 배양체에서 간 추출중.</Moyo2_Butcher_FleshMassLiver.description>
 </LanguageData>
