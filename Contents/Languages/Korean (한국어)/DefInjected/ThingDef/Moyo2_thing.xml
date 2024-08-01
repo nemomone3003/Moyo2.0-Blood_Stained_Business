@@ -486,4 +486,8 @@
 	<Moyo2_ArcFurnace.label>어비스테크 아크 화로</Moyo2_ArcFurnace.label>
 	<!--Original=Powerful arc furnace used to craft abyssteel. It can extract metals from various items and burn unwanted materials without leaving any ash.. Just throw it in here. *Consumes significant amount of power.-->
 	<Moyo2_ArcFurnace.description>어비스틸을 제조하기 위한 강력한 아크 화로입니다. 추가로 잡다한 물건에서 금속을 추출하고, 필요 없는 물건을 재도 남기지 않고 태울 수 있습니다. 그냥 이 안에 던져넣으세요. *굉장한 양의 전력이 소비됩니다.</Moyo2_ArcFurnace.description>
+	<!--Original=abysstech arc furnace-->
+	<Moyo2_DeepblueStation.label>어비스테크 딥블루 스테이션</Moyo2_DeepblueStation.label>
+	<!--Original=Powerful arc furnace used to craft abyssteel. It can extract metals from various items and burn unwanted materials without leaving any ash.. Just throw it in here. *Consumes significant amount of power.-->
+	<Moyo2_DeepblueStation.description>딥블루를 생산하는 대형 배양기입니다.  내부에서 배양되는 모요 유기체를 통해 지속적으로 딥블루를 생산할 수 있습니다. 생산을 촉진하기 위해선 지속적인 전기적 자극이 필요하며, 비상 동력장치로 인해 전기가 끊어지더라도 유기체의 생존을 보장합니다.\n\n내부를 들여다 보는것은 추천하지 않습니다.</Moyo2_DeepblueStation.description>	
 </LanguageData>

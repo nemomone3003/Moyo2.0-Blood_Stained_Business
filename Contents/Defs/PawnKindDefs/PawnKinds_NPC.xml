@@ -45,6 +45,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
+					<li>Moyo2_FloodCivil</li>
+					<li>Moyo2_FloodCrime</li>					
 					<li>Moyo2_TopCivil</li>
 					<li>Moyo2_TopCrime</li>
 				</categories>
@@ -91,6 +93,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
+					<li>Moyo2_FloodCivil</li>
+					<li>Moyo2_FloodCrime</li>				
 					<li>Moyo2_TopCivil</li>
 					<li>Moyo2_TopCrime</li>
 				</categories>
@@ -223,13 +227,6 @@
 		<defName>Moyo2_NPCOutlaw</defName>
 		<label>moyo outlaw</label>
 		<combatPower>110</combatPower>
-		<backstoryFiltersOverride>
-			<li>
-				<categories>
-					<li>Moyo2_Dummy</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
 		<weaponMoney>500~800</weaponMoney>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>105~160</techHediffsMoney>
@@ -247,6 +244,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
+					<li>Moyo2_FloodCrime</li>
 					<li>Moyo2_TopCrime</li>
 					<li>Moyo2_MidCrime</li>
 				</categories>
@@ -329,7 +327,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_MidCrime</li>
+					<li>Moyo2_MiddleCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -370,8 +368,8 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>Moyo2_MidCivil</li>
-					<li>Moyo2_MidCrime</li>
+					<li>Moyo2_MiddleCivil</li>
+					<li>Moyo2_MiddleCrime</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>

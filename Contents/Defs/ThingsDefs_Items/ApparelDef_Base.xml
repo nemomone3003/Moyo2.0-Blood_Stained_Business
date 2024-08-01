@@ -3,7 +3,7 @@
 	<!-- 옷 카테고리-등대 -->
 	<ThingCategoryDef>
 		<defName>Moyo2_ApparelCategory_LightHouse</defName>
-		<label>Lighthouse Headgear</label>
+		<label>Lighthouse Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>	
 	<ThingCategoryDef>

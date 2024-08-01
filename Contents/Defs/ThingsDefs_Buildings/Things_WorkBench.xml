@@ -70,7 +70,7 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(80,80,217,0)</glowColor>
-			</li>			
+			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
@@ -230,5 +230,75 @@
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moyo2_DeepblueStation</defName>
+		<label>Abysstech deepblue station</label>
+		<description>A large incubator for producing deepblue. It continuously generates deepblue through the cultivation of Moyo biomass inside. To promote production, continuous electrical stimulation is required, and the emergency power supply ensures the survival of the organisms even if the electricity is cut off.\n\nLooking inside the tank is not recommended.</description>
+		<graphicData>
+			<texPath>Building/DeepblueStation</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.1, 4.3)</drawSize>
+			<shadowData>
+				<volume>(1.8, 1.0, 0.2)</volume>
+				<offset>(0.0, 0.0, -0.4)</offset>
+			</shadowData>
+		</graphicData>
+		<costList>
+			<Moyo2_Abyssteel>75</Moyo2_Abyssteel>
+			<Uranium>25</Uranium>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Moyo2_Heart>1</Moyo2_Heart>
+			<Lung>1</Lung>
+			<Kidney>1</Kidney>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>Moyo2_Abysstech_DeepblueSynthesis</li>
+			<li>Moyo2_Abysstech_Foundry</li>
+		</researchPrerequisites>		
+		<designationCategory>Production</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>800</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>			
+			<li Class="CompProperties_Spawner">
+				<requiresPower>true</requiresPower>
+				<thingToSpawn>BlueSerum</thingToSpawn>
+				<spawnCount>6</spawnCount>
+				<spawnIntervalRange>
+					<min>480000</min>
+					<max>480000</max>
+				</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>-50</Beauty>
+			<Mass>35</Mass>
+			<WorkToBuild>15000</WorkToBuild>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2, 2)</size>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<passability>Impassable</passability>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 </Defs>

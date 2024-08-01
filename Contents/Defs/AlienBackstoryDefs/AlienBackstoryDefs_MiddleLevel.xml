@@ -35,8 +35,12 @@
 		<forcedTraits>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>		
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 지상 예술가 -->
@@ -75,8 +79,12 @@
 		<forcedTraits>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>			
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 충격받은 간호사 -->
@@ -99,6 +107,8 @@
 			<Nerves>-1</Nerves>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>		
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
 		</spawnCategories>
@@ -121,8 +131,14 @@
 			<PsychicSensitivity>2</PsychicSensitivity>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>		
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 가출아이 -->
@@ -142,8 +158,14 @@
 		<forcedTraits>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>	
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 수습 가정부 -->
@@ -163,8 +185,11 @@
 			<Neurotic>2</Neurotic>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_TopCivil</li>
+			<li>Moyo2_TopCrime</li>	
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 즉석식품 매니아 -->
@@ -184,6 +209,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 사관후보생 -->
@@ -208,6 +234,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 성년기 -->
@@ -228,6 +255,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 술집 주인 -->
@@ -294,6 +322,8 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 제약회사 직원 -->
@@ -316,6 +346,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 연구원 -->
@@ -382,6 +413,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 광부 -->
@@ -402,6 +434,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 심층광부 -->
@@ -423,6 +456,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 메카노이드 정비공 -->
@@ -445,6 +479,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!--모요 해결사 -->
@@ -466,6 +501,8 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Engineer</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 바운서 -->
@@ -487,6 +524,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 계약 의사 -->
@@ -603,6 +641,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 정규군 -->
@@ -625,6 +664,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 정규군 장교 -->
@@ -646,6 +686,7 @@
 		<spawnCategories>
 			<li>Moyo2_MiddleCivil</li>
 			<li>Moyo2_MiddleCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 </Defs>

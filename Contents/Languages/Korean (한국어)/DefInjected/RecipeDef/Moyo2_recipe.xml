@@ -1,141 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!--Original=clear deepblue buildup-->
-  <Moyo2_CureDeepBlueTolerance.label>딥블루 축적 제거</Moyo2_CureDeepBlueTolerance.label>
-  <!--Original=Administer special enzymes to clear and flush out residue deepblue in the body.-->
-  <Moyo2_CureDeepBlueTolerance.description>특수 효소를 투여하여 체내의 잔류 딥블루를 제거합니다.</Moyo2_CureDeepBlueTolerance.description>
-  <!--Original=Clearing deepblue residue-->
-  <Moyo2_CureDeepBlueTolerance.jobString>딥블루 축적 제거중</Moyo2_CureDeepBlueTolerance.jobString>
-  <!--Original={0} has successfully cleared {1}&apos;s deepblue buildup.-->
-  <Moyo2_CureDeepBlueTolerance.successfullyRemovedHediffMessage>{0}는 성공적으로 {1}의 딥블루 축적을 제거했습니다.</Moyo2_CureDeepBlueTolerance.successfullyRemovedHediffMessage>
-  <!--Original=조잡한 딥블루 추출기-->
-  <Moyo2_Install_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기 설치</Moyo2_Install_DeepBlueExtracter_Crude.label>
-  <!--Original=a 조잡한 딥블루 추출기.-->
-  <Moyo2_Install_DeepBlueExtracter_Crude.description>조잡한 딥블루 추출기를 설치합니다.</Moyo2_Install_DeepBlueExtracter_Crude.description>
-  <!--Original=조잡한 딥블루 추출기.-->
-  <Moyo2_Install_DeepBlueExtracter_Crude.jobString>조잡한 딥블루 추출기 설치중.</Moyo2_Install_DeepBlueExtracter_Crude.jobString>
-  <!--Original=조잡한 딥블루 추출기-->
-  <Moyo2_Remove_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기 제거</Moyo2_Remove_DeepBlueExtracter_Crude.label>
-  <!--Original=조잡한 딥블루 추출기.-->
-  <Moyo2_Remove_DeepBlueExtracter_Crude.description>조잡한 딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter_Crude.description>
-  <!--Original=조잡한 딥블루 추출기.-->
-  <Moyo2_Remove_DeepBlueExtracter_Crude.jobString>조잡한 딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter_Crude.jobString>
-  <!--Original=딥블루 추출기-->
-  <Moyo2_Install_DeepBlueExtracter.label>딥블루 추출기 설치</Moyo2_Install_DeepBlueExtracter.label>
-  <!--Original=a 딥블루 추출기.-->
-  <Moyo2_Install_DeepBlueExtracter.description>딥블루 추출기를 설치합니다.</Moyo2_Install_DeepBlueExtracter.description>
-  <!--Original=딥블루 추출기.-->
-  <Moyo2_Install_DeepBlueExtracter.jobString>딥블루 추출기 설치중.</Moyo2_Install_DeepBlueExtracter.jobString>
-  <!--Original=Moyo2_딥블루 추출기-->
-  <Moyo2_Remove_DeepBlueExtracter.label>딥블루 추출기 제거</Moyo2_Remove_DeepBlueExtracter.label>
-  <!--Original=딥블루 추출기.-->
-  <Moyo2_Remove_DeepBlueExtracter.description>딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter.description>
-  <!--Original=딥블루 추출기.-->
-  <Moyo2_Remove_DeepBlueExtracter.jobString>딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter.jobString>
-  <!--Original=Moyo2_어비스테크 딥블루 추출기-->
-  <Moyo2_Install_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기 설치</Moyo2_Install_DeepBlueExtracter_Abysstech.label>
-  <!--Original=an 어비스테크 딥블루 추출기.-->
-  <Moyo2_Install_DeepBlueExtracter_Abysstech.description>어비스테크 딥블루 추출기를 설치합니다.</Moyo2_Install_DeepBlueExtracter_Abysstech.description>
-  <!--Original=어비스테크 딥블루 추출기.-->
-  <Moyo2_Install_DeepBlueExtracter_Abysstech.jobString>어비스테크 딥블루 추출기 설치중.</Moyo2_Install_DeepBlueExtracter_Abysstech.jobString>
-  <!--Original=Moyo2_어비스테크 딥블루 추출기-->
-  <Moyo2_Remove_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기 제거</Moyo2_Remove_DeepBlueExtracter_Abysstech.label>
-  <!--Original=어비스테크 딥블루 추출기.-->
-  <Moyo2_Remove_DeepBlueExtracter_Abysstech.description>어비스테크 딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter_Abysstech.description>
-  <!--Original=딥블루 추출기.-->
-  <Moyo2_Remove_DeepBlueExtracter_Abysstech.jobString>딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter_Abysstech.jobString>
-  <!-- 모요 가공 -->
-  <Moyo2_Grind_MoyoMeat.label>모요 고기에서 딥블루 추출</Moyo2_Grind_MoyoMeat.label>
-  <Moyo2_Grind_MoyoMeat.description>딥블루를 추출하기 위해 모요 고기를 갈고 으깨어 마지막 피 한 방울까지 추출합니다.</Moyo2_Grind_MoyoMeat.description>
-  <Moyo2_Grind_MoyoMeat.jobString>모요 고기에서 딥블루 추출중.</Moyo2_Grind_MoyoMeat.jobString>
-  <!--Original=어비스틸 정제-->
-  <Moyo2_Make_AbyssteelA.label>어비스틸 정제</Moyo2_Make_AbyssteelA.label>
-  <!--Original=등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다-->
-  <Moyo2_Make_AbyssteelA.description>등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다.</Moyo2_Make_AbyssteelA.description>
-  <!--Original=어비스틸 제작중-->
-  <Moyo2_Make_AbyssteelA.jobString>어비스틸 제작중.</Moyo2_Make_AbyssteelA.jobString>
-  <!--Original=어비스틸 정제 x4-->
-  <Moyo2_Make_AbyssteelABulk.label>어비스틸 정제 x4</Moyo2_Make_AbyssteelABulk.label>
-  <!--Original=Bulk 등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다-->
-  <Moyo2_Make_AbyssteelABulk.description>등대에서 널리 이용되는 고밀도 합금인 어비스틸을 대량으로 제작합니다.</Moyo2_Make_AbyssteelABulk.description>
-  <!--Original=어비스틸 제작중.-->
-  <Moyo2_Make_AbyssteelABulk.jobString>어비스틸 대량 제작중.</Moyo2_Make_AbyssteelABulk.jobString>
-  <!--Original=어비스틸 정제(헤이달 샤드)-->
-  <Moyo2_Make_AbyssteelB.label>어비스틸 정제(헤이달 샤드)</Moyo2_Make_AbyssteelB.label>
-  <!--Original=Craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.-->
-  <Moyo2_Make_AbyssteelB.description>헤이달 샤드를 이용해 등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다.</Moyo2_Make_AbyssteelB.description>
-  <!--Original=어비스틸 제작중.-->
-  <Moyo2_Make_AbyssteelB.jobString>어비스틸 제작중.</Moyo2_Make_AbyssteelB.jobString>
-  <!--Original=어비스틸 정제(헤이달 샤드) x4-->
-  <Moyo2_Make_AbyssteelBBulk.label>어비스틸 정제(헤이달 샤드) x4</Moyo2_Make_AbyssteelBBulk.label>
-  <!--Original=Bulk craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.-->
-  <Moyo2_Make_AbyssteelBBulk.description>헤이달 샤드를 이용해 등대에서 널리 이용되는 고밀도 합금인 어비스틸을 대량으로 제작합니다.</Moyo2_Make_AbyssteelBBulk.description>
-  <!--Original=어비스틸 제작중.-->
-  <Moyo2_Make_AbyssteelBBulk.jobString>어비스틸 대량 제작중.</Moyo2_Make_AbyssteelBBulk.jobString>
-  <!--Original=make component(crude)-->
-  <Moyo2_Make_ComponentIndustrial.label>부품 제작(기초적)</Moyo2_Make_ComponentIndustrial.label>
-  <!--Original=Craft component with crude method. It takes a long time.-->
-  <Moyo2_Make_ComponentIndustrial.description>기초적인 방법으로 부품을 제작합니다. 오랜 시간이 걸립니다.</Moyo2_Make_ComponentIndustrial.description>
-  <!--Original=Making component.-->
-  <Moyo2_Make_ComponentIndustrial.jobString>부품 제작중</Moyo2_Make_ComponentIndustrial.jobString>
-  <!--Original=cut 뎁스위드-->
-  <Moyo2_Butcher_Depthweed.label>뎁스위드 자르기</Moyo2_Butcher_Depthweed.label>
-  <!--Original=Cut 뎁스위드 into small pieces.-->
-  <Moyo2_Butcher_Depthweed.description>뎁스위드를 작은 조각으로 자릅니다.</Moyo2_Butcher_Depthweed.description>
-  <!--Original=Cutting 뎁스위드.-->
-  <Moyo2_Butcher_Depthweed.jobString>뎁스위드 자르는 중.</Moyo2_Butcher_Depthweed.jobString>
-  <!--Original=뎁스위브 제작-->
-  <Moyo2_Make_DepthweaveA.label>뎁스위브 제작</Moyo2_Make_DepthweaveA.label>
-  <!--Original=등대에서  널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.-->
-  <Moyo2_Make_DepthweaveA.description>등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.</Moyo2_Make_DepthweaveA.description>
-  <!--Original=뎁스위브 제작중.-->
-  <Moyo2_Make_DepthweaveA.jobString>뎁스위브 제작중.</Moyo2_Make_DepthweaveA.jobString>
-  <!--Original=뎁스위브 제작 x4-->
-  <Moyo2_Make_DepthweaveABulk.label>뎁스위브 제작 x4</Moyo2_Make_DepthweaveABulk.label>
-  <!--Original=bulk 등대에서  널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.-->
-  <Moyo2_Make_DepthweaveABulk.description>등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 대량으로 제작합니다.</Moyo2_Make_DepthweaveABulk.description>
-  <!--Original=Making bulk depthweave.-->
-  <Moyo2_Make_DepthweaveABulk.jobString>뎁스위브 대량 제작중.</Moyo2_Make_DepthweaveABulk.jobString>
-  <!--Original=뎁스위브 제작(뎁스위드)-->
-  <Moyo2_Make_DepthweaveB.label>뎁스위브 제작(뎁스위드)</Moyo2_Make_DepthweaveB.label>
-  <!--Original=뎁스위브 제작, a tough fabric commonly utilised in the lighthouse from 뎁스위드.-->
-  <Moyo2_Make_DepthweaveB.description>뎁스위드를 이용해 등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.</Moyo2_Make_DepthweaveB.description>
-  <!--Original=Making depthweave from 뎁스위드.-->
-  <Moyo2_Make_DepthweaveB.jobString>뎁스위브 제작중.</Moyo2_Make_DepthweaveB.jobString>
-  <!--Original=뎁스위브 제작(뎁스위드)-->
-  <Moyo2_Make_DepthweaveBBulk.label>뎁스위브 제작(뎁스위드) x4</Moyo2_Make_DepthweaveBBulk.label>
-  <!--Original=bulk 뎁스위브 제작, a tough fabric commonly utilised in the lighthouse from 뎁스위드.-->
-  <Moyo2_Make_DepthweaveBBulk.description>뎁스위드를 이용해 등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 대량으로 제작합니다.</Moyo2_Make_DepthweaveBBulk.description>
-  <!--Original=Bulk making depthweave from 뎁스위드.-->
-  <Moyo2_Make_DepthweaveBBulk.jobString>뎁스위브 대량 제작중.</Moyo2_Make_DepthweaveBBulk.jobString>
-  <!--Original=heart-->
-  <Moyo2_InstallNaturalHeart.label>심장 이식</Moyo2_InstallNaturalHeart.label>
-  <!--Original=a biological heart.-->
-  <Moyo2_InstallNaturalHeart.description>심장을 이식합니다.</Moyo2_InstallNaturalHeart.description>
-  <!--Original=heart.-->
-  <Moyo2_InstallNaturalHeart.jobString>심장을 이식하고 있습니다.</Moyo2_InstallNaturalHeart.jobString>
-  <!--Original=prosthetic heart-->
-  <Moyo2_InstallSimpleProstheticHeart.label>인공 심장 이식</Moyo2_InstallSimpleProstheticHeart.label>
-  <!--Original=a prosthetic heart.-->
-  <Moyo2_InstallSimpleProstheticHeart.description>인공 심장을 이식합니다.</Moyo2_InstallSimpleProstheticHeart.description>
-  <!--Original=prosthetic heart.-->
-  <Moyo2_InstallSimpleProstheticHeart.jobString>인공 심장을 이식하고 있습니다.</Moyo2_InstallSimpleProstheticHeart.jobString>
-  <!--Original=생체공학 심장-->
-  <Moyo2_InstallBionicHeart.label>생체공학 심장</Moyo2_InstallBionicHeart.label>
-  <!--Original=a 생체공학 심장.-->
-  <Moyo2_InstallBionicHeart.description>생체공학 심장을 이식합니다.</Moyo2_InstallBionicHeart.description>
-  <!--Original=생체공학 심장.-->
-  <Moyo2_InstallBionicHeart.jobString>생체공학 심장을 이식하고 있습니다.</Moyo2_InstallBionicHeart.jobString>
-  <!--Original=moyo tail prosthesis-->
-  <Install_Moyo2_TailProsthesis.label>모요 꼬리 보철물 이식</Install_Moyo2_TailProsthesis.label>
-  <!--Original=tail prosthesis.-->
-  <Install_Moyo2_TailProsthesis.description>꼬리 보철물을 이식합니다.</Install_Moyo2_TailProsthesis.description>
-  <!--Original=tail prosthesis.-->
-  <Install_Moyo2_TailProsthesis.jobString>꼬리 보철물을 이식하고 있습니다.</Install_Moyo2_TailProsthesis.jobString>
-  <!--Original=moyo bionic tail-->
-  <Install_Moyo2_TailBionic.label>모요 생체공학 꼬리 이식</Install_Moyo2_TailBionic.label>
-  <!--Original=a bionic tail.-->
-  <Install_Moyo2_TailBionic.description>모요 생체공학 꼬리를 이식합니다.</Install_Moyo2_TailBionic.description>
-  <!--Original=a bionic tail.-->
-  <Install_Moyo2_TailBionic.jobString>모요 생체공학 꼬리를 이식하고 있습니다.</Install_Moyo2_TailBionic.jobString>
+	<!--Original=clear deepblue buildup-->
+	<Moyo2_CureDeepBlueTolerance.label>딥블루 축적 제거</Moyo2_CureDeepBlueTolerance.label>
+	<!--Original=Administer special enzymes to clear and flush out residue deepblue in the body.-->
+	<Moyo2_CureDeepBlueTolerance.description>특수 효소를 투여하여 체내의 잔류 딥블루를 제거합니다.</Moyo2_CureDeepBlueTolerance.description>
+	<!--Original=Clearing deepblue residue-->
+	<Moyo2_CureDeepBlueTolerance.jobString>딥블루 축적 제거중</Moyo2_CureDeepBlueTolerance.jobString>
+	<!--Original={0} has successfully cleared {1}&apos;s deepblue buildup.-->
+	<Moyo2_CureDeepBlueTolerance.successfullyRemovedHediffMessage>{0}는 성공적으로 {1}의 딥블루 축적을 제거했습니다.</Moyo2_CureDeepBlueTolerance.successfullyRemovedHediffMessage>
+	<!--Original=조잡한 딥블루 추출기-->
+	<Moyo2_Install_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기 설치</Moyo2_Install_DeepBlueExtracter_Crude.label>
+	<!--Original=a 조잡한 딥블루 추출기.-->
+	<Moyo2_Install_DeepBlueExtracter_Crude.description>조잡한 딥블루 추출기를 설치합니다.</Moyo2_Install_DeepBlueExtracter_Crude.description>
+	<!--Original=조잡한 딥블루 추출기.-->
+	<Moyo2_Install_DeepBlueExtracter_Crude.jobString>조잡한 딥블루 추출기 설치중.</Moyo2_Install_DeepBlueExtracter_Crude.jobString>
+	<!--Original=조잡한 딥블루 추출기-->
+	<Moyo2_Remove_DeepBlueExtracter_Crude.label>조잡한 딥블루 추출기 제거</Moyo2_Remove_DeepBlueExtracter_Crude.label>
+	<!--Original=조잡한 딥블루 추출기.-->
+	<Moyo2_Remove_DeepBlueExtracter_Crude.description>조잡한 딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter_Crude.description>
+	<!--Original=조잡한 딥블루 추출기.-->
+	<Moyo2_Remove_DeepBlueExtracter_Crude.jobString>조잡한 딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter_Crude.jobString>
+	<!--Original=딥블루 추출기-->
+	<Moyo2_Install_DeepBlueExtracter.label>딥블루 추출기 설치</Moyo2_Install_DeepBlueExtracter.label>
+	<!--Original=a 딥블루 추출기.-->
+	<Moyo2_Install_DeepBlueExtracter.description>딥블루 추출기를 설치합니다.</Moyo2_Install_DeepBlueExtracter.description>
+	<!--Original=딥블루 추출기.-->
+	<Moyo2_Install_DeepBlueExtracter.jobString>딥블루 추출기 설치중.</Moyo2_Install_DeepBlueExtracter.jobString>
+	<!--Original=Moyo2_딥블루 추출기-->
+	<Moyo2_Remove_DeepBlueExtracter.label>딥블루 추출기 제거</Moyo2_Remove_DeepBlueExtracter.label>
+	<!--Original=딥블루 추출기.-->
+	<Moyo2_Remove_DeepBlueExtracter.description>딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter.description>
+	<!--Original=딥블루 추출기.-->
+	<Moyo2_Remove_DeepBlueExtracter.jobString>딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter.jobString>
+	<!--Original=Moyo2_어비스테크 딥블루 추출기-->
+	<Moyo2_Install_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기 설치</Moyo2_Install_DeepBlueExtracter_Abysstech.label>
+	<!--Original=an 어비스테크 딥블루 추출기.-->
+	<Moyo2_Install_DeepBlueExtracter_Abysstech.description>어비스테크 딥블루 추출기를 설치합니다.</Moyo2_Install_DeepBlueExtracter_Abysstech.description>
+	<!--Original=어비스테크 딥블루 추출기.-->
+	<Moyo2_Install_DeepBlueExtracter_Abysstech.jobString>어비스테크 딥블루 추출기 설치중.</Moyo2_Install_DeepBlueExtracter_Abysstech.jobString>
+	<!--Original=Moyo2_어비스테크 딥블루 추출기-->
+	<Moyo2_Remove_DeepBlueExtracter_Abysstech.label>어비스테크 딥블루 추출기 제거</Moyo2_Remove_DeepBlueExtracter_Abysstech.label>
+	<!--Original=어비스테크 딥블루 추출기.-->
+	<Moyo2_Remove_DeepBlueExtracter_Abysstech.description>어비스테크 딥블루 추출기를 제거합니다.</Moyo2_Remove_DeepBlueExtracter_Abysstech.description>
+	<!--Original=딥블루 추출기.-->
+	<Moyo2_Remove_DeepBlueExtracter_Abysstech.jobString>딥블루 추출기 제거중.</Moyo2_Remove_DeepBlueExtracter_Abysstech.jobString>
+	<!-- 모요 가공 -->
+	<Moyo2_Grind_MoyoMeat.label>모요 고기에서 딥블루 추출</Moyo2_Grind_MoyoMeat.label>
+	<Moyo2_Grind_MoyoMeat.description>딥블루를 추출하기 위해 모요 고기를 갈고 으깨어 마지막 피 한 방울까지 추출합니다.</Moyo2_Grind_MoyoMeat.description>
+	<Moyo2_Grind_MoyoMeat.jobString>모요 고기에서 딥블루 추출중.</Moyo2_Grind_MoyoMeat.jobString>
+	<!--Original=어비스틸 정제-->
+	<Moyo2_Make_AbyssteelA.label>어비스틸 정제</Moyo2_Make_AbyssteelA.label>
+	<!--Original=등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다-->
+	<Moyo2_Make_AbyssteelA.description>등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다.</Moyo2_Make_AbyssteelA.description>
+	<!--Original=어비스틸 제작중-->
+	<Moyo2_Make_AbyssteelA.jobString>어비스틸 제작중.</Moyo2_Make_AbyssteelA.jobString>
+	<!--Original=어비스틸 정제 x4-->
+	<Moyo2_Make_AbyssteelABulk.label>어비스틸 정제 x4</Moyo2_Make_AbyssteelABulk.label>
+	<!--Original=Bulk 등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다-->
+	<Moyo2_Make_AbyssteelABulk.description>등대에서 널리 이용되는 고밀도 합금인 어비스틸을 대량으로 제작합니다.</Moyo2_Make_AbyssteelABulk.description>
+	<!--Original=어비스틸 제작중.-->
+	<Moyo2_Make_AbyssteelABulk.jobString>어비스틸 대량 제작중.</Moyo2_Make_AbyssteelABulk.jobString>
+	<!--Original=어비스틸 정제(헤이달 샤드)-->
+	<Moyo2_Make_AbyssteelB.label>어비스틸 정제(헤이달 샤드)</Moyo2_Make_AbyssteelB.label>
+	<!--Original=Craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.-->
+	<Moyo2_Make_AbyssteelB.description>헤이달 샤드를 이용해 등대에서 널리 이용되는 고밀도 합금인 어비스틸을 제작합니다.</Moyo2_Make_AbyssteelB.description>
+	<!--Original=어비스틸 제작중.-->
+	<Moyo2_Make_AbyssteelB.jobString>어비스틸 제작중.</Moyo2_Make_AbyssteelB.jobString>
+	<!--Original=어비스틸 정제(헤이달 샤드) x4-->
+	<Moyo2_Make_AbyssteelBBulk.label>어비스틸 정제(헤이달 샤드) x4</Moyo2_Make_AbyssteelBBulk.label>
+	<!--Original=Bulk craft abyssteel, a commonly used alloy in the lighthouse using hadal shard.-->
+	<Moyo2_Make_AbyssteelBBulk.description>헤이달 샤드를 이용해 등대에서 널리 이용되는 고밀도 합금인 어비스틸을 대량으로 제작합니다.</Moyo2_Make_AbyssteelBBulk.description>
+	<!--Original=어비스틸 제작중.-->
+	<Moyo2_Make_AbyssteelBBulk.jobString>어비스틸 대량 제작중.</Moyo2_Make_AbyssteelBBulk.jobString>
+	<!--Original=make component(crude)-->
+	<Moyo2_Make_ComponentIndustrial.label>부품 제작(기초적)</Moyo2_Make_ComponentIndustrial.label>
+	<!--Original=Craft component with crude method. It takes a long time.-->
+	<Moyo2_Make_ComponentIndustrial.description>기초적인 방법으로 부품을 제작합니다. 오랜 시간이 걸립니다.</Moyo2_Make_ComponentIndustrial.description>
+	<!--Original=Making component.-->
+	<Moyo2_Make_ComponentIndustrial.jobString>부품 제작중</Moyo2_Make_ComponentIndustrial.jobString>
+	<!--Original=cut 뎁스위드-->
+	<Moyo2_Butcher_Depthweed.label>뎁스위드 자르기</Moyo2_Butcher_Depthweed.label>
+	<!--Original=Cut 뎁스위드 into small pieces.-->
+	<Moyo2_Butcher_Depthweed.description>뎁스위드를 작은 조각으로 자릅니다.</Moyo2_Butcher_Depthweed.description>
+	<!--Original=Cutting 뎁스위드.-->
+	<Moyo2_Butcher_Depthweed.jobString>뎁스위드 자르는 중.</Moyo2_Butcher_Depthweed.jobString>
+	<!--Original=뎁스위브 제작-->
+	<Moyo2_Make_DepthweaveA.label>뎁스위브 제작</Moyo2_Make_DepthweaveA.label>
+	<!--Original=등대에서  널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.-->
+	<Moyo2_Make_DepthweaveA.description>등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.</Moyo2_Make_DepthweaveA.description>
+	<!--Original=뎁스위브 제작중.-->
+	<Moyo2_Make_DepthweaveA.jobString>뎁스위브 제작중.</Moyo2_Make_DepthweaveA.jobString>
+	<!--Original=뎁스위브 제작 x4-->
+	<Moyo2_Make_DepthweaveABulk.label>뎁스위브 제작 x4</Moyo2_Make_DepthweaveABulk.label>
+	<!--Original=bulk 등대에서  널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.-->
+	<Moyo2_Make_DepthweaveABulk.description>등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 대량으로 제작합니다.</Moyo2_Make_DepthweaveABulk.description>
+	<!--Original=Making bulk depthweave.-->
+	<Moyo2_Make_DepthweaveABulk.jobString>뎁스위브 대량 제작중.</Moyo2_Make_DepthweaveABulk.jobString>
+	<!--Original=뎁스위브 제작(뎁스위드)-->
+	<Moyo2_Make_DepthweaveB.label>뎁스위브 제작(뎁스위드)</Moyo2_Make_DepthweaveB.label>
+	<!--Original=뎁스위브 제작, a tough fabric commonly utilised in the lighthouse from 뎁스위드.-->
+	<Moyo2_Make_DepthweaveB.description>뎁스위드를 이용해 등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 제작합니다.</Moyo2_Make_DepthweaveB.description>
+	<!--Original=Making depthweave from 뎁스위드.-->
+	<Moyo2_Make_DepthweaveB.jobString>뎁스위브 제작중.</Moyo2_Make_DepthweaveB.jobString>
+	<!--Original=뎁스위브 제작(뎁스위드)-->
+	<Moyo2_Make_DepthweaveBBulk.label>뎁스위브 제작(뎁스위드) x4</Moyo2_Make_DepthweaveBBulk.label>
+	<!--Original=bulk 뎁스위브 제작, a tough fabric commonly utilised in the lighthouse from 뎁스위드.-->
+	<Moyo2_Make_DepthweaveBBulk.description>뎁스위드를 이용해 등대에서 널리 이용되는 질긴 섬유인 뎁스위브를 대량으로 제작합니다.</Moyo2_Make_DepthweaveBBulk.description>
+	<!--Original=Bulk making depthweave from 뎁스위드.-->
+	<Moyo2_Make_DepthweaveBBulk.jobString>뎁스위브 대량 제작중.</Moyo2_Make_DepthweaveBBulk.jobString>
+	<!--Original=heart-->
+	<Moyo2_InstallNaturalHeart.label>심장 이식</Moyo2_InstallNaturalHeart.label>
+	<!--Original=a biological heart.-->
+	<Moyo2_InstallNaturalHeart.description>심장을 이식합니다.</Moyo2_InstallNaturalHeart.description>
+	<!--Original=heart.-->
+	<Moyo2_InstallNaturalHeart.jobString>심장을 이식하고 있습니다.</Moyo2_InstallNaturalHeart.jobString>
+	<!--Original=prosthetic heart-->
+	<Moyo2_InstallSimpleProstheticHeart.label>인공 심장 이식</Moyo2_InstallSimpleProstheticHeart.label>
+	<!--Original=a prosthetic heart.-->
+	<Moyo2_InstallSimpleProstheticHeart.description>인공 심장을 이식합니다.</Moyo2_InstallSimpleProstheticHeart.description>
+	<!--Original=prosthetic heart.-->
+	<Moyo2_InstallSimpleProstheticHeart.jobString>인공 심장을 이식하고 있습니다.</Moyo2_InstallSimpleProstheticHeart.jobString>
+	<!--Original=생체공학 심장-->
+	<Moyo2_InstallBionicHeart.label>생체공학 심장</Moyo2_InstallBionicHeart.label>
+	<!--Original=a 생체공학 심장.-->
+	<Moyo2_InstallBionicHeart.description>생체공학 심장을 이식합니다.</Moyo2_InstallBionicHeart.description>
+	<!--Original=생체공학 심장.-->
+	<Moyo2_InstallBionicHeart.jobString>생체공학 심장을 이식하고 있습니다.</Moyo2_InstallBionicHeart.jobString>
+	<!--Original=moyo tail prosthesis-->
+	<Install_Moyo2_TailProsthesis.label>모요 꼬리 보철물 이식</Install_Moyo2_TailProsthesis.label>
+	<!--Original=tail prosthesis.-->
+	<Install_Moyo2_TailProsthesis.description>꼬리 보철물을 이식합니다.</Install_Moyo2_TailProsthesis.description>
+	<!--Original=tail prosthesis.-->
+	<Install_Moyo2_TailProsthesis.jobString>꼬리 보철물을 이식하고 있습니다.</Install_Moyo2_TailProsthesis.jobString>
+	<!--Original=moyo bionic tail-->
+	<Install_Moyo2_TailBionic.label>모요 생체공학 꼬리 이식</Install_Moyo2_TailBionic.label>
+	<!--Original=a bionic tail.-->
+	<Install_Moyo2_TailBionic.description>모요 생체공학 꼬리를 이식합니다.</Install_Moyo2_TailBionic.description>
+	<!--Original=a bionic tail.-->
+	<Install_Moyo2_TailBionic.jobString>모요 생체공학 꼬리를 이식하고 있습니다.</Install_Moyo2_TailBionic.jobString>
+	<!-- 장기 추출 -->
+	<Moyo2_Butcher_FleshMassHeart.description>장기 추출(심장).</Moyo2_Butcher_FleshMassHeart.description>
+	<Moyo2_Butcher_FleshMassHeart.jobString>모요 배양체에서 심장을 추출합니다.</Moyo2_Butcher_FleshMassHeart.jobString>
+	<Moyo2_Butcher_FleshMassKidney.description>장기 추출(신장).</Moyo2_Butcher_FleshMassKidney.description>
+	<Moyo2_Butcher_FleshMassKidney.jobString>모요 배양체에서 신장을 추출합니다.</Moyo2_Butcher_FleshMassKidney.jobString>
+	<Moyo2_Butcher_FleshMassLung.description>장기 추출(폐).</Moyo2_Butcher_FleshMassLung.description>
+	<Moyo2_Butcher_FleshMassLung.jobString>모요 배양체에서 폐를 추출합니다.</Moyo2_Butcher_FleshMassLung.jobString>
+	<Moyo2_Butcher_FleshMassLiver.description>장기 추출(간).</Moyo2_Butcher_FleshMassLiver.description>
+	<Moyo2_Butcher_FleshMassLiver.jobString>모요 배양체에서 간을 추출합니다.</Moyo2_Butcher_FleshMassLiver.jobString>
 </LanguageData>

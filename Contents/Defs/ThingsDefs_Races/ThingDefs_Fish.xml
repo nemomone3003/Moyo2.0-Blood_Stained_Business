@@ -148,7 +148,7 @@
 		</butcherProducts>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
-			<ticksToDie>55,000</ticksToDie>
+			<ticksToDie>90,000</ticksToDie>
 			<label>tidal tuna</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
@@ -179,7 +179,7 @@
 		</butcherProducts>
 		<fishTankSettings>
 			<ticksToGrow>720,000</ticksToGrow>
-			<ticksToDie>55,000</ticksToDie>
+			<ticksToDie>90,000</ticksToDie>
 			<label>demi kraken</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
@@ -192,8 +192,9 @@
 	<!-- 살점 -->
 	<Moyo2.FishDef ParentName="FishBase">
 		<defName>Moyo2_FleshMass</defName>
-		<label>cultivated fleshmass</label>
-		<description>A cultivated mass of flesh. cultivated from a Moyo's biomass, it can be used to extact deepblue or various organs.\n\nDemands for deepblue is always high, while keeping prodiction to meet that demand is challanging. So the brightest minds came up with a solution.</description>
+		<!-- 모요 배양체 -->
+		<label>cultured Moyo mass</label>
+		<description>A cultured mass of Moyo cells. Taking a very long time to grow, it can be used to extact deepblue or various organs.\n\nDemands for deepblue is always high, while keeping prodiction to meet that demand is challanging. So the brightest minds came up with a solution.</description>
 		<graphicData>
 			<texPath>Pawn/FleshMass/MoyoFish_FleshMass</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -211,18 +212,19 @@
 			<tasteThought>AteRawFood</tasteThought>
 		</ingestible>
 		<butcherProducts>
-			<Meat_Alien_Moyo>80</Meat_Alien_Moyo>
+			<Meat_Alien_Moyo>120</Meat_Alien_Moyo>
+			<BlueBloodBag>2</BlueBloodBag>
 		</butcherProducts>
 		<researchPrerequisites>
 			<li>Moyo2_Abysstech_DeepblueSynthesis</li>
 		</researchPrerequisites>
 		<fishTankSettings>
-			<ticksToGrow>1,440,000</ticksToGrow>
-			<ticksToDie>20000</ticksToDie>
+			<ticksToGrow>1,080,000</ticksToGrow>
+			<ticksToDie>90,000</ticksToDie>
 			<label>depthweed</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
-				<texPath>Pawn/DepthWeed/MoyoFish_FleshMass1</texPath>
+				<texPath>Pawn/FleshMass/MoyoFish_FleshMass1</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>1</drawSize>
 			</graphicData>

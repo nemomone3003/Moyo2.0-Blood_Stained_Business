@@ -32,8 +32,11 @@
 		<forcedTraits>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
 			<li>Moyo2_TopCivil</li>
 			<li>Moyo2_TopCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 소박한 수집가 -->
@@ -56,6 +59,7 @@
 		<spawnCategories>
 			<li>Moyo2_TopCivil</li>
 			<li>Moyo2_TopCrime</li>
+			<li>Moyo2_Engineer</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 밀수 협조자 -->
@@ -73,8 +77,11 @@
 			<Nimble>0</Nimble>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>		
 			<li>Moyo2_TopCivil</li>
 			<li>Moyo2_TopCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 총명한 아이 -->
@@ -94,8 +101,11 @@
 			<DrugDesire>1</DrugDesire>
 		</forcedTraits>
 		<spawnCategories>
+			<li>Moyo2_FloodCivil</li>
+			<li>Moyo2_FloodCrime</li>
 			<li>Moyo2_TopCivil</li>
 			<li>Moyo2_TopCrime</li>
+			<li>Moyo2_Soldier</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 말괄량이 -->
@@ -117,6 +127,8 @@
 		<spawnCategories>
 			<li>Moyo2_TopCivil</li>
 			<li>Moyo2_TopCrime</li>
+			<li>Moyo2_MiddleCivil</li>
+			<li>Moyo2_MiddleCrime</li>			
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 성년기 -->

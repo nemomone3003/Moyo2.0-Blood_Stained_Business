@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 해초 자르기 -->
+	<RecipeDef>
+		<defName>Moyo2_Butcher_Depthweed</defName>
+		<label>cut depthweed</label>
+		<description>Cut depthweed into small pieces.</description>
+		<jobString>Cutting depthweed.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>100</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Moyo2_FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_DepthWeedCorpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<!-- <fixedIngredientFilter> -->
+		<!-- <thingDefs> -->
+		<!-- <li>Chemfuel</li> -->
+		<!-- </thingDefs> -->
+		<!-- <categories> -->
+		<!-- <li>Leathers</li> -->
+		<!-- </categories> -->
+		<!-- <disallowedThingDefs> -->
+		<!-- <li>Leather_Patch</li> -->
+		<!-- <li>Leather_Human</li> -->
+		<!-- <li>Leather_Thrumbo</li> -->
+		<!-- </disallowedThingDefs> -->
+		<!-- </fixedIngredientFilter> -->
+		<products>
+			<Moyo2_Depthweed>240</Moyo2_Depthweed>
+		</products>
+	</RecipeDef>
+	<!-- 장기 추출 -->
+	<RecipeDef Name="Moyo2_OrganRecipe" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Surgery</soundWorking>
+		<workAmount>5000</workAmount>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_FleshMass</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<researchPrerequisite>Moyo2_Abysstech_DeepblueSynthesis</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="Moyo2_OrganRecipe">
+		<defName>Moyo2_Butcher_FleshMassHeart</defName>
+		<label>extract organ(Heart)</label>
+		<description>Extract heart from Moyo fleshmass.</description>
+		<jobString>Extracting heart.</jobString>
+		<products>
+			<Moyo2_Heart>1</Moyo2_Heart>
+			<Meat_Alien_Moyo>80</Meat_Alien_Moyo>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="Moyo2_OrganRecipe">
+		<defName>Moyo2_Butcher_FleshMassKidney</defName>
+		<label>extract organ(Kidney)</label>
+		<description>Extract a kidney from Moyo fleshmass.</description>
+		<jobString>Extracting kidney.</jobString>
+		<products>
+			<Kidney>1</Kidney>
+			<Meat_Alien_Moyo>80</Meat_Alien_Moyo>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="Moyo2_OrganRecipe">
+		<defName>Moyo2_Butcher_FleshMassLung</defName>
+		<label>extract organ(Lung)</label>
+		<description>Extract a lung from Moyo fleshmass.</description>
+		<jobString>Extracting lung.</jobString>
+		<products>
+			<Lung>1</Lung>
+			<Meat_Alien_Moyo>80</Meat_Alien_Moyo>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="Moyo2_OrganRecipe">
+		<defName>Moyo2_Butcher_FleshMassLiver</defName>
+		<label>extract organ(Heart)</label>
+		<description>Extract liver from Moyo fleshmass.</description>
+		<jobString>Extracting liver.</jobString>
+		<products>
+			<Liver>1</Liver>
+			<Meat_Alien_Moyo>80</Meat_Alien_Moyo>
+		</products>
+	</RecipeDef>
+</Defs>
