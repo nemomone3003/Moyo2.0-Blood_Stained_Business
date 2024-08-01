@@ -389,7 +389,7 @@ namespace Moyo2
                     return true;
                 }
             }
-            return true;
+            return false;
         }
 
         public override void ExposeData()
