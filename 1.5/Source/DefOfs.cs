@@ -23,6 +23,7 @@
 
         public static ThingDef Moyo_FishTank;
         public static ThingDef Moyo2_HadalSpire;
+        public static ThingDef Moyo2_DeepDrill;
     }
 
     [DefOf]

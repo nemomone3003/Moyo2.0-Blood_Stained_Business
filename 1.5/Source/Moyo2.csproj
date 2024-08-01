@@ -69,7 +69,4 @@
 	    <Private>False</Private>
 	  </Reference>
 	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="CompProperties\" />
-	</ItemGroup>
 </Project>

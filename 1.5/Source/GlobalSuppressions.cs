@@ -7,3 +7,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Naming", "CA1724:Type names should not match namespaces", Justification = "<Pending>", Scope = "type", Target = "~T:Moyo2.Moyo2")]
 [assembly: SuppressMessage("Style", "IDE0028:Simplify collection initialization", Justification = "<Pending>", Scope = "member", Target = "~M:Moyo2.ThingClass_FishTank.GetGizmos~System.Collections.Generic.IEnumerable{Verse.Gizmo}")]
 [assembly: SuppressMessage("Style", "IDE0028:Simplify collection initialization", Justification = "<Pending>", Scope = "member", Target = "~M:Moyo2.ThingClass_FishTank.LoadFish")]
+[assembly: SuppressMessage("Style", "IDE0028:Simplify collection initialization", Justification = "<Pending>", Scope = "member", Target = "~F:Moyo2.CompAbility_LaminarGlaive.tmpCells")]
