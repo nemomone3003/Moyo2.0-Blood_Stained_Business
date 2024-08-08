@@ -221,7 +221,7 @@
 		<fishTankSettings>
 			<ticksToGrow>1,080,000</ticksToGrow>
 			<ticksToDie>90,000</ticksToDie>
-			<label>depthweed</label>
+			<label>cultured Moyo mass</label>
 			<!-- <ticksToGrow>600</ticksToGrow> -->
 			<graphicData>
 				<texPath>Pawn/FleshMass/MoyoFish_FleshMass1</texPath>
