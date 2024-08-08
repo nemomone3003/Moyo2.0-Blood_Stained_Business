@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>abilityattack</defName>
+        <label>abilityattack</label>
+        <description>Use special glands in the wrists to quickly tend someone's wounds.</description>
+        <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+        <warmupMote>Mote_CoagulateStencil</warmupMote>
+        <warmupEffecter>Coagulate</warmupEffecter>
+        <warmupStartSound>Coagulate_Cast</warmupStartSound>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <displayOrder>400</displayOrder>
+        <stunTargetWhileCasting>false</stunTargetWhileCasting>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+        <verbProperties>
+          <verbClass>Verb_CastAbilityTouch</verbClass>
+          <drawAimPie>false</drawAimPie>
+          <range>-1</range>
+          <warmupTime>1</warmupTime>
+          <targetParams>
+            <canTargetAnimals>true</canTargetAnimals>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetBuildings>true</canTargetBuildings>
+            <canTargetMechs>true</canTargetMechs>
+            <canTargetBloodfeeders>true</canTargetBloodfeeders>
+          </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Moyo2.CompAbilityProperties_LaminarGlaive">
+              
+            </li>
+        </comps>
+    </AbilityDef>
+    
+</Defs>
