@@ -30,7 +30,8 @@
         </verbProperties>
         <comps>
             <li Class="Moyo2.CompAbilityProperties_LaminarGlaive">
-              
+              <height>2</height>
+              <width>3</width>
             </li>
         </comps>
     </AbilityDef>

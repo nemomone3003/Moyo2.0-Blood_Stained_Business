@@ -1,4 +1,6 @@
-﻿namespace Moyo2
+﻿using Moyo2.Geometry;
+
+namespace Moyo2
 {
     public class CompAbility_LaminarGlaive : CompAbilityEffect
     {
@@ -13,11 +15,16 @@
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
+            foreach (IntVec3 cell in tmpCells)
+            {
+                Thing instancedThing = ThingMaker.MakeThing(ThingDefOf.DiningChair, ThingDefOf.WoodLog);
+                GenSpawn.Spawn(instancedThing, cell, Caster.Map);
+            }
         }
 
         public override void DrawEffectPreview(LocalTargetInfo target)
         {
-            GenDraw.DrawFieldEdges(RectangleCells(target));
+            GenDraw.DrawFieldEdges(RectangleCells(target), Color.blue);
         }
 
         private List<IntVec3> RectangleCells(LocalTargetInfo target)
@@ -37,40 +44,47 @@
             float angleOffset = AngleToPoint(casterPosVector, targetPosVector);
             Log.Message(angleOffset);
 
-            // Prior angle - 90 to get the rest of the angle.
+            // 90 - Prior angle to get the rest of the angle.
             float angleDiff = 90 - angleOffset;
             Log.Message(angleDiff);
 
-            // First 
-            // Then we divide 
+            // All the calculated tiles, starting from the target's position
+            // The furthest cell of the middle row of the rectangle
+            IntVec3 furthestCell = MiddleRowFurthestCell(angleOffset, Props.height, targetPos);
 
-            /*
-            float lengthHorizontal = (targetPos - Caster.Position).LengthHorizontal;
-            float normalizedX = (float)(targetPosVector.x - casterPosVector.x) / lengthHorizontal;
-            float normalizedY = (float)(targetPosVector.z - casterPosVector.z) / lengthHorizontal;
+            // The topmost and bottommost tiles of the left side of the rectangle, 2 out of the 4 corners
+            IntVec3 bottomLeftTile = CalculateLeftSide(angleOffset, Props.width) + targetPos;
+            IntVec3 bottomRightTile = CalculateRightSide(angleDiff, Props.width) + targetPos;
 
-            int EndOfLineXCell = Mathf.RoundToInt(normalizedX * Props.height);
-            int EndOfLineYCell = Mathf.RoundToInt(normalizedY * Props.height);
-            IntVec3 maxRangeTile = new(EndOfLineXCell, 0, EndOfLineYCell);
-            */
+            // Same thing but for the right side, the other 2 corners i need.
+            IntVec3 topRightTile = CalculateRightSide(angleDiff, Props.width) + furthestCell;
+            IntVec3 topLeftTile = CalculateLeftSide(angleOffset, Props.width) + furthestCell;
 
-            IntVec3 bottomLeftTile = CalculatePoint(angleOffset, Props.width) + target.Cell;
-            IntVec3 bottomRightTile = CalculatePoint(angleDiff, Props.width) + target.Cell;
-            IntVec3 topLeftTile = CalculatePoint(angleOffset, Props.width) + targetPos;
-            IntVec3 topRightTile = CalculatePoint(angleDiff, Props.width) + targetPos;
+            Vector3 topRightVec = topRightTile.ToVector3().Yto0();
+            Vector3 bottomRightVec = bottomRightTile.ToVector3().Yto0();
+            Vector3 bottomLeftVec = bottomLeftTile.ToVector3().Yto0();
+            Vector3 topLeftVec = topLeftTile.ToVector3().Yto0();
 
-            GenDraw.DrawLineBetween(casterPosVector, targetPosVector, SimpleColor.Red);
-            GenDraw.DrawLineBetween(bottomLeftTile.ToVector3().Yto0(), bottomRightTile.ToVector3().Yto0(), SimpleColor.Red);
-            GenDraw.DrawLineBetween(bottomRightTile.ToVector3().Yto0(), topLeftTile.ToVector3().Yto0(), SimpleColor.Red);
-            GenDraw.DrawLineBetween(topLeftTile.ToVector3().Yto0(), topRightTile.ToVector3().Yto0(), SimpleColor.Red);
-            GenDraw.DrawLineBetween(topRightTile.ToVector3().Yto0(), bottomLeftTile.ToVector3().Yto0(), SimpleColor.Red);
+            Vector3[] vectorsRectangle = [topRightVec, bottomRightVec, bottomLeftVec, topLeftVec];
+            ConvexPolygon rectangle = new(vectorsRectangle);
 
-            List<IntVec3> bresenhamCells = GenSight.BresenhamCellsBetween(bottomLeftTile, topRightTile);
-            foreach (IntVec3 cell in bresenhamCells)
+            int xMin = Mathf.Min(bottomLeftTile.x, topRightTile.x, bottomRightTile.x, topLeftTile.x);
+            int xMax = Mathf.Max(bottomLeftTile.x, topRightTile.x, bottomRightTile.x, topLeftTile.x);
+            int yMin = Mathf.Min(bottomLeftTile.z, topRightTile.z, bottomRightTile.z, topLeftTile.z);
+            int yMax = Mathf.Max(bottomLeftTile.z, topRightTile.z, bottomRightTile.z, topLeftTile.z);
+            // iterate over both the x and z-axes to look at each possible cell within the bounds of your rectangle
+            // remember, Area = l x w, so we need to do that here to check the entire area of our rectangle
+            for (int x = xMin; x <= xMax; x++)
             {
-                tmpCells.Add(cell);
+                for (int z = yMin; z <= yMax; z++)
+                {
+                    IntVec3 checkingCell = new(x, 0, z);
+                    if (checkingCell.InBounds(Caster.Map) && rectangle.Contains(checkingCell.ToVector2()))
+                    {
+                        tmpCells.Add(checkingCell);
+                    }
+                }
             }
-            tmpCells.Add(targetPos);
 
             return tmpCells;
         }
@@ -82,11 +96,31 @@
             return (180 + Mathf.Atan2(xPrime, yPrime) * Mathf.Rad2Deg) % 360;
         }
 
-        private static IntVec3 CalculatePoint(float angle, float width)
+        private static IntVec3 CalculateLeftSide(float angleDeg, float width)
         {
-            int XCord = (int)(width / 2 * Mathf.Cos(angle));
-            int YCord = (int)(width / 2 * Mathf.Sin(angle));
-            return new(XCord, 0, YCord);
+            float actualHypothenuse = width / 2; // If the rectangle is 3 of width, every side is roughly 1.5 long, 1 tile each
+            int XCord = (int)(actualHypothenuse * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
+            int YCord = (int)(actualHypothenuse * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
+
+            return new(-XCord, 0, YCord);
+        }
+
+
+        private static IntVec3 CalculateRightSide(float angleDeg, float width)
+        {
+            float actualHypothenuse = width / 2; // If the rectangle is 3 of width, every side is roughly 1.5 long, 1 tile each
+            int XCord = (int)(actualHypothenuse * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
+            int YCord = (int)(actualHypothenuse * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
+
+            return new(XCord, 0, -YCord);
+        }
+
+        private static IntVec3 MiddleRowFurthestCell(float angleDeg, float height, IntVec3 targetCell)
+        {
+            int XCord = (int)(height * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
+            int YCord = (int)(height * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
+            IntVec3 calculatedCell = new(XCord, 0, YCord);
+            return targetCell + calculatedCell;
         }
     }
 }

@@ -8,7 +8,7 @@
             compClass = typeof(CompAbility_LaminarGlaive);
         }
 
-        public float height = 2;
-        public float width = 3;
+        public float height;
+        public float width;
     }
 }
