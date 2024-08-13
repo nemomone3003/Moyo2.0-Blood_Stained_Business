@@ -6,6 +6,8 @@ namespace Moyo2
     {
         Pawn Caster => parent.pawn;
 
+        Vector3 CasterPosVector => Caster.Position.ToVector3Shifted().Yto0();
+
         public new CompAbilityProperties_LaminarGlaive Props => (CompAbilityProperties_LaminarGlaive)props;
 
 
@@ -22,18 +24,19 @@ namespace Moyo2
             }
         }
 
+
         public override void DrawEffectPreview(LocalTargetInfo target)
         {
             GenDraw.DrawFieldEdges(RectangleCells(target), Color.blue);
         }
 
+
         private List<IntVec3> RectangleCells(LocalTargetInfo target)
         {
             tmpCells.Clear(); // So we don't have previous cells when calculation
 
-            // We get the caster's position and the target's position, as Vector3 so we don't get weird results on angles
+            // We get the target position as Vector3 to work outside the tilemap
             // We flatten the Y axis to 0, otherwise the Vector's length get changed (Remember X is horizontal and Z is vertical in rimworld)
-            Vector3 casterPosVector = Caster.Position.ToVector3Shifted().Yto0();
             IntVec3 targetPos = target.Cell.ClampInsideMap(Caster.Map);
             Vector3 targetPosVector = targetPos.ToVector3Shifted().Yto0();
 
@@ -41,7 +44,7 @@ namespace Moyo2
             // The angle you get if you draw a line to the north,
             // another line from the caster's position to the target's position,
             // and check the angle between them
-            float angleOffset = AngleToPoint(casterPosVector, targetPosVector);
+            float angleOffset = AngleToPoint(CasterPosVector, targetPosVector);
             Log.Message(angleOffset);
 
             // 90 - Prior angle to get the rest of the angle.
@@ -53,12 +56,12 @@ namespace Moyo2
             IntVec3 furthestCell = MiddleRowFurthestCell(angleOffset, Props.height, targetPos);
 
             // The topmost and bottommost tiles of the left side of the rectangle, 2 out of the 4 corners
-            IntVec3 bottomLeftTile = CalculateLeftSide(angleOffset, Props.width) + targetPos;
-            IntVec3 bottomRightTile = CalculateRightSide(angleDiff, Props.width) + targetPos;
+            IntVec3 bottomLeftTile = CalculateRectangleCorners(angleOffset, Props.width) + targetPos;
+            IntVec3 bottomRightTile = CalculateRectangleCorners(angleDiff, Props.width, isLeftSide: false) + targetPos;
 
             // Same thing but for the right side, the other 2 corners i need.
-            IntVec3 topRightTile = CalculateRightSide(angleDiff, Props.width) + furthestCell;
-            IntVec3 topLeftTile = CalculateLeftSide(angleOffset, Props.width) + furthestCell;
+            IntVec3 topRightTile = CalculateRectangleCorners(angleDiff, Props.width, isLeftSide: false) + furthestCell;
+            IntVec3 topLeftTile = CalculateRectangleCorners(angleOffset, Props.width) + furthestCell;
 
             Vector3 topRightVec = topRightTile.ToVector3().Yto0();
             Vector3 bottomRightVec = bottomRightTile.ToVector3().Yto0();
@@ -89,6 +92,7 @@ namespace Moyo2
             return tmpCells;
         }
 
+
         private static float AngleToPoint(Vector3 pos, Vector3 point)
         {
             float xPrime = pos.x - point.x;
@@ -96,24 +100,28 @@ namespace Moyo2
             return (180 + Mathf.Atan2(xPrime, yPrime) * Mathf.Rad2Deg) % 360;
         }
 
-        private static IntVec3 CalculateLeftSide(float angleDeg, float width)
-        {
-            float actualHypothenuse = width / 2; // If the rectangle is 3 of width, every side is roughly 1.5 long, 1 tile each
-            int XCord = (int)(actualHypothenuse * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
-            int YCord = (int)(actualHypothenuse * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
 
-            return new(-XCord, 0, YCord);
+        private static IntVec3 CalculateRectangleCorners(float angleDeg, float width, bool isLeftSide = true)
+        {
+            if (isLeftSide)
+            {
+                float actualHypothenuse = width / 2; // If the rectangle is 3 of width, every side is roughly 1.5 long, 1 tile each
+                int XCord = (int)(actualHypothenuse * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
+                int YCord = (int)(actualHypothenuse * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
+
+                return new(-XCord, 0, YCord);
+            }
+            else
+            {
+                float actualHypothenuse = width / 2; // If the rectangle is 3 of width, every side is roughly 1.5 long, 1 tile each
+                int XCord = (int)(actualHypothenuse * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
+                int YCord = (int)(actualHypothenuse * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
+
+                return new(XCord, 0, -YCord);
+            }
+
         }
 
-
-        private static IntVec3 CalculateRightSide(float angleDeg, float width)
-        {
-            float actualHypothenuse = width / 2; // If the rectangle is 3 of width, every side is roughly 1.5 long, 1 tile each
-            int XCord = (int)(actualHypothenuse * Mathf.Sin(angleDeg * Mathf.Deg2Rad));
-            int YCord = (int)(actualHypothenuse * Mathf.Cos(angleDeg * Mathf.Deg2Rad));
-
-            return new(XCord, 0, -YCord);
-        }
 
         private static IntVec3 MiddleRowFurthestCell(float angleDeg, float height, IntVec3 targetCell)
         {
