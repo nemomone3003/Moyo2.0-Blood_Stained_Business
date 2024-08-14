@@ -3,7 +3,10 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>Moyo2_FabricationBench</defName>
 		<label>abysstech production bench</label>
-		<description>A workbench for producing abysstech items. It is capable of handling a variety of tasks, from producing tools, components, and apparel to dismantling mechanoids.</description>
+		<description>A workbench for producing abysstech items. It is capable of handling a variety of tasks, from producing tools, components, and apparel to dismantling mechanoids.\n\nThe abysstech fabrication module can be linked to this bench.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo2_FabricationAddon</ThingDef>
+		</descriptionHyperlinks>
 		<thingClass>Moyo2.ThingClass_MoyoFabricationBench</thingClass>
 		<!-- <thingClass>Building_WorkTable</thingClass> -->
 		<altitudeLayer>Building</altitudeLayer>
@@ -86,7 +89,10 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Moyo2_FabricationAddon</defName>
 		<label>abysstech fabrication module</label>
-		<description>An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.</description>
+		<description>An advanced module installed on abysstech production bench.It enables the rapid and efficient production of items using its mechanical arms and 3D printers.\n\nMeant to be placed on top of the abysstech production bench.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Moyo2_FabricationBench</ThingDef>
+		</descriptionHyperlinks>
 		<altitudeLayer>ItemImportant</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>false</selectable>
