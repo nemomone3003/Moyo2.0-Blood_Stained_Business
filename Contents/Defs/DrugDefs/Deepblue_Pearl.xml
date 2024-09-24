@@ -132,6 +132,9 @@
 				</capMods>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<ThoughtDeF>
 		<defName>DBThought_Joy</defName>
@@ -171,7 +174,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Crystal</defName>
 		<label>crystal pearl</label>
-		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.\n\nGlobal work speed: +15%~+75%\n\nMental break threshold: +0%%~+15%\n\nGlobal learning factor: +0~-80%\n\nConsciousness: +0~+35%</description>
+		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Crystal</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -248,7 +251,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on crystal pearl</label>
 		<labelNoun>a crystal pearl high</labelNoun>
-		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nGlobal work speed: +15%~+75%\n\nMental break threshold: +0~+15%\n\nGlobal learning factor: +0~-80%\n\nConsciousness: +0~+35%</description>
+		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Crystal</ThingDef>
 		</descriptionHyperlinks>
@@ -332,12 +335,15 @@
 				</capMods>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<!-- 싱커펄 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Thinker</defName>
 		<label>thinker pearl</label>
-		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.\n\nResearch Speed: +10%~+45%\n\nHacking Speed: +5%~+55%\n\nGlobal learning factor: +10~+65%\n\nMental break threshold: +0~+15%\n\nConsciousness: +0~+20%</description>
+		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Thinker</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -414,7 +420,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on thinker pearl</label>
 		<labelNoun>a thinker pearl high</labelNoun>
-		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nResearch Speed: +10%~+45%\n\nHacking Speed: +5%~+55%\n\nGlobal learning factor: +10~+65%\n\nMental break threshold: +0~+15%\n\nConsciousness: +0~+20%</description>
+		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Thinker</ThingDef>
 		</descriptionHyperlinks>
@@ -506,12 +512,15 @@
 				</capMods>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<!-- 알루링펄 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Alluring</defName>
 		<label>alluring pearl</label>
-		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.\n\nSocial impact: +10%~+55%\n\nBeauty: +0~+2\n\nMental break threshold: +0~+15%\n\nMinor mental break MTB</description>
+		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.\n\nMinor mental break MTB</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Alluring</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -588,7 +597,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on alluring pearl</label>
 		<labelNoun>a alluring pearl high</labelNoun>
-		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nSocial impact: +10%~+55%\n\nBeauty: +0~+2\n\nMental break threshold: +0~+15%\n\nMinor mental break MTB</description>
+		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nMinor mental break MTB</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Alluring</ThingDef>
 		</descriptionHyperlinks>
@@ -666,6 +675,9 @@
 				</mentalStateGivers>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<!-- 넘펄 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
@@ -810,6 +822,9 @@
 				</hediffGivers>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<HediffDef>
 		<defName>DBHediff_NumbDown</defName>

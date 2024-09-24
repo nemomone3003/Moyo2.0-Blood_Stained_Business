@@ -11,4 +11,9 @@
     <Moyo2_FishTank_HoursFishDie>Hours before product is lost: {Hours}</Moyo2_FishTank_HoursFishDie>
     <Moyo2_FishTank_NowGrowingFish>Now cultivating: {FishName}</Moyo2_FishTank_NowGrowingFish>
     <Moyo2_FishTank_NoAvailableFish>No cultivation products available.</Moyo2_FishTank_NoAvailableFish>
+
+    <Moyo2_StatDrawEntry_StageLeft>----- Stage -----</Moyo2_StatDrawEntry_StageLeft>
+    <Moyo2_StatDrawEntry_StageRight>↓ {label} ↓</Moyo2_StatDrawEntry_StageRight>
+    <Moyo2_StatDrawEntry_StageReportText>The stage at which the effects below will trigger.</Moyo2_StatDrawEntry_StageReportText>
+
 </LanguageData>

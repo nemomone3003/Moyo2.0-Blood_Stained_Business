@@ -3,8 +3,8 @@
 namespace Moyo2
 {
     /// <summary>
-    /// The point of this transpiler is to change how the GenStep_PreciousLump generates the lump for Hadal spires.<br></br>
-    /// We do that by checking if forcedDefToScatter is the def we want, and if it is, we change the count of generated lumps to 3
+    /// Changes how the GenStep_PreciousLump generates the lump for Hadal spires.<br></br>
+    /// Checks if forcedDefToScatter is the def we want, and if it is, we change the count of generated lumps to 3
     /// and the set the forced lump size to 1.<br></br>
     /// This spawns 3 individual spires instead of one lump of 3 spires close together.<br></br>
     /// kill me

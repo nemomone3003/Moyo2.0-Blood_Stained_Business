@@ -71,7 +71,7 @@
 			<li>Hydroponics</li>
 		</researchPrerequisites>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_modExtension">
+			<li Class="Moyo2.Moyo2_ModExtension">
 				<FishDefs>
 					<li>Moyo2_TunaCorpse</li>
 					<li>Moyo2_DemiKrakenCorpse</li>

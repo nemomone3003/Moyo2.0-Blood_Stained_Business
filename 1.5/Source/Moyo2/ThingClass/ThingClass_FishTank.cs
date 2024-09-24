@@ -6,7 +6,7 @@ namespace Moyo2
     public class ThingClass_FishTank : Building
     {
 #nullable enable
-        private Moyo2_modExtension? ModExtension => def.GetModExtension<Moyo2_modExtension>();
+        private Moyo2_ModExtension? ModExtension => def.GetModExtension<Moyo2_ModExtension>();
 #nullable disable
 
 

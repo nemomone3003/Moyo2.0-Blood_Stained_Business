@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Medi</defName>
 		<label>medi booster</label>
-		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advice to inject additional doses.\n\nInjury healing factor: 150%~300%\n\nImmunity gain speed: +50%~+200%\n\nConsciousness: 100%~60%\n\nCan heal permanent wounds</description>
+		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advise to inject additional doses.\n\nCan heal permanent wounds</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Medi</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -79,7 +79,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>active medi booster</label>
 		<labelNoun>active medi booster</labelNoun>
-		<description>Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.\n\nInjury healing factor: 150%~300%\n\nImmunity gain speed: +50%~+200%\n\nConsciousness: 100%~60%\n\nCan heal permanent wounds</description>
+		<description>Active medi booster in the bloodstream. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Medi</ThingDef>
 		</descriptionHyperlinks>
@@ -131,12 +131,15 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<!-- 오르카 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Orca</defName>
 		<label>orca booster</label>
-		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.\n\nMelee hit chance: +2~+5\n\nMelee dodge chance:+2~+5\n\nIncoming damage factor: +0%~-15%\n\nConsciousness: +15%~30%\n\nMoving: +40%~60%</description>
+		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Orca</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -218,7 +221,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on orca booster</label>
 		<labelNoun>a orca booster high</labelNoun>
-		<description>Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.\n\nMelee hit chance: +2~+5\n\nMelee dodge chance:+2~+5\n\nIncoming damage factor: +0%~-15%\n\nConsciousness: +15%~30%\n\nMoving: +40%~60%</description>
+		<description>Active orca booster in the bloodstreams. It increases melee combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Orca</ThingDef>
 		</descriptionHyperlinks>
@@ -291,12 +294,15 @@
 				</capMods>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 	<!-- 히드라 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Hydra</defName>
 		<label>hydra booster</label>
-		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull's eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.\n\nAiming delay factor: -10%~-20%\n\nRanged cooldown factor: -10%~-20%\n\nConsciousness: +15%~30%\n\nMoving: +5%~20%\n\nSight: +15%~30%</description>
+		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull's eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Hydra</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -376,7 +382,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on hydra booster</label>
 		<labelNoun>a hydra booster high</labelNoun>
-		<description>Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.\n\nAiming delay factor: -10%~-20%\n\nRanged cooldown factor: -10%~-20%\n\nConsciousness: +15%~30%\n\nMoving: +5%~20%\n\nSight: +15%~30%</description>
+		<description>Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Hydra</ThingDef>
 		</descriptionHyperlinks>
@@ -460,5 +466,8 @@
 				</capMods>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="Moyo2.Moyo2_ModExtension" />
+		</modExtensions>
 	</HediffDef>
 </Defs>
