@@ -10,12 +10,14 @@
 
         protected override IEnumerable<Graphic> GraphicsFor(Pawn pawn)
         {
+            // Gets the graphics corresponding to the undrafted variant of the apparel
             yield return GraphicDatabase.Get<Graphic_Multi>(
                 Props.undraftedTexPath,
                 GetShader(),
                 Props.drawSize,
                 ColorFor(pawn));
 
+            // Gets the graphics corresponding to the drafted variant of the apparel
             yield return GraphicDatabase.Get<Graphic_Multi>(
                 Props.draftedTexPath,
                 GetShader(),

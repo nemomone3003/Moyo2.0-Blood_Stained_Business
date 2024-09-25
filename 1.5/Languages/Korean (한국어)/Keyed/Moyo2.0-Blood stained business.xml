@@ -19,9 +19,7 @@
   <!-- English=Cannot farm. There isn't any fish available.-->
   <Moyo2_FishTank_NoAvailableFish>배양 가능한 품목이 없습니다.</Moyo2_FishTank_NoAvailableFish>
   <!-- English=Stage-->
-  <Moyo2_StatDrawEntry_StageLeft>TRANSLATE ME NEMO</Moyo2_StatDrawEntry_StageLeft>
-  <!-- English=↓ {label} ↓-->
-  <Moyo2_StatDrawEntry_StageRight>TRANSLATE {label} ME NEMO</Moyo2_StatDrawEntry_StageRight>
+  <Moyo2_StatDrawEntry_Stage>TRANSLATE ME NEMO</Moyo2_StatDrawEntry_Stage>
   <!-- English=The stage at which the effects below will trigger.-->
   <Moyo2_StatDrawEntry_StageReportText>UWU.</Moyo2_StatDrawEntry_StageReportText>
 </LanguageData>

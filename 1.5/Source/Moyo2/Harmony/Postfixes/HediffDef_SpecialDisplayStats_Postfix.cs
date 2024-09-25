@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using System.Text;
-using Verse;
 
 namespace Moyo2
 {
@@ -25,16 +24,20 @@ namespace Moyo2
                     {
                         yield break;
                     }
-
-                    yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, "Moyo2_StatDrawEntry_StageLeft".Translate(),
-                        "Moyo2_StatDrawEntry_StageRight".Translate(stage.label.CapitalizeFirst().Named("label")),
+                    
+                    yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, "Moyo2_StatDrawEntry_Stage".Translate(stage.label.CapitalizeFirst().Named("stageName")),
+                        string.Empty,
                         "Moyo2_StatDrawEntry_StageReportText".Translate(),
                         displayPriorityWithinCategory: 4085 - counter);
 
-                    // From this point on, it's code gotten from HediffStage.SpecialDisplayStats, without any of the code that needs a Hediff instance to work.
+                    // From this point on, it's a slightly modified version of the code from HediffStage.SpecialDisplayStats, without any of the code that needs a Hediff instance to work.
                     if (stage.partEfficiencyOffset != 0f)
                     {
                         yield return new StatDrawEntry(StatCategoryDefOf.Basics, "PartEfficiency".Translate(), stage.partEfficiencyOffset.ToStringByStyle(ToStringStyle.PercentZero, ToStringNumberSense.Offset), "Stat_Hediff_PartEfficiency_Desc".Translate(), 4050 - counter);
+                    }
+                    if (stage.painFactor < 1)
+                    {
+                        yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, label: "Pain".Translate(), "x" + stage.painFactor.ToStringPercent(), "Stat_Hediff_Pain_Desc".Translate(), 4050 - counter);
                     }
                     if (stage.AffectsMemory || stage.AffectsSocialInteractions)
                     {
@@ -141,17 +144,15 @@ namespace Moyo2
                             {
                                 yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, capMod.capacity.GetLabelFor().CapitalizeFirst(), "x" + capMod.postFactor.ToStringPercent(), capMod.capacity.description, 4075 - counter);
                             }
-                            /*
                             if (capMod.SetMaxDefined)
                             {
-                                yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, label: capMod.capacity.GetLabelFor().CapitalizeFirst(), "max".Translate().CapitalizeFirst() + " " + capMod.EvaluateSetMax(instance.pawn).ToStringPercent(), capMod.capacity.description, 4075 - counter);
+                                yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, label: capMod.capacity.GetLabelFor().CapitalizeFirst(), "max".Translate().CapitalizeFirst() + " " + capMod.setMax.ToStringPercent(), capMod.capacity.description, 4075 - counter);
                             }
-                            */
                         }
                     }
                     if (stage.damageFactors.NullOrEmpty())
                     {
-                        counter += 100;
+                        counter += 100; // So the first iteration, which should be the first stage, shows up first
                         continue; // Was a yield break, changed to continue so we get the rest of the stages instead of skipping.
                     }
                     for (int i = 0; i < stage.damageFactors.Count; i++)
@@ -163,7 +164,7 @@ namespace Moyo2
                             yield return new StatDrawEntry(label: (!(num5 >= 1f)) ? ((string)"DamageFactorResistance".Translate(damageFactor.damageDef.Named("DAMAGE")).CapitalizeFirst()) : ((string)"DamageFactorWeakness".Translate(damageFactor.damageDef.Named("DAMAGE")).CapitalizeFirst()), category: StatCategoryDefOf.CapacityEffects, valueString: "x" + num5.ToStringPercent(), reportText: "DamageFactor".Translate(damageFactor.damageDef.Named("DAMAGE")).CapitalizeFirst(), displayPriorityWithinCategory: 4080);
                         }
                     }
-                    counter += 100;
+                    counter += 100; // So the first iteration, which should be the first stage, shows up first
                 }
             }
         }

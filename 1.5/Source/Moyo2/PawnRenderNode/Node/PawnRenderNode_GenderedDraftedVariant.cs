@@ -10,12 +10,14 @@
 
         protected override IEnumerable<Graphic> GraphicsFor(Pawn pawn)
         {
+            // Gets the graphics corresponding to the undrafted variant of the apparel, appending the defname of the body to the path
             yield return GraphicDatabase.Get<Graphic_Multi>(
                 Props.undraftedTexPath + pawn?.story.bodyType.defName,
                 GetShader(),
                 Props.drawSize,
                 ColorFor(pawn));
 
+            // Gets the graphics corresponding to the undrafted variant of the apparel, appending the defname of the body to the path
             yield return GraphicDatabase.Get<Graphic_Multi>(
                 Props.draftedTexPath + pawn?.story.bodyType.defName,
                 GetShader(),

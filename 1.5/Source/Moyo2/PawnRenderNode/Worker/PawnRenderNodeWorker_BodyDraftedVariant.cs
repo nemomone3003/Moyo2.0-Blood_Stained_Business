@@ -6,10 +6,12 @@
         {
             if (parms.pawn.Drafted)
             {
+                // Graphics[1] is the call we make to the graphic database, the one that returns the drafted variant of the apparel
                 return node?.Graphics[1];
             }
             else
             {
+                // In the same sense, Graphics[0] is the undrafted variant
                 return node?.Graphics[0];
             }
         }
