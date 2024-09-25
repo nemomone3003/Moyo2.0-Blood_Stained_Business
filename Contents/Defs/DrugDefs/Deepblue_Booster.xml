@@ -132,7 +132,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>
+			</li>
 		</modExtensions>
 	</HediffDef>
 	<!-- 오르카 부스터 -->
@@ -295,7 +299,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>
+			</li>
 		</modExtensions>
 	</HediffDef>
 	<!-- 히드라 부스터 -->
@@ -467,7 +475,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>
+			</li>
 		</modExtensions>
 	</HediffDef>
 </Defs>

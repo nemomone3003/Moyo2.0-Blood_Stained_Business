@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Joy</defName>
 		<label>joypearl</label>
-		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.\n\nMood effect: +18~+77\n\nPain factor: *100%~*10%\n\nConsciousness: +0~-35%</description>
+		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Joy</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -81,7 +81,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on joypearl</label>
 		<labelNoun>a joypearl high</labelNoun>
-		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nMood effect: +18~+77\n\nPain factor: *100%~*10%\n\nConsciousness: +0~-35%</description>
+		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Joy</ThingDef>
 		</descriptionHyperlinks>
@@ -133,7 +133,18 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+					<moodOffsetsGivenPerStage>
+						<li>18</li>
+						<li>25</li>
+						<li>37</li>
+						<li>55</li>
+						<li>77</li>
+					</moodOffsetsGivenPerStage>
+				</deepblueDrugEffectsSettings>
+			</li>
 		</modExtensions>
 	</HediffDef>
 	<ThoughtDeF>
@@ -336,7 +347,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>
+			</li>
 		</modExtensions>
 	</HediffDef>
 	<!-- 싱커펄 -->
@@ -513,7 +528,10 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>			</li>
 		</modExtensions>
 	</HediffDef>
 	<!-- 알루링펄 -->
@@ -676,14 +694,17 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>			</li>
 		</modExtensions>
 	</HediffDef>
 	<!-- 넘펄 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Numb</defName>
 		<label>numb pearl</label>
-		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.\n\nPain factor: *70%~*0%\n\nConsciousness: +0%~-30%\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
+		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Numb</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
@@ -760,7 +781,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on numb pearl</label>
 		<labelNoun>a numb pearl high</labelNoun>
-		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nPain factor: *70%~*0%\n\nConsciousness: +0%~-30%\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
+		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBPearl_Numb</ThingDef>
 		</descriptionHyperlinks>
@@ -823,7 +844,10 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension" />
+			<li Class="Moyo2.Moyo2_ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>			</li>
 		</modExtensions>
 	</HediffDef>
 	<HediffDef>

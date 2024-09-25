@@ -14,12 +14,16 @@ namespace Moyo2
         [HarmonyPostfix]
         static IEnumerable<StatDrawEntry> AddDeepblueDrugsEffects(IEnumerable<StatDrawEntry> statDrawEntries, HediffDef __instance)
         {
-            int counter = 0; // Increases by 100 per loop iteration, makes the stats show in order, from first stage to last
+            var modExt = __instance.GetModExtension<Moyo2_ModExtension>();
 
-            if (__instance.HasModExtension<Moyo2_ModExtension>() && __instance.stages.Count > 0)
+            if (modExt is not null && modExt.deepblueDrugEffectsSettings.isDeepblueDrug && __instance.stages.Count > 0)
             {
-                foreach (HediffStage stage in __instance.stages)
+                int counter = 0; // Increases by 100 per loop iteration, makes the stats show in order, from first stage to last
+
+                for (int j = 0; j < __instance.stages.Count; j++)
                 {
+                    HediffStage stage = __instance.stages[j];
+
                     if (stage == null)
                     {
                         yield break;
@@ -29,6 +33,12 @@ namespace Moyo2
                         string.Empty,
                         "Moyo2_StatDrawEntry_StageReportText".Translate(),
                         displayPriorityWithinCategory: 4085 - counter);
+
+                    if (j > 0)
+                    {
+                        yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects,
+                            string.Empty, string.Empty, string.Empty, 4090 - counter);
+                    }
 
                     // From this point on, it's a slightly modified version of the code from HediffStage.SpecialDisplayStats, without any of the code that needs a Hediff instance to work.
                     if (stage.partEfficiencyOffset != 0f)
@@ -149,6 +159,14 @@ namespace Moyo2
                                 yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects, label: capMod.capacity.GetLabelFor().CapitalizeFirst(), "max".Translate().CapitalizeFirst() + " " + capMod.setMax.ToStringPercent(), capMod.capacity.description, 4075 - counter);
                             }
                         }
+                    }
+                    if (!modExt.deepblueDrugEffectsSettings.moodOffsetsGivenPerStage.NullOrEmpty())
+                    {
+                        yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects,
+                            label: "Moyo2_StatDrawEntry_MoodLabel".Translate(),
+                            modExt.deepblueDrugEffectsSettings.moodOffsetsGivenPerStage[j].ToStringWithSign(),
+                            "Moyo2_StatDrawEntry_MoodReportText".Translate(),
+                            4075 - counter);
                     }
                     if (stage.damageFactors.NullOrEmpty())
                     {

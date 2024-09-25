@@ -14,5 +14,7 @@
 
     <Moyo2_StatDrawEntry_Stage>Stage ({stageName})</Moyo2_StatDrawEntry_Stage>
     <Moyo2_StatDrawEntry_StageReportText>The stage at which the effects below will trigger.</Moyo2_StatDrawEntry_StageReportText>
+    <Moyo2_StatDrawEntry_MoodLabel>Mood offset</Moyo2_StatDrawEntry_MoodLabel>
+    <Moyo2_StatDrawEntry_MoodReportText>The mood offset applied at this stage.</Moyo2_StatDrawEntry_MoodReportText>
 
 </LanguageData>
