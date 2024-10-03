@@ -13,7 +13,7 @@ namespace Moyo2
     internal static class GenStep_PreciousLump_Generate_Transpiler
     {
         [HarmonyTranspiler]
-        private static IEnumerable<CodeInstruction> InsertLoop_Transpiler(IEnumerable<CodeInstruction> codeInstructions, ILGenerator ilg)
+        private static IEnumerable<CodeInstruction> ChangeLumpSizeAndAmountOfHadalSpiresSpawned(IEnumerable<CodeInstruction> codeInstructions, ILGenerator ilg)
             // ILGenerator is needed to move around labels
         {
             CodeMatcher codeMatcher = new(codeInstructions, ilg);
