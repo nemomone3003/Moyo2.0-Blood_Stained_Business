@@ -58,14 +58,14 @@ namespace Moyo2
                 // If it's true it keeps going down, reading the next instructions
                 new(OpCodes.Ldarg_0),
                 // keyword -this-
-                new(OpCodes.Ldc_I4, 3),
-                // Creates a new constant int of value 3
+                new(OpCodes.Ldc_I4, Moyo2_HarmonySettingsDefOf.Moyo2_HarmonySettings.numberOfHadalSpireLumps),
+                // Creates a new constant int with whatever value we've specified in the XML (defaults to 3)
                 new(OpCodes.Stfld, AccessTools.Field(typeof(GenStep_Scatterer), nameof(GenStep_Scatterer.count))),
                 // Saves that int in the field GenStep_Scatterer.count
                 new(OpCodes.Ldarg_0),
                 // keyword -this-
-                new(OpCodes.Ldc_I4_1),
-                // Creates a new constant int of value 1
+                new(OpCodes.Ldc_I4, Moyo2_HarmonySettingsDefOf.Moyo2_HarmonySettings.hadalSpiresPerLump),
+                // Creates a new constant int with whatever value we've specified in the XML (defaults to 1)
                 new(OpCodes.Stfld, AccessTools.Field(typeof(GenStep_ScatterLumpsMineable), nameof(GenStep_ScatterLumpsMineable.forcedLumpSize))),
                 // Saves that int in the field GenStep_ScatterLumpsMineable.forcedLumpSize
             };

@@ -36,5 +36,16 @@
 
         public static AlienRace.ThingDef_AlienRace Alien_Moyo;
     }
+
+    [DefOf]
+    public static class Moyo2_HarmonySettingsDefOf
+    {
+        static Moyo2_HarmonySettingsDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(Moyo2_HarmonySettingsDefOf));
+        }
+
+        public static HarmonySettings Moyo2_HarmonySettings;
+    }
 #pragma warning restore CA2211 
 }

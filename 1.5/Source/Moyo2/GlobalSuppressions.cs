@@ -9,3 +9,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Style", "IDE0028:Simplify collection initialization", Justification = "<Pending>", Scope = "member", Target = "~M:Moyo2.ThingClass_FishTank.LoadFish")]
 [assembly: SuppressMessage("Style", "IDE0028:Simplify collection initialization", Justification = "<Pending>", Scope = "member", Target = "~F:Moyo2.CompAbility_LaminarGlaive.tmpCells")]
 [assembly: SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "<Pending>", Scope = "member", Target = "~M:Moyo2.HediffDef_SpecialDisplayStats_Postfix.AddDeepblueDrugsEffects(System.Collections.Generic.IEnumerable{RimWorld.StatDrawEntry},Verse.HediffDef)~System.Collections.Generic.IEnumerable{RimWorld.StatDrawEntry}")]
+[assembly: SuppressMessage("Design", "CA1051:Do not declare visible instance fields", Justification = "<Pending>", Scope = "member", Target = "~F:Moyo2.HarmonySettings.numberOfHadalSpireLumps")]

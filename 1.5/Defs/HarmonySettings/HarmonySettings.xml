@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <Moyo2.HarmonySettings>
+        <defName>Moyo2_HarmonySettings</defName>
+        <numberOfHadalSpireLumps>3</numberOfHadalSpireLumps>
+        <hadalSpiresPerLump>1</hadalSpiresPerLump>
+    </Moyo2.HarmonySettings>
+
+</Defs>
