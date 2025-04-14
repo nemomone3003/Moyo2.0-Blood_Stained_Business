@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeMoyo2_Ammo_LaminarSlug</defName>
+		<label>make laminar slug cartridge x500</label>
+		<description>Craft 500 laminar slug cartridges.</description>
+		<jobString>Making laminar slug cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_Abyssteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo2_Abyssteel</li>
+                <li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo2_Ammo_LaminarSlug>500</Moyo2_Ammo_LaminarSlug>
+		</products>
+		<workAmount>20000</workAmount>
+		<researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
+		<recipeUsers Inherit="False">
+			<li>Moyo2_FabricationBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeMoyo2_Ammo_HeavyLaminarSlug</defName>
+		<label>make heavy laminar slug cartridge x300</label>
+		<description>Craft 300 heavy laminar slug cartridges.</description>
+		<jobString>Making heavy laminar slug cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_Abyssteel</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo2_Abyssteel</li>
+                <li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo2_Ammo_HeavyLaminarSlug>300</Moyo2_Ammo_HeavyLaminarSlug>
+		</products>
+		<workAmount>20000</workAmount>
+		<researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
+		<recipeUsers Inherit="False">
+			<li>Moyo2_FabricationBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

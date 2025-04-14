@@ -19,5 +19,6 @@ Moyo-Blood stained business
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
+		<li>ceteam.combatextended</li>
 	</loadAfter>
 </ModMetaData>

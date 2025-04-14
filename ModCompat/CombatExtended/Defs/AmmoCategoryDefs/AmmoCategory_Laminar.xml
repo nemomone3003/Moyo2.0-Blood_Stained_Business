@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CombatExtended.AmmoCategoryDef>
+		<defName>Moyo2_AmmoCategory_LaminarSlug</defName>
+		<label>Laminar slug</label>
+		<labelShort>LMR.</labelShort>
+		<description>Slug rounds stabilized by a laminar field.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+</Defs>

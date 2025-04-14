@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Used by LMR autocannon, pistol, rifle -->
+    <CombatExtended.AmmoSetDef>
+		<defName>Moyo2_AmmoSet_LaminarSlug</defName>
+		<label>Laminar slug</label>
+		<ammoTypes>
+			<Moyo2_Ammo_LaminarSlug>Moyo2_Projectile_LaminarSlug</Moyo2_Ammo_LaminarSlug>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedRifle</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- Used by LMR balista -->
+    <CombatExtended.AmmoSetDef>
+		<defName>Moyo2_AmmoSet_HeavyLaminarSlug</defName>
+		<label>Heavy laminar slug</label>
+		<ammoTypes>
+			<Moyo2_Ammo_HeavyLaminarSlug>Moyo2_Projectile_HeavyLaminarSlug</Moyo2_Ammo_HeavyLaminarSlug>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedRifle</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CombatExtended.AmmoDef Name="Moyo2_LaminarSlugBase" ParentName="SpacerAmmoBase" Abstract="True">
+		<description>Slug rounds for use in laminar weapons.</description>
+		<statBases>
+			<Mass>0.025</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Moyo2_Category_LaminarSlug</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+	</CombatExtended.AmmoDef>
+
+
+    <!-- Used by LMR autocannon, pistol, rifle -->
+    <CombatExtended.AmmoDef ParentName="Moyo2_LaminarSlugBase">
+		<defName>Moyo2_Ammo_LaminarSlug</defName>
+		<label>Laminar slug</label>
+		<graphicData>
+			<texPath>Things/Ammo/Charged/MediumMech</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.94</MarketValue>
+		</statBases>
+		<ammoClass>Moyo2_AmmoCategory_LaminarSlug</ammoClass>
+	</CombatExtended.AmmoDef>
+
+	<!-- Used by LMR balista -->
+    <CombatExtended.AmmoDef ParentName="Moyo2_LaminarSlugBase">
+		<defName>Moyo2_Ammo_HeavyLaminarSlug</defName>
+		<label>Heavy laminar slug</label>
+		<graphicData>
+			<texPath>Things/Ammo/Charged/MediumMech</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.94</MarketValue>
+		</statBases>
+		<ammoClass>Moyo2_AmmoCategory_LaminarSlug</ammoClass>
+		<stackLimit>3000</stackLimit>
+	</CombatExtended.AmmoDef>
+
+</Defs>
