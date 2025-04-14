@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBPearl_Joy</defName>
 		<label>joypearl</label>
-		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.n\n\TheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
+		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Joy</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>
