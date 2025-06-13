@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--English=This linkable has to be built over its designated building-->
+  <Moyo2_Placeworker_OnBuilding_Failed>이 건물은 연결되는 건물 위에 설치되어야 합니다.</Moyo2_Placeworker_OnBuilding_Failed>
+  <!--English=Change fish-->
+  <Moyo2_FishTank_GizmoLabel>품목 변경</Moyo2_FishTank_GizmoLabel>
+  <!--English=Inactive.-->
+  <Moyo2_FishTank_NotGrowingAnything>대기중.</Moyo2_FishTank_NotGrowingAnything>
+  <!--English={FishName} ready to harvest.-->
+  <Moyo2_FishTank_FinishedGrowing>{FishName} 수확 준비됨.</Moyo2_FishTank_FinishedGrowing>
+  <!--English=Growth progress: {%age}%-->
+  <Moyo2_FishTank_GrowthPercent>성장도: {%age}%</Moyo2_FishTank_GrowthPercent>
+  <!--English=The fish harvest has been lost-->
+  <Moyo2_FishTank_FishDied>배양에 실패했습니다.</Moyo2_FishTank_FishDied>
+  <!--English=Hours before the harvest is lost: {Hours}-->
+  <Moyo2_FishTank_HoursFishDie>배양 실패중: {Hours}</Moyo2_FishTank_HoursFishDie>
+  <!--English=Now growing: {FishName}-->
+  <Moyo2_FishTank_NowGrowingFish>{FishName} 배양중.</Moyo2_FishTank_NowGrowingFish>
+  <!-- English=Cannot farm. There isn't any fish available.-->
+  <Moyo2_FishTank_NoAvailableFish>배양 가능한 품목이 없습니다.</Moyo2_FishTank_NoAvailableFish>
+  <!-- English=Stage-->
+  <Moyo2_StatDrawEntry_Stage>TRANSLATE ME NEMO</Moyo2_StatDrawEntry_Stage>
+  <!-- English=The stage at which the effects below will trigger.-->
+  <Moyo2_StatDrawEntry_StageReportText>UWU.</Moyo2_StatDrawEntry_StageReportText>
+</LanguageData>

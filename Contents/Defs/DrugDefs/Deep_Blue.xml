@@ -265,7 +265,7 @@
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>1</initialSeverity>
-		<causesNeed>Chemical_Deepblue</causesNeed>
+		<chemicalNeed>Chemical_Deepblue</chemicalNeed>
 		<everCurableByItem>false</everCurableByItem>
 		<isBad>true</isBad>
 		<comps>

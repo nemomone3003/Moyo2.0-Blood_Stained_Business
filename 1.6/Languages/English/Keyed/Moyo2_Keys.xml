@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <Moyo2_Placeworker_OnBuilding_Failed>This linkable has to be built over its designated building</Moyo2_Placeworker_OnBuilding_Failed>
+
+    <Moyo2_FishTank_GizmoLabel>Change product</Moyo2_FishTank_GizmoLabel>
+    <Moyo2_FishTank_NotGrowingAnything>Inactive.</Moyo2_FishTank_NotGrowingAnything>
+    <Moyo2_FishTank_FinishedGrowing>{FishName} ready to harvest.</Moyo2_FishTank_FinishedGrowing>
+    <Moyo2_FishTank_GrowthPercent>cultivation progress: {%age}%</Moyo2_FishTank_GrowthPercent>
+    <Moyo2_FishTank_FishDied>Product has been lost.</Moyo2_FishTank_FishDied>
+    <Moyo2_FishTank_HoursFishDie>Hours before product is lost: {Hours}</Moyo2_FishTank_HoursFishDie>
+    <Moyo2_FishTank_NowGrowingFish>Now cultivating: {FishName}</Moyo2_FishTank_NowGrowingFish>
+    <Moyo2_FishTank_NoAvailableFish>No cultivation products available.</Moyo2_FishTank_NoAvailableFish>
+
+    <Moyo2_StatDrawEntry_Stage>Stage ({stageName})</Moyo2_StatDrawEntry_Stage>
+    <Moyo2_StatDrawEntry_StageReportText>The stage at which the effects below will trigger.</Moyo2_StatDrawEntry_StageReportText>
+    <Moyo2_StatDrawEntry_MoodLabel>Mood offset</Moyo2_StatDrawEntry_MoodLabel>
+    <Moyo2_StatDrawEntry_MoodReportText>The mood offset applied at this stage.</Moyo2_StatDrawEntry_MoodReportText>
+
+</LanguageData>

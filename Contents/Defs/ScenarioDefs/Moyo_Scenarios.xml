@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>Moyo2_DeserterScenario</defName>
 		<label>Lighthouse deserters</label>
 		<description>Three moyos who decided to escape the lighthouse for their own reasons. Through some means, they obtained a hovercraft and managed to break through the lighthouse's blockade, evading pirates and raiders on both land and sea to finally reach the mainland.</description>
