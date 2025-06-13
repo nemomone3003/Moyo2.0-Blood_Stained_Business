@@ -104,7 +104,7 @@
 					<li>RimWorld.CompQuality</li>
 					<li>RimWorld.CompArt</li>
 				</sharedComps>
-				<transformData>
+				<transformDatas>
 					<li>
 						<label>overcharge</label>
 						<description>initiate overcharge.</description>
@@ -113,7 +113,7 @@
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
 						<soundOnTransform>Laminar_Activate2</soundOnTransform>
 					</li>
-				</transformData>
+				</transformDatas>
 			</li>
 		</comps>
 		<weaponTags>
@@ -165,7 +165,7 @@
 					<revertAfterTicks>700</revertAfterTicks>
 					<soundOnTransform>Laminar_Activate2</soundOnTransform>
 				</revertData>				
-				<transformData>
+				<transformDatas>
 					<li>
 						<label>quick discharge</label>
 						<description>disable overcharge.</description>
@@ -174,7 +174,7 @@
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
 						<soundOnTransform>Laminar_Activate2</soundOnTransform>
 					</li>
-				</transformData>
+				</transformDatas>
 			</li>
 		</comps>
 		<relicChance>0</relicChance>
