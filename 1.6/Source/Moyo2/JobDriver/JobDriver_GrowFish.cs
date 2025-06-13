@@ -23,7 +23,7 @@ namespace Moyo2
 
             Toil waitToilWithSkillGain = Toils_General.Wait(400).FailOnDespawnedNullOrForbidden(TargetIndex.A)
                 .FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch)
-                .FailOn(() => FishTank.FinishedGrowing)
+                .FailOn(() => FishTank.FishFinishedGrowing)
                 .WithProgressBarToilDelay(TargetIndex.A);
             waitToilWithSkillGain.tickIntervalAction = delegate(int delta)
             {

@@ -12,7 +12,7 @@
 		<LangVersion>preview</LangVersion> <!-- This is the C# version. Preview is the newest version with the most features -->
 		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version -->
 
-		<OutDir>..\..\..\Assemblies\</OutDir> <!-- The output path for dll files  -->
+		<OutDir>..\..\Assemblies\</OutDir> <!-- The output path for dll files  -->
 
 		<!-- <Nullable>enable</Nullable> --> <!-- Optional nullable analysis. -->
 		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types -->

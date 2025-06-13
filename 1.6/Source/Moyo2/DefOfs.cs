@@ -13,6 +13,7 @@
         public static JobDef Moyo_EmptyFishTank;
     }
 
+
     [DefOf]
     public static class Moyo2_ThingDefOfs
     {
@@ -26,6 +27,7 @@
         public static ThingDef Moyo2_DeepDrill;
     }
 
+
     [DefOf]
     public static class Moyo2_RaceDefOf
     {
@@ -37,6 +39,7 @@
         public static AlienRace.ThingDef_AlienRace Alien_Moyo;
     }
 
+
     [DefOf]
     public static class Moyo2_HarmonySettingsDefOf
     {
@@ -47,5 +50,4 @@
 
         public static HarmonySettings Moyo2_HarmonySettings;
     }
-#pragma warning restore CA2211 
 }

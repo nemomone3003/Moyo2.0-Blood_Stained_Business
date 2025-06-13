@@ -136,8 +136,8 @@
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>
-					<li>RimWorld.CompQuality</li>
-					<li>RimWorld.CompArt</li>
+					<li>CompQuality</li>
+					<li>CompArt</li>
 				</sharedComps>
 				<transformDatas>
 					<li>
@@ -191,8 +191,8 @@
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>
-					<li>RimWorld.CompQuality</li>
-					<li>RimWorld.CompArt</li>
+					<li>CompQuality</li>
+					<li>CompArt</li>
 				</sharedComps>
 				<revertData>
 					<label>overload</label>
@@ -238,8 +238,8 @@
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>
-					<li>RimWorld.CompQuality</li>
-					<li>RimWorld.CompArt</li>
+					<li>CompQuality</li>
+					<li>CompArt</li>
 				</sharedComps>
 				<revertData>
 					<label>cooling</label>

@@ -19,58 +19,49 @@ namespace Moyo2
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             this.FailOnBurningImmobile(TargetIndex.A);
-            this.FailOn(() => !FishTank.FinishedGrowing);
+            this.FailOn(() => !FishTank.FishFinishedGrowing);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
-            // Goes to fish tank
 
             yield return Toils_General.Wait(200).FailOnDespawnedNullOrForbidden(TargetIndex.A)
                 .FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch)
-                .FailOn(() => !FishTank.FinishedGrowing)
+                .FailOn(() => !FishTank.FishFinishedGrowing)
                 .WithProgressBarToilDelay(TargetIndex.A);
-            // Waits 200 ticks with a progress bar
 
-            Toil toil = ToilMaker.MakeToil("MakeNewToils");
-            // Unloads the fish
-            toil.initAction = delegate
+            Toil unloadFishToil = ToilMaker.MakeToil("UnloadFish");
+            unloadFishToil.initAction = delegate
             {
                 Thing fish = FishTank.UnloadFish();
                 GenSpawn.Spawn(fish, pawn.Position, Map);
                 StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(fish);
-                // Tries to find a good place to haul the fish stack to
+
+                // Find place to haul fish to
                 if (StoreUtility.TryFindBestBetterStoreCellFor(fish, pawn, Map, currentPriority, pawn.Faction, out var foundCell))
                 {
                     job.SetTarget(TargetIndex.B, foundCell);
                     job.SetTarget(TargetIndex.C, fish);
                     job.count = fish.stackCount;
                 }
-                else
-                {
-                    EndJobWith(JobCondition.Incompletable);
-                    // If it can't it ends here
-                    ReadyForNextToil();
-                }
             };
-            toil.defaultCompleteMode = ToilCompleteMode.Instant;
-            yield return toil;
+            unloadFishToil.defaultCompleteMode = ToilCompleteMode.Instant;
+            yield return unloadFishToil;
 
-            yield return Toils_Reserve.Reserve(TargetIndex.B);
-            // Reserves a cell
+            Toil endToil = ToilMaker.MakeToil("EndToil");
+
+            yield return Toils_Jump.JumpIf(endToil, () => !TargetB.IsValid || !TargetC.IsValid);
+
+			yield return Toils_Reserve.Reserve(TargetIndex.B);
 
             yield return Toils_Reserve.Reserve(TargetIndex.C);
-            // Reserves the fish stack
 
             yield return Toils_Goto.GotoThing(TargetIndex.C, PathEndMode.ClosestTouch);
-            // Goes to the fish stack
 
             yield return Toils_Haul.StartCarryThing(TargetIndex.C);
-            // Carries the fish stack
 
-            Toil carryToCell = Toils_Haul.CarryHauledThingToCell(TargetIndex.B);
-            // Goes to a cell with the fish stack on the hands
-            yield return carryToCell;
+            yield return Toils_Haul.CarryHauledThingToCell(TargetIndex.B);
 
-            yield return Toils_Haul.PlaceHauledThingInCell(TargetIndex.B, carryToCell, true);
-            // Drops the stack on the cell
+            yield return Toils_Haul.PlaceHauledThingInCell(TargetIndex.B, endToil, true);
+
+            yield return endToil;
         }
     }
 }

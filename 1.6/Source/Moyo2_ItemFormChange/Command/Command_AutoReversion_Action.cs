@@ -3,7 +3,6 @@ using Verse;
 
 namespace Moyo2_ItemFormChange
 {
-	[StaticConstructorOnStartup]
 	public class Command_AutoReversion_Action : Command
 	{
 		private readonly CompFormChange compFormChange;

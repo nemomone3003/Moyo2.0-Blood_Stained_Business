@@ -51,7 +51,7 @@ namespace Moyo2_ItemFormChange
 
 			foreach (ThingComp weaponComp in newWeapon.AllComps)
 			{
-				if (Props.sharedComps.Contains(weaponComp))
+				if (Props.sharedComps.Contains(weaponComp.GetType()))
 				{
 					ThingComp parentComp = parent.GetCompByDefType(weaponComp.props);
 

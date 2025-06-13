@@ -132,7 +132,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension">
+			<li Class="Moyo2.ModExtension">
 				<deepblueDrugEffectsSettings>
 					<isDeepblueDrug>true</isDeepblueDrug>
 				</deepblueDrugEffectsSettings>
@@ -299,7 +299,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension">
+			<li Class="Moyo2.ModExtension">
 				<deepblueDrugEffectsSettings>
 					<isDeepblueDrug>true</isDeepblueDrug>
 				</deepblueDrugEffectsSettings>
@@ -475,7 +475,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="Moyo2.Moyo2_ModExtension">
+			<li Class="Moyo2.ModExtension">
 				<deepblueDrugEffectsSettings>
 					<isDeepblueDrug>true</isDeepblueDrug>
 				</deepblueDrugEffectsSettings>

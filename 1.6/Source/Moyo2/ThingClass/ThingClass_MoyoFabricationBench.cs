@@ -6,24 +6,21 @@
         {
             var compAffectedByFacilities = this.TryGetComp<CompAffectedByFacilities>();
 
-            if (compAffectedByFacilities is null) return;
-
-            for (int i = 0; i < compAffectedByFacilities.LinkedFacilitiesListForReading.Count; i++)
+            foreach (Thing linkable in compAffectedByFacilities?.LinkedFacilitiesListForReading)
             {
-                Thing linkable = compAffectedByFacilities.LinkedFacilitiesListForReading[i];
-                if (linkable.def.selectable == false)
-                {
-                    if (linkable.def.Minifiable)
-                    {
-                        Thing minifiedLinkable = linkable.TryMakeMinified();
-                        GenSpawn.Spawn(minifiedLinkable, Position, Map);
-                    }
-                    else
-                    {
-                        linkable.Destroy(DestroyMode.Refund);
-                    }
-                }
-            }
+				if (linkable.def.selectable == false)
+				{
+					if (linkable.def.Minifiable)
+					{
+						Thing minifiedLinkable = linkable.TryMakeMinified();
+						GenSpawn.Spawn(minifiedLinkable, Position, Map);
+					}
+					else
+					{
+						linkable.Destroy(DestroyMode.Refund);
+					}
+				}
+			}
             base.DeSpawn(mode);
         }
     }

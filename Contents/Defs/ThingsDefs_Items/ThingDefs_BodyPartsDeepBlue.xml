@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- 모요 간단한 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
@@ -62,6 +62,19 @@
 		<techHediffsTags>
 			<li>DeepblueCrude</li>
 		</techHediffsTags>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUsableImplant</compClass>
+				<useJob>Moyo2_InstallExtractor</useJob>
+				<useLabel>Install {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffectInstallImplant">
+				<compClass>CompUseEffect_InstallImplant</compClass>
+				<hediffDef>Moyo2_DeepBlueExtracter_Crude</hediffDef>
+				<bodyPart>Torso</bodyPart>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- 모요 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
@@ -98,7 +111,7 @@
 		<stages>
 			<li>
 				<label>itchy attachment</label>
-				<description>Its bit of a nusiance but I can't ask for more.</description>
+				<description>Its bit of a nuisance but I can't ask for more.</description>
 				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 		</stages>
@@ -166,7 +179,7 @@
 			<researchPrerequisite>Moyo2_Abysstech_DeepblueSynthesis</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>Moyo2_FabricationBench</li>
-			</recipeUsers>			
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<Mass>1</Mass>
@@ -177,72 +190,72 @@
 	</ThingDef>
 	<!-- 블루버스터 수확기 -->
 	<!-- <ThingDef ParentName="BodyPartProstheticMakeableBase"> -->
-		<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
-		<!-- <label>blueburster deepblue harvester</label> -->
-		<!-- <description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
-		<!-- <techLevel>Industrial</techLevel> -->
-		<!-- <costList> -->
-			<!-- <Steel>5</Steel> -->
-			<!-- <ComponentIndustrial>3</ComponentIndustrial> -->
-		<!-- </costList> -->
-		<!-- <recipeMaker> -->
-			<!-- <researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite> -->
-			<!-- <recipeUsers Inherit="False"> -->
-				<!-- <li>Moyo2_FabricationBench</li> -->
-			<!-- </recipeUsers>			 -->
-		<!-- </recipeMaker> -->
-		<!-- <statBases> -->
-			<!-- <Mass>1</Mass> -->
-		<!-- </statBases> -->
-		<!-- <techHediffsTags> -->
-			<!-- <li>DeepblueSimple</li> -->
-		<!-- </techHediffsTags> -->
+	<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
+	<!-- <label>blueburster deepblue harvester</label> -->
+	<!-- <description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
+	<!-- <techLevel>Industrial</techLevel> -->
+	<!-- <costList> -->
+	<!-- <Steel>5</Steel> -->
+	<!-- <ComponentIndustrial>3</ComponentIndustrial> -->
+	<!-- </costList> -->
+	<!-- <recipeMaker> -->
+	<!-- <researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite> -->
+	<!-- <recipeUsers Inherit="False"> -->
+	<!-- <li>Moyo2_FabricationBench</li> -->
+	<!-- </recipeUsers>			 -->
+	<!-- </recipeMaker> -->
+	<!-- <statBases> -->
+	<!-- <Mass>1</Mass> -->
+	<!-- </statBases> -->
+	<!-- <techHediffsTags> -->
+	<!-- <li>DeepblueSimple</li> -->
+	<!-- </techHediffsTags> -->
 	<!-- </ThingDef> -->
 	<!-- <HediffDef ParentName="ImplantHediffBase"> -->
-		<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
-		<!-- <label>blueburster deepblue harvester</label> -->
-		<!-- <labelNoun>a deepblue extracter</labelNoun> -->
-		<!-- <description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
-		<!-- <descriptionHyperlinks> -->
-			<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
-		<!-- </descriptionHyperlinks> -->
-		<!-- <spawnThingOnRemoved>DeepBlueExtracter_Blueburst</spawnThingOnRemoved> -->
-		<!-- <stages> -->
-			<!-- <li> -->
-				<!-- <painOffset>0.3</painOffset> -->
-				<!-- <statOffsets> -->
-					<!-- <DeepblueStatSpeed>1</DeepblueStatSpeed> -->
-					<!-- <DeepblueStat>0.5</DeepblueStat> -->
-				<!-- </statOffsets> -->
-				<!-- <capMods> -->
-					<!-- <li> -->
-						<!-- <capacity>BloodPumping</capacity> -->
-						<!-- <offset>0.15</offset> -->
-					<!-- </li> -->
-				<!-- </capMods> -->
-			<!-- </li> -->
-		<!-- </stages> -->
-		<!-- <tags> -->
-			<!-- <li>Moyo2_DeepBlueExtracter</li> -->
-		<!-- </tags> -->
+	<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
+	<!-- <label>blueburster deepblue harvester</label> -->
+	<!-- <labelNoun>a deepblue extracter</labelNoun> -->
+	<!-- <description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
+	<!-- <descriptionHyperlinks> -->
+	<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
+	<!-- </descriptionHyperlinks> -->
+	<!-- <spawnThingOnRemoved>DeepBlueExtracter_Blueburst</spawnThingOnRemoved> -->
+	<!-- <stages> -->
+	<!-- <li> -->
+	<!-- <painOffset>0.3</painOffset> -->
+	<!-- <statOffsets> -->
+	<!-- <DeepblueStatSpeed>1</DeepblueStatSpeed> -->
+	<!-- <DeepblueStat>0.5</DeepblueStat> -->
+	<!-- </statOffsets> -->
+	<!-- <capMods> -->
+	<!-- <li> -->
+	<!-- <capacity>BloodPumping</capacity> -->
+	<!-- <offset>0.15</offset> -->
+	<!-- </li> -->
+	<!-- </capMods> -->
+	<!-- </li> -->
+	<!-- </stages> -->
+	<!-- <tags> -->
+	<!-- <li>Moyo2_DeepBlueExtracter</li> -->
+	<!-- </tags> -->
 	<!-- </HediffDef> -->
 	<!-- <ThoughtDef> -->
-		<!-- <defName>Thought_DeepBlueExtracter_Blueburst</defName> -->
-		<!-- <workerClass>ThoughtWorker_Hediff</workerClass> -->
-		<!-- <hediff>DeepBlueExtracter_Blueburst</hediff> -->
-		<!-- <validWhileDespawned>true</validWhileDespawned> -->
-		<!-- <nullifyingTraits> -->
-			<!-- <li>Masochist</li> -->
-		<!-- </nullifyingTraits> -->
-		<!-- <nullifyingPrecepts> -->
-		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li> -->
-		<!-- </nullifyingPrecepts> -->
-		<!-- <stages> -->
-			<!-- <li> -->
-				<!-- <label>itchy attachment</label> -->
-				<!-- <description>Its bit of a nusiance but I can't ask for more.</description> -->
-				<!-- <baseMoodEffect>-10</baseMoodEffect> -->
-			<!-- </li> -->
-		<!-- </stages> -->
+	<!-- <defName>Thought_DeepBlueExtracter_Blueburst</defName> -->
+	<!-- <workerClass>ThoughtWorker_Hediff</workerClass> -->
+	<!-- <hediff>DeepBlueExtracter_Blueburst</hediff> -->
+	<!-- <validWhileDespawned>true</validWhileDespawned> -->
+	<!-- <nullifyingTraits> -->
+	<!-- <li>Masochist</li> -->
+	<!-- </nullifyingTraits> -->
+	<!-- <nullifyingPrecepts> -->
+	<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li> -->
+	<!-- </nullifyingPrecepts> -->
+	<!-- <stages> -->
+	<!-- <li> -->
+	<!-- <label>itchy attachment</label> -->
+	<!-- <description>Its bit of a nusiance but I can't ask for more.</description> -->
+	<!-- <baseMoodEffect>-10</baseMoodEffect> -->
+	<!-- </li> -->
+	<!-- </stages> -->
 	<!-- </ThoughtDef> -->
 </Defs>

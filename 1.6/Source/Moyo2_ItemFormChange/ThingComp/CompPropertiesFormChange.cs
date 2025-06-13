@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Verse;
 
 namespace Moyo2_ItemFormChange
@@ -15,6 +16,6 @@ namespace Moyo2_ItemFormChange
 		public bool onlyShowWhenDrafted;
 		public TransformData revertData;
 		public List<TransformData> transformDatas = [];
-		public List<ThingComp> sharedComps = [];
+		public List<Type> sharedComps = [];
 	}
 }
