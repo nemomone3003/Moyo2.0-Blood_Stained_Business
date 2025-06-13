@@ -74,6 +74,7 @@
 				<bodyPart>Torso</bodyPart>
 				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
 			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
 		</comps>
 	</ThingDef>
 	<!-- 모요 딥블루 추출기 -->
@@ -137,6 +138,20 @@
 		<techHediffsTags>
 			<li>DeepblueSimple</li>
 		</techHediffsTags>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUsableImplant</compClass>
+				<useJob>Moyo2_InstallExtractor</useJob>
+				<useLabel>Install {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffectInstallImplant">
+				<compClass>CompUseEffect_InstallImplant</compClass>
+				<hediffDef>Moyo2_DeepBlueExtracter</hediffDef>
+				<bodyPart>Torso</bodyPart>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+		</comps>
 	</ThingDef>
 	<!-- 어비스테크 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
@@ -187,6 +202,20 @@
 		<techHediffsTags>
 			<li>DeepblueSimple</li>
 		</techHediffsTags>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUsableImplant</compClass>
+				<useJob>Moyo2_InstallExtractor</useJob>
+				<useLabel>Install {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffectInstallImplant">
+				<compClass>CompUseEffect_InstallImplant</compClass>
+				<hediffDef>Moyo2_DeepBlueExtracter_Abysstech</hediffDef>
+				<bodyPart>Torso</bodyPart>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+		</comps>
 	</ThingDef>
 	<!-- 블루버스터 수확기 -->
 	<!-- <ThingDef ParentName="BodyPartProstheticMakeableBase"> -->
