@@ -8,8 +8,8 @@
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Bullet</damageDef>
-			<speed>100</speed>
+			<damageDef>Moyo2_Damage_LMRBolt</damageDef>
+			<speed>85</speed>
 		</projectile>
 	</ThingDef>
 
@@ -39,7 +39,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>90</speed>
+			<speed>75</speed>
 			<damageAmountBase>90.5</damageAmountBase>
 			<armorPenetrationSharp>300</armorPenetrationSharp>
 			<armorPenetrationBlunt>150</armorPenetrationBlunt>

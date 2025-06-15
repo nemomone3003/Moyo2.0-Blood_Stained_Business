@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef Name="Moyo2_MetalPileProjectile_Base" ParentName="BaseBulletCE" Abstract="true">
+        <graphicData>
+            <texPath>Weapon/MoyoSpear</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.0,1.0)</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Moyo2_Damage_MoyoHarpoon</damageDef>
+            <speed>40</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="Moyo2_MetalPileProjectile_Base">
+        <defName>Moyo2_Projectile_MetalPile</defName>
+        <label>metal pile</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>26</damageAmountBase>
+            <armorPenetrationSharp>9</armorPenetrationSharp>
+            <armorPenetrationBlunt>259</armorPenetrationBlunt>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="Moyo2_MetalPileProjectile_Base">
+        <defName>Moyo2_Projectile_HeavyMetalPile</defName>
+        <label>heavy metal pile</label>
+        <graphicData>
+            <texPath>Weapon/MoyoHarpoon</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>32</damageAmountBase>
+            <armorPenetrationSharp>18</armorPenetrationSharp>
+            <armorPenetrationBlunt>765</armorPenetrationBlunt>
+        </projectile>
+    </ThingDef>
+</Defs>

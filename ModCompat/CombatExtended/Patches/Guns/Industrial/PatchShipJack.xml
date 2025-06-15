@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>Moyo2_HarpoonGun</defName>
+        <statBases>
+            <Mass>10.00</Mass>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.3</ShotSpread>
+            <SwayFactor>3.01</SwayFactor>
+            <Bulk>13.50</Bulk>
+        </statBases>
+        <Properties>
+            <recoilAmount>9.44</recoilAmount>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Moyo2_Projectile_HeavyMetalPile</defaultProjectile>
+            <warmupTime>2.6</warmupTime>
+            <range>13</range>
+            <soundCast>Industrial_HarpoonGun</soundCast>
+            <soundCastTail>GunTail_Light</soundCastTail>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>1</magazineSize>
+            <reloadTime>3.2</reloadTime>
+            <ammoSet>Moyo2_AmmoSet_HeavyMetalPile</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>
+    </Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_HarpoonGun"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>barrel</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>5</power>
+                    <cooldownTime>2.02</cooldownTime>
+                    <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>pile</label>
+                    <capacities>
+                        <li>Stab</li>
+                    </capacities>
+                    <power>75</power>
+                    <cooldownTime>3.3</cooldownTime>
+                    <armorPenetrationSharp>18</armorPenetrationSharp>
+                    <armorPenetrationBlunt>765</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+    
+</Patch>

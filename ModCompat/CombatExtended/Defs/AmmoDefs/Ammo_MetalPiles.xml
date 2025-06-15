@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CombatExtended.AmmoDef Name="Moyo2_MetalPileBase" ParentName="HeavyAmmoBase" Abstract="true">
+        <graphicData>
+            <texPath>Things/Ammo/Railgun/HighCaliber</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.97</MarketValue>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableTrade</li>
+            <li>CE_AutoEnableCrafting_FabricationBench</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Moyo2_Category_MetalPiles</li>
+        </thingCategories>
+        <stackLimit>300</stackLimit>
+        <ammoClass>Moyo2_AmmoCategory_MetalPiles</ammoClass>
+    </CombatExtended.AmmoDef>
+
+    <!-- Used by spearjack -->
+    <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
+        <defName>Moyo2_Ammo_MetalPile</defName>
+        <label>metal pile</label>
+        <description>Metal piles used in spearjacks.</description>
+        <statBases>
+            <Mass>0.55</Mass>
+            <Bulk>0.06</Bulk>
+        </statBases>
+    </CombatExtended.AmmoDef>
+
+    <!-- Used by shipjack -->
+    <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
+        <defName>Moyo2_Ammo_HeavyMetalPile</defName>
+        <label>heavy metal pile</label>
+        <description>Heavy metal piles used in shipjacks.</description>
+        <statBases>
+            <Mass>0.85</Mass>
+            <Bulk>0.12</Bulk>
+        </statBases>
+    </CombatExtended.AmmoDef>
+
+</Defs>

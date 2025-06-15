@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Moyo2_AmmoCategory_MetalPiles</defName>
+        <label>Metal piles</label>
+        <labelShort>Piles</labelShort>
+        <description>Metal piles for demolition purposes.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+</Defs>

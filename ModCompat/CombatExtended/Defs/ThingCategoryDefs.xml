@@ -8,4 +8,11 @@
 		<iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
 	</ThingCategoryDef>
 
+	<ThingCategoryDef>
+		<defName>Moyo2_Category_MetalPiles</defName>
+		<label>Metal Piles</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+	</ThingCategoryDef>
+
 </Defs>

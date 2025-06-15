@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeMoyo2_Ammo_MetalPile</defName>
+        <label>make metal pile x60</label>
+        <description>Craft 60 metal piles.</description>
+        <jobString>Making x60 metal piles.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Moyo2_Ammo_MetalPile>60</Moyo2_Ammo_MetalPile>
+        </products>
+        <workAmount>5000</workAmount>
+        <researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Moyo2_FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeMoyo2_Ammo_HeavyMetalPile</defName>
+        <label>make heayv metal pile x30</label>
+        <description>Craft 30 heavy metal piles.</description>
+        <jobString>Making x30 heavy metal piles.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Moyo2_Ammo_HeavyMetalPile>30</Moyo2_Ammo_HeavyMetalPile>
+        </products>
+        <workAmount>10000</workAmount>
+        <researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Moyo2_FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>
