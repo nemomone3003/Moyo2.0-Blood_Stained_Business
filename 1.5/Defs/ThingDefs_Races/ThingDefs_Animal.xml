@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Moyo2_Beludog</defName>
+		<label>beludog</label>
+		<description>고래의 특징을 지닌 대형 포유류입니다. 유전자 조작을 통해 애완용 상품으로 개발되어 사람에게 매우 친근합니다. 두꺼운 지방층으로 인해 추위에 매우 강하며 머리 위의 혹은 매우 부드럽습니다. \n\n상단에 구성시 탑승하여 상단의 이동속도를 조금 늘릴 수 있습니다.</description>
+		<statBases>
+			<MoveSpeed>5.0</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>9.7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>9.7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>14.2</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<animalType>Canine</animalType>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<petness>1</petness>
+			<wildness>0</wildness>
+			<baseBodySize>2.1</baseBodySize>
+			<baseHungerRate>0.8</baseHungerRate>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Dog</leatherDef>
+			<nameOnTameChance>1</nameOnTameChance>
+			<useMeatFrom>Husky</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<packAnimal>true</packAnimal>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<soundEating>PredatorSmall_Eat</soundEating>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(2.5, 0.7)</li>
+					<li>(3, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>35</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Dog_Injured</soundWounded>
+					<soundDeath>Pawn_Dog_Death</soundDeath>
+					<soundCall>Pawn_Dog_Call</soundCall>
+					<soundAngry>Pawn_Dog_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.02, 0, 0.25)</li>
+				<li>(0.24, 0, 0.11)</li>
+				<li>(0.02, 0, -0.16)</li>
+				<li>(-0.24, 0, 0.11)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>Moyo2_AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Moyo2_Beludog</defName>
+		<label>beludog</label>
+		<labelPlural>beludogs</labelPlural>
+		<race>Moyo2_Beludog</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>beludog puppy</label>
+				<labelPlural>beludog puppies</labelPlural>
+				<bodyGraphicData>
+					<texPath>Pawn/Beludog/Beludog</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Beludog/Beludog</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Beludog/Beludog</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>Moyo2_DeserterScenario</defName>
+		<label>Lighthouse deserters</label>
+		<description>Three moyos who decided to escape the lighthouse for their own reasons. Through some means, they obtained a hovercraft and managed to break through the lighthouse's blockade, evading pirates and raiders on both land and sea to finally reach the mainland.</description>
+		<scenario>
+			<summary>Three moyos fled from the lighthouse made landfall. Standard moyo scenario.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Moyo2_PlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The broken hovercraft comes to a halt with one final jolt. It had protected you from attacks since your escape from the lighthouse, but accumulated damage has caused it to sink here. You can no longer rely on this hovercraft for transportation.\n\nYou must now figure out how to survive on land. At the very least, looks like you can salvage useful items from the wreckage.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Moyo2_HoverCraftWreak</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo2_EGHarness</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo2_EGJacket</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo2_EGHelmet</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo2_Wrench</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo2_Knife</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Moyo2_NailGun</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DBPearl_Joy</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DBPearl_Crystal</thingDef>
+					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DBPearl_Thinker</thingDef>
+					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DBBooster_Hydra</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DBBooster_Orca</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DBBooster_Medi</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>520</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

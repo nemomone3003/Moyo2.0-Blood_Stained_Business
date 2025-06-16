@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_LMRSlugB</defName>
+		<label>laminar slug</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet1</texPath>
+			<graphicClass>Graphic_Single_AgeSecs</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_LMRFireB</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_LMRSlugBOver</defName>
+		<label>laminar slug(overcharged)</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>0.9</explosionRadius>
+			<damageDef>Moyo2_Damage_LMRBolt</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>0.38</armorPenetrationBase>
+			<stoppingPower>1.3</stoppingPower>
+			<speed>120</speed>
+			<screenShakeFactor>0.2</screenShakeFactor>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_LMRFireB</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 라미너 권총 -->
+	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo2_LMRPistol" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Laminar_Activate</soundInteract>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo2_Abyssteel>35</Moyo2_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRPistol">
+		<defName>Moyo2_LMRPistol</defName>
+		<label>laminar handcannon</label>
+		<description>A large-caliber handgun that uses laminar field to guide projectiles, suitable for close combat. It can be overcharged, increasing its damage and improving long-range capabilities but causes a brief overload.\n\nIt is easy to carry compared to other firearms of the lighthouse. Being able to penetrate through armored plates of diving suits when overcharged, its popular among both police officers and criminals.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Pistol</texPath>
+		</graphicData>
+		<!-- - -->
+		<statBases>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.32</AccuracyMedium>
+			<AccuracyLong>0.11</AccuracyLong>
+			<RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRSlugB</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>26.5</range>
+				<soundCast>Laminar_Rifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<transformData>
+					<li>
+						<label>overcharge</label>
+						<description>initiate overcharge.</description>
+						<thingDef>Moyo2_LMRPistolOver</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+						<soundOnTransform>Laminar_Activate</soundOnTransform>
+					</li>
+				</transformData>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>Moyo2_GunLMR</li>
+			<li>Moyo2_PistolLMR</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRPistol">
+		<defName>Moyo2_LMRPistolOver</defName>
+		<label>laminar handcannon(overcharged)</label>
+		<description>An overcharged laminar handcannon. Has improved firepower and range but gets overloaded after a short period.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_PistolOver</texPath>
+		</graphicData>
+		<!-- - -->
+		<statBases>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>	
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRSlugBOver</defaultProjectile>
+				<forcedMissRadius>0.01</forcedMissRadius>
+				<warmupTime>0.9</warmupTime>
+				<range>31.9</range>
+				<soundAiming>Laminar_Chargeup2</soundAiming>
+				<soundCast>Laminar_Pistol</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>overload</label>
+					<description>gun system overloading.</description>
+					<thingDef>Moyo2_LMRPistolDown</thingDef>
+					<revertAfterTicks>900</revertAfterTicks>
+					<soundOnTransform>Laminar_Activate</soundOnTransform>
+				</revertData>
+				<transformData>
+					<li>
+						<label>quick discharge</label>
+						<description>disable overcharge.</description>
+						<thingDef>Moyo2_LMRPistolDown</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+						<soundOnTransform>Laminar_Activate</soundOnTransform>
+					</li>
+				</transformData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRPistol">
+		<defName>Moyo2_LMRPistolDown</defName>
+		<label>laminar handcannon(overloaded)</label>
+		<description>An overloaded laminar handcannon. Firing is temporarily disabled until the system is restored. It's an expensive club in the meantime.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_PistolDown</texPath>
+		</graphicData>
+		<!-- - -->
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>	
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>cooling</label>
+					<description>gun system cooling.</description>
+					<thingDef>Moyo2_LMRPistol</thingDef>
+					<revertAfterTicks>1500</revertAfterTicks>
+					<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+					<soundOnTransform>Laminar_Activate</soundOnTransform>
+				</revertData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>	
+</Defs>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_LMRSlugC</defName>
+		<label>laminar slug</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet1</texPath>
+			<graphicClass>Graphic_Single_AgeSecs</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_LMRFireC</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 라미너 발리스타 -->
+	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo_LMRAutoCannon" Abstract="True">
+		<graphicData>
+			<texPath>Weapon/LMR_AutoCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Laminar_Activate2</soundInteract>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>9.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="Moyo_LMRAutoCannon">
+		<defName>Moyo2_LMRAutoCannon</defName>
+		<label>laminar autocannon</label>
+		<description>A large laminar rifle designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When overcharged, it fires even faster but causes a brief overload.\n\nResearch aimed at increasing the firing rate of laminar rifle was conducted, developing a method to reduce the laminar field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_AutoCannon</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRSlugC</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>				
+				<range>31.5</range>
+				<soundCast>Laminar_Rifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<transformData>
+					<li>
+						<label>overcharge</label>
+						<description>initiate overcharge.</description>
+						<thingDef>Moyo2_LMRAutoCannonOver</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+						<soundOnTransform>Laminar_Activate2</soundOnTransform>
+					</li>
+				</transformData>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>Moyo2_GunLMR</li>
+			<li>Moyo2_AutocannonLMR</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="Moyo_LMRAutoCannon">
+		<defName>Moyo2_LMRAutoCannonOver</defName>
+		<label>laminar autocannon(overcharged)</label>
+		<description>An overcharged laminar autocannon. Has improved firerate but gets overloaded after a short period.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_AutoCannonOver</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.38</AccuracyTouch>
+			<AccuracyShort>0.51</AccuracyShort>
+			<AccuracyMedium>0.37</AccuracyMedium>
+			<AccuracyLong>0.19</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>	
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRSlugC</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>						
+				<range>31.5</range>
+				<soundCast>Laminar_Rifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps> 
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>overload</label>
+					<description>gun system overloading.</description>
+					<thingDef>Moyo2_LMRAutoCannonDown</thingDef>
+					<revertAfterTicks>700</revertAfterTicks>
+					<soundOnTransform>Laminar_Activate2</soundOnTransform>
+				</revertData>				
+				<transformData>
+					<li>
+						<label>quick discharge</label>
+						<description>disable overcharge.</description>
+						<thingDef>Moyo2_LMRAutoCannonDown</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+						<soundOnTransform>Laminar_Activate2</soundOnTransform>
+					</li>
+				</transformData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="Moyo_LMRAutoCannon">
+		<defName>Moyo2_LMRAutoCannonDown</defName>
+		<label>laminar autocannon(overloaded)</label>
+		<description>An overloaded laminar autocannon. Firing is temporarily disabled until the system is restored. It's an expensive pillar in the meantime.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_AutoCannonDown</texPath>
+		</graphicData>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>		
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>cooling</label>
+					<description>gun system cooling.</description>
+					<thingDef>Moyo2_LMRAutoCannon</thingDef>
+					<revertAfterTicks>1200</revertAfterTicks>
+					<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+					<soundOnTransform>Laminar_Activate2</soundOnTransform>
+				</revertData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>	
+</Defs>

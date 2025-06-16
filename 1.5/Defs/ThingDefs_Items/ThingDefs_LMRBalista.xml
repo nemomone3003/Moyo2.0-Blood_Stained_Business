@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!--모요 볼트 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_LMRBolt</defName>
+		<label>heavy laminar slug</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>0.9</explosionRadius>
+			<damageDef>Moyo2_Damage_LMRBoltDemolish</damageDef>
+			<damageAmountBase>36</damageAmountBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>120</speed>
+			<screenShakeFactor>0.3</screenShakeFactor>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_LMRFireC</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_LMRBoltOver</defName>
+		<label>heavy laminar slug(overcharged)</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<explosionRadius>2.9</explosionRadius>
+			<damageDef>Moyo2_Damage_LMRBoltDemolish</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>150</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_LMRFireC</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 라미너 발리스타 -->
+	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo2_LMRBalista" Abstract="True">
+		<graphicData>
+			<texPath>Weapon/LMR_Balista</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Laminar_Activate2</soundInteract>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>9.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRBalista">
+		<defName>Moyo2_LMRBalista</defName>
+		<label>laminar balista</label>
+		<description>A large laminar rifle designed to reliably penetrate the armored plates of small submarines and deep-sea diving suits. When overcharged, it fires a powerful explosive shot but causes a brief overload..\n\nThis weapon has been widely used against targets larger than a person, sending numerous threats, from formidable sea creatures to unauthorized submarines, to the ocean floor.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Balista</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Laminar_Activate2</soundInteract>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>9.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRBolt</defaultProjectile>
+				<forcedMissRadius>0.01</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>40</range>
+				<soundAiming>Laminar_Chargeup2</soundAiming>
+				<soundCast>Laminar_Balista</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<transformData>
+					<li>
+						<label>overcharge</label>
+						<description>initiate overcharge.</description>
+						<thingDef>Moyo2_LMRBalistaOver</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+						<soundOnTransform>Laminar_Activate2</soundOnTransform>
+					</li>
+				</transformData>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>Moyo2_GunLMR</li>
+			<li>Moyo2_BalistaLMR</li>
+		</weaponTags>			
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRBalista">
+		<defName>Moyo2_LMRBalistaOver</defName>
+		<label>laminar balista(overcharged)</label>
+		<description>An overcharged laminar balista. Shoots powerful explosive shot but gets overloaded after a short period.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_BalistaOver</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRBoltOver</defaultProjectile>
+				<forcedMissRadius>0.01</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<range>47.5</range>
+				<soundAiming>Laminar_Chargeup2</soundAiming>
+				<soundCast>Laminar_Balista</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<minRange>5.9</minRange>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>overload</label>
+					<description>gun system overloading.</description>
+					<thingDef>Moyo2_LMRBalistaDown</thingDef>
+					<revertAfterTicks>450</revertAfterTicks>
+					<soundOnTransform>Laminar_Activate2</soundOnTransform>
+				</revertData>				
+				<transformData>
+					<li>
+						<label>quick discharge</label>
+						<description>disable overcharge.</description>
+						<thingDef>Moyo2_LMRBalistaDown</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+						<soundOnTransform>Laminar_Activate2</soundOnTransform>
+					</li>
+				</transformData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRBalista">
+		<defName>Moyo2_LMRBalistaDown</defName>
+		<label>laminar balista(overloaded)</label>
+		<description>An overloaded laminar balista. Firing is temporarily disabled until the system is restored. It's an expensive pillar in the meantime.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_BalistaDown</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker Inherit="False"></recipeMaker>
+		<thingCategories Inherit="False"></thingCategories>
+		<tradeTags Inherit="False"></tradeTags>			
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>cooling</label>
+					<description>gun system cooling.</description>
+					<thingDef>Moyo2_LMRBalista</thingDef>
+					<revertAfterTicks>1800</revertAfterTicks>
+					<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
+					<soundOnTransform>Laminar_Activate2</soundOnTransform>
+				</revertData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>	
+</Defs>

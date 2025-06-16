@@ -14,7 +14,7 @@ namespace Moyo2
         [HarmonyPostfix]
         static IEnumerable<StatDrawEntry> AddDeepblueDrugsEffects(IEnumerable<StatDrawEntry> statDrawEntries, HediffDef __instance)
         {
-            var modExt = __instance.GetModExtension<Moyo2_ModExtension>();
+            var modExt = __instance.GetModExtension<ModExtension>();
 
             if (modExt is not null && modExt.deepblueDrugEffectsSettings.isDeepblueDrug && __instance.stages.Count > 0)
             {
