@@ -24,7 +24,7 @@
         <products>
             <Moyo2_Ammo_MetalPile>60</Moyo2_Ammo_MetalPile>
         </products>
-        <workAmount>5000</workAmount>
+        <workAmount>8000</workAmount>
         <researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
         <recipeUsers Inherit="False">
             <li>Moyo2_FabricationBench</li>
@@ -54,7 +54,7 @@
         <products>
             <Moyo2_Ammo_HeavyMetalPile>30</Moyo2_Ammo_HeavyMetalPile>
         </products>
-        <workAmount>10000</workAmount>
+        <workAmount>4000</workAmount>
         <researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
         <recipeUsers Inherit="False">
             <li>Moyo2_FabricationBench</li>

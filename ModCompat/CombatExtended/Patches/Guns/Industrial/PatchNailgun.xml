@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>Moyo2_NailGun</defName>
+        <statBases>
+            <Mass>1.20</Mass>
+            <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+            <SightsEfficiency>0.7</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
+            <SwayFactor>1.07</SwayFactor>
+            <Bulk>2.00</Bulk>
+        </statBases>
+        <Properties>
+            <recoilAmount>1.40</recoilAmount>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_Nail_HV</defaultProjectile>
+            <warmupTime>1.3</warmupTime>
+            <range>14</range>
+            <burstShotCount>5</burstShotCount>
+            <ticksBetweenBurstShots>23</ticksBetweenBurstShots>
+            <soundCast>Industrial_Nailgun</soundCast>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>20</magazineSize>
+            <reloadTime>4</reloadTime>
+            <ammoSet>AmmoSet_Nail_HV</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aiAimMode>Snapshot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_BROOM</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_NailGun"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>grip</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>2</power>
+                    <cooldownTime>1.54</cooldownTime>
+                    <chanceFactor>1.5</chanceFactor>
+                    <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>muzzle</label>
+                    <capacities>
+                        <li>Poke</li>
+                    </capacities>
+                    <power>2</power>
+                    <cooldownTime>1.54</cooldownTime>
+                    <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+</Patch>
