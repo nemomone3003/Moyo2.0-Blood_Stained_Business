@@ -10,7 +10,7 @@
 
 	<ThingCategoryDef>
 		<defName>Moyo2_Category_MetalPiles</defName>
-		<label>Metal Piles</label>
+		<label>Steel piless</label>
 		<parent>AmmoAdvanced</parent>
 		<iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
 	</ThingCategoryDef>

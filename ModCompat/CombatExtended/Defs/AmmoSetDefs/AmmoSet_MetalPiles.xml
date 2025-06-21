@@ -4,9 +4,10 @@
     <!-- Used by spearjack -->
     <CombatExtended.AmmoSetDef>
         <defName>Moyo2_AmmoSet_MetalPile</defName>
-        <label>metal pile</label>
+        <label>steel pile</label>
         <ammoTypes>
-            <Moyo2_Ammo_MetalPile>Moyo2_Projectile_MetalPile</Moyo2_Ammo_MetalPile>
+            <Moyo2_Ammo_SteelPile>Moyo2_Projectile_SteelPile</Moyo2_Ammo_SteelPile>
+            <Moyo2_Ammo_AbyssteelPile>Moyo2_Projectile_AbyssteelPile</Moyo2_Ammo_AbyssteelPile>
         </ammoTypes>
         <similarTo>AmmoSet_ChargedRifle</similarTo>
     </CombatExtended.AmmoSetDef>
@@ -14,9 +15,10 @@
     <!-- Used by shipjack -->
     <CombatExtended.AmmoSetDef>
         <defName>Moyo2_AmmoSet_HeavyMetalPile</defName>
-        <label>heavy metal pile</label>
+        <label>heavy steel pile</label>
         <ammoTypes>
-            <Moyo2_Ammo_HeavyMetalPile>Moyo2_Projectile_HeavyMetalPile</Moyo2_Ammo_HeavyMetalPile>
+            <Moyo2_Ammo_HeavySteelPile>Moyo2_Projectile_HeavySteelPile</Moyo2_Ammo_HeavySteelPile>
+            <Moyo2_Ammo_HeavyAbyssteelPile>Moyo2_Projectile_HeavyAbyssteelPile</Moyo2_Ammo_HeavyAbyssteelPile>
         </ammoTypes>
         <similarTo>AmmoSet_ChargedRifle</similarTo>
     </CombatExtended.AmmoSetDef>

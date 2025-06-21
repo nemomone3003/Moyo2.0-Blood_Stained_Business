@@ -4,7 +4,7 @@
     <CombatExtended.AmmoCategoryDef>
 		<defName>Moyo2_AmmoCategory_LaminarSlug</defName>
 		<label>Laminar slug</label>
-		<labelShort>LMR.</labelShort>
+		<labelShort>Laminar slug</labelShort>
 		<description>Slug rounds stabilized by a laminar field.</description>
 	</CombatExtended.AmmoCategoryDef>
 

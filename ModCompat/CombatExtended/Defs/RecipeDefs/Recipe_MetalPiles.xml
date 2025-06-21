@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+    <!-- Steel piles -->
     <RecipeDef ParentName="AmmoRecipeBase">
-        <defName>MakeMoyo2_Ammo_MetalPile</defName>
-        <label>make metal pile x60</label>
-        <description>Craft 60 metal piles.</description>
-        <jobString>Making x60 metal piles.</jobString>
+        <defName>MakeMoyo2_Ammo_SteelPile</defName>
+        <label>make steel pile x60</label>
+        <description>Craft 60 steel piles.</description>
+        <jobString>Making x60 steel piles.</jobString>
         <ingredients>
             <li>
                 <filter>
@@ -22,7 +23,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Moyo2_Ammo_MetalPile>60</Moyo2_Ammo_MetalPile>
+            <Moyo2_Ammo_SteelPile>60</Moyo2_Ammo_SteelPile>
         </products>
         <workAmount>8000</workAmount>
         <researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
@@ -32,10 +33,10 @@
     </RecipeDef>
 
     <RecipeDef ParentName="AmmoRecipeBase">
-        <defName>MakeMoyo2_Ammo_HeavyMetalPile</defName>
-        <label>make heayv metal pile x30</label>
-        <description>Craft 30 heavy metal piles.</description>
-        <jobString>Making x30 heavy metal piles.</jobString>
+        <defName>MakeMoyo2_Ammo_HeavySteelPile</defName>
+        <label>make heayv steel pile x30</label>
+        <description>Craft 30 heavy steel piles.</description>
+        <jobString>Making x30 heavy steel piles.</jobString>
         <ingredients>
             <li>
                 <filter>
@@ -52,7 +53,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Moyo2_Ammo_HeavyMetalPile>30</Moyo2_Ammo_HeavyMetalPile>
+            <Moyo2_Ammo_HeavySteelPile>30</Moyo2_Ammo_HeavySteelPile>
         </products>
         <workAmount>4000</workAmount>
         <researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
@@ -61,4 +62,64 @@
         </recipeUsers>
     </RecipeDef>
 
+    <!-- Abyssteel piles -->
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeMoyo2_Ammo_AbyssteelPile</defName>
+        <label>make abyssteel pile x60</label>
+        <description>Craft 60 abyssteel piles.</description>
+        <jobString>Making x60 abyssteel piles.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Moyo2_Abyssteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Moyo2_Abyssteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Moyo2_Ammo_AbyssteelPile>60</Moyo2_Ammo_AbyssteelPile>
+        </products>
+        <workAmount>8000</workAmount>
+        <researchPrerequisite>Moyo2_Abysstech_Foundry</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Moyo2_FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeMoyo2_Ammo_HeavyAbyssteelPile</defName>
+        <label>make heayv abyssteel pile x30</label>
+        <description>Craft 30 heavy abyssteel piles.</description>
+        <jobString>Making x30 heavy abyssteel piles.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Moyo2_Abyssteel</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Moyo2_Abyssteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Moyo2_Ammo_HeavyAbyssteelPile>30</Moyo2_Ammo_HeavyAbyssteelPile>
+        </products>
+        <workAmount>4000</workAmount>
+        <researchPrerequisite>Moyo2_Abysstech_Foundry</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Moyo2_FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
 </Defs>

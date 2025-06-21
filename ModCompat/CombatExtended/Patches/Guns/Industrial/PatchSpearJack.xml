@@ -15,7 +15,7 @@
             <recoilAmount>2.86</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>Moyo2_Projectile_MetalPile</defaultProjectile>
+            <defaultProjectile>Moyo2_Projectile_SteelPile</defaultProjectile>
             <warmupTime>1.1</warmupTime>
             <range>16</range>
             <soundCast>Industrial_SpearGun</soundCast>

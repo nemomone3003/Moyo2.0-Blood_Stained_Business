@@ -13,19 +13,21 @@
         </projectile>
     </ThingDef>
 
+
+    <!-- Steel piles -->
     <ThingDef ParentName="Moyo2_MetalPileProjectile_Base">
-        <defName>Moyo2_Projectile_MetalPile</defName>
-        <label>metal pile</label>
+        <defName>Moyo2_Projectile_SteelPile</defName>
+        <label>steel pile</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageAmountBase>26</damageAmountBase>
             <armorPenetrationSharp>9</armorPenetrationSharp>
-            <armorPenetrationBlunt>259</armorPenetrationBlunt>
+            <armorPenetrationBlunt>154</armorPenetrationBlunt>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="Moyo2_MetalPileProjectile_Base">
-        <defName>Moyo2_Projectile_HeavyMetalPile</defName>
-        <label>heavy metal pile</label>
+        <defName>Moyo2_Projectile_HeavySteelPile</defName>
+        <label>heavy steel pile</label>
         <graphicData>
             <texPath>Weapon/MoyoHarpoon</texPath>
             <drawSize>(2,2)</drawSize>
@@ -33,7 +35,32 @@
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageAmountBase>32</damageAmountBase>
             <armorPenetrationSharp>18</armorPenetrationSharp>
-            <armorPenetrationBlunt>765</armorPenetrationBlunt>
+            <armorPenetrationBlunt>459</armorPenetrationBlunt>
+        </projectile>
+    </ThingDef>
+
+    <!-- Abyssteel piles -->
+    <ThingDef ParentName="Moyo2_MetalPileProjectile_Base">
+        <defName>Moyo2_Projectile_AbyssteelPile</defName>
+        <label>steel pile</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>26</damageAmountBase>
+            <armorPenetrationSharp>18</armorPenetrationSharp>
+            <armorPenetrationBlunt>169</armorPenetrationBlunt>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="Moyo2_MetalPileProjectile_Base">
+        <defName>Moyo2_Projectile_HeavyAbyssteelPile</defName>
+        <label>heavy steel pile</label>
+        <graphicData>
+            <texPath>Weapon/MoyoHarpoon</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>32</damageAmountBase>
+            <armorPenetrationSharp>24</armorPenetrationSharp>
+            <armorPenetrationBlunt>514</armorPenetrationBlunt>
         </projectile>
     </ThingDef>
 </Defs>

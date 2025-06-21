@@ -22,24 +22,43 @@
 
     <!-- Used by spearjack -->
     <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
-        <defName>Moyo2_Ammo_MetalPile</defName>
-        <label>metal pile</label>
-        <description>Metal piles used in spearjacks.</description>
+        <defName>Moyo2_Ammo_SteelPile</defName>
+        <label>steel pile</label>
+        <description>Steel piles used in spearjacks.</description>
         <statBases>
             <Mass>0.55</Mass>
+            <Bulk>0.06</Bulk>
+        </statBases>
+    </CombatExtended.AmmoDef>
+    <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
+        <defName>Moyo2_Ammo_AbyssteelPile</defName>
+        <label>abyssteel pile</label>
+        <description>Abyssteel piles used in spearjacks.</description>
+        <statBases>
+            <Mass>0.715</Mass>
             <Bulk>0.06</Bulk>
         </statBases>
     </CombatExtended.AmmoDef>
 
     <!-- Used by shipjack -->
     <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
-        <defName>Moyo2_Ammo_HeavyMetalPile</defName>
-        <label>heavy metal pile</label>
-        <description>Heavy metal piles used in shipjacks.</description>
+        <defName>Moyo2_Ammo_HeavySteelPile</defName>
+        <label>heavy steel pile</label>
+        <description>Heavy steel piles used in shipjacks.</description>
         <statBases>
             <Mass>0.85</Mass>
             <Bulk>0.12</Bulk>
         </statBases>
     </CombatExtended.AmmoDef>
+    <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
+        <defName>Moyo2_Ammo_HeavyAbyssteelPile</defName>
+        <label>heavy abyssteel pile</label>
+        <description>Heavy abyssteel piles used in shipjacks.</description>
+        <statBases>
+            <Mass>1</Mass>
+            <Bulk>0.12</Bulk>
+        </statBases>
+    </CombatExtended.AmmoDef>
+
 
 </Defs>
