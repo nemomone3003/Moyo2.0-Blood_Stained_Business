@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Saw"]/statBases</xpath>
+        <value>
+            <MeleeCounterParryBonus>0.3</MeleeCounterParryBonus>
+            <Bulk>6.5</Bulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Saw"]/equippedStatOffsets</xpath>
+        <value>
+            <MeleeCritChance>0</MeleeCritChance>
+            <MeleeParryChance>0</MeleeParryChance>
+            <MeleeDodgeChance>0.48</MeleeDodgeChance>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_Saw"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>sawblade</label>
+                    <capacities>
+                        <li>Cut</li>
+                    </capacities>
+                    <power>5</power>
+                    <cooldownTime>0.1</cooldownTime>
+                    <armorPenetrationSharp>1.2</armorPenetrationSharp>
+                    <armorPenetrationBlunt>0</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+
+</Patch>

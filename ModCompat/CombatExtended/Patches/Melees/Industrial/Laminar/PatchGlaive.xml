@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_LMRGlaive"]/statBases</xpath>
+        <value>
+            <MeleeCounterParryBonus>1.52</MeleeCounterParryBonus>
+            <Bulk>8.75</Bulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_LMRGlaive"]</xpath>
+        <value>
+            <equippedStatOffsets>
+                <MeleeCritChance>0.43</MeleeCritChance>
+                <MeleeParryChance>1.53</MeleeParryChance>
+                <MeleeDodgeChance>0.89</MeleeDodgeChance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_LMRGlaive"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>blade</label>
+                    <capacities>
+                        <li>Cut</li>
+                    </capacities>
+                    <power>41</power>
+                    <cooldownTime>3.72</cooldownTime>
+                    <armorPenetrationSharp>18</armorPenetrationSharp>
+                    <armorPenetrationBlunt>2.59</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>point</label>
+                    <capacities>
+                        <li>Stab</li>
+                    </capacities>
+                    <power>24</power>
+                    <cooldownTime>3.72</cooldownTime>
+                    <chanceFactor>0.5</chanceFactor>
+                    <armorPenetrationSharp>9</armorPenetrationSharp>
+                    <armorPenetrationBlunt>1.25</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>handle</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>11</power>
+                    <cooldownTime>2.38</cooldownTime>
+                    <chanceFactor>0.2</chanceFactor>
+                    <armorPenetrationBlunt>4.05</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Wrench"]/statBases</xpath>
+        <value>
+            <Bulk>3.5</Bulk>
+            <MeleeCounterParryBonus>0.4</MeleeCounterParryBonus>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Wrench"]/equippedStatOffsets</xpath>
+        <value>
+            <MeleeCritChance>0.78</MeleeCritChance>
+            <MeleeParryChance>0.37</MeleeParryChance>
+            <MeleeDodgeChance>0.28</MeleeDodgeChance>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_Wrench"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>handle</label>
+                    <capacities>
+                        <li>Poke</li>
+                    </capacities>
+                    <power>7</power>
+                    <cooldownTime>1.84</cooldownTime>
+                    <armorPenetrationBlunt>1.45</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>head</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>19</power>
+                    <cooldownTime>2.61</cooldownTime>
+                    <chanceFactor>1.5</chanceFactor>
+                    <armorPenetrationBlunt>7.605</armorPenetrationBlunt>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+
+    <!-- ========== Ability ========== -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AbilityDef[defName="Moyo2_WrenchThrow"]/verbProperties</xpath>
+        <value>
+            <verbProperties Class="CombatExtended.VerbPropertiesCE">
+                <soundCast>ThrowGrenade</soundCast>
+                <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+                <range>5.5</range>
+                <defaultProjectile>Moyo2_Bullet_WrenchThrow</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <stopBurstWithoutLos>false</stopBurstWithoutLos>
+            </verbProperties>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_Bullet_WrenchThrow"]/projectile</xpath>
+        <value>
+            <thingClass>CombatExtended.BulletCE</thingClass>
+            <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Moyo2_Damage_WrenchThrow</damageDef>
+                <damageAmountBase>19</damageAmountBase>
+                <speed>30</speed>
+                <armorPenetrationSharp>0</armorPenetrationSharp>
+                <armorPenetrationBlunt>7.605</armorPenetrationBlunt>
+                <spinRate>3</spinRate>
+                <secondaryDamage>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5</amount>
+                    </li>
+                </secondaryDamage>
+            </projectile>
+        </value>
+    </Operation>
+
+</Patch>

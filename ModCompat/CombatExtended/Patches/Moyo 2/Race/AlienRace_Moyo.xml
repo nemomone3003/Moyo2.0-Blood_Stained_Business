@@ -25,7 +25,7 @@
 				<RegenValue>5</RegenValue>
 				<MinArmorPct>0.5</MinArmorPct>
 			</li>
-		</value>
+		</value>	
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">

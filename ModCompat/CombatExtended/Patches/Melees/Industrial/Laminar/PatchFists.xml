@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_LMRFist"]/statBases</xpath>
+        <value>
+            <MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
+            <Bulk>4</Bulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_LMRFist"]/equippedStatOffsets</xpath>
+        <value>
+            <MeleeCritChance>0.85</MeleeCritChance>
+            <MeleeParryChance>0.05</MeleeParryChance>
+            <MeleeDodgeChance>0.17</MeleeDodgeChance>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_LMRFist"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>Fist</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>26</power>
+                    <cooldownTime>2.1</cooldownTime>
+                    <armorPenetrationBlunt>72</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>Body</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>26</power>
+                    <cooldownTime>1.9</cooldownTime>
+                    <armorPenetrationBlunt>72</armorPenetrationBlunt>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Knife"]/weaponTags</xpath>
+        <value>
+            <li>CE_OneHandedWeapon</li>
+        </value>
+    </Operation>
+
+</Patch>
