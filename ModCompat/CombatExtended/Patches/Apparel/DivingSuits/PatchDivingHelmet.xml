@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/statBases</xpath>
+        <value>
+            <Bulk>6</Bulk>
+            <WornBulk>2</WornBulk>
+            <NightVisionEfficiency_Apparel>0</NightVisionEfficiency_Apparel> <!-- ask nemo -->
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/statBases/Mass</xpath>
+        <value>
+            <Mass>4.5</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>15.6</ArmorRating_Sharp>
+            <ArmorRating_Electric>0.3</ArmorRating_Electric>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>39</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability> <!-- ask nemo -->
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/apparel/immuneToToxGasExposure</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/apparel</xpath>
+            <value>
+                <immuneToToxGasExposure>true</immuneToToxGasExposure>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]</xpath>
+        <value>
+            <equippedStatOffsets>
+                <SmokeSensitivity>-1</SmokeSensitivity>
+                <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <!-- Ask safa -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+                        <parts>
+                            <li>Eye</li>
+                            <li>Nose</li>
+                            <li>Jaw</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingHelmet"]/apparel/layers</xpath>
+        <value>
+            <layers>
+                <li>OnHead</li>
+                <li>StrappedHead</li>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+</Patch>

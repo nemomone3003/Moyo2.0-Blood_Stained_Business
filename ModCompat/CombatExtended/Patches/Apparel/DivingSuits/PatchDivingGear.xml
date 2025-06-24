@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases</xpath>
+        <value>
+            <Bulk>85</Bulk>
+            <WornBulk>15</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/Mass</xpath>
+        <value>
+            <Mass>40</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>18.9</ArmorRating_Sharp>
+            <ArmorRating_Electric>0.55</ArmorRating_Electric>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>45</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability> <!-- ask nemo -->
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]</xpath>
+        <value>
+            <equippedStatOffsets>
+                <CarryWeight>50</CarryWeight>
+                <CarryBulk>10</CarryBulk>
+                <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/apparel/bodyPartGroups</xpath>
+        <value>
+            <li>Hands</li>
+            <li>Feet</li>
+        </value>
+    </Operation>
+
+    <!-- ask safa -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                        <parts>
+                            <li>Leg</li>
+                            <li>Arm</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                        <parts>
+                            <li>Leg</li>
+                            <li>Arm</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

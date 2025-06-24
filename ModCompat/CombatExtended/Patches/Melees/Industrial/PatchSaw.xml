@@ -5,7 +5,7 @@
         <xpath>Defs/ThingDef[defName="Moyo2_Saw"]/statBases</xpath>
         <value>
             <MeleeCounterParryBonus>0.3</MeleeCounterParryBonus>
-            <Bulk>6.5</Bulk>
+            <Bulk>7.8</Bulk>
         </value>
     </Operation>
 

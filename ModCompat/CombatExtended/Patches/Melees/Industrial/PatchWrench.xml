@@ -38,7 +38,6 @@
                     </capacities>
                     <power>19</power>
                     <cooldownTime>2.61</cooldownTime>
-                    <chanceFactor>1.5</chanceFactor>
                     <armorPenetrationBlunt>7.605</armorPenetrationBlunt>
                 </li>
             </tools>

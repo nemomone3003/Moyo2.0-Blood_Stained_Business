@@ -31,7 +31,7 @@
                     </capacities>
                     <power>41</power>
                     <cooldownTime>3.72</cooldownTime>
-                    <armorPenetrationSharp>18</armorPenetrationSharp>
+                    <armorPenetrationSharp>9</armorPenetrationSharp>
                     <armorPenetrationBlunt>2.59</armorPenetrationBlunt>
                     <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
                 </li>
@@ -42,8 +42,7 @@
                     </capacities>
                     <power>24</power>
                     <cooldownTime>3.72</cooldownTime>
-                    <chanceFactor>0.5</chanceFactor>
-                    <armorPenetrationSharp>9</armorPenetrationSharp>
+                    <armorPenetrationSharp>18</armorPenetrationSharp>
                     <armorPenetrationBlunt>1.25</armorPenetrationBlunt>
                     <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
                 </li>
@@ -54,7 +53,6 @@
                     </capacities>
                     <power>11</power>
                     <cooldownTime>2.38</cooldownTime>
-                    <chanceFactor>0.2</chanceFactor>
                     <armorPenetrationBlunt>4.05</armorPenetrationBlunt>
                     <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
                 </li>

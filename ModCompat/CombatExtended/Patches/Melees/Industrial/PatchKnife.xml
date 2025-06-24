@@ -29,7 +29,6 @@
                         <li>Blunt</li>
                     </capacities>
 					<power>0.9</power>
-					<chanceFactor>0.33</chanceFactor>
 					<cooldownTime>1.26</cooldownTime>
                     <armorPenetrationSharp>0</armorPenetrationSharp>
 					<armorPenetrationBlunt>0.31</armorPenetrationBlunt>
