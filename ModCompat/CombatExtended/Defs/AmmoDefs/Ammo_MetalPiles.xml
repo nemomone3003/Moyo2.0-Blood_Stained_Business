@@ -17,7 +17,6 @@
             <li>Moyo2_Category_MetalPiles</li>
         </thingCategories>
         <stackLimit>300</stackLimit>
-        <ammoClass>Moyo2_AmmoCategory_MetalPiles</ammoClass>
     </CombatExtended.AmmoDef>
 
     <!-- Used by spearjack -->
@@ -29,6 +28,7 @@
             <Mass>0.55</Mass>
             <Bulk>0.06</Bulk>
         </statBases>
+        <ammoClass>Moyo2_AmmoCategory_SteelPiles</ammoClass>
     </CombatExtended.AmmoDef>
     <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
         <defName>Moyo2_Ammo_AbyssteelPile</defName>
@@ -38,6 +38,7 @@
             <Mass>0.715</Mass>
             <Bulk>0.06</Bulk>
         </statBases>
+        <ammoClass>Moyo2_AmmoCategory_AbyssteelPiles</ammoClass>
     </CombatExtended.AmmoDef>
 
     <!-- Used by shipjack -->
@@ -49,6 +50,7 @@
             <Mass>0.85</Mass>
             <Bulk>0.12</Bulk>
         </statBases>
+        <ammoClass>Moyo2_AmmoCategory_HeavySteelPiles</ammoClass>
     </CombatExtended.AmmoDef>
     <CombatExtended.AmmoDef ParentName="Moyo2_MetalPileBase">
         <defName>Moyo2_Ammo_HeavyAbyssteelPile</defName>
@@ -58,6 +60,7 @@
             <Mass>1</Mass>
             <Bulk>0.12</Bulk>
         </statBases>
+        <ammoClass>Moyo2_AmmoCategory_HeavyAbyssteelPiles</ammoClass>
     </CombatExtended.AmmoDef>
 
 

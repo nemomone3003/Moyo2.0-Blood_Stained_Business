@@ -2,10 +2,31 @@
 <Defs>
 
     <CombatExtended.AmmoCategoryDef>
-        <defName>Moyo2_AmmoCategory_MetalPiles</defName>
-        <label>Metal piles</label>
+        <defName>Moyo2_AmmoCategory_SteelPiles</defName>
+        <label>Steel piles</label>
         <labelShort>Piles</labelShort>
-        <description>Metal piles for demolition purposes.</description>
+        <description>Steel piles for demolition purposes.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Moyo2_AmmoCategory_AbyssteelPiles</defName>
+        <label>Abyssteel piles</label>
+        <labelShort>Piles</labelShort>
+        <description>Abyssteel piles for demolition purposes.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Moyo2_AmmoCategory_HeavySteelPiles</defName>
+        <label>Heavy steel piles</label>
+        <labelShort>Heavy piles</labelShort>
+        <description>Heavy steel piles for demolition purposes.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Moyo2_AmmoCategory_HeavyAbyssteelPiles</defName>
+        <label>Heavy abyssteel piles</label>
+        <labelShort>Heavy piles</labelShort>
+        <description>Heavy abyssteel piles for demolition purposes.</description>
     </CombatExtended.AmmoCategoryDef>
 
 </Defs>
