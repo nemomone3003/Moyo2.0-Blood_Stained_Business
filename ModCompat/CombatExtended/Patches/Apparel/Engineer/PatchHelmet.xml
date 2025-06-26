@@ -14,7 +14,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Moyo2_EGHelmet"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>8</ArmorRating_Sharp>
+            <ArmorRating_Sharp>9.85</ArmorRating_Sharp>
             <ArmorRating_Electric>0.25</ArmorRating_Electric>
         </value>
     </Operation>
@@ -22,7 +22,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Moyo2_EGHelmet"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>12</ArmorRating_Blunt>
+            <ArmorRating_Blunt>13.26</ArmorRating_Blunt>
         </value>
     </Operation>
 

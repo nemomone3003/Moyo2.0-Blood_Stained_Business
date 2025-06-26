@@ -6,7 +6,6 @@
         <value>
             <Bulk>6</Bulk>
             <WornBulk>1</WornBulk>
-            <NightVisionEfficiency_Apparel>0</NightVisionEfficiency_Apparel> <!-- ask nemo -->
         </value>
     </Operation>
 
@@ -35,7 +34,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/statBases/Flammability</xpath>
         <value>
-            <Flammability>0</Flammability> <!-- ask nemo -->
+            <Flammability>0</Flammability>
         </value>
     </Operation>
 

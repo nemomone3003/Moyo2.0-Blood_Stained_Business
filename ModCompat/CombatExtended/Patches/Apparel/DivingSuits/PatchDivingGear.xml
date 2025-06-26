@@ -34,7 +34,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/Flammability</xpath>
         <value>
-            <Flammability>0</Flammability> <!-- ask nemo -->
+            <Flammability>0</Flammability>
         </value>
     </Operation>
 
