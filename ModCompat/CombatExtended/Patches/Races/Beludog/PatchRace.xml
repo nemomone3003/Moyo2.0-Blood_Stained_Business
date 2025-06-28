@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- Comps -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]/comps</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]</xpath>
+            <value>
+                <comps />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+                <Durability>814</Durability>
+                <Regenerates>true</Regenerates>
+                <RegenInterval>600</RegenInterval>
+                <RegenValue>5</RegenValue>
+                <MinArmorPct>0.5</MinArmorPct>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]</xpath>
+        <value>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>Quadruped</bodyShape>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]/statBases/MoveSpeed</xpath>
+        <value>
+            <MoveSpeed>5.6</MoveSpeed>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]/statBases</xpath>
+        <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+            <MeleeCritChance>0.19</MeleeCritChance>
+            <MeleeParryChance>0.15</MeleeParryChance>
+            <ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]/tools</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_Beludog"]</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>left claw</label>
+                    <capacities>
+                        <li>Scratch</li>
+                    </capacities>
+                    <power>16</power>
+                    <cooldownTime>1.3</cooldownTime>
+                    <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                    <surpriseAttack>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>15</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </surpriseAttack>
+                    <armorPenetrationSharp>0.21</armorPenetrationSharp>
+                    <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>right claw</label>
+                    <capacities>
+                        <li>Scratch</li>
+                    </capacities>
+                    <power>16</power>
+                    <cooldownTime>1.3</cooldownTime>
+                    <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                    <surpriseAttack>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>15</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </surpriseAttack>
+                    <armorPenetrationSharp>0.21</armorPenetrationSharp>
+                    <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <capacities>
+                        <li>Bite</li>
+                    </capacities>
+                    <power>24</power>
+                    <cooldownTime>2.0</cooldownTime>
+                    <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                    <surpriseAttack>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>15</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </surpriseAttack>
+                    <armorPenetrationSharp>0.9</armorPenetrationSharp>
+                    <armorPenetrationBlunt>6.7</armorPenetrationBlunt>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>head</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>8.4</power>
+                    <cooldownTime>2.22</cooldownTime>
+                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                    <armorPenetrationBlunt>3</armorPenetrationBlunt>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+</Patch>

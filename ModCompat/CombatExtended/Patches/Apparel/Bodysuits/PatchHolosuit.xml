@@ -12,7 +12,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>7.50</ArmorRating_Sharp>
+            <ArmorRating_Sharp>6.59</ArmorRating_Sharp>
         </value>
     </Operation>
 

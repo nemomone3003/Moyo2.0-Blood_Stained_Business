@@ -28,11 +28,12 @@
                     <capacities>
                         <li>Blunt</li>
                     </capacities>
-					<power>0.9</power>
-					<cooldownTime>1.26</cooldownTime>
+                    <power>0.9</power>
+                    <cooldownTime>1.26</cooldownTime>
                     <armorPenetrationSharp>0</armorPenetrationSharp>
-					<armorPenetrationBlunt>0.31</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                    <armorPenetrationBlunt>0.31</armorPenetrationBlunt>
+                    <armorPenetration>150</armorPenetration>
+                    <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
                 </li>
                 <li Class="CombatExtended.ToolCE">
                     <label>blade</label>
@@ -43,6 +44,7 @@
                     <cooldownTime>1.18</cooldownTime>
                     <armorPenetrationBlunt>0.45</armorPenetrationBlunt>
                     <armorPenetrationSharp>0.4</armorPenetrationSharp>
+                    <armorPenetration>150</armorPenetration>
                     <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
                 </li>
                 <li Class="CombatExtended.ToolCE">
@@ -54,6 +56,7 @@
                     <cooldownTime>1.2</cooldownTime>
                     <armorPenetrationBlunt>0.31</armorPenetrationBlunt>
                     <armorPenetrationSharp>0.53</armorPenetrationSharp>
+                    <armorPenetration>150</armorPenetration>
                     <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
                 </li>
             </tools>
