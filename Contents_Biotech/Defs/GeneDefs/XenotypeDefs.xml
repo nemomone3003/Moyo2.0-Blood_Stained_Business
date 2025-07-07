@@ -12,6 +12,9 @@
 		<genes>
 			<!-- 외형 -->
 			<li>Moyo2_Skin_Depthborn</li>
+			<li>Moyo2_Glow_Blue</li>
+			<li>Moyo2_Glow_Purple</li>
+			<li>Moyo2_Glow_Violet</li>			
 			<!-- <li>Moyo2_Hair_DuskBlue</li> -->
 			<!-- <li>Moyo2_Hair_TwilightBlue</li> -->
 			<!-- <li>Moyo2_Hair_AbyssBlue</li> -->
@@ -32,4 +35,37 @@
 			<li>AptitudeStrong_Intellectual</li>
 		</genes>
 	</XenotypeDef>
+	<XenotypeDef>
+		<defName>Moyo2_Xenotype_Chemskin</defName>
+		<label>chemskin moyo</label>
+		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.</description>
+		<descriptionShort>Baseline moyos.</descriptionShort>
+		<iconPath>Icon/Moyo_FactionIcon</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<genes>
+			<!-- 외형 -->
+			<li>Moyo2_Skin_Chemskin</li>
+			<li>Moyo2_Glow_Blue</li>
+			<li>Moyo2_Glow_Purple</li>
+			<li>Moyo2_Glow_Violet</li>			
+			<!-- <li>Moyo2_Hair_DuskBlue</li> -->
+			<!-- <li>Moyo2_Hair_TwilightBlue</li> -->
+			<!-- <li>Moyo2_Hair_AbyssBlue</li> -->
+			<!-- <li>Moyo2_Hair_HadalBlue</li> -->
+			<!-- <li>Moyo2_Hair_ShallowBlue</li> -->
+			<!-- <li>Moyo2_Hair_PaleBlue</li> -->
+			<!-- <li>Moyo2_Hair_GhostBlue</li> -->
+			<!-- <li>Moyo2_Hair_PaleWhite</li> -->
+			<!-- 스텟 -->
+			<li>Instability_Mild</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>Moyo2_MoveSpeed_Slug</li>
+			<li>Moyo2_WorkSpeed_Slow</li>
+			<!-- 기타 -->
+			<li>AptitudeStrong_Crafting</li>
+		</genes>
+	</XenotypeDef>	
 </Defs>

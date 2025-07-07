@@ -33,6 +33,11 @@
 				<commonality>0.05</commonality>
 			</li>
 		</backstoryFilters>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">1</Moyo2_Xenotype_Depthborn>
+			</xenotypeChances>
+		</xenotypeSet>
 		<factionIconPath>Icon/Moyo_PlayerIcon</factionIconPath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>

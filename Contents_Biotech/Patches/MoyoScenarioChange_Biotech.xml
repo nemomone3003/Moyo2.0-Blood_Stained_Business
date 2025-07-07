@@ -5,13 +5,14 @@
 		<value>
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
 					<def>ConfigurePawnsXenotypes</def>
+					<!-- <pawnCount>3</pawnCount> -->
 					<pawnChoiceCount>8</pawnChoiceCount>
-					<overrideKinds>
-						<li>
-							<xenotype>Moyo2_Xenotype_Depthborn</xenotype>
-							<pawnKind>Moyo2_ColonistPawn</pawnKind>
-						</li>
-					</overrideKinds>
+					<!-- <overrideKinds> -->
+						<!-- <li> -->
+							<!-- <xenotype>Moyo2_Xenotype_Depthborn</xenotype> -->
+							<!-- <pawnKind>Moyo2_ColonistPawn</pawnKind> -->
+						<!-- </li> -->
+					<!-- </overrideKinds> -->
 					<xenotypeCounts>
 						<li>
 							<xenotype>Moyo2_Xenotype_Depthborn</xenotype>

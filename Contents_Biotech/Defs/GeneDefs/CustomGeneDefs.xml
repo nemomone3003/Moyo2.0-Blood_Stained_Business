@@ -76,7 +76,22 @@
 	<!-- <selectionWeight>0.03</selectionWeight> -->
 	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
 	<!-- </GeneDef> -->
-	<GeneDef ParentName="GeneSkinColorOverride">
+	<GeneDef Name="GeneMoyoCosmeticSkin" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Moyo2_Gene</displayCategory>
+		<exclusionTags>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+	</GeneDef>
+	<GeneDef Name="GeneMoyoCosmeticGlow" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Moyo2_Gene</displayCategory>
+		<exclusionTags>
+			<li>MoyoGlowOverride</li>
+		</exclusionTags>
+	</GeneDef>
+	<!-- 몸 패턴 -->
+	<GeneDef ParentName="GeneMoyoCosmeticSkin">
 		<defName>Moyo2_Skin_Depthborn</defName>
 		<label>depthborn skin pattern</label>
 		<labelShortAdj>depthborn pattern</labelShortAdj>
@@ -99,6 +114,91 @@
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
+	<GeneDef ParentName="GeneMoyoCosmeticSkin">
+		<defName>Moyo2_Skin_Chemskin</defName>
+		<label>chemskin skin pattern</label>
+		<labelShortAdj>chemskin pattern</labelShortAdj>
+		<description>Moyos with this gene will have chemskin skin pattern.</description>
+		<iconPath>Icon/ChemskinIcon1</iconPath>
+		<skinColorOverride>(255, 255, 255)</skinColorOverride>
+		<hairColorOverride>(43,49,50)</hairColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<displayOrderInCategory>93</displayOrderInCategory>
+		<displayCategory>Moyo2_Gene</displayCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Chemskin</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>Chemskin</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<!-- 발광색 -->
+	<GeneDef ParentName="GeneMoyoCosmeticGlow">
+		<defName>Moyo2_Glow_Blue</defName>
+		<label>blue moyo bioluminescence</label>
+		<labelShortAdj>blue bioluminescence</labelShortAdj>
+		<description>Moyos with this gene will have blue bioluminescence.</description>
+		<iconPath>Icon/BlueGlowIcon</iconPath>
+		<displayOrderInCategory>93</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>blue</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>blue</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<GeneDef ParentName="GeneMoyoCosmeticGlow">
+		<defName>Moyo2_Glow_Purple</defName>
+		<label>purple moyo bioluminescence</label>
+		<labelShortAdj>purple moyo bioluminescence</labelShortAdj>
+		<description>Moyos with this gene will have purple bioluminescence.</description>
+		<iconPath>Icon/PurpleGlowIcon</iconPath>
+		<displayOrderInCategory>93</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>purple</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>purple</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<GeneDef ParentName="GeneMoyoCosmeticGlow">
+		<defName>Moyo2_Glow_Violet</defName>
+		<label>violet moyo bioluminescence</label>
+		<labelShortAdj>violet moyo bioluminescence</labelShortAdj>
+		<description>Moyos with this gene will have violet bioluminescence.</description>
+		<iconPath>Icon/VioletGlowIcon</iconPath>
+		<displayOrderInCategory>93</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>violet</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>violet</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>		
 	<!-- 스텟 유전자 -->
 	<GeneDef ParentName="GeneMoveSpeedBase">
 		<defName>Moyo2_MoveSpeed_Slug</defName>
@@ -114,30 +214,12 @@
 		<symbolPack>
 			<prefixSymbols>
 				<li>
-					<symbol>slow</symbol>
-				</li>
-				<li>
-					<symbol>plod</symbol>
-				</li>
-				<li>
-					<symbol>grado</symbol>
-				</li>
-				<li>
-					<symbol>letho</symbol>
-				</li>
-				<li>
 					<symbol>slug</symbol>
-				</li>
-				<li>
-					<symbol>slack</symbol>
 				</li>
 			</prefixSymbols>
 			<suffixSymbols>
 				<li>
 					<symbol>slug</symbol>
-				</li>
-				<li>
-					<symbol>plodder</symbol>
 				</li>
 			</suffixSymbols>
 		</symbolPack>
@@ -145,6 +227,19 @@
 	<GeneDef>
 		<defName>Moyo2_WorkSpeed_Slow</defName>
 		<label>deliberate worker</label>
+		<labelShortAdj>deliberate</labelShortAdj>
+		<description>Carriers of this gene work more slowly than normal.</description>
+		<iconPath>Icon/SlowWorkIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<statOffsets>
+			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+		</statOffsets>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>Moyo2_Chemosynthesis</defName>
+		<label>chemosynthesis</label>
 		<labelShortAdj>deliberate</labelShortAdj>
 		<description>Carriers of this gene work more slowly than normal.</description>
 		<iconPath>Icon/SlowWorkIcon</iconPath>

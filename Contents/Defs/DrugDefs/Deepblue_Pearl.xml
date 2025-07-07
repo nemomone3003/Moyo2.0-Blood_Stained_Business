@@ -37,11 +37,13 @@
 			</skillRequirements>
 		</recipeMaker>
 		<ingestible>
-			<drugCategory>Hard</drugCategory>
+			<foodType>Processed</foodType>
+			<drugCategory>Social</drugCategory>
 			<baseIngestTicks>50</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<joyKind>Chemical</joyKind>
 			<joy>0.25</joy>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>

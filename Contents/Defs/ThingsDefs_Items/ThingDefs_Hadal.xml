@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- <ThingDef ParentName="Moyo2_LMRRifle"> -->
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>Moyo2_TLMRRifle</defName>
+		<label>Tri-point laminar rifle</label>
+		<description>A signature large-caliber rifle of the lighthouse that uses laminar field to guide projectiles, a versitile weapon with high accuracy. It can be overcharged, increasing its damage and range but causes a brief overload.\n\nUpon firing, a 'rail' or 'tunnel' made of a laminar field is created, allowing the projectile to travel with minimal resistance. With the right ammunition, a reasonable range can be maintained even underwater.</description>
+		<graphicData>
+			<texPath>Weapon/TLMR_RifleMod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<soundInteract>Laminar_Activate2</soundInteract>		
+		<!-- - -->
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<!-- <WorkToMake>72000</WorkToMake> -->
+			<Mass>7</Mass>			
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRSlugA</defaultProjectile>
+				<warmupTime>2.1</warmupTime>
+				<range>31.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>Laminar_Rifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>Moyo2_GunHadal</li>
+		</weaponTags>		
+	</ThingDef>	
+</Defs>
