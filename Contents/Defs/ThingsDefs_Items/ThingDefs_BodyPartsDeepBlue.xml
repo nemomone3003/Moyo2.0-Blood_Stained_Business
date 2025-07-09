@@ -68,11 +68,20 @@
 				<useJob>Moyo2_InstallExtractor</useJob>
 				<useLabel>Install {0_label}</useLabel>
 			</li>
-			<li Class="CompProperties_UseEffectInstallImplant">
-				<compClass>CompUseEffect_InstallImplant</compClass>
+			<li Class="Moyo2.CompProperties_InstallImplantReplace">
 				<hediffDef>Moyo2_DeepBlueExtracter_Crude</hediffDef>
 				<bodyPart>Torso</bodyPart>
 				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+				<incompatibleImplants>
+					<li>
+						<key>Moyo2_DeepBlueExtracter</key> <!-- HediffDef -->
+						<value>Moyo2_DeepBlueExtracter</value> <!-- ThingDef -->
+					</li>
+					<li>
+						<key>Moyo2_DeepBlueExtracter_Abysstech</key>
+						<value>Moyo2_DeepBlueExtracter_Abysstech</value>
+					</li>
+				</incompatibleImplants>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
 		</comps>
@@ -144,11 +153,20 @@
 				<useJob>Moyo2_InstallExtractor</useJob>
 				<useLabel>Install {0_label}</useLabel>
 			</li>
-			<li Class="CompProperties_UseEffectInstallImplant">
-				<compClass>CompUseEffect_InstallImplant</compClass>
+			<li Class="Moyo2.CompProperties_InstallImplantReplace">
 				<hediffDef>Moyo2_DeepBlueExtracter</hediffDef>
 				<bodyPart>Torso</bodyPart>
 				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+				<incompatibleImplants>
+					<li>
+						<key>Moyo2_DeepBlueExtracter_Crude</key> <!-- HediffDef -->
+						<value>Moyo2_DeepBlueExtracter_Crude</value> <!-- ThingDef -->
+					</li>
+					<li>
+						<key>Moyo2_DeepBlueExtracter_Abysstech</key>
+						<value>Moyo2_DeepBlueExtracter_Abysstech</value>
+					</li>
+				</incompatibleImplants>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
 		</comps>
@@ -208,11 +226,20 @@
 				<useJob>Moyo2_InstallExtractor</useJob>
 				<useLabel>Install {0_label}</useLabel>
 			</li>
-			<li Class="CompProperties_UseEffectInstallImplant">
-				<compClass>CompUseEffect_InstallImplant</compClass>
+			<li Class="Moyo2.CompProperties_InstallImplantReplace">
 				<hediffDef>Moyo2_DeepBlueExtracter_Abysstech</hediffDef>
 				<bodyPart>Torso</bodyPart>
 				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+				<incompatibleImplants>
+					<li>
+						<key>Moyo2_DeepBlueExtracter_Crude</key> <!-- HediffDef -->
+						<value>Moyo2_DeepBlueExtracter_Crude</value> <!-- ThingDef -->
+					</li>
+					<li>
+						<key>Moyo2_DeepBlueExtracter</key>
+						<value>Moyo2_DeepBlueExtracter</value>
+					</li>
+				</incompatibleImplants>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
 		</comps>
