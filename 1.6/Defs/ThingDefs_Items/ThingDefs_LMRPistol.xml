@@ -94,9 +94,9 @@
 		<!-- - -->
 		<statBases>
 			<AccuracyTouch>0.9</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.32</AccuracyMedium>
-			<AccuracyLong>0.11</AccuracyLong>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
 			<RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>

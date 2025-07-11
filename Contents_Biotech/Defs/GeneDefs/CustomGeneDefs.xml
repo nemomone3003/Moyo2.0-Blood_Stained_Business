@@ -79,6 +79,7 @@
 	<GeneDef Name="GeneMoyoCosmeticSkin" Abstract="True">
 		<biostatCpx>0</biostatCpx>
 		<displayCategory>Moyo2_Gene</displayCategory>
+		<randomChosen>false</randomChosen>		
 		<exclusionTags>
 			<li>SkinColorOverride</li>
 		</exclusionTags>
@@ -86,6 +87,7 @@
 	<GeneDef Name="GeneMoyoCosmeticGlow" Abstract="True">
 		<biostatCpx>0</biostatCpx>
 		<displayCategory>Moyo2_Gene</displayCategory>
+		<randomChosen>true</randomChosen>
 		<exclusionTags>
 			<li>MoyoGlowOverride</li>
 		</exclusionTags>
@@ -236,18 +238,35 @@
 			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 		</statOffsets>
 		<biostatMet>2</biostatMet>
+		<biostatCpx>2</biostatCpx>
 	</GeneDef>
 	<GeneDef>
-		<defName>Moyo2_Chemosynthesis</defName>
-		<label>chemosynthesis</label>
-		<labelShortAdj>deliberate</labelShortAdj>
-		<description>Carriers of this gene work more slowly than normal.</description>
-		<iconPath>Icon/SlowWorkIcon</iconPath>
+		<defName>Moyo2_WorkSpeed_Fast</defName>
+		<label>efficient worker</label>
+		<labelShortAdj>efficient</labelShortAdj>
+		<description>Carriers of this gene work faster than normal.</description>
+		<iconPath>Icon/FastWorkIcon</iconPath>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<statOffsets>
-			<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 		</statOffsets>
-		<biostatMet>2</biostatMet>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>2</biostatCpx>
+	</GeneDef>
+	<GeneDef>
+		<defName>Moyo2_DeepblueMetabolism</defName>
+		<label>hyper deepblue metabolism</label>
+		<labelShortAdj>deliberate</labelShortAdj>
+		<description>Carriers of this gene work faster than normal.</description>
+		<iconPath>Icon/FastWorkIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<statFactors>
+			<DeepblueStatSpeed>0</DeepblueStatSpeed>
+			<DeepblueStat>0</DeepblueStat>
+		</statFactors>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>7</biostatCpx>
 	</GeneDef>	
 </Defs>

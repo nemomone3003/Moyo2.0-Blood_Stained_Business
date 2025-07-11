@@ -3,7 +3,7 @@
 	<XenotypeDef>
 		<defName>Moyo2_Xenotype_Depthborn</defName>
 		<label>depthborn moyo</label>
-		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.</description>
+		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.\n\nDepthborn.</description>
 		<descriptionShort>Baseline moyos.</descriptionShort>
 		<iconPath>Icon/Moyo_FactionIcon</iconPath>
 		<inheritable>true</inheritable>
@@ -38,8 +38,8 @@
 	<XenotypeDef>
 		<defName>Moyo2_Xenotype_Chemskin</defName>
 		<label>chemskin moyo</label>
-		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.</description>
-		<descriptionShort>Baseline moyos.</descriptionShort>
+		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.\n\nChemskin.</description>
+		<descriptionShort>Chemskin moyos.</descriptionShort>
 		<iconPath>Icon/Moyo_FactionIcon</iconPath>
 		<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
@@ -59,13 +59,16 @@
 			<!-- <li>Moyo2_Hair_GhostBlue</li> -->
 			<!-- <li>Moyo2_Hair_PaleWhite</li> -->
 			<!-- 스텟 -->
+			<li>Mood_Pessimist</li>
 			<li>Instability_Mild</li>
-			<li>ToxicEnvironmentResistance_Total</li>
+			<li>FireResistant</li>
+			<li>ToxicEnvironmentResistance_Partial</li>
 			<li>MaxTemp_LargeIncrease</li>
 			<li>Moyo2_MoveSpeed_Slug</li>
-			<li>Moyo2_WorkSpeed_Slow</li>
+			<li>Moyo2_WorkSpeed_Fast</li>
 			<!-- 기타 -->
 			<li>AptitudeStrong_Crafting</li>
+			<li>AptitudePoor_Animals</li>
 		</genes>
 	</XenotypeDef>	
 </Defs>

@@ -78,10 +78,10 @@
 			<texPath>Weapon/LMR_AutoCannon</texPath>
 		</graphicData>
 		<statBases>
-			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.82</AccuracyShort>
-			<AccuracyMedium>0.91</AccuracyMedium>
-			<AccuracyLong>0.78</AccuracyLong>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
 			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
@@ -92,7 +92,7 @@
 				<warmupTime>3</warmupTime>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>				
-				<range>31.5</range>
+				<range>31.9</range>
 				<soundCast>Laminar_Rifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

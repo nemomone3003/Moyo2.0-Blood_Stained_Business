@@ -12,7 +12,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>22</damageAmountBase>
 			<armorPenetrationBase>0.38</armorPenetrationBase>
-			<stoppingPower>1.3</stoppingPower>
+			<stoppingPower>1.1</stoppingPower>
 			<speed>80</speed>
 		</projectile>
 		<comps>
@@ -101,10 +101,10 @@
 		</graphicData>
 		<!-- - -->
 		<statBases>
-			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
-			<AccuracyLong>0.55</AccuracyLong>
+			<AccuracyLong>0.65</AccuracyLong>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
@@ -112,7 +112,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Moyo2_Bullet_LMRSlugA</defaultProjectile>
-				<warmupTime>1.9</warmupTime>
+				<warmupTime>1.4</warmupTime>
 				<range>31.9</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Laminar_Rifle</soundCast>

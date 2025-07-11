@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DBBooster_Medi</defName>
 		<label>medi booster</label>
-		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advise to inject additional doses.\n\nCan heal permanent wounds</description>
+		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advise to inject additional doses.</description>
 		<descriptionHyperlinks>
 			<HediffDef>DBHediff_Medi</HediffDef>
 			<ThingDef>BlueSerum</ThingDef>

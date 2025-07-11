@@ -15,7 +15,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Spacer</techLevel>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
-		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>		
+		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
 		<allowedCultures>
 			<li>Moyo2_RefugeeCulture</li>
 		</allowedCultures>
@@ -30,6 +30,12 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 		</disallowedMemes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">0.75</Moyo2_Xenotype_Depthborn>
+				<Moyo2_Xenotype_Chemskin MayRequire="Ludeon.RimWorld.Biotech">0.25</Moyo2_Xenotype_Chemskin>
+			</xenotypeChances>
+		</xenotypeSet>
 		<structureMemeWeights>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
@@ -60,7 +66,7 @@
 				<li>Leather_Thrumbo</li>
 				<li>Hyperweave</li>
 			</disallowedThingDefs>
-		</apparelStuffFilter>	
+		</apparelStuffFilter>
 		<caravanTraderKinds>
 			<li>Moyo2_Caravan_BulkGoods</li>
 			<li>Moyo2_Caravan_CombatSupplier</li>
@@ -89,7 +95,7 @@
 				<commonality>100</commonality>
 				<disallowedStrategies>
 					<li>EmergeFromWater</li>
-				</disallowedStrategies>						
+				</disallowedStrategies>
 				<options>
 					<Moyo2_NPCTechnician>10</Moyo2_NPCTechnician>
 					<Moyo2_NPCEngineer>2</Moyo2_NPCEngineer>
@@ -105,11 +111,11 @@
 				<commonality>80</commonality>
 				<disallowedStrategies>
 					<li>EmergeFromWater</li>
-				</disallowedStrategies>				
+				</disallowedStrategies>
 				<options>
 					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
 					<Moyo2_NPCOutlawJunkie>10</Moyo2_NPCOutlawJunkie>
-					<Moyo2_NPCOutlawBoss>3</Moyo2_NPCOutlawBoss>					
+					<Moyo2_NPCOutlawBoss>3</Moyo2_NPCOutlawBoss>
 				</options>
 			</li>
 			<li>
@@ -118,7 +124,7 @@
 				<commonality>50</commonality>
 				<options>
 					<Moyo2_NPCDiverRecon>25</Moyo2_NPCDiverRecon>
-					<Moyo2_NPCDiverReconMelee>10</Moyo2_NPCDiverReconMelee>	
+					<Moyo2_NPCDiverReconMelee>10</Moyo2_NPCDiverReconMelee>
 				</options>
 			</li>
 			<li>
@@ -132,7 +138,7 @@
 					<Moyo2_NPCDiverHeavyGunner>5</Moyo2_NPCDiverHeavyGunner>
 					<Moyo2_NPCDiverCrusher>10</Moyo2_NPCDiverCrusher>
 				</options>
-			</li>				
+			</li>
 			<li>
 				<!-- 일반 주둔지 -->
 				<kindDef>Settlement</kindDef>
@@ -156,7 +162,7 @@
 					<Moyo2_NPCTopCivil>10</Moyo2_NPCTopCivil>
 					<Moyo2_NPCFlooded>8</Moyo2_NPCFlooded>
 				</options>
-			</li>			
+			</li>
 			<li>
 				<!-- 일반 방문 -->
 				<kindDef>Peaceful</kindDef>
@@ -187,7 +193,7 @@
 					<Moyo2_NPCTopCivil>5</Moyo2_NPCTopCivil>
 					<Moyo2_NPCFlooded>1</Moyo2_NPCFlooded>
 				</options>
-			</li>			
+			</li>
 			<li>
 				<!-- 일반 상단 -->
 				<kindDef>Trader</kindDef>
@@ -222,7 +228,7 @@
 					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
 					<Moyo2_NPCOutlawJunkie>5</Moyo2_NPCOutlawJunkie>
 				</guards>
-			</li>			
+			</li>
 		</pawnGroupMakers>
 	</FactionDef>
 	<FactionDef ParentName="MoyoFactionBase">
@@ -268,5 +274,5 @@
 				</filter>
 			</fixedParams>
 		</root>
-	</ThingSetMakerDef>	
+	</ThingSetMakerDef>
 </Defs>
