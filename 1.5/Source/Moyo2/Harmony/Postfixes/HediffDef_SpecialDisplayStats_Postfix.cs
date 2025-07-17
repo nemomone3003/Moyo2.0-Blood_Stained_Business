@@ -12,17 +12,28 @@ namespace Moyo2
 	{
 
 		[HarmonyPostfix]
-		private static IEnumerable<StatDrawEntry> AddDeepblueDrugsEffects(IEnumerable<StatDrawEntry> statDrawEntries, HediffDef __instance)
+		private static IEnumerable<StatDrawEntry> AddDeepblueDrugsEffects(IEnumerable<StatDrawEntry> originalEntries, HediffDef __instance)
 		{
 			var modExt = __instance.GetModExtension<ModExtension>();
+			return modExt is null ? originalEntries : AppendEffects(originalEntries, __instance, modExt);
+		}
 
-			if (modExt is not null && modExt.deepblueDrugEffectsSettings.isDeepblueDrug && __instance.stages.Count > 0)
+
+		private static IEnumerable<StatDrawEntry> AppendEffects(IEnumerable<StatDrawEntry> originalEntries, HediffDef hediffDef, ModExtension modExtension)
+		{
+			foreach (var baseStat in originalEntries)
+			{
+				yield return baseStat;
+			}
+
+
+			if (modExtension.deepblueDrugEffectsSettings.isDeepblueDrug && hediffDef.stages.Count > 0)
 			{
 				int counter = 0; // Increases by 100 per loop iteration, makes the stats show in order, from first stage to last
 
-				for (int j = 0; j < __instance.stages.Count; j++)
+				for (int j = 0; j < hediffDef.stages.Count; j++)
 				{
-					HediffStage stage = __instance.stages[j];
+					HediffStage stage = hediffDef.stages[j];
 
 					if (stage == null)
 					{
@@ -160,11 +171,11 @@ namespace Moyo2
 							}
 						}
 					}
-					if (!modExt.deepblueDrugEffectsSettings.moodOffsetsGivenPerStage.NullOrEmpty())
+					if (!modExtension.deepblueDrugEffectsSettings.moodOffsetsGivenPerStage.NullOrEmpty())
 					{
 						yield return new StatDrawEntry(StatCategoryDefOf.CapacityEffects,
 							label: "Moyo2_StatDrawEntry_MoodLabel".Translate(),
-							modExt.deepblueDrugEffectsSettings.moodOffsetsGivenPerStage[j].ToStringWithSign(),
+							modExtension.deepblueDrugEffectsSettings.moodOffsetsGivenPerStage[j].ToStringWithSign(),
 							"Moyo2_StatDrawEntry_MoodReportText".Translate(),
 							4075 - counter);
 					}

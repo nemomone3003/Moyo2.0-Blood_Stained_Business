@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 
 namespace Moyo2_ItemFormChange
@@ -7,18 +6,20 @@ namespace Moyo2_ItemFormChange
 	public class Command_Transform_Action : Command
 	{
 		private readonly CompFormChange compFormChange;
+		private readonly TransformData transformData;
 
 
-		public Command_Transform_Action(CompFormChange compFormChange)
+		public Command_Transform_Action(CompFormChange compFormChange, TransformData transformData)
 		{
 			this.compFormChange = compFormChange;
+			this.transformData = transformData;
 		}
 
 
 		public override void ProcessInput(Event ev)
 		{
 			base.ProcessInput(ev);
-			compFormChange.TryChangeForm();
+			compFormChange.TryChangeForm(transformData);
 		}
 
 

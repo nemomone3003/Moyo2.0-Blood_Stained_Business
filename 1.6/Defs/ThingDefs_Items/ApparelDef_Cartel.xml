@@ -31,10 +31,11 @@
 		<!-- - -->
 		<apparel>
 			<renderNodeProperties>
-				<!-- Cloak / Body part-->
+				<!-- Cloak -->
 				<li>
-					<nodeClass>PawnRenderNode_Apparel</nodeClass>
+					<nodeClass>Moyo2.PawnRenderNode_GenderedApparelCustomPath</nodeClass>
 					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<texPath>Apparel/Cartel/CartelCloak</texPath>
 					<visibleFacing>
 						<li>East</li>
 						<li>North</li>
@@ -43,8 +44,22 @@
 					</visibleFacing>
 					<baseLayer>21</baseLayer>
 				</li>
-				<!-- Hood / Head part-->
+				<!-- Cloak background -->
 				<li>
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<texPath>Apparel/Cartel/CartelCloackBack</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>0</baseLayer>
+				</li>
+				<!-- Hood -->
+				<li>
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
 					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
 					<texPath>Apparel/Cartel/CartelHood</texPath>
 					<visibleFacing>
@@ -55,8 +70,20 @@
 					</visibleFacing>
 					<baseLayer>73</baseLayer>
 				</li>
+				<!-- Hood background -->
+				<li>
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
+					<texPath>Apparel/Cartel/CartelHoodBack</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>0</baseLayer>
+				</li>
 			</renderNodeProperties>
-			<wornGraphicPath>Apparel/Cartel/CartelCloak</wornGraphicPath> <!-- This is needed for the body part of the renderNodeProperties -->
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>

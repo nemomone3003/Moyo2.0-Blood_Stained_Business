@@ -26,7 +26,7 @@ namespace Moyo2_ItemFormChange
 			Rect baseRect = new(topLeft.x, topLeft.y, GetWidth(maxWidth), Height);
 			GizmoResult gizmoResult = base.GizmoOnGUI(topLeft, maxWidth, parms);
 
-			float fillPercent = 1f - Mathf.InverseLerp(compFormChange.Props.revertData.revertAfterTicks, 0f, compFormChange.RevertTickCounter);
+			float fillPercent = 1f - Mathf.InverseLerp(compFormChange.Props.revertData.revertAfterTicks, 0f, compFormChange.TicksToRevert);
 			Widgets.FillableBar(baseRect, Mathf.Clamp01(fillPercent), TextureLibrary.cooldownBarTex, null, false);
 
 			bool onCooldown = compFormChange.CooldownNow > 0;

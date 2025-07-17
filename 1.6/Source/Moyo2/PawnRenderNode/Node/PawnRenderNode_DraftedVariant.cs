@@ -15,30 +15,16 @@
 			// Gets the graphics corresponding to the undrafted variant of the apparel
 			yield return GraphicDatabase.Get<Graphic_Multi>(
 				Props.undraftedTexPath,
-				GetShader(),
+				RenderNodeUtils.GetShader(apparel, pawn.Drawer.renderer.StatueColor.HasValue),
 				Props.drawSize,
 				ColorFor(pawn));
 
 			// Gets the graphics corresponding to the drafted variant of the apparel
 			yield return GraphicDatabase.Get<Graphic_Multi>(
 				Props.draftedTexPath,
-				GetShader(),
+				RenderNodeUtils.GetShader(apparel, pawn.Drawer.renderer.StatueColor.HasValue),
 				Props.drawSize,
 				ColorFor(pawn));
-		}
-
-		private Shader GetShader()
-		{
-			Shader shader = ShaderDatabase.Cutout;
-			if (apparel.StyleDef?.graphicData.shaderType != null)
-			{
-				shader = apparel.StyleDef.graphicData.shaderType.Shader;
-			}
-			else if ((apparel.StyleDef is null && apparel.def.apparel.useWornGraphicMask) || (apparel.StyleDef is not null && apparel.StyleDef.UseWornGraphicMask))
-			{
-				shader = ShaderDatabase.CutoutComplex;
-			}
-			return shader;
 		}
 	}
 }
