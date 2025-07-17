@@ -1,14 +1,14 @@
 ﻿namespace Moyo2
 {
-    public class ThingClass_MoyoFabricationBench : Building_WorkTable
-    {
-        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
-        {
-            var compAffectedByFacilities = this.TryGetComp<CompAffectedByFacilities>();
+	public class ThingClass_MoyoFabricationBench : Building_WorkTable
+	{
+		public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+		{
+			var compAffectedByFacilities = this.TryGetComp<CompAffectedByFacilities>();
 
-            foreach (Thing linkable in compAffectedByFacilities?.LinkedFacilitiesListForReading)
-            {
-				if (linkable.def.selectable == false)
+			foreach (Thing linkable in compAffectedByFacilities?.LinkedFacilitiesListForReading)
+			{
+				if (!linkable.def.selectable)
 				{
 					if (linkable.def.Minifiable)
 					{
@@ -21,7 +21,7 @@
 					}
 				}
 			}
-            base.DeSpawn(mode);
-        }
-    }
+			base.DeSpawn(mode);
+		}
+	}
 }

@@ -1,6 +1,5 @@
 ﻿namespace Moyo2
 {
-#pragma warning disable CA1051
 	public class FishTankSettings
 	{
 		public int ticksToGrow; // ticks that the fish needs to grow
