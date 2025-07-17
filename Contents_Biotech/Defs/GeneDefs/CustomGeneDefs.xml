@@ -266,7 +266,7 @@
 			<DeepblueStatSpeed>0</DeepblueStatSpeed>
 			<DeepblueStat>0</DeepblueStat>
 		</statFactors>
-		<biostatMet>-3</biostatMet>
+		<biostatMet>5</biostatMet>
 		<biostatCpx>7</biostatCpx>
 	</GeneDef>	
 </Defs>

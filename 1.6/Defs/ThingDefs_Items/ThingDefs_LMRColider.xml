@@ -1,59 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<!-- 빔 이펙트 -->
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_LMRColider_Beam</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+			<solidTime>0.1</solidTime>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+		</mote>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Things/Mote/GraserBeam</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteBeam</shaderType>
+			<shaderParameters>
+				<_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+				<_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+				<_ScrollSpeedA>0</_ScrollSpeedA>
+				<_ScrollSpeedB>0</_ScrollSpeedB>
+				<_Intensity>2</_Intensity>
+			</shaderParameters>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_LMRColider_Charge</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.15</fadeInTime>
+			<fadeOutTime>0.7</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+		</mote>
+		<graphicData>
+			<texPath>Weapon/ColiderCharge_1</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteHellfireCannon_Charge</shaderType>
+			<shaderParameters>
+				<_RandomTex>/Things/Mote/RandomFlicker</_RandomTex>
+				<_FlickerFrequency>0.25</_FlickerFrequency>
+				<_FlickerAmount>0.6</_FlickerAmount>
+				<_InnerCircleIntensity>0.1</_InnerCircleIntensity>
+				<_InnerCircleSize>0.2</_InnerCircleSize>
+				<_InnerCircleShimmerAmount>0.14</_InnerCircleShimmerAmount>
+			</shaderParameters>
+		</graphicData>
+	</ThingDef>
 	<!--모요 볼트 -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>Moyo2_Bullet_LMRBolt</defName>
-		<label>heavy laminar slug</label>
+		<defName>Moyo2_Bullet_LMRColider</defName>
+		<label>concentrated laminar field</label>
 		<graphicData>
 			<texPath>Weapon/MoyoBullet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
+		<thingClass>Beam</thingClass>
 		<projectile>
-			<explosionRadius>0.9</explosionRadius>
-			<damageDef>Moyo2_Damage_LMRBoltDemolish</damageDef>
-			<damageAmountBase>36</damageAmountBase>
+			<damageDef>Moyo_ColiderBullet</damageDef>
+			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
-			<speed>120</speed>
-			<screenShakeFactor>0.3</screenShakeFactor>
+			<beamMoteDef>Mote_LMRColider_Beam</beamMoteDef>
+			<beamStartOffset>0.8</beamStartOffset>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>9999999</speed>
+			<landedEffecter>Effecter_LMRColider</landedEffecter>
 		</projectile>
-		<comps>
-			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireC</effecterDef>
-			</li>
-		</comps>
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_ProjectileEffecter"> -->
+				<!-- <effecterDef>Effecter_LMRColider</effecterDef> -->
+			<!-- </li> -->
+		<!-- </comps> -->
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Moyo2_Bullet_LMRBoltOver</defName>
-		<label>heavy laminar slug(overcharged)</label>
+	<!-- 라미너 역장 충돌기 -->
+	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo2_LMRcolider" Abstract="True">
 		<graphicData>
-			<texPath>Weapon/MoyoBullet2</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<explosionRadius>2.9</explosionRadius>
-			<damageDef>Moyo2_Damage_LMRBoltDemolish</damageDef>
-			<damageAmountBase>60</damageAmountBase>
-			<armorPenetrationBase>0.42</armorPenetrationBase>
-			<stoppingPower>3</stoppingPower>
-			<speed>150</speed>
-		</projectile>
-		<comps>
-			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireC</effecterDef>
-			</li>
-		</comps>
-	</ThingDef>
-	<!-- 라미너 발리스타 -->
-	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo2_LMRBalista" Abstract="True">
-		<graphicData>
-			<texPath>Weapon/LMR_Balista</texPath>
+			<texPath>Weapon/LMR_Colider</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
@@ -99,12 +125,12 @@
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 	</ThingDef>
-	<ThingDef ParentName="Moyo2_LMRBalista">
-		<defName>Moyo2_LMRBalista</defName>
-		<label>laminar balista</label>
-		<description>A large laminar rifle designed to reliably penetrate the armored plates of small submarines and deep-sea diving suits. When overcharged, it fires a powerful explosive shot but causes a brief overload..\n\nThis weapon has been widely used against targets larger than a person, sending numerous threats, from formidable sea creatures to unauthorized submarines, to the ocean floor.</description>
+	<ThingDef ParentName="Moyo2_LMRcolider">
+		<defName>Moyo2_LMRColider</defName>
+		<label>laminar field colider</label>
+		<description>exp.</description>
 		<graphicData>
-			<texPath>Weapon/LMR_Balista</texPath>
+			<texPath>Weapon/LMR_Colider</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
@@ -114,23 +140,24 @@
 			<WorkToMake>75000</WorkToMake>
 			<Mass>9.5</Mass>
 			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.82</AccuracyShort>
-			<AccuracyMedium>0.91</AccuracyMedium>
-			<AccuracyLong>0.78</AccuracyLong>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
 			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Moyo2_Bullet_LMRBolt</defaultProjectile>
-				<forcedMissRadius>0.01</forcedMissRadius>
+				<defaultProjectile>Moyo2_Bullet_LMRColider</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<range>40</range>
-				<soundAiming>Laminar_Chargeup2</soundAiming>
-				<soundCast>Laminar_Balista</soundCast>
+				<soundAiming>Laminar_Chargeup3</soundAiming>
+				<soundCast>Laminar_Colider</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
+				<aimingChargeMote>Mote_LMRColider_Charge</aimingChargeMote>
+				<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
 			</li>
 		</verbs>
 		<comps>
@@ -154,10 +181,10 @@
 		<weaponTags Inherit="False">
 			<li>Moyo2_GunLMR</li>
 			<li>Moyo2_BalistaLMR</li>
-		</weaponTags>			
+		</weaponTags>
 	</ThingDef>
-	<ThingDef ParentName="Moyo2_LMRBalista">
-		<defName>Moyo2_LMRBalistaOver</defName>
+	<ThingDef ParentName="Moyo2_LMRcolider" Abstract='true'>
+		<defName>Moyo2_LMRColiderOver</defName>
 		<label>laminar balista(overcharged)</label>
 		<description>An overcharged laminar balista. Shoots powerful explosive shot but gets overloaded after a short period.</description>
 		<graphicData>
@@ -170,9 +197,9 @@
 			<AccuracyLong>0.78</AccuracyLong>
 			<RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker Inherit="False"></recipeMaker>
-		<thingCategories Inherit="False"></thingCategories>
-		<tradeTags Inherit="False"></tradeTags>		
+		<recipeMaker Inherit="False"/>
+		<thingCategories Inherit="False"/>
+		<tradeTags Inherit="False"/>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -200,7 +227,7 @@
 					<thingDef>Moyo2_LMRBalistaDown</thingDef>
 					<revertAfterTicks>450</revertAfterTicks>
 					<soundOnTransform>Laminar_Activate2</soundOnTransform>
-				</revertData>				
+				</revertData>
 				<transformDatas>
 					<li>
 						<label>quick discharge</label>
@@ -216,10 +243,10 @@
 		<relicChance>0</relicChance>
 		<weaponTags Inherit="False">
 			<li>NoRelic</li>
-		</weaponTags>		
+		</weaponTags>
 	</ThingDef>
-	<ThingDef ParentName="Moyo2_LMRBalista">
-		<defName>Moyo2_LMRBalistaDown</defName>
+	<ThingDef ParentName="Moyo2_LMRcolider" Abstract='true'>
+		<defName>Moyo2_LMRcoliderDown</defName>
 		<label>laminar balista(overloaded)</label>
 		<description>An overloaded laminar balista. Firing is temporarily disabled until the system is restored. It's an expensive pillar in the meantime.</description>
 		<graphicData>
@@ -232,9 +259,9 @@
 			<AccuracyLong>0.78</AccuracyLong>
 			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker Inherit="False"></recipeMaker>
-		<thingCategories Inherit="False"></thingCategories>
-		<tradeTags Inherit="False"></tradeTags>			
+		<recipeMaker Inherit="False"/>
+		<thingCategories Inherit="False"/>
+		<tradeTags Inherit="False"/>
 		<comps>
 			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
 				<sharedComps>
@@ -254,6 +281,6 @@
 		<relicChance>0</relicChance>
 		<weaponTags Inherit="False">
 			<li>NoRelic</li>
-		</weaponTags>		
-	</ThingDef>	
+		</weaponTags>
+	</ThingDef>
 </Defs>

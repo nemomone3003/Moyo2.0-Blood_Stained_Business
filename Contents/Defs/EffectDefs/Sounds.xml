@@ -104,6 +104,27 @@
 				</pitchRange>
 			</li>
 		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Laminar_Chargeup3</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>		
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>WeaponSound/Laminar_Chargeup3</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
 	</SoundDef>		
 	<!-- 사격음 -->
 	<SoundDef>
@@ -238,5 +259,24 @@
 				</pitchRange>
 			</li>
 		</subSounds>
-	</SoundDef>		
+	</SoundDef>
+	<SoundDef>
+		<defName>Laminar_Colider</defName>
+		<eventNames />
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>WeaponSound/Laminar_Colider</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>			
 </Defs>

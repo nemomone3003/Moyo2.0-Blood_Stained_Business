@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="MoyoBaseGunIDR">
+		<defName>Gun_AbysstechRifle</defName>
+		<label>어비스테크 라이플</label>
+		<description>A general-purpose assault rifle that adopted abysstech.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Laminar_Activate2</soundInteract>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisites>
+			<li>Moyo2_Abysstech_Pneumatic</li>
+			<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AbysstechRifle</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_AbysstechRifle</defName>
+		<label>abysstech rifle bullet</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_LMRFireA</effecterDef>
+			</li>
+		</comps>		
+	</ThingDef>
+</Defs>

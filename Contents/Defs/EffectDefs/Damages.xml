@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <DamageDef ParentName="Bullet">
-    <defName>Moyo_DemolishBullet</defName>
-    <label>heavy bolt</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been shot to death.</deathMessage>
-    <hediff>Gunshot</hediff>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <impactSoundType>Bullet</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-    <isRanged>true</isRanged>
-    <makesAnimalsFlee>true</makesAnimalsFlee>
-    <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
-    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
-    <plantDamageFactor>2</plantDamageFactor>
-  </DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>Moyo_DemolishBullet</defName>
+		<label>heavy bolt</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Gunshot</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>2</plantDamageFactor>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>Moyo_ColiderBullet</defName>
+		<label>concentrated laminar field</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been crushed to death.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Bruise</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>2</plantDamageFactor>
+		<!-- <damageEffecter>Effecter_LMRColider</damageEffecter> -->
+	</DamageDef>
 </Defs>

@@ -138,7 +138,7 @@
 				</transformDatas>
 			</li>
 		</comps>
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>Moyo2_GunLMR</li>
 			<li>Moyo2_RifleLMR</li>
 		</weaponTags>		
@@ -201,7 +201,7 @@
 			</li>
 		</comps>
 		<relicChance>0</relicChance>
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>NoRelic</li>
 		</weaponTags>		
 	</ThingDef>	
@@ -233,7 +233,7 @@
 			</li>
 		</comps>
 		<relicChance>0</relicChance>
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>NoRelic</li>
 		</weaponTags>		
 	</ThingDef>		
