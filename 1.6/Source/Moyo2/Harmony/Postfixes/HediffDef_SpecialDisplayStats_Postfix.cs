@@ -12,7 +12,7 @@ namespace Moyo2
 	{
 
 		[HarmonyPostfix]
-		static IEnumerable<StatDrawEntry> AddDeepblueDrugsEffects(IEnumerable<StatDrawEntry> statDrawEntries, HediffDef __instance)
+		private static IEnumerable<StatDrawEntry> AddDeepblueDrugsEffects(IEnumerable<StatDrawEntry> statDrawEntries, HediffDef __instance)
 		{
 			var modExt = __instance.GetModExtension<ModExtension>();
 

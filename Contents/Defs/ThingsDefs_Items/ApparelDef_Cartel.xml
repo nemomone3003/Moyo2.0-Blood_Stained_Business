@@ -56,7 +56,7 @@
 					<baseLayer>73</baseLayer>
 				</li>
 			</renderNodeProperties>
-			<wornGraphicPath>Apparel/Cartel/CartelCloak</wornGraphicPath> <!-- This is needed for the boy part of the renderNodeProperties -->
+			<wornGraphicPath>Apparel/Cartel/CartelCloak</wornGraphicPath> <!-- This is needed for the body part of the renderNodeProperties -->
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
