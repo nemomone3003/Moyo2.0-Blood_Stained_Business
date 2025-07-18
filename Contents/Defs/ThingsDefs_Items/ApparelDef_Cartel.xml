@@ -106,4 +106,61 @@
 		</comps>
 		<isBad>false</isBad>
 	</HediffDef>-->
+	<!--개선형 바디슈트-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_CartelSuit</defName>
+		<label>advanced bodysuit(cartel)</label>
+		<description>A bodysuit that focuses on user protection with its thick fabric and temperature regulation features. It's rarely used as casual wear and is predominantly utilized by military personnel, police officers, or high-risk laborers who could afford this.</description>
+		<graphicData>
+			<texPath>Apparel/Cartel/CartelSuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>22.5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Cartel/CartelSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Moyo2_SuitAdvanced</li>
+				<li>RoyalTier5</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
+			<DevilstrandCloth>15</DevilstrandCloth>
+		</costList>
+	</ThingDef>	
 </Defs>

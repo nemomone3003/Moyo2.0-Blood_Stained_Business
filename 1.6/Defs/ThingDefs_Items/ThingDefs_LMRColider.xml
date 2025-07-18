@@ -14,7 +14,7 @@
 		</mote>
 		<drawOffscreen>true</drawOffscreen>
 		<graphicData>
-			<texPath>Things/Mote/GraserBeam</texPath>
+			<texPath>Weapon/ColiderBeam_3</texPath>
 			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
 			<shaderType>MoteBeam</shaderType>
 			<shaderParameters>
