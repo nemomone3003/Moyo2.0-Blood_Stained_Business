@@ -8,49 +8,51 @@ namespace Moyo2_ItemFormChange
 {
 	public class CompFormChange : ThingComp
 	{
-		private int revertTickCounter;
+		private int ticksToRevert;
 		private int cooldownNow;
 		private int cooldownMax;
 		private Pawn pawn;
 
 
-		public int RevertTickCounter => revertTickCounter;
+		// Cooldown and ticks to revert are different things.
+		// Ticks to revert is automatically turning the weapon back.
+		// Cooldown disallows clicking the button.
+		public int TicksToRevert
+		{
+			get => ticksToRevert;
+			private set => ticksToRevert = value;
+		}
 		public int CooldownNow => cooldownNow;
 		public int CooldownMax => cooldownMax;
 		public CompPropertiesFormChange Props => (CompPropertiesFormChange)props;
-		private Pawn Pawn
-		{
-			get
-			{
-				pawn ??= (parent.ParentHolder as Pawn_EquipmentTracker)?.pawn;
-				return pawn;
-			}
-		}
+		private Pawn Pawn => pawn ??= (parent.ParentHolder as Pawn_EquipmentTracker)?.pawn;
 
 
 		public override void CompTick()
 		{
+			if (Props.revertData is null) return;
+
 			cooldownNow = Mathf.Max(cooldownNow - 1, 0);
-			revertTickCounter++;
-			bool shouldRevert = Props.revertData != null && Props.revertData.revertAfterTicks <= revertTickCounter;
-			if (shouldRevert)
+			TicksToRevert++;
+			if (TicksToRevert >= Props.revertData.revertAfterTicks)
 			{
-				TryChangeForm();
+				TryChangeForm(Props.revertData);
 			}
 		}
 
 
-		public void TryChangeForm()
+		public void TryChangeForm(TransformData transformData)
 		{
 			//저격총 - 곤봉 처럼 왔다갔다 하면 에러 발생 할 수 있음. 가능하면 고정재료로만
 			// The moon runes make the code work.
 
-			ThingWithComps newWeapon = (ThingWithComps)ThingMaker.MakeThing(Props.revertData?.thingDef, parent.Stuff);
+			ThingWithComps newWeapon = (ThingWithComps)ThingMaker.MakeThing(transformData.thingDef, parent.Stuff);
 
 			newWeapon.HitPoints = parent.HitPoints;
 
-			foreach (ThingComp weaponComp in newWeapon.AllComps)
+			for (int i = newWeapon.AllComps.Count - 1; i >= 0; i--)
 			{
+				ThingComp weaponComp = newWeapon.AllComps[i];
 				if (Props.sharedComps.Contains(weaponComp.GetType()))
 				{
 					ThingComp parentComp = parent.GetCompByDefType(weaponComp.props);
@@ -65,19 +67,19 @@ namespace Moyo2_ItemFormChange
 			}
 
 			CompFormChange compFormChange = newWeapon.TryGetComp<CompFormChange>();
-			compFormChange.cooldownNow = Props.revertData.transformCooldown;
-			compFormChange.cooldownMax = Props.revertData.transformCooldown;
+			compFormChange.cooldownNow = transformData.transformCooldown;
+			compFormChange.cooldownMax = transformData.transformCooldown;
 
 			if (Pawn is null)
 			{
 				if (parent.Map is not null)
 				{
 					GenSpawn.Spawn(newWeapon, parent.Position, parent.Map);
-					if (Props.revertData.moteOnTransform is not null)
+					if (transformData.moteOnTransform is not null)
 					{
-						MoteMaker.MakeStaticMote(parent.DrawPos, parent.Map, Props.revertData.moteOnTransform);
+						MoteMaker.MakeStaticMote(parent.DrawPos, parent.Map, transformData.moteOnTransform);
 					}
-					Props.revertData.soundOnTransform?.PlayOneShot(SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map, false)));
+					transformData.soundOnTransform?.PlayOneShot(SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map, false)));
 				}
 				else
 				{
@@ -86,19 +88,19 @@ namespace Moyo2_ItemFormChange
 			}
 			else
 			{
+				Pawn.equipment?.TryDropEquipment(parent, out _, Pawn.Position, false);
 				Pawn.equipment?.AddEquipment(newWeapon);
 
 				if (Pawn.Spawned)
 				{
-					if (Props.revertData.moteOnTransform is not null)
+					if (transformData.moteOnTransform is not null)
 					{
-						MoteMaker.MakeStaticMote(Pawn.DrawPos, Pawn.Map, Props.revertData.moteOnTransform, 1f);
+						MoteMaker.MakeStaticMote(Pawn.DrawPos, Pawn.Map, transformData.moteOnTransform, 1f);
 					}
-					Props.revertData.soundOnTransform?.PlayOneShot(SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map, false)));
+					transformData.soundOnTransform?.PlayOneShot(SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map, false)));
 				}
 			}
-
-			parent.Destroy(0);
+			parent.Destroy();
 		}
 
 
@@ -112,28 +114,30 @@ namespace Moyo2_ItemFormChange
 
 			foreach (TransformData transformData in Props.transformDatas)
 			{
-				bool isEnabled = false;
+				bool isEnabled = true;
 				if (transformData.needApparel is not null)
 				{
-					foreach (Apparel apparel in pawn?.apparel.WornApparel)
+					isEnabled = false;
+					foreach (Apparel apparel in pawn.apparel.WornApparel)
 					{
 						if (apparel.def == transformData.needApparel)
 						{
 							isEnabled = true;
+							break;
 						}
 					}
 				}
 
-				yield return new Command_Transform_Action(this)
+				yield return new Command_Transform_Action(this, transformData)
 				{
 					defaultLabel = transformData.label,
 					defaultDesc = transformData.description,
 					icon = transformData.thingDef.uiIcon,
 					iconDrawScale = transformData.thingDef.uiIconScale,
-					iconAngle = Props.revertData.thingDef.uiIconAngle,
-					iconOffset = Props.revertData.thingDef.uiIconOffset,
+					iconAngle = transformData.thingDef.uiIconAngle,
+					iconOffset = transformData.thingDef.uiIconOffset,
 					Disabled = (cooldownNow > 0) || !isEnabled,
-					disabledReason = "appActive".Translate(transformData.needApparel.label),
+					disabledReason = "appActive".Translate(transformData.needApparel?.label),
 					// Ask nemo about what this is supposed to say
 				};
 			}
@@ -159,7 +163,7 @@ namespace Moyo2_ItemFormChange
 			base.PostExposeData();
 			Scribe_Values.Look(ref cooldownNow, "cooldownNow", 0, false);
 			Scribe_Values.Look(ref cooldownMax, "cooldownMax", 0, false);
-			Scribe_Values.Look(ref revertTickCounter, "revertTickCounter", 0, false);
+			Scribe_Values.Look(ref ticksToRevert, "revertTickCounter", 0, false);
 		}
 	}
 }

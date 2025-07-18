@@ -1137,7 +1137,6 @@
 		<comps>
 			<li Class="Moyo2_HPF.CompProperties_ResourceHarvestable">
 				<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
-				<saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey>
 				<thingDef>BlueSerum</thingDef>
 				<intervalDays>8</intervalDays>
 				<amount>2</amount>

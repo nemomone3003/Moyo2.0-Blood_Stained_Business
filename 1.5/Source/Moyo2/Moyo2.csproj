@@ -21,14 +21,15 @@
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<Optimize>true</Optimize>
 		<EnableNETAnalyzers>True</EnableNETAnalyzers>
-		<AnalysisLevel>preview-all</AnalysisLevel>
+		<AnalysisLevel>preview-recommended</AnalysisLevel>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>embedded</DebugType>
 		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>5</WarningLevel>
+		<WarningLevel>4</WarningLevel>
 		<NoWarn>
-			CA1000;CA1010;CA1304;CA1305;CA1310;CA1311;CA1707;CA1708;CA1710;CA1711;CA1715;CA1716;CA1720;CA1725;
-			CA1852;CA2201;CA3075;IDE0290
+			IDE0130;IDE0032;IDE0008;IDE0290;IDE0011
+			<!--CA1000;CA1010;CA1304;CA1305;CA1310;CA1311;CA1707;CA1708;CA1710;CA1711;CA1715;CA1716;CA1720;CA1725;
+			CA1852;CA2201;CA3075;IDE0040;IDE0130;IDE0290;IDE0008;IDE0032-->
 		</NoWarn>
 	</PropertyGroup>
 
@@ -66,6 +67,7 @@
 	<ItemGroup>
 	  <Reference Include="AlienRace">
 	    <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.5\Assemblies\AlienRace.dll</HintPath>
+	    <Private>False</Private>
 	  </Reference>
 	</ItemGroup>
 </Project>

@@ -2,7 +2,6 @@
 
 namespace Moyo2_ItemFormChange
 {
-#pragma warning disable CA1051
 	public class TransformData
 	{
 		public SoundDef soundOnTransform;
