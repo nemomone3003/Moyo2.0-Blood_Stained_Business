@@ -321,7 +321,10 @@ namespace Moyo2
 
 		public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
 		{
-			Reset();
+			if (!BeingTransportedOnGravship)
+			{
+				Reset();
+			}
 			base.DeSpawn(mode);
 		}
 
