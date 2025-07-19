@@ -44,19 +44,6 @@
 					</visibleFacing>
 					<baseLayer>21</baseLayer>
 				</li>
-				<!-- Cloak background -->
-				<li>
-					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
-					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
-					<texPath>Apparel/Cartel/CartelCloackBack</texPath>
-					<visibleFacing>
-						<li>East</li>
-						<li>North</li>
-						<li>West</li>
-						<li>South</li>
-					</visibleFacing>
-					<baseLayer>0</baseLayer>
-				</li>
 				<!-- Hood -->
 				<li>
 					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
