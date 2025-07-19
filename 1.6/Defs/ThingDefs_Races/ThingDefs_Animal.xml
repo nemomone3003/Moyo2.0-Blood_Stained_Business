@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Moyo2_Beludog</defName>
 		<label>beludog</label>
-		<description>고래의 특징을 지닌 대형 포유류입니다. 유전자 조작을 통해 애완용 상품으로 개발되어 사람에게 매우 친근합니다. 두꺼운 지방층으로 인해 추위에 매우 강하며 머리 위의 혹은 매우 부드럽습니다. \n\n상단에 구성시 탑승하여 상단의 이동속도를 조금 늘릴 수 있습니다.</description>
+		<description>A large mammal with characteristics of a whale. It was developed through genetic modification as a pet product and is very friendly toward humans. Thanks to its thick layer of fat, it is highly resistant to cold. The hump on its head is extremely soft.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>250</MarketValue>

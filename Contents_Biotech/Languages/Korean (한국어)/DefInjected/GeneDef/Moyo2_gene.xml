@@ -10,6 +10,40 @@
   <Moyo2_Skin_Depthborn.symbolPack.prefixSymbols.0.symbol>뎁스본</Moyo2_Skin_Depthborn.symbolPack.prefixSymbols.0.symbol>
   <!--Original=depthborn-->
   <Moyo2_Skin_Depthborn.symbolPack.suffixSymbols.0.symbol>뎁스본</Moyo2_Skin_Depthborn.symbolPack.suffixSymbols.0.symbol>
+  <!--Original=depthborn skin pattern-->
+  <Moyo2_Skin_Chemskin.label>켐스킨 피부 패턴</Moyo2_Skin_Chemskin.label>
+  <!--Original=depthborn pattern-->
+  <Moyo2_Skin_Chemskin.labelShortAdj>켐스킨 패턴</Moyo2_Skin_Chemskin.labelShortAdj>
+  <!--Original=Moyos with this gene will have depthborn skin pattern.-->
+  <Moyo2_Skin_Chemskin.description>이 유전자를 지닌 모요들은 켐스킨 피부 패턴을 가집니다.</Moyo2_Skin_Chemskin.description>
+  <!--Original=depthborn-->
+  <Moyo2_Skin_Chemskin.symbolPack.prefixSymbols.0.symbol>켐스킨</Moyo2_Skin_Chemskin.symbolPack.prefixSymbols.0.symbol>
+  <!--Original=depthborn-->
+  <Moyo2_Skin_Chemskin.symbolPack.suffixSymbols.0.symbol>켐스킨</Moyo2_Skin_Chemskin.symbolPack.suffixSymbols.0.symbol>
+  <!--Original=depthborn skin pattern-->
+  <Moyo2_Glow_Blue.label>푸른빛 발광부</Moyo2_Glow_Blue.label>
+  <!--Original=depthborn pattern-->
+  <Moyo2_Glow_Blue.labelShortAdj>푸른빛 발광</Moyo2_Glow_Blue.labelShortAdj>
+  <!--Original=Moyos with this gene will have depthborn skin pattern.-->
+  <Moyo2_Glow_Blue.description>이 유전자를 지닌 모요들은 푸른빛 발광부를 가집니다.</Moyo2_Glow_Blue.description>
+  <!--Original=depthborn-->
+  <Moyo2_Glow_Blue.symbolPack.prefixSymbols.0.symbol>푸른빛</Moyo2_Glow_Blue.symbolPack.prefixSymbols.0.symbol>
+  <!--Original=depthborn skin pattern-->
+  <Moyo2_Glow_Purple.label>보랏빛 발광부</Moyo2_Glow_Purple.label>
+  <!--Original=depthborn pattern-->
+  <Moyo2_Glow_Purple.labelShortAdj>보랏빛 발광</Moyo2_Glow_Purple.labelShortAdj>
+  <!--Original=Moyos with this gene will have depthborn skin pattern.-->
+  <Moyo2_Glow_Purple.description>이 유전자를 지닌 모요들은 보랏빛 발광를 가집니다.</Moyo2_Glow_Purple.description>
+  <!--Original=depthborn-->
+  <Moyo2_Glow_Purple.symbolPack.prefixSymbols.0.symbol>보랏빛</Moyo2_Glow_Purple.symbolPack.prefixSymbols.0.symbol>
+  <!--Original=depthborn skin pattern-->
+  <Moyo2_Glow_Violet.label>자줏빛 발광부</Moyo2_Glow_Violet.label>
+  <!--Original=depthborn pattern-->
+  <Moyo2_Glow_Violet.labelShortAdj>자줏빛 발광</Moyo2_Glow_Violet.labelShortAdj>
+  <!--Original=Moyos with this gene will have depthborn skin pattern.-->
+  <Moyo2_Glow_Violet.description>이 유전자를 지닌 모요들은 자줏빛 발광부를 가집니다.</Moyo2_Glow_Violet.description>
+  <!--Original=depthborn-->
+  <Moyo2_Glow_Violet.symbolPack.prefixSymbols.0.symbol>자줏빛</Moyo2_Glow_Violet.symbolPack.prefixSymbols.0.symbol>
   <!--Original=sluggish runner-->
   <Moyo2_MoveSpeed_Slug.label>매우 느린 발걸음</Moyo2_MoveSpeed_Slug.label>
   <!--Original=sluggish-->
@@ -20,24 +54,24 @@
   <Moyo2_MoveSpeed_Slug.labelShortAdj>매우 느림</Moyo2_MoveSpeed_Slug.labelShortAdj>
   <!-- EN: slow -->
   <Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.0.symbol>느린</Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.0.symbol>
-  <!-- EN: plod -->
-  <Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.1.symbol>터벅</Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.1.symbol>
-  <!-- EN: grado -->
-  <Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.2.symbol>굼벵이</Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.2.symbol>
-  <!-- EN: letho -->
-  <Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.3.symbol>여유</Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.3.symbol>
-  <!-- EN: slug -->
-  <Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.4.symbol>느림보</Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.4.symbol>
-  <!-- EN: slack -->
-  <Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.5.symbol>게으른</Moyo2_MoveSpeed_Slug.symbolPack.prefixSymbols.5.symbol>
   <!-- EN: slug -->
   <Moyo2_MoveSpeed_Slug.symbolPack.suffixSymbols.0.symbol>달팽이</Moyo2_MoveSpeed_Slug.symbolPack.suffixSymbols.0.symbol>
-  <!-- EN: plodder -->
-  <Moyo2_MoveSpeed_Slug.symbolPack.suffixSymbols.1.symbol>늘보</Moyo2_MoveSpeed_Slug.symbolPack.suffixSymbols.1.symbol>
   <!--Original=deliberate worker-->
   <Moyo2_WorkSpeed_Slow.label>신중한 일꾼</Moyo2_WorkSpeed_Slow.label>
   <!--Original=deliberate-->
   <Moyo2_WorkSpeed_Slow.labelShortAdj>신중함</Moyo2_WorkSpeed_Slow.labelShortAdj>
   <!--Original=Carriers of this gene work more slowly than normal.-->
   <Moyo2_WorkSpeed_Slow.description>이 유전자의 보유자는 다른 이들보다 느리게 일을 합니다.</Moyo2_WorkSpeed_Slow.description>
+  <!--Original=deliberate worker-->
+  <Moyo2_WorkSpeed_Slow.label>효율적인 일꾼</Moyo2_WorkSpeed_Slow.label>
+  <!--Original=deliberate-->
+  <Moyo2_WorkSpeed_Slow.labelShortAdj>효율적</Moyo2_WorkSpeed_Slow.labelShortAdj>
+  <!--Original=Carriers of this gene work more slowly than normal.-->
+  <Moyo2_WorkSpeed_Slow.description>이 유전자의 보유자는 다른 이들보다 빠르게 일을 합니다.</Moyo2_WorkSpeed_Slow.description>  
+  <!--Original=deliberate worker-->
+  <Moyo2_DeepblueMetabolism.label>왕성한 딥블루 신진대사</Moyo2_DeepblueMetabolism.label>
+  <!--Original=deliberate-->
+  <Moyo2_DeepblueMetabolism.labelShortAdj>효율적</Moyo2_DeepblueMetabolism.labelShortAdj>
+  <!--Original=Carriers of this gene work more slowly than normal.-->
+  <Moyo2_DeepblueMetabolism.description>이 유전자의 보유자는 신체에서 생산되는 딥블루를 모두 신진대사에 활용합니다.</Moyo2_DeepblueMetabolism.description>    
 </LanguageData>

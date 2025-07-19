@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!--English=This linkable has to be built over its designated building-->
+	<Moyo2_Bullet_LMRColider.label>집중 라미너 역장</Moyo2_Bullet_LMRColider.label>
+	<!--Original=라미너 오토캐논-->
+	<Moyo2_LMRColider.label>라미너 역장 충돌기</Moyo2_LMRColider.label>
+	<!--Original=A large 라미너 라이플 designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When 과충전, it fires even faster but causes a brief 과부하.\n\nResearch aimed at increasing the firing rate of 라미너 라이플 was conducted, developing a method to reduce the 라미너 field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.-->
+	<Moyo2_LMRColider.description>집중된 라미너 역장을 발생시켜 대상을 타격하는 등대의 실험적 무기 콘셉트입니다. 무겁고 조작하기 어렵지만 높은 명중률과 파괴력을 보장합니다.\n\n충분히 강한 라미너 역장이 물체에 유의미한 물리력을 행사할 수 있다면, 이를 통해 투사체를 유도하는 방식이 아닌 역장 그 자체로 목표를 타격하자는 발상에서 만들어진 무기입니다. 이에 필요한 대형 역장 발생기와 동력원으로 인해 자연스레 매우 크고 무거워졌습니다.</Moyo2_LMRColider.description>
+	<!--Original=몸체-->
+	<Moyo2_LMRColider.tools.0.label>몸체</Moyo2_LMRColider.tools.0.label>
+	<!--Original=총구-->
+	<Moyo2_LMRColider.tools.1.label>총구</Moyo2_LMRColider.tools.1.label>
+	<!--Original=라미너 오토캐논-->
+	<Moyo2_LMRColider.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColider.verbs.Verb_Shoot.label>
+</LanguageData>

@@ -37,9 +37,15 @@
   <!--Original=모요 colonist-->
   <Moyo2_ColonistPawn.label>모요 정착민</Moyo2_ColonistPawn.label>
   <!--Original=depthweed-->
-  <Moyo2_FishKindDepthWeed.label>뎁스위드</Moyo2_FishKindDepthWeed.label>
+  <!-- <Moyo2_FishKindDepthWeed.label>뎁스위드</Moyo2_FishKindDepthWeed.label> -->
   <!--Original=stillwater tuna-->
-  <Moyo2_FishKindTuna.label>파도다랑어</Moyo2_FishKindTuna.label>
+  <!-- <Moyo2_FishKindTuna.label>파도다랑어</Moyo2_FishKindTuna.label> -->
   <!--Original=demi kraken-->
-  <Moyo2_FishKindDemiKraken.label>데미크라켄</Moyo2_FishKindDemiKraken.label>
+  <!-- <Moyo2_FishKindDemiKraken.label>데미크라켄</Moyo2_FishKindDemiKraken.label> -->
+  <Moyo2_Beludog.label>벨루독</Moyo2_Beludog.label>
+  <Moyo2_Beludog.labelPlural>벨루독</Moyo2_Beludog.labelPlural>
+  <Moyo2_Beludog.lifeStages.0.>벨루독</Moyo2_Beludog.lifeStages.0.>
+  <Moyo2_Beludog.lifeStages.0.label>벨루독</Moyo2_Beludog.lifeStages.0.label>
+  <Moyo2_Beludog.lifeStages.0.labelPlural>벨루독 강아지</Moyo2_Beludog.lifeStages.0.labelPlural> 
+ 
 </LanguageData>

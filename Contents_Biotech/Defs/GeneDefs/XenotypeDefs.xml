@@ -3,8 +3,8 @@
 	<XenotypeDef>
 		<defName>Moyo2_Xenotype_Depthborn</defName>
 		<label>depthborn moyo</label>
-		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.\n\nDepthborn.</description>
-		<descriptionShort>Baseline moyos.</descriptionShort>
+		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.\n\nDepthborn moyos are the most numerous kind of moyos in the lighthouse. every single moyo xenotypes has branched or been modified from depthborn moyos.</description>
+		<descriptionShort>Baseline moyos. Adept at medical and intellectual while more acclimated to cold environment.</descriptionShort>
 		<iconPath>Icon/Moyo_FactionIcon</iconPath>
 		<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
@@ -38,8 +38,8 @@
 	<XenotypeDef>
 		<defName>Moyo2_Xenotype_Chemskin</defName>
 		<label>chemskin moyo</label>
-		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.\n\nChemskin.</description>
-		<descriptionShort>Chemskin moyos.</descriptionShort>
+		<description>species born after extensive and prolonged genetic modification, possesses characteristics of deep-sea creatures and utilizes deep blue for metabolism. Due to extensive modification, only certain traits of the moyo can be applied to humans.\n\nChemskin moyos are a xenotype designed specifically for the industrial zones of the Lighthouse. They possess strong resistance to toxic and high-temperature environments and are highly efficient workers.</description>
+		<descriptionShort>Chemskin moyos. Adept at crafting with high work speed. Resistant to hot and toxic environment.</descriptionShort>
 		<iconPath>Icon/Moyo_FactionIcon</iconPath>
 		<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
@@ -47,6 +47,7 @@
 		<genes>
 			<!-- 외형 -->
 			<li>Moyo2_Skin_Chemskin</li>
+			<li>Moyo2_Hair_ChemskinBlack</li>
 			<li>Moyo2_Glow_Blue</li>
 			<li>Moyo2_Glow_Purple</li>
 			<li>Moyo2_Glow_Violet</li>			

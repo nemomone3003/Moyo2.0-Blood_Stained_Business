@@ -157,7 +157,7 @@
 	<!-- 과묵한 아이 -->
 	<Moyo2_MuteChild.title>모요 과묵한 아이</Moyo2_MuteChild.title>
 	<Moyo2_MuteChild.titleShort>과묵한 아이</Moyo2_MuteChild.titleShort>
-	<Moyo2_MuteChild.description>{PAWN_nameDef} (은)는 어릴 적부터 말이 없었습니다. 단순히 말을 하지 않는 정도를 넘어 언어 능력에 문제가 있는 것이 아닌가 걱정될 정도였습니다. 하지만 {PAWN_pronoun}는 단지 초자연적인 것에 조금 더 민감했고, 텔레파시를 통해 소통하고 있었습니다. 단지 아무도 {PAWN_possesive}에게 답을 해주지 않았을 뿐입니다.</Moyo2_MuteChild.description>
+	<Moyo2_MuteChild.description>{PAWN_nameDef} (은)는 어릴 적부터 말이 없었습니다. 단순히 말을 하지 않는 정도를 넘어 언어 능력에 문제가 있는 것이 아닌가 걱정될 정도였습니다. 하지만 {PAWN_pronoun}는 단지 초자연적인 것에 조금 더 민감했고, 텔레파시를 통해 소통하고 있었습니다. 단지 아무도 {PAWN_possessive}에게 답을 해주지 않았을 뿐입니다.</Moyo2_MuteChild.description>
 	<!-- 가출아이 -->
 	<Moyo2_RunawayKid.title>모요 가출아이</Moyo2_RunawayKid.title>
 	<Moyo2_RunawayKid.titleShort>가출아이</Moyo2_RunawayKid.titleShort>
@@ -271,7 +271,7 @@
 	<!-- 수석 공학자 -->
 	<Moyo2_CheifEngineer.title>모요 수석 공학자</Moyo2_CheifEngineer.title>
 	<Moyo2_CheifEngineer.titleShort>수석 공학자</Moyo2_CheifEngineer.titleShort>
-	<Moyo2_CheifEngineer.description>{PAWN_nameDef}(은)는 공학에서 두각을 나타내었고, 의회의 인정을 받아 수석 공학자가 되었습니다. {PAWN_pronoun}는 의회의 전폭적인 지원을 받으며 어떤 프로젝트에 투입되었습니다. 기존의 어비스테크와는 다른 최첨단의 기술이 개발되었지만 프로젝트 자체가 중단이 되어버렸습니다. 의회는 기밀을 지키기 위해 {PAWN_possesive}의 모든 것을 통제하려 했고 이를 원치 않았던 {PAWN_pronoun}는 의회의 손길이 닿지 않는 곳으로 도망쳤습니다. /n/n그 프로젝트의 이름은 문다이버 였습니다.</Moyo2_CheifEngineer.description>
+	<Moyo2_CheifEngineer.description>{PAWN_nameDef}(은)는 공학에서 두각을 나타내었고, 의회의 인정을 받아 수석 공학자가 되었습니다. {PAWN_pronoun}는 의회의 전폭적인 지원을 받으며 어떤 프로젝트에 투입되었습니다. 기존의 어비스테크와는 다른 최첨단의 기술이 개발되었지만 프로젝트 자체가 중단이 되어버렸습니다. 의회는 기밀을 지키기 위해 {PAWN_possessive}의 모든 것을 통제하려 했고 이를 원치 않았던 {PAWN_pronoun}는 의회의 손길이 닿지 않는 곳으로 도망쳤습니다. /n/n그 프로젝트의 이름은 문다이버 였습니다.</Moyo2_CheifEngineer.description>
 	<!-- 세이렌 -->
 	<Moyo2_Siren.title>모요 세이렌</Moyo2_Siren.title>
 	<Moyo2_Siren.titleShort>세이렌</Moyo2_Siren.titleShort>

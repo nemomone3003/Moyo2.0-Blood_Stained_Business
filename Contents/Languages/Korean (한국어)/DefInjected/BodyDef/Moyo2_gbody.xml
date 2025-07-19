@@ -1,62 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	<!--Original=fish-->
-	<Moyo2_FishBody.label>물고기</Moyo2_FishBody.label>
-	<!--Original=등지느러미-->
-	<Moyo2_FishBody.corePart.parts.2.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.2.customLabel>
-	<!--Original=등지느러미-->
-	<Moyo2_FishBody.corePart.parts.3.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.3.customLabel>
-	<!--Original=tail-->
-	<Moyo2_FishBody.corePart.parts.4.customLabel>꼬리</Moyo2_FishBody.corePart.parts.4.customLabel>
-	<!--Original=왼쪽 폐-->
-	<Moyo2_FishBody.corePart.parts.7.customLabel>왼쪽 폐</Moyo2_FishBody.corePart.parts.7.customLabel>
-	<!--Original=오른쪽 폐-->
-	<Moyo2_FishBody.corePart.parts.8.customLabel>오른쪽 폐</Moyo2_FishBody.corePart.parts.8.customLabel>
-	<!--Original=왼쪽 가슴지느러미-->
-	<Moyo2_FishBody.corePart.parts.11.customLabel>왼쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.11.customLabel>
-	<!--Original=오른쪽 가슴지느러미-->
-	<Moyo2_FishBody.corePart.parts.12.customLabel>오른쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.12.customLabel>
-	<!--Original=왼쪽 배지느러미-->
-	<Moyo2_FishBody.corePart.parts.13.customLabel>왼쪽 배지느러미</Moyo2_FishBody.corePart.parts.13.customLabel>
-	<!--Original=오른쪽 배지느러미-->
-	<Moyo2_FishBody.corePart.parts.14.customLabel>오른쪽 배지느러미</Moyo2_FishBody.corePart.parts.14.customLabel>
-	<!--Original=tail fin-->
-	<Moyo2_FishBody.corePart.parts.4.parts.0.customLabel>꼬리지느러미</Moyo2_FishBody.corePart.parts.4.parts.0.customLabel>
-	<!--Original=왼쪽 eye-->
-	<Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel>왼눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel>
-	<!--Original=오른쪽 eye-->
-	<Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel>오른눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel>
-	<!--Original=cephalopod-->
-	<Moyo2_CephalopodBody.label>두족류</Moyo2_CephalopodBody.label>
-	<!--Original=촉수 뿌리-->
-	<Moyo2_CephalopodBody.corePart.parts.0.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.0.customLabel>
-	<!--Original=촉수 뿌리-->
-	<Moyo2_CephalopodBody.corePart.parts.1.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.1.customLabel>
-	<!--Original=왼쪽 폐-->
-	<Moyo2_CephalopodBody.corePart.parts.4.customLabel>왼쪽 폐</Moyo2_CephalopodBody.corePart.parts.4.customLabel>
-	<!--Original=오른쪽 폐-->
-	<Moyo2_CephalopodBody.corePart.parts.5.customLabel>오른쪽 폐</Moyo2_CephalopodBody.corePart.parts.5.customLabel>
-	<!--Original=왼쪽 eye-->
-	<Moyo2_CephalopodBody.corePart.parts.8.customLabel>왼쪽 eye</Moyo2_CephalopodBody.corePart.parts.8.customLabel>
-	<!--Original=오른쪽 eye-->
-	<Moyo2_CephalopodBody.corePart.parts.9.customLabel>오른쪽 eye</Moyo2_CephalopodBody.corePart.parts.9.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel>
-	<!--Original=촉수-->
-	<Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel>
-	<!--Original=moyo-->
+	<!-- <Moyo2_FishBody.label>물고기</Moyo2_FishBody.label> -->
+	<!-- <Moyo2_FishBody.corePart.parts.2.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.2.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.3.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.3.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.4.customLabel>꼬리</Moyo2_FishBody.corePart.parts.4.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.7.customLabel>왼쪽 폐</Moyo2_FishBody.corePart.parts.7.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.8.customLabel>오른쪽 폐</Moyo2_FishBody.corePart.parts.8.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.11.customLabel>왼쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.11.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.12.customLabel>오른쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.12.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.13.customLabel>왼쪽 배지느러미</Moyo2_FishBody.corePart.parts.13.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.14.customLabel>오른쪽 배지느러미</Moyo2_FishBody.corePart.parts.14.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.4.parts.0.customLabel>꼬리지느러미</Moyo2_FishBody.corePart.parts.4.parts.0.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel>왼눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel> -->
+	<!-- <Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel>오른눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.label>두족류</Moyo2_CephalopodBody.label> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.0.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.0.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.1.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.1.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.4.customLabel>왼쪽 폐</Moyo2_CephalopodBody.corePart.parts.4.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.5.customLabel>오른쪽 폐</Moyo2_CephalopodBody.corePart.parts.5.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.8.customLabel>왼쪽 eye</Moyo2_CephalopodBody.corePart.parts.8.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.9.customLabel>오른쪽 eye</Moyo2_CephalopodBody.corePart.parts.9.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel> -->
+	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel> -->
+	<!-- 모요 -->
 	<Moyo2_MoyoBody.label>모요</Moyo2_MoyoBody.label>
 	<Moyo2_MoyoBody.corePart.parts.4.customLabel>꼬리</Moyo2_MoyoBody.corePart.parts.4.customLabel>
 	<Moyo2_MoyoBody.corePart.parts.7.customLabel>왼쪽 폐</Moyo2_MoyoBody.corePart.parts.7.customLabel>
