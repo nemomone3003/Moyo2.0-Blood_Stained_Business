@@ -22,7 +22,7 @@ namespace Moyo2_HPF
 
 		public float intervalDays = 15f;
 		public int amount = 1;
-		public string inspectText;
+		public string translationKey;
 		public JobDef harvestJobDef;
 		public ThingDef thingDef;
 		public List<Constraint> constraints = [];

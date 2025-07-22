@@ -104,11 +104,11 @@ namespace Moyo2_HPF
 			{
 				return null;
 			}
-			if (Props.inspectText is null)
+			if (Props.translationKey is null)
 			{
 				return null;
 			}
-			return $"{Props.inspectText}: {fullness.ToStringPercent()}";
+			return $"{Props.translationKey}: {fullness.ToStringPercent()}";
 		}
 
 

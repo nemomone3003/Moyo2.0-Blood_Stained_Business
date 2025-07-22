@@ -1141,7 +1141,7 @@
 				<thingDef>BlueSerum</thingDef>
 				<intervalDays>8</intervalDays>
 				<amount>2</amount>
-				<inspectText>BlueSerum extaction progress</inspectText>
+				<translationKey>Moyo2_HPF_inspectText</translationKey>
 				<constraints>
 					<li Class="Moyo2_HPF.ConstraintPawnAgeOver">
 						<age>7</age>

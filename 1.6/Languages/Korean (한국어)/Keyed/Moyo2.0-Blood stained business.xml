@@ -22,4 +22,5 @@
 	<Moyo2_StatDrawEntry_StageReportText>이 단계일 때 아래와 같은 효과가 발생합니다.</Moyo2_StatDrawEntry_StageReportText>
 	<Moyo2_StatDrawEntry_MoodLabel>기분 변화량</Moyo2_StatDrawEntry_MoodLabel>
 	<Moyo2_StatDrawEntry_MoodReportText>이 단계일 때 아래와 같은 기분 변화가 발생합니다.</Moyo2_StatDrawEntry_MoodReportText>
+	<Moyo2_HPF_inspectText>TRANSLATE ME NEMO</Moyo2_HPF_inspectText>
 </LanguageData>
