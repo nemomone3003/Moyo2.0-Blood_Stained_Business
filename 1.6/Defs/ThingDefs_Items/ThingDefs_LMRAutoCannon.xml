@@ -28,7 +28,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
-		<uiIconScale>1.3</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<soundInteract>Laminar_Activate2</soundInteract>
 		<statBases>
 			<WorkToMake>75000</WorkToMake>

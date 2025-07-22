@@ -968,6 +968,7 @@
 				</blackGeneTags>
 				<xenotypeList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Moyo2_Xenotype_Depthborn</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Moyo2_Xenotype_Chemskin</li>
 				</xenotypeList>
 				<geneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Moyo2_Skin_Depthborn</li>

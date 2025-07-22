@@ -69,17 +69,17 @@
 	<!-- <selectionWeight>0.05</selectionWeight> -->
 	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
 	<!-- </GeneDef> -->
-	<!-- <GeneDef ParentName="GeneHairColorBase"> -->
-	<!-- <defName>Moyo2_Hair_PaleWhite</defName> -->
-	<!-- <label>pale white hair</label> -->
-	<!-- <hairColorOverride>(217, 225, 255)</hairColorOverride> -->
-	<!-- <selectionWeight>0.03</selectionWeight> -->
-	<!-- <displayOrderInCategory>80</displayOrderInCategory> -->
-	<!-- </GeneDef> -->
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Moyo2_Hair_ChemskinBlack</defName>
+		<label>chemskin black hair</label>
+		<hairColorOverride>(43,49,50)</hairColorOverride>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>80</displayOrderInCategory>
+	</GeneDef>
 	<GeneDef Name="GeneMoyoCosmeticSkin" Abstract="True">
 		<biostatCpx>0</biostatCpx>
 		<displayCategory>Moyo2_Gene</displayCategory>
-		<randomChosen>false</randomChosen>		
+		<randomChosen>false</randomChosen>
 		<exclusionTags>
 			<li>SkinColorOverride</li>
 		</exclusionTags>
@@ -123,19 +123,19 @@
 		<description>Moyos with this gene will have chemskin skin pattern.</description>
 		<iconPath>Icon/ChemskinIcon1</iconPath>
 		<skinColorOverride>(255, 255, 255)</skinColorOverride>
-		<hairColorOverride>(43,49,50)</hairColorOverride>
+		<!-- <hairColorOverride>(43,49,50)</hairColorOverride>	 -->
 		<randomBrightnessFactor>0</randomBrightnessFactor>
 		<displayOrderInCategory>93</displayOrderInCategory>
 		<displayCategory>Moyo2_Gene</displayCategory>
 		<symbolPack>
 			<prefixSymbols>
 				<li>
-					<symbol>Chemskin</symbol>
+					<symbol>chemskin</symbol>
 				</li>
 			</prefixSymbols>
 			<suffixSymbols>
 				<li>
-					<symbol>Chemskin</symbol>
+					<symbol>chemskin</symbol>
 				</li>
 			</suffixSymbols>
 		</symbolPack>
@@ -154,11 +154,6 @@
 					<symbol>blue</symbol>
 				</li>
 			</prefixSymbols>
-			<suffixSymbols>
-				<li>
-					<symbol>blue</symbol>
-				</li>
-			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
 	<GeneDef ParentName="GeneMoyoCosmeticGlow">
@@ -174,11 +169,6 @@
 					<symbol>purple</symbol>
 				</li>
 			</prefixSymbols>
-			<suffixSymbols>
-				<li>
-					<symbol>purple</symbol>
-				</li>
-			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
 	<GeneDef ParentName="GeneMoyoCosmeticGlow">
@@ -194,13 +184,8 @@
 					<symbol>violet</symbol>
 				</li>
 			</prefixSymbols>
-			<suffixSymbols>
-				<li>
-					<symbol>violet</symbol>
-				</li>
-			</suffixSymbols>
 		</symbolPack>
-	</GeneDef>		
+	</GeneDef>
 	<!-- 스텟 유전자 -->
 	<GeneDef ParentName="GeneMoveSpeedBase">
 		<defName>Moyo2_MoveSpeed_Slug</defName>
@@ -257,8 +242,8 @@
 	<GeneDef>
 		<defName>Moyo2_DeepblueMetabolism</defName>
 		<label>hyper deepblue metabolism</label>
-		<labelShortAdj>deliberate</labelShortAdj>
-		<description>Carriers of this gene work faster than normal.</description>
+		<labelShortAdj>deepblue metabolism</labelShortAdj>
+		<description>Carriers of this gene uses all deepblue produced in their body for metabolism purposes.</description>
 		<iconPath>Icon/FastWorkIcon</iconPath>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>0</displayOrderInCategory>
@@ -268,5 +253,5 @@
 		</statFactors>
 		<biostatMet>5</biostatMet>
 		<biostatCpx>7</biostatCpx>
-	</GeneDef>	
+	</GeneDef>
 </Defs>

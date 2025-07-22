@@ -12,6 +12,10 @@
   <Moyo2_Damage_LMRBoltDemolish.label>라미너 볼트</Moyo2_Damage_LMRBoltDemolish.label>
   <!--Original={0} has died in an explosion.-->
   <Moyo2_Damage_LMRBoltDemolish.deathMessage>{0}는 폭발로 인해 죽었습니다.</Moyo2_Damage_LMRBoltDemolish.deathMessage>
+  <!--Original={0} has died in an explosion.-->
+  <Moyo_ColiderBullet.label>집중 라미너 역장</Moyo_ColiderBullet.label>
+  <!--Original={0} has died in an explosion.-->
+  <Moyo_ColiderBullet.deathMessage>{0}는 으깨져 죽었습니다.</Moyo_ColiderBullet.deathMessage>  
   <!--Original=heavy harpoon-->
   <Moyo2_Damage_MoyoHarpoon.label>대형 작살</Moyo2_Damage_MoyoHarpoon.label>
   <!--Original=blunt-->

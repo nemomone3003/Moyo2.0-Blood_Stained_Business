@@ -59,7 +59,7 @@
 			<MarketValue>1.5</MarketValue>
 		</statBases>
 		<ingestible>
-			<tasteThought>AteRawFood</tasteThought>
+			<tasteThought>Moyo2_AteRawKraken</tasteThought>
 		</ingestible>
 	</ThingDef>	
 	<!-- 물고기 질식 -->

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <Moyo2_Xenotype_Depthborn.label>뎁스본 모요</Moyo2_Xenotype_Depthborn.label>
-  <Moyo2_Xenotype_Depthborn.description>길고 긴 유전자 개조 끝에 탄생한 종족입니다. 심해 생물의 특징을 가지고 있으며 딥블루를 생산 및 활용하는 특징을 가지고 있습니다.  심한 개조로 인해 모요의 형질중 일부만 인간에게 적용할 수 있습니다.</Moyo2_Xenotype_Depthborn.description>
-  <Moyo2_Xenotype_Depthborn.descriptionShort>일반 모요</Moyo2_Xenotype_Depthborn.descriptionShort>
+  <Moyo2_Xenotype_Depthborn.description>길고 긴 유전자 개조 끝에 탄생한 종족입니다. 심해 생물의 특징을 가지고 있으며 딥블루를 생산 및 활용하는 특징을 가지고 있습니다. 과도한 개조로 인해 모요의 형질중 일부만 인간에게 적용할 수 있습니다. 뎁스본 모요는 등대에서 가장 흔히 볼 수 있는 모요들이며, 다른 모요의 아종들은 모두 여기에서 파생되거나 개조되었습니다.</Moyo2_Xenotype_Depthborn.description>
+  <Moyo2_Xenotype_Depthborn.descriptionShort>일반적인 모요입니다. 의학과 연구에 뛰어나며 추운 환경에 적응하였습니다.</Moyo2_Xenotype_Depthborn.descriptionShort>
+  <Moyo2_Xenotype_Chemskin.label>켐스킨 모요</Moyo2_Xenotype_Chemskin.label>
+  <Moyo2_Xenotype_Chemskin.description>길고 긴 유전자 개조 끝에 탄생한 종족입니다. 심해 생물의 특징을 가지고 있으며 딥블루를 생산 및 활용하는 특징을 가지고 있습니다. 과도한 개조로 인해 모요의 형질중 일부만 인간에게 적용할 수 있습니다. 켐스킨 모요는 등대의 공장지대에 최적화된 아종으로 디자인되었습니다. 유독하고 고온의 환경에 강한 저항력을 가지고 있으며 매우 효율적인 일꾼들입니다.</Moyo2_Xenotype_Chemskin.description>
+  <Moyo2_Xenotype_Chemskin.descriptionShort>켐스킨 모요입니다. 제작에 뛰어나며 높은 작업 속도를 가지고 있습니다. 덥고 유독한 환경에 적응하였습니다.</Moyo2_Xenotype_Chemskin.descriptionShort>  
 </LanguageData>

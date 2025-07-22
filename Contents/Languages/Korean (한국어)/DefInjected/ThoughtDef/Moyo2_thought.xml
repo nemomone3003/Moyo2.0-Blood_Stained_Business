@@ -42,11 +42,11 @@
 	<DBThought_Numb.stages.0.label>넘 펄</DBThought_Numb.stages.0.label>
 	<DBThought_Numb.stages.0.description>무감각해.</DBThought_Numb.stages.0.description>
 	<!-- 참치 -->
-	<Moyo2_AteRawTuna.stages.ate_raw_food.label>생식</Moyo2_AteRawTuna.stages.ate_raw_food.label>
-	<Moyo2_AteRawTuna.stages.ate_raw_food.description>날것을 그냥 먹어야 했어. 요리할 수는 없었던 거야? 우리는 동물이 아니라고.</Moyo2_AteRawTuna.stages.ate_raw_food.description>
-	<Moyo2_AteRawTuna_Moyo.stages.ate_raw_food.label>섬세한 생식</Moyo2_AteRawTuna_Moyo.stages.ate_raw_food.label>
-	<Moyo2_AteRawTuna_Moyo.stages.ate_raw_food.description>섬세한 음식을 먹었어. 부드러운 살점이 입 안에서 녹아.</Moyo2_AteRawTuna_Moyo.stages.ate_raw_food.description>
+	<Moyo2_AteRawTuna.stages.0.label>생식</Moyo2_AteRawTuna.stages.0.label>
+	<Moyo2_AteRawTuna.stages.0.description>날것을 그냥 먹어야 했어. 요리할 수는 없었던 거야? 우리는 동물이 아니라고.</Moyo2_AteRawTuna.stages.0.description>
+	<Moyo2_AteRawTuna_Moyo.stages.0.label>섬세한 생식</Moyo2_AteRawTuna_Moyo.stages.0.label>
+	<Moyo2_AteRawTuna_Moyo.stages.0.description>섬세한 음식을 먹었어. 부드러운 살점이 입 안에서 녹아.</Moyo2_AteRawTuna_Moyo.stages.0.description>
 	<!-- 문어 -->
-	<Moyo2_AteRawKraken.stages.ate_unpleasant_raw_food.label>불쾌한 생식</Moyo2_AteRawKraken.stages.ate_unpleasant_raw_food.label>
-	<Moyo2_AteRawKraken.stages.ate_unpleasant_raw_food.description>아주 불쾌한 것을 먹었어. 겉은 질기고 속은 미끌거려. 다시는 이걸 먹고 싶지 않아.</Moyo2_AteRawKraken.stages.ate_unpleasant_raw_food.description>
+	<Moyo2_AteRawKraken.stages.0.label>불쾌한 생식</Moyo2_AteRawKraken.stages.0.label>
+	<Moyo2_AteRawKraken.stages.0.description>아주 불쾌한 것을 먹었어. 겉은 질기고 속은 미끌거려. 다시는 이걸 먹고 싶지 않아.</Moyo2_AteRawKraken.stages.0.description>
 </LanguageData>
