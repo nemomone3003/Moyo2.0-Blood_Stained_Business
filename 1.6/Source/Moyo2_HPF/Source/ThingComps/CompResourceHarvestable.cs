@@ -108,7 +108,7 @@ namespace Moyo2_HPF
 			{
 				return null;
 			}
-			return $"{Props.translationKey}: {fullness.ToStringPercent()}";
+			return $"{Props.translationKey.Translate()}: {fullness.ToStringPercent()}";
 		}
 
 
