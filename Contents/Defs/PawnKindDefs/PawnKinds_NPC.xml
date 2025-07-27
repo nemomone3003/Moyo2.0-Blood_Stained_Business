@@ -13,7 +13,8 @@
 		<initialResistanceRange>10~17</initialResistanceRange>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">1</Moyo2_Xenotype_Depthborn>
+				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">0.75</Moyo2_Xenotype_Depthborn>
+				<Moyo2_Xenotype_Chemskin MayRequire="Ludeon.RimWorld.Biotech">0.25</Moyo2_Xenotype_Chemskin>
 				<!-- 차단 -->
 				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
 				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>

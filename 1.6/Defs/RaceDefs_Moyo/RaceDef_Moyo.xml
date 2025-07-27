@@ -215,8 +215,8 @@
 								<west>
 									<layerOffset>-2.0</layerOffset>
 									<offset>(-0.1, -0.02)</offset>
-								</west>								
-							</offsets>							
+								</west>
+							</offsets>
 						</li>
 						<li>
 							<originalTag>LeftEye</originalTag>
@@ -238,9 +238,9 @@
 								<west>
 									<layerOffset>-2.0</layerOffset>
 									<offset>(-0.1, -0.02)</offset>
-								</west>								
-							</offsets>								
-						</li>						
+								</west>
+							</offsets>
+						</li>
 						<li>
 							<originalTag>RightEye</originalTag>
 							<replacement>
@@ -261,8 +261,8 @@
 								<west>
 									<layerOffset>-2.0</layerOffset>
 									<offset>(-0.1, -0.02)</offset>
-								</west>								
-							</offsets>	
+								</west>
+							</offsets>
 						</li>
 						<li>
 							<originalTag>RightEye</originalTag>
@@ -284,9 +284,9 @@
 								<west>
 									<layerOffset>-2.0</layerOffset>
 									<offset>(-0.1, -0.02)</offset>
-								</west>								
-							</offsets>	
-						</li>						
+								</west>
+							</offsets>
+						</li>
 					</anchorReplacements>
 					<bodyAddons>
 						<!-- 꼬리 -->
@@ -315,7 +315,7 @@
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
 								<Gene For="Moyo2_Skin_Chemskin">Moyo/Tail/ChemSkinTail</Gene>
-							</extendedGraphics>										
+							</extendedGraphics>
 						</li>
 						<li>
 							<name>glow(moyo tail)</name>
@@ -344,7 +344,7 @@
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Tail/MoyoTailGlowA</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Tail/MoyoTailGlowB</Gene>
-							</extendedGraphics>							
+							</extendedGraphics>
 						</li>
 						<!--더듬이-->
 						<li>
@@ -362,10 +362,10 @@
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<!-- <hiddenUnderApparelFor> -->
-										<!-- <li>FullHead</li> -->
+									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
 									<!-- <hiddenUnderApparelTag> -->
-										<!-- <li>MoyoTuque</li> -->
+									<!-- <li>MoyoTuque</li> -->
 									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
@@ -382,7 +382,7 @@
 								<west>
 									<layerOffset>-0.278</layerOffset>
 								</west>
-							</offsets>							
+							</offsets>
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -391,7 +391,7 @@
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
 								<Gene For="Moyo2_Skin_Chemskin">Moyo/Head/ChemSkinAtenna_Left</Gene>
-							</extendedGraphics>							
+							</extendedGraphics>
 						</li>
 						<li>
 							<name>glow(moyo left antennae)</name>
@@ -409,10 +409,10 @@
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<!-- <hiddenUnderApparelFor> -->
-										<!-- <li>FullHead</li> -->
+									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
 									<!-- <hiddenUnderApparelTag> -->
-										<!-- <li>MoyoTuque</li> -->
+									<!-- <li>MoyoTuque</li> -->
 									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
@@ -429,7 +429,7 @@
 								<west>
 									<layerOffset>-0.2779</layerOffset>
 								</west>
-							</offsets>								
+							</offsets>
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -439,7 +439,7 @@
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlowA_Left</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlowB_Left</Gene>
-							</extendedGraphics>								
+							</extendedGraphics>
 						</li>
 						<li>
 							<name>moyo right antennae</name>
@@ -456,10 +456,10 @@
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<!-- <hiddenUnderApparelFor> -->
-										<!-- <li>FullHead</li> -->
+									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
 									<!-- <hiddenUnderApparelTag> -->
-										<!-- <li>MoyoTuque</li> -->
+									<!-- <li>MoyoTuque</li> -->
 									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
@@ -485,7 +485,7 @@
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
 								<Gene For="Moyo2_Skin_Chemskin">Moyo/Head/ChemSkinAtenna_Right</Gene>
-							</extendedGraphics>							
+							</extendedGraphics>
 						</li>
 						<li>
 							<name>glow(moyo right antennae)</name>
@@ -503,10 +503,10 @@
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
 									<!-- <hiddenUnderApparelFor> -->
-										<!-- <li>FullHead</li> -->
+									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
 									<!-- <hiddenUnderApparelTag> -->
-										<!-- <li>MoyoTuque</li> -->
+									<!-- <li>MoyoTuque</li> -->
 									<!-- </hiddenUnderApparelTag> -->
 								</Apparel>
 							</conditions>
@@ -533,7 +533,7 @@
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlowA_Right</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlowB_Right</Gene>
-							</extendedGraphics>										
+							</extendedGraphics>
 						</li>
 						<!-- 머리 발광 -->
 						<li>
@@ -572,7 +572,7 @@
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoHeadGlowA</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoHeadGlowB</Gene>
-							</extendedGraphics>							
+							</extendedGraphics>
 						</li>
 						<!-- 몸 발광 -->
 						<li>
@@ -620,7 +620,8 @@
 										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoGlowFemale</BodyType>
 										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoGlowFemale</BodyType>
 									</extendedGraphics>
-								</Gene>								
+								</Gene>
+								<!-- fallback -->
 								<BodyType For="Female">Moyo/Body/MoyoGlowFemale</BodyType>
 								<BodyType For="Thin">Moyo/Body/MoyoGlowThin</BodyType>
 								<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoGlowFemale</BodyType>
@@ -785,15 +786,15 @@
 							<!-- - -->
 							<extendedGraphics>
 								<!-- <Hediff For="Moyo2_EGHelmet"> -->
-									<!-- <path>Apparel/LighthouseArmor/EGvisor_up</path> -->
-									<!-- <extendedGraphics> -->
-										<!-- <Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted> -->
-										<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
-										<!-- <Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job> -->
-										<!-- <Job For="LayDownAwake">Moyo_Dummy/Dummy</Job> -->
-										<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
-										<!-- <Job For="LayDown">Moyo_Dummy/Dummy</Job> -->
-									<!-- </extendedGraphics> -->
+								<!-- <path>Apparel/LighthouseArmor/EGvisor_up</path> -->
+								<!-- <extendedGraphics> -->
+								<!-- <Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted> -->
+								<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
+								<!-- <Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job> -->
+								<!-- <Job For="LayDownAwake">Moyo_Dummy/Dummy</Job> -->
+								<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
+								<!-- <Job For="LayDown">Moyo_Dummy/Dummy</Job> -->
+								<!-- </extendedGraphics> -->
 								<!-- </Hediff> -->
 								<!--<Hediff For="Moyo2_CartelHood">
 									<path>Apparel/Cartel/CartelHood</path>
@@ -839,14 +840,18 @@
 					<path>Moyo/Body/Naked_Female</path>
 					<extendedGraphics>
 						<Gene For="Moyo2_Skin_Chemskin">
-							<path>Moyo/Body_Chemskin/Naked_Female</path>
 							<extendedGraphics>
-								<Body For="Female">Moyo/Body_Chemskin/Naked_Female</Body>
-								<Body For="Thin">Moyo/Body_Chemskin/Naked_Thin</Body>
-								<Body For="Child">Moyo/Body_Chemskin/Naked_Child</Body>
-								<Body For="Baby">Moyo/Body_Chemskin/Naked_Baby</Body>
+								<BodyType For="Female">Moyo/Body_Chemskin/Naked_Female</BodyType>
+								<BodyType For="Thin">Moyo/Body_Chemskin/Naked_Thin</BodyType>
+								<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/Naked_Baby</BodyType>
+								<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/Naked_Child</BodyType>
 							</extendedGraphics>
 						</Gene>
+						<!-- fallback -->
+						<BodyType For="Female">Moyo/Body/Naked_Female</BodyType>
+						<BodyType For="Thin">Moyo/Body/Naked_Thin</BodyType>
+						<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/Naked_Child</BodyType>
+						<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/Naked_Baby</BodyType>
 					</extendedGraphics>
 				</body>
 				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
