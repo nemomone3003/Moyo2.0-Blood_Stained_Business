@@ -6,7 +6,7 @@ using Verse.Sound;
 
 namespace Moyo2_ItemFormChange
 {
-	public class CompFormChange : ThingComp
+	public class CompFormChange : CompEquippable
 	{
 		private int ticksToRevert;
 		private int cooldownNow;
@@ -104,7 +104,7 @@ namespace Moyo2_ItemFormChange
 		}
 
 
-		public IEnumerable<Gizmo> HeldGizmos()
+		public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
 		{
 			if (Props.onlyShowWhenDrafted && !Pawn.Drafted)
 			{

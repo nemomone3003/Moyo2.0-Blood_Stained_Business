@@ -23,6 +23,7 @@
 	</ThingDef>
 	<!-- 라미너 발리스타 -->
 	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo_LMRAutoCannon" Abstract="True">
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Weapon/LMR_AutoCannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

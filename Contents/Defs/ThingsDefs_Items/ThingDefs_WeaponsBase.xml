@@ -33,7 +33,25 @@
 		</thingCategories>
 		<weaponClasses>
 			<li>Ranged</li>
-		</weaponClasses>		
+		</weaponClasses>
+		
+		 <!-- Using a subclas of CompEquippable (which is what allows pawns to equip weapons) requires us to not inherit any comps -->
+		 <!-- This is the same issue unique weapons from odyssey have -->
+		 <!-- These are all the comps from the parents except for CompEquippable, which now is part of CompFormChange -->
+		 <!-- Without CompFormChange they will not be able to be equipped -->
+		<comps Inherit="false">
+			<li Class="CompProperties_Biocodable" />
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- 무기 베이스-근접 -->
 	<ThingDef Name="MoyoBaseMelee" Abstract="true" ParentName="BaseMeleeWeapon">

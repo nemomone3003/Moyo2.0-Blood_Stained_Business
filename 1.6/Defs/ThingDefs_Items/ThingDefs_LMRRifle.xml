@@ -48,6 +48,7 @@
 	</ThingDef>
 	<!-- 라미너 라이플 -->
 	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo2_LMRRifle" Abstract="True">
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
