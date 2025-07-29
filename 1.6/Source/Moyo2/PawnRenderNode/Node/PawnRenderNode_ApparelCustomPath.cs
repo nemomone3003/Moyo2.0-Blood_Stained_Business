@@ -2,7 +2,7 @@
 {
 	public class PawnRenderNode_ApparelCustomPath : PawnRenderNode_Apparel
 	{
-		public PawnRenderNode_ApparelCustomPath(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree, Apparel apparel) : base(pawn, props, tree, apparel)
+		public PawnRenderNode_ApparelCustomPath(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree) : base(pawn, props, tree)
 		{
 		}
 

@@ -2,10 +2,9 @@
 {
 	public class PawnRenderNode_GenderedApparelCustomPath : PawnRenderNode_Apparel
 	{
-		public PawnRenderNode_GenderedApparelCustomPath(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree, Apparel apparel) : base(pawn, props, tree, apparel)
+		public PawnRenderNode_GenderedApparelCustomPath(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree) : base(pawn, props, tree)
 		{
 		}
-
 
 		protected override IEnumerable<Graphic> GraphicsFor(Pawn pawn)
 		{

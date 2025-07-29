@@ -5,7 +5,7 @@
 		public new PawnRenderNodeProperties_DraftedVariant Props => (PawnRenderNodeProperties_DraftedVariant)props;
 
 
-		public PawnRenderNode_DraftedVariant(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree, Apparel apparel) : base(pawn, props, tree, apparel)
+		public PawnRenderNode_DraftedVariant(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree) : base(pawn, props, tree)
 		{
 		}
 
