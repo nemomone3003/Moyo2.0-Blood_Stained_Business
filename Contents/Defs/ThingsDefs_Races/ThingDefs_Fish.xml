@@ -63,7 +63,7 @@
 		</ingestible>
 	</ThingDef>	
 	<!-- 물고기 질식 -->
-	<Moyo2.FishDef Name="FishBase" Abstract="True" ParentName="ResourceBase">
+	<Moyo2.FishDef Name="Moyo2_FishBase" Abstract="True" ParentName="ResourceBase">
 		<thingClass>Moyo2.ThingClass_Fish</thingClass>
 		<graphicData>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
@@ -90,7 +90,7 @@
 		</comps>		
 	</Moyo2.FishDef>
 	<!-- 해초 -->
-	<Moyo2.FishDef ParentName="FishBase">
+	<Moyo2.FishDef ParentName="Moyo2_FishBase">
 		<defName>Moyo2_DepthWeedCorpse</defName>
 		<label>depthweed pile</label>
 		<description>A cultivated variation of seaweed that grows in the deep sea. It is the main raw material for Depthweave and must be processed before use.\n\nThis seaweed is cultivated in deep-sea hydrothermal vents and can also be grown indoors with appropriate facilities.</description>
@@ -129,7 +129,7 @@
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<!-- 참치 -->
-	<Moyo2.FishDef ParentName="FishBase">
+	<Moyo2.FishDef ParentName="Moyo2_FishBase">
 		<defName>Moyo2_TunaCorpse</defName>
 		<label>tidal tuna corpse</label>
 		<description>A domesticated tuna. Through modifications, many of the natural needs of this creature have been suppressed, allowing it to live comfortably even in small tanks. Due to its excellent characteristics, many tidal tunas are being farmed in lighthouses. With their population exploding, they surely have become a biologically thriving species.\n\nThis creature is not suitable as a pet. It will die if taken out of the water, so please do not ask obvious questions.</description>
@@ -159,7 +159,7 @@
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<!-- 데미크라켄 -->
-	<Moyo2.FishDef ParentName="FishBase">
+	<Moyo2.FishDef ParentName="Moyo2_FishBase">
 		<defName>Moyo2_DemiKrakenCorpse</defName>
 		<label>demi kraken corpse</label>
 		<description>A domesticated deep-sea octopus, genetically modified to barely function as a living organism. Useful chemicals are synthesized within this creature's body.\n\nRaising this creature as a pet is highly discouraged. There are much better, miniaturized products available for pet purposes.</description>
@@ -190,7 +190,7 @@
 		</fishTankSettings>
 	</Moyo2.FishDef>
 	<!-- 살점 -->
-	<Moyo2.FishDef ParentName="FishBase">
+	<Moyo2.FishDef ParentName="Moyo2_FishBase">
 		<defName>Moyo2_FleshMass</defName>
 		<!-- 모요 배양체 -->
 		<label>cultured Moyo mass</label>
