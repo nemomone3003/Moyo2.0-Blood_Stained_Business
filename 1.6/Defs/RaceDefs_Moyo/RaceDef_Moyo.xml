@@ -829,6 +829,7 @@
 								<Job For="LayDown">Moyo/Head/ChemSkinHeadLaying</Job>
 							</extendedGraphics>
 						</Gene>
+						<!-- fallback -->
 						<Job For="Wait_Downed">Moyo/Head/MoyoHeadHurt</Job>
 						<Job For="Wait_Asleep">Moyo/Head/MoyoHeadLaying</Job>
 						<Job For="LayDownAwake">Moyo/Head/MoyoHead</Job>
@@ -838,18 +839,14 @@
 				</head>
 				<body>
 					<path>Moyo/Body/Naked_Female</path>
-					<extendedGraphics>
-						<Body For="Female">Moyo/Body/Naked_Female</Body>
-						<Body For="Thin">Moyo/Body/Naked_Thin</Body>
-						<Body For="Child">Moyo/Body/Naked_Child</Body>
-						<Body For="Baby">Moyo/Body/Naked_Baby</Body>						
+					<extendedGraphics>					
 						<Gene For="Moyo2_Skin_Chemskin">
 							<extendedGraphics>
 								<BodyType For="Female">Moyo/Body_Chemskin/Naked_Female</BodyType>
 								<BodyType For="Thin">Moyo/Body_Chemskin/Naked_Thin</BodyType>
 								<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/Naked_Baby</BodyType>
 								<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/Naked_Child</BodyType>
-							</extendedGraphics>
+							</extendedGraphics>							
 						</Gene>
 						<!-- fallback -->
 						<BodyType For="Female">Moyo/Body/Naked_Female</BodyType>
