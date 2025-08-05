@@ -839,6 +839,10 @@
 				<body>
 					<path>Moyo/Body/Naked_Female</path>
 					<extendedGraphics>
+						<Body For="Female">Moyo/Body/Naked_Female</Body>
+						<Body For="Thin">Moyo/Body/Naked_Thin</Body>
+						<Body For="Child">Moyo/Body/Naked_Child</Body>
+						<Body For="Baby">Moyo/Body/Naked_Baby</Body>						
 						<Gene For="Moyo2_Skin_Chemskin">
 							<extendedGraphics>
 								<BodyType For="Female">Moyo/Body_Chemskin/Naked_Female</BodyType>

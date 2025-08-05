@@ -63,11 +63,11 @@
   <!--Original=Carriers of this gene work more slowly than normal.-->
   <Moyo2_WorkSpeed_Slow.description>이 유전자의 보유자는 다른 이들보다 느리게 일을 합니다.</Moyo2_WorkSpeed_Slow.description>
   <!--Original=deliberate worker-->
-  <Moyo2_WorkSpeed_Slow.label>효율적인 일꾼</Moyo2_WorkSpeed_Slow.label>
+  <Moyo2_WorkSpeed_Fast.label>효율적인 일꾼</Moyo2_WorkSpeed_Fast.label>
   <!--Original=deliberate-->
-  <Moyo2_WorkSpeed_Slow.labelShortAdj>효율적</Moyo2_WorkSpeed_Slow.labelShortAdj>
+  <Moyo2_WorkSpeed_Fast.labelShortAdj>효율적</Moyo2_WorkSpeed_Fast.labelShortAdj>
   <!--Original=Carriers of this gene work more slowly than normal.-->
-  <Moyo2_WorkSpeed_Slow.description>이 유전자의 보유자는 다른 이들보다 빠르게 일을 합니다.</Moyo2_WorkSpeed_Slow.description>  
+  <Moyo2_WorkSpeed_Fast.description>이 유전자의 보유자는 다른 이들보다 빠르게 일을 합니다.</Moyo2_WorkSpeed_Fast.description>  
   <!--Original=deliberate worker-->
   <Moyo2_DeepblueMetabolism.label>왕성한 딥블루 신진대사</Moyo2_DeepblueMetabolism.label>
   <!--Original=deliberate-->

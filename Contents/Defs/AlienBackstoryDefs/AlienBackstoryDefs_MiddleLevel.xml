@@ -64,7 +64,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 작은 배달부 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_LittleDeliverer</defName>
 		<title>Moyo Little deliverer</title>
 		<titleShort>Little deliverer</titleShort>
@@ -88,7 +88,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 충격받은 간호사 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_ShockedNurse</defName>
 		<title>Moyo Shocked nurse</title>
 		<titleShort>Shocked nurse</titleShort>
@@ -114,7 +114,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 과묵한 아이 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_MuteChild</defName>
 		<title>Moyo Mute child</title>
 		<titleShort>Mute child</titleShort>
@@ -142,7 +142,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 가출아이 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_RunawayKid</defName>
 		<title>Moyo Runaway kid</title>
 		<titleShort>Runaway kid</titleShort>
@@ -169,7 +169,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 수습 가정부 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_HousekeeperApprentice</defName>
 		<title>Moyo Housekeeper apprentice</title>
 		<titleShort>Housekeeper apprentice</titleShort>
@@ -193,7 +193,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 즉석식품 매니아 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_InstantFoodEnthusiast</defName>
 		<title>Moyo Instant food enthusiast</title>
 		<titleShort>Instant food enthusiast</titleShort>
@@ -213,7 +213,7 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 	<!-- 모요 사관후보생 -->
-	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
+	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_Cadet</defName>
 		<title>Moyo Cadet</title>
 		<titleShort>Cadet</titleShort>

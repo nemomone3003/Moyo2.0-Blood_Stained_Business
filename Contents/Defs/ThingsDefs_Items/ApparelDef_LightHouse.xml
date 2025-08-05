@@ -368,7 +368,7 @@
 			<Insulation_Cold>7</Insulation_Cold>
 			<Insulation_Heat>21</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
-		</statBases>		
+		</statBases>
 		<!-- - -->
 		<apparel>
 			<renderNodeProperties>
