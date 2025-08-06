@@ -82,6 +82,9 @@
 			<Insulation_Heat>22.5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
@@ -120,7 +123,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_RoyalSuit</defName>
 		<label>exquisite bodysuit</label>
-		<description>The most precious bodysuit obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.</description>
+		<description>The most precious bodysuit obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities with a regal look. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.</description>
 		<graphicData>
 			<texPath>Apparel/Lighthouse/RoyalSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -141,6 +144,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.2</SocialImpact>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -176,6 +180,68 @@
 			<DevilstrandCloth>30</DevilstrandCloth>
 		</costList>
 	</ThingDef>
+	<!-- 고위 로브-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_RoyalRobe</defName>
+		<label>exquisite robe</label>
+		<description>The most precious robe obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities with a regal look. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.</description>
+		<graphicData>
+			<texPath>Apparel/Lighthouse/RoyalJacket1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>27.5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Lighthouse/RoyalJacket</wornGraphicPath>
+			<!-- <drawData> -->
+				<!-- <defaultData> -->
+					<!-- <layer>70</layer> -->
+				<!-- </defaultData> -->
+			<!-- </drawData> -->
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_RobeRoyal</li>
+				<li>RoyalTier5</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
+			<DevilstrandCloth>30</DevilstrandCloth>
+		</costList>
+	</ThingDef>
 	<!--홀로그램 바디슈트-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_HoloSuit</defName>
@@ -201,6 +267,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.35</SocialImpact>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -267,6 +334,7 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGharness</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -288,6 +356,15 @@
 			<Steel>45</Steel>
 			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
 		</costList>
+		<!-- - -->
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>		
 	</ThingDef>
 	<!-- 엔지니어 재킷-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -323,6 +400,7 @@
 				<li>Hands</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGjacket</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -344,6 +422,15 @@
 			<Steel>45</Steel>
 			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
 		</costList>
+		<!-- - -->
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>		
 	</ThingDef>
 	<!-- 엔지니어 헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
@@ -362,8 +449,8 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>1.5</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
 			<Insulation_Heat>21</Insulation_Heat>
@@ -457,7 +544,8 @@
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -483,7 +571,7 @@
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Steel>20</Steel>
-			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 	</ThingDef>
 	<!-- 우주티어 -->
@@ -501,17 +589,24 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>55000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>7</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.43</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.5</ArmorRating_Heat>
-			<Insulation_Cold>24</Insulation_Cold>
-			<Insulation_Heat>12</Insulation_Heat>
-			<EquipDelay>7</EquipDelay>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>66</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>16</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.15</ToxicEnvironmentResistance>
+			<Flammability>-0.5</Flammability>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
@@ -525,12 +620,16 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- <renderSkipFlags> -->
+				<!-- <li>Body</li> -->
+			<!-- </renderSkipFlags>			 -->
 			<layers>
 				<li>Shell</li>
 				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverLight</li>
+				<li>Moyo2_BigArmor</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -543,7 +642,7 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
 			<Moyo2_Cloth_Depthweave>50</Moyo2_Cloth_Depthweave>
 		</costList>
 		<!-- - -->
@@ -570,16 +669,22 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>16000</WorkToMake>
+			<WorkToMake>15000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.43</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
 			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
+			<Flammability>-0.1</Flammability>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.65</VacuumResistance>
+		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
 			<bodyPartGroups>
@@ -587,6 +692,9 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- <renderSkipFlags> -->
+				<!-- <li>Head</li> -->
+			<!-- </renderSkipFlags> -->
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -632,20 +740,23 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>55000</WorkToMake>
-			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>72000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
 			<Mass>18</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>36</Insulation_Cold>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<Insulation_Cold>68</Insulation_Cold>
 			<Insulation_Heat>16</Insulation_Heat>
-			<EquipDelay>12</EquipDelay>
+			<EquipDelay>20</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.6</MoveSpeed>
-			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+			<Flammability>-0.6</Flammability>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -660,12 +771,16 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/DeepShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderSkipFlags>
+				<li>Body</li>
+			</renderSkipFlags>			
 			<layers>
 				<li>Shell</li>
 				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverHeavy</li>
+				<li>Moyo2_BigArmor</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -678,8 +793,8 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Moyo2_Abyssteel>120</Moyo2_Abyssteel>
-			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+			<Moyo2_Abyssteel>130</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
 		</costList>
 		<!-- - -->
 		<colorGenerator Class="ColorGenerator_Options">
@@ -705,19 +820,23 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>20000</WorkToMake>
+			<WorkToMake>23000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>5</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+			<Flammability>-0.1</Flammability>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
 		</equippedStatOffsets>
 		<!-- - -->
 		<apparel>
@@ -726,6 +845,9 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/DeepHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderSkipFlags>
+				<li>Head</li>
+			</renderSkipFlags>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -744,8 +866,8 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Moyo2_Abyssteel>40</Moyo2_Abyssteel>
-			<Moyo2_Cloth_Depthweave>25</Moyo2_Cloth_Depthweave>
+			<Moyo2_Abyssteel>50</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 		<!-- - -->
 		<colorGenerator Class="ColorGenerator_Options">

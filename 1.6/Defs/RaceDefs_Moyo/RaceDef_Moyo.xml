@@ -307,6 +307,11 @@
 									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
+								<!-- <Apparel> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_BigArmor</li> -->
+									<!-- </hiddenUnderApparelTag> -->
+								<!-- </Apparel> -->
 							</conditions>
 							<!-- - -->
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -335,6 +340,11 @@
 									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
+								<!-- <Apparel> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_BigArmor</li> -->
+									<!-- </hiddenUnderApparelTag> -->
+								<!-- </Apparel> -->
 							</conditions>
 							<!-- - -->
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -675,11 +685,6 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_BigHelmet</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
 							</conditions>
 							<offsets>
 								<north>
@@ -713,11 +718,6 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_BigHelmet</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
 							</conditions>
 							<offsets>
 								<north>
@@ -748,10 +748,10 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<userCustomizable>false</userCustomizable>
 						</li>
-						<!-- 더미 -->
+						<!-- 표정 -->
 						<li>
-							<name>dummy</name>
-							<path>Moyo_Dummy/Dummy</path>
+							<name>face</name>
+							<path>Moyo/Head/MoyoHead</path>
 							<shaderType>Cutout</shaderType>
 							<colorChannel>Base</colorChannel>
 							<alignWithHead>true</alignWithHead>
@@ -761,55 +761,25 @@
 									<bodyPart>Head</bodyPart>
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
-								<RotStage>Fresh,Rotting,Dessicated</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_BigHelmet</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
+								<RotStage>Fresh,Rotting</RotStage>
 							</conditions>
 							<offsets>
-								<north>
-									<layerOffset>-0.35</layerOffset>
-								</north>
 								<south>
-									<layerOffset>0.03</layerOffset>
+									<layerOffset>-0.279</layerOffset>
 								</south>
 								<east>
-									<layerOffset>0.01</layerOffset>
-									<bodyTypes>
-										<Female>(0.0, -0.02)</Female>
-										<Thin>(0.0, -0.02)</Thin>
-									</bodyTypes>
+									<layerOffset>-0.279</layerOffset>
 								</east>
 							</offsets>
-							<!-- - -->
 							<extendedGraphics>
-								<!-- <Hediff For="Moyo2_EGHelmet"> -->
-								<!-- <path>Apparel/LighthouseArmor/EGvisor_up</path> -->
-								<!-- <extendedGraphics> -->
-								<!-- <Drafted For="true">Apparel/LighthouseArmor/EGvisor_down</Drafted> -->
-								<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
-								<!-- <Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job> -->
-								<!-- <Job For="LayDownAwake">Moyo_Dummy/Dummy</Job> -->
-								<!-- <Job For="LayDownResting">Moyo_Dummy/Dummy</Job> -->
-								<!-- <Job For="LayDown">Moyo_Dummy/Dummy</Job> -->
-								<!-- </extendedGraphics> -->
-								<!-- </Hediff> -->
-								<!--<Hediff For="Moyo2_CartelHood">
-									<path>Apparel/Cartel/CartelHood</path>
-									<extendedGraphics>
-										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
-										<Job For="Wait_Asleep">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDownAwake">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDownResting">Moyo_Dummy/Dummy</Job>
-										<Job For="LayDown">Moyo_Dummy/Dummy</Job>
-									</extendedGraphics>
-								</Hediff>-->
+								<Gene For="Moyo2_Skin_Chemskin">Moyo/Head/ChemSkinHead</Gene>
 							</extendedGraphics>
+							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<userCustomizable>false</userCustomizable>
+							<defaultOffset>Center</defaultOffset>
+							<!-- - -->
+							<userCustomizable>true</userCustomizable>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -817,36 +787,36 @@
 			<!-- 텍스쳐 그래픽 경로 -->
 			<graphicPaths>
 				<head>
-					<path>Moyo/Head/MoyoHead</path>
+					<path>Moyo/Head/MoyoHeadLaying</path>
 					<extendedGraphics>
 						<Gene For="Moyo2_Skin_Chemskin">
-							<path>Moyo/Head/ChemSkinHead</path>
-							<extendedGraphics>
-								<Job For="Wait_Downed">Moyo/Head/ChemSkinHeadHurt</Job>
-								<Job For="Wait_Asleep">Moyo/Head/ChemSkinHeadLaying</Job>
-								<Job For="LayDownAwake">Moyo/Head/ChemSkinHead</Job>
-								<Job For="LayDownResting">Moyo/Head/ChemSkinHeadLaying</Job>
-								<Job For="LayDown">Moyo/Head/ChemSkinHeadLaying</Job>
-							</extendedGraphics>
+							<path>Moyo/Head/ChemSkinHeadLaying</path>
+							<!-- <extendedGraphics> -->
+							<!-- <Job For="Wait_Downed">Moyo/Head/ChemSkinHeadHurt</Job> -->
+							<!-- <Job For="Wait_Asleep">Moyo/Head/ChemSkinHeadLaying</Job> -->
+							<!-- <Job For="LayDownAwake">Moyo/Head/ChemSkinHead</Job> -->
+							<!-- <Job For="LayDownResting">Moyo/Head/ChemSkinHeadLaying</Job> -->
+							<!-- <Job For="LayDown">Moyo/Head/ChemSkinHeadLaying</Job> -->
+							<!-- </extendedGraphics> -->
 						</Gene>
 						<!-- fallback -->
-						<Job For="Wait_Downed">Moyo/Head/MoyoHeadHurt</Job>
-						<Job For="Wait_Asleep">Moyo/Head/MoyoHeadLaying</Job>
-						<Job For="LayDownAwake">Moyo/Head/MoyoHead</Job>
-						<Job For="LayDownResting">Moyo/Head/MoyoHeadLaying</Job>
-						<Job For="LayDown">Moyo/Head/MoyoHeadLaying</Job>
+						<!-- <Job For="Wait_Downed">Moyo/Head/MoyoHeadHurt</Job> -->
+						<!-- <Job For="Wait_Asleep">Moyo/Head/MoyoHeadLaying</Job> -->
+						<!-- <Job For="LayDownAwake">Moyo/Head/MoyoHead</Job> -->
+						<!-- <Job For="LayDownResting">Moyo/Head/MoyoHeadLaying</Job> -->
+						<!-- <Job For="LayDown">Moyo/Head/MoyoHeadLaying</Job> -->
 					</extendedGraphics>
 				</head>
 				<body>
 					<path>Moyo/Body/Naked_Female</path>
-					<extendedGraphics>					
+					<extendedGraphics>
 						<Gene For="Moyo2_Skin_Chemskin">
 							<extendedGraphics>
 								<BodyType For="Female">Moyo/Body_Chemskin/Naked_Female</BodyType>
 								<BodyType For="Thin">Moyo/Body_Chemskin/Naked_Thin</BodyType>
 								<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/Naked_Baby</BodyType>
 								<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/Naked_Child</BodyType>
-							</extendedGraphics>							
+							</extendedGraphics>
 						</Gene>
 						<!-- fallback -->
 						<BodyType For="Female">Moyo/Body/Naked_Female</BodyType>
@@ -1001,7 +971,7 @@
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Moyo2_MoyoBody</body>
 			<!-- 피 -->
-			<renderTree>Humanlike</renderTree>
+			<renderTree>Moyo2_Humanlike</renderTree>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1.2</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>
