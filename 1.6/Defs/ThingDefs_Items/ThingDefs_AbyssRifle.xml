@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="MoyoBaseGunIDR">
 		<defName>Gun_AbysstechRifle</defName>
-		<label>어비스테크 라이플</label>
+		<label>Abysstech rifle</label>
 		<description>A general-purpose assault rifle that adopted abysstech.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_Rifle</texPath>
@@ -70,6 +70,10 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<relicChance>0</relicChance>
+		<weaponTags Inherit="False">
+			<li>NoRelic</li>
+		</weaponTags>		
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_AbysstechRifle</defName>

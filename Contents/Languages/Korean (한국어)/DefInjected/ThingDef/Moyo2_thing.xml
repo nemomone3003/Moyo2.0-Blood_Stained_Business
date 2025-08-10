@@ -120,10 +120,18 @@
 	<Moyo2_AdvancedSuit.label>개선형 바디슈트</Moyo2_AdvancedSuit.label>
 	<!--Original=A 바디슈트 that focuses on user protection with its thick fabric and temperature regulation features. It&apos;s rarely used as casual wear and is predominantly utilized by military personnel, police officers, or highーrisk laborers who could afford this.-->
 	<Moyo2_AdvancedSuit.description>두꺼운 원단과 열선 등의 체온 조절기능을 통해 사용자 보호에 초점을 맞춘 바디슈트입니다. 평상복으로 이용되는 경우는 적으며 군인, 경찰이나 여유가 있는 고위험군 노동자들에 의해 사용됩니다.</Moyo2_AdvancedSuit.description>
+	<!--Original=advanced 바디슈트-->
+	<Moyo2_CartelSuit.label>개선형 바디슈트(카르텔)</Moyo2_CartelSuit.label>
+	<!--Original=A 바디슈트 that focuses on user protection with its thick fabric and temperature regulation features. It&apos;s rarely used as casual wear and is predominantly utilized by military personnel, police officers, or highーrisk laborers who could afford this.-->
+	<Moyo2_CartelSuit.description>두꺼운 원단과 열선 등의 체온 조절기능을 통해 사용자 보호에 초점을 맞춘 바디슈트입니다. 평상복으로 이용되는 경우는 적으며 군인, 경찰이나 여유가 있는 고위험군 노동자들에 의해 사용됩니다.</Moyo2_CartelSuit.description>	
 	<!--Original=exquisite 바디슈트-->
 	<Moyo2_RoyalSuit.label>최고급 바디슈트</Moyo2_RoyalSuit.label>
 	<!--Original=The most precious 바디슈트 obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.-->
 	<Moyo2_RoyalSuit.description>등대에서 구할 수 있는 가장 귀한 바디슈트입니다. 방탄 재질의 아름다운 원단, 체온 조절기능과 극상의 착용감 그리고 매력 보정등 원하는 모든 기능이 들어가있습니다 . 등대에선 이 슈트를 걸친 사람을 감히 건드릴 사람은 몇 되지 않습니다. 눈으로는 보이지 않는 힘이란게 있는 것입니다.</Moyo2_RoyalSuit.description>
+	<!--Original=exquisite 바디슈트-->
+	<Moyo2_RoyalRobe.label>최고급 로브</Moyo2_RoyalRobe.label>
+	<!--Original=The most precious 바디슈트 obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.-->
+	<Moyo2_RoyalRobe.description>등대에서 구할 수 있는 가장 귀한 외투입니다. 방탄 재질의 아름다운 원단, 체온 조절기능과 극상의 착용감 그리고 매력 보정등 원하는 모든 기능이 들어가있습니다 . 등대에선 이 슈트를 걸친 사람을 감히 건드릴 사람은 몇 되지 않습니다. 눈으로는 보이지 않는 힘이란게 있는 것입니다.</Moyo2_RoyalRobe.description>	
 	<!--Original=lighthouse holosuit-->
 	<Moyo2_HoloSuit.label>등대 홀로슈트</Moyo2_HoloSuit.label>
 	<!--Original=The most precious 바디슈트 obtainable in the lighthouse. Focused on aesthetic value, it boasts numerous holographic displays, enabling the suit to be presented in variety of ways. It&apos;s primarily used by topーtier artists and influencers of the lighthouse; others before them simply cannot afford it.-->

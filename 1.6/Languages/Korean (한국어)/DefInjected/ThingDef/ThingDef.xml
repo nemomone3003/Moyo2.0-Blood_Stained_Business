@@ -12,4 +12,22 @@
 	<Moyo2_LMRColider.tools.1.label>총구</Moyo2_LMRColider.tools.1.label>
 	<!--Original=라미너 오토캐논-->
 	<Moyo2_LMRColider.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColider.verbs.Verb_Shoot.label>
+	<!--Original=라미너 오토캐논-->
+	<Moyo2_LMRColiderOver.label>라미너 역장 충돌기(과충전)</Moyo2_LMRColiderOver.label>
+	<!--Original=A large 라미너 라이플 designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When 과충전, it fires even faster but causes a brief 과부하.\n\nResearch aimed at increasing the firing rate of 라미너 라이플 was conducted, developing a method to reduce the 라미너 field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.-->
+	<Moyo2_LMRColiderOver.description>라미너 발리스타가 과충전되어 강력한 폭발 사격을 합니다. 일정 시간 후 과부하 상태가 됩니다.</Moyo2_LMRColiderOver.description>
+	<!--Original=몸체-->
+	<Moyo2_LMRColiderOver.tools.0.label>몸체</Moyo2_LMRColiderOver.tools.0.label>
+	<!--Original=총구-->
+	<Moyo2_LMRColiderOver.tools.1.label>총구</Moyo2_LMRColiderOver.tools.1.label>
+	<!--Original=라미너 오토캐논-->
+	<Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>	
+	<!--Original=라미너 오토캐논-->
+	<Gun_AbysstechRifle.label>어비스테크 라이플</Gun_AbysstechRifle.label>
+	<!--Original=A large 라미너 라이플 designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When 과충전, it fires even faster but causes a brief 과부하.\n\nResearch aimed at increasing the firing rate of 라미너 라이플 was conducted, developing a method to reduce the 라미너 field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.-->
+	<Gun_AbysstechRifle.description>어비스테크가 접목된 범용적인 돌격소총입니다.</Gun_AbysstechRifle.description>
+	<!--Original=몸체-->
+	<Gun_AbysstechRifle.tools.0.label>몸체</Gun_AbysstechRifle.tools.0.label>
+	<!--Original=총구-->
+	<Gun_AbysstechRifle.tools.1.label>총구</Gun_AbysstechRifle.tools.1.label>	
 </LanguageData>
