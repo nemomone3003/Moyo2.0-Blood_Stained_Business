@@ -871,6 +871,22 @@
 							<key>Apparel_Jacket</key>
 							<value>Apparel/ApparelReplacer/MoyoWearJacket</value>
 						</li>
+						<li>
+							<key>Apparel_ArmorRecon</key>
+							<value>Apparel/ApparelReplacer/MoyoRecon</value>
+						</li>
+						<li>
+							<key>Apparel_ArmorHelmetRecon</key>
+							<value>Apparel/ApparelReplacer/MoyoReconHead</value>
+						</li>						
+						<li>
+							<key>Apparel_PowerArmor</key>
+							<value>Apparel/ApparelReplacer/MoyoMarine</value>
+						</li>
+						<li>
+							<key>Apparel_PowerArmorHelmet</key>
+							<value>Apparel/ApparelReplacer/MoyoMarineHead</value>
+						</li>						
 					</individualPaths>
 					<bodyTypeFallback>Thin</bodyTypeFallback>
 					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>

@@ -311,6 +311,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGharness1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
@@ -374,6 +375,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGjacket1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
@@ -440,6 +442,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGhelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
@@ -458,6 +461,8 @@
 		</statBases>
 		<!-- - -->
 		<apparel>
+			<wornGraphicPath>Apparel/LighthouseArmor/EGhelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li Class="Moyo2.PawnRenderNodeProperties_DraftedVariant">
 					<nodeClass>Moyo2.PawnRenderNode_DraftedVariant</nodeClass>
@@ -498,29 +503,15 @@
 			<Steel>70</Steel>
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
-		<!-- <comps> -->
-		<!-- <li Class="CompProperties_CauseHediff_Apparel"> -->
-		<!-- <hediff>Moyo2_EGHelmet</hediff> -->
-		<!-- <part>Head</part> -->
-		<!-- </li> -->
-		<!-- </comps> -->
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
-	<!--헬멧 헤디프-->
-	<!-- <HediffDef> -->
-	<!-- <defName>Moyo2_EGHelmet</defName> -->
-	<!-- <label>welding helmet</label> -->
-	<!-- <description>Debug.</description> -->
-	<!-- <hediffClass>HediffWithComps</hediffClass> -->
-	<!-- <stages> -->
-	<!-- <li> -->
-	<!-- <becomeVisible>false</becomeVisible> -->
-	<!-- </li> -->
-	<!-- </stages> -->
-	<!-- <comps> -->
-	<!-- <li Class="HediffCompProperties_RemoveIfApparelDropped"/> -->
-	<!-- </comps> -->
-	<!-- <isBad>false</isBad> -->
-	<!-- </HediffDef> -->
 	<!-- 엔지니어 마스크-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
 		<defName>Moyo2_EGMask</defName>
@@ -529,6 +520,7 @@
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGmask1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
@@ -553,6 +545,7 @@
 				<li>Mouth</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/EGmask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -573,6 +566,14 @@
 			<Steel>20</Steel>
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>		
 	</ThingDef>
 	<!-- 우주티어 -->
 	<!-- 유선형 잠수용 쉘-->
@@ -620,12 +621,12 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<!-- <renderSkipFlags> -->
-				<!-- <li>Body</li> -->
-			<!-- </renderSkipFlags>			 -->
+			<renderSkipFlags>
+				<li>Body</li>
+			</renderSkipFlags>			
 			<layers>
-				<li>Shell</li>
 				<li>Middle</li>
+				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverLight</li>
@@ -681,7 +682,6 @@
 		</statBases>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
-			<Flammability>-0.1</Flammability>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.65</VacuumResistance>
 		</equippedStatOffsets>
@@ -692,9 +692,9 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<!-- <renderSkipFlags> -->
-				<!-- <li>Head</li> -->
-			<!-- </renderSkipFlags> -->
+			<renderSkipFlags>
+				<li>Head</li>
+			</renderSkipFlags>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -753,7 +753,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
-			<Flammability>-0.6</Flammability>
+			<Flammability>-0.7</Flammability>
 			<MoveSpeed>-0.5</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
@@ -775,8 +775,8 @@
 				<li>Body</li>
 			</renderSkipFlags>			
 			<layers>
+				<li>Middle</li> 
 				<li>Shell</li>
-				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverHeavy</li>
@@ -833,7 +833,6 @@
 		</statBases>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
-			<Flammability>-0.1</Flammability>
 			<MoveSpeed>-0.05</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath> -->
-		<!-- <value> -->
-			<!-- <wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath> -->
-		<!-- </value> -->
+	<!-- <xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath> -->
+	<!-- <value> -->
+	<!-- <wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath> -->
+	<!-- </value> -->
 	<!-- </Operation> -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel/wornGraphicPath</xpath>
@@ -12,6 +12,42 @@
 			<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel</xpath>
 			<value>
 				<wornGraphicPath>Apparel/ApparelReplacer/Dummy/Dummy</wornGraphicPath>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/useWornGraphicMask</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/apparel</xpath>
+			<value>
+				<useWornGraphicMask>true</useWornGraphicMask>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/useWornGraphicMask</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/apparel</xpath>
+			<value>
+				<useWornGraphicMask>true</useWornGraphicMask>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]/useWornGraphicMask</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]/apparel</xpath>
+			<value>
+				<useWornGraphicMask>true</useWornGraphicMask>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetRecon"]/useWornGraphicMask</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_ArmorHelmetRecon"]/apparel</xpath>
+			<value>
+				<useWornGraphicMask>true</useWornGraphicMask>
 			</value>
 		</nomatch>
 	</Operation>

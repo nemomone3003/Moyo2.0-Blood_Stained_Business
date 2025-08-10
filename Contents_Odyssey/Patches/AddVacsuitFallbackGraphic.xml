@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Vacsuit"]/apparel/useWornGraphicMask</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Vacsuit"]/apparel</xpath>
+			<value>
+				<useWornGraphicMask>true</useWornGraphicMask>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]/apparel/useWornGraphicMask</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]/apparel</xpath>
+			<value>
+				<useWornGraphicMask>true</useWornGraphicMask>
+			</value>
+		</nomatch>
+	</Operation>	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+		<value>
+			<li>
+				<key>Apparel_Vacsuit</key>
+				<value>Apparel/ApparelReplacer/MoyoVac</value>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+		<value>
+			<li>
+				<key>Apparel_VacsuitHelmet</key>
+				<value>Apparel/ApparelReplacer/MoyoVacHead</value>
+			</li>
+		</value>
+	</Operation>	
+</Patch>
