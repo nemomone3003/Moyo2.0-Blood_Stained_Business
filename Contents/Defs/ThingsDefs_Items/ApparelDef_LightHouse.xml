@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- 내의 -->
 	<!--기본형 바디슈트-->
@@ -216,9 +216,9 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Lighthouse/RoyalJacket</wornGraphicPath>
 			<!-- <drawData> -->
-				<!-- <defaultData> -->
-					<!-- <layer>70</layer> -->
-				<!-- </defaultData> -->
+			<!-- <defaultData> -->
+			<!-- <layer>70</layer> -->
+			<!-- </defaultData> -->
 			<!-- </drawData> -->
 			<layers>
 				<li>Shell</li>
@@ -365,7 +365,7 @@
 					<only>(41,43,67)</only>
 				</li>
 			</options>
-		</colorGenerator>		
+		</colorGenerator>
 	</ThingDef>
 	<!-- 엔지니어 재킷-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -432,7 +432,7 @@
 					<only>(41,43,67)</only>
 				</li>
 			</options>
-		</colorGenerator>		
+		</colorGenerator>
 	</ThingDef>
 	<!-- 엔지니어 헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
@@ -465,7 +465,6 @@
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li Class="Moyo2.PawnRenderNodeProperties_DraftedVariant">
-					<nodeClass>Moyo2.PawnRenderNode_DraftedVariant</nodeClass>
 					<workerClass>Moyo2.PawnRenderNodeWorker_HeadDraftedVariant</workerClass>
 					<undraftedTexPath>Apparel/LighthouseArmor/EGvisor_up</undraftedTexPath>
 					<draftedTexPath>Apparel/LighthouseArmor/EGvisor_down</draftedTexPath>
@@ -516,7 +515,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
 		<defName>Moyo2_EGMask</defName>
 		<label>depth engineer rebreather</label>
-		<description>This breathing apparatus is favored by engineers and workers at  the lighthouses. It offers protection against toxic gases from factories at a reasonable price and can be used as an underwater breathing device when connected to an oxygen tank. Made from high-strength materials, it also provides some degree of protection against physical hazards.\n\nThe lifespan of the respirator in industrial areas is 30 minutes. Users are strongly advised to familiarize themselves with the proper use of the respirator filter.</description>
+		<description>This breathing apparatus is favored by engineers and workers at the lighthouses. It offers protection against toxic gases from factories at a reasonable price and can be used as an underwater breathing device when connected to an oxygen tank. Made from high-strength materials, it also provides some degree of protection against physical hazards.\n\nThe lifespan of the respirator in industrial areas is 30 minutes. Users are strongly advised to familiarize themselves with the proper use of the respirator filter.</description>
 		<graphicData>
 			<texPath>Apparel/LighthouseArmor/EGmask1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -573,7 +572,7 @@
 					<only>(41,43,67)</only>
 				</li>
 			</options>
-		</colorGenerator>		
+		</colorGenerator>
 	</ThingDef>
 	<!-- 우주티어 -->
 	<!-- 유선형 잠수용 쉘-->
@@ -623,7 +622,7 @@
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderSkipFlags>
 				<li>Body</li>
-			</renderSkipFlags>			
+			</renderSkipFlags>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -773,9 +772,9 @@
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderSkipFlags>
 				<li>Body</li>
-			</renderSkipFlags>			
-			<layers>
-				<li>Middle</li> 
+			</renderSkipFlags>
+						<layers>
+				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
 			<tags>

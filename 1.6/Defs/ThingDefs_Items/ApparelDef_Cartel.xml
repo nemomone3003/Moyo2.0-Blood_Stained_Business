@@ -32,8 +32,8 @@
 		<apparel>
 			<renderNodeProperties>
 				<!-- Cloak -->
-				<li>
-					<nodeClass>Moyo2.PawnRenderNode_GenderedApparelCustomPath</nodeClass>
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
 					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
 					<texPath>Apparel/Cartel/CartelCloak</texPath>
 					<visibleFacing>
@@ -43,9 +43,10 @@
 						<li>South</li>
 					</visibleFacing>
 					<baseLayer>21</baseLayer>
+					<gendered>true</gendered>
 				</li>
 				<!-- Hood -->
-				<li>
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
 					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
 					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
 					<texPath>Apparel/Cartel/CartelHood</texPath>
@@ -58,7 +59,7 @@
 					<baseLayer>73</baseLayer>
 				</li>
 				<!-- Hood background -->
-				<li>
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
 					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
 					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
 					<texPath>Apparel/Cartel/CartelHoodBack</texPath>

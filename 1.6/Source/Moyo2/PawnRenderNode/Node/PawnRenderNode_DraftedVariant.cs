@@ -1,4 +1,5 @@
-﻿namespace Moyo2
+﻿
+namespace Moyo2
 {
 	public class PawnRenderNode_DraftedVariant : PawnRenderNode_Apparel
 	{
@@ -14,17 +15,17 @@
 		{
 			// Gets the graphics corresponding to the undrafted variant of the apparel
 			yield return GraphicDatabase.Get<Graphic_Multi>(
-				Props.undraftedTexPath,
+				RenderNodeUtils.GetTexPath(Props.undraftedTexPath, pawn, Props),
 				RenderNodeUtils.GetShader(apparel, pawn.Drawer.renderer.StatueColor.HasValue),
 				Props.drawSize,
-				ColorFor(pawn));
+				RenderNodeUtils.ColorFor(pawn, this));
 
 			// Gets the graphics corresponding to the drafted variant of the apparel
 			yield return GraphicDatabase.Get<Graphic_Multi>(
-				Props.draftedTexPath,
+				RenderNodeUtils.GetTexPath(Props.draftedTexPath, pawn, Props),
 				RenderNodeUtils.GetShader(apparel, pawn.Drawer.renderer.StatueColor.HasValue),
 				Props.drawSize,
-				ColorFor(pawn));
+				RenderNodeUtils.ColorFor(pawn, this));
 		}
 	}
 }
