@@ -106,6 +106,10 @@ namespace Moyo2_ItemFormChange
 
 		public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
 		{
+			if (!Pawn.IsPlayerControlled)
+			{
+				yield break;
+			}
 			if (Props.onlyShowWhenDrafted && !Pawn.Drafted)
 			{
 				yield break;
