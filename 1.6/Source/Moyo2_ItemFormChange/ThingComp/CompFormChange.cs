@@ -30,6 +30,7 @@ namespace Moyo2_ItemFormChange
 
 		public override void CompTick()
 		{
+			base.CompTick();
 			if (Props.revertData is null) return;
 
 			cooldownNow = Mathf.Max(cooldownNow - 1, 0);
@@ -106,6 +107,12 @@ namespace Moyo2_ItemFormChange
 
 		public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
 		{
+			foreach (Gizmo gizmo in base.CompGetEquippedGizmosExtra())
+			{
+				yield return gizmo;
+			}
+
+
 			if (!Pawn.IsPlayerControlled)
 			{
 				yield break;
