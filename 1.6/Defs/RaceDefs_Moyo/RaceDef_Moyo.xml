@@ -1064,14 +1064,15 @@
 					<def>HumanlikePreTeenager</def>
 					<minAge>9</minAge>
 					<headOffset>(0, -0.09)</headOffset>
-					<!-- <customDrawSize>(1.25,1.25)</customDrawSize> -->
-					<!-- <customPortraitDrawSize>(1.25,1.25)</customPortraitDrawSize> -->
-					<!-- <customHeadDrawSize>(1.25,1.25)</customHeadDrawSize> -->
-					<!-- <customPortraitHeadDrawSize>(1.25,1.25)</customPortraitHeadDrawSize> -->
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeTeenager</def>
 					<minAge>13</minAge>
+					<headOffset>(0, 0)</headOffset>
+					<customDrawSize>(0.9,0.9)</customDrawSize>
+					<customPortraitDrawSize>(0.9,0.9)</customPortraitDrawSize>
+					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.9,0.9</customPortraitHeadDrawSize>					
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeAdult</def>
