@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
+using HarmonyLib;
+using System.Reflection;
+using System;
 
 namespace Moyo2_ItemFormChange
 {
@@ -47,23 +50,27 @@ namespace Moyo2_ItemFormChange
 			//저격총 - 곤봉 처럼 왔다갔다 하면 에러 발생 할 수 있음. 가능하면 고정재료로만
 			// The moon runes make the code work.
 
-			ThingWithComps newWeapon = (ThingWithComps)ThingMaker.MakeThing(transformData.thingDef, parent.Stuff);
+			ThingDef stuff;
+			if (transformData.thingDef.MadeFromStuff)
+			{
+				stuff = parent.Stuff ?? ThingDefOf.Steel;
+			}
+			else
+			{
+				stuff = null;
+			}
+
+			ThingWithComps newWeapon = (ThingWithComps)ThingMaker.MakeThing(transformData.thingDef, stuff);
 
 			newWeapon.HitPoints = parent.HitPoints;
 
-			for (int i = newWeapon.AllComps.Count - 1; i >= 0; i--)
+			foreach (ThingComp newComp in newWeapon.AllComps)
 			{
-				ThingComp weaponComp = newWeapon.AllComps[i];
-				if (Props.sharedComps.Contains(weaponComp.GetType()))
+				if (Props.sharedComps.Contains(newComp.GetType()))
 				{
-					ThingComp parentComp = parent.GetCompByDefType(weaponComp.props);
+					ThingComp oldComp = parent.GetCompByDefType(newComp.props);
 
-					newWeapon.AllComps.Remove(weaponComp);
-					newWeapon.AllComps.Add(parentComp);
-
-					// Are these redundant?
-					parent.AllComps.Remove(parentComp);
-					parent.AllComps.Add(weaponComp);
+					ShallowCopy(oldComp, newComp);
 				}
 			}
 
@@ -71,6 +78,12 @@ namespace Moyo2_ItemFormChange
 			compFormChange.cooldownNow = transformData.transformCooldown;
 			compFormChange.cooldownMax = transformData.transformCooldown;
 
+			TrySpawnWeapon(newWeapon, transformData);
+			parent.Destroy();
+		}
+
+		private void TrySpawnWeapon(ThingWithComps newWeapon, TransformData transformData)
+		{
 			if (Pawn is null)
 			{
 				if (parent.Map is not null)
@@ -101,7 +114,38 @@ namespace Moyo2_ItemFormChange
 					transformData.soundOnTransform?.PlayOneShot(SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map, false)));
 				}
 			}
-			parent.Destroy();
+		}
+
+		internal static void ShallowCopy(object from, object to)
+		{
+			FieldInfo[] allFields = to.GetType().GetFields(AccessTools.all);
+
+			for (int i = 0; i < allFields.Length; i++)
+			{
+				if (allFields[i].Name == "parent") continue;
+				if (allFields[i].FieldType.SameOrSubclassOf<ThingComp>())
+				{
+					Log.Error("Unsupported case, contact Nemonian or Thekiborg to implement it. Weapon might not work as intended");
+					/*
+					Type compClass = allFields[i].FieldType;
+					ThingComp foundComp = null;
+
+					foreach (ThingComp comp in (to as ThingWithComps)?.AllComps)
+					{
+						if (comp.GetType().Equals(compClass))
+						{
+							foundComp = comp;
+						}
+					}
+
+					allFields[i].SetValue(to, foundComp);
+					*/
+				}
+				else
+				{
+					allFields[i].SetValue(to, allFields[i].GetValue(from));
+				}
+			}
 		}
 
 
@@ -148,7 +192,7 @@ namespace Moyo2_ItemFormChange
 					iconAngle = transformData.thingDef.uiIconAngle,
 					iconOffset = transformData.thingDef.uiIconOffset,
 					Disabled = (cooldownNow > 0) || !isEnabled,
-					disabledReason = "appActive".Translate(transformData.needApparel?.label),
+					disabledReason = DisabledReasonTranslationKey(cooldownNow, isEnabled).Translate(transformData.needApparel?.label),
 					// Ask nemo about what this is supposed to say
 				};
 			}
@@ -165,6 +209,23 @@ namespace Moyo2_ItemFormChange
 					Disabled = true,
 					disabledReason = string.Empty,
 				};
+			}
+		}
+
+
+		private static string DisabledReasonTranslationKey(int cooldown, bool isEnabled)
+		{
+			if (!isEnabled)
+			{
+				return "Moyo2_IFC_DisabledMissingApparel";
+			}
+			else if (cooldown > 0)
+			{
+				return "Moyo2_IFC_DisabledOnCooldown";
+			}
+			else
+			{
+				return string.Empty;
 			}
 		}
 

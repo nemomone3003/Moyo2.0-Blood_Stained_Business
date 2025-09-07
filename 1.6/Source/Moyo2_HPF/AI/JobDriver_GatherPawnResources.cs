@@ -9,6 +9,19 @@ namespace Moyo2_HPF
 	public class JobDriver_GatherPawnResources : JobDriver
 	{
 		private float gatherProgress;
+		private ModExtension modExtension;
+
+
+		public ModExtension ModExtension
+		{
+			get
+			{
+				modExtension ??= job.def.GetModExtension<ModExtension>();
+				return modExtension;
+			}
+		}
+		private List<CompResourceHarvestable> Harvestables => (TargetA.Thing as ThingWithComps)?.GetComps<CompResourceHarvestable>()
+																.Where(comp => comp.Props.harvestJobDef == job.def && comp.ActiveAndFull).ToList();
 
 
 		public override bool TryMakePreToilReservations(bool errorOnFailed)
@@ -19,10 +32,9 @@ namespace Moyo2_HPF
 
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
-			HPFJobDef def = job.def as HPFJobDef;
-			if (def is null)
+			if (ModExtension is null)
 			{
-				Log.Error("def is not HPFJobDef. please use HPF.HPFJobDef instead of JobDef.");
+				Log.Error($"Job {job.def.defName} requires Moyo2_HPF.ModExtension to work properly.");
 				yield break;
 			}
 			this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
@@ -33,20 +45,21 @@ namespace Moyo2_HPF
 			Toil wait = Toils_General.Wait(15000, TargetIndex.A);
 			wait.initAction = delegate
 			{
-				PawnUtility.ForceWait(TargetA.Pawn, 15000, maintainPosture: true);
+				if (TargetA.Pawn is not null)
+				{
+					PawnUtility.ForceWait(TargetA.Pawn, 15000, maintainPosture: true);
+				}
 			};
 			wait.tickIntervalAction = delta =>
 			{
-				HPFJobDef hpfjobDef = job.def as HPFJobDef;
-				pawn.skills.Learn(def.activeSkill, def.xpPerTick, false);
-				gatherProgress += pawn.GetStatValue(def.activeStat, true);
-				if (gatherProgress >= hpfjobDef.totalWork)
+				pawn.skills?.Learn(ModExtension.activeSkill, ModExtension.xpPerTick * delta, false);
+				gatherProgress += pawn.GetStatValue(ModExtension.activeStat, true) * delta;
+
+				if (gatherProgress >= ModExtension.totalWork)
 				{
-					foreach (CompResourceHarvestable item in from x in (job.GetTarget(TargetIndex.A).Thing as ThingWithComps)?.GetComps<CompResourceHarvestable>()
-															 where x.Props.harvestJobDef == job.def
-															 select x)
+					foreach (CompResourceHarvestable comp in Harvestables)
 					{
-						item.Gathered(pawn, hpfjobDef.activeStat);
+						comp.Gathered(pawn, ModExtension.activeStat);
 					}
 					pawn.jobs.EndCurrentJob(JobCondition.Succeeded);
 				}
@@ -59,6 +72,7 @@ namespace Moyo2_HPF
 					TargetA.Pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
 				}
 			});
+			/* This is just checking again? Why do I need this?
 			wait.AddEndCondition(delegate
 			{
 				foreach (CompResourceHarvestable item in from x in (TargetA.Thing as ThingWithComps)?.GetComps<CompResourceHarvestable>()
@@ -73,10 +87,10 @@ namespace Moyo2_HPF
 
 				return JobCondition.Ongoing;
 			});
-
+			*/
 			wait.defaultCompleteMode = ToilCompleteMode.Never;
-			wait.WithProgressBar(TargetIndex.A, () => gatherProgress / ((HPFJobDef)job.def).totalWork, false, -0.5f);
-			wait.activeSkill = () => def.activeSkill;
+			wait.WithProgressBar(TargetIndex.A, () => gatherProgress / ModExtension.totalWork);
+			wait.activeSkill = () => ModExtension.activeSkill;
 			yield return wait;
 		}
 

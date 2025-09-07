@@ -12,7 +12,7 @@
 		<LangVersion>preview</LangVersion> <!-- This is the C# version. Preview is the newest version with the most features -->
 		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version -->
 
-		<OutDir>..\..\..\Assemblies\</OutDir> <!-- The output path for dll files  -->
+		<OutDir>..\..\Assemblies\</OutDir> <!-- The output path for dll files  -->
 
 		<!-- <Nullable>enable</Nullable> --> <!-- Optional nullable analysis. -->
 		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types -->
@@ -27,7 +27,7 @@
 		<ErrorReport>prompt</ErrorReport>
 		<WarningLevel>4</WarningLevel>
 		<NoWarn>
-			IDE0130;IDE0032;IDE0008;IDE0290;IDE0011
+			IDE0130;IDE0032;IDE0008;IDE0290;IDE0011;IDE0045;IDE0046
 			<!--CA1000;CA1010;CA1304;CA1305;CA1310;CA1311;CA1707;CA1708;CA1710;CA1711;CA1715;CA1716;CA1720;CA1725;
 			CA1852;CA2201;CA3075;IDE0040;IDE0130;IDE0290;IDE0008;IDE0032-->
 		</NoWarn>

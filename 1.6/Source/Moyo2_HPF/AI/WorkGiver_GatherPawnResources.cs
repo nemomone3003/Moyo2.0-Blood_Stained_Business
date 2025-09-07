@@ -8,6 +8,20 @@ namespace Moyo2_HPF
 {
 	public class WorkGiver_GatherPawnResources : WorkGiver_Scanner
 	{
+		private ModExtension modExtension;
+
+
+		public ModExtension ModExtension
+		{
+			get
+			{
+				modExtension ??= def.GetModExtension<ModExtension>();
+				return modExtension;
+			}
+		}
+
+
+		/*
 		public override PathEndMode PathEndMode
 		{
 			get
@@ -23,13 +37,15 @@ namespace Moyo2_HPF
 				return jobDef.isSelf ? PathEndMode.None : PathEndMode.Touch;
 			}
 		}
+		*/
 
 
 		public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
 		{
 			foreach (Pawn potentialPawn in pawn.Map.mapPawns.FreeColonistsAndPrisonersSpawned)
 			{
-				if (potentialPawn.GetComp<CompResourceHarvestable>() is not null)
+				if (potentialPawn.GetComp<CompResourceHarvestable>() is CompResourceHarvestable comp
+					&& comp.ActiveAndFull)
 				{
 					yield return potentialPawn;
 				}
@@ -39,12 +55,9 @@ namespace Moyo2_HPF
 
 		public override bool HasJobOnThing(Pawn pawn, Thing thing, bool forced = false)
 		{
-			if (def is not HPFWorkGiverDef hpfworkGiverDef)
+			if (ModExtension is null)
 			{
-				return false;
-			}
-			if (hpfworkGiverDef.harvestJobDef is not HPFJobDef jobDef)
-			{
+				Log.Error($"Job {def.defName} requires Moyo2_HPF.ModExtension to work properly.");
 				return false;
 			}
 			if (thing is not Pawn foundPawn)
@@ -52,29 +65,28 @@ namespace Moyo2_HPF
 				return false;
 			}
 
-			if (jobDef.isSelf)
+			if (ModExtension.isSelf)
 			{
-				if (pawn == thing &&
-					pawn.GetComps<CompResourceHarvestable>().Any(x => x.Props.harvestJobDef == jobDef && x.ActiveAndFull))
+				if (pawn == foundPawn &&
+					foundPawn.GetComps<CompResourceHarvestable>()
+						.Any(x => x.Props.harvestJobDef == ModExtension.harvestJobDef && x.ActiveAndFull))
 				{
 					return true;
 				}
 			}
 			else // job is not allowed on themselves
 			{
-				if (pawn == thing)
+				if (pawn == foundPawn)
 				{
 					return false;
 				}
 
-				foreach (CompResourceHarvestable comp in from x in foundPawn.GetComps<CompResourceHarvestable>()
-														 where x.Props.harvestJobDef == jobDef && x.ActiveAndFull
-														 select x)
+				bool anyHarvestable = foundPawn.GetComps<CompResourceHarvestable>()
+					.Any(comp => comp.Props.harvestJobDef == ModExtension.harvestJobDef && comp.ActiveAndFull);
+
+				if (anyHarvestable && PawnUtility.CanCasuallyInteractNow(foundPawn, false) && pawn.CanReserve(foundPawn))
 				{
-					if (PawnUtility.CanCasuallyInteractNow(foundPawn, false) && pawn.CanReserve(foundPawn))
-					{
-						return true;
-					}
+					return true;
 				}
 			}
 			return false;
@@ -83,11 +95,7 @@ namespace Moyo2_HPF
 
 		public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
 		{
-			if (def is not HPFWorkGiverDef hpfworkGiverDef)
-			{
-				return null;
-			}
-			return new Job(hpfworkGiverDef.harvestJobDef, t);
+			return JobMaker.MakeJob(ModExtension.harvestJobDef, t);
 		}
 	}
 }

@@ -84,6 +84,8 @@
 			</layers>
 			<tags>
 				<li>Cartel_Hood</li>
+				<li>Moyo2_HideBodyGlow</li>
+				<li>Moyo2_HideAntenna</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -165,6 +167,7 @@
 			<tags>
 				<li>Moyo2_SuitAdvanced</li>
 				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->

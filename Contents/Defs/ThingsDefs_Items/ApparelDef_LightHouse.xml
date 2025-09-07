@@ -41,6 +41,7 @@
 			</layers>
 			<tags>
 				<li>Moyo2_SuitBasic</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -103,6 +104,7 @@
 			<tags>
 				<li>Moyo2_SuitAdvanced</li>
 				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -164,6 +166,7 @@
 			<tags>
 				<li>Moyo2_SuitRoyal</li>
 				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -226,6 +229,7 @@
 			<tags>
 				<li>Moyo2_RobeRoyal</li>
 				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -287,6 +291,7 @@
 			<tags>
 				<li>Moyo2_SuitHolo</li>
 				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -342,6 +347,7 @@
 			<tags>
 				<li>Moyo2_Engineer</li>
 				<li>Moyo2_EngineerNoHead</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -409,6 +415,7 @@
 			<tags>
 				<li>Moyo2_Engineer</li>
 				<li>Moyo2_EngineerNoHead</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -487,6 +494,7 @@
 			</layers>
 			<tags>
 				<li>Moyo2_Engineer</li>
+				<li>Moyo2_HideAntenna</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -550,6 +558,7 @@
 			</layers>
 			<tags>
 				<li>Moyo2_Engineer</li>
+				<li>Moyo2_HideFaceGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -620,9 +629,9 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<renderSkipFlags>
+			<!--<renderSkipFlags>
 				<li>Body</li>
-			</renderSkipFlags>
+			</renderSkipFlags>-->
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -630,6 +639,8 @@
 			<tags>
 				<li>Moyo2_DiverLight</li>
 				<li>Moyo2_BigArmor</li>
+				<li>Moyo2_HideBodyGlow</li>
+				<li>Moyo2_HideTail</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -691,15 +702,18 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<renderSkipFlags>
+			<!--<renderSkipFlags>
 				<li>Head</li>
-			</renderSkipFlags>
+			</renderSkipFlags>-->
 			<layers>
 				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverLight</li>
 				<li>Moyo2_BigHelmet</li>
+				<li>Moyo2_HideFaceGlow</li>
+				<li>Moyo2_HideAntenna</li>
+				<li>Moyo2_HideHair</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -770,16 +784,18 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/DeepShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<renderSkipFlags>
+			<!--<renderSkipFlags>
 				<li>Body</li>
-			</renderSkipFlags>
-						<layers>
+			</renderSkipFlags>-->
+			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverHeavy</li>
 				<li>Moyo2_BigArmor</li>
+				<li>Moyo2_HideTail</li>
+				<li>Moyo2_HideBodyGlow</li>
 			</tags>
 		</apparel>
 		<!-- - -->
@@ -843,15 +859,18 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LighthouseArmor/DeepHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<renderSkipFlags>
+			<!--<renderSkipFlags>
 				<li>Head</li>
-			</renderSkipFlags>
+			</renderSkipFlags>-->
 			<layers>
 				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>Moyo2_DiverHeavy</li>
 				<li>Moyo2_BigHelmet</li>
+				<li>Moyo2_HideFaceGlow</li>
+				<li>Moyo2_HideAntenna</li>
+				<li>Moyo2_HideHair</li>
 			</tags>
 		</apparel>
 		<!-- - -->

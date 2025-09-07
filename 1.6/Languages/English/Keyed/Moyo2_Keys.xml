@@ -19,4 +19,7 @@
 
     <Moyo2_HPF_inspectText>BlueSerum extaction progress</Moyo2_HPF_inspectText>
 
+    <Moyo2_IFC_DisabledOnCooldown>The weapon is on cooldown.</Moyo2_IFC_DisabledOnCooldown>
+    <Moyo2_IFC_DisabledMissingApparel>Missing required apparel: {0}.</Moyo2_IFC_DisabledMissingApparel>
+
 </LanguageData>

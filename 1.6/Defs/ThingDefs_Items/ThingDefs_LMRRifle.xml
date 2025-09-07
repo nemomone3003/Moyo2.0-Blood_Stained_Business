@@ -184,7 +184,7 @@
 				</sharedComps>
 				<revertData>
 					<label>overload</label>
-					<description>gun system overloading.</description>
+					<description>Gun system overloading.</description>
 					<thingDef>Moyo2_LMRRifleDown</thingDef>
 					<revertAfterTicks>1050</revertAfterTicks>
 					<soundOnTransform>Laminar_Activate</soundOnTransform>
@@ -192,7 +192,7 @@
 				<transformDatas>
 					<li>
 						<label>quick discharge</label>
-						<description>disable overcharge.</description>
+						<description>Disable overcharge.</description>
 						<thingDef>Moyo2_LMRRifleDown</thingDef>
 						<transformCooldown>100</transformCooldown>
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->

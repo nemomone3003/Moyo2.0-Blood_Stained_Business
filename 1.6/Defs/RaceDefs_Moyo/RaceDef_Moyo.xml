@@ -307,6 +307,11 @@
 									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideTail</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 								<!-- <Apparel> -->
 									<!-- <hiddenUnderApparelTag> -->
 										<!-- <li>Moyo2_BigArmor</li> -->
@@ -340,10 +345,15 @@
 									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideTail</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 								<!-- <Apparel> -->
-									<!-- <hiddenUnderApparelTag> -->
-										<!-- <li>Moyo2_BigArmor</li> -->
-									<!-- </hiddenUnderApparelTag> -->
+								<!-- <hiddenUnderApparelTag> -->
+								<!-- <li>Moyo2_BigArmor</li> -->
+								<!-- </hiddenUnderApparelTag> -->
 								<!-- </Apparel> -->
 							</conditions>
 							<!-- - -->
@@ -371,6 +381,9 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideAntenna</li>
+									</hiddenUnderApparelTag>
 									<!-- <hiddenUnderApparelFor> -->
 									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
@@ -418,6 +431,9 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideAntenna</li>
+									</hiddenUnderApparelTag>
 									<!-- <hiddenUnderApparelFor> -->
 									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
@@ -465,6 +481,9 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideAntenna</li>
+									</hiddenUnderApparelTag>
 									<!-- <hiddenUnderApparelFor> -->
 									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
@@ -512,6 +531,9 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideAntenna</li>
+									</hiddenUnderApparelTag>
 									<!-- <hiddenUnderApparelFor> -->
 									<!-- <li>FullHead</li> -->
 									<!-- </hiddenUnderApparelFor> -->
@@ -560,9 +582,12 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideFaceGlow</li>
+									</hiddenUnderApparelTag>
+									<!--<hiddenUnderApparelFor>
 										<li>FullHead</li>
-									</hiddenUnderApparelFor>
+									</hiddenUnderApparelFor>-->
 								</Apparel>
 							</conditions>
 							<offsets>
@@ -570,7 +595,7 @@
 									<layerOffset>-0.274</layerOffset>
 								</south>
 								<east>
-									<layerOffset>-0.274</layerOffset>
+									<layerOffset>-0.2781</layerOffset>
 								</east>
 							</offsets>
 							<!-- - -->
@@ -598,10 +623,16 @@
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
-									<hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideBodyGlow</li>
+									</hiddenUnderApparelTag>
+									<!--<hiddenUnderApparelFor>
 										<li>Torso</li>
-									</hiddenUnderApparelFor>
+									</hiddenUnderApparelFor>-->
 								</Apparel>
+								<ApparelTags>
+									<tag>Moyo2_HideBodySpots</tag>
+								</ApparelTags>
 							</conditions>
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Blue">
@@ -685,6 +716,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideHair</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 							</conditions>
 							<offsets>
 								<north>
@@ -718,6 +754,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_HideHair</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
 							</conditions>
 							<offsets>
 								<north>
@@ -987,7 +1028,7 @@
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Moyo2_MoyoBody</body>
 			<!-- 피 -->
-			<renderTree>Moyo2_Humanlike</renderTree>
+			<renderTree>Humanlike</renderTree> <!-- Moyo2_Humanlike -->
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1.2</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>
@@ -1129,16 +1170,15 @@
 		<!--=============================================================================================================================-->
 		<comps>
 			<li Class="Moyo2_HPF.CompProperties_ResourceHarvestable">
-				<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
+				<harvestJobDef>Moyo2_ExtractDeepBlue_Job</harvestJobDef>
 				<thingDef>BlueSerum</thingDef>
 				<intervalDays>8</intervalDays>
 				<amount>2</amount>
 				<translationKey>Moyo2_HPF_inspectText</translationKey>
-				<constraints>
-					<li Class="Moyo2_HPF.ConstraintPawnAgeOver">
-						<age>7</age>
-					</li>
-				</constraints>
+				<constraint Class="Moyo2_HPF.ConstraintPawnAge">
+					<age>7</age>
+					<compareType>Over</compareType>
+				</constraint>
 				<productAffectedStats>
 					<li>
 						<statDef>DeepblueStat</statDef>
@@ -1150,7 +1190,7 @@
 					<li>
 						<statDef>DeepblueStatSpeed</statDef>
 						<multiplier>1.0</multiplier>
-						<offset>-1.0</offset>
+						<offset>1.0</offset>
 					</li>
 				</speedAffectedStats>
 			</li>
