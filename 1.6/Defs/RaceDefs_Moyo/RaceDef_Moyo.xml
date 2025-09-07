@@ -307,14 +307,9 @@
 									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideTail</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
 								<!-- <Apparel> -->
 									<!-- <hiddenUnderApparelTag> -->
-										<!-- <li>Moyo2_BigArmor</li> -->
+										<!-- <li>Moyo2_HideTail</li> -->
 									<!-- </hiddenUnderApparelTag> -->
 								<!-- </Apparel> -->
 							</conditions>
@@ -345,15 +340,10 @@
 									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideTail</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
 								<!-- <Apparel> -->
-								<!-- <hiddenUnderApparelTag> -->
-								<!-- <li>Moyo2_BigArmor</li> -->
-								<!-- </hiddenUnderApparelTag> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_HideTail</li> -->
+									<!-- </hiddenUnderApparelTag> -->
 								<!-- </Apparel> -->
 							</conditions>
 							<!-- - -->
@@ -380,17 +370,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideAntenna</li>
-									</hiddenUnderApparelTag>
-									<!-- <hiddenUnderApparelFor> -->
-									<!-- <li>FullHead</li> -->
-									<!-- </hiddenUnderApparelFor> -->
+								<!-- <Apparel> -->
 									<!-- <hiddenUnderApparelTag> -->
-									<!-- <li>MoyoTuque</li> -->
+										<!-- <li>Moyo2_HideAntenna</li> -->
 									<!-- </hiddenUnderApparelTag> -->
-								</Apparel>
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -430,17 +414,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideAntenna</li>
-									</hiddenUnderApparelTag>
-									<!-- <hiddenUnderApparelFor> -->
-									<!-- <li>FullHead</li> -->
-									<!-- </hiddenUnderApparelFor> -->
+								<!-- <Apparel> -->
 									<!-- <hiddenUnderApparelTag> -->
-									<!-- <li>MoyoTuque</li> -->
+										<!-- <li>Moyo2_HideAntenna</li> -->
 									<!-- </hiddenUnderApparelTag> -->
-								</Apparel>
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -480,17 +458,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideAntenna</li>
-									</hiddenUnderApparelTag>
-									<!-- <hiddenUnderApparelFor> -->
-									<!-- <li>FullHead</li> -->
-									<!-- </hiddenUnderApparelFor> -->
+								<!-- <Apparel> -->
 									<!-- <hiddenUnderApparelTag> -->
-									<!-- <li>MoyoTuque</li> -->
+										<!-- <li>Moyo2_HideAntenna</li> -->
 									<!-- </hiddenUnderApparelTag> -->
-								</Apparel>
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -530,17 +502,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideAntenna</li>
-									</hiddenUnderApparelTag>
-									<!-- <hiddenUnderApparelFor> -->
-									<!-- <li>FullHead</li> -->
-									<!-- </hiddenUnderApparelFor> -->
+								<!-- <Apparel> -->
 									<!-- <hiddenUnderApparelTag> -->
-									<!-- <li>MoyoTuque</li> -->
+										<!-- <li>Moyo2_HideAntenna</li> -->
 									<!-- </hiddenUnderApparelTag> -->
-								</Apparel>
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -581,14 +547,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideFaceGlow</li>
-									</hiddenUnderApparelTag>
-									<!--<hiddenUnderApparelFor>
-										<li>FullHead</li>
-									</hiddenUnderApparelFor>-->
-								</Apparel>
+								<!-- <Apparel> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_HideFaceGlow</li> -->
+									<!-- </hiddenUnderApparelTag> -->
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<south>
@@ -622,17 +585,14 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideBodyGlow</li>
-									</hiddenUnderApparelTag>
-									<!--<hiddenUnderApparelFor>
-										<li>Torso</li>
-									</hiddenUnderApparelFor>-->
-								</Apparel>
-								<ApparelTags>
-									<tag>Moyo2_HideBodySpots</tag>
-								</ApparelTags>
+								<!-- <Apparel> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_HideBodyGlow</li> -->
+									<!-- </hiddenUnderApparelTag> -->
+								<!-- </Apparel> -->
+								<!-- <ApparelTags> -->
+									<!-- <tag>Moyo2_HideBodySpots</tag> -->
+								<!-- </ApparelTags> -->
 							</conditions>
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Blue">
@@ -716,11 +676,11 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideHair</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
+								<!-- <Apparel> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_HideHair</li> -->
+									<!-- </hiddenUnderApparelTag> -->
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<north>
@@ -754,15 +714,14 @@
 									<drawWithoutPart>false</drawWithoutPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
-								<Apparel>
-									<hiddenUnderApparelTag>
-										<li>Moyo2_HideHair</li>
-									</hiddenUnderApparelTag>
-								</Apparel>
+								<!-- <Apparel> -->
+									<!-- <hiddenUnderApparelTag> -->
+										<!-- <li>Moyo2_HideHair</li> -->
+									<!-- </hiddenUnderApparelTag> -->
+								<!-- </Apparel> -->
 							</conditions>
 							<offsets>
 								<north>
-									<!-- <layerOffset>-0.345</layerOffset> -->
 									<layerOffset>-0.324</layerOffset>
 								</north>
 								<south>
@@ -776,15 +735,6 @@
 								</west>
 							</offsets>
 							<!-- - -->
-							<!--<extendedGraphics>
-								<Hediff For="Moyo2_CartelHood">
-									<path>Apparel/Cartel/CartelHoodBack</path>
-									<extendedGraphics>
-										<Job For="LayDownResting">Moyo/Hair/MoyoBackHair</Job>
-										<Job For="Wait_Asleep">Moyo/Hair/MoyoBackHair</Job>
-									</extendedGraphics>
-								</Hediff>
-							</extendedGraphics>-->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<userCustomizable>false</userCustomizable>
