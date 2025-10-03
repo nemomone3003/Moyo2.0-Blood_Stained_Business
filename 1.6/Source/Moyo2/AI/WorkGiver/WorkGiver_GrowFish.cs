@@ -12,10 +12,8 @@ namespace Moyo2
 
 		public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
 		{
-			if (t is not ThingClass_FishTank fishTank || fishTank.FishFinishedGrowing)
+			if (t is not ThingClass_FishTank fishTank)
 			{
-				// The building given isn't a fish tank
-				// or the fish tank has finished growing it's current fish
 				return false;
 			}
 			if (fishTank.CompPowerTrader != null && !fishTank.CompPowerTrader.PowerOn)
@@ -34,7 +32,7 @@ namespace Moyo2
 			{
 				return false;
 			}
-			if (fishTank.GrowingFish && fishTank.LockedFishDef == fishTank.FishDef)
+			if (fishTank.FishLoaded && fishTank.LockedFishDef == fishTank.WantedFishDef)
 			{
 				// If the fishDef that's currently growing isn't the same as the fishDef selected in the gizmo
 				// a pawn will replace it with the fish on the gizmo

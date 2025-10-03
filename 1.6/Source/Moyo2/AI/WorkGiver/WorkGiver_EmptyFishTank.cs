@@ -9,26 +9,11 @@ namespace Moyo2
 		public override PathEndMode PathEndMode => PathEndMode.Touch;
 
 
-		public override bool ShouldSkip(Pawn pawn, bool forced = false)
-		{
-			List<Thing> fishTanksOnMap = pawn?.Map?.listerThings?.ThingsOfDef(Moyo2_ThingDefOfs.Moyo_FishTank);
-			for (int i = 0; i < fishTanksOnMap.Count; i++)
-			{
-				if (((ThingClass_FishTank)fishTanksOnMap[i]).FishFinishedGrowing)
-				{
-					return false; // If any tank has finished growing, doesnt skip
-				}
-			}
-			return true;
-		}
-
-
 		public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
 		{
-			if (t is not ThingClass_FishTank thingClass_FishTank || thingClass_FishTank.GrowingFish || !thingClass_FishTank.FishFinishedGrowing)
+			if (t is not ThingClass_FishTank thingClass_FishTank || !thingClass_FishTank.FishFinishedGrowing)
 			{
 				// The building found isn't a fish tank
-				// or the fish tank is growing fish 
 				// or the fish tank hasn't finished growing it's current fish
 				return false;
 			}

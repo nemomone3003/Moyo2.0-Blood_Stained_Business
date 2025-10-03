@@ -8,9 +8,9 @@ namespace Moyo2
 
 		// The settings selected in the gizmo
 		private FishDef lockedFishDef;
-		private FishDef fishDef;
+		private FishDef wantedFishDef;
 
-		private float tickProgress;
+		private int ticksProgress;
 
 		private int ticksDie;
 		private CompPowerTrader compPowerTrader;
@@ -38,21 +38,35 @@ namespace Moyo2
 		// If both are null, it will get the first item of the FishDefs list in the modextension
 		public FishDef LockedFishDef
 		{
-			get => lockedFishDef ??= FishDef;
+			get => lockedFishDef;
 			set => lockedFishDef = value;
 		}
 
 
-		public FishDef FishDef
+		public FishDef WantedFishDef
 		{
-			get => fishDef ??= lockedFishDef ?? ModExtension.FishDefs[0];
-			set => fishDef = value;
+			get => wantedFishDef ??= lockedFishDef ?? ModExtension.FishDefs[0];
+			set => wantedFishDef = value;
 		}
 
 
-		public bool GrowingFish => LockedFishDef is not null && !FishFinishedGrowing;
+		public int TicksProgress
+		{
+			get => ticksProgress;
+			set => ticksProgress = value == 0 ? 0 : Math.Min(value, LockedFishDef.fishTankSettings.ticksToGrow);
+		}
 
-		public bool FishFinishedGrowing => tickProgress >= LockedFishDef.fishTankSettings.ticksToGrow;
+
+		public int TicksDie
+		{
+			get => ticksDie;
+			set => ticksDie = value == 0 ? 0 : Math.Min(value, LockedFishDef.fishTankSettings.ticksToDie);
+		}
+
+
+		public bool FishLoaded => LockedFishDef is not null;
+
+		public bool FishFinishedGrowing => TicksProgress >= LockedFishDef?.fishTankSettings.ticksToGrow;
 
 		// Gets CompPower if it's present on the def
 		public CompPowerTrader CompPowerTrader
@@ -72,18 +86,10 @@ namespace Moyo2
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
 
-			xSizeCurve =
-			[
-				new (0f, 0.25f),
-                // When the fish isn't at all progressed it will be 1/4 of the original X size
-                new (LockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.x)
-                // And it will get to the original X size when it reaches the ticks it needs to finish growing
-            ];
-			ySizeCurve =
-			[
-				new (0f, 0.25f),
-				new (lockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.y)
-			];
+			if (FishLoaded)
+			{
+				RefreshCurve();
+			}
 		}
 
 
@@ -97,7 +103,7 @@ namespace Moyo2
 			Command_Action selectFish = new()
 			{
 				defaultLabel = "Moyo2_FishTank_GizmoLabel".Translate(),
-				icon = FishDef.uiIcon,
+				icon = WantedFishDef.uiIcon,
 				action = delegate
 				{
 					List<FloatMenuOption> options = new();
@@ -107,7 +113,7 @@ namespace Moyo2
 						{
 							options.Add(new FloatMenuOption(fish.fishTankSettings.label.CapitalizeFirst(), delegate
 							{
-								FishDef = fish;
+								WantedFishDef = fish;
 							}));
 						}
 					}
@@ -149,7 +155,7 @@ namespace Moyo2
 				defaultLabel = "Fully grow fish",
 				action = delegate
 				{
-					tickProgress = lockedFishDef.fishTankSettings.ticksToGrow;
+					TicksProgress = lockedFishDef.fishTankSettings.ticksToGrow;
 				}
 			};
 			yield return devGizmoFullyGrowFish;
@@ -166,57 +172,66 @@ namespace Moyo2
 
 		public void LoadFish()
 		{
-			tickProgress = 0;
-			LockedFishDef = FishDef; // Save the Fish selected so it doesn't change the result when selecting another one through the gizmo, only when running this method.
-			xSizeCurve = new()
-			{
+			TicksProgress = 0;
+			LockedFishDef = WantedFishDef; // Save the Fish selected so it doesn't change the result when selecting another one through the gizmo, only when running this method.
+			RefreshCurve();
+		}
+
+
+		private void RefreshCurve()
+		{
+			xSizeCurve =
+			[
 				new (0f, 0.25f),
                 // When the fish isn't at all progressed it will be 1/4 of the original X size
                 new (LockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.x)
                 // And it will get to the original X size when it reaches the ticks it needs to finish growing
-            };
-			ySizeCurve = new()
-			{
+            ];
+			ySizeCurve =
+			[
 				new (0f, 0.25f),
-				new (lockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.y)
-			};
+				new (LockedFishDef.fishTankSettings.ticksToGrow, LockedFishDef.fishTankSettings.graphicData.drawSize.y)
+			];
 		}
 
 
 		public override void TickRare()
 		{
 			base.TickRare();
-			// If the building has CompPowerTrader
-			if (CompPowerTrader != null)
+			Log.Message(ticksProgress);
+			if (FishLoaded)
 			{
-				if (ticksDie >= lockedFishDef.fishTankSettings.ticksToDie) // If ticksToDie is 0 it will reset the fish, esentially killing it and having to plant it again
+				// If the building has CompPowerTrader
+				if (CompPowerTrader != null)
 				{
-					Messages.Message("Moyo2_FishTank_FishDied".Translate(), MessageTypeDefOf.NegativeEvent);
-					Reset();
-				}
-				else if (GrowingFish && !FishFinishedGrowing)
-				{
+					if (TicksDie >= LockedFishDef.fishTankSettings.ticksToDie) // If ticksToDie is 0 it will reset the fish, esentially killing it and having to plant it again
+					{
+						Messages.Message("Moyo2_FishTank_FishDied".Translate(), MessageTypeDefOf.NegativeEvent);
+						Reset();
+						return;
+					}
+
 					if (CompPowerTrader.PowerOn)
 					{
-						tickProgress += GenTicks.TickRareInterval;
+						TicksProgress += GenTicks.TickRareInterval;
 					}
-					else // When the building isn't on it won't grow at all
+					else // When the building isn't on it will DIE
 					{
-						ticksDie += GenTicks.TickRareInterval;
+						TicksDie += GenTicks.TickRareInterval;
 					}
 				}
-			}
-			// If the building doesn't have CompPowerTrader it will just grow as normal
-			else if (GrowingFish && !FishFinishedGrowing)
-			{
-				tickProgress += GenTicks.TickRareInterval;
+				// If the building doesn't have CompPowerTrader it will just grow as normal
+				else if (!FishFinishedGrowing)
+				{
+					TicksProgress += GenTicks.TickRareInterval;
+				}
 			}
 		}
 
 
 		protected override void DrawAt(Vector3 drawLoc, bool flip = false)
 		{
-			if (GrowingFish || FishFinishedGrowing)
+			if (FishLoaded)
 			{
 				drawLoc.y = altitude;
 
@@ -227,12 +242,12 @@ namespace Moyo2
 
 				try
 				{
-					if (lastTick != tickProgress) // Every 250 ticks
+					if (lastTick != TicksProgress) // Every 250 ticks because TicksProgress updates every TickRare
 					{
-						lastTick = (int)tickProgress;
+						lastTick = TicksProgress;
 
-						Xsize = xSizeCurve.Evaluate(tickProgress);
-						Ysize = ySizeCurve.Evaluate(tickProgress);
+						Xsize = xSizeCurve.Evaluate(TicksProgress);
+						Ysize = ySizeCurve.Evaluate(TicksProgress);
 						// This gets the value of the X and Y curves, based on how progressed the growth is
 						Vector2 vector2 = new(Xsize, Ysize);
 						// With those values we change the fish' drawsize incrementally
@@ -258,15 +273,17 @@ namespace Moyo2
 				return null;
 			}
 
+			Thing fish = ThingMaker.MakeThing(LockedFishDef);
 			Reset();
-			return ThingMaker.MakeThing(LockedFishDef);
+			return fish;
 		}
 
 
 		private void Reset()
 		{
-			tickProgress = 0;
-			ticksDie = 0;
+			TicksProgress = 0;
+			TicksDie = 0;
+			LockedFishDef = null;
 		}
 
 
@@ -280,39 +297,43 @@ namespace Moyo2
 			}
 			// Gets the text from the parent class and shows it if there's anything to show
 
-			if (!GrowingFish)
+			if (!FishLoaded)
 			{
-				if (!FishFinishedGrowing)
+				stringBuilder.AppendLine("Moyo2_FishTank_NotGrowingAnything".Translate());
+				// Not growing anything
 				{
-					stringBuilder.AppendLine("Moyo2_FishTank_NotGrowingAnything".Translate());
-					// Not growing anything
-				}
-				else
-				{
-					stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_FinishedGrowing", LockedFishDef.fishTankSettings.label.CapitalizeFirst().Named("FishName")));
-					// Fish fully grown
+
 				}
 			}
 			else
 			{
-				stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_NowGrowingFish", LockedFishDef.fishTankSettings.label.CapitalizeFirst().Named("FishName")));
-				// Now growing: fish
-				float growthPercent = tickProgress / LockedFishDef.fishTankSettings.ticksToGrow * 100;
-				stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_GrowthPercent", Mathf.Min(growthPercent, 100f).Named("%age")));
-				// progress: %
+				if (FishFinishedGrowing)
+				{
+					stringBuilder.AppendLine("Moyo2_FishTank_FinishedGrowing".Translate(LockedFishDef.fishTankSettings.label.CapitalizeFirst().Named("FishName")));
+					// Fish fully grown
+				}
+				if (CompPowerTrader != null && !CompPowerTrader.PowerOn)
+				{
+					GenDate.TicksToPeriod(lockedFishDef.fishTankSettings.ticksToDie - TicksDie, out int _, out int _, out int _, out float hours);
+					stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_HoursFishDie", hours.Named("Hours")));
+					// Time left until the harvest is lost
+				}
+				else
+				{
+					stringBuilder.AppendLine("Moyo2_FishTank_NowGrowingFish".Translate(LockedFishDef.fishTankSettings.label.CapitalizeFirst().Named("FishName")));
+					// Now growing: fish
+					float growthPercent = TicksProgress / (float)LockedFishDef.fishTankSettings.ticksToGrow * 100f;
+					stringBuilder.AppendLine("Moyo2_FishTank_GrowthPercent".Translate(growthPercent.Named("%age")));
+					// progress: %
+				}
 			}
-			if ((GrowingFish || FishFinishedGrowing) && CompPowerTrader != null && !CompPowerTrader.PowerOn)
-			{
-				GenDate.TicksToPeriod(lockedFishDef.fishTankSettings.ticksToDie - ticksDie, out int _, out int _, out int _, out float hours);
-				stringBuilder.AppendLine(TranslatorFormattedStringExtensions.Translate("Moyo2_FishTank_HoursFishDie", hours.Named("Hours")));
-				// Time left until the harvest is lost
-			}
+
 
 			if (DebugSettings.showHiddenInfo) // Only shows with godmode on
 			{
-				stringBuilder.AppendLine($"Is growing now? {GrowingFish}");
+				stringBuilder.AppendLine($"Is growing now? {FishLoaded}");
 				stringBuilder.AppendLine($"has finished growing? {FishFinishedGrowing}");
-				stringBuilder.AppendLine($"Current progress: {tickProgress}");
+				stringBuilder.AppendLine($"Current progress: {TicksProgress}");
 				stringBuilder.AppendLine($"Ticks total: {LockedFishDef.fishTankSettings.ticksToGrow}");
 			}
 			return stringBuilder.ToString().TrimEndNewlines();
@@ -351,7 +372,7 @@ namespace Moyo2
 		{
 			base.ExposeData();
 			Scribe_Defs.Look(ref lockedFishDef, "Moyo2_FishTank_SelectedFishDef");
-			Scribe_Values.Look(ref tickProgress, "Moyo2_FishTank_tickProgress");
+			Scribe_Values.Look(ref ticksProgress, "Moyo2_FishTank_tickProgress");
 			Scribe_Values.Look(ref ticksDie, "Moyo2_FishTank_ticksToDie");
 		}
 	}

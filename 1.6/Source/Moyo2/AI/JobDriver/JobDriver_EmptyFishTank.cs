@@ -24,7 +24,6 @@ namespace Moyo2
 
 			yield return Toils_General.Wait(200).FailOnDespawnedNullOrForbidden(TargetIndex.A)
 				.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch)
-				.FailOn(() => !FishTank.FishFinishedGrowing)
 				.WithProgressBarToilDelay(TargetIndex.A);
 
 			Toil unloadFishToil = ToilMaker.MakeToil("UnloadFish");
