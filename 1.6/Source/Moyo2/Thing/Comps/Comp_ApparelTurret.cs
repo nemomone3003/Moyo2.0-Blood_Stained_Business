@@ -5,17 +5,25 @@ namespace Moyo2
 	public class Comp_ApparelTurret : ThingComp, IAttackTargetSearcher
 	{
 		private const int StartShootIntervalTicks = 10;
+		private const float IdleTurnDegreesPerTick = 0.26f;
+		private const int IdleTurnDuration = 140;
+		private const int IdleTurnIntervalMin = 150;
+		private const int IdleTurnIntervalMax = 350;
 
 		private static readonly CachedTexture ToggleTurretIcon = new("UI/Gizmos/ToggleTurret");
 
-		public Thing gun;
-		protected int burstCooldownTicksLeft;
-		protected int burstWarmupTicksLeft;
-		protected LocalTargetInfo currentTarget = LocalTargetInfo.Invalid;
+
+		private int ticksUntilIdleTurn;
+		private bool idleTurnClockwise;
+		private int idleTurnTicksLeft;
 		private bool fireAtWill = true;
 		private LocalTargetInfo lastAttackedTarget = LocalTargetInfo.Invalid;
 		private int lastAttackTargetTick;
 		private bool updatedGunVerbs = false;
+		protected int burstCooldownTicksLeft;
+		protected int burstWarmupTicksLeft;
+		protected LocalTargetInfo currentTarget = LocalTargetInfo.Invalid;
+		public Thing gun;
 		public float curRotation;
 
 		private Pawn Wearer => (parent as Apparel).Wearer;
@@ -28,6 +36,7 @@ namespace Moyo2
 		public Verb AttackVerb => GunCompEq.PrimaryVerb;
 		private bool WarmingUp => burstWarmupTicksLeft > 0;
 		public bool AutoAttack => Props.autoAttack;
+		public LocalTargetInfo CurrentTarget => currentTarget;
 
 
 		private bool CanShoot
@@ -93,13 +102,14 @@ namespace Moyo2
 				UpdateGunVerbs();
 			}
 
-			if (!CanShoot)
-			{
-				return;
-			}
+
 			if (currentTarget.IsValid)
 			{
 				curRotation = (currentTarget.Cell.ToVector3Shifted() - Wearer.DrawPos).AngleFlat() + Props.angleOffset;
+			}
+			if (!CanShoot)
+			{
+				return;
 			}
 			AttackVerb.VerbTick();
 			if (AttackVerb.state == VerbState.Bursting)
@@ -111,6 +121,7 @@ namespace Moyo2
 				burstWarmupTicksLeft--;
 				if (burstWarmupTicksLeft == 0)
 				{
+					Wearer.Drawer.renderer.renderTree.SetDirty();
 					AttackVerb.TryStartCastOn(currentTarget, surpriseAttack: false, canHitNonTargetPawns: true, preventFriendlyFire: false, nonInterruptingSelfCast: true);
 					lastAttackTargetTick = Find.TickManager.TicksGame;
 					lastAttackedTarget = currentTarget;
@@ -134,11 +145,43 @@ namespace Moyo2
 					ResetCurrentTarget();
 				}
 			}
+			IdleTurretRotationTick();
+		}
+
+
+		private void IdleTurretRotationTick()
+		{
+			if (ticksUntilIdleTurn > 0)
+			{
+				ticksUntilIdleTurn--;
+				if (ticksUntilIdleTurn == 0)
+				{
+					idleTurnClockwise = Rand.Value < 0.5f;
+					idleTurnTicksLeft = IdleTurnDuration;
+				}
+			}
+			else
+			{
+				if (idleTurnClockwise)
+				{
+					curRotation += IdleTurnDegreesPerTick;
+				}
+				else
+				{
+					curRotation -= IdleTurnDegreesPerTick;
+				}
+				idleTurnTicksLeft--;
+				if (idleTurnTicksLeft <= 0)
+				{
+					ticksUntilIdleTurn = Rand.RangeInclusive(IdleTurnIntervalMin, IdleTurnIntervalMax);
+				}
+			}
 		}
 
 
 		private void ResetCurrentTarget()
 		{
+			//Wearer.Drawer.renderer.renderTree.SetDirty();
 			currentTarget = LocalTargetInfo.Invalid;
 			burstWarmupTicksLeft = 0;
 		}
