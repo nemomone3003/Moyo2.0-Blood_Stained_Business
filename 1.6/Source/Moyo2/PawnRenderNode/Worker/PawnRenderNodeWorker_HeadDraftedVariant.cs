@@ -1,6 +1,6 @@
 ﻿namespace Moyo2
 {
-	public class PawnRenderNodeWorker_HeadDraftedVariant : PawnRenderNodeWorker_Apparel_Head
+	public class PawnRenderNodeWorker_HeadDraftedVariant : PawnRenderNodeWorker_Apparel_Head_Offset
 	{
 		protected override Graphic GetGraphic(PawnRenderNode node, PawnDrawParms parms)
 		{
