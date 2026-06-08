@@ -3,21 +3,21 @@ using Verse;
 
 namespace Moyo2_HPF
 {
-	public class ConstraintOrOp : Constraint
-	{
-		public List<Constraint> constraints = [];
+    public class ConstraintOrOp : Constraint
+    {
+        public List<Constraint> constraints = [];
 
 
-		public override bool Active(ThingComp comp, Pawn pawn, ThingWithComps equipment)
-		{
-			foreach (Constraint constraint in constraints)
-			{
-				if (constraint.Active(comp, pawn, equipment))
-				{
-					return true;
-				}
-			}
-			return false;
-		}
-	}
+        public override bool Active(ThingComp comp, Pawn pawn, ThingWithComps equipment)
+        {
+            foreach (Constraint constraint in constraints)
+            {
+                if (constraint.Active(comp, pawn, equipment))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 }
