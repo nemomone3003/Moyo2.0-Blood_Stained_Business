@@ -3,9 +3,9 @@
 	<!-- 모요 간단한 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>Moyo2_DeepBlueExtracter_Crude</defName>
-		<label>crude deepblue extracter</label>
-		<labelNoun>a crude deepblue extracter</labelNoun>
-		<description>A crude deepblue extracter installed. It will produce deepblue every often.\n\nUnistalling will break the extracter.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body.</description>
+		<label>crude deepblue extractor</label>
+		<labelNoun>a crude deepblue extractor</labelNoun>
+		<description>A crude deepblue extractor installed. It will produce deepblue every often.\n\nUnistalling will break the extractor.\n\nBeing cheapbly built is a benefit for most moyos whitout spare cash. You pay less with cash but you pay the rest with uncomfort and pain of a thick needle buried in your body.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Crude</ThingDef>
 		</descriptionHyperlinks>
@@ -43,7 +43,7 @@
 	</ThoughtDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
 		<defName>Moyo2_DeepBlueExtracter_Crude</defName>
-		<label>crude deepblue extracter</label>
+		<label>crude deepblue extractor</label>
 		<description>This crude device filters out deep blue from Moyo's blood. Very few Moyos would actually use this themselves unless they're truly desperate for money, as it's painful and uncomfortable</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
@@ -89,8 +89,8 @@
 	<!-- 모요 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>Moyo2_DeepBlueExtracter</defName>
-		<label>deepblue extracter</label>
-		<labelNoun>a deepblue extracter</labelNoun>
+		<label>deepblue extractor</label>
+		<labelNoun>a deepblue extractor</labelNoun>
 		<description>This device filters out deep blue from Moyo's blood. It's a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter</ThingDef>
@@ -128,7 +128,7 @@
 	</ThoughtDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
 		<defName>Moyo2_DeepBlueExtracter</defName>
-		<label>deepblue extracter</label>
+		<label>deepblue extractor</label>
 		<description>This device filters out deep blue from Moyo's blood. It's a standard product with a reasonable price and minimal discomfort. The supply of deep blue is always limited compared to demand, leading many moyos to use extractors to gain additional income.</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
@@ -174,8 +174,8 @@
 	<!-- 어비스테크 딥블루 추출기 -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>Moyo2_DeepBlueExtracter_Abysstech</defName>
-		<label>abysstech deepblue extracter</label>
-		<labelNoun>an abysstech deepblue extracter</labelNoun>
+		<label>abysstech deepblue extractor</label>
+		<labelNoun>an abysstech deepblue extractor</labelNoun>
 		<description>This advanced device filters out deep blue from Moyo's blood. It boasts such comfortable usability that you won't feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering real-time body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Abysstech</ThingDef>
@@ -201,7 +201,7 @@
 	</HediffDef>
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
 		<defName>Moyo2_DeepBlueExtracter_Abysstech</defName>
-		<label>abysstech deepblue extracter</label>
+		<label>abysstech deepblue extractor</label>
 		<description>This advanced device filters out deep blue from Moyo's blood. It boasts such comfortable usability that you won't feel a thing. Beyond just extracting deep blue, this extractor contributes to a healthy lifestyle by offering real-time body monitoring, aiding blood filteration, and displaying calorie intake. Subrcibe for the service now! *Payment is also possible through deep blue.</description>
 		<techLevel>Industrial</techLevel>
 		<costList>
@@ -248,7 +248,7 @@
 	<!-- <ThingDef ParentName="BodyPartProstheticMakeableBase"> -->
 	<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
 	<!-- <label>blueburster deepblue harvester</label> -->
-	<!-- <description>A deepblue extracter. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
+	<!-- <description>A deepblue extractor. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
 	<!-- <techLevel>Industrial</techLevel> -->
 	<!-- <costList> -->
 	<!-- <Steel>5</Steel> -->
@@ -270,8 +270,8 @@
 	<!-- <HediffDef ParentName="ImplantHediffBase"> -->
 	<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
 	<!-- <label>blueburster deepblue harvester</label> -->
-	<!-- <labelNoun>a deepblue extracter</labelNoun> -->
-	<!-- <description>A deepblue extracter installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
+	<!-- <labelNoun>a deepblue extractor</labelNoun> -->
+	<!-- <description>A deepblue extractor installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
 	<!-- <descriptionHyperlinks> -->
 	<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
 	<!-- </descriptionHyperlinks> -->
