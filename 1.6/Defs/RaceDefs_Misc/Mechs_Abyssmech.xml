@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 헥사포드 베이스 -->
+	<ThingDef Abstract="True" Name="Moyo2_Hexapod" ParentName="Moyo2_BaseMechanoid">
+		<description>헥사포드.</description>
+		<statBases>
+			<MoveSpeed>3.8</MoveSpeed>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+			<MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.2</MechEnergyLossPerHP>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<!-- <li>HexapodTentacle</li> -->
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle1</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<!-- <li>HexapodTentacle</li> -->
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle2</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<!-- <li>HexapodTentacle</li> -->
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle3</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<!-- <li>HexapodTentacle</li> -->
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle4</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<!-- <li>HexapodTentacle</li> -->
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle5</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<!-- <li>HexapodTentacle</li> -->
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Tentacle6</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Moyo2_Hexapod</body>
+			<baseBodySize>2.2</baseBodySize>
+			<baseHealthScale>3</baseHealthScale>
+			<mechEnabledWorkTypes>
+				<li>Construction</li>
+				<li>Hauling</li>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>				
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+			<mechWeightClass>Heavy</mechWeightClass>
+			<detritusLeavings>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>10</texOverrideIndex>
+					<spawnChance>0.5</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>19</texOverrideIndex>
+					<spawnChance>0.5</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>14</texOverrideIndex>
+					<spawnChance>0.5</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<butcherProducts>
+			<Steel>20</Steel>
+			<Moyo2_Abyssteel>15</Moyo2_Abyssteel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef Abstract="True" Name="Moyo2_HexapodKind" ParentName="Moyo2_BaseMechanoidKind">
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Pawn/Hexapod/Hexapod</texPath>
+					<!-- <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Centipede</maskPath> -->
+					<!-- <shaderType>CutoutWithOverlay</shaderType> -->
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Hexapod/Hexapod</texPath>
+					<!-- <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Centipede</maskPath> -->
+					<!-- <shaderType>CutoutWithOverlay</shaderType> -->
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<combatPower>400</combatPower>
+		<!-- <weaponMoney>9999~9999</weaponMoney> -->
+		<techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
+	</PawnKindDef>
+	<!-- 기본 헥사포드 -->
+	<ThingDef ParentName="Moyo2_Hexapod">
+		<defName>Moyo2_Hexapod_Default</defName>
+		<label>hexapod</label>
+	</ThingDef>
+	<PawnKindDef ParentName="Moyo2_HexapodKind">
+		<defName>Moyo2_HexapodKind_Default</defName>
+		<label>hexapod</label>
+		<race>Moyo2_Hexapod_Default</race>
+	</PawnKindDef>
+	<!-- - -->
+	<!-- 스페리포드 베이스 -->
+	<ThingDef Abstract="True" Name="Moyo2_Spheripod" ParentName="Moyo2_BaseMechanoid">
+		<description>스페리포드.</description>
+		<statBases>
+			<MoveSpeed>2.1</MoveSpeed>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+			<MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.2</MechEnergyLossPerHP>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.6</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left club</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>3.2</cooldownTime>
+				<linkedBodyPartsGroup>LeftClub</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right club</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>3.2</cooldownTime>
+				<linkedBodyPartsGroup>RightClub</linkedBodyPartsGroup>
+			</li>						
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>Moyo2_Spheripod</body>
+			<baseBodySize>2.5</baseBodySize>
+			<baseHealthScale>4</baseHealthScale>
+			<mechEnabledWorkTypes>
+				<li>Mining</li>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>			
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+			<mechWeightClass>Heavy</mechWeightClass>
+			<detritusLeavings>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>10</texOverrideIndex>
+					<spawnChance>0.5</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>19</texOverrideIndex>
+					<spawnChance>0.5</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>14</texOverrideIndex>
+					<spawnChance>0.5</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<butcherProducts>
+			<Steel>20</Steel>
+			<Moyo2_Abyssteel>30</Moyo2_Abyssteel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef Abstract="True" Name="Moyo2_SpheripodKind" ParentName="Moyo2_BaseMechanoidKind">
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Pawn/Spheripod/Spheripod</texPath>
+					<!-- <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Centipede</maskPath> -->
+					<!-- <shaderType>CutoutWithOverlay</shaderType> -->
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Spheripod/Spheripod</texPath>
+					<!-- <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Centipede</maskPath> -->
+					<!-- <shaderType>CutoutWithOverlay</shaderType> -->
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<combatPower>400</combatPower>
+		<!-- <weaponMoney>9999~9999</weaponMoney> -->
+		<techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
+	</PawnKindDef>
+	<!-- 기본 헥사포드 -->
+	<ThingDef ParentName="Moyo2_Spheripod">
+		<defName>Moyo2_Spheripod_Default</defName>
+		<label>spheripod</label>
+	</ThingDef>
+	<PawnKindDef ParentName="Moyo2_SpheripodKind">
+		<defName>Moyo2_SpheripodKind_Default</defName>
+		<label>spheripod</label>
+		<race>Moyo2_Spheripod_Default</race>
+	</PawnKindDef>
+</Defs>

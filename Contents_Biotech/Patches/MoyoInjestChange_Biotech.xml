@@ -6,4 +6,11 @@
 			<ingestSound>HemogenPack_Consume</ingestSound>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+		<value>
+			<li>Moyo2_HexapodRecipe</li>
+			<li>Moyo2_SpheripodRecipe</li>
+		</value>
+	</Operation>	
 </Patch>

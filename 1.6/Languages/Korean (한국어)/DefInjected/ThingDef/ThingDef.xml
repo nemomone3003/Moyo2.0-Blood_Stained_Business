@@ -21,13 +21,93 @@
 	<!--Original=총구-->
 	<Moyo2_LMRColiderOver.tools.1.label>총구</Moyo2_LMRColiderOver.tools.1.label>
 	<!--Original=라미너 오토캐논-->
-	<Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>	
+	<Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>
 	<!--Original=라미너 오토캐논-->
-	<Gun_AbysstechRifle.label>어비스테크 라이플</Gun_AbysstechRifle.label>
-	<!--Original=A large 라미너 라이플 designed for significantly increased fire rate by tuning the field generator, with the expense of accuracy. When 과충전, it fires even faster but causes a brief 과부하.\n\nResearch aimed at increasing the firing rate of 라미너 라이플 was conducted, developing a method to reduce the 라미너 field guidance time for each projectile. This resulted in decreased accuracy but allowed for an increased firing rate. The idea of bundling multiple field generators together was discarded.-->
-	<Gun_AbysstechRifle.description>어비스테크가 접목된 범용적인 돌격소총입니다.</Gun_AbysstechRifle.description>
-	<!--Original=몸체-->
-	<Gun_AbysstechRifle.tools.0.label>몸체</Gun_AbysstechRifle.tools.0.label>
-	<!--Original=총구-->
-	<Gun_AbysstechRifle.tools.1.label>총구</Gun_AbysstechRifle.tools.1.label>	
+	<!-- 어비스테크 라이플 -->
+	<Moyo2_Gun_AbysstechRifle.label>어비스테크 라이플</Moyo2_Gun_AbysstechRifle.label>
+	<Moyo2_Gun_AbysstechRifle.description>어비스테크가 접목된 범용적인 돌격소총입니다.</Moyo2_Gun_AbysstechRifle.description>
+	<!-- - -->
+	<Moyo2_Gun_AbysstechRifle.tools.0.label>몸체</Moyo2_Gun_AbysstechRifle.tools.0.label>
+	<Moyo2_Gun_AbysstechRifle.tools.1.label>총구</Moyo2_Gun_AbysstechRifle.tools.1.label>
+	<!-- - -->
+	<Moyo2_Bullet_AbysstechRifle.label>어비스테크 탄환</Moyo2_Bullet_AbysstechRifle.label>
+	<!-- 카르텔 컴뱃나이프 -->
+	<Moyo2_CKnife.label>카르텔 컴뱃 나이프</Moyo2_CKnife.label>
+	<Moyo2_CKnife.description>카르텔의 컴뱃 나이프입니다</Moyo2_CKnife.description>
+	<!-- - -->
+	<Moyo2_CKnife.tools.0.label>손잡이</Moyo2_CKnife.tools.0.label>
+	<Moyo2_CKnife.tools.1.label>칼날</Moyo2_CKnife.tools.1.label>
+	<Moyo2_CKnife.tools.2.label>칼끝</Moyo2_CKnife.tools.2.label>
+	<!-- 카르텔 총알 -->
+	<Moyo2_Bullet_CLMRSlugA.label>라미너 스파이크</Moyo2_Bullet_CLMRSlugA.label>
+	<Moyo2_Bullet_CLMRSlugB.label>라미너 스파이크</Moyo2_Bullet_CLMRSlugB.label>
+	<Moyo2_Bullet_CLMRSlugC.label>라미너 스파이크</Moyo2_Bullet_CLMRSlugC.label>
+	<Moyo2_Bullet_CLMRSlugD.label>라미너 스파이크</Moyo2_Bullet_CLMRSlugD.label>
+	<!-- 라미너 카빈 -->
+	<Moyo2_CLMRRifle.label>라미너 카빈</Moyo2_CLMRRifle.label>
+	<Moyo2_CLMRRifle.description>카르텔의 카빈입니다.</Moyo2_CLMRRifle.description>
+	<!-- - -->
+	<Moyo2_CLMRRifle.tools.0.label>개머리판</Moyo2_CLMRRifle.tools.0.label>
+	<Moyo2_CLMRRifle.tools.1.label>총구</Moyo2_CLMRRifle.tools.1.label>
+	<!-- - -->
+	<!-- 라미너 서브라이플 -->
+	<Moyo2_CLMRSub.label>라미너 서브라이플</Moyo2_CLMRSub.label>
+	<Moyo2_CLMRSub.description>카르텔의 서브라이플입니다.</Moyo2_CLMRSub.description>
+	<!-- - -->
+	<Moyo2_CLMRSub.tools.0.label>개머리판</Moyo2_CLMRSub.tools.0.label>
+	<Moyo2_CLMRSub.tools.1.label>총구</Moyo2_CLMRSub.tools.1.label>
+	<!-- - -->
+	<!-- 라미너 리볼버 -->
+	<Moyo2_CLMRRevolver.label>라미너 리볼버</Moyo2_CLMRRevolver.label>
+	<Moyo2_CLMRRevolver.description>카르텔의 리볼버입니다.</Moyo2_CLMRRevolver.description>
+	<!-- - -->
+	<Moyo2_CLMRRevolver.tools.0.label>개머리판</Moyo2_CLMRRevolver.tools.0.label>
+	<Moyo2_CLMRRevolver.tools.1.label>총구</Moyo2_CLMRRevolver.tools.1.label>
+	<!-- - -->
+	<!-- 라미너 아바레스트 -->
+	<Moyo2_CLMRArbalest.label>라미너 아바레스트</Moyo2_CLMRArbalest.label>
+	<Moyo2_CLMRArbalest.description>카르텔의 아바레스트입니다.</Moyo2_CLMRArbalest.description>
+	<!-- - -->
+	<Moyo2_CLMRArbalest.tools.0.label>개머리판</Moyo2_CLMRArbalest.tools.0.label>
+	<Moyo2_CLMRArbalest.tools.1.label>총구</Moyo2_CLMRArbalest.tools.1.label>
+	<!-- - -->
+	<!-- 라미너 엣지 -->
+	<Moyo2_CKnife.label>라미너 엣지</Moyo2_CKnife.label>
+	<Moyo2_CKnife.description>카르텔의 라미너 엣지입니다</Moyo2_CKnife.description>
+	<!-- - -->
+	<Moyo2_CKnife.tools.0.label>손잡이</Moyo2_CKnife.tools.0.label>
+	<Moyo2_CKnife.tools.1.label>칼날</Moyo2_CKnife.tools.1.label>
+	<Moyo2_CKnife.tools.2.label>칼끝</Moyo2_CKnife.tools.2.label>
+	
+	<!-- 헤이달 레이스 요원 쉘 -->
+	<Moyo2_HWOpsShell.label>헤이달레이스 요원 쉘</Moyo2_HWOpsShell.label>
+	<Moyo2_HWOpsShell.description>헤이달레이스 요원 쉘입니다.</Moyo2_HWOpsShell.description>
+	<Moyo2_HWOpsHelmet.label>헤이달레이스 요원 헬멧</Moyo2_HWOpsHelmet.label>
+	<Moyo2_HWOpsHelmet.description>헤이달레이스 요원 헬멧입니다.</Moyo2_HWOpsHelmet.description>	
+	<!-- - -->
+	
+	<!-- 헤이달 레이스 철갑 쉘 -->
+	<Moyo2_HWShell.label>헤이달레이스 철갑 쉘</Moyo2_HWShell.label>
+	<Moyo2_HWShell.description>헤이달레이스 철갑 쉘입니다.</Moyo2_HWShell.description>
+	<Moyo2_HWHelmet.label>헤이달레이스 철갑 헬멧</Moyo2_HWHelmet.label>
+	<Moyo2_HWHelmet.description>헤이달레이스 철갑 헬멧입니다.</Moyo2_HWHelmet.description>	
+	<!-- - -->
+
+	<!-- 카르텔 방탄복 -->
+	<Moyo2_CBsuit.label>방탄갑옷(카르텔)</Moyo2_CBsuit.label>
+	<Moyo2_CBsuit.description>카르텔의 방탄갑옷 입니다.</Moyo2_CBsuit.description>
+	<Moyo2_CBhelmet.label>방탄헬멧(카르텔)</Moyo2_CBhelmet.label>
+	<Moyo2_CBhelmet.description>카르텔의 방탄헬멧 입니다.</Moyo2_CBhelmet.description>	
+	<!-- - -->	
+
+	<!-- 카르텔 화학전 -->
+	<Moyo2_CCCShell.label>카르텔 화학전 특수대 쉘</Moyo2_CCCShell.label>
+	<Moyo2_CCCShell.description>카르텔의 화학전 특수대 쉘 입니다.</Moyo2_CCCShell.description>
+	<Moyo2_CCCHelmet.label>카르텔 화학전 특수대 헬멧</Moyo2_CCCHelmet.label>
+	<Moyo2_CCCHelmet.description>카르텔의 화학전 특수대 헬멧입니다.</Moyo2_CCCHelmet.description>	
+	<!-- - -->
+
+	<!-- 메카노이드 몸 -->
+	<Moyo2_Hexapod.label>헥사포드</Moyo2_Hexapod.label>
+	<Moyo2_Spheripod.label>스페리포드</Moyo2_Spheripod.label>	
 </LanguageData>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 고위 로브-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_RoyalRobe</defName>
+		<label>exquisite robe</label>
+		<description>The most precious robe obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities with a regal look. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.</description>
+		<graphicData>
+			<texPath>Apparel/Lighthouse/RoyalJacket1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>27.5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Lighthouse/RoyalJacket</wornGraphicPath>
+			<!-- <drawData> -->
+			<!-- <defaultData> -->
+			<!-- <layer>70</layer> -->
+			<!-- </defaultData> -->
+			<!-- </drawData> -->
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_RobeRoyal</li>
+				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
+			<DevilstrandCloth>30</DevilstrandCloth>
+		</costList>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 옷 카테고리-등대 -->
+	<ThingCategoryDef>
+		<defName>Moyo2_ApparelCategory_LightHouse</defName>
+		<label>Lighthouse Apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>	
+	<ThingCategoryDef>
+		<defName>Moyo2_ApparelCategory_LightHouseHead</defName>
+		<label>Lighthouse Headgear</label>
+		<parent>Moyo2_ApparelCategory_LightHouse</parent>
+	</ThingCategoryDef>
+	<!-- - -->
+	<ThingDef Abstract="True" Name="Moyo2_ApparelCategory_LightHouse" ParentName="ApparelMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo2_ApparelCategory_LightHouse</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="Moyo2_ApparelCategory_LightHouseHead" ParentName="ApparelMakeableBase">
+		<thingCategories Inherit="False">
+			<li>Moyo2_ApparelCategory_LightHouseHead</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<!-- <apparel> -->
+			<!-- <drawData> -->
+				<!-- <defaultData> -->
+					<!-- <layer>160</layer> -->
+				<!-- </defaultData> -->
+			<!-- </drawData> -->
+		<!-- </apparel>	 -->
+	</ThingDef>
+	<!-- 옷 카테고리-카르텔 -->
+	<ThingCategoryDef>
+		<defName>Moyo2_ApparelCategory_Cartel</defName>
+		<label>Cartel Apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Moyo2_ApparelCategory_CartelHead</defName>
+		<label>Cartel Headgear</label>
+		<parent>Moyo2_ApparelCategory_Cartel</parent>
+	</ThingCategoryDef>
+	<!-- - -->
+	<ThingDef Abstract="True" Name="Moyo2_ApparelCategory_Cartel" ParentName="ApparelMakeableBase">
+		<techLevel>Industrial</techLevel>
+		<thingCategories Inherit="False">
+			<li>Moyo2_ApparelCategory_Cartel</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+	</ThingDef>
+	<ThingDef Abstract="True" Name="Moyo2_ApparelCategory_CartelHead" ParentName="ApparelMakeableBase">
+		<thingCategories Inherit="False">
+			<li>Moyo2_ApparelCategory_CartelHead</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<!-- <apparel> -->
+			<!-- <drawData> -->
+				<!-- <defaultData> -->
+					<!-- <layer>160</layer> -->
+				<!-- </defaultData> -->
+			<!-- </drawData> -->
+		<!-- </apparel>	-->
+	</ThingDef>
+</Defs>

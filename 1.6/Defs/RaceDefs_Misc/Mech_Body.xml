@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 헥사포드 -->
+	<BodyDef>
+		<defName>Moyo2_Hexapod</defName>
+		<label>Hexapod</label>
+		<corePart>
+			<def>HexapodHead</def>
+			<height>Top</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>HexapodHeadShell</def>
+					<coverage>0.25</coverage>
+					<height>Top</height>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left first sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left second sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left third sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right first sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right second sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right third sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>SmellSensor</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Reactor</def>
+							<coverage>0.06</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>FluidReprocessor</def>
+							<coverage>0.04</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>FluidReprocessor</def>
+							<coverage>0.04</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Hexapod_TentacleJoint</def>
+					<customLabel>first tentacle joint</customLabel>
+					<coverage>0.11</coverage>
+					<height>Middle</height>
+					<parts>
+						<li>
+							<def>Hexapod_Tentacle</def>
+							<customLabel>first tentacle</customLabel>
+							<coverage>0.85</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li>Tentacle1</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Hexapod_TentacleJoint</def>
+					<customLabel>second tentacle joint</customLabel>
+					<coverage>0.11</coverage>
+					<height>Middle</height>
+					<parts>
+						<li>
+							<def>Hexapod_Tentacle</def>
+							<customLabel>second tentacle</customLabel>
+							<coverage>0.85</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li>Tentacle2</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Hexapod_TentacleJoint</def>
+					<customLabel>third tentacle joint</customLabel>
+					<coverage>0.11</coverage>
+					<height>Middle</height>
+					<parts>
+						<li>
+							<def>Hexapod_Tentacle</def>
+							<customLabel>third tentacle</customLabel>
+							<coverage>0.85</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li>Tentacle3</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Hexapod_TentacleJoint</def>
+					<customLabel>fourth tentacle joint</customLabel>
+					<coverage>0.11</coverage>
+					<height>Middle</height>
+					<parts>
+						<li>
+							<def>Hexapod_Tentacle</def>
+							<customLabel>fourth tentacle</customLabel>
+							<coverage>0.85</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li>Tentacle4</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Hexapod_TentacleJoint</def>
+					<customLabel>fifth tentacle joint</customLabel>
+					<coverage>0.11</coverage>
+					<height>Middle</height>
+					<parts>
+						<li>
+							<def>Hexapod_Tentacle</def>
+							<customLabel>fifth tentacle</customLabel>
+							<coverage>0.85</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li>Tentacle5</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Hexapod_TentacleJoint</def>
+					<customLabel>sixth tentacle joint</customLabel>
+					<coverage>0.11</coverage>
+					<height>Middle</height>
+					<parts>
+						<li>
+							<def>Hexapod_Tentacle</def>
+							<customLabel>sixth tentacle</customLabel>
+							<coverage>0.85</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li>Tentacle6</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- 프레셔포드 -->
+	<BodyDef>
+		<defName>Moyo2_Spheripod</defName>
+		<label>spheripod</label>
+		<corePart>
+			<def>spheripod_Body</def>
+			<height>Top</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>HeadAttackTool</li>
+			</groups>
+			<parts>
+				<li>
+					<def>ArtificialBrain</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>SightSensor</def>
+					<customLabel>sight sensor</customLabel>
+					<coverage>0.15</coverage>
+				</li>
+				<li>
+					<def>HearingSensor</def>
+					<customLabel>hearing sensor</customLabel>
+					<coverage>0.15</coverage>
+				</li>
+				<li>
+					<def>SmellSensor</def>
+					<coverage>0.08</coverage>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>spheripod_ArmJoint</def>
+					<customLabel>right arm joint</customLabel>
+					<coverage>0.15</coverage>
+					<parts>
+						<li>
+							<def>spheripod_Arm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.8</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>RightClub</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>spheripod_ArmJoint</def>
+					<customLabel>left arm joint</customLabel>
+					<coverage>0.15</coverage>
+					<parts>
+						<li>
+							<def>spheripod_Arm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.8</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>LeftClub</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>spheripod_Leg</def>
+					<customLabel>front left leg</customLabel>
+					<coverage>0.025</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>spheripod_Leg</def>
+					<customLabel>front right leg</customLabel>
+					<coverage>0.025</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>spheripod_Leg</def>
+					<customLabel>front left leg</customLabel>
+					<coverage>0.025</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>spheripod_Leg</def>
+					<customLabel>front right leg</customLabel>
+					<coverage>0.025</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

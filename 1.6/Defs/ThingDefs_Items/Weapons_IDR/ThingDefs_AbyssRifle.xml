@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="MoyoBaseGunIDR">
+		<defName>Moyo2_Gun_AbysstechRifle</defName>
+		<label>Abysstech rifle</label>
+		<description>A general-purpose assault rifle of cartel design. Limited use of abysstech improves performance while keeping costs reasonable.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Rifle2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Laminar_Activate2</soundInteract>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisites>
+			<li>Moyo2_Abysstech_Pneumatic</li>
+			<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_AbysstechRifle</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Laminar_CRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<relicChance>0</relicChance>
+		<weaponTags Inherit="False">
+			<li>NoRelic</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_AbysstechRifle</defName>
+		<label>abysstech rifle bullet</label>
+		<graphicData>
+			<texPath>Weapon/MoyoCBullet2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Effecter_CLMRFireA</effecterDef>
+			</li>
+		</comps>		
+	</ThingDef>
+	<!-- - -->
+	<!-- 카르텔 컴뱃 나이프 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_CKnife</defName>
+		<label>카르텔 컴뱃 나이프</label>
+		<description>This knife features a blade made of plasteel. It is an excellent product that resists corrosion and maintains its edge well. It is an essential tool for divers and is also favored by chefs. Beware of imitations.\n\nIt boosts cooking and butchering efficiency. With various designs and limited editions, it has become a valuable collectible in the Lighthouse. Rumor has it that top customers of these knives will have the opportunity to buy a prototype of the Laminar hyper-oscillating knife.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_CKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.1</CookSpeed>
+			<ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
+		</equippedStatOffsets>		
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>20</Steel>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_KnifeIDR</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>			
+	</ThingDef>	
+</Defs>

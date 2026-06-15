@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 울트라티어 -->
+	<!-- 헤이달 레이스 요원 쉘-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_HWOpsShell</defName>
+		<label>Hadalwraith operater shell</label>
+		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
+		<graphicData>
+			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>66</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>16</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.15</ToxicEnvironmentResistance>
+			<Flammability>-0.5</Flammability>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineShell</wornGraphicPath>
+			<!--<renderSkipFlags>
+				<li>Body</li>
+			</renderSkipFlags>-->
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_WraithLight</li>
+				<li>Moyo2_BigArmor</li>
+				<li>Moyo2_HideBodyGlow</li>
+				<li>Moyo2_HideTail</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>50</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+	<!--  헤이달 레이스 요원 헬멧-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_HWOpsHelmet</defName>
+		<label>Hadalwraith operater helmet</label>
+		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
+		<graphicData>
+			<texPath>Apparel/LighthouseArmor/StreamlineHelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.65</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineHelmet</wornGraphicPath>
+			<!--<renderSkipFlags>
+				<li>Head</li>
+			</renderSkipFlags>-->
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_WraithLight</li>
+				<li>Moyo2_BigHelmet</li>
+				<li>Moyo2_HideFaceGlow</li>
+				<li>Moyo2_HideAntenna</li>
+				<li>Moyo2_HideHair</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+	<!-- 심층 잠수용 쉘-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_HWShell</defName>
+		<label>Hadalwraith ironclad shell</label>
+		<description>Heavy diving suit of the lighthouse designed for activities on the ocean floor. Although it greatly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished.\n\nThis suit is used in the most extreme situations encountered in the Lighthouse, often seen on the ocean floor, in high-temperature toxic environments, and under intense enemy fire. As a result, most of the Lighthouse's inhabitants are reluctant to wear this suit.</description>
+		<graphicData>
+			<texPath>Apparel/LighthouseArmor/HWShell1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>72000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Mass>18</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<Insulation_Cold>68</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<EquipDelay>20</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+			<Flammability>-0.7</Flammability>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LighthouseArmor/HWShell</wornGraphicPath>
+			<!--<renderSkipFlags>
+				<li>Body</li>
+			</renderSkipFlags>-->
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_WraithHeavy</li>
+				<li>Moyo2_BigArmor</li>
+				<li>Moyo2_HideTail</li>
+				<li>Moyo2_HideBodyGlow</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Moyo2_Abyssteel>130</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+	<!-- 심층 잠수용 헬멧-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_HWHelmet</defName>
+		<label>Hadalwraith ironclad helmet</label>
+		<description>Heavy diving helmetof the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished. The built-in oxygen respirator has been removed.\n\nThe deep-sea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.</description>
+		<graphicData>
+			<texPath>Apparel/LighthouseArmor/HWHelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>23000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LighthouseArmor/HWHelmet</wornGraphicPath>
+			<!--<renderSkipFlags>
+				<li>Head</li>
+			</renderSkipFlags>-->
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_WraithHeavy</li>
+				<li>Moyo2_BigHelmet</li>
+				<li>Moyo2_HideFaceGlow</li>
+				<li>Moyo2_HideAntenna</li>
+				<li>Moyo2_HideHair</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo2_Abyssteel>50</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+</Defs>

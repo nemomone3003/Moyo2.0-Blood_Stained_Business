@@ -40,4 +40,29 @@
 		<graphicPath>Moyo/Head/MoyoHead7</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
+		<HeadTypeDef ParentName="AverageBase">
+		<defName>Moyo2_Head8</defName>
+		<graphicPath>Moyo/Head/MoyoHead8</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+		<HeadTypeDef ParentName="AverageBase">
+		<defName>Moyo2_Head9</defName>
+		<graphicPath>Moyo/Head/MoyoHead9</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+		<HeadTypeDef ParentName="AverageBase">
+		<defName>Moyo2_Head10</defName>
+		<graphicPath>Moyo/Head/MoyoHead10</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+		<HeadTypeDef ParentName="AverageBase">
+		<defName>Moyo2_Head11</defName>
+		<graphicPath>Moyo/Head/MoyoHead11</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+		<HeadTypeDef ParentName="AverageBase">
+		<defName>Moyo2_Head12</defName>
+		<graphicPath>Moyo/Head/MoyoHead12</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
 </Defs>
