@@ -396,11 +396,13 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
+		<useHitPoints>false</useHitPoints>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>4</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
@@ -438,6 +440,18 @@
 			<Plasteel>15</Plasteel>
 			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
 		</costList>
+		<comps>
+			<li Class="Moyo2.CompProperties_ReloadableArmor">
+				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
+				<armor>Moyo2_TunaMeat</armor>
+				<valuePerArmor>50</valuePerArmor>
+				<armorOverrideSharp>200</armorOverrideSharp>
+				<armorOverrideBlunt>199.67</armorOverrideBlunt>
+				<maxDurability>100</maxDurability>
+				<initialDurabilityTargetValue>50</initialDurabilityTargetValue>
+				<gizmoLabel>Armor Durability</gizmoLabel>
+			</li>
+		</comps>
 	</ThingDef>
 	<!--방탄헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
