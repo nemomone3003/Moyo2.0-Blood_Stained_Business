@@ -56,13 +56,13 @@
 	<!-- 조잡한 딥블루 추출기 -->
 	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
 		<defName>Moyo2_Install_DeepBlueExtracter_Crude</defName>
-		<label>install crude deepblue extracter</label>
-		<description>Install a crude deepblue extracter.</description>
+		<label>install crude deepblue extractor</label>
+		<description>Install a crude deepblue extractor.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Crude</ThingDef>
 			<HediffDef>Moyo2_DeepBlueExtracter_Crude</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing crude deepblue extracter.</jobString>
+		<jobString>Installing crude deepblue extractor.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -88,25 +88,25 @@
 	</RecipeDef>
 	<RecipeDef ParentName="SurgeryRemoveImplant_Moyo">
 		<defName>Moyo2_Remove_DeepBlueExtracter_Crude</defName>
-		<label>remove crude deepblue extracter</label>
-		<description>Remove crude deepblue extracter.</description>
+		<label>remove crude deepblue extractor</label>
+		<description>Remove crude deepblue extractor.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Crude</ThingDef>
 			<HediffDef>Moyo2_DeepBlueExtracter_Crude</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Removing crude deepblue extracter.</jobString>
+		<jobString>Removing crude deepblue extractor.</jobString>
 		<removesHediff>Moyo2_DeepBlueExtracter_Crude</removesHediff>
 	</RecipeDef>	
 	<!-- 딥블루 추출기 -->
 	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
 		<defName>Moyo2_Install_DeepBlueExtracter</defName>
-		<label>install deepblue extracter</label>
-		<description>Install a deepblue extracter.</description>
+		<label>install deepblue extractor</label>
+		<description>Install a deepblue extractor.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter</ThingDef>
 			<HediffDef>Moyo2_DeepBlueExtracter</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing deepblue extracter.</jobString>
+		<jobString>Installing deepblue extractor.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -132,25 +132,25 @@
 	</RecipeDef>
 	<RecipeDef ParentName="SurgeryRemoveImplant_Moyo">
 		<defName>Moyo2_Remove_DeepBlueExtracter</defName>
-		<label>Moyo2_remove deepblue extracter</label>
-		<description>Remove deepblue extracter.</description>
+		<label>Moyo2_remove deepblue extractor</label>
+		<description>Remove deepblue extractor.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter</ThingDef>
 			<HediffDef>Moyo2_DeepBlueExtracter</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Removing deepblue extracter.</jobString>
+		<jobString>Removing deepblue extractor.</jobString>
 		<removesHediff>Moyo2_DeepBlueExtracter</removesHediff>
 	</RecipeDef>
 	<!-- 어비스테크 딥블루 추출기 -->
 	<RecipeDef ParentName="SurgeryInstallImplant_Moyo">
 		<defName>Moyo2_Install_DeepBlueExtracter_Abysstech</defName>
-		<label>Moyo2_install abysstech deepblue extracter</label>
-		<description>Install an abysstech deepblue extracter.</description>
+		<label>Moyo2_install abysstech deepblue extractor</label>
+		<description>Install an abysstech deepblue extractor.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Abysstech</ThingDef>
 			<HediffDef>Moyo2_DeepBlueExtracter_Abysstech</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing abysstech deepblue extracter.</jobString>
+		<jobString>Installing abysstech deepblue extractor.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -176,13 +176,13 @@
 	</RecipeDef>
 	<RecipeDef ParentName="SurgeryRemoveImplant_Moyo">
 		<defName>Moyo2_Remove_DeepBlueExtracter_Abysstech</defName>
-		<label>Moyo2_remove abysstech deepblue extracter</label>
-		<description>Remove abysstech deepblue extracter.</description>
+		<label>Moyo2_remove abysstech deepblue extractor</label>
+		<description>Remove abysstech deepblue extractor.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Abysstech</ThingDef>
 			<HediffDef>Moyo2_DeepBlueExtracter_Abysstech</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Removing deepblue extracter.</jobString>
+		<jobString>Removing deepblue extractor.</jobString>
 		<removesHediff>Moyo2_DeepBlueExtracter_Abysstech</removesHediff>
 	</RecipeDef>
 	<!-- 블루버스터 수확기 -->
