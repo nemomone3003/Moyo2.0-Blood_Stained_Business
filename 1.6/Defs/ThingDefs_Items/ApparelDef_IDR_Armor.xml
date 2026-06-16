@@ -448,7 +448,7 @@
 				<armorOverrideSharp>200</armorOverrideSharp>
 				<armorOverrideBlunt>199.67</armorOverrideBlunt>
 				<maxDurability>100</maxDurability>
-				<initialDurabilityTargetValue>50</initialDurabilityTargetValue>
+				<initialDurabilityTargetValue>30</initialDurabilityTargetValue>
 				<gizmoLabel>Armor Durability</gizmoLabel>
 			</li>
 		</comps>

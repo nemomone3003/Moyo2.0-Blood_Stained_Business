@@ -20,7 +20,7 @@ namespace Moyo2
                 var potentialApparel = pawn.apparel.WornApparel
                 .Where(ap => ap.AllComps
                     .Any(comp => comp is Comp_ReloadableArmor rel
-                        && rel.ShouldRefuel
+                        && Comp_ReloadableArmor.ShouldRefuel
                         && rel.Props.armor == TargetA.Thing.def)).FirstOrFallback(null);
 
                 if (potentialApparel is not null)

@@ -7,11 +7,10 @@ namespace Moyo2
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            Log.Message("Jobgiver");
             var potentialApparel = pawn.apparel.WornApparel
                 .Where(ap => ap.AllComps
                     .Any(comp => comp is Comp_ReloadableArmor rel
-                        && rel.ShouldRefuel)).FirstOrFallback(null);
+                        && Comp_ReloadableArmor.ShouldRefuel)).FirstOrFallback(null);
 
             if (CanRefuel(pawn, potentialApparel, out var foundFuel))
             {
@@ -28,16 +27,13 @@ namespace Moyo2
             {
                 return false;
             }
-            Log.Message($"Found: {t}");
             Comp_ReloadableArmor reloadableArmor = t.TryGetComp<Comp_ReloadableArmor>();
-            if (reloadableArmor is null || reloadableArmor.parent.Fogged() || !reloadableArmor.ShouldRefuel || !reloadableArmor.allowRefuel)
+            if (reloadableArmor is null || reloadableArmor.parent.Fogged() || !Comp_ReloadableArmor.ShouldRefuel || !reloadableArmor.allowRefuel)
             {
-                Log.Message($"Null or fogged or shouldnt refuel or cant refuel");
                 return false;
             }
             if (!pawn.CanReserve(t))
             {
-                Log.Message($"Cant reserve");
                 return false;
             }
             if (FindBestFuel(pawn, t) is not Thing fuel)

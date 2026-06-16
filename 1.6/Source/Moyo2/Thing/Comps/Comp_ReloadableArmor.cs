@@ -26,7 +26,7 @@ namespace Moyo2
         }
         public bool IsFull => TargetDurability - armorDurability < Props.maxDurability;
         public bool IsEmpty => ArmorDurability <= 0f;
-        public bool ShouldRefuel => Props.maxDurability - armorDurability > Props.valuePerArmor;
+        public static bool ShouldRefuel => true;//Props.maxDurability - armorDurability > Props.valuePerArmor;
 
 
         public override string CompInspectStringExtra()
@@ -42,6 +42,7 @@ namespace Moyo2
             if (!IsEmpty)
             {
                 absorbed = true;
+                ArmorDurability -= dinfo.Amount;
                 return;
             }
             base.PostPreApplyDamage(ref dinfo, out absorbed);
