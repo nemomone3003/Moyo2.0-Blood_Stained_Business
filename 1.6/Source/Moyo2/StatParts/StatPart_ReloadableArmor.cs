@@ -2,63 +2,63 @@
 
 namespace Moyo2
 {
-    public abstract class StatPart_ReloadableArmor : StatPart
-    {
-        private Comp_ReloadableArmor comp;
+	public abstract class StatPart_ReloadableArmor : StatPart
+	{
+		private Comp_ReloadableArmor comp;
 
 
-        protected Comp_ReloadableArmor GetComp(StatRequest req)
-            => comp ??= req.Thing.TryGetComp<Comp_ReloadableArmor>();
+		protected Comp_ReloadableArmor GetComp(StatRequest req)
+			=> comp ??= req.Thing.TryGetComp<Comp_ReloadableArmor>();
 
 
-        protected abstract float? GetArmorOverride(StatRequest req);
+		protected abstract float? GetArmorOverride(StatRequest req);
 
 
-        public override string ExplanationPart(StatRequest req)
-        {
-            StringBuilder stringBuilder = new();
+		public override string ExplanationPart(StatRequest req)
+		{
+			StringBuilder stringBuilder = new();
 
-            if (GetComp(req) is not null && !GetComp(req).IsEmpty && GetArmorOverride(req) is not null)
-            {
-                stringBuilder.AppendLine("Moyo2_StatPart_ReloadableArmorOverride".Translate((float)GetArmorOverride(req)));
-            }
-            return stringBuilder.ToString().TrimEndNewlines();
-        }
-
-
-        public override void TransformValue(StatRequest req, ref float val)
-        {
-            if (GetComp(req) is not null && !GetComp(req).IsEmpty && GetArmorOverride(req) is not null)
-            {
-                val = (float)GetArmorOverride(req);
-            }
-        }
-    }
+			if (GetComp(req) is not null && !GetComp(req).IsEmpty && GetArmorOverride(req) is not null)
+			{
+				stringBuilder.AppendLine("Moyo2_StatPart_ReloadableArmorOverride".Translate((float)GetArmorOverride(req)));
+			}
+			return stringBuilder.ToString().TrimEndNewlines();
+		}
 
 
-    public class StatPart_ReloadableArmor_Sharp : StatPart_ReloadableArmor
-    {
-        protected override float? GetArmorOverride(StatRequest req)
-        {
-            return GetComp(req).Props.armorOverrideSharp;
-        }
-    }
+		public override void TransformValue(StatRequest req, ref float val)
+		{
+			if (GetComp(req) is not null && !GetComp(req).IsEmpty && GetArmorOverride(req) is not null)
+			{
+				val = (float)GetArmorOverride(req);
+			}
+		}
+	}
 
 
-    public class StatPart_ReloadableArmor_Blunt : StatPart_ReloadableArmor
-    {
-        protected override float? GetArmorOverride(StatRequest req)
-        {
-            return GetComp(req).Props.armorOverrideBlunt;
-        }
-    }
+	public class StatPart_ReloadableArmor_Sharp : StatPart_ReloadableArmor
+	{
+		protected override float? GetArmorOverride(StatRequest req)
+		{
+			return GetComp(req).Props.armorOverrideSharp;
+		}
+	}
 
 
-    public class StatPart_ReloadableArmor_Heat : StatPart_ReloadableArmor
-    {
-        protected override float? GetArmorOverride(StatRequest req)
-        {
-            return GetComp(req).Props.armorOverrideHeat;
-        }
-    }
+	public class StatPart_ReloadableArmor_Blunt : StatPart_ReloadableArmor
+	{
+		protected override float? GetArmorOverride(StatRequest req)
+		{
+			return GetComp(req).Props.armorOverrideBlunt;
+		}
+	}
+
+
+	public class StatPart_ReloadableArmor_Heat : StatPart_ReloadableArmor
+	{
+		protected override float? GetArmorOverride(StatRequest req)
+		{
+			return GetComp(req).Props.armorOverrideHeat;
+		}
+	}
 }

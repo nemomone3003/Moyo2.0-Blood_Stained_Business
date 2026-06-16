@@ -7,13 +7,13 @@ global using Verse;
 
 namespace Moyo2
 {
-    [StaticConstructorOnStartup]
-    public static class Moyo2
-    {
-        static Moyo2()
-        {
-            Harmony harmony = new("Nemonian.Moyo2.0");
-            harmony.PatchAll();
-        }
-    }
+	[StaticConstructorOnStartup]
+	public static class Moyo2
+	{
+		static Moyo2()
+		{
+			Harmony harmony = new("Nemonian.Moyo2.0");
+			harmony.PatchAll();
+		}
+	}
 }
