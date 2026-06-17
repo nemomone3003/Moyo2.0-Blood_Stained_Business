@@ -22,7 +22,7 @@ namespace Moyo2
 		public float ArmorDurability
 		{
 			get => armorDurability;
-			set => armorDurability = Mathf.Min(value, Props.maxDurability);
+			set => armorDurability = Mathf.Clamp(Mathf.Ceil(value), 0f, Props.maxDurability);
 		}
 		public bool IsFull => TargetDurability - armorDurability < Props.maxDurability;
 		public bool IsEmpty => ArmorDurability <= 0f;
