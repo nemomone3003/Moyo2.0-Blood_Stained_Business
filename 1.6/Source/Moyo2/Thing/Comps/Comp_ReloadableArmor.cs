@@ -41,9 +41,8 @@ namespace Moyo2
 		{
 			if (!IsEmpty)
 			{
-				absorbed = true;
 				ArmorDurability -= dinfo.Amount;
-				return;
+				dinfo.SetAmount(0f);
 			}
 			base.PostPreApplyDamage(ref dinfo, out absorbed);
 		}
