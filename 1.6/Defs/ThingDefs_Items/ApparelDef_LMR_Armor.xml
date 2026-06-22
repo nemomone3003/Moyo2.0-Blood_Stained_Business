@@ -7,7 +7,7 @@
 		<label>streamlined diving shell</label>
 		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
 		<graphicData>
-			<texPath>Apparel/LighthouseArmor/StreamlineShell1</texPath>
+			<texPath>Apparel/ArmorLMR/SDShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
@@ -44,7 +44,7 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineShell</wornGraphicPath>
+			<wornGraphicPath>Apparel/ArmorLMR/SDShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<!--<renderSkipFlags>
 				<li>Body</li>
@@ -89,7 +89,7 @@
 		<label>streamlined diving helmet</label>
 		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
 		<graphicData>
-			<texPath>Apparel/LighthouseArmor/StreamlineHelmet1</texPath>
+			<texPath>Apparel/ArmorLMR/SDHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
@@ -117,7 +117,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LighthouseArmor/StreamlineHelmet</wornGraphicPath>
+			<wornGraphicPath>Apparel/ArmorLMR/SDHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<!--<renderSkipFlags>
 				<li>Head</li>
@@ -162,7 +162,7 @@
 		<label>depth diving shell</label>
 		<description>Heavy diving suit of the lighthouse designed for activities on the ocean floor. Although it greatly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished.\n\nThis suit is used in the most extreme situations encountered in the Lighthouse, often seen on the ocean floor, in high-temperature toxic environments, and under intense enemy fire. As a result, most of the Lighthouse's inhabitants are reluctant to wear this suit.</description>
 		<graphicData>
-			<texPath>Apparel/LighthouseArmor/DeepShell1</texPath>
+			<texPath>Apparel/ArmorLMR/DDShell1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
@@ -199,7 +199,7 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LighthouseArmor/DeepShell</wornGraphicPath>
+			<wornGraphicPath>Apparel/ArmorLMR/DDShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<!--<renderSkipFlags>
 				<li>Body</li>
@@ -244,7 +244,7 @@
 		<label>depth diving helmet</label>
 		<description>Heavy diving helmetof the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished. The built-in oxygen respirator has been removed.\n\nThe deep-sea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.</description>
 		<graphicData>
-			<texPath>Apparel/LighthouseArmor/DeepHelmet1</texPath>
+			<texPath>Apparel/ArmorLMR/DDHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
@@ -274,7 +274,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LighthouseArmor/DeepHelmet</wornGraphicPath>
+			<wornGraphicPath>Apparel/ArmorLMR/DDHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<!--<renderSkipFlags>
 				<li>Head</li>
@@ -316,13 +316,13 @@
 	<!-- 등대 -->
 	
 	<!-- 카르텔 -->
-	<!-- 화학전 특수대 쉘-->
+	<!-- 카르텔 타격대 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
-		<defName>Moyo2_CCCShell</defName>
-		<label>Cartel Chemwar commando shell</label>
+		<defName>Moyo2_CSShell</defName>
+		<label>Cartel striker shell</label>
 		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
 		<graphicData>
-			<texPath>Apparel/CartelArmor/CCCShell1</texPath>
+			<texPath>Apparel/ArmorLMR/CSSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
@@ -359,7 +359,165 @@
 				<li>Legs</li>
 				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/CartelArmor/CCCShell</wornGraphicPath>
+			<wornGraphicPath>Apparel/ArmorLMR/CSSuit</wornGraphicPath>
+			<!--<renderSkipFlags>
+				<li>Body</li>
+			</renderSkipFlags>-->
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_CCC</li>
+				<li>Moyo2_BigArmor</li>
+				<li>Moyo2_HideBodyGlow</li>
+				<li>Moyo2_HideTail</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>3</maxCharges>
+				<ammoDef>Chemfuel</ammoDef>
+				<ammoCountToRefill>10</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>smokepop</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Smokepop</verbClass>
+				<label>pop smoke</label>
+				<violent>false</violent>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>false</targetable>
+				<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+				<onlyManualCast>True</onlyManualCast>
+			</li>
+		</verbs>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>50</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+	<!--  카르텔 타격대 헬멧-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_CSHelmet</defName>
+		<label>Cartel striker helmet</label>
+		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorLMR/CSHelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.65</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorLMR/CSHelmet</wornGraphicPath>
+			<!--<renderSkipFlags>
+				<li>Head</li>
+			</renderSkipFlags>-->
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_CCC</li>
+				<li>Moyo2_BigHelmet</li>
+				<li>Moyo2_HideFaceGlow</li>
+				<li>Moyo2_HideAntenna</li>
+				<li>Moyo2_HideHair</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>	
+	<!-- 화학전 특수대 쉘-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_CCCShell</defName>
+		<label>Cartel Chemwar commando shell</label>
+		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorLMR/CCCSuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>7</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>66</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>16</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.15</ToxicEnvironmentResistance>
+			<Flammability>-0.5</Flammability>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorLMR/CCCSuit</wornGraphicPath>
 			<!--<renderSkipFlags>
 				<li>Body</li>
 			</renderSkipFlags>-->
@@ -417,7 +575,7 @@
 		<label>Cartel Chemwar commando helmet</label>
 		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
 		<graphicData>
-			<texPath>Apparel/CartelArmor/CCCHelmet1</texPath>
+			<texPath>Apparel/ArmorLMR/CCCHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
@@ -445,7 +603,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/CartelArmor/CCCHelmet</wornGraphicPath>
+			<wornGraphicPath>Apparel/ArmorLMR/CCCHelmet</wornGraphicPath>
 			<!--<renderSkipFlags>
 				<li>Head</li>
 			</renderSkipFlags>-->
