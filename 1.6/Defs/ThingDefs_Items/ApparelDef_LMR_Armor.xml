@@ -46,6 +46,11 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/ArmorLMR/SDShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 			<!--<renderSkipFlags>
 				<li>Body</li>
 			</renderSkipFlags>-->
@@ -201,6 +206,11 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/ArmorLMR/DDShell</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 			<!--<renderSkipFlags>
 				<li>Body</li>
 			</renderSkipFlags>-->
@@ -360,6 +370,11 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/ArmorLMR/CSSuit</wornGraphicPath>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 			<!--<renderSkipFlags>
 				<li>Body</li>
 			</renderSkipFlags>-->
@@ -518,6 +533,11 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/ArmorLMR/CCCSuit</wornGraphicPath>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 			<!--<renderSkipFlags>
 				<li>Body</li>
 			</renderSkipFlags>-->

@@ -630,7 +630,7 @@
 								</north>
 							</offsets>	
 							<!-- - -->
-							<inFrontOfBody>true</inFrontOfBody>
+							<inFrontOfBody>false</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<defaultOffset>Moyo_Hair</defaultOffset>
 							<userCustomizable>true</userCustomizable>
@@ -665,7 +665,7 @@
 								</west>
 							</offsets>
 							<!-- - -->
-							<inFrontOfBody>true</inFrontOfBody>
+							<inFrontOfBody>false</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<defaultOffset>Moyo_Hair</defaultOffset>
 							<userCustomizable>true</userCustomizable>

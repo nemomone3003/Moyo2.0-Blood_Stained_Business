@@ -45,9 +45,6 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/ArmorLMR/SDShell</wornGraphicPath>
-			<!--<renderSkipFlags>
-				<li>Body</li>
-			</renderSkipFlags>-->
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -58,6 +55,11 @@
 				<li>Moyo2_HideBodyGlow</li>
 				<li>Moyo2_HideTail</li>
 			</tags>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
@@ -180,6 +182,11 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/ArmorLMR/HWShell</wornGraphicPath>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 			<!--<renderSkipFlags>
 				<li>Body</li>
 			</renderSkipFlags>-->

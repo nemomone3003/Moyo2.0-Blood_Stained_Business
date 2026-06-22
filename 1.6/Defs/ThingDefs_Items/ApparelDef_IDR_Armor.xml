@@ -319,6 +319,11 @@
 			<tags>
 				<li>Moyo2_CartelArmor</li>
 			</tags>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
