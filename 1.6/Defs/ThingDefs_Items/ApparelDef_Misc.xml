@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 아기옷 -->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse" Name="Moyo2_Childclothes" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.4</Mass>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>22.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<developmentalStageFilter>Child</developmentalStageFilter>		
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Moyo2_HideBodyGlow</li>
+				<li>Moyo2_HideAntenna</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Moyo2_Cloth_Depthweave>120</Moyo2_Cloth_Depthweave>
+		</costList>
+	</ThingDef>
+	<!--펭귄 -->
+	<ThingDef ParentName="Moyo2_Childclothes">
+		<defName>Moyo2_Childclothes_A</defName>
+		<label>hooded black cloak</label>
+		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
+		<graphicData>
+			<texPath>Apparel/Misc/MoyoChildSuit1</texPath>
+		</graphicData>
+		<!-- - -->
+		<apparel>
+			<renderNodeProperties>
+				<!-- Cloak -->
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<texPath>Apparel/Misc/MoyoChildSuit</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>22</baseLayer>
+					<gendered>true</gendered>
+				</li>
+				<!-- Hood -->
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
+					<texPath>Apparel/Misc/MoyoChildHood</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>73</baseLayer>
+				</li>
+			</renderNodeProperties>
+		</apparel>
+	</ThingDef>
+	<!--상어 -->
+	<ThingDef ParentName="Moyo2_Childclothes">
+		<defName>Moyo2_Childclothes_B</defName>
+		<label>hooded black cloak</label>
+		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
+		<graphicData>
+			<texPath>Apparel/Misc/MoyoChildSuitA1</texPath>
+		</graphicData>
+		<!-- - -->
+		<apparel>
+			<renderNodeProperties>
+				<!-- Cloak -->
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<texPath>Apparel/Misc/MoyoChildSuitA</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>22</baseLayer>
+					<gendered>true</gendered>
+				</li>
+				<!-- Hood -->
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
+					<texPath>Apparel/Misc/MoyoChildHoodA</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>73</baseLayer>
+				</li>
+			</renderNodeProperties>
+		</apparel>
+	</ThingDef>		
+	<!-- 카르텔 망토 -->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_CartelHood</defName>
+		<label>hooded black cloak</label>
+		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
+		<graphicData>
+			<texPath>Apparel/Misc/CartelCloak1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>2.5</Mass>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>22.5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<HuntingStealth>0.25</HuntingStealth>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<renderNodeProperties>
+				<!-- Cloak -->
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Apparel_Body</workerClass>
+					<texPath>Apparel/Misc/CartelCloak</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>22</baseLayer>
+					<gendered>true</gendered>
+				</li>
+				<!-- Hood -->
+				<li Class="Moyo2.PawnRenderNodeProperties_Gendered">
+					<nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass>
+					<workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass>
+					<texPath>Apparel/Misc/CartelHood</texPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>73</baseLayer>
+				</li>
+				<!-- Hood background -->
+				<!-- <li Class="Moyo2.PawnRenderNodeProperties_Gendered"> -->
+					<!-- <nodeClass>Moyo2.PawnRenderNode_ApparelCustomPath</nodeClass> -->
+					<!-- <workerClass>Moyo2.PawnRenderNodeWorker_Apparel_Head_Offset</workerClass> -->
+					<!-- <texPath>Apparel/Misc/CartelHoodBack</texPath> -->
+					<!-- <visibleFacing> -->
+						<!-- <li>East</li> -->
+						<!-- <li>North</li> -->
+						<!-- <li>West</li> -->
+						<!-- <li>South</li> -->
+					<!-- </visibleFacing> -->
+					<!-- <baseLayer>0</baseLayer> -->
+				<!-- </li> -->
+			</renderNodeProperties>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Cartel_Hood</li>
+				<li>Moyo2_HideBodyGlow</li>
+				<li>Moyo2_HideAntenna</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Moyo2_Cloth_Depthweave>120</Moyo2_Cloth_Depthweave>
+		</costList>
+		<comps>
+			<!--<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Moyo2_CartelHood</hediff>
+				<part>Head</part>
+			</li>-->
+		</comps>
+	</ThingDef>
+	<!-- 고위 로브-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_RoyalRobe</defName>
+		<label>exquisite robe</label>
+		<description>The most precious robe obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities with a regal look. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.</description>
+		<graphicData>
+			<texPath>Apparel/Misc/RoyalJacket1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>27.5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Misc/RoyalJacket</wornGraphicPath>
+			<!-- <drawData> -->
+			<!-- <defaultData> -->
+			<!-- <layer>70</layer> -->
+			<!-- </defaultData> -->
+			<!-- </drawData> -->
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_RobeRoyal</li>
+				<li>RoyalTier5</li>
+				<li>Moyo2_HideBodyGlow</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Moyo2_Cloth_Depthweave>90</Moyo2_Cloth_Depthweave>
+			<DevilstrandCloth>30</DevilstrandCloth>
+		</costList>
+	</ThingDef>
+</Defs>

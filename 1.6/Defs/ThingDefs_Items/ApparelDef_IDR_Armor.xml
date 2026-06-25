@@ -110,6 +110,11 @@
 				<li>Moyo2_EngineerNoHead</li>
 				<li>Moyo2_HideBodyGlow</li>
 			</tags>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>			
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
@@ -297,9 +302,9 @@
 			<Mass>4</Mass>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
@@ -344,8 +349,8 @@
 				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
 				<armor>Moyo2_TunaMeat</armor>
 				<valuePerArmor>50</valuePerArmor>
-				<armorOverrideSharp>200</armorOverrideSharp>
-				<armorOverrideBlunt>199.67</armorOverrideBlunt>
+				<armorOverrideSharp>120</armorOverrideSharp>
+				<armorOverrideBlunt>105</armorOverrideBlunt>
 				<maxDurability>100</maxDurability>
 				<initialDurabilityTargetValue>30</initialDurabilityTargetValue>
 				<gizmoLabel>Armor Durability</gizmoLabel>

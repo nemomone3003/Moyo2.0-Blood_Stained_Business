@@ -2,7 +2,7 @@
 <Defs>
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>Moyo2_Head</defName>
-		<graphicPath>Moyo/Head/MoyoHead</graphicPath>
+		<graphicPath>Moyo_Dummy/Dummy</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
 	<HeadTypeDef ParentName="AverageBase">

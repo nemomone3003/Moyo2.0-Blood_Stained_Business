@@ -92,18 +92,18 @@
 					<!-- 머리 타입 -->
 					<headTypes Inherit="False">
 						<li>Moyo2_Head</li>
-						<li>Moyo2_Head1</li>
-						<li>Moyo2_Head2</li>
-						<li>Moyo2_Head3</li>
-						<li>Moyo2_Head4</li>
-						<li>Moyo2_Head5</li>
-						<li>Moyo2_Head6</li>
-						<li>Moyo2_Head7</li>
-						<li>Moyo2_Head8</li>
-						<li>Moyo2_Head9</li>
-						<li>Moyo2_Head10</li>
-						<li>Moyo2_Head11</li>
-						<li>Moyo2_Head12</li>
+						<!-- <li>Moyo2_Head1</li> -->
+						<!-- <li>Moyo2_Head2</li> -->
+						<!-- <li>Moyo2_Head3</li> -->
+						<!-- <li>Moyo2_Head4</li> -->
+						<!-- <li>Moyo2_Head5</li> -->
+						<!-- <li>Moyo2_Head6</li> -->
+						<!-- <li>Moyo2_Head7</li> -->
+						<!-- <li>Moyo2_Head8</li> -->
+						<!-- <li>Moyo2_Head9</li> -->
+						<!-- <li>Moyo2_Head10</li> -->
+						<!-- <li>Moyo2_Head11</li> -->
+						<!-- <li>Moyo2_Head12</li> -->
 					</headTypes>
 					<!-- 몸 타입 -->
 					<bodyTypes Inherit="False">
@@ -127,15 +127,31 @@
 					<headOffsetDirectional>
 						<north>
 							<offset>(0.0, 0.08)</offset>
+							<bodyTypes>
+								<Child MayRequire="ludeon.rimworld.biotech">(0.0, -0.023)</Child>
+								<Baby MayRequire="ludeon.rimworld.biotech">(0.0, -0.023)</Baby>
+							</bodyTypes>
 						</north>
 						<south>
 							<offset>(0.0, 0.08)</offset>
+							<bodyTypes>
+								<Child MayRequire="ludeon.rimworld.biotech">(0.0, -0.023)</Child>
+								<Baby MayRequire="ludeon.rimworld.biotech">(0.0, -0.023)</Baby>
+							</bodyTypes>
 						</south>
 						<east>
 							<offset>(-0.08, 0.08)</offset>
+							<bodyTypes>
+								<Child MayRequire="ludeon.rimworld.biotech">(0.053, -0.023)</Child>
+								<Baby MayRequire="ludeon.rimworld.biotech">(0.053, -0.023)</Baby>
+							</bodyTypes>
 						</east>
 						<west>
 							<offset>(0.08, 0.08)</offset>
+							<bodyTypes>
+								<Child MayRequire="ludeon.rimworld.biotech">(-0.053, -0.023)</Child>
+								<Baby MayRequire="ludeon.rimworld.biotech">(-0.053, -0.023)</Baby>
+							</bodyTypes>
 						</west>
 					</headOffsetDirectional>
 					<!-- 오프셋 프리셋 만들기 -->
@@ -203,19 +219,39 @@
 							<offsets>
 								<north>
 									<layerOffset>-0.325</layerOffset>
-									<offset>(0,-0.224)</offset>
+									<bodyTypes>
+										<Female>(0.0, -0.224)</Female>
+										<Thin>(0.0, -0.224)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, -0.16)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, -0.165)</Child>
+									</bodyTypes>
 								</north>
 								<south>
 									<layerOffset>-0.278</layerOffset>
-									<offset>(0,-0.224)</offset>
+									<bodyTypes>
+										<Female>(0.0, -0.224)</Female>
+										<Thin>(0.0, -0.224)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, -0.16)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, -0.165)</Child>
+									</bodyTypes>
 								</south>
 								<east>
 									<layerOffset>-0.278</layerOffset>
-									<offset>(0,-0.224)</offset>
+									<bodyTypes>
+										<Female>(0.0, -0.224)</Female>
+										<Thin>(0.0, -0.224)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, -0.16)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, -0.165)</Child>
+									</bodyTypes>
 								</east>
 								<west>
 									<layerOffset>-0.278</layerOffset>
-									<offset>(0,-0.224)</offset>
+									<bodyTypes>
+										<Female>(0.0, -0.224)</Female>
+										<Thin>(0.0, -0.224)</Thin>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, -0.16)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, -0.165)</Child>
+									</bodyTypes>
 								</west>
 							</offsets>
 						</li>
@@ -341,7 +377,15 @@
 							<!-- - -->
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
-								<Gene For="Moyo2_Skin_Chemskin">Moyo/Body_Chemskin/ChemskinTail</Gene>
+								<Gene For="Moyo2_Skin_Chemskin">
+									<path>Moyo/Body_Chemskin/ChemskinTail</path>
+									<extendedGraphics>
+										<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/ChemskinTailChild</Body>
+										<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/ChemskinTailChild</Body>
+									</extendedGraphics>
+								</Gene>
+								<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailChild</Body>
+								<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailChild</Body>
 							</extendedGraphics>
 						</li>
 						<li>
@@ -369,8 +413,22 @@
 							<!-- - -->
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
-								<Gene For="Moyo2_Glow_Purple">Moyo/Body/MoyoTailGlowA</Gene>
-								<Gene For="Moyo2_Glow_Violet">Moyo/Body/MoyoTailGlowB</Gene>
+								<Gene For="Moyo2_Glow_Purple">
+									<path>Moyo/Body/MoyoTailGlowA</path>
+									<extendedGraphics>
+										<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildA</Body>
+										<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildA</Body>
+									</extendedGraphics>
+								</Gene>
+								<Gene For="Moyo2_Glow_Violet">
+									<path>Moyo/Body/MoyoTailGlowB</path>
+									<extendedGraphics>
+										<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildB</Body>
+										<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildB</Body>
+									</extendedGraphics>
+								</Gene>
+								<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChild</Body>
+								<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChild</Body>
 							</extendedGraphics>
 						</li>
 						<!--더듬이-->
@@ -546,8 +604,8 @@
 									<extendedGraphics>
 										<BodyType For="Female">Moyo/Body/MoyoBodyGlow_Female</BodyType>
 										<BodyType For="Thin">Moyo/Body/MoyoBodyGlow_Thin</BodyType>
-										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
-										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
+										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Child</BodyType>
+										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Child</BodyType>
 									</extendedGraphics>
 								</Gene>
 								<Gene For="Moyo2_Glow_Purple">
@@ -555,8 +613,8 @@
 									<extendedGraphics>
 										<BodyType For="Female">Moyo/Body/MoyoBodyGlow1_Female</BodyType>
 										<BodyType For="Thin">Moyo/Body/MoyoBodyGlow1_Thin</BodyType>
-										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
-										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
+										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow1_Child</BodyType>
+										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow1_Child</BodyType>
 									</extendedGraphics>
 								</Gene>
 								<Gene For="Moyo2_Glow_Violet">
@@ -564,16 +622,17 @@
 									<extendedGraphics>
 										<BodyType For="Female">Moyo/Body/MoyoBodyGlow2_Female</BodyType>
 										<BodyType For="Thin">Moyo/Body/MoyoBodyGlow2_Thin</BodyType>
-										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
-										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
+										<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow2_Child</BodyType>
+										<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow2_Child</BodyType>
 									</extendedGraphics>
 								</Gene>
 								<!-- fallback -->
 								<BodyType For="Female">Moyo/Body/MoyoBodyGlow_Female</BodyType>
 								<BodyType For="Thin">Moyo/Body/MoyoBodyGlow_Thin</BodyType>
-								<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
-								<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Female</BodyType>
+								<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Child</BodyType>
+								<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoBodyGlow_Child</BodyType>
 							</extendedGraphics>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<offsets>
 								<south>
 									<layerOffset>-0.305</layerOffset>
@@ -628,7 +687,7 @@
 								<north>
 									<layerOffset>0.03</layerOffset>
 								</north>
-							</offsets>	
+							</offsets>
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -652,7 +711,7 @@
 							<!-- - -->
 							<offsets>
 								<north>
-									<layerOffset>-0.02</layerOffset>
+									<!-- <layerOffset>-0.02</layerOffset> -->
 								</north>
 								<south>
 									<layerOffset>-0.33</layerOffset>
@@ -692,7 +751,7 @@
 								<east>
 									<layerOffset>-0.279</layerOffset>
 									<offset>(-0.0094, 0)</offset>
-								</east>						
+								</east>
 							</offsets>
 							<extendedGraphics>
 								<Gene For="Moyo2_Skin_Chemskin">Moyo/Head/ChemHead</Gene>
@@ -700,7 +759,7 @@
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-						</li> 
+						</li>
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
@@ -708,11 +767,6 @@
 			<graphicPaths>
 				<head>
 					<path>Moyo_Dummy/Dummy</path>
-					<extendedGraphics>
-						<Gene For="Moyo2_Skin_Chemskin">
-							<path>Moyo/Head/ChemHead</path>
-						</Gene>
-					</extendedGraphics>
 				</head>
 				<body>
 					<path>Moyo/Body/Naked_Female</path>
@@ -853,6 +907,7 @@
 					<li>Moyo2_CBhelmet</li>
 					<li>Moyo2_CCCShell</li>
 					<li>Moyo2_CCCHelmet</li>
+					<li>Moyo2_Childclothes_A</li>
 				</apparelList>
 				<blackEndoCategories>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
@@ -924,26 +979,27 @@
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeBaby</def>
 					<minAge>0</minAge>
-					<headOffset>(0, -0.06)</headOffset>
+					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeChild</def>
 					<minAge>3</minAge>
-					<headOffset>(0, -0.09)</headOffset>
+					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
+					<headOffset>(0, 0.08)</headOffset>
+					<headFemaleOffset>(0, 0.08)</headFemaleOffset>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
 					<def>HumanlikePreTeenager</def>
 					<minAge>9</minAge>
-					<headOffset>(0, -0.09)</headOffset>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeTeenager</def>
 					<minAge>13</minAge>
-					<headOffset>(0, 0)</headOffset>
+					<headOffset>(0, 0.01)</headOffset>
 					<customDrawSize>(0.9,0.9)</customDrawSize>
-					<customPortraitDrawSize>(0.9,0.9)</customPortraitDrawSize>
-					<customHeadDrawSize>(0.9,0.9)</customHeadDrawSize>
-					<customPortraitHeadDrawSize>(0.9,0.9</customPortraitHeadDrawSize>
+					<!-- <customPortraitDrawSize>(0.9,0.9)</customPortraitDrawSize> -->
+					<!-- <customHeadDrawSize>(0.9,0.9)</customHeadDrawSize> -->
+					<!-- <customPortraitHeadDrawSize>(0.9,0.9</customPortraitHeadDrawSize> -->
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeAdult</def>
