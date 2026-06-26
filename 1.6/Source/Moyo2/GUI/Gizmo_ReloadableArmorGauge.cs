@@ -34,15 +34,10 @@ namespace Moyo2
 
 		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
 		{
-			if (SteamDeck.IsSteamDeckInNonKeyboardMode)
+			Rect rect = new(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+			if (!Mouse.IsOver(rect))
 			{
-				return base.GizmoOnGUI(topLeft, maxWidth, parms);
-			}
-			KeyCode keyCode = (KeyBindingDefOf.Command_ItemForbid != null) ? KeyBindingDefOf.Command_ItemForbid.MainKey : KeyCode.None;
-			if (keyCode != 0 && !GizmoGridDrawer.drawnHotKeys.Contains(keyCode) && KeyBindingDefOf.Command_ItemForbid.KeyDownEvent)
-			{
-				ToggleAutoRefuel();
-				Event.current.Use();
+				DraggingBar = false;
 			}
 			return base.GizmoOnGUI(topLeft, maxWidth, parms);
 		}

@@ -14,7 +14,7 @@ namespace Moyo2
 
 			if (CanRefuel(pawn, potentialApparel, out var foundFuel))
 			{
-				return JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo2_ReloadArmor, foundFuel);
+				return JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo2_ReloadArmor, foundFuel, potentialApparel);
 			}
 			return null;
 		}

@@ -17,14 +17,9 @@ namespace Moyo2
 			yield return Toils_General.WaitWith(TargetIndex.A, 200, true);
 			yield return Toils_General.Do(() =>
 			{
-				var potentialApparel = pawn.apparel.WornApparel
-				.Where(ap => ap.AllComps
-					.Any(comp => comp is Comp_ReloadableArmor rel
-						&& rel.Props.armor == TargetA.Thing.def)).FirstOrFallback(null);
-
-				if (potentialApparel is not null)
+				if (TargetB.Thing is ThingWithComps apparel)
 				{
-					var comp = potentialApparel.GetComp<Comp_ReloadableArmor>();
+					var comp = apparel.GetComp<Comp_ReloadableArmor>();
 					comp.ArmorDurability += comp.Props.valuePerArmor;
 					TargetA.Thing.SplitOff(1).Destroy();
 				}
