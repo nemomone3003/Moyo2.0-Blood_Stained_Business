@@ -419,16 +419,16 @@
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 		<comps Inherit="False">
-			<!-- <li Class="Moyo2.CompProperties_ReloadableArmor"> -->
+			<li Class="Moyo2.CompProperties_ReloadableArmor">
 				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
-				<!-- <armor>Moyo2_BGelPack</armor> -->
-				<!-- <valuePerArmor>50</valuePerArmor> -->
-				<!-- <armorOverrideSharp>1.4</armorOverrideSharp> -->
-				<!-- <armorOverrideBlunt>1.05</armorOverrideBlunt> -->
-				<!-- <maxDurability>50</maxDurability> -->
-				<!-- <initialDurabilityTargetValue>30</initialDurabilityTargetValue> -->
-				<!-- <gizmoLabel>Armor Durability</gizmoLabel> -->
-			<!-- </li> -->
+				<armor>Moyo2_BGelPack</armor>
+				<valuePerArmor>50</valuePerArmor>
+				<armorOverrideSharp>1.4</armorOverrideSharp>
+				<armorOverrideBlunt>1.05</armorOverrideBlunt>
+				<maxDurability>50</maxDurability>
+				<initialDurabilityTargetValue>30</initialDurabilityTargetValue>
+				<gizmoLabel>Armor Durability</gizmoLabel>
+			</li>
 			<li>
 				<compClass>CompColorable</compClass>
 			</li>			
