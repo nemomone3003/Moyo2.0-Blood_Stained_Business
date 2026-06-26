@@ -42,4 +42,26 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Moyo2_BGelPack</defName>
+		<label>balistic gel pack</label>
+		<description>Pack of balistic gel used for refilling cartel balistic armor. Non-newtonian nature of this dense fluid provides excellent protection from sudden impacts.</description>
+		<graphicData>
+			<texPath>Item/BGelPack</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<stackLimit>20</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>125</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0.1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>	
 </Defs>

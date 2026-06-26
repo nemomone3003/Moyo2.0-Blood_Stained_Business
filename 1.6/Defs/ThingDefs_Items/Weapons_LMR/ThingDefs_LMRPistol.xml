@@ -12,7 +12,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<stoppingPower>1</stoppingPower>
+			<stoppingPower>1.1</stoppingPower>
 			<speed>80</speed>
 		</projectile>
 		<comps>
@@ -57,7 +57,7 @@
 		<soundInteract>Laminar_Activate</soundInteract>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>36000</WorkToMake>
+			<WorkToMake>60000</WorkToMake>
 			<Mass>2.5</Mass>
 		</statBases>
 		<tools>

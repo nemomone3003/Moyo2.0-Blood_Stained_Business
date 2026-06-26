@@ -160,8 +160,8 @@
 			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>7</Insulation_Cold>
-			<Insulation_Heat>21</Insulation_Heat>
+			<Insulation_Cold>3.5</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<!-- - -->
@@ -205,7 +205,7 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Steel>70</Steel>
+			<Steel>60</Steel>
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
 		<colorGenerator Class="ColorGenerator_Options">
@@ -288,7 +288,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CBsuit</defName>
 		<label>Flak bodyarmor(cartel)</label>
-		<description>A standard issue body armor of the Cartel. Its far cheaper than advanced striker gear while providing decent protection to Cartel operatives.</description>
+		<description>_</description>
 		<graphicData>
 			<texPath>Apparel/ArmorIDR/CBSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -298,7 +298,7 @@
 		<useHitPoints>false</useHitPoints>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
+			<WorkToMake>32000</WorkToMake>
 			<Mass>4</Mass>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
@@ -332,7 +332,10 @@
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Moyo2_Abysstech_Pneumatic</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -344,17 +347,22 @@
 			<Plasteel>15</Plasteel>
 			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
 		</costList>
-		<comps>
+		<comps Inherit="False">
 			<li Class="Moyo2.CompProperties_ReloadableArmor">
 				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
-				<armor>Moyo2_TunaMeat</armor>
+				<armor>Moyo2_BGelPack</armor>
 				<valuePerArmor>50</valuePerArmor>
-				<armorOverrideSharp>120</armorOverrideSharp>
-				<armorOverrideBlunt>105</armorOverrideBlunt>
+				<armorOverrideSharp>1.4</armorOverrideSharp>
+				<armorOverrideBlunt>1.05</armorOverrideBlunt>
 				<maxDurability>100</maxDurability>
 				<initialDurabilityTargetValue>30</initialDurabilityTargetValue>
 				<gizmoLabel>Armor Durability</gizmoLabel>
 			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>			
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable" />			
 		</comps>
 	</ThingDef>
 	<!--방탄헬멧-->
@@ -373,8 +381,8 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>1.7</Mass>
-			<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			<Insulation_Cold>1</Insulation_Cold>
 			<Insulation_Heat>1</Insulation_Heat>
@@ -395,7 +403,10 @@
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Moyo2_Abysstech_Pneumatic</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -407,6 +418,23 @@
 			<Steel>10</Steel>
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
+		<comps Inherit="False">
+			<!-- <li Class="Moyo2.CompProperties_ReloadableArmor"> -->
+				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
+				<!-- <armor>Moyo2_BGelPack</armor> -->
+				<!-- <valuePerArmor>50</valuePerArmor> -->
+				<!-- <armorOverrideSharp>1.4</armorOverrideSharp> -->
+				<!-- <armorOverrideBlunt>1.05</armorOverrideBlunt> -->
+				<!-- <maxDurability>50</maxDurability> -->
+				<!-- <initialDurabilityTargetValue>30</initialDurabilityTargetValue> -->
+				<!-- <gizmoLabel>Armor Durability</gizmoLabel> -->
+			<!-- </li> -->
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>			
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable" />					
+		</comps>		
 	</ThingDef>
 	<!-- - -->
 	<!-- 카르텔 -->

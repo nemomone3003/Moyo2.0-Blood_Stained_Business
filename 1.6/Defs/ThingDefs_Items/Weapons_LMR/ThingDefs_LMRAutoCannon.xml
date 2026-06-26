@@ -21,7 +21,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- 라미너 발리스타 -->
+	<!-- 라미너 오토캐논 -->
 	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo_LMRAutoCannon" Abstract="True">
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -147,7 +147,7 @@
 				<warmupTime>2</warmupTime>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>						
-				<range>31.5</range>
+				<range>31.9</range>
 				<soundCast>Laminar_Rifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

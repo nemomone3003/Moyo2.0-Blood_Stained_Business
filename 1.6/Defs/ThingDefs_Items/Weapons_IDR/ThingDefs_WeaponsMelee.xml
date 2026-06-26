@@ -14,7 +14,7 @@
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>3</Mass>
 		</statBases>
 		<equippedStatOffsets>
@@ -57,7 +57,7 @@
 		</comps>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -77,7 +77,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>MeleeBlunt</li>
-		</weaponClasses>		
+		</weaponClasses>
 	</ThingDef>
 	<AbilityDef>
 		<defName>Moyo2_WrenchThrow</defName>
@@ -132,13 +132,13 @@
 		<uiIconScale>1.5</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>1200</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<CookSpeed>0.1</CookSpeed>
 			<ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
-		</equippedStatOffsets>		
+		</equippedStatOffsets>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -167,7 +167,7 @@
 		</tools>
 		<!-- - -->
 		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -187,7 +187,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>MeleePiercer</li>
-		</weaponClasses>			
+		</weaponClasses>
 	</ThingDef>
 	<!-- 모요 톱 -->
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
@@ -202,12 +202,12 @@
 		<uiIconScale>1.5</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>20000</WorkToMake>
 			<Mass>3.5</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
-		</equippedStatOffsets>	
+		</equippedStatOffsets>
 		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
 		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>		 -->
 		<tools>
@@ -242,7 +242,76 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>MeleePiercer</li>
-		</weaponClasses>		
+		</weaponClasses>
+	</ThingDef>
+	<!-- 카르텔 컴뱃 나이프 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_CKnife</defName>
+		<label>카르텔 컴뱃 나이프</label>
+		<description>A large combat knife forged with a cold, sharp edge. A handy tool and an effective weapon in one.\n\nDesigned with the intention to be used on the surface, this knife was made bigger and heavier than regular diving knife. It came with a bonus of menacing shape.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_CKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_MeleeCartel</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
 	</ThingDef>
 	<!-- 라미너 글레이브 -->
 	<ThingDef ParentName="MoyoBaseMeleeLMR">
@@ -259,7 +328,7 @@
 		<!-- - -->
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
-			<Mass>9</Mass>
+			<Mass>6</Mass>
 		</statBases>
 		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
 		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			 -->
@@ -310,7 +379,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>MeleePiercer</li>
-		</weaponClasses>		
+		</weaponClasses>
 	</ThingDef>
 	<!-- 모요 파워건틀릿 -->
 	<ThingDef ParentName="MoyoBaseMeleeLMR">
@@ -320,20 +389,20 @@
 		<graphicData>
 			<texPath>Weapon/LMR_Gauntlet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>			
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<equippedAngleOffset>-15</equippedAngleOffset>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<Mass>5</Mass>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>6</Mass>
 		</statBases>
 		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
 		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound> -->
 		<equippedStatOffsets>
 			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
 			<CarryingCapacity>45</CarryingCapacity>
-		</equippedStatOffsets>		
+		</equippedStatOffsets>
 		<tools>
 			<li>
 				<label>Fist</label>
@@ -352,7 +421,7 @@
 				<cooldownTime>1.9</cooldownTime>
 			</li>
 		</tools>
-		<!-- - -->	
+		<!-- - -->
 		<recipeMaker>
 			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
 			<skillRequirements>
@@ -373,6 +442,77 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>MeleeBlunt</li>
-		</weaponClasses>		
-	</ThingDef>		
+		</weaponClasses>
+	</ThingDef>
+	<!-- 카르텔 라미너 엣지 -->
+	<ThingDef ParentName="MoyoBaseMeleeLMR">
+		<defName>Moyo2_CLMREdge</defName>
+		<label>laminar edge</label>
+		<description>A thin blade inspired by a particular surface weapon equipped with a vibroblade. As a masterwork of the Cartel, it even cuts through thick armored plates with ease. Rumors say Cartel's mysterious elite operatives are armed with it.\n\n...Others say that there is a red vibroblade that was forged by a legendary smith of the lighthouse.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_CBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<!-- <equippedAngleOffset>0</equippedAngleOffset> -->
+		<!-- - -->
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			 -->
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.2</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>2.2</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<plasteel>60</plasteel>
+			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeCLMR</li>
+			<li>Moyo2_CLMREdge</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+	</ThingDef>	
 </Defs>

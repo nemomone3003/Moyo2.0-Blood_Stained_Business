@@ -14,7 +14,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>11</damageAmountBase>
 			<armorPenetrationBase>0.42</armorPenetrationBase>
-			<stoppingPower>1.1</stoppingPower>
+			<stoppingPower>0.7</stoppingPower>
 			<speed>80</speed>
 		</projectile>
 		<comps>
@@ -123,7 +123,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>6</damageAmountBase>
 			<armorPenetrationBase>0.42</armorPenetrationBase>
-			<stoppingPower>1.1</stoppingPower>
+			<stoppingPower>0.7</stoppingPower>
 			<speed>80</speed>
 		</projectile>
 		<comps>
@@ -197,7 +197,7 @@
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
-			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -440,72 +440,4 @@
 		</weaponTags>
 	</ThingDef>
 	<!-- 카르텔 아바레스트 -->
-	<!-- 카르텔 라미너 엣지 -->
-	<ThingDef ParentName="MoyoBaseMeleeLMR">
-		<defName>Moyo2_CLMREdge</defName>
-		<label>laminar edge</label>
-		<description>A large spear made with abyssteel. It is large and heavy, but easy to handle thanks to a powerful laminar force field generator. Additionally, using the force field, you can fix the angle of the strike for a much stronger blow, capable of even splitting diving suit helmets. With a brief charge, you can unleash a devastating cleaving attack. or so they says in RnD.\n\nDue to its intimidating appearance, this weapon is issued to the guards of the council.</description>
-		<graphicData>
-			<texPath>Weapon/LMR_CBlade</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<uiIconScale>1.4</uiIconScale>
-		<!-- <equippedAngleOffset>0</equippedAngleOffset> -->
-		<!-- - -->
-		<statBases>
-			<WorkToMake>60000</WorkToMake>
-			<Mass>9</Mass>
-		</statBases>
-		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
-		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			 -->
-		<tools>
-			<li>
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>13</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>blade</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>34</power>
-				<cooldownTime>3</cooldownTime>
-			</li>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>35</power>
-				<cooldownTime>3</cooldownTime>
-			</li>
-		</tools>
-		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>11</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Moyo2_FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
-		<!-- - -->
-		<weaponTags>
-			<li>Moyo2_MeleeCLMR</li>
-			<li>Moyo2_CLMREdge</li>
-		</weaponTags>
-		<!-- <weaponClasses> -->
-			<!-- <li>MeleePiercer</li> -->
-		<!-- </weaponClasses> -->
-	</ThingDef>
 </Defs>

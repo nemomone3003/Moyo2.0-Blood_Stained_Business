@@ -344,17 +344,16 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>7</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
-			<Insulation_Cold>66</Insulation_Cold>
+			<Insulation_Cold>46</Insulation_Cold>
 			<Insulation_Heat>14</Insulation_Heat>
 			<EquipDelay>16</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.15</ToxicEnvironmentResistance>
-			<Flammability>-0.5</Flammability>
-			<MoveSpeed>-0.2</MoveSpeed>
+			<ToxicEnvironmentResistance>0.10</ToxicEnvironmentResistance>
+			<Flammability>-0.3</Flammability>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
 		</equippedStatOffsets>

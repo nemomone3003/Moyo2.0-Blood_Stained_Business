@@ -62,7 +62,6 @@
 		<projectile>
 			<damageDef>Moyo_ColiderBullet</damageDef>
 			<damageAmountBase>50</damageAmountBase>
-			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 			<beamMoteDef>Mote_LMRColider_Beam</beamMoteDef>
 			<beamStartOffset>0.8</beamStartOffset>
