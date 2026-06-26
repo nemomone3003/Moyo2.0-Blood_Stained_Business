@@ -132,7 +132,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<!-- - -->
 		<statBases>
-			<WorkToMake>1200</WorkToMake>
+			<WorkToMake>12000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 		<equippedStatOffsets>
@@ -479,7 +479,7 @@
 				</capacities>
 				<power>26</power>
 				<cooldownTime>2.2</cooldownTime>
-				<armorPenetration>0.5</armorPenetration>
+				<!-- <armorPenetration>0.5</armorPenetration> -->
 			</li>
 			<li>
 				<label>point</label>
@@ -488,7 +488,7 @@
 				</capacities>
 				<power>27</power>
 				<cooldownTime>2.2</cooldownTime>
-				<armorPenetration>0.5</armorPenetration>
+				<!-- <armorPenetration>0.5</armorPenetration> -->
 			</li>
 		</tools>
 		<!-- - -->
@@ -502,7 +502,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<plasteel>60</plasteel>
+			<Plasteel>60</Plasteel>
 			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
@@ -514,5 +514,5 @@
 		<weaponClasses>
 			<li>MeleePiercer</li>
 		</weaponClasses>
-	</ThingDef>	
+	</ThingDef>
 </Defs>
