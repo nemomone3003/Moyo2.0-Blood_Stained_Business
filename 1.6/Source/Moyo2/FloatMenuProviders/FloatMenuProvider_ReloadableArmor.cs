@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using Moyo2;
+using System.Linq;
 using Verse.AI;
 
 namespace Moyo2
@@ -10,28 +11,28 @@ namespace Moyo2
 		protected override bool Multiselect => false;
 
 
-		protected override FloatMenuOption GetSingleOptionFor(Thing clickedThing, FloatMenuContext context)
+		public override IEnumerable<FloatMenuOption> GetOptionsFor(Thing clickedThing, FloatMenuContext context)
 		{
 			if (clickedThing.IsForbidden(context.FirstSelectedPawn) || clickedThing.IsBurning())
 			{
-				return null;
+				yield break;
 			}
 
-			var potentialApparel = context.FirstSelectedPawn.apparel.WornApparel
-				.Where(ap => ap.AllComps
-					.Any(comp => comp is Comp_ReloadableArmor rel
-						&& rel.Props.armor == clickedThing.def)).FirstOrFallback(null);
-
-			if (potentialApparel is null)
+			foreach (Apparel apparel in context.FirstSelectedPawn.apparel.WornApparel)
 			{
-				return null;
+				if (apparel.TryGetComp<Comp_ReloadableArmor>() is { } comp)
+				{
+					if (comp.Props.armor == clickedThing.def
+						&& !comp.IsFull)
+					{
+						yield return new FloatMenuOption("Moyo2_FloatMenu_ReloadableArmorLabel".Translate(clickedThing.LabelCapNoCount, apparel), () =>
+						{
+							Job job = JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo2_ReloadArmor, clickedThing, apparel);
+							context.FirstSelectedPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+						});
+					}
+				}
 			}
-
-			return new FloatMenuOption("Moyo2_FloatMenu_ReloadableArmorLabel".Translate(clickedThing), () =>
-			{
-				Job job = JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo2_ReloadArmor, clickedThing);
-				context.FirstSelectedPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
-			});
 		}
 	}
 }

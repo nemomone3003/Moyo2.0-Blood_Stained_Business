@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Verse.AI;
+﻿using Verse.AI;
 
 namespace Moyo2
 {
@@ -21,12 +20,8 @@ namespace Moyo2
 				{
 					var comp = apparel.GetComp<Comp_ReloadableArmor>();
 					comp.ArmorDurability += comp.Props.valuePerArmor;
-					TargetA.Thing.SplitOff(1).Destroy();
 				}
-				else
-				{
-					EndJobWith(JobCondition.Incompletable);
-				}
+				TargetA.Thing.SplitOff(1).Destroy();
 			});
 		}
 	}
