@@ -23,6 +23,6 @@
     <Moyo2_IFC_DisabledMissingApparel>Missing required apparel: {0}.</Moyo2_IFC_DisabledMissingApparel>
 
     <Moyo2_StatPart_ReloadableArmorOverride>Loaded armor override: {0}</Moyo2_StatPart_ReloadableArmorOverride>
-    <Moyo2_FloatMenu_ReloadableArmorLabel>Force reload armor with {0}</Moyo2_FloatMenu_ReloadableArmorLabel>
+    <Moyo2_FloatMenu_ReloadableArmorLabel>Force reload {1} with {0}</Moyo2_FloatMenu_ReloadableArmorLabel>
 
 </LanguageData>

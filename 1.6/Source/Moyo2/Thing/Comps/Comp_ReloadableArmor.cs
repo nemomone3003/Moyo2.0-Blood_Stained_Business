@@ -24,7 +24,7 @@ namespace Moyo2
 			get => armorDurability;
 			set => armorDurability = Mathf.Clamp(Mathf.Ceil(value), 0f, Props.maxDurability);
 		}
-		public bool IsFull => TargetDurability - armorDurability < Props.maxDurability;
+		public bool IsFull => ArmorDurability >= Props.maxDurability;
 		public bool IsEmpty => ArmorDurability <= 0f;
 		public bool ShouldRefuel => ArmorDurability < TargetDurability;
 
