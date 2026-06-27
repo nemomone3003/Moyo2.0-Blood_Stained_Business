@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <AbilityDef ParentName="AbilityTouchBase">
+    <!-- <AbilityDef ParentName="AbilityTouchBase">
         <defName>abilityattack</defName>
         <label>abilityattack</label>
         <description>Use special glands in the wrists to quickly tend someone's wounds.</description>
@@ -34,6 +34,6 @@
               <width>3</width>
             </li>
         </comps>
-    </AbilityDef>
+    </AbilityDef> -->
     
 </Defs>

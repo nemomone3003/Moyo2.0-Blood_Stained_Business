@@ -1,0 +1,4 @@
+<!--English=leader-->
+<Moyo2_PlayerFaction.leaderTitle></Moyo2_PlayerFaction.leaderTitle>
+<!--English={0} from {1} are attacking your {2}.-->
+<Moyo2_PlayerFaction.messageDefendersAttacking></Moyo2_PlayerFaction.messageDefendersAttacking>

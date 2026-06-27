@@ -213,7 +213,7 @@
 				</capacities>
 				<power>32</power>
 				<cooldownTime>3.2</cooldownTime>
-				<linkedBodyPartsGroup>LeftClub</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Moyo2_LeftClub</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>right club</label>
@@ -222,7 +222,7 @@
 				</capacities>
 				<power>32</power>
 				<cooldownTime>3.2</cooldownTime>
-				<linkedBodyPartsGroup>RightClub</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Moyo2_RightClub</linkedBodyPartsGroup>
 			</li>						
 		</tools>
 		<race>

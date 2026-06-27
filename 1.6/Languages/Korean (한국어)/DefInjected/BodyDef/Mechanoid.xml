@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!--English=Hexapod-->
+    <Moyo2_Hexapod.label></Moyo2_Hexapod.label>
+    <!--English=left first sight sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_first_sight_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_first_sight_sensor.customLabel>
+    <!--English=left second sight sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_second_sight_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_second_sight_sensor.customLabel>
+    <!--English=left third sight sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_third_sight_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_third_sight_sensor.customLabel>
+    <!--English=right first sight sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_first_sight_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_first_sight_sensor.customLabel>
+    <!--English=right second sight sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_second_sight_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_second_sight_sensor.customLabel>
+    <!--English=right third sight sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_third_sight_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_third_sight_sensor.customLabel>
+    <!--English=left hearing sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_hearing_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_hearing_sensor.customLabel>
+    <!--English=right hearing sensor-->
+    <Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_hearing_sensor.customLabel></Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_hearing_sensor.customLabel>
+ 
+</LanguageData>
