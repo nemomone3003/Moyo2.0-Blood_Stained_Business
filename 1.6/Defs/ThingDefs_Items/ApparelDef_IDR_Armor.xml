@@ -422,6 +422,7 @@
 			<li Class="Moyo2.CompProperties_ReloadableArmor">
 				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
 				<armor>Moyo2_BGelPack</armor>
+				<!-- <armor>Moyo2_TunaMeat</armor> -->
 				<valuePerArmor>50</valuePerArmor>
 				<armorOverrideSharp>1.4</armorOverrideSharp>
 				<armorOverrideBlunt>1.05</armorOverrideBlunt>

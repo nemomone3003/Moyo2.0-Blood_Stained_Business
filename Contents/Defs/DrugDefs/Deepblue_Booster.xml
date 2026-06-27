@@ -40,7 +40,7 @@
 		</recipeMaker>
 		<ingestible>
 			<ingestCommandString>Inject {0}</ingestCommandString>
-			<ingestReportString>Injecting {0}.</ingestReportString>		
+			<ingestReportString>Injecting {0}.</ingestReportString>
 			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
 			<ingestSound>Ingest_Inject</ingestSound>
@@ -72,7 +72,7 @@
 		</tradeTags>
 		<thingCategories Inherit="False">
 			<li>Moyo2_DrugCategory_Booster</li>
-		</thingCategories>			
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Medi</defName>
@@ -179,7 +179,7 @@
 		</recipeMaker>
 		<ingestible>
 			<ingestCommandString>Inject {0}</ingestCommandString>
-			<ingestReportString>Injecting {0}.</ingestReportString>			
+			<ingestReportString>Injecting {0}.</ingestReportString>
 			<drugCategory>Hard</drugCategory>
 			<baseIngestTicks>100</baseIngestTicks>
 			<ingestSound>Ingest_Inject</ingestSound>
@@ -346,7 +346,7 @@
 		</recipeMaker>
 		<ingestible>
 			<ingestCommandString>Inject {0}</ingestCommandString>
-			<ingestReportString>Injecting {0}.</ingestReportString>			
+			<ingestReportString>Injecting {0}.</ingestReportString>
 			<drugCategory>Hard</drugCategory>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -383,14 +383,14 @@
 		</tradeTags>
 		<thingCategories Inherit="False">
 			<li>Moyo2_DrugCategory_Booster</li>
-		</thingCategories>			
+		</thingCategories>
 	</ThingDef>
 	<HediffDef>
 		<defName>DBHediff_Hydra</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on hydra booster</label>
 		<labelNoun>a hydra booster high</labelNoun>
-		<description>Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.</description>
+		<description>Active hydra booster in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
 			<ThingDef>DBBooster_Hydra</ThingDef>
 		</descriptionHyperlinks>
@@ -472,6 +472,138 @@
 						<offset>0.2</offset>
 					</li>
 				</capMods>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="Moyo2.ModExtension">
+				<deepblueDrugEffectsSettings>
+					<isDeepblueDrug>true</isDeepblueDrug>
+				</deepblueDrugEffectsSettings>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<!-- 블루버스트 -->
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DBBooster_Blueburst</defName>
+		<label>blueburst booster</label>
+		<description>A medical drug offering advantages of rapid injection and swift onset of effects. Designed as a catalyst for more potent drugs, it has a potential to be mixed with other drugs, creating more potent effect. But injected alone, it overloads cardiovascular system of the victim, potentially causing cardiac arrest. So don't.\n\nTheCompanyDoesNotHoldAnyResponsibilitiesWheneverThisProductIsUsedOutsideOfItsIntendedPurpose.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DBHediff_Blueburst</HediffDef>
+			<ThingDef>BlueSerum</ThingDef>
+			<HediffDef>DeepBlueTolerance</HediffDef>
+			<HediffDef>DeepBlueAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/BlueBurst</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>35</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<costList>
+			<BlueSerum>1</BlueSerum>
+			<GoJuice>1</GoJuice>
+			<Neutroamine>3</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<productCount>2</productCount>
+			<targetCountAdjustment>2</targetCountAdjustment>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<researchPrerequisite>Moyo2_Abysstech_DeepblueAdvanced</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<ingestible>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<drugCategory>Hard</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DBHediff_Blueburst</hediffDef>
+					<severity>0.6</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DeepBlueTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>false</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DeepBlue</chemical>
+				<addictiveness>1</addictiveness>
+				<minToleranceToAddict>0.059</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.125</existingAddictionSeverityOffset>
+				<needLevelOffset>0.125</needLevelOffset>
+				<listOrder>1012</listOrder>
+			</li>
+		</comps>
+		<tradeTags Inherit="False">
+			<li>Moyo_DrugsBooster</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>Moyo2_DrugCategory_Booster</li>
+		</thingCategories>
+	</ThingDef>
+	<HediffDef>
+		<defName>DBHediff_Blueburst</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on blueburst booster</label>
+		<labelNoun>a blueburst booster high</labelNoun>
+		<description>Active blueburst booster in the bloodstreams. It overloads cardiovascular system of the victim, potentially causing cardiac arrest. Why have you done this?</description>
+		<descriptionHyperlinks>
+			<ThingDef>DBBooster_Hydra</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(80,125,222)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.25</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>cardiovascular overload</label>
+				<painOffset>0.7</painOffset>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>3</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>cardiovascular arrest</label>
+				<minSeverity>0.7</minSeverity>
+				<painOffset>1</painOffset>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>5</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>0.1</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+							<li>Moyo2_Heart</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
 			</li>
 		</stages>
 		<modExtensions>

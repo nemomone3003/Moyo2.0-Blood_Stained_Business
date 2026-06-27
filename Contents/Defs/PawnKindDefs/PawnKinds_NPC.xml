@@ -202,7 +202,7 @@
 			<li>Moyo2_NailIDR</li>
 			<li>Moyo2_MeleeIDR</li>
 		</weaponTags>
-		<weaponMoney>500~800</weaponMoney>
+		<weaponMoney>500~1200</weaponMoney>
 		<techHediffsChance>0.8</techHediffsChance>
 		<techHediffsMoney>105~160</techHediffsMoney>
 		<techHediffsTags>
@@ -353,7 +353,7 @@
 	<PawnKindDef ParentName="Moyo2_NPCBase">
 		<defName>Moyo2_NPCNegotiator</defName>
 		<label>moyo negotiator</label>
-		<combatPower>70</combatPower>
+		<combatPower>35</combatPower>
 		<trader>true</trader>
 		<apparelTags>
 			<li>Moyo2_SuitBasic</li>

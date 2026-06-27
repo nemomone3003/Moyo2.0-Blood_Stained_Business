@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AbilityDef>
+		<defName>Moyo2_CCCSuitAbility</defName>
+		<label>Scari-abyss</label>
+		<description>Inject Scari-abyss.</description>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<iconPath>UI/Abilities/WorkDrive</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/WorkDrive</warmupMoteSocialSymbol>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>True</showWhenDrafted>
+		<hotKey>Misc12</hotKey>
+		<uiOrder>2</uiOrder>
+		<statBases>
+			<Ability_Duration>200</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<violent>false</violent>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetable>false</targetable>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<onlyManualCast>True</onlyManualCast>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>WorkDrive</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>Moyo2_CCCSuitHediff</defName>
+		<label>Scari-abyss</label>
+		<description>The sense of being called upon by a leader to work harder.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

@@ -324,7 +324,6 @@
 		</colorGenerator>
 	</ThingDef>
 	<!-- 등대 -->
-	
 	<!-- 카르텔 -->
 	<!-- 카르텔 타격대 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -487,7 +486,7 @@
 			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
 			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
 		</costList>
-	</ThingDef>	
+	</ThingDef>
 	<!-- 화학전 특수대 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CCCShell</defName>
@@ -550,31 +549,22 @@
 				<li>Moyo2_HideBodyGlow</li>
 				<li>Moyo2_HideTail</li>
 			</tags>
+			<abilities>
+				<li>CallMechanoids</li>
+			</abilities>
 		</apparel>
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>3</maxCharges>
-				<ammoDef>Chemfuel</ammoDef>
-				<ammoCountToRefill>10</ammoCountToRefill>
+				<maxCharges>2</maxCharges>
+				<ammoDef>DBBooster_Blueburst</ammoDef>
+				<ammoCountToRefill>2</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
-				<chargeNoun>smokepop</chargeNoun>
+				<chargeNoun>Scari-Abyss</chargeNoun>
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 			</li>
 		</comps>
-		<verbs>
-			<li>
-				<verbClass>Verb_Smokepop</verbClass>
-				<label>pop smoke</label>
-				<violent>false</violent>
-				<hasStandardCommand>true</hasStandardCommand>
-				<targetable>false</targetable>
-				<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-				<onlyManualCast>True</onlyManualCast>
-			</li>
-		</verbs>
-		<!-- - -->
 		<recipeMaker>
 			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
 			<skillRequirements>

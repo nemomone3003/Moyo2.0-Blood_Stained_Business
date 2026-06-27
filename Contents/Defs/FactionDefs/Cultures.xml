@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <CultureDef>
-    <defName>Moyo2_RefugeeCulture</defName>
-    <label>nautilios</label>
-    <description>Cultures of the refugees who seek haven on the surface.</description>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
-    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
-    <allowedPlaceTags>
-      <li>OriginSpacer</li>
-    </allowedPlaceTags>
-    <iconPath>Icon/Moyo_PlayerIcon</iconPath>
-    <iconColor>(65, 65, 150)</iconColor>
-    <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Rustic</category>
-        <priority>2</priority>
-      </li>
-    </thingStyleCategories>
-    <styleItemTags>
-      <li>
-        <tag>Moyohair</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoBeard</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoTattoo</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-    </styleItemTags>
-  </CultureDef>
+	<!-- 피난민 문화 -->
+	<CultureDef>
+		<defName>Moyo2_RefugeeCulture</defName>
+		<label>nautilios</label>
+		<description>Cultures of the refugees who seek haven on the surface.</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Icon/Icon_L_A</iconPath>
+		<iconColor>(65, 65, 150)</iconColor>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Rustic</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Moyohair</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+	<!-- 카르텔 문화 -->
+	<CultureDef>
+		<defName>Moyo2_CartelCulture</defName>
+		<label>corpolios</label>
+		<description>Cultures of the cartel expanding operations on the surface.</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Icon/Icon_C_A</iconPath>
+		<iconColor>(99, 63, 212)</iconColor>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Techist</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Moyohair</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
 </Defs>

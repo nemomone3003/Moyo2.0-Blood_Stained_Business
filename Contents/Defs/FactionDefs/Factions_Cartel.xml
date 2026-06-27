@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- 피난민 팩션베이스 -->
-	<FactionDef ParentName="FactionBase" Name="MoyoFactionBase" Abstract="True">
-		<pawnSingular>Refugee</pawnSingular>
-		<pawnsPlural>Refugees</pawnsPlural>
-		<listOrderPriority>30</listOrderPriority>
+	<!-- 카르텔 팩션베이스 -->
+	<FactionDef ParentName="FactionBase" Name="MoyoFactionBase_Cartel" Abstract="True">
+		<pawnSingular>Operator</pawnSingular>
+		<pawnsPlural>Operator</pawnsPlural>
+		<listOrderPriority>31</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<maxConfigurableAtWorldCreation>4</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>60</configurationListOrderPriority>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>61</configurationListOrderPriority>
 		<canMakeRandomly>true</canMakeRandomly>
-		<leaderTitle>Refugee elder</leaderTitle>
+		<leaderTitle>Administrator</leaderTitle>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
-		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
+		<raidLootMaker>MoyoCartelRaidLootMaker</raidLootMaker>
 		<allowedCultures>
-			<li>Moyo2_RefugeeCulture</li>
+			<li>Moyo2_CartelCulture</li>
 		</allowedCultures>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -68,16 +68,13 @@
 			</disallowedThingDefs>
 		</apparelStuffFilter>
 		<caravanTraderKinds>
-			<li>Moyo2_Caravan_BulkGoods</li>
-			<li>Moyo2_Caravan_CombatSupplier</li>
-			<li>Moyo2_Caravan_Exotic</li>
-			<li>Moyo2_Caravan_PirateMerchant</li>
+			<li>Moyo2_Caravan_Cartel</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Outlander_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Moyo2_Base_Standard</li>
+			<li>Moyo2_Base_Cartel</li>
 		</baseTraderKinds>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
@@ -89,35 +86,7 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
-			<li>
-				<!-- 기본 습격 -->
-				<kindDef>Combat</kindDef>
-				<commonality>100</commonality>
-				<disallowedStrategies>
-					<li>EmergeFromWater</li>
-				</disallowedStrategies>
-				<options>
-					<Moyo2_NPCTechnician>10</Moyo2_NPCTechnician>
-					<Moyo2_NPCEngineer>2</Moyo2_NPCEngineer>
-					<Moyo2_NPCEngineerMelee>2</Moyo2_NPCEngineerMelee>
-					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
-					<Moyo2_NPCOutlawJunkie>5</Moyo2_NPCOutlawJunkie>
-					<Moyo2_NPCOutlawBoss>1</Moyo2_NPCOutlawBoss>
-				</options>
-			</li>
-			<li>
-				<!-- 무법자 습격 -->
-				<kindDef>Combat</kindDef>
-				<commonality>80</commonality>
-				<disallowedStrategies>
-					<li>EmergeFromWater</li>
-				</disallowedStrategies>
-				<options>
-					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
-					<Moyo2_NPCOutlawJunkie>10</Moyo2_NPCOutlawJunkie>
-					<Moyo2_NPCOutlawBoss>3</Moyo2_NPCOutlawBoss>
-				</options>
-			</li>
+			<!-- 고급, 소수정예 습격 중심, 래비 참조 -->
 			<li>
 				<!-- 잠수부 습격 -->
 				<kindDef>Combat</kindDef>
@@ -164,29 +133,6 @@
 				</options>
 			</li>
 			<li>
-				<!-- 일반 방문 -->
-				<kindDef>Peaceful</kindDef>
-				<options>
-					<Moyo2_NPCBottomCivil>1</Moyo2_NPCBottomCivil>
-					<Moyo2_NPCTechnician>25</Moyo2_NPCTechnician>
-					<Moyo2_NPCEngineer>5</Moyo2_NPCEngineer>
-					<Moyo2_NPCEngineerMelee>5</Moyo2_NPCEngineerMelee>
-					<Moyo2_NPCMiddleCivil>10</Moyo2_NPCMiddleCivil>
-					<Moyo2_NPCTopCivil>5</Moyo2_NPCTopCivil>
-					<Moyo2_NPCFlooded>1</Moyo2_NPCFlooded>
-					<Moyo2_NPCNegotiator>1</Moyo2_NPCNegotiator>
-				</options>
-			</li>
-			<li>
-				<!-- 무법자 방문 -->
-				<kindDef>Peaceful</kindDef>
-				<options>
-					<Moyo2_NPCOutlaw>30</Moyo2_NPCOutlaw>
-					<Moyo2_NPCOutlawJunkie>10</Moyo2_NPCOutlawJunkie>
-					<Moyo2_NPCOutlawBoss>3</Moyo2_NPCOutlawBoss>
-				</options>
-			</li>
-			<li>
 				<!-- 거지 방문 -->
 				<kindDef>Peaceful</kindDef>
 				<options>
@@ -195,25 +141,7 @@
 				</options>
 			</li>
 			<li>
-				<!-- 일반 상단 -->
-				<kindDef>Trader</kindDef>
-				<traders>
-					<Moyo2_NPCNegotiator>1</Moyo2_NPCNegotiator>
-				</traders>
-				<carriers>
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2</Alpaca>
-					<Elephant>1</Elephant>
-				</carriers>
-				<guards>
-					<Moyo2_NPCTechnician>15</Moyo2_NPCTechnician>
-					<Moyo2_NPCEngineer>10</Moyo2_NPCEngineer>
-					<Moyo2_NPCEngineerMelee>10</Moyo2_NPCEngineerMelee>
-				</guards>
-			</li>
-			<li>
-				<!-- 무법자 상단 -->
+				<!-- 카르텔 보급 수송대, 말도 안되게 강하게 -->
 				<kindDef>Trader</kindDef>
 				<traders>
 					<Moyo2_NPCOutlawBoss>1</Moyo2_NPCOutlawBoss>
@@ -231,10 +159,10 @@
 			</li>
 		</pawnGroupMakers>
 	</FactionDef>
-	<FactionDef ParentName="MoyoFactionBase">
-		<defName>Moyo2_HavenFaction</defName>
-		<label>refugee's landfall</label>
-		<description>A community of moyos established  by groups whom made landfall after they were expelled or fled from the lighthouse. Abandoning the lighthouse's isolationist ways, they thrived by engaging in deepblue and technological trade with other communities. large quantities of deep blue and advanced technology can be traded In their settlements.\n\nThey maintain communication networks within the lighthouse and employ various methods to obtain supplies and bring other moyos to the mainland. Rumors have started circulating within the lighthouse that those "rescued" by these groups Live lives filled with "brighter potential".</description>
+	<FactionDef ParentName="MoyoFactionBase_Cartel">
+		<defName>Moyo2_CartelFaction</defName>
+		<label>Cartel surface division</label>
+		<description>This is the Ground Operations Division of the Cartel, one of the major factions of the Lighthouse. Leveraging abundant resources and advanced technology, the Cartel continues to expand its ventures across the surface, interacting with neighboring factions through a strictly business-oriented mindset. Whether you become their newest partner and client—or choose to plunder their wealth and technological assets—is entirely up to you. Just remember: they show no mercy to those who stand in their way.\n\nThe Cartel's primary enterprise is the distribution of surface-world goods into the Lighthouse. This activity directly violates the Lighthouse Elders' long-standing policy of isolationism and is strictly forbidden. Despite this, the Cartel's influence continues to grow. Armed with cutting-edge equipment and experimental products of the Lighthouse's megacorps, they openly advocate for the abolition of isolationist policies. In response, the Elders branded them the "Cartel" and placed bounties on every one of its members.</description>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Icon_L_B</settlementTexturePath>
@@ -259,7 +187,7 @@
 		</pawnGroupMakers>
 	</FactionDef>
 	<ThingSetMakerDef>
-		<defName>MoyoRaidLootMaker</defName>
+		<defName>MoyoCartelRaidLootMaker</defName>
 		<root Class="ThingSetMaker_MarketValue">
 			<fixedParams>
 				<filter>
