@@ -1,6 +1,4 @@
-﻿using Moyo2;
-using System.Linq;
-using Verse.AI;
+﻿using Verse.AI;
 
 namespace Moyo2
 {
