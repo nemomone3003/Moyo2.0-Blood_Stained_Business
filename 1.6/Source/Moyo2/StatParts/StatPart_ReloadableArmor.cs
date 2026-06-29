@@ -34,7 +34,6 @@ namespace Moyo2
 
 		public override void TransformValue(StatRequest req, ref float val)
 		{
-			Log.Message(req.Thing.ToString() + " " + val);
 			if (GetComp(req) is not null && !GetComp(req).IsEmpty && GetArmorOverride(req) is not null)
 			{
 				val = (float)GetArmorOverride(req);

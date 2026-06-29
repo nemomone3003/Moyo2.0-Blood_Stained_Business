@@ -4,7 +4,7 @@ namespace Moyo2
 {
 	public class Comp_ReloadableArmor : ThingComp
 	{
-		private float armorDurability;
+		private float armorDurability = -1f;
 		private float durabilityTargetValue = -1f;
 		public bool allowRefuel = true;
 
@@ -17,11 +17,18 @@ namespace Moyo2
 
 			set => durabilityTargetValue = Mathf.Clamp(value, 0f, Props.maxDurability);
 		}
-		public float TargetDurabilityPercent => armorDurability / TargetDurability;
-		public float MaxDurabilityPercent => armorDurability / Props.maxDurability;
+		public float TargetDurabilityPercent => ArmorDurability / TargetDurability;
+		public float MaxDurabilityPercent => ArmorDurability / Props.maxDurability;
 		public float ArmorDurability
 		{
-			get => armorDurability;
+			get
+			{
+				if (armorDurability < 0f)
+				{
+					ArmorDurability = Props.maxDurability;
+				}
+				return armorDurability;
+			}
 			set => armorDurability = Mathf.Clamp(Mathf.Ceil(value), 0f, Props.maxDurability);
 		}
 		public bool IsFull => ArmorDurability >= Props.maxDurability;
@@ -64,7 +71,7 @@ namespace Moyo2
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
-			Scribe_Values.Look(ref armorDurability, "Moyo2_Comp_ReloadableArmor_ArmorDurability", 0f);
+			Scribe_Values.Look(ref armorDurability, "Moyo2_Comp_ReloadableArmor_ArmorDurability", -1f);
 			Scribe_Values.Look(ref durabilityTargetValue, "Moyo2_Comp_ReloadableArmor_DurabilityTargetValue", -1f);
 			Scribe_Values.Look(ref allowRefuel, "Moyo2_Comp_ReloadableArmor_AllowRefuel", defaultValue: false);
 			if (Scribe.mode == LoadSaveMode.PostLoadInit)
