@@ -362,6 +362,7 @@
 		<relicChance>0</relicChance>
 		<weaponTags Inherit="False">
 			<li>NoRelic</li>
+			<li>Moyo2_GunIDR</li>
 		</weaponTags>		
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
