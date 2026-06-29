@@ -1,48 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BodyPartGroupDef>
-		<defName>RightClub</defName>
+		<defName>Moyo2_RightClub</defName>
 		<label>right club</label>
 		<labelShort>club</labelShort>
 	</BodyPartGroupDef>
 	<BodyPartGroupDef>
-		<defName>LeftClub</defName>
+		<defName>Moyo2_LeftClub</defName>
 		<label>left club</label>
 		<labelShort>club</labelShort>
 	</BodyPartGroupDef>
-	<BodyPartGroupDef>
-		<defName>Tentacle1</defName>
-		<label>tentacle</label>
-		<labelShort>tentacle</labelShort>
-	</BodyPartGroupDef>
-	<BodyPartGroupDef>
-		<defName>Tentacle2</defName>
-		<label>tentacle</label>
-		<labelShort>tentacle</labelShort>
-	</BodyPartGroupDef>
-	<BodyPartGroupDef>
-		<defName>Tentacle3</defName>
-		<label>tentacle</label>
-		<labelShort>tentacle</labelShort>
-	</BodyPartGroupDef>
-	<BodyPartGroupDef>
-		<defName>Tentacle4</defName>
-		<label>tentacle</label>
-		<labelShort>tentacle</labelShort>
-	</BodyPartGroupDef>
-	<BodyPartGroupDef>
-		<defName>Tentacle5</defName>
-		<label>tentacle</label>
-		<labelShort>tentacle</labelShort>
-	</BodyPartGroupDef>
-	<BodyPartGroupDef>
-		<defName>Tentacle6</defName>
-		<label>tentacle</label>
-		<labelShort>tentacle</labelShort>
-	</BodyPartGroupDef>
 	<!-- 헥사포드 -->
 	<BodyPartDef>
-		<defName>HexapodHead</defName>
+		<defName>Moyo2_HexapodHead</defName>
 		<label>head</label>
 		<hitPoints>80</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -52,7 +22,7 @@
 		<alive>false</alive>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>HexapodHeadShell</defName>
+		<defName>Moyo2_HexapodHeadShell</defName>
 		<label>head</label>
 		<hitPoints>80</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -62,7 +32,7 @@
 		<alive>false</alive>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>Hexapod_TentacleJoint</defName>
+		<defName>Moyo2_Hexapod_TentacleJoint</defName>
 		<label>tentacle joint</label>
 		<hitPoints>35</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -76,7 +46,7 @@
 		</tags>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>Hexapod_Tentacle</defName>
+		<defName>Moyo2_Hexapod_Tentacle</defName>
 		<label>tentacle</label>
 		<hitPoints>50</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -91,7 +61,7 @@
 	</BodyPartDef>
 	<!-- 프레셔포드 -->
 	<BodyPartDef>
-		<defName>spheripod_ArmJoint</defName>
+		<defName>Moyo2_Spheripod_ArmJoint</defName>
 		<label>arm joint</label>
 		<hitPoints>25</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -104,7 +74,7 @@
 		</tags>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>spheripod_Arm</defName>
+		<defName>Moyo2_Spheripod_Arm</defName>
 		<label>club</label>
 		<hitPoints>60</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -117,7 +87,7 @@
 		</tags>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>spheripod_Leg</defName>
+		<defName>Moyo2_Spheripod_Leg</defName>
 		<label>leg</label>
 		<hitPoints>15</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -130,7 +100,7 @@
 		</tags>
 	</BodyPartDef>
 	<BodyPartDef>
-		<defName>spheripod_Body</defName>
+		<defName>Moyo2_Spheripod_Body</defName>
 		<label>spheripod body</label>
 		<labelShort>spheripod body</labelShort>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>

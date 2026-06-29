@@ -1,0 +1,10 @@
+<!--English=Cartel striker shell-->
+<Moyo2_CSShell.label></Moyo2_CSShell.label>
+<!--English=Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.-->
+<Moyo2_CSShell.description></Moyo2_CSShell.description>
+<!--English=smokepop-->
+<Moyo2_CSShell.comps.CompApparelReloadable.chargeNoun></Moyo2_CSShell.comps.CompApparelReloadable.chargeNoun>
+<!--English=on cooldown-->
+<Moyo2_CSShell.comps.CompApparelReloadable.cooldownGerund></Moyo2_CSShell.comps.CompApparelReloadable.cooldownGerund>
+<!--English=pop smoke-->
+<Moyo2_CSShell.verbs.pop_smoke.label></Moyo2_CSShell.verbs.pop_smoke.label>

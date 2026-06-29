@@ -1,0 +1,10 @@
+<!--English=laminar field colider(overloaded)-->
+<Moyo2_LMRColiderDown.label></Moyo2_LMRColiderDown.label>
+<!--English=An overloaded laminar field colider. Firing is temporarily disabled until the system is restored. It's an expensive pillar in the meantime.-->
+<Moyo2_LMRColiderDown.description></Moyo2_LMRColiderDown.description>
+<!--English=gun system cooling.-->
+<Moyo2_LMRColiderDown.comps.CompFormChange.revertData.description></Moyo2_LMRColiderDown.comps.CompFormChange.revertData.description>
+<!--English=body-->
+<Moyo2_LMRColiderDown.tools.body.label></Moyo2_LMRColiderDown.tools.body.label>
+<!--English=barrel-->
+<Moyo2_LMRColiderDown.tools.barrel.label></Moyo2_LMRColiderDown.tools.barrel.label>
