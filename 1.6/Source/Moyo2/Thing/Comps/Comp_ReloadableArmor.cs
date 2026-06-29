@@ -34,6 +34,7 @@ namespace Moyo2
 		public bool IsFull => ArmorDurability >= Props.maxDurability;
 		public bool IsEmpty => ArmorDurability <= 0f;
 		public bool ShouldRefuel => ArmorDurability < TargetDurability;
+		private Apparel Apparel => parent as Apparel;
 
 
 		public override string CompInspectStringExtra()
@@ -46,7 +47,7 @@ namespace Moyo2
 
 		public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
 		{
-			if (!IsEmpty)
+			if (!IsEmpty && Apparel.def.apparel.CoversBodyPart(dinfo.HitPart))
 			{
 				ArmorDurability -= dinfo.Amount;
 				dinfo.SetAmount(0f);
