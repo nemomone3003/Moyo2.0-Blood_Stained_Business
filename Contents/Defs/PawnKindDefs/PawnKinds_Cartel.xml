@@ -1,3 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<!-- 카르텔 폰카인드 베이스 -->
+	<PawnKindDef Name="Moyo2_NPCCartelBase" Abstract="True">
+		<race>Alien_Moyo</race>
+		<isFighter>false</isFighter>
+		<defaultFactionType>Moyo2_CartelFaction</defaultFactionType>
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<invNutrition>2</invNutrition>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>75</maxGenerationAge>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>30~47</initialResistanceRange>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Moyo2_Xenotype_Depthborn MayRequire="Ludeon.RimWorld.Biotech">0.75</Moyo2_Xenotype_Depthborn>
+				<Moyo2_Xenotype_Chemskin MayRequire="Ludeon.RimWorld.Biotech">0.25</Moyo2_Xenotype_Chemskin>
+				<!-- 차단 -->
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>	
+	</PawnKindDef>
+	<!-- 특수 폰카인드 -->
+	<!-- 카르텔 관리자 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelBase">
+		<defName>Moyo2_NPCCartelAdmin</defName>
+		<label>moyo cartel administrator</label>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<combatPower>70</combatPower>
+		<itemQuality>Excellent</itemQuality>
+		<apparelTags>
+			<li>Moyo2_SuitRoyalCartel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_RoyalSuit_Cartel</li>
+		</apparelRequired>		
+		<gearHealthRange>0.9~0.99</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_MidCrime</li>
+					<li>Moyo2_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>4000~6000</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_RevolverCLMR</li>
+		</weaponTags>
+		<weaponMoney>1460~2000</weaponMoney>
+		<invNutrition>1</invNutrition>		
+		<techHediffsChance>0.6</techHediffsChance>
+		<techHediffsMoney>300</techHediffsMoney>
+		<techHediffsTags>
+			<li>Moyo2_DeepBlueExtracterAdvanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>225~520</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	<!-- 모요 보급 분대장 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelBase">
+		<defName>Moyo2_NPCCartelNegotiator</defName>
+		<label>moyo cartel caravan leader</label>
+		<combatPower>35</combatPower>
+		<trader>true</trader>
+		<itemQuality>Excellent</itemQuality>
+		<apparelTags>
+			<li>Moyo2_SuitRoyalCartel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Moyo2_RoyalSuit_Cartel</li>
+			<li>Apparel_BowlerHat</li>
+		</apparelRequired>		
+		<gearHealthRange>0.9~0.99</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_MiddleCivil</li>
+					<li>Moyo2_MiddleCrime</li>				
+					<li>Moyo2_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>4000~6000</apparelMoney>
+		<weaponTags>
+			<li>Moyo2_RevolverCLMR</li>
+		</weaponTags>
+		<weaponMoney>1460~2000</weaponMoney>
+		<chemicalAddictionChance>0.3</chemicalAddictionChance>
+		<invNutrition>1</invNutrition>		
+		<techHediffsChance>0.6</techHediffsChance>
+		<techHediffsMoney>300</techHediffsMoney>
+		<techHediffsTags>
+			<li>Moyo2_DeepBlueExtracterAdvanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>225~520</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	<!-- 모요 카르텔 요원 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelBase">
+		<defName>Moyo2_NPCCartelOps</defName>
+		<label>moyo cartel operator</label>
+		<combatPower>35</combatPower>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Moyo2_SuitAdvanced</li>
+		</apparelTags>
+		<gearHealthRange>0.7~0.89</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_TopCivil</li>
+					<li>Moyo2_MidCivil</li>
+					<li>Moyo2_TopCrime</li>
+					<li>Moyo2_MidCrime</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>1000~2000</apparelMoney>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Autopistol</li>
+		</weaponTags>
+		<weaponMoney>200~1200</weaponMoney>
+		<chemicalAddictionChance>0.3</chemicalAddictionChance>
+		<invNutrition>1</invNutrition>		
+		<techHediffsChance>0.6</techHediffsChance>
+		<techHediffsMoney>300</techHediffsMoney>
+		<techHediffsTags>
+			<li>Moyo2_DeepBlueExtracter</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.2</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>DBPearl_Joy</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<!-- 카르텔 전투원 -->
+	<!-- 카르텔 무장요원 베이스-->
+	<PawnKindDef ParentName="Moyo2_NPCCartelBase" Name="Moyo2_NPCCartelSec" Abstract="true">
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+			<li>Moyo2_SuitBasic</li>
+		</apparelTags>
+		<gearHealthRange>0.7~95</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo2_TopCivil</li>
+					<li>Moyo2_MidCivil</li>
+					<li>Moyo2_TopCrime</li>
+					<li>Moyo2_MidCrime</li>
+					<li>Moyo2_Engineer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>1000~2000</apparelMoney>
+		<weaponMoney>500~1200</weaponMoney>
+		<techHediffsChance>0.8</techHediffsChance>
+		<techHediffsMoney>105~160</techHediffsMoney>
+		<techHediffsTags>
+			<li>Moyo2_DeepBlueExtracter</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.2</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Flake</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>	
+	<!-- 모요 무장요원 보병 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelSec">
+		<defName>Moyo2_NPCCartelArmOpsInfantry</defName>
+		<label>moyo Cartel Armed operator infantry</label>
+		<apparelRequired>
+			<li>Moyo2_CBsuit</li>
+			<li>Moyo2_CBhelmet</li>
+		</apparelRequired>		
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Moyo2_SpearIDR</li>
+			<li>Moyo2_GunIDR</li>
+		</weaponTags>
+		<weaponMoney>500~1200</weaponMoney>		
+	</PawnKindDef>
+	<!-- 모요 무장요원 보병 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelSec">
+		<defName>Moyo2_NPCCartelArmOpsEnforcer</defName>
+		<label>moyo Cartel Armed operator enforcer</label>
+		<apparelRequired>
+			<li>Moyo2_CBsuit</li>
+			<li>Moyo2_CBhelmet</li>
+		</apparelRequired>		
+		<weaponTags>
+			<li>Moyo2_MeleeCartel</li>
+		</weaponTags>
+		<weaponMoney>500~1200</weaponMoney>		
+	</PawnKindDef>
+	<!-- 모요 무장요원 엘리트 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelSec">
+		<defName>Moyo2_NPCCartelArmOpsElite</defName>
+		<label>moyo Cartel Armed operator elite</label>
+		<combatPower>130</combatPower>
+		<apparelRequired>
+			<li>Moyo2_CBsuit</li>
+			<li>Moyo2_CBhelmet</li>
+			<li>Moyo2_CartelHood</li>
+			<li>Moyo2_AdvancedSuit</li>			
+		</apparelRequired>		
+		<weaponTags>
+			<li>Moyo2_GunIDR</li>
+		</weaponTags>
+		<weaponMoney>500~1200</weaponMoney>		
+		<inventoryOptions>
+			<subOptionsChooseOne Inherit="False">
+				<li>
+					<thingDef>DBBooster_Hydra</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>		
+	<!-- 모요 무장요원 엘리트 -->
+	<PawnKindDef ParentName="Moyo2_NPCCartelSec">
+		<defName>Moyo2_NPCCartelArmOpsCaravan</defName>
+		<label>moyo Cartel Armed operator elite</label>
+		<combatPower>40</combatPower>
+		<apparelRequired>
+			<li>Moyo2_CBsuit</li>
+			<li>Moyo2_CBhelmet</li>
+			<li>Moyo2_CartelHood</li>
+			<li>Moyo2_AdvancedSuit</li>			
+		</apparelRequired>		
+		<weaponTags>
+			<li>Moyo2_GunIDR</li>
+		</weaponTags>
+		<weaponMoney>500~1200</weaponMoney>		
+		<inventoryOptions>
+			<subOptionsChooseOne Inherit="False">
+				<li>
+					<thingDef>DBBooster_Hydra</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>				
+	</PawnKindDef>		
 </Defs>
