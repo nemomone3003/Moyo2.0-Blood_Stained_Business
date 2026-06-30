@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Verse;
 
 namespace Moyo2
 {
@@ -47,7 +48,9 @@ namespace Moyo2
 
 		public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
 		{
-			if (!IsEmpty && Apparel.def.apparel.CoversBodyPart(dinfo.HitPart))
+			var hitPart = Apparel.Wearer.health.hediffSet.GetRandomNotMissingPart(dinfo.Def, dinfo.Height, dinfo.Depth);
+
+			if (!IsEmpty && hitPart is not null && Apparel.def.apparel.CoversBodyPart(hitPart))
 			{
 				ArmorDurability -= dinfo.Amount;
 				dinfo.SetAmount(0f);

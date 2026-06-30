@@ -33,7 +33,6 @@ namespace Moyo2
 
 		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
 		{
-			Log.Message(ValuePercent);
 			Rect rect = new(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
 			if (!Mouse.IsOver(rect))
 			{
