@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef Name="Moyo2_LaminarSpikeProjectile_Base" ParentName="BaseBulletCE" Abstract="true">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Moyo2_Damage_LMRBolt</damageDef> <!-- -->
+            <speed>166</speed>
+        </projectile>
+    </ThingDef>
+
+
+    <!-- Used by LMR autocannon, pistol, rifle -->
+    <ThingDef ParentName="Moyo2_LaminarSpikeProjectile_Base">
+        <defName>Moyo2_Projectile_LaminarSpike</defName>
+        <label>Laminar spike</label>
+        <graphicData>
+            <texPath>Weapon/MoyoCBullet2</texPath>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>5</damageAmountBase>
+            <armorPenetrationSharp>22.28</armorPenetrationSharp>
+            <armorPenetrationBlunt>23.89</armorPenetrationBlunt>
+        </projectile>
+    </ThingDef>
+
+    <!-- Used by LMR balista -->
+    <ThingDef ParentName="Moyo2_LaminarSpikeProjectile_Base">
+        <defName>Moyo2_Projectile_HeavyLaminarSpike</defName>
+        <label>Heavy laminar spike</label>
+        <graphicData>
+            <texPath>Weapon/MoyoCBullet3</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>62</damageAmountBase>
+            <armorPenetrationSharp>26.74</armorPenetrationSharp>
+            <armorPenetrationBlunt>41.12</armorPenetrationBlunt>
+        </projectile>
+    </ThingDef>
+
+</Defs>

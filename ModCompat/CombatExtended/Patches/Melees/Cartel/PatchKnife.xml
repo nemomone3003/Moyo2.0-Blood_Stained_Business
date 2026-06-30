@@ -2,25 +2,25 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_Knife"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CKnife"]/statBases</xpath>
         <value>
-            <MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
-            <Bulk>1</Bulk>
+            <MeleeCounterParryBonus>0.187</MeleeCounterParryBonus>
+            <Bulk>2</Bulk>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_Knife"]/equippedStatOffsets</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CKnife"]/equippedStatOffsets</xpath>
         <value>
-            <MeleeCritChance>0.5</MeleeCritChance>
-            <MeleeParryChance>0.15</MeleeParryChance>
-            <MeleeDodgeChance>0.05</MeleeDodgeChance>
+            <MeleeCritChance>0.625</MeleeCritChance>
+            <MeleeParryChance>0.187</MeleeParryChance>
+            <MeleeDodgeChance>0.062</MeleeDodgeChance>
         </value>
     </Operation>
 
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_Knife"]/tools</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CKnife"]/tools</xpath>
         <value>
             <tools>
                 <li Class="CombatExtended.ToolCE">
@@ -28,11 +28,11 @@
                     <capacities>
                         <li>Blunt</li>
                     </capacities>
-                    <power>0.9</power>
+                    <power>1.125</power>
                     <cooldownTime>1.26</cooldownTime>
                     <armorPenetrationSharp>0.01</armorPenetrationSharp>
-                    <armorPenetrationBlunt>0.31</armorPenetrationBlunt>
-                    <armorPenetration>125</armorPenetration>
+                    <armorPenetrationBlunt>0.38</armorPenetrationBlunt>
+                    <armorPenetration>151</armorPenetration>
                     <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
                 </li>
                 <li Class="CombatExtended.ToolCE">
@@ -40,11 +40,11 @@
                     <capacities>
                         <li>Cut</li>
                     </capacities>
-                    <power>11</power>
+                    <power>13.75</power>
                     <cooldownTime>1.18</cooldownTime>
-                    <armorPenetrationBlunt>0.45</armorPenetrationBlunt>
-                    <armorPenetrationSharp>0.4</armorPenetrationSharp>
-                    <armorPenetration>125</armorPenetration>
+                    <armorPenetrationBlunt>0.56</armorPenetrationBlunt>
+                    <armorPenetrationSharp>0.5</armorPenetrationSharp>
+                    <armorPenetration>151</armorPenetration>
                     <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
                 </li>
                 <li Class="CombatExtended.ToolCE">
@@ -52,11 +52,11 @@
                     <capacities>
                         <li>Stab</li>
                     </capacities>
-                    <power>12.1</power>
+                    <power>15.1</power>
                     <cooldownTime>1.2</cooldownTime>
-                    <armorPenetrationBlunt>0.31</armorPenetrationBlunt>
-                    <armorPenetrationSharp>0.53</armorPenetrationSharp>
-                    <armorPenetration>125</armorPenetration>
+                    <armorPenetrationBlunt>0.38</armorPenetrationBlunt>
+                    <armorPenetrationSharp>0.66</armorPenetrationSharp>
+                    <armorPenetration>151</armorPenetration>
                     <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
                 </li>
             </tools>
@@ -64,7 +64,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_Knife"]/weaponTags</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CKnife"]/weaponTags</xpath>
         <value>
             <li>CE_OneHandedWeapon</li>
         </value>

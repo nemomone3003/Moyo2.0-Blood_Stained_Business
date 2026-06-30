@@ -48,7 +48,7 @@ namespace Moyo2
 
 		public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
 		{
-			var hitPart = Apparel.Wearer.health.hediffSet.GetRandomNotMissingPart(dinfo.Def, dinfo.Height, dinfo.Depth);
+			var hitPart = Apparel?.Wearer?.health?.hediffSet?.GetRandomNotMissingPart(dinfo.Def, dinfo.Height, dinfo.Depth);
 
 			if (!IsEmpty && hitPart is not null && Apparel.def.apparel.CoversBodyPart(hitPart))
 			{

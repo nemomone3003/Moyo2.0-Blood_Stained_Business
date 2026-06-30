@@ -68,7 +68,7 @@
 		<defName>Moyo2_LittleDeliverer</defName>
 		<title>Moyo Little deliverer</title>
 		<titleShort>Little deliverer</titleShort>
-		<baseDesc>In the Lighthouse’s consumer culture, age does not matter. {PAWN_nameDef} needed some extra cash, so {PAWN_pronoun} took on errands that offered quick and easy money. {PAWN_pronoun} didn’t care at all about the contents of the deliveries. What mattered was the payment.</baseDesc>
+		<baseDesc>In the Lighthouse's consumer culture, age does not matter. {PAWN_nameDef} needed some extra cash, so {PAWN_pronoun} took on errands that offered quick and easy money. {PAWN_pronoun} didn't care at all about the contents of the deliveries. What mattered was the payment.</baseDesc>
 		<skillGains>
 			<Animals>3</Animals>
 			<Crafting>1</Crafting>
@@ -118,7 +118,7 @@
 		<defName>Moyo2_MuteChild</defName>
 		<title>Moyo Mute child</title>
 		<titleShort>Mute child</titleShort>
-		<baseDesc>{PAWN_nameDef} was unusually silent from a young age. It wasn’t merely that {PAWN_pronoun} chose not to speak; it was concerning enough that others feared there might be an issue with {PAWN_possessive} language abilities. In reality, {PAWN_pronoun} was simply more sensitive to the supernatural and communicated through telepathy. The only problem was that no one ever responded to {PAWN_possessive} telepathic messages.</baseDesc>
+		<baseDesc>{PAWN_nameDef} was unusually silent from a young age. It wasn't merely that {PAWN_pronoun} chose not to speak; it was concerning enough that others feared there might be an issue with {PAWN_possessive} language abilities. In reality, {PAWN_pronoun} was simply more sensitive to the supernatural and communicated through telepathy. The only problem was that no one ever responded to {PAWN_possessive} telepathic messages.</baseDesc>
 		<skillGains>
 			<Crafting>1</Crafting>
 			<Artistic>3</Artistic>
@@ -197,7 +197,7 @@
 		<defName>Moyo2_InstantFoodEnthusiast</defName>
 		<title>Moyo Instant food enthusiast</title>
 		<titleShort>Instant food enthusiast</titleShort>
-		<baseDesc>In the highly commercialized society of the Lighthouse, even food is a fierce competition. {PAWN_nameDef} found joy in sampling the many instant foods that emerged from this competition. It’s a hobby that saves money and guarantees taste! And since there are no warnings about consumption, {PAWN_pronoun} assumes there are no health risks either.</baseDesc>
+		<baseDesc>In the highly commercialized society of the Lighthouse, even food is a fierce competition. {PAWN_nameDef} found joy in sampling the many instant foods that emerged from this competition. It's a hobby that saves money and guarantees taste! And since there are no warnings about consumption, {PAWN_pronoun} assumes there are no health risks either.</baseDesc>
 		<skillGains>
 			<Cooking>2</Cooking>
 			<Intellectual>1</Intellectual>
@@ -285,7 +285,7 @@
 		<defName>Moyo2_ClubMaster</defName>
 		<title>Moyo Club master</title>
 		<titleShort>Club master</titleShort>
-		<baseDesc>After hard labor, a place to relieve stress is necessary. That place is {PAWN_nameDef}’s club. It offers not just alcohol, dancing, and music, but also a variety of drugs. {PAWN_possessive} club thrived and attracted the attention of many organization including gangs. While {PAWN_pronoun} gained significant benefits from these organizations, it wasn’t long before {PAWN_pronoun} had to flee from the club due to the pressures caused by them.</baseDesc>
+		<baseDesc>After hard labor, a place to relieve stress is necessary. That place is {PAWN_nameDef}'s club. It offers not just alcohol, dancing, and music, but also a variety of drugs. {PAWN_possessive} club thrived and attracted the attention of many organization including gangs. While {PAWN_pronoun} gained significant benefits from these organizations, it wasn't long before {PAWN_pronoun} had to flee from the club due to the pressures caused by them.</baseDesc>
 		<skillGains>
 			<Cooking>-3</Cooking>
 			<Plants>-3</Plants>
@@ -464,7 +464,7 @@
 		<defName>Moyo2_MechanoidMantainer</defName>
 		<title>Moyo Mechanoid mantainer</title>
 		<titleShort>Mechanoid mantainer</titleShort>
-		<baseDesc>Mechanoids are essential workers who have been part of the Lighthouse’s history. {PAWN_nameDef} maintained these Mechanoids and suffered under the heavy workload it brought, developing a deep admiration for the tireless Mechanodoids, who, despite minor malfunctions, never seem to tire.</baseDesc>
+		<baseDesc>Mechanoids are essential workers who have been part of the Lighthouse's history. {PAWN_nameDef} maintained these Mechanoids and suffered under the heavy workload it brought, developing a deep admiration for the tireless Mechanodoids, who, despite minor malfunctions, never seem to tire.</baseDesc>
 		<skillGains>
 			<Plants>-2</Plants>
 			<Animals>-2</Animals>
@@ -532,7 +532,7 @@
 		<defName>Moyo2_ContractedDoctor</defName>
 		<title>Moyo Contracted doctor</title>
 		<titleShort>Contracted doctor</titleShort>
-		<baseDesc>{PAWN_nameDef} became a doctor through specialized training. Realizing that working with the general public wouldn’t be profitable, {PAWN_pronoun} decided to enter into a contract with a wealthy patron from the bottom levels.</baseDesc>
+		<baseDesc>{PAWN_nameDef} became a doctor through specialized training. Realizing that working with the general public wouldn't be profitable, {PAWN_pronoun} decided to enter into a contract with a wealthy patron from the bottom levels.</baseDesc>
 		<skillGains>
 			<Melee>1</Melee>
 			<Construction>-2</Construction>
@@ -599,7 +599,7 @@
 		<defName>Moyo2_BuoyantTail</defName>
 		<title>Moyo Buoyant tail</title>
 		<titleShort>Buoyant tail</titleShort>
-		<baseDesc>{PAWN_nameDef} found a method for earning money that is both fast and effective. With just a reasonable level of self-management and social skills, it’s a simple job of just slightly lifting a tail to  {PAWN_possessive} customer. While some may criticize this approach, {PAWN_pronoun} is unbothered by their opinions. After all, while those critics can be fired at any time, {PAWN_possessive} clients show no signs of disappearing.</baseDesc>
+		<baseDesc>{PAWN_nameDef} found a method for earning money that is both fast and effective. With just a reasonable level of self-management and social skills, it's a simple job of just slightly lifting a tail to  {PAWN_possessive} customer. While some may criticize this approach, {PAWN_pronoun} is unbothered by their opinions. After all, while those critics can be fired at any time, {PAWN_possessive} clients show no signs of disappearing.</baseDesc>
 		<skillGains>
 			<Construction>-2</Construction>
 			<Mining>-2</Mining>

@@ -182,7 +182,7 @@
 		<defName>Moyo2_SyndicateBoss</defName>
 		<title>Moyo Syndicate boss</title>
 		<titleShort>Syndicate boss</titleShort>
-		<baseDesc>Despite being called an syndicate, {PAWN_nameDef}'s business is no different from any other companies. After all, a corporation is simply a bundle of illegal activities with just a few legal documents to cover them. {PAWN_nameDef} made a fortune mainly from the production and distribution of deepblue, and like other business colleagues, {PAWN_pronoun} was betrayed and forced out. Told you that there’s no difference at all between them.</baseDesc>
+		<baseDesc>Despite being called an syndicate, {PAWN_nameDef}'s business is no different from any other companies. After all, a corporation is simply a bundle of illegal activities with just a few legal documents to cover them. {PAWN_nameDef} made a fortune mainly from the production and distribution of deepblue, and like other business colleagues, {PAWN_pronoun} was betrayed and forced out. Told you that there's no difference at all between them.</baseDesc>
 		<skillGains>
 			<Shooting>6</Shooting>
 			<Melee>6</Melee>
@@ -271,7 +271,7 @@
 		<defName>Moyo2_MechanoidMaster</defName>
 		<title>Moyo Mechanoid master</title>
 		<titleShort>Mechanoid master</titleShort>
-		<baseDesc>There’s no denying that the most exceptional workers in the Lighthouse are the Mechanoids. Unlike biological workers, powerful and efficient Mechanoids don’t complain or show discontent. {PAWN_nameDef} owned a multitude of Mechanoids and rented them out for a substantial profit. However, for some unknown reason, the Mechanoids ceased to follow {PAWN_possessive} control, and soon {PAWN_pronoun} was left to face ruin.\n\n{PAWN_nameDef}  headed for the surface, believing that if {PAWN_pronoun} could only regain control over the ownerless Mechanoids on the surface, {PAWN_pronoun} might rise once more.</baseDesc>
+		<baseDesc>There's no denying that the most exceptional workers in the Lighthouse are the Mechanoids. Unlike biological workers, powerful and efficient Mechanoids don't complain or show discontent. {PAWN_nameDef} owned a multitude of Mechanoids and rented them out for a substantial profit. However, for some unknown reason, the Mechanoids ceased to follow {PAWN_possessive} control, and soon {PAWN_pronoun} was left to face ruin.\n\n{PAWN_nameDef}  headed for the surface, believing that if {PAWN_pronoun} could only regain control over the ownerless Mechanoids on the surface, {PAWN_pronoun} might rise once more.</baseDesc>
 		<skillGains>
 			<Mining>-2</Mining>
 			<Cooking>-2</Cooking>

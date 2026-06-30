@@ -44,7 +44,7 @@
 		<defName>Moyo2_HumbleCollector</defName>
 		<title>Moyo Humble collector</title>
 		<titleShort>Humble collector</titleShort>
-		<baseDesc>{PAWN_nameDef} has no interest in the lighthouse’s popular collection of colorful, expensive knives, famous Siren cards, or impossible-to-replicate holograms. Instead, {PAWN_pronoun} is creating {PAWN_possessive} own precious and modest collection. While it may be useless to most, {PAWN_pronoun} finds happiness in it.</baseDesc>
+		<baseDesc>{PAWN_nameDef} has no interest in the lighthouse's popular collection of colorful, expensive knives, famous Siren cards, or impossible-to-replicate holograms. Instead, {PAWN_pronoun} is creating {PAWN_possessive} own precious and modest collection. While it may be useless to most, {PAWN_pronoun} finds happiness in it.</baseDesc>
 		<skillGains>
 			<Cooking>-1</Cooking>
 			<Crafting>2</Crafting>
@@ -67,7 +67,7 @@
 		<defName>Moyo2_SmugglingCollaborator</defName>
 		<title>Moyo Smuggling collaborator</title>
 		<titleShort>Smuggling collaborator</titleShort>
-		<baseDesc>{PAWN_nameDef}’s innocent face and quick feet have saved {PAWN_possessive} in many situations. Feeling overconfident, {PAWN_nameDef} began collaborating with smugglers for a more thrilling experience. The risks were great, but the rewards and excitement were even greater, and {PAWN_pronoun} enjoyed it.</baseDesc>
+		<baseDesc>{PAWN_nameDef}'s innocent face and quick feet have saved {PAWN_possessive} in many situations. Feeling overconfident, {PAWN_nameDef} began collaborating with smugglers for a more thrilling experience. The risks were great, but the rewards and excitement were even greater, and {PAWN_pronoun} enjoyed it.</baseDesc>
 		<skillGains>
 			<Melee>1</Melee>
 		</skillGains>
@@ -137,7 +137,7 @@
 		<defName>Moyo2_SeaweedFarmer</defName>
 		<title>Moyo Seaweed farmer</title>
 		<titleShort>Seaweed farmer</titleShort>
-		<baseDesc>{PAWN_nameDef} cultivated various seaweeds, including Depthweeds. Although the nature of {PAWN_possessive} job was far from the grandeur of the lighthouse, there wasn’t much to worry about aside from occasional intruders damaging the seaweed forest. Perhaps it would have been better for {PAWN_possessive} to have stayed there.</baseDesc>
+		<baseDesc>{PAWN_nameDef} cultivated various seaweeds, including Depthweeds. Although the nature of {PAWN_possessive} job was far from the grandeur of the lighthouse, there wasn't much to worry about aside from occasional intruders damaging the seaweed forest. Perhaps it would have been better for {PAWN_possessive} to have stayed there.</baseDesc>
 		<skillGains>
 			<Construction>-3</Construction>
 			<Mining>-3</Mining>
@@ -227,7 +227,7 @@
 		<defName>Moyo2_Hunter</defName>
 		<title>Moyo Hunter</title>
 		<titleShort>Hunter</titleShort>
-		<baseDesc>Since ordinary fish won’t make much money, {PAWN_nameDef} hunted and captured rarer or more dangerous creatures. As {PAWN_possessive} business grew more famous, {PAWN_pronoun} began to expand the scope of {PAWN_possessive} hunts, driven by the taste of money.</baseDesc>
+		<baseDesc>Since ordinary fish won't make much money, {PAWN_nameDef} hunted and captured rarer or more dangerous creatures. As {PAWN_possessive} business grew more famous, {PAWN_pronoun} began to expand the scope of {PAWN_possessive} hunts, driven by the taste of money.</baseDesc>
 		<skillGains>
 			<Shooting>3</Shooting>
 			<Construction>-2</Construction>

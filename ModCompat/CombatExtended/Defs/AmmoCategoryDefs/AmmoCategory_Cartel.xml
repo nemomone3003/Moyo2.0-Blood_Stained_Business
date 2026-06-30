@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Moyo2_AmmoCategory_LaminarSpike</defName>
+        <label>Laminar spike</label>
+        <labelShort>Laminar spike</labelShort>
+        <description>Solid spikes of metal stabilized by a laminar field.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+</Defs>

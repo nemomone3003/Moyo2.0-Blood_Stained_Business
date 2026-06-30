@@ -9,6 +9,13 @@
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
+		<defName>Moyo2_Category_LaminarSpike</defName>
+		<label>Laminar Spike</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
 		<defName>Moyo2_Category_MetalPiles</defName>
 		<label>Steel piless</label>
 		<parent>AmmoAdvanced</parent>

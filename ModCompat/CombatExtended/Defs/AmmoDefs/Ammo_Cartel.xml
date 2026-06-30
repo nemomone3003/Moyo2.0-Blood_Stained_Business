@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CombatExtended.AmmoDef Name="Moyo2_LaminarSpikeBase" ParentName="SpacerAmmoBase" Abstract="True">
+        <description>Solid spikes for use in cartel laminar weapons.</description>
+        <statBases>
+            <Mass>0.025</Mass>
+            <Bulk>0.02</Bulk>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableTrade</li>
+            <li>CE_AutoEnableCrafting_FabricationBench</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Moyo2_Category_LaminarSpike</li>
+        </thingCategories>
+        <ammoClass>Moyo2_AmmoCategory_LaminarSpike</ammoClass>
+        <stackLimit>5000</stackLimit>
+    </CombatExtended.AmmoDef>
+
+    <!-- Used by cartel rifle, revolver, carbine and subrifle -->
+    <CombatExtended.AmmoDef ParentName="Moyo2_LaminarSpikeBase">
+        <defName>Moyo2_Ammo_LaminarSpike</defName>
+        <label>Laminar spike</label>
+        <graphicData>
+            <texPath>Things/Ammo/Charged/MediumMech</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.94</MarketValue>
+        </statBases>
+    </CombatExtended.AmmoDef>
+
+    <!-- Used by arbalest -->
+    <CombatExtended.AmmoDef ParentName="Moyo2_LaminarSpikeBase">
+        <defName>Moyo2_Ammo_HeavyLaminarSpike</defName>
+        <label>Heavy laminar spike</label>
+        <graphicData>
+            <texPath>Things/Ammo/Charged/MediumMech</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.94</MarketValue>
+        </statBases>
+        <stackLimit>3000</stackLimit>
+    </CombatExtended.AmmoDef>
+</Defs>

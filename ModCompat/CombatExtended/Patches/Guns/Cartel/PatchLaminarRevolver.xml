@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>Moyo2_CLMRRevolver</defName>
+        <statBases>
+            <Mass>3.92</Mass>
+            <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>0.89</SwayFactor>
+            <Bulk>6.76</Bulk>
+        </statBases>
+        <Properties>
+            <recoilAmount>1.69</recoilAmount>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Moyo2_Projectile_LaminarSpike</defaultProjectile>
+            <warmupTime>2.3</warmupTime>
+            <range>49</range>
+            <soundCast>Laminar_CRifle</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>3</muzzleFlashScale>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>6</magazineSize>
+            <reloadTime>1</reloadTime>
+            <ammoSet>Moyo2_AmmoSet_LaminarSpike</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>
+    </Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Moyo2_CLMRRevolver"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>stock</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>8</power>
+                    <cooldownTime>2</cooldownTime>
+                    <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>barrel</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>5</power>
+                    <cooldownTime>2.02</cooldownTime>
+                    <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CLMREdge"]/statBases</xpath>
+        <value>
+            <MeleeCounterParryBonus>1.42</MeleeCounterParryBonus>
+            <Bulk>4.62</Bulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CLMREdge"]</xpath>
+        <value>
+            <equippedStatOffsets/>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CLMREdge"]/equippedStatOffsets</xpath>
+        <value>
+            <MeleeCritChance>0.92</MeleeCritChance>
+            <MeleeParryChance>0.74</MeleeParryChance>
+            <MeleeDodgeChance>0.37</MeleeDodgeChance>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CLMREdge"]/tools</xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>handle</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>1.4</power>
+                    <cooldownTime>1.29</cooldownTime>
+                    <armorPenetrationSharp>0.01</armorPenetrationSharp>
+                    <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>blade</label>
+                    <capacities>
+                        <li>Cut</li>
+                    </capacities>
+                    <power>21</power>
+                    <cooldownTime>1.29</cooldownTime>
+                    <armorPenetrationBlunt>1.727</armorPenetrationBlunt>
+                    <armorPenetrationSharp>10.8</armorPenetrationSharp>
+                    <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>point</label>
+                    <capacities>
+                        <li>Stab</li>
+                    </capacities>
+                    <power>9.6</power>
+                    <cooldownTime>1.29</cooldownTime>
+                    <armorPenetrationBlunt>0.768</armorPenetrationBlunt>
+                    <armorPenetrationSharp>15</armorPenetrationSharp>
+                    <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+</Patch>

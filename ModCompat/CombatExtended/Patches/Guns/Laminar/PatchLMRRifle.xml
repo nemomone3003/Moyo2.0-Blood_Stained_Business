@@ -7,7 +7,7 @@
 			<Mass>6.50</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.1</SightsEfficiency>
-			<ShotSpread>0.02</ShotSpread>
+			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.37</SwayFactor>
 			<Bulk>8.76</Bulk>
 		</statBases>

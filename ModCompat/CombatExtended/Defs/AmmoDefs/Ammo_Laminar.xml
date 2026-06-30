@@ -15,6 +15,7 @@
 			<li>Moyo2_Category_LaminarSlug</li>
 		</thingCategories>
 		<stackLimit>5000</stackLimit>
+		<ammoClass>Moyo2_AmmoCategory_LaminarSlug</ammoClass>
 	</CombatExtended.AmmoDef>
 
 
@@ -29,7 +30,7 @@
 		<statBases>
 			<MarketValue>0.94</MarketValue>
 		</statBases>
-		<ammoClass>Moyo2_AmmoCategory_LaminarSlug</ammoClass>
+		
 	</CombatExtended.AmmoDef>
 
 	<!-- Used by LMR balista -->
@@ -43,7 +44,6 @@
 		<statBases>
 			<MarketValue>0.94</MarketValue>
 		</statBases>
-		<ammoClass>Moyo2_AmmoCategory_LaminarSlug</ammoClass>
 		<stackLimit>3000</stackLimit>
 	</CombatExtended.AmmoDef>
 

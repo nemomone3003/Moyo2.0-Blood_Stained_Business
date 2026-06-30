@@ -43,7 +43,7 @@
 		</weaponTags>
 	</Operation>
 
-	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+	<!-- <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Moyo2_LMRAutoCannonOver</defName>
 		<statBases>
 			<Mass>9.50</Mass>
@@ -83,7 +83,7 @@
 			<li>CE_MachineGun</li>
 			<li>CE_AI_LMG</li>
 		</weaponTags>
-	</Operation>
+	</Operation> -->
 
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="Moyo_LMRAutoCannon"]/tools</xpath>

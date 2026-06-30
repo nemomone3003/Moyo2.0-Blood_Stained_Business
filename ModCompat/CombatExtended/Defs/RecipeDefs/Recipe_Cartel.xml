@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeMoyo2_Ammo_LaminarSpike</defName>
+        <label>make laminar spike cartridge x500</label>
+        <description>Craft 500 laminar spike cartridges.</description>
+        <jobString>Making laminar spike cartridges.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Moyo2_Abyssteel</li>
+                    </thingDefs>
+                </filter>
+                <count>65</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Moyo2_Abyssteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Moyo2_Ammo_LaminarSpike>500</Moyo2_Ammo_LaminarSpike>
+        </products>
+        <workAmount>20000</workAmount>
+        <researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Moyo2_FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeMoyo2_Ammo_HeavyLaminarSpike</defName>
+        <label>make heavy laminar spike cartridge x300</label>
+        <description>Craft 300 heavy laminar spike cartridges.</description>
+        <jobString>Making heavy laminar spike cartridges.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Moyo2_Abyssteel</li>
+                    </thingDefs>
+                </filter>
+                <count>85</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Moyo2_Abyssteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Moyo2_Ammo_HeavyLaminarSpike>300</Moyo2_Ammo_HeavyLaminarSpike>
+        </products>
+        <workAmount>20000</workAmount>
+        <researchPrerequisite>Moyo2_Abysstech_LaminarTheory</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Moyo2_FabricationBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>

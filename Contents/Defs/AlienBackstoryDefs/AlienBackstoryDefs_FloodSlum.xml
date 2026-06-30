@@ -94,7 +94,7 @@
 		<defName>Moyo2_PettyTheif</defName>
 		<title>Moyo Petty theif</title>
 		<titleShort>Petty theif</titleShort>
-		<baseDesc>The flood slum is a place where you cannot survive without skills. That’s why {PAWN_nameDef} has honed their thieving abilities. After all, you need to have something in hand to eat or sell. Of course, knowing that being caught means having every drop of blood drained from their body, {PAWN_pronoun} had to be extremely meticulous.</baseDesc>
+		<baseDesc>The flood slum is a place where you cannot survive without skills. That's why {PAWN_nameDef} has honed their thieving abilities. After all, you need to have something in hand to eat or sell. Of course, knowing that being caught means having every drop of blood drained from their body, {PAWN_pronoun} had to be extremely meticulous.</baseDesc>
 		<skillGains>
 			<Shooting>2</Shooting>
 			<Melee>2</Melee>
@@ -215,7 +215,7 @@
 		<defName>Moyo2_QuackDoctor</defName>
 		<title>Moyo Quack doctor</title>
 		<titleShort>Quack doctor</titleShort>
-		<baseDesc>There is no illness that {PAWN_nameDef} cannot cure, be it cancer, mental illness, hair loss, or erectile dysfunction. There’s no way to verify if this claim is true or false. After all, anyone who goes to {PAWN_possessive} clinic in the flood slum is either already dead or doomed to die anyway.</baseDesc>
+		<baseDesc>There is no illness that {PAWN_nameDef} cannot cure, be it cancer, mental illness, hair loss, or erectile dysfunction. There's no way to verify if this claim is true or false. After all, anyone who goes to {PAWN_possessive} clinic in the flood slum is either already dead or doomed to die anyway.</baseDesc>
 		<skillGains>
 			<Shooting>-3</Shooting>
 			<Melee>2</Melee>
@@ -240,7 +240,7 @@
 		<defName>Moyo2_AmbitiousEntrepreneur</defName>
 		<title>Moyo Ambitious entrepreneur</title>
 		<titleShort>Ambitious entrepreneur</titleShort>
-		<baseDesc>You can’t enter the bottom levels, the middle levels are highly competitive, and the upper levels aren’t very profitable. So what about the flood slum? {PAWN_nameDef} once started their own small business there. There’s a reason it’s mentioned in the past tense.</baseDesc>
+		<baseDesc>You can't enter the bottom levels, the middle levels are highly competitive, and the upper levels aren't very profitable. So what about the flood slum? {PAWN_nameDef} once started their own small business there. There's a reason it's mentioned in the past tense.</baseDesc>
 		<skillGains>
 			<Shooting>-2</Shooting>
 			<Melee>-2</Melee>
@@ -285,7 +285,7 @@
 		<defName>Moyo2_OrphanageDirectorB</defName>
 		<title>Moyo Orphanage director</title>
 		<titleShort>Orphanage director</titleShort>
-		<baseDesc>Many Moyo flow into the flood slum, including many young children. {PAWN_nameDef} received support from a corporation to take care of these children. The children were kept safe from the flood slum, provided with education, and sent to the sponsor corporation for employment. What they would do there is unknown, but {PAWN_nameDef} received a generous performance bonus, so there’s no need to worry about it.</baseDesc>
+		<baseDesc>Many Moyo flow into the flood slum, including many young children. {PAWN_nameDef} received support from a corporation to take care of these children. The children were kept safe from the flood slum, provided with education, and sent to the sponsor corporation for employment. What they would do there is unknown, but {PAWN_nameDef} received a generous performance bonus, so there's no need to worry about it.</baseDesc>
 		<skillGains>
 			<Melee>2</Melee>
 			<Animals>5</Animals>
@@ -350,7 +350,7 @@
 		<defName>Moyo2_FloodCultLeader</defName>
 		<title>Moyo Floodcult leader</title>
 		<titleShort>Floodcult leader</titleShort>
-		<baseDesc>“To be submerged is a blessing!” {PAWN_pronoun} says. {PAWN_nameDef} led a religious group called the Cult of flooding within the flood slum. {PAWN_pronoun} claims that the Moyos were drawn to this place by the divine blessing of the water, and {PAWN_nameDef} argued that building a lighthouse instead of living in the water was rejecting the divine favor. By the way, the main ritual of the Flood Church was to throw a box filled with one’s possessions into the sea.</baseDesc>
+		<baseDesc>“To be submerged is a blessing!” {PAWN_pronoun} says. {PAWN_nameDef} led a religious group called the Cult of flooding within the flood slum. {PAWN_pronoun} claims that the Moyos were drawn to this place by the divine blessing of the water, and {PAWN_nameDef} argued that building a lighthouse instead of living in the water was rejecting the divine favor. By the way, the main ritual of the Flood Church was to throw a box filled with one's possessions into the sea.</baseDesc>
 		<skillGains>
 			<Intellectual>8</Intellectual>
 		</skillGains>

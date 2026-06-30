@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Used by cartel rifle, revolver, carbine and subrifle -->
+    <CombatExtended.AmmoSetDef>
+        <defName>Moyo2_AmmoSet_LaminarSpike</defName>
+        <label>Laminar spike</label>
+        <ammoTypes>
+            <Moyo2_Ammo_LaminarSpike>Moyo2_Projectile_LaminarSpike</Moyo2_Ammo_LaminarSpike>
+        </ammoTypes>
+        <similarTo>AmmoSet_ChargedRifle</similarTo>
+    </CombatExtended.AmmoSetDef>
+
+    <!-- Used by arbalest -->
+    <CombatExtended.AmmoSetDef>
+        <defName>Moyo2_AmmoSet_HeavyLaminarSpike</defName>
+        <label>Heavy laminar spike</label>
+        <ammoTypes>
+            <Moyo2_Ammo_HeavyLaminarSpike>Moyo2_Projectile_HeavyLaminarSpike</Moyo2_Ammo_HeavyLaminarSpike>
+        </ammoTypes>
+        <similarTo>AmmoSet_ChargedRifle</similarTo>
+    </CombatExtended.AmmoSetDef>
+
+</Defs>
