@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>CartelFactionNamer</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>CartelFactionFirst->Name/Cartel/Cartel_Faction_First</li>
+				<li>CartelFactionSecond->Name/Cartel/Cartel_Faction_First</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->[CartelFactionFirst] [CartelFactionSecond]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- <RulePackDef> -->
+		<!-- <defName>CartelSettlementNamer</defName> -->
+		<!-- <rulePack> -->
+			<!-- <rulesFiles> -->
+			<!-- </rulesFiles> -->
+			<!-- <rulesStrings> -->
+			<!-- </rulesStrings> -->
+		<!-- </rulePack> -->
+	<!-- </RulePackDef> -->
+</Defs>

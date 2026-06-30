@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!--Original=nautilios-->
-  <Moyo2_RefugeeCulture.label>노틸리오스</Moyo2_RefugeeCulture.label>
-  <!--Original=Cultures of the refugees who seek haven on the surface.-->
-  <Moyo2_RefugeeCulture.description>지상으로 올라온 등대 피난민들의 문화입니다.</Moyo2_RefugeeCulture.description>
+	<!--Original=nautilios-->
+	<Moyo2_RefugeeCulture.label>노틸리오스</Moyo2_RefugeeCulture.label>
+	<!--Original=Cultures of the refugees who seek haven on the surface.-->
+	<Moyo2_RefugeeCulture.description>지상으로 올라온 등대 피난민들의 문화입니다.</Moyo2_RefugeeCulture.description>
+	<!--English=corpolios-->
+	<Moyo2_CartelCulture.label>코폴리오스</Moyo2_CartelCulture.label>
+	<!--English=Cultures of the cartel expanding operations on the surface.-->
+	<Moyo2_CartelCulture.description>지상에서의 사업을 확장중인 카르텔의 문화입니다.</Moyo2_CartelCulture.description>
 </LanguageData>

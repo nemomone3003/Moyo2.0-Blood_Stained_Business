@@ -12,4 +12,10 @@
   <Moyo_TakeFish.verb>수확</Moyo_TakeFish.verb>
   <!--Original=collecting from-->
   <Moyo_TakeFish.gerund>수확하는 중</Moyo_TakeFish.gerund>
+<!--English=draw blood-->
+<Moyo2_ExtractDeepBlue_Work.label>딥블루 추출</Moyo2_ExtractDeepBlue_Work.label>
+<!--English=drawing blood-->
+<Moyo2_ExtractDeepBlue_Work.gerund>딥블루 추출</Moyo2_ExtractDeepBlue_Work.gerund>
+<!--English=draw blood-->
+<Moyo2_ExtractDeepBlue_Work.verb>딥블루 추출중</Moyo2_ExtractDeepBlue_Work.verb>  
 </LanguageData>

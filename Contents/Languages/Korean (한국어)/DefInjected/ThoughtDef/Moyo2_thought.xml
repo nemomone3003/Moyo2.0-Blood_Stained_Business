@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+	<!--English=ingested blue bloodbag-->
+	<IngestedBlueBloodBag.stages.ingested_blue_bloodbag.label>푸른 혈액팩 섭취</IngestedBlueBloodBag.stages.ingested_blue_bloodbag.label>
+	<!--English=I ingested a bloodbag. It might keep me alive, but it was absolutely disgusting.-->
+	<IngestedBlueBloodBag.stages.ingested_blue_bloodbag.description>혈액팩을 먹었어. 그것이 나를 살릴 수도 있겠지만 정말 역겨운 일이었어.</IngestedBlueBloodBag.stages.ingested_blue_bloodbag.description>
 	<!-- 딥블루 부착물 -->
 	<Thought_Moyo2_DeepBlueExtracter_Crude.stages.uncomfortable_attachment.label>불편한 이식물</Thought_Moyo2_DeepBlueExtracter_Crude.stages.uncomfortable_attachment.label>
 	<Thought_Moyo2_DeepBlueExtracter_Crude.stages.uncomfortable_attachment.description>내 피가 얼마나 가치 있는지는 알겠는데, 이렇게까지 해야할 필요가 있어?</Thought_Moyo2_DeepBlueExtracter_Crude.stages.uncomfortable_attachment.description>

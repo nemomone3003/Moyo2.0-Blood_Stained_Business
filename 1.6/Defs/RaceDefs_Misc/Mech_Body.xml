@@ -96,7 +96,7 @@
 							<coverage>0.85</coverage>
 							<height>Bottom</height>
 							<groups>
-								<li>Tentacle1</li>
+								<li>Moyo2_Tentacles</li>
 							</groups>
 						</li>
 					</parts>
@@ -113,7 +113,7 @@
 							<coverage>0.85</coverage>
 							<height>Bottom</height>
 							<groups>
-								<li>Tentacle2</li>
+								<li>Moyo2_Tentacles</li>
 							</groups>
 						</li>
 					</parts>
@@ -130,7 +130,7 @@
 							<coverage>0.85</coverage>
 							<height>Bottom</height>
 							<groups>
-								<li>Tentacle3</li>
+								<li>Moyo2_Tentacles</li>
 							</groups>
 						</li>
 					</parts>
@@ -147,7 +147,7 @@
 							<coverage>0.85</coverage>
 							<height>Bottom</height>
 							<groups>
-								<li>Tentacle4</li>
+								<li>Moyo2_Tentacles</li>
 							</groups>
 						</li>
 					</parts>
@@ -164,7 +164,7 @@
 							<coverage>0.85</coverage>
 							<height>Bottom</height>
 							<groups>
-								<li>Tentacle5</li>
+								<li>Moyo2_Tentacles</li>
 							</groups>
 						</li>
 					</parts>
@@ -181,7 +181,7 @@
 							<coverage>0.85</coverage>
 							<height>Bottom</height>
 							<groups>
-								<li>Tentacle6</li>
+								<li>Moyo2_Tentacles</li>
 							</groups>
 						</li>
 					</parts>
@@ -276,13 +276,13 @@
 				</li>
 				<li>
 					<def>Moyo2_Spheripod_Leg</def>
-					<customLabel>front left leg</customLabel>
+					<customLabel>back left leg</customLabel>
 					<coverage>0.025</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
 					<def>Moyo2_Spheripod_Leg</def>
-					<customLabel>front right leg</customLabel>
+					<customLabel>back right leg</customLabel>
 					<coverage>0.025</coverage>
 					<height>Bottom</height>
 				</li>

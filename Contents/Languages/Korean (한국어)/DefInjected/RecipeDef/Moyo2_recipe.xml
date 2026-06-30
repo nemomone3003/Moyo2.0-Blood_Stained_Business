@@ -142,16 +142,37 @@
 	<Moyo2_Butcher_FleshMassHeart.label>장기 추출(심장).</Moyo2_Butcher_FleshMassHeart.label>
 	<Moyo2_Butcher_FleshMassHeart.description>모요 배양체에서 심장을 추출합니다.</Moyo2_Butcher_FleshMassHeart.description>
 	<Moyo2_Butcher_FleshMassHeart.jobString>모요 배양체에서 심장 추출중.</Moyo2_Butcher_FleshMassHeart.jobString>
-	
 	<Moyo2_Butcher_FleshMassKidney.label>장기 추출(신장).</Moyo2_Butcher_FleshMassKidney.label>
 	<Moyo2_Butcher_FleshMassKidney.jobString>모요 배양체에서 신장을 추출합니다.</Moyo2_Butcher_FleshMassKidney.jobString>
 	<Moyo2_Butcher_FleshMassKidney.description>모요 배양체에서 신장 추출중.</Moyo2_Butcher_FleshMassKidney.description>
-	
 	<Moyo2_Butcher_FleshMassLung.label>장기 추출(폐).</Moyo2_Butcher_FleshMassLung.label>
 	<Moyo2_Butcher_FleshMassLung.jobString>모요 배양체에서 폐를 추출합니다.</Moyo2_Butcher_FleshMassLung.jobString>
 	<Moyo2_Butcher_FleshMassLung.description>모요 배양체에서 폐 추출중.</Moyo2_Butcher_FleshMassLung.description>
-	
 	<Moyo2_Butcher_FleshMassLiver.label>장기 추출(간).</Moyo2_Butcher_FleshMassLiver.label>
 	<Moyo2_Butcher_FleshMassLiver.jobString>모요 배양체에서 간을 추출합니다.</Moyo2_Butcher_FleshMassLiver.jobString>
 	<Moyo2_Butcher_FleshMassLiver.description>모요 배양체에서 간 추출중.</Moyo2_Butcher_FleshMassLiver.description>
+	<!--English=make balistic gel pack-->
+	<Moyo2_Make_BGelPack.label>방탄젤 팩 제작</Moyo2_Make_BGelPack.label>
+	<!--English=Make balistic gel pack.-->
+	<Moyo2_Make_BGelPack.description>방탄젤 팩을 제작합니다.</Moyo2_Make_BGelPack.description>
+	<!--English=Making balistic gel pack.-->
+	<Moyo2_Make_BGelPack.jobString>방탄젤 팩 제작 중.</Moyo2_Make_BGelPack.jobString>
+	<!--English=make balistic gel pack X4-->
+	<Moyo2_Make_BGelPackBulk.label>방탄젤 팩 제작 X4</Moyo2_Make_BGelPackBulk.label>
+	<!--English=Bulk make balistic gel pack.-->
+	<Moyo2_Make_BGelPackBulk.description>대량의 방탄젤 팩을 제작합니다.</Moyo2_Make_BGelPackBulk.description>
+	<!--English=Bulk making balistic gel pack.-->
+	<Moyo2_Make_BGelPackBulk.jobString>대량의 방탄젤 팩을 제작 중.</Moyo2_Make_BGelPackBulk.jobString>
+	<!--English=make component-->
+	<Moyo2_Make_ComponentIndustrialA.label>부품 제작</Moyo2_Make_ComponentIndustrialA.label>
+	<!--English=Make a component.-->
+	<Moyo2_Make_ComponentIndustrialA.description>부품을 제작합니다.</Moyo2_Make_ComponentIndustrialA.description>
+	<!--English=Making component.-->
+	<Moyo2_Make_ComponentIndustrialA.jobString>부품 제작 중.</Moyo2_Make_ComponentIndustrialA.jobString>
+	<!--English=make advanced component-->
+	<Moyo2_Make_ComponentSpacer.label>고급 부품 제작</Moyo2_Make_ComponentSpacer.label>
+	<!--English=Make an advanced component.-->
+	<Moyo2_Make_ComponentSpacer.description>고급 부품을 제작합니다.</Moyo2_Make_ComponentSpacer.description>
+	<!--English=Making advanced component.-->
+	<Moyo2_Make_ComponentSpacer.jobString>고급 부품 제작 중.</Moyo2_Make_ComponentSpacer.jobString>
 </LanguageData>
