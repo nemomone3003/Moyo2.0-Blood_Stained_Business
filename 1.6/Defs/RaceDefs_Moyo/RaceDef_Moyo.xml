@@ -380,10 +380,14 @@
 								<Gene For="Moyo2_Skin_Chemskin">
 									<path>Moyo/Body_Chemskin/ChemskinTail</path>
 									<extendedGraphics>
+										<Body For="Female">Moyo/Body_Chemskin/ChemskinTail</Body>
+										<Body For="Thin">Moyo/Body_Chemskin/ChemskinTail</Body>
 										<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/ChemskinTailChild</Body>
 										<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body_Chemskin/ChemskinTailChild</Body>
 									</extendedGraphics>
 								</Gene>
+								<Body For="Female">Moyo/Body/MoyoTail</Body>
+								<Body For="Thin">Moyo/Body/MoyoTail</Body>
 								<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailChild</Body>
 								<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailChild</Body>
 							</extendedGraphics>
@@ -416,6 +420,8 @@
 								<Gene For="Moyo2_Glow_Purple">
 									<path>Moyo/Body/MoyoTailGlowA</path>
 									<extendedGraphics>
+										<Body For="Female">Moyo/Body/MoyoTailGlowA</Body>
+										<Body For="Thin">Moyo/Body/MoyoTailGlowA</Body>
 										<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildA</Body>
 										<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildA</Body>
 									</extendedGraphics>
@@ -423,10 +429,14 @@
 								<Gene For="Moyo2_Glow_Violet">
 									<path>Moyo/Body/MoyoTailGlowB</path>
 									<extendedGraphics>
+										<Body For="Female">Moyo/Body/MoyoTailGlowB</Body>
+										<Body For="Thin">Moyo/Body/MoyoTailGlowB</Body>
 										<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildB</Body>
 										<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChildB</Body>
 									</extendedGraphics>
 								</Gene>
+								<Body For="Female">Moyo/Body/MoyoTailGlow</Body>
+								<Body For="Thin">Moyo/Body/MoyoTailGlow</Body>
 								<Body For="Child" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChild</Body>
 								<Body For="Baby" MayRequire="ludeon.rimworld.biotech">Moyo/Body/MoyoTailGlowChild</Body>
 							</extendedGraphics>
@@ -478,6 +488,7 @@
 							<!-- - -->
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
+								<Gene For="Moyo2_Glow_Blue">Moyo/Head/MoyoAtennaGlow_Left</Gene>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlow1_Left</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlow2_Left</Gene>
 							</extendedGraphics>
@@ -533,6 +544,7 @@
 							<!-- - -->
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
+								<Gene For="Moyo2_Glow_Blue">Moyo/Head/MoyoAtennaGlow_Right</Gene>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlow1_Right</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlow2_Right</Gene>
 							</extendedGraphics>
@@ -572,6 +584,7 @@
 							<!-- - -->
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
+								<Gene For="Moyo2_Glow_Blue">Moyo/Head/MoyoHeadGlow</Gene>
 								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoHeadGlow1</Gene>
 								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoHeadGlow2</Gene>
 							</extendedGraphics>
@@ -754,7 +767,13 @@
 								</east>
 							</offsets>
 							<extendedGraphics>
-								<Gene For="Moyo2_Skin_Chemskin">Moyo/Head/ChemHead</Gene>
+								<Gene For="Moyo2_Skin_Chemskin">
+									<path>Moyo/Head/ChemHead</path>
+									<extendedGraphics>
+										<Hediff For="Moyo2_CCCSuitHediff">Moyo/Head/ChemHeadRage</Hediff>
+									</extendedGraphics>
+								</Gene>
+								<Hediff For="Moyo2_CCCSuitHediff">Moyo/Head/MoyoHeadRage</Hediff>
 							</extendedGraphics>
 							<!-- - -->
 							<inFrontOfBody>true</inFrontOfBody>
@@ -892,8 +911,11 @@
 				<apparelList>
 					<li>Moyo2_BasicSuit</li>
 					<li>Moyo2_AdvancedSuit</li>
+					<li>Moyo2_AdvancedSuit_Cartel</li>
 					<li>Moyo2_RoyalSuit</li>
+					<li>Moyo2_RoyalSuit_Cartel</li>
 					<li>Moyo2_HoloSuit</li>
+					<li>Moyo2_HoloSuit_Cartel</li>
 					<li>Moyo2_EGHarness</li>
 					<li>Moyo2_EGJacket</li>
 					<li>Moyo2_EGHelmet</li>
@@ -905,9 +927,10 @@
 					<li>Moyo2_CartelHood</li>
 					<li>Moyo2_CBsuit</li>
 					<li>Moyo2_CBhelmet</li>
+					<li>Moyo2_CSShell</li>
+					<li>Moyo2_CSHelmet</li>
 					<li>Moyo2_CCCShell</li>
 					<li>Moyo2_CCCHelmet</li>
-					<li>Moyo2_Childclothes_A</li>
 				</apparelList>
 				<blackEndoCategories>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>

@@ -1,8 +1,0 @@
-<!--English=blueburst booster-->
-<DBBooster_Blueburst.label></DBBooster_Blueburst.label>
-<!--English=A medical drug offering advantages of rapid injection and swift onset of effects. Designed as a catalyst for more potent drugs, it has a potential to be mixed with other drugs, creating more potent effect. But injected alone, it overloads cardiovascular system of the victim, potentially causing cardiac arrest. So don't.\n\nTheCompanyDoesNotHoldAnyResponsibilitiesWheneverThisProductIsUsedOutsideOfItsIntendedPurpose.-->
-<DBBooster_Blueburst.description></DBBooster_Blueburst.description>
-<!--English=Inject {0}-->
-<DBBooster_Blueburst.ingestible.ingestCommandString></DBBooster_Blueburst.ingestible.ingestCommandString>
-<!--English=Injecting {0}.-->
-<DBBooster_Blueburst.ingestible.ingestReportString></DBBooster_Blueburst.ingestible.ingestReportString>

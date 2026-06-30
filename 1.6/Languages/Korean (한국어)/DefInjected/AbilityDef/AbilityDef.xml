@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!--English=Scari-abyss-->
+	<Moyo2_CCCSuitAbility.label>스카리-어비스</Moyo2_CCCSuitAbility.label>
+	<!--English=Inject Scari-abyss.-->
+	<Moyo2_CCCSuitAbility.description>스카리-어비스를 주입합니다.</Moyo2_CCCSuitAbility.description>
+	<!--English=wrench throw-->
+	<Moyo2_WrenchThrow.label>렌치 투척</Moyo2_WrenchThrow.label>
+	<!--English=Throw a wrench at your target. That should hurt.-->
+	<Moyo2_WrenchThrow.description>표적에게 렌치를 던집니다. 꽤나 아플겁니다.</Moyo2_WrenchThrow.description>
+</LanguageData>

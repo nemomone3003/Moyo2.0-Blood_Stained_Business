@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--English=gestate hexapod-->
+<Moyo2_HexapodRecipe.label>헥사포드 배양.</Moyo2_HexapodRecipe.label>
+<!--English=Gestate a hexapod.-->
+<Moyo2_HexapodRecipe.description>헥사포드를 배양합니다.</Moyo2_HexapodRecipe.description>
+<!--English=Gestating mech.-->
+<Moyo2_HexapodRecipe.jobString>헥사포드 배양중.</Moyo2_HexapodRecipe.jobString>
+<!--English=gestate spheripod-->
+<Moyo2_SpheripodRecipe.label>스페리포드 배양.</Moyo2_SpheripodRecipe.label>
+<!--English=Gestate a spheripod.-->
+<Moyo2_SpheripodRecipe.description>스페리포드를 배양합니다.</Moyo2_SpheripodRecipe.description>
+<!--English=Gestating mech.-->
+<Moyo2_SpheripodRecipe.jobString>스페리포드 배양중.</Moyo2_SpheripodRecipe.jobString>
+</LanguageData>

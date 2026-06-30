@@ -329,7 +329,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CSShell</defName>
 		<label>Cartel striker shell</label>
-		<description>Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.</description>
+		<description>The standard-issue armor of the Cartel Strike Teams, the Cartel's elite combat units. Designed to support the Cartel's preferred strategy of guerrilla warfare, this lightweight armor prioritizes mobility and flexibility. Its compact profile, especially when compared to the bulky diving suits commonly used throughout the Lighthouse, allows operators to equip additional gear externally.\n\nThe origins of the Cartel remain unknown. The group now known as the Cartel was first recorded when personnel wearing this armor carried out a series of sabotage operations against facilities belonging to the Council. Viewing their level of armament and organizational discipline as a significant threat, the Council immediately mobilized forces to suppress them.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorLMR/CSSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -343,9 +343,9 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>7</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
 			<Insulation_Cold>46</Insulation_Cold>
 			<Insulation_Heat>14</Insulation_Heat>
 			<EquipDelay>16</EquipDelay>
@@ -378,7 +378,6 @@
 			</renderSkipFlags>-->
 			<layers>
 				<li>Middle</li>
-				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>Moyo2_CCC</li>
@@ -428,7 +427,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CSHelmet</defName>
 		<label>Cartel striker helmet</label>
-		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
+		<description>he standard-issue helmet of the Cartel Strike Teams, the Cartel's elite combat units. Designed to support the Cartel's preferred strategy of guerrilla warfare, this lightweight armor prioritizes mobility and flexibility.\n\nThe Strike Teams, the Cartel's elite operatives, work from the shadows of the Lighthouse to advance the organization's interests. Although the Council has made considerable efforts to capture them alive, these attempts have been repeatedly frustrated by the Cartel's extreme secrecy measures and strict operational security.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorLMR/CSHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

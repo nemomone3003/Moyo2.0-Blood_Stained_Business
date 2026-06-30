@@ -58,8 +58,8 @@
 	<!--펭귄 -->
 	<ThingDef ParentName="Moyo2_Childclothes">
 		<defName>Moyo2_Childclothes_A</defName>
-		<label>hooded black cloak</label>
-		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
+		<label>moyo child suit(Penguin)</label>
+		<description>A line of doll-like outfits designed for young Moyo. Modeled after a variety of marine creatures, these adorable garments are packed with features to help keep children safe. They provide ample protection against tumbles and rough play, and even include a temperature regulation system to maintain a comfortable internal climate at all times.\n\nFor any well-off parent in the Lighthouse, this is a gift every child deserves. Your little ones are sure to love it. Buy one and see for yourself!</description>
 		<graphicData>
 			<texPath>Apparel/Misc/MoyoChildSuit1</texPath>
 		</graphicData>
@@ -99,8 +99,8 @@
 	<!--상어 -->
 	<ThingDef ParentName="Moyo2_Childclothes">
 		<defName>Moyo2_Childclothes_B</defName>
-		<label>hooded black cloak</label>
-		<description>A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.</description>
+		<label>moyo child suit(Shark)</label>
+		<description>A line of doll-like outfits designed for young Moyo. Modeled after a variety of marine creatures, these adorable garments are packed with features to help keep children safe. They provide ample protection against tumbles and rough play, and even include a temperature regulation system to maintain a comfortable internal climate at all times.\n\nFor any well-off parent in the Lighthouse, this is a gift every child deserves. Your little ones are sure to love it. Buy one and see for yourself!</description>
 		<graphicData>
 			<texPath>Apparel/Misc/MoyoChildSuitA1</texPath>
 		</graphicData>

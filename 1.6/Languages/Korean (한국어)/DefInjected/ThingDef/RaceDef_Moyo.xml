@@ -2,4 +2,24 @@
 <LanguageData>
 	<!--English=This linkable has to be built over its designated building-->
 	<Alien_Moyo.label>모요</Alien_Moyo.label>
+	<!--English=tail glow-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.name>tail glow</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.name>
+	<!--English=left antennae-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.2.conditions.0.bodyPartLabel>left antennae</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.2.conditions.0.bodyPartLabel>
+	<!--English=left antennae-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.conditions.0.bodyPartLabel>left antennae</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.conditions.0.bodyPartLabel>
+	<!--English=antennae glow(left)-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.name>antennae glow(left)</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.name>
+	<!--English=right antennae-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.conditions.0.bodyPartLabel>right antennae-</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.conditions.0.bodyPartLabel>
+	<!--English=right antennae-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.conditions.0.bodyPartLabel>right antennae-</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.conditions.0.bodyPartLabel>
+	<!--English=antennae glow(right)-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.name>antennae glow(right)</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.name>
+	<!--English=head glow-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.6.name>head glow</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.6.name>
+	<!--English=body glow-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.7.name>body glow</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.7.name>
+	<!--English=back hair-->
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.9.name>back hair</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.9.name>
 </LanguageData>

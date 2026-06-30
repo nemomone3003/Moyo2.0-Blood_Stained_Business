@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!--Original=filling TargetA.-->
-  <Moyo_GrowFish.reportString>TargetA를 채우는 중.</Moyo_GrowFish.reportString>
-  <!--Original=emptying out fish tank.-->
-  <Moyo_EmptyFishTank.reportString>수조 비우는 중.</Moyo_EmptyFishTank.reportString>
+	<!--Original=filling TargetA.-->
+	<Moyo_GrowFish.reportString>TargetA를 채우는 중.</Moyo_GrowFish.reportString>
+	<!--Original=emptying out fish tank.-->
+	<Moyo_EmptyFishTank.reportString>수조 비우는 중.</Moyo_EmptyFishTank.reportString>
+	<!--English=extracting Deep blue from TargetA.-->
+	<Moyo2_ExtractDeepBlue_Job.reportString>TargetA로부터 딥블루를 추출하는 중.</Moyo2_ExtractDeepBlue_Job.reportString>
+	<!--English=installing TargetA.-->
+	<Moyo2_InstallExtractor.reportString>TargetA에게 딥블루 추출기를 설치하는 중.</Moyo2_InstallExtractor.reportString>
+	<!--English=reloading armor with TargetA.-->
+	<Moyo2_ReloadArmor.reportString>방어구를 TargetA로 충전하는 중.</Moyo2_ReloadArmor.reportString>
 </LanguageData>

@@ -1,34 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<!--Original=fish-->
-	<!-- <Moyo2_FishBody.label>물고기</Moyo2_FishBody.label> -->
-	<!-- <Moyo2_FishBody.corePart.parts.2.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.2.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.3.customLabel>등지느러미</Moyo2_FishBody.corePart.parts.3.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.4.customLabel>꼬리</Moyo2_FishBody.corePart.parts.4.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.7.customLabel>왼쪽 폐</Moyo2_FishBody.corePart.parts.7.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.8.customLabel>오른쪽 폐</Moyo2_FishBody.corePart.parts.8.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.11.customLabel>왼쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.11.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.12.customLabel>오른쪽 가슴지느러미</Moyo2_FishBody.corePart.parts.12.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.13.customLabel>왼쪽 배지느러미</Moyo2_FishBody.corePart.parts.13.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.14.customLabel>오른쪽 배지느러미</Moyo2_FishBody.corePart.parts.14.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.4.parts.0.customLabel>꼬리지느러미</Moyo2_FishBody.corePart.parts.4.parts.0.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel>왼눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.1.customLabel> -->
-	<!-- <Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel>오른눈</Moyo2_FishBody.corePart.parts.10.parts.0.parts.2.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.label>두족류</Moyo2_CephalopodBody.label> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.0.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.0.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.1.customLabel>촉수 뿌리</Moyo2_CephalopodBody.corePart.parts.1.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.4.customLabel>왼쪽 폐</Moyo2_CephalopodBody.corePart.parts.4.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.5.customLabel>오른쪽 폐</Moyo2_CephalopodBody.corePart.parts.5.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.8.customLabel>왼쪽 eye</Moyo2_CephalopodBody.corePart.parts.8.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.9.customLabel>오른쪽 eye</Moyo2_CephalopodBody.corePart.parts.9.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.0.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.1.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.2.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.0.parts.3.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.0.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.1.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.2.customLabel> -->
-	<!-- <Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel>촉수</Moyo2_CephalopodBody.corePart.parts.1.parts.3.customLabel> -->
+	<!-- 스페리포드 -->
+	<!--English=spheripod-->
+	<Moyo2_Spheripod.label>스페리포드</Moyo2_Spheripod.label>
+	<!--English=sight sensor-->
+	<Moyo2_Spheripod.corePart.parts.sight_sensor.customLabel>시각 센서</Moyo2_Spheripod.corePart.parts.sight_sensor.customLabel>
+	<!--English=hearing sensor-->
+	<Moyo2_Spheripod.corePart.parts.hearing_sensor.customLabel>청각 센서</Moyo2_Spheripod.corePart.parts.hearing_sensor.customLabel>
+	<!--English=right arm joint-->
+	<Moyo2_Spheripod.corePart.parts.right_arm_joint.customLabel>오른팔 연결부</Moyo2_Spheripod.corePart.parts.right_arm_joint.customLabel>
+	<!--English=right arm-->
+	<Moyo2_Spheripod.corePart.parts.right_arm_joint.parts.right_arm.customLabel>오른팔</Moyo2_Spheripod.corePart.parts.right_arm_joint.parts.right_arm.customLabel>
+	<!--English=left arm joint-->
+	<Moyo2_Spheripod.corePart.parts.left_arm_joint.customLabel>왼팔 연결부</Moyo2_Spheripod.corePart.parts.left_arm_joint.customLabel>
+	<!--English=left arm-->
+	<Moyo2_Spheripod.corePart.parts.left_arm_joint.parts.left_arm.customLabel>왼팔</Moyo2_Spheripod.corePart.parts.left_arm_joint.parts.left_arm.customLabel>
+	<!--English=front left leg-->
+	<Moyo2_Spheripod.corePart.parts.front_left_leg-0.customLabel>왼쪽 앞다리</Moyo2_Spheripod.corePart.parts.front_left_leg-0.customLabel>
+	<!--English=front right leg-->
+	<Moyo2_Spheripod.corePart.parts.front_right_leg-0.customLabel>오른쪽 앞다리</Moyo2_Spheripod.corePart.parts.front_right_leg-0.customLabel>
+	<!--English=front left leg-->
+	<Moyo2_Spheripod.corePart.parts.front_left_leg-1.customLabel>왼쪽 뒷다리</Moyo2_Spheripod.corePart.parts.front_left_leg-1.customLabel>
+	<!--English=front right leg-->
+	<Moyo2_Spheripod.corePart.parts.front_right_leg-1.customLabel>오른쪽 뒷다리</Moyo2_Spheripod.corePart.parts.front_right_leg-1.customLabel>
+	<!-- 헥사포드 -->
+	<!--English=first tentacle joint-->
+	<Moyo2_Hexapod.corePart.parts.first_tentacle_joint.customLabel>1번 촉수 연결부</Moyo2_Hexapod.corePart.parts.first_tentacle_joint.customLabel>
+	<!--English=first tentacle-->
+	<Moyo2_Hexapod.corePart.parts.first_tentacle_joint.parts.first_tentacle.customLabel>1번 촉수</Moyo2_Hexapod.corePart.parts.first_tentacle_joint.parts.first_tentacle.customLabel>
+	<!--English=second tentacle joint-->
+	<Moyo2_Hexapod.corePart.parts.second_tentacle_joint.customLabel>2번 촉수 연결부</Moyo2_Hexapod.corePart.parts.second_tentacle_joint.customLabel>
+	<!--English=second tentacle-->
+	<Moyo2_Hexapod.corePart.parts.second_tentacle_joint.parts.second_tentacle.customLabel>2번 촉수</Moyo2_Hexapod.corePart.parts.second_tentacle_joint.parts.second_tentacle.customLabel>
+	<!--English=third tentacle joint-->
+	<Moyo2_Hexapod.corePart.parts.third_tentacle_joint.customLabel>3번 촉수 연결부</Moyo2_Hexapod.corePart.parts.third_tentacle_joint.customLabel>
+	<!--English=third tentacle-->
+	<Moyo2_Hexapod.corePart.parts.third_tentacle_joint.parts.third_tentacle.customLabel>3번 촉수</Moyo2_Hexapod.corePart.parts.third_tentacle_joint.parts.third_tentacle.customLabel>
+	<!--English=fourth tentacle joint-->
+	<Moyo2_Hexapod.corePart.parts.fourth_tentacle_joint.customLabel>4번 촉수 연결부</Moyo2_Hexapod.corePart.parts.fourth_tentacle_joint.customLabel>
+	<!--English=fourth tentacle-->
+	<Moyo2_Hexapod.corePart.parts.fourth_tentacle_joint.parts.fourth_tentacle.customLabel>4번 촉수</Moyo2_Hexapod.corePart.parts.fourth_tentacle_joint.parts.fourth_tentacle.customLabel>
+	<!--English=fifth tentacle joint-->
+	<Moyo2_Hexapod.corePart.parts.fifth_tentacle_joint.customLabel>5번 촉수 연결부</Moyo2_Hexapod.corePart.parts.fifth_tentacle_joint.customLabel>
+	<!--English=fifth tentacle-->
+	<Moyo2_Hexapod.corePart.parts.fifth_tentacle_joint.parts.fifth_tentacle.customLabel>5번 촉수</Moyo2_Hexapod.corePart.parts.fifth_tentacle_joint.parts.fifth_tentacle.customLabel>
+	<!--English=sixth tentacle joint-->
+	<Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.customLabel>6번 촉수 연결부</Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.customLabel>
+	<!--English=sixth tentacle-->
+	<Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.parts.sixth_tentacle.customLabel>6번 촉수</Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.parts.sixth_tentacle.customLabel>
 	<!-- 모요 -->
 	<Moyo2_MoyoBody.label>모요</Moyo2_MoyoBody.label>
 	<Moyo2_MoyoBody.corePart.parts.4.customLabel>꼬리</Moyo2_MoyoBody.corePart.parts.4.customLabel>

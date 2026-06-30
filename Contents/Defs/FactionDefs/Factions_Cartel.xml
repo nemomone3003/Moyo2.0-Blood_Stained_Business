@@ -89,7 +89,7 @@
 			<li>
 				<!--기본 무장요원 습격 -->
 				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
+				<commonality>40</commonality>
 				<options>
 					<Moyo2_NPCCartelArmOpsInfantry>10</Moyo2_NPCCartelArmOpsInfantry>
 					<Moyo2_NPCCartelArmOpsEnforcer>5</Moyo2_NPCCartelArmOpsEnforcer>
@@ -99,18 +99,62 @@
 			<li>
 				<!--엘리트 무장요원 습격 -->
 				<kindDef>Combat</kindDef>
-				<commonality>5</commonality>
+				<commonality>10</commonality>
 				<options>
 					<Moyo2_NPCCartelArmOpsElite>2</Moyo2_NPCCartelArmOpsElite>
 				</options>
-			</li>		
+			</li>
+			<li>
+				<!--요원 타격대 혼합 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Moyo2_NPCCartelArmOpsElite>10</Moyo2_NPCCartelArmOpsElite>
+					<Moyo2_NPCCartelStrikerScout>20</Moyo2_NPCCartelStrikerScout>
+					<Moyo2_NPCCartelStrikerSniper>2</Moyo2_NPCCartelStrikerSniper>
+				</options>
+			</li>
+			<li>
+				<!--타격대 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Moyo2_NPCCartelStrikerScout>20</Moyo2_NPCCartelStrikerScout>
+					<Moyo2_NPCCartelStrikerSniper>2</Moyo2_NPCCartelStrikerSniper>
+					<Moyo2_NPCCartelStrikerSapperSMG>5</Moyo2_NPCCartelStrikerSapperSMG>
+					<Moyo2_NPCCartelStrikerSapperBomb>2</Moyo2_NPCCartelStrikerSapperBomb>
+				</options>
+			</li>
+			<li>
+				<!--타격대 저격수 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>2</commonality>
+				<options>
+					<Moyo2_NPCCartelStrikerSniper>20</Moyo2_NPCCartelStrikerSniper>
+					<Moyo2_NPCCartelStrikerScout>5</Moyo2_NPCCartelStrikerScout>
+				</options>
+			</li>
+			<li>
+				<!--화학증강대 습격 -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Moyo2_NPCCartelCCCInfantry>20</Moyo2_NPCCartelCCCInfantry>
+					<Moyo2_NPCCartelStrikerSniper>2</Moyo2_NPCCartelStrikerSniper>
+					<Moyo2_NPCCartelCCCVanguard>5</Moyo2_NPCCartelCCCVanguard>
+					<Moyo2_NPCCartelCCCCrusher>2</Moyo2_NPCCartelCCCCrusher>
+				</options>
+			</li>			
 			<li>
 				<!-- 일반 주둔지 -->
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Moyo2_NPCCartelArmOpsInfantry>10</Moyo2_NPCCartelArmOpsInfantry>
+					<Moyo2_NPCCartelArmOpsInfantry>30</Moyo2_NPCCartelArmOpsInfantry>
 					<Moyo2_NPCCartelArmOpsEnforcer>2</Moyo2_NPCCartelArmOpsEnforcer>
 					<Moyo2_NPCCartelArmOpsElite>5</Moyo2_NPCCartelArmOpsElite>
+					<Moyo2_NPCCartelStrikerScout>15</Moyo2_NPCCartelStrikerScout>
+					<Moyo2_NPCCartelStrikerSapperSMG>5</Moyo2_NPCCartelStrikerSapperSMG>
+					<Moyo2_NPCCartelStrikerSniper>1</Moyo2_NPCCartelStrikerSniper>
 					<Moyo2_NPCCartelOps>5</Moyo2_NPCCartelOps>
 					<Moyo2_NPCCartelNegotiator>1</Moyo2_NPCCartelNegotiator>
 				</options>
@@ -129,6 +173,7 @@
 				</carriers>
 				<guards>
 					<Moyo2_NPCCartelArmOpsCaravan>30</Moyo2_NPCCartelArmOpsCaravan>
+					<Moyo2_NPCCartelStrikerScoutCaravan>10</Moyo2_NPCCartelStrikerScoutCaravan>
 				</guards>
 			</li>
 		</pawnGroupMakers>
@@ -137,7 +182,7 @@
 		<defName>Moyo2_CartelFaction</defName>
 		<label>Cartel surface division</label>
 		<description>This is the Ground Operations Division of the Cartel, one of the major factions of the Lighthouse. Leveraging abundant resources and advanced technology, the Cartel continues to expand its ventures across the surface, interacting with neighboring factions through a strictly business-oriented mindset. Whether you become their newest partner and client—or choose to plunder their wealth and technological assets—is entirely up to you. Just remember: they show no mercy to those who stand in their way.\n\nThe Cartel's primary enterprise is the distribution of surface-world goods into the Lighthouse. This activity directly violates the Lighthouse Elders' long-standing policy of isolationism and is strictly forbidden. Despite this, the Cartel's influence continues to grow. Armed with cutting-edge equipment and experimental products of the Lighthouse's megacorps, they openly advocate for the abolition of isolationist policies. In response, the Elders branded them the "Cartel" and placed bounties on every one of its members.</description>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<factionNameMaker>CartelFactionNamer</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Icon_C_A</settlementTexturePath>
 		<factionIconPath>Icon/Icon_C_A</factionIconPath>
@@ -145,6 +190,9 @@
 		<colorSpectrum>
 			<li>(99, 63, 212)</li>
 		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>		
 		<pawnGroupMakers>
 			<li>
 				<!-- 더미 -->

@@ -2,7 +2,7 @@
 <Defs>
 	<!-- 헥사포드 베이스 -->
 	<ThingDef Abstract="True" Name="Moyo2_Hexapod" ParentName="Moyo2_BaseMechanoid">
-		<description>헥사포드.</description>
+		<description>A multipurpose mechanoid used in the Lighthouse. 6 flexible tentacles allows it to do multiple activities. One of few mechanoid that can be used on land, it utilizes its tentacles to strike and constrict an opponent's movement in combat.</description>
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -31,57 +31,7 @@
 				</capacities>
 				<power>16</power>
 				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>Tentacle1</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>tentacle</label>
-				<capacities>
-					<!-- <li>HexapodTentacle</li> -->
-					<li>Blunt</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>Tentacle2</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>tentacle</label>
-				<capacities>
-					<!-- <li>HexapodTentacle</li> -->
-					<li>Blunt</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>Tentacle3</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>tentacle</label>
-				<capacities>
-					<!-- <li>HexapodTentacle</li> -->
-					<li>Blunt</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>Tentacle4</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>tentacle</label>
-				<capacities>
-					<!-- <li>HexapodTentacle</li> -->
-					<li>Blunt</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>Tentacle5</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>tentacle</label>
-				<capacities>
-					<!-- <li>HexapodTentacle</li> -->
-					<li>Blunt</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>Tentacle6</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Moyo2_Tentacles</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		<race>
@@ -185,7 +135,7 @@
 	<!-- - -->
 	<!-- 스페리포드 베이스 -->
 	<ThingDef Abstract="True" Name="Moyo2_Spheripod" ParentName="Moyo2_BaseMechanoid">
-		<description>스페리포드.</description>
+		<description>A mining mechanoid used in the Lighthouse. A pair of giant 'club' is utilized to crush rocks to mine ores. One of few mechanoid that can be used on land, it strikes the foe with its club when in combat. You will not want to be on that recieving end.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>

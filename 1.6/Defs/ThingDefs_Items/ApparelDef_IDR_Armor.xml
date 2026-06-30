@@ -288,7 +288,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CBsuit</defName>
 		<label>Flak bodyarmor(cartel)</label>
-		<description>_</description>
+		<description>The standard-issue ballistic armor used by Cartel operatives. When filled with ballistic gel, the armor provides a high level of protection, though it requires regular replenishment of the gel to maintain its effectiveness.\n\nAs the Cartel began planning to expand its operations onto the surface, a shortage of equipment for its operatives became an increasingly pressing issue. While the Cartel possessed considerable wealth, it could not afford to supply every member with advanced gear. As a result, the organization began searching for a more cost-effective alternative.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorIDR/CBSuit1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -298,8 +298,9 @@
 		<useHitPoints>false</useHitPoints>
 		<!-- - -->
 		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>32000</WorkToMake>
-			<Mass>4</Mass>
+			<Mass>2.5</Mass>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
@@ -324,11 +325,11 @@
 			<tags>
 				<li>Moyo2_CartelArmor</li>
 			</tags>
-			<drawData>
-				<dataNorth>
-					<layer>60</layer>
-				</dataNorth>
-			</drawData>
+			<!-- <drawData> -->
+				<!-- <dataNorth> -->
+					<!-- <layer>21</layer> -->
+				<!-- </dataNorth> -->
+			<!-- </drawData> -->
 		</apparel>
 		<!-- - -->
 		<recipeMaker>
@@ -342,21 +343,21 @@
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Steel>30</Steel>
-			<Plasteel>15</Plasteel>
-			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Moyo2_BGelPack>2</Moyo2_BGelPack>
+			<Plasteel>20</Plasteel>
+			<Moyo2_Cloth_Depthweave>60</Moyo2_Cloth_Depthweave>
 		</costList>
 		<comps Inherit="False">
 			<li Class="Moyo2.CompProperties_ReloadableArmor">
 				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
 				<armor>Moyo2_BGelPack</armor>
-				<valuePerArmor>50</valuePerArmor>
+				<valuePerArmor>40</valuePerArmor>
 				<armorOverrideSharp>1.4</armorOverrideSharp>
 				<armorOverrideBlunt>1.05</armorOverrideBlunt>
-				<maxDurability>100</maxDurability>
-				<initialDurabilityTargetValue>30</initialDurabilityTargetValue>
-				<gizmoLabel>Armor Durability</gizmoLabel>
+				<maxDurability>80</maxDurability>
+				<initialDurabilityTargetValue>40</initialDurabilityTargetValue>
+				<gizmoLabel>Balistic gel(Armor)</gizmoLabel>
 			</li>
 			<li>
 				<compClass>CompColorable</compClass>
@@ -369,7 +370,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
 		<defName>Moyo2_CBhelmet</defName>
 		<label>Flak helmet(cartel)</label>
-		<description>A standard issue helmet of the Cartel. Its far cheaper than advanced striker gear while providing decent protection to Cartel operatives.</description>
+		<description>The standard-issue ballistic helmet used by Cartel operatives. When filled with ballistic gel, the helmet provides a high level of protection, though it requires regular replenishment of the gel to maintain its effectiveness.\n\nThis armor is a prototype that combines GelTech, a new technology developed within the Lighthouse, with a design inspired by ballistic equipment observed on the surface. Developed with substantial financial backing in exchange for field performance data, the armor underwent extensive testing by Cartel personnel. Satisfied with its performance, the Cartel officially adopted the series as standard-issue equipment.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorIDR/CBHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -380,10 +381,10 @@
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
-			<Mass>1.7</Mass>
-			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Mass>0.7</Mass>
+			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.16</ArmorRating_Heat>
 			<Insulation_Cold>1</Insulation_Cold>
 			<Insulation_Heat>1</Insulation_Heat>
 			<EquipDelay>1.2</EquipDelay>
@@ -414,21 +415,21 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Plasteel>5</Plasteel>
-			<Steel>10</Steel>
-			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+			<Moyo2_BGelPack>1</Moyo2_BGelPack>
+			<Plasteel>10</Plasteel>
+			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
 		</costList>
 		<comps Inherit="False">
 			<li Class="Moyo2.CompProperties_ReloadableArmor">
 				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
 				<armor>Moyo2_BGelPack</armor>
 				<!-- <armor>Moyo2_TunaMeat</armor> -->
-				<valuePerArmor>50</valuePerArmor>
-				<armorOverrideSharp>1.4</armorOverrideSharp>
-				<armorOverrideBlunt>1.05</armorOverrideBlunt>
-				<maxDurability>50</maxDurability>
-				<initialDurabilityTargetValue>30</initialDurabilityTargetValue>
-				<gizmoLabel>Armor Durability</gizmoLabel>
+				<valuePerArmor>40</valuePerArmor>
+				<armorOverrideSharp>1.2</armorOverrideSharp>
+				<armorOverrideBlunt>0.85</armorOverrideBlunt>
+				<maxDurability>40</maxDurability>
+				<initialDurabilityTargetValue>20</initialDurabilityTargetValue>
+				<gizmoLabel>Balistic gel(Helmet)</gizmoLabel>
 			</li>
 			<li>
 				<compClass>CompColorable</compClass>

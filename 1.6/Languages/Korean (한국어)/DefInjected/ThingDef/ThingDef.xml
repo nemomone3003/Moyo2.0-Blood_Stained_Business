@@ -22,7 +22,8 @@
 	<Moyo2_LMRColiderOver.tools.1.label>총구</Moyo2_LMRColiderOver.tools.1.label>
 	<!--Original=라미너 오토캐논-->
 	<Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>
-	<!--Original=라미너 오토캐논-->
+	<!--English=initiate overcharge.-->
+	<Moyo2_LMRColider.comps.CompFormChange.transformDatas.0.description>과충전 시작.</Moyo2_LMRColider.comps.CompFormChange.transformDatas.0.description>
 	<!-- 어비스테크 라이플 -->
 	<Moyo2_Gun_AbysstechRifle.label>어비스테크 라이플</Moyo2_Gun_AbysstechRifle.label>
 	<Moyo2_Gun_AbysstechRifle.description>어비스테크가 접목된 범용적인 돌격소총입니다.</Moyo2_Gun_AbysstechRifle.description>
@@ -72,42 +73,91 @@
 	<Moyo2_CLMRArbalest.tools.1.label>총구</Moyo2_CLMRArbalest.tools.1.label>
 	<!-- - -->
 	<!-- 라미너 엣지 -->
-	<Moyo2_CKnife.label>라미너 엣지</Moyo2_CKnife.label>
-	<Moyo2_CKnife.description>카르텔의 라미너 엣지입니다</Moyo2_CKnife.description>
+	<Moyo2_CLMREdge.label>라미너 엣지</Moyo2_CLMREdge.label>
+	<Moyo2_CLMREdge.description>카르텔의 라미너 엣지입니다</Moyo2_CLMREdge.description>
 	<!-- - -->
-	<Moyo2_CKnife.tools.0.label>손잡이</Moyo2_CKnife.tools.0.label>
-	<Moyo2_CKnife.tools.1.label>칼날</Moyo2_CKnife.tools.1.label>
-	<Moyo2_CKnife.tools.2.label>칼끝</Moyo2_CKnife.tools.2.label>
-	
+	<Moyo2_CLMREdge.tools.0.label>손잡이</Moyo2_CLMREdge.tools.0.label>
+	<Moyo2_CLMREdge.tools.1.label>칼날</Moyo2_CLMREdge.tools.1.label>
+	<Moyo2_CLMREdge.tools.2.label>칼끝</Moyo2_CLMREdge.tools.2.label>
 	<!-- 헤이달 레이스 요원 쉘 -->
 	<Moyo2_HWOpsShell.label>헤이달레이스 요원 쉘</Moyo2_HWOpsShell.label>
 	<Moyo2_HWOpsShell.description>헤이달레이스 요원 쉘입니다.</Moyo2_HWOpsShell.description>
 	<Moyo2_HWOpsHelmet.label>헤이달레이스 요원 헬멧</Moyo2_HWOpsHelmet.label>
-	<Moyo2_HWOpsHelmet.description>헤이달레이스 요원 헬멧입니다.</Moyo2_HWOpsHelmet.description>	
+	<Moyo2_HWOpsHelmet.description>헤이달레이스 요원 헬멧입니다.</Moyo2_HWOpsHelmet.description>
 	<!-- - -->
-	
 	<!-- 헤이달 레이스 철갑 쉘 -->
 	<Moyo2_HWShell.label>헤이달레이스 철갑 쉘</Moyo2_HWShell.label>
 	<Moyo2_HWShell.description>헤이달레이스 철갑 쉘입니다.</Moyo2_HWShell.description>
 	<Moyo2_HWHelmet.label>헤이달레이스 철갑 헬멧</Moyo2_HWHelmet.label>
-	<Moyo2_HWHelmet.description>헤이달레이스 철갑 헬멧입니다.</Moyo2_HWHelmet.description>	
+	<Moyo2_HWHelmet.description>헤이달레이스 철갑 헬멧입니다.</Moyo2_HWHelmet.description>
 	<!-- - -->
-
 	<!-- 카르텔 방탄복 -->
 	<Moyo2_CBsuit.label>방탄갑옷(카르텔)</Moyo2_CBsuit.label>
-	<Moyo2_CBsuit.description>카르텔의 방탄갑옷 입니다.</Moyo2_CBsuit.description>
+	<Moyo2_CBsuit.description>카르텔 요원들의 제식 방탄갑옷입니다. 방탄 젤로 충전된 갑옷은 높은 방어력을 제공하지만 지속적으로 젤을 충전해주어야 합니다.\n\n카르텔이 지상으로 사업을 확장할 계획을 세움에 따라, 요원들에게 보급할 장비의 부족이 대두되었습니다. 카르텔은 부유하지만, 모든 이들에게 발전된 장비를 보급할 수는 없었기에 카르텔은 더욱 저렴한 대안을 물색했습니다.</Moyo2_CBsuit.description>
+	<!--English=Armor Durability-->
+	<Moyo2_CBhelmet.comps.Comp_ReloadableArmor.gizmoLabel>방탄젤(방탄복)</Moyo2_CBhelmet.comps.Comp_ReloadableArmor.gizmoLabel>
 	<Moyo2_CBhelmet.label>방탄헬멧(카르텔)</Moyo2_CBhelmet.label>
-	<Moyo2_CBhelmet.description>카르텔의 방탄헬멧 입니다.</Moyo2_CBhelmet.description>	
-	<!-- - -->	
-
-	<!-- 카르텔 화학전 -->
-	<Moyo2_CCCShell.label>카르텔 화학전 특수대 쉘</Moyo2_CCCShell.label>
-	<Moyo2_CCCShell.description>카르텔의 화학전 특수대 쉘 입니다.</Moyo2_CCCShell.description>
-	<Moyo2_CCCHelmet.label>카르텔 화학전 특수대 헬멧</Moyo2_CCCHelmet.label>
-	<Moyo2_CCCHelmet.description>카르텔의 화학전 특수대 헬멧입니다.</Moyo2_CCCHelmet.description>	
+	<Moyo2_CBhelmet.description>카르텔 요원들의 제식 방탄헬멧입니다. 방탄 젤로 충전된 헬멧은 높은 방어력을 제공하지만 지속적으로 젤을 충전해주어야 합니다.\n\n지상에서 목격한 방탄장비를 모방한 이 방어구는 등대의 새로운 기술인 젤테크가 접목된 시제품입니다. 이들은 제품의 성능 테스트를 조건으로 막대한 후원을 받아 이 방어구를 제작하였고, 성능에 만족한 카르텔은 이 시리즈를 제식으로 채용했습니다.</Moyo2_CBhelmet.description>
+	<!--English=Armor Durability-->
+	<Moyo2_CBsuit.comps.Comp_ReloadableArmor.gizmoLabel>방탄젤(헬멧)</Moyo2_CBsuit.comps.Comp_ReloadableArmor.gizmoLabel>
+	<!-- 카르텔 타격대 -->
+	<!--English=Cartel striker shell-->
+	<Moyo2_CSShell.label>카르텔 타격대 쉘</Moyo2_CSShell.label>
+	<!--English=Diving suit of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The suit is designed to reduce resistance on its surface, allowing for relatively easy movement underwater. This feature is meaningless on land.\n\nThe diving suit's abysssteel armor plates also make it excellent body armor. It started being used in combat by the Lighthouse's security forces, and this trend has spread throughout the entire Lighthouse.-->
+	<Moyo2_CSShell.description>카르텔의 상급 전투부대인 타격대의 제식 방어구입니다. 카르텔의 주요 전략인 게릴라전에 특화된 장비로, 기동성과 유연성을 중시한 경량 방어구입니다. 등대의 잠수복들에 비해 부피가 작기 때문에, 외부에 추가적인 장비를 착용할 수 있습니다.\n\n카르텔의 기원은 알려지지 않았습니다. 현재 카르텔이라 불리는 집단이 처음으로 목격된 것은 이 장비를 착용한 인원들이 의회의 시설에 파괴공작을 벌인 때였습니다. 의회는 이들의 무장 상태와 조직적 움직임을 큰 위협으로 여겼고, 즉시 이들을 제압하기 위해 움직였습니다.</Moyo2_CSShell.description>
+	<!--English=Cartel striker helmet-->
+	<Moyo2_CSHelmet.label>카르텔 타격대 헬멧</Moyo2_CSHelmet.label>
+	<!--English=Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.-->
+	<Moyo2_CSHelmet.description>카르텔의 상급 전투부대인 타격대의 제식 헬멧입니다. 카르텔의 주요 전략인 게릴라전에 특화된 장비로, 기동성과 유연성을 중시한 경량 방어구입니다.\w\w카르텔의 엘리트 요원들인 타격대는 등대의 그림자 속에서 카르텔의 이익을 위해 움직입니다. 의회는 이들을 생포하기 위해 노력하고 있으나, 카르텔의 극단적인 기밀유지 수단에 의해 난항을 겪고 있습니다.</Moyo2_CSHelmet.description>
 	<!-- - -->
-
+	<!-- 카르텔 화학전 -->
+	<Moyo2_CCCShell.label>카르텔 화학증강 쉘</Moyo2_CCCShell.label>
+	<Moyo2_CCCShell.description>카르텔의 화학전 특수대 쉘 입니다.</Moyo2_CCCShell.description>
+	<!--English=Scari-Abyss-->
+	<Moyo2_CCCShell.comps.CompApparelReloadable.chargeNoun/>
+	<!--English=on cooldown-->
+	<Moyo2_CCCShell.comps.CompApparelReloadable.cooldownGerund/>
+	<Moyo2_CCCHelmet.label>카르텔 화학증강 헬멧</Moyo2_CCCHelmet.label>
+	<Moyo2_CCCHelmet.description>카르텔의 화학전 특수대 헬멧입니다.</Moyo2_CCCHelmet.description>
+	<!-- 응애옷 -->
+	<!--English=hooded black cloak-->
+	<Moyo2_Childclothes_A.label>모요 아동복(펭귄)</Moyo2_Childclothes_A.label>
+	<!--English=A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.-->
+	<Moyo2_Childclothes_A.description>어린 모요들을 위한 인형 옷 입니다. 다양한 해양생물을 본따 만든 이 귀여운 옷은, 아이들을 보호하기 위해 많은 기능을 탑재했습니다. 아이들이 마음껏 구르고 넘어져도 괜찮을 보호 기능과, 내부 온도를 일정하게 유지할 온도 조절 장치까지 달려있습니다.\n\n등대의 여유있는 부모라면, 자신의 아이들에게 꼭 선물해주어야 할 제품입니다. 당신의 아이들도 분명 좋아할 것입니다. 일단 구매하고 선물해보세요!</Moyo2_Childclothes_A.description>
+	<!--English=hooded black cloak-->
+	<Moyo2_Childclothes_B.label>모요 아동복(상어)</Moyo2_Childclothes_B.label>
+	<!--English=A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.-->
+	<Moyo2_Childclothes_B.description>어린 모요들을 위한 인형 옷 입니다. 다양한 해양생물을 본따 만든 이 귀여운 옷은, 아이들을 보호하기 위해 많은 기능을 탑재했습니다. 아이들이 마음껏 구르고 넘어져도 괜찮을 보호 기능과, 내부 온도를 일정하게 유지할 온도 조절 장치까지 달려있습니다.\n\n등대의 여유있는 부모라면, 자신의 아이들에게 꼭 선물해주어야 할 제품입니다. 당신의 아이들도 분명 좋아할 것입니다. 일단 구매하고 선물해보세요!</Moyo2_Childclothes_B.description>
+	<!-- - -->
 	<!-- 메카노이드 몸 -->
 	<Moyo2_Hexapod.label>헥사포드</Moyo2_Hexapod.label>
-	<Moyo2_Spheripod.label>스페리포드</Moyo2_Spheripod.label>	
+	<Moyo2_Spheripod.label>스페리포드</Moyo2_Spheripod.label>
+	<!--English=hexapod-->
+	<Moyo2_Hexapod_Default.label>헥사포드</Moyo2_Hexapod_Default.label>
+	<!--English=헥사포드.-->
+	<Moyo2_Hexapod_Default.description>등대의 대표적인 다용도 메카노이드입니다. 6개의 촉수를 통해 매우 다양한 작업을 할 수 있으며, 지상에서도 무리없이 사용할 수 있는 모델입니다.</Moyo2_Hexapod_Default.description>
+	<!--English=head-->
+	<Moyo2_Hexapod_Default.tools.head.label>머리</Moyo2_Hexapod_Default.tools.head.label>
+	<!--English=tentacle-->
+	<Moyo2_Hexapod_Default.tools.tentacle-0.label>촉수</Moyo2_Hexapod_Default.tools.tentacle-0.label>
+	<!--English=tentacle-->
+	<Moyo2_Hexapod_Default.tools.tentacle-1.label>촉수</Moyo2_Hexapod_Default.tools.tentacle-1.label>
+	<!--English=tentacle-->
+	<Moyo2_Hexapod_Default.tools.tentacle-2.label>촉수</Moyo2_Hexapod_Default.tools.tentacle-2.label>
+	<!--English=tentacle-->
+	<Moyo2_Hexapod_Default.tools.tentacle-3.label>촉수</Moyo2_Hexapod_Default.tools.tentacle-3.label>
+	<!--English=tentacle-->
+	<Moyo2_Hexapod_Default.tools.tentacle-4.label>촉수</Moyo2_Hexapod_Default.tools.tentacle-4.label>
+	<!--English=tentacle-->
+	<Moyo2_Hexapod_Default.tools.tentacle-5.label>촉수</Moyo2_Hexapod_Default.tools.tentacle-5.label>
+	<!--English=spheripod-->
+	<Moyo2_Spheripod_Default.label>스페리포드</Moyo2_Spheripod_Default.label>
+	<!--English=스페리포드.-->
+	<Moyo2_Spheripod_Default.description>등대의 대형 채굴용 메카노이드입니다. 강력한 팔을 통해 단단한 물체를 분쇄하는 용도로 쓰이고 있습니다.</Moyo2_Spheripod_Default.description>
+	<!--English=head-->
+	<Moyo2_Spheripod_Default.tools.head.label>머리</Moyo2_Spheripod_Default.tools.head.label>
+	<!--English=left club-->
+	<Moyo2_Spheripod_Default.tools.left_club.label>왼쪽 곤봉</Moyo2_Spheripod_Default.tools.left_club.label>
+	<!--English=right club-->
+	<Moyo2_Spheripod_Default.tools.right_club.label>오른쪽 곤봉</Moyo2_Spheripod_Default.tools.right_club.label>
 </LanguageData>

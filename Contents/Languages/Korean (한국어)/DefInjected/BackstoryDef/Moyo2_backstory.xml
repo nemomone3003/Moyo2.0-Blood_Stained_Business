@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
+	<!-- 더미 백스토리 -->
+	<!--English=Dummy backstory-->
+	<Moyo2_DummyAdult.description>더미</Moyo2_DummyAdult.description>
+	<!--English=moyo dummy-->
+	<Moyo2_DummyAdult.title>더미</Moyo2_DummyAdult.title>
+	<!--English=dummy-->
+	<Moyo2_DummyAdult.titleShort>더미</Moyo2_DummyAdult.titleShort>
+	<!--English=Dummy backstory-->
+	<Moyo2_DummyChild.description>더미</Moyo2_DummyChild.description>
+	<!--English=moyo dummy-->
+	<Moyo2_DummyChild.title>더미</Moyo2_DummyChild.title>
+	<!--English=dummy-->
+	<Moyo2_DummyChild.titleShort>더미</Moyo2_DummyChild.titleShort>
 	<!-- 침수구역 백스토리 -->
 	<!-- 하수구 민달팽이 -->
 	<Moyo2_SewerSlug.title>모요 하수구 민달팽이</Moyo2_SewerSlug.title>
@@ -62,7 +74,6 @@
 	<Moyo2_FloodCultLeader.title>모요 침수교 교주</Moyo2_FloodCultLeader.title>
 	<Moyo2_FloodCultLeader.titleShort>침수교 교주</Moyo2_FloodCultLeader.titleShort>
 	<Moyo2_FloodCultLeader.description>"물에 잠기는 것은 축복입니다!" {PAWN_pronoun}는 말합니다. {PAWN_nameDef} (은)는 침수구역 내에서 침수교라는 종교 단체를 이끌었습니다. 모요들은 신의 가호인 물에 이끌려 이곳에 정착했으며, 물 속에 살지 않고 등대를 건설하는 것이 신의 은총을 거부하는 것이라 주장했었습니다. 참고로, 침수교의 주 의식은 자신의 재물을 담은 상자를 바다에 던지는 것이었습니다.</Moyo2_FloodCultLeader.description>
-	
 	<!-- 상층 백스토리 -->
 	<!-- 양식장 노동자 -->
 	<Moyo2_AquacultureWorker.title>모요 양식장 노동자</Moyo2_AquacultureWorker.title>
@@ -117,9 +128,9 @@
 	<Moyo2_Vigilante.titleShort>자경단원</Moyo2_Vigilante.titleShort>
 	<Moyo2_Vigilante.description>등대의 상층과 같은 외곽엔 공권력이 잘 닿지 않습니다. {PAWN_nameDef} (은)는 자신에게 소중한 것을 지키고자 자경단에 입단했습니다. 무장도 훈련도 되지 않은 무리일 뿐이지만, 치안을 유지하기 위해 열심히 일했습니다.</Moyo2_Vigilante.description>
 	<!-- 자경단장 -->
-	<Moyo2_Vigilante.title>모요 자경단장</Moyo2_Vigilante.title>
-	<Moyo2_Vigilante.titleShort>자경단장</Moyo2_Vigilante.titleShort>
-	<Moyo2_Vigilante.description>{PAWN_nameDef} (은)는 상층에서 자경단 활동을 주도했습니다. 단원들을 모아 더 나은 사회를 만들기 위해 노력했습니다. 아이러니하게도 가장 많이 상대해야했던 것은 자경단 활동의 적법성을 묻는 공권력이었습니다.</Moyo2_Vigilante.description>
+	<Moyo2_VigilanteLeader.title>모요 자경단장</Moyo2_VigilanteLeader.title>
+	<Moyo2_VigilanteLeader.titleShort>자경단장</Moyo2_VigilanteLeader.titleShort>
+	<Moyo2_VigilanteLeader.description>{PAWN_nameDef} (은)는 상층에서 자경단 활동을 주도했습니다. 단원들을 모아 더 나은 사회를 만들기 위해 노력했습니다. 아이러니하게도 가장 많이 상대해야했던 것은 자경단 활동의 적법성을 묻는 공권력이었습니다.</Moyo2_VigilanteLeader.description>
 	<!-- 부패한 자경단장 -->
 	<Moyo2_CorruptVigilanteLeader.title>모요 부패한 자경단장</Moyo2_CorruptVigilanteLeader.title>
 	<Moyo2_CorruptVigilanteLeader.titleShort>부패한 자경단장</Moyo2_CorruptVigilanteLeader.titleShort>
@@ -136,7 +147,6 @@
 	<Moyo2_HealthyMealExpert.title>모요 건강식 전문가</Moyo2_HealthyMealExpert.title>
 	<Moyo2_HealthyMealExpert.titleShort>건강식 전문가</Moyo2_HealthyMealExpert.titleShort>
 	<Moyo2_HealthyMealExpert.description>여러번 가공된 재료가 아닌 자연에서 직접 공수한 건강식의 전문가인 {PAWN_nameDef}입니다. 아이러니하게도, {PAWN_pronoun}는 건강식에는 관심이 없습니다. 그저 없는 형편에 최대한 맛있게 먹고자 했을 뿐입니다.</Moyo2_HealthyMealExpert.description>
-	
 	<!-- 중층 백스토리 -->
 	<!-- 지친 학생 -->
 	<Moyo2_TiredStudent.title>모요 지친 학생</Moyo2_TiredStudent.title>
@@ -254,7 +264,6 @@
 	<Moyo2_ArmyOfficer.title>모요 정규군 장교</Moyo2_ArmyOfficer.title>
 	<Moyo2_ArmyOfficer.titleShort>정규군 장교</Moyo2_ArmyOfficer.titleShort>
 	<Moyo2_ArmyOfficer.description>{PAWN_nameDef}(은)는 정규군의 장교로써 매우 편안한 생활을 즐기고 있었습니다. 하지만 이는 곧 방탕으로 변질됐고, 신분 상승을 목표로 한번 크게 벌기 위한 계획을 세웠습니다. 물론 이 계획은 실패했고  {PAWN_pronoun}는 상황이 악화되기 전에 서둘러 등대를 빠져나왔습니다.</Moyo2_ArmyOfficer.description>
-	
 	<!-- 하층 백스토리 -->
 	<!-- 세이렌링 -->
 	<Moyo2_Sirenling.title>모요 세이렌링</Moyo2_Sirenling.title>
