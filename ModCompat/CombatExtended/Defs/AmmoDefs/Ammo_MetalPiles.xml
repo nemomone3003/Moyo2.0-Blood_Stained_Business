@@ -35,7 +35,7 @@
         <label>abyssteel pile</label>
         <description>Abyssteel piles used in spearjacks.</description>
         <statBases>
-            <Mass>0.715</Mass>
+            <Mass>0.436</Mass>
             <Bulk>0.06</Bulk>
         </statBases>
         <ammoClass>Moyo2_AmmoCategory_AbyssteelPiles</ammoClass>
@@ -47,7 +47,7 @@
         <label>heavy steel pile</label>
         <description>Heavy steel piles used in shipjacks.</description>
         <statBases>
-            <Mass>0.85</Mass>
+            <Mass>0.612</Mass>
             <Bulk>0.12</Bulk>
         </statBases>
         <ammoClass>Moyo2_AmmoCategory_HeavySteelPiles</ammoClass>
