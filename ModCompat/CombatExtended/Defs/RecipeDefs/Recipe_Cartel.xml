@@ -13,7 +13,7 @@
                         <li>Moyo2_Abyssteel</li>
                     </thingDefs>
                 </filter>
-                <count>65</count>
+                <count>35</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -44,7 +44,7 @@
                         <li>Moyo2_Abyssteel</li>
                     </thingDefs>
                 </filter>
-                <count>85</count>
+                <count>65</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
