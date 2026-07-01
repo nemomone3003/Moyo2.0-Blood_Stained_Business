@@ -19,13 +19,14 @@
             <warmupTime>1.9</warmupTime>
             <range>49</range>
             <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-            <burstShotCount>2</burstShotCount>
+            <burstShotCount>10</burstShotCount>
             <soundCast>Laminar_CRifle</soundCast>
             <soundCastTail>GunTail_Medium</soundCastTail>
             <muzzleFlashScale>3</muzzleFlashScale>
         </Properties>
         <AmmoUser>
             <magazineSize>30</magazineSize>
+            <aimedBurstShotCount>2</aimedBurstShotCount>
             <reloadTime>4</reloadTime>
             <ammoSet>Moyo2_AmmoSet_LaminarSpike</ammoSet>
         </AmmoUser>
