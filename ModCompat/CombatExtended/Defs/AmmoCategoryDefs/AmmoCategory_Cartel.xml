@@ -5,7 +5,7 @@
         <defName>Moyo2_AmmoCategory_LaminarSpike</defName>
         <label>Laminar spike</label>
         <labelShort>Laminar spike</labelShort>
-        <description>Solid spikes of metal stabilized by a laminar field.</description>
+        <description>A small spike of abyssteel stabilized by laminar field.</description>
     </CombatExtended.AmmoCategoryDef>
 
 </Defs>
