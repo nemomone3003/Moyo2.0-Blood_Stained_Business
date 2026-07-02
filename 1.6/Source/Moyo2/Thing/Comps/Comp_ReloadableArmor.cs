@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using Verse;
 
 namespace Moyo2
 {
@@ -18,7 +17,6 @@ namespace Moyo2
 
 			set => durabilityTargetValue = Mathf.Clamp(value, 0f, Props.maxDurability);
 		}
-		public float TargetDurabilityPercent => ArmorDurability / TargetDurability;
 		public float MaxDurabilityPercent => ArmorDurability / Props.maxDurability;
 		public float ArmorDurability
 		{
@@ -41,7 +39,7 @@ namespace Moyo2
 		public override string CompInspectStringExtra()
 		{
 			StringBuilder sb = new(base.CompInspectStringExtra());
-			sb.Append($"Armor durability: {TargetDurabilityPercent} / {MaxDurabilityPercent}");
+			sb.Append("Moyo2_ReloadableArmor_InspectTabLabel".Translate(ArmorDurability, Props.maxDurability));
 			return sb.ToString();
 		}
 

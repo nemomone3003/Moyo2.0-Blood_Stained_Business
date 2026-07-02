@@ -33,4 +33,7 @@
 
     <Moyo2_StatPart_ReloadableArmorOverride>{0}로 충전됨</Moyo2_StatPart_ReloadableArmorOverride>
     <Moyo2_FloatMenu_ReloadableArmorLabel>{1}을 {0}으로 장전</Moyo2_FloatMenu_ReloadableArmorLabel>	
+
+	<!--English=Gel level: {0} / {1}-->
+	<Moyo2_ReloadableArmor_InspectTabLabel>젤 용량: {0} / {1}</Moyo2_ReloadableArmor_InspectTabLabel>
 </LanguageData>

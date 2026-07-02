@@ -25,4 +25,6 @@
     <Moyo2_StatPart_ReloadableArmorOverride>Loaded armor override: {0}</Moyo2_StatPart_ReloadableArmorOverride>
     <Moyo2_FloatMenu_ReloadableArmorLabel>Force reload {1} with {0}</Moyo2_FloatMenu_ReloadableArmorLabel>
 
+    <Moyo2_ReloadableArmor_InspectTabLabel>Gel level: {0} / {1}</Moyo2_ReloadableArmor_InspectTabLabel>
+
 </LanguageData>
