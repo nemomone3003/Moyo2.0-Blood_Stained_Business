@@ -11,9 +11,9 @@
 	<!--English=antennae glow(left)-->
 	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.name>antennae glow(left)</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.3.name>
 	<!--English=right antennae-->
-	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.conditions.0.bodyPartLabel>right antennae-</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.conditions.0.bodyPartLabel>
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.conditions.0.bodyPartLabel>right antennae</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.4.conditions.0.bodyPartLabel>
 	<!--English=right antennae-->
-	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.conditions.0.bodyPartLabel>right antennae-</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.conditions.0.bodyPartLabel>
+	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.conditions.0.bodyPartLabel>right antennae</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.conditions.0.bodyPartLabel>
 	<!--English=antennae glow(right)-->
 	<Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.name>antennae glow(right)</Alien_Moyo.alienRace.generalSettings.alienPartGenerator.bodyAddons.5.name>
 	<!--English=head glow-->

@@ -76,10 +76,10 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>
-	<!-- 모요 보급 분대장 -->
+	<!-- 모요 보급관 -->
 	<PawnKindDef ParentName="Moyo2_NPCCartelBase">
 		<defName>Moyo2_NPCCartelNegotiator</defName>
-		<label>moyo cartel caravan leader</label>
+		<label>moyo cartel supply officer</label>
 		<combatPower>35</combatPower>
 		<trader>true</trader>
 		<itemQuality>Excellent</itemQuality>

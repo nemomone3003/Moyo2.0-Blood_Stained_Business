@@ -148,6 +148,9 @@
 	<Moyo2_RoyalRobe.label>최고급 로브</Moyo2_RoyalRobe.label>
 	<!--Original=The most precious 바디슈트 obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.-->
 	<Moyo2_RoyalRobe.description>등대에서 구할 수 있는 가장 귀한 외투입니다. 방탄 재질의 아름다운 원단, 체온 조절기능과 극상의 착용감 그리고 매력 보정등 원하는 모든 기능이 들어가있습니다 . 등대에선 이 슈트를 걸친 사람을 감히 건드릴 사람은 몇 되지 않습니다. 눈으로는 보이지 않는 힘이란게 있는 것입니다.</Moyo2_RoyalRobe.description>
+	<Moyo2_RoyalRobe_Cartel.label>최고급 로브(카르텔)</Moyo2_RoyalRobe_Cartel.label>
+	<!--Original=The most precious 바디슈트 obtainable in the lighthouse. It features exquisite, bulletproof material, temperature regulation capabilities, unparalleled comfort, and all desired functionalities including charisma enhancement. No one except a few dares to cross someone adorned in this suit. Think of how did they got the suit in the first place.-->
+	<Moyo2_RoyalRobe_Cartel.description>등대에서 구할 수 있는 가장 귀한 외투입니다. 방탄 재질의 아름다운 원단, 체온 조절기능과 극상의 착용감 그리고 매력 보정등 원하는 모든 기능이 들어가있습니다 . 등대에선 이 슈트를 걸친 사람을 감히 건드릴 사람은 몇 되지 않습니다. 눈으로는 보이지 않는 힘이란게 있는 것입니다.</Moyo2_RoyalRobe_Cartel.description>
 	<!--Original=lighthouse holosuit-->
 	<Moyo2_HoloSuit.label>홀로슈트(등대)</Moyo2_HoloSuit.label>
 	<!--Original=The most precious 바디슈트 obtainable in the lighthouse. Focused on aesthetic value, it boasts numerous holographic displays, enabling the suit to be presented in variety of ways. It&apos;s primarily used by topーtier artists and influencers of the lighthouse; others before them simply cannot afford it.-->
@@ -230,10 +233,6 @@
 	<Moyo2_LMRAutoCannon.tools.1.label>총구</Moyo2_LMRAutoCannon.tools.1.label>
 	<!--Original=라미너 오토캐논-->
 	<Moyo2_LMRAutoCannon.verbs.Verb_Shoot.label>라미너 오토캐논</Moyo2_LMRAutoCannon.verbs.Verb_Shoot.label>
-	<!--Original=과충전-->
-	<Moyo2_LMRAutoCannon.comps.0.transformData.0.label>과충전</Moyo2_LMRAutoCannon.comps.0.transformData.0.label>
-	<!-- Original=과충전 시작. -->
-	<Moyo2_LMRAutoCannon.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRAutoCannon.comps.0.transformData.0.description>
 	<!--Original=라미너 오토캐논(과충전)-->
 	<Moyo2_LMRAutoCannonOver.label>라미너 오토캐논(과충전)</Moyo2_LMRAutoCannonOver.label>
 	<!--Original=An 과충전 라미너 오토캐논. Has improved firerate but gets 과부하 after a short period.-->
@@ -244,14 +243,6 @@
 	<Moyo2_LMRAutoCannonOver.tools.1.label>총구</Moyo2_LMRAutoCannonOver.tools.1.label>
 	<!--Original=라미너 오토캐논(과충전)-->
 	<Moyo2_LMRAutoCannonOver.verbs.Verb_Shoot.label>라미너 오토캐논(과충전)</Moyo2_LMRAutoCannonOver.verbs.Verb_Shoot.label>
-	<!--Original=과부하-->
-	<Moyo2_LMRAutoCannonOver.comps.0.revertData.label>과부하</Moyo2_LMRAutoCannonOver.comps.0.revertData.label>
-	<!--Original=총기 시스템 과부하중.-->
-	<Moyo2_LMRAutoCannonOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRAutoCannonOver.comps.0.revertData.description>
-	<!--Original=과충전 해제-->
-	<Moyo2_LMRAutoCannonOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRAutoCannonOver.comps.0.transformData.0.label>
-	<!--Original=과충전을 해제합니다.-->
-	<Moyo2_LMRAutoCannonOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRAutoCannonOver.comps.0.transformData.0.description>
 	<!--Original=라미너 오토캐논(과부하)-->
 	<Moyo2_LMRAutoCannonDown.label>라미너 오토캐논(과부하)</Moyo2_LMRAutoCannonDown.label>
 	<!--Original=An 과부하 라미너 오토캐논. Firing is temporarily disabled until the system is restored. It&apos;s an expensive pillar in the meantime.-->
@@ -260,10 +251,6 @@
 	<Moyo2_LMRAutoCannonDown.tools.0.label>몸체</Moyo2_LMRAutoCannonDown.tools.0.label>
 	<!--Original=총구-->
 	<Moyo2_LMRAutoCannonDown.tools.1.label>총구</Moyo2_LMRAutoCannonDown.tools.1.label>
-	<!--Original=냉각중-->
-	<Moyo2_LMRAutoCannonDown.comps.0.revertData.label>냉각중</Moyo2_LMRAutoCannonDown.comps.0.revertData.label>
-	<!--Original=총기 시스템 냉각중.-->
-	<Moyo2_LMRAutoCannonDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRAutoCannonDown.comps.0.revertData.description>
 	<!--Original=heavy 라미너 슬러그-->
 	<Moyo2_Bullet_LMRBolt.label>중형 라미너 슬러그</Moyo2_Bullet_LMRBolt.label>
 	<!--Original=heavy 라미너 슬러그(과충전)-->
@@ -278,10 +265,6 @@
 	<Moyo2_LMRBalista.tools.1.label>총구</Moyo2_LMRBalista.tools.1.label>
 	<!--Original=라미너 발리스타-->
 	<Moyo2_LMRBalista.verbs.Verb_Shoot.label>라미너 발리스타</Moyo2_LMRBalista.verbs.Verb_Shoot.label>
-	<!--Original=과충전-->
-	<Moyo2_LMRBalista.comps.0.transformData.0.label>과충전</Moyo2_LMRBalista.comps.0.transformData.0.label>
-	<!--Original=과충전 시작.-->
-	<Moyo2_LMRBalista.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRBalista.comps.0.transformData.0.description>
 	<!--Original=라미너 발리스타(과충전)-->
 	<Moyo2_LMRBalistaOver.label>라미너 발리스타(과충전)</Moyo2_LMRBalistaOver.label>
 	<!--Original=An 과충전 라미너 발리스타. Shoots powerful explosive shot but gets 과부하 after a short period.-->
@@ -292,14 +275,6 @@
 	<Moyo2_LMRBalistaOver.tools.1.label>총구</Moyo2_LMRBalistaOver.tools.1.label>
 	<!--Original=라미너 발리스타(과충전)-->
 	<Moyo2_LMRBalistaOver.verbs.Verb_Shoot.label>라미너 발리스타(과충전)</Moyo2_LMRBalistaOver.verbs.Verb_Shoot.label>
-	<!--Original=과부하-->
-	<Moyo2_LMRBalistaOver.comps.0.revertData.label>과부하</Moyo2_LMRBalistaOver.comps.0.revertData.label>
-	<!--Original=총기 시스템 과부하중.-->
-	<Moyo2_LMRBalistaOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRBalistaOver.comps.0.revertData.description>
-	<!--Original=과충전 해제-->
-	<Moyo2_LMRBalistaOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRBalistaOver.comps.0.transformData.0.label>
-	<!--Original=과충전을 해제합니다.-->
-	<Moyo2_LMRBalistaOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRBalistaOver.comps.0.transformData.0.description>
 	<!--Original=라미너 발리스타(과부하)-->
 	<Moyo2_LMRBalistaDown.label>라미너 발리스타(과부하)</Moyo2_LMRBalistaDown.label>
 	<!--Original=An 과부하 라미너 발리스타. Firing is temporarily disabled until the system is restored. It&apos;s an expensive pillar in the meantime.-->
@@ -308,10 +283,6 @@
 	<Moyo2_LMRBalistaDown.tools.0.label>몸체</Moyo2_LMRBalistaDown.tools.0.label>
 	<!--Original=총구-->
 	<Moyo2_LMRBalistaDown.tools.1.label>총구</Moyo2_LMRBalistaDown.tools.1.label>
-	<!--Original=냉각중-->
-	<Moyo2_LMRBalistaDown.comps.0.revertData.label>냉각중</Moyo2_LMRBalistaDown.comps.0.revertData.label>
-	<!--Original=총기 시스템 냉각중.-->
-	<Moyo2_LMRBalistaDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRBalistaDown.comps.0.revertData.description>
 	<!--Original=라미너 슬러그-->
 	<Moyo2_Bullet_LMRSlugB.label>라미너 슬러그</Moyo2_Bullet_LMRSlugB.label>
 	<!--Original=라미너 슬러그(과충전)-->
@@ -324,10 +295,6 @@
 	<Moyo2_LMRPistol.tools.0.label>몸체</Moyo2_LMRPistol.tools.0.label>
 	<!--Original=라미너 핸드캐논-->
 	<Moyo2_LMRPistol.verbs.Verb_Shoot.label>라미너 핸드캐논</Moyo2_LMRPistol.verbs.Verb_Shoot.label>
-	<!--Original=과충전-->
-	<Moyo2_LMRPistol.comps.0.transformData.0.label>과충전</Moyo2_LMRPistol.comps.0.transformData.0.label>
-	<!--Original=과충전 시작.-->
-	<Moyo2_LMRPistol.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRPistol.comps.0.transformData.0.description>
 	<!--Original=라미너 핸드캐논(과충전)-->
 	<Moyo2_LMRPistolOver.label>라미너 핸드캐논(과충전)</Moyo2_LMRPistolOver.label>
 	<!--Original=An 과충전 라미너 handcannon. Has improved firepower and range but gets 과부하 after a short period.-->
@@ -336,24 +303,12 @@
 	<Moyo2_LMRPistolOver.tools.0.label>몸체</Moyo2_LMRPistolOver.tools.0.label>
 	<!--Original=라미너 핸드캐논(과충전)-->
 	<Moyo2_LMRPistolOver.verbs.Verb_Shoot.label>라미너 핸드캐논(과충전)</Moyo2_LMRPistolOver.verbs.Verb_Shoot.label>
-	<!--Original=과부하-->
-	<Moyo2_LMRPistolOver.comps.0.revertData.label>과부하</Moyo2_LMRPistolOver.comps.0.revertData.label>
-	<!--Original=총기 시스템 과부하중.-->
-	<Moyo2_LMRPistolOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRPistolOver.comps.0.revertData.description>
-	<!--Original=과충전 해제-->
-	<Moyo2_LMRPistolOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRPistolOver.comps.0.transformData.0.label>
-	<!--Original=과충전을 해제합니다.-->
-	<Moyo2_LMRPistolOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRPistolOver.comps.0.transformData.0.description>
 	<!--Original=라미너 핸드캐논(과부하)-->
 	<Moyo2_LMRPistolDown.label>라미너 핸드캐논(과부하)</Moyo2_LMRPistolDown.label>
 	<!--Original=An 과부하 라미너 handcannon. Firing is temporarily disabled until the system is restored. It&apos;s an expensive club in the meantime.-->
 	<Moyo2_LMRPistolDown.description>과부하 상태의 라미너 핸드캐논입니다. 시스템 정상화 전까지 잠시동안 사격이 불가능합니다. 비싼 몽둥이네요.</Moyo2_LMRPistolDown.description>
 	<!--Original=몸체-->
 	<Moyo2_LMRPistolDown.tools.0.label>몸체</Moyo2_LMRPistolDown.tools.0.label>
-	<!--Original=냉각중-->
-	<Moyo2_LMRPistolDown.comps.0.revertData.label>냉각중</Moyo2_LMRPistolDown.comps.0.revertData.label>
-	<!--Original=총기 시스템 냉각중.-->
-	<Moyo2_LMRPistolDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRPistolDown.comps.0.revertData.description>
 	<!--Original=라미너 슬러그-->
 	<Moyo2_Bullet_LMRSlugA.label>라미너 슬러그</Moyo2_Bullet_LMRSlugA.label>
 	<!--Original=라미너 슬러그(과충전)-->
@@ -368,10 +323,6 @@
 	<Moyo2_LMRRifle.tools.1.label>총구</Moyo2_LMRRifle.tools.1.label>
 	<!--Original=라미너 라이플-->
 	<Moyo2_LMRRifle.verbs.Verb_Shoot.label>라미너 라이플</Moyo2_LMRRifle.verbs.Verb_Shoot.label>
-	<!--Original=과충전-->
-	<Moyo2_LMRRifle.comps.0.transformData.0.label>과충전</Moyo2_LMRRifle.comps.0.transformData.0.label>
-	<!--Original=과충전 시작.-->
-	<Moyo2_LMRRifle.comps.0.transformData.0.description>과충전 시작.</Moyo2_LMRRifle.comps.0.transformData.0.description>
 	<!--Original=라미너 라이플(과충전)-->
 	<Moyo2_LMRRifleOver.label>라미너 라이플(과충전)</Moyo2_LMRRifleOver.label>
 	<!--Original=An 과충전 라미너 라이플. Has improved firepower and range but gets 과부하 after a short period.-->
@@ -382,14 +333,6 @@
 	<Moyo2_LMRRifleOver.tools.1.label>총구</Moyo2_LMRRifleOver.tools.1.label>
 	<!--Original=라미너 라이플(과충전)-->
 	<Moyo2_LMRRifleOver.verbs.Verb_Shoot.label>라미너 라이플(과충전)</Moyo2_LMRRifleOver.verbs.Verb_Shoot.label>
-	<!--Original=과부하-->
-	<Moyo2_LMRRifleOver.comps.0.revertData.label>과부하</Moyo2_LMRRifleOver.comps.0.revertData.label>
-	<!--Original=총기 시스템 과부하중.-->
-	<Moyo2_LMRRifleOver.comps.0.revertData.description>총기 시스템 과부하중.</Moyo2_LMRRifleOver.comps.0.revertData.description>
-	<!--Original=과충전 해제-->
-	<Moyo2_LMRRifleOver.comps.0.transformData.0.label>과충전 해제</Moyo2_LMRRifleOver.comps.0.transformData.0.label>
-	<!--Original=과충전을 해제합니다.-->
-	<Moyo2_LMRRifleOver.comps.0.transformData.0.description>과충전을 해제합니다.</Moyo2_LMRRifleOver.comps.0.transformData.0.description>
 	<!--Original=라미너 라이플(과부하)-->
 	<Moyo2_LMRRifleDown.label>라미너 라이플(과부하)</Moyo2_LMRRifleDown.label>
 	<!--Original=An 과부하 라미너 라이플. Firing is temporarily disabled until the system is restored. It&apos;s an expensive club in the meantime.-->
@@ -398,10 +341,6 @@
 	<Moyo2_LMRRifleDown.tools.0.label>개머리판</Moyo2_LMRRifleDown.tools.0.label>
 	<!--Original=총구-->
 	<Moyo2_LMRRifleDown.tools.1.label>총구</Moyo2_LMRRifleDown.tools.1.label>
-	<!--Original=냉각중-->
-	<Moyo2_LMRRifleDown.comps.0.revertData.label>냉각중</Moyo2_LMRRifleDown.comps.0.revertData.label>
-	<!--Original=총기 시스템 냉각중.-->
-	<Moyo2_LMRRifleDown.comps.0.revertData.description>총기 시스템 냉각중.</Moyo2_LMRRifleDown.comps.0.revertData.description>
 	<!--Original=abyssteel-->
 	<Moyo2_Abyssteel.label>어비스틸</Moyo2_Abyssteel.label>
 	<!--Original=A dense alloy commonly used in the lighthouse. Able to withstand immense amount of pressure, it is used to produce things that needs the most durabilty. From this alloy the lighthouse was founded.-->
@@ -418,6 +357,10 @@
 	<Moyo2_Depthweed.label>가공된 뎁스위드</Moyo2_Depthweed.label>
 	<!--Original=dummy text.-->
 	<Moyo2_Depthweed.description>뎁스위드를 잘라서 정리한 것입니다. 보관이 용이합니다. 이 해초의 섬유는 등대의 보편적인 섬유인 뎁스위브를 만들 수 있으며, 필요한 경우 동물의 먹이로 이용할수도 있습니다. 매우 질기기에 소화는 잘 되지 않을겁니다.\n\n최초의 모요들은 합성원단을 주로 사용했으나, 등대가 세워진 이후 접근성이 더 좋은 뎁스위브를 사용하기 시작했습니다. 그에 따라 뎁스위드도 수없이 많은 곳에 퍼지게 되었습니다.</Moyo2_Depthweed.description>
+	<!--English=뎁스위드-->
+	<Moyo2_DepthWeedCorpse.label>뎁스위드</Moyo2_DepthWeedCorpse.label>
+	<!--English=심해에 자생하는 해초의 개량종입니다. 뎁스위브의 주 원료이며 사용하기 전에 가공해야합니다.\n\n이 해초는 심해의 열수구에서 재배가 되고 있으며 적절한 설비가 갖춰질 경우 실내 재배도 가능합니다.-->
+	<Moyo2_DepthWeedCorpse.description>심해에 자생하는 해초의 개량종입니다. 뎁스위브의 주 원료이며 사용하기 전에 가공해야합니다.\n\n이 해초는 심해의 열수구에서 재배가 되고 있으며 적절한 설비가 갖춰질 경우 실내 재배도 가능합니다.</Moyo2_DepthWeedCorpse.description>
 	<!--English=balistic gel pack-->
 	<Moyo2_BGelPack.label>방탄젤 팩</Moyo2_BGelPack.label>
 	<!--English=Pack of balistic gel used for refilling cartel balistic armor. Non-newtonian nature of this dense fluid provides excellent protection from sudden impacts.-->

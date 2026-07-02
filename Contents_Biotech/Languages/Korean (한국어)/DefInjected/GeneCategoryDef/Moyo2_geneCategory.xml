@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!--Original=moyo-->
-  <Moyo2_Gene.label>모요</Moyo2_Gene.label>
+	<!--Original=moyo-->
+	<Moyo2_Gene.label>모요</Moyo2_Gene.label>
+	<SZSpecial.label>특수</SZSpecial.label>
 </LanguageData>

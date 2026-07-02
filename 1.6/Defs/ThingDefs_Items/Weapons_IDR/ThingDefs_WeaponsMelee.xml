@@ -38,7 +38,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<comps Inherit="False">
+		<comps>
 			<li Class="CompProperties_EquippableAbilityReloadable">
 				<abilityDef>Moyo2_WrenchThrow</abilityDef>
 				<maxCharges>1</maxCharges>
@@ -47,12 +47,6 @@
 				<ammoDef>Steel</ammoDef>
 				<ammoCountPerCharge>5</ammoCountPerCharge>
 				<baseReloadTicks>200</baseReloadTicks>
-			</li>
-			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
-			<li>
-				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
 		<!-- - -->
@@ -247,7 +241,7 @@
 	<!-- 카르텔 컴뱃 나이프 -->
 	<ThingDef ParentName="MoyoBaseMeleeIDR">
 		<defName>Moyo2_CKnife</defName>
-		<label>카르텔 컴뱃 나이프</label>
+		<label>Cartel combat knife</label>
 		<description>A large combat knife forged with a cold, sharp edge. A handy tool and an effective weapon in one.\n\nDesigned with the intention to be used on the surface, this knife was made bigger and heavier than regular diving knife. It came with a bonus of menacing shape.</description>
 		<graphicData>
 			<texPath>Weapon/IDR_CKnife</texPath>
