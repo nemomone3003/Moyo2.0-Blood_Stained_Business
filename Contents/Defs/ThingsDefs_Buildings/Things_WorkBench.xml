@@ -279,7 +279,7 @@
 			</li>			
 			<li Class="CompProperties_Spawner">
 				<requiresPower>true</requiresPower>
-				<thingToSpawn>BlueSerum</thingToSpawn>
+				<thingToSpawn>Moyo2_BlueSerum</thingToSpawn>
 				<spawnCount>6</spawnCount>
 				<spawnIntervalRange>
 					<min>480000</min>

@@ -555,7 +555,7 @@
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>2</maxCharges>
-				<ammoDef>DBBooster_Blueburst</ammoDef>
+				<ammoDef>Moyo2_DBBooster_Blueburst</ammoDef>
 				<ammoCountToRefill>2</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>

@@ -20,7 +20,7 @@
             <range>14</range>
             <burstShotCount>5</burstShotCount>
             <ticksBetweenBurstShots>23</ticksBetweenBurstShots>
-            <soundCast>Industrial_Nailgun</soundCast>
+            <soundCast>Moyo2_Industrial_Nailgun</soundCast>
         </Properties>
         <AmmoUser>
             <magazineSize>20</magazineSize>

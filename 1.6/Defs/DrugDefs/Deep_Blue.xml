@@ -20,12 +20,12 @@
 	</ThingCategoryDef>
 	<!-- 혈액팩 -->
 	<ThingDef ParentName="ResourceBase">
-		<defName>BlueBloodBag</defName>
+		<defName>Moyo2_BlueBloodBag</defName>
 		<label>blue bloodbag</label>
 		<description>A bag of moyo blood, can be refined to produce deepblue.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Alien_Moyo</ThingDef>
-			<ThingDef>BlueSerum</ThingDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/BlueBloodBag</texPath>
@@ -47,7 +47,7 @@
 			<foodType>Fluid</foodType>
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-			<specialThoughtDirect>IngestedBlueBloodBag</specialThoughtDirect>
+			<specialThoughtDirect>Moyo2_IngestedBlueBloodBag</specialThoughtDirect>
 			<ingestSound MayRequire="Ludeon.RimWorld.Biotech">Ingest_Inject</ingestSound>
 			<outcomeDoers>
 				<li MayRequire="Ludeon.RimWorld.Biotech" Class="IngestionOutcomeDoer_OffsetHemogen">
@@ -61,7 +61,7 @@
 	</ThingDef>
 	<!-- 혈액팩 섭취 무드 -->
 	<ThoughtDef>
-		<defName>IngestedBlueBloodBag</defName>
+		<defName>Moyo2_IngestedBlueBloodBag</defName>
 		<thoughtClass>Thought_Memory</thoughtClass>
 		<durationDays>5</durationDays>
 		<stackLimit>5</stackLimit>
@@ -88,15 +88,15 @@
 	<!-- 딥블루___________________________________________________________________________________________________________________________________________________________________________________________________ -->
 	<!-- 딥블루 데프 -->
 	<ChemicalDef>
-		<defName>DeepBlue</defName>
+		<defName>Moyo2_DeepBlue</defName>
 		<label>Deep Blue</label>
-		<addictionHediff>DeepBlueAddiction</addictionHediff>
-		<toleranceHediff>DeepBlueTolerance</toleranceHediff>
+		<addictionHediff>Moyo2_DeepBlueAddiction</addictionHediff>
+		<toleranceHediff>Moyo2_DeepBlueTolerance</toleranceHediff>
 		<canBinge>true</canBinge>
 		<generateAddictionGenes>false</generateAddictionGenes>
 	</ChemicalDef>
 	<NeedDef ParentName="DrugAddictionNeedBase">
-		<defName>Chemical_Deepblue</defName>
+		<defName>Moyo2_Chemical_Deepblue</defName>
 		<needClass>Need_Chemical</needClass>
 		<label>Deepblue</label>
 		<description>Constant supply of deepblue is needed due to deepblue injection. Beacuse there are no known ways to reverse the modification caused by deepblue, This effect cannot be reversed.</description>
@@ -105,16 +105,16 @@
 	</NeedDef>
 	<!-- 푸른혈청 -->
 	<ThingDef ParentName="DrugPillBase">
-		<defName>BlueSerum</defName>
+		<defName>Moyo2_BlueSerum</defName>
 		<label>blue serum</label>
 		<description>Deepblue extracted from moyo blood. Its useful in various area of pharmaceutical and medical purposes.\n\nInjected to lifeforms other than moyos, it will slowly cause a change in metabolism eventually causing permanent dependancy to deepblue. It doesn't affect moyos in any significant ways. So don't waste it on moyos.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DeepBlueExtracter_Crude</ThingDef>
 			<ThingDef>Moyo2_DeepBlueExtracter</ThingDef>
 			<ThingDef>Moyo2_DeepBlueExtracter_Abysstech</ThingDef>
-			<ThingDef>BlueBloodBag</ThingDef>
-			<HediffDef>DeepBlueTolerance</HediffDef>
-			<HediffDef>DeepBlueAddiction</HediffDef>
+			<ThingDef>Moyo2_BlueBloodBag</ThingDef>
+			<HediffDef>Moyo2_DeepBlueTolerance</HediffDef>
+			<HediffDef>Moyo2_DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/BlueSerum</texPath>
@@ -142,7 +142,7 @@
 			<drugCategory>Medical</drugCategory>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DeepBlueTolerance</hediffDef>
+					<hediffDef>Moyo2_DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>false</divideByBodySize>
 				</li>
@@ -150,7 +150,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>DeepBlue</chemical>
+				<chemical>Moyo2_DeepBlue</chemical>
 				<addictiveness>1</addictiveness>
 				<minToleranceToAddict>0.06</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.33</existingAddictionSeverityOffset>
@@ -165,7 +165,7 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<costList>
-			<BlueBloodBag>1</BlueBloodBag>
+			<Moyo2_BlueBloodBag>1</Moyo2_BlueBloodBag>
 		</costList>
 		<recipeMaker>
 			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
@@ -190,16 +190,16 @@
 	</ThingDef>
 	<!-- 딥블루 축적 -->
 	<HediffDef ParentName="DrugToleranceBase">
-		<defName>DeepBlueTolerance</defName>
+		<defName>Moyo2_DeepBlueTolerance</defName>
 		<label>deepblue buildup</label>
 		<descriptionHyperlinks>
-			<ThingDef>BlueSerum</ThingDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
 		</descriptionHyperlinks>
 		<description>Injested deepblue accumulated inside the body. It will not decay by natural means and needs special enzyme to clear.</description>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_DrugEffectFactor">
-				<chemical>DeepBlue</chemical>
+				<chemical>Moyo2_DeepBlue</chemical>
 			</li>
 			<li Class="HediffCompProperties_Discoverable">
 				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
@@ -255,17 +255,17 @@
 		</stages>
 	</HediffDef>
 	<HediffDef ParentName="AddictionBase">
-		<defName>DeepBlueAddiction</defName>
+		<defName>Moyo2_DeepBlueAddiction</defName>
 		<label>deepblue instability</label>
 		<descriptionHyperlinks>
-			<ThingDef>BlueSerum</ThingDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
 		</descriptionHyperlinks>
 		<description>Injested deepblue acts as a part of its host's metabolism. Deepblue decays over time lowering its stability and needs replacements for the body to work as normal.</description>
 		<hediffClass>Hediff_Addiction</hediffClass>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>1</initialSeverity>
-		<chemicalNeed>Chemical_Deepblue</chemicalNeed>
+		<chemicalNeed>Moyo2_Chemical_Deepblue</chemicalNeed>
 		<everCurableByItem>false</everCurableByItem>
 		<isBad>true</isBad>
 		<comps>
@@ -312,9 +312,9 @@
 		</stages>
 	</HediffDef>
 	<ThoughtDeF>
-		<defName>DeepBlueAddiction_Thought</defName>
+		<defName>Moyo2_DeepBlueAddiction_Thought</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>DeepBlueAddiction</hediff>
+		<hediff>Moyo2_DeepBlueAddiction</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -340,12 +340,12 @@
 	</ThoughtDeF>
 	<!--딥블루 과다-->
 	<HediffDef>
-		<defName>DeepBlueOverFlow</defName>
+		<defName>Moyo2_DeepBlueOverFlow</defName>
 		<label>Deepblue overflow</label>
 		<description>An overflow of deepblue in a moyo's body. They will not produce more deepblue until the effect dissapears.</description>
 		<descriptionHyperlinks>
-			<ThingDef>BlueBloodBag</ThingDef>
-			<ThingDef>BlueSerum</ThingDef>
+			<ThingDef>Moyo2_BlueBloodBag</ThingDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
 		</descriptionHyperlinks>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
@@ -357,14 +357,14 @@
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			<li Class="HediffCompProperties_Effecter">
-				<stateEffecter>MoyoDrunk</stateEffecter>
+				<stateEffecter>Moyo2_MoyoDrunk</stateEffecter>
 				<severityIndices>3~5</severityIndices>
 			</li>
 		</comps>
 		<stages>
 			<li>
 				<statOffsets>
-					<DeepblueStatSpeed>-1</DeepblueStatSpeed>
+					<Moyo2_DeepblueStatSpeed>-1</Moyo2_DeepblueStatSpeed>
 				</statOffsets>
 			</li>
 		</stages>

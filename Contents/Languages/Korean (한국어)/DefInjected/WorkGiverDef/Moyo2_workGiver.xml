@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!--Original=Grow fish-->
-  <Moyo_GrowFish.label>물고기 기르기</Moyo_GrowFish.label>
+  <Moyo2_GrowFish.label>물고기 기르기</Moyo2_GrowFish.label>
   <!--Original=grow-->
-  <Moyo_GrowFish.verb>기르기</Moyo_GrowFish.verb>
+  <Moyo2_GrowFish.verb>기르기</Moyo2_GrowFish.verb>
   <!--Original=growing-->
-  <Moyo_GrowFish.gerund>기르는 중</Moyo_GrowFish.gerund>
+  <Moyo2_GrowFish.gerund>기르는 중</Moyo2_GrowFish.gerund>
   <!--Original=Collect grown fish-->
-  <Moyo_TakeFish.label>물고기 수확</Moyo_TakeFish.label>
+  <Moyo2_TakeFish.label>물고기 수확</Moyo2_TakeFish.label>
   <!--Original=collect-->
-  <Moyo_TakeFish.verb>수확</Moyo_TakeFish.verb>
+  <Moyo2_TakeFish.verb>수확</Moyo2_TakeFish.verb>
   <!--Original=collecting from-->
-  <Moyo_TakeFish.gerund>수확하는 중</Moyo_TakeFish.gerund>
+  <Moyo2_TakeFish.gerund>수확하는 중</Moyo2_TakeFish.gerund>
 <!--English=draw blood-->
 <Moyo2_ExtractDeepBlue_Work.label>딥블루 추출</Moyo2_ExtractDeepBlue_Work.label>
 <!--English=drawing blood-->

@@ -20,7 +20,7 @@
 			<range>51</range>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<burstShotCount>5</burstShotCount>
-			<soundCast>Laminar_Rifle</soundCast>
+			<soundCast>Moyo2_Laminar_Rifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 			<targetParams>
@@ -62,7 +62,7 @@
 			<range>51</range>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<burstShotCount>5</burstShotCount>
-			<soundCast>Laminar_Rifle</soundCast>
+			<soundCast>Moyo2_Laminar_Rifle</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 			<targetParams>

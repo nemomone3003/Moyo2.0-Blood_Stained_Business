@@ -18,7 +18,7 @@
             <defaultProjectile>Moyo2_Projectile_HeavyLaminarSpike</defaultProjectile>
             <warmupTime>2.5</warmupTime>
             <range>67</range>
-            <soundCast>Laminar_CLance</soundCast>
+            <soundCast>Moyo2_Laminar_CLance</soundCast>
             <soundCastTail>GunTail_Medium</soundCastTail>
             <muzzleFlashScale>9</muzzleFlashScale>
         </Properties>

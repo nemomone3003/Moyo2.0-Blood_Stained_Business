@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <StatDef>
-    <defName>DeepblueStat</defName>
+    <defName>Moyo2_DeepblueStat</defName>
     <label>Deeplbue production amount</label>
     <description>How much deepblue this pawn provides.</description>
     <category>BasicsPawn</category>
@@ -14,7 +14,7 @@
     <displayPriorityInCategory>10000</displayPriorityInCategory>
   </StatDef>
   <StatDef>
-    <defName>DeepblueStatSpeed</defName>
+    <defName>Moyo2_DeepblueStatSpeed</defName>
     <label>Deeplbue production speed</label>
     <description>How fast this pawn provides deepblue.</description>
     <category>BasicsPawn</category>

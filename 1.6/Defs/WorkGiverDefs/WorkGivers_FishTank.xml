@@ -2,7 +2,7 @@
 <Defs>
 
     <WorkGiverDef>
-        <defName>Moyo_GrowFish</defName>
+        <defName>Moyo2_GrowFish</defName>
         <label>Grow fish</label>
         <giverClass>Moyo2.WorkGiver_GrowFish</giverClass>
         <workType>Handling</workType>
@@ -16,7 +16,7 @@
       </WorkGiverDef>
 
       <WorkGiverDef>
-        <defName>Moyo_TakeFish</defName>
+        <defName>Moyo2_TakeFish</defName>
         <label>Collect grown fish</label>
         <giverClass>Moyo2.WorkGiver_EmptyFishTank</giverClass>
         <workType>Hauling</workType>

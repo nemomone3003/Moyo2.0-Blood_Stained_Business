@@ -18,8 +18,8 @@
 			<defaultProjectile>Moyo2_Projectile_HeavyLaminarSlug</defaultProjectile>
 			<warmupTime>2.5</warmupTime>
 			<range>48</range>
-			<soundAiming>Laminar_Chargeup2</soundAiming>
-			<soundCast>Laminar_Balista</soundCast>
+			<soundAiming>Moyo2_Laminar_Chargeup2</soundAiming>
+			<soundCast>Moyo2_Laminar_Balista</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
@@ -56,8 +56,8 @@
 					<defaultProjectile>Bullet_MoyoLaminarBolt_OC</defaultProjectile> CHANGE
 					<warmupTime>5.5</warmupTime>
 					<range>52</range>
-					<soundAiming>Laminar_Chargeup2</soundAiming>
-					<soundCast>Laminar_Balista</soundCast>
+					<soundAiming>Moyo2_Laminar_Chargeup2</soundAiming>
+					<soundCast>Moyo2_Laminar_Balista</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<RulePackDef>
-		<defName>CartelFactionNamer</defName>
+		<defName>Moyo2_CartelFactionNamer</defName>
 		<rulePack>
 			<rulesFiles>
 				<li>CartelFactionFirst->Name/Cartel/Cartel_Faction_First</li>
@@ -13,7 +13,7 @@
 		</rulePack>
 	</RulePackDef>
 	<!-- <RulePackDef> -->
-		<!-- <defName>CartelSettlementNamer</defName> -->
+		<!-- <defName>Moyo2_CartelSettlementNamer</defName> -->
 		<!-- <rulePack> -->
 			<!-- <rulesFiles> -->
 			<!-- </rulesFiles> -->

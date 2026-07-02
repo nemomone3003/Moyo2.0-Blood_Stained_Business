@@ -9,7 +9,7 @@
 		<workAmount>500</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
-		<effectWorking>MoyoButcherEffect</effectWorking>
+		<effectWorking>Moyo2_MoyoButcherEffect</effectWorking>
 		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
 		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
 		<workerCounterClass>RecipeWorkerCounter_ButcherAnimals</workerCounterClass>
@@ -28,7 +28,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<BlueBloodBag>1</BlueBloodBag>
+			<Moyo2_BlueBloodBag>1</Moyo2_BlueBloodBag>
 		</products>
 		<researchPrerequisite>Moyo2_Abysstech_DeepblueSimple</researchPrerequisite>
 	</RecipeDef>

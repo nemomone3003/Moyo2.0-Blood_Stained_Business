@@ -9,8 +9,8 @@
 			DefOfHelper.EnsureInitializedInCtor(typeof(Moyo2_JobDefOfs));
 		}
 
-		public static JobDef Moyo_GrowFish;
-		public static JobDef Moyo_EmptyFishTank;
+		public static JobDef Moyo2_GrowFish;
+		public static JobDef Moyo2_EmptyFishTank;
 		public static JobDef Moyo2_ReloadArmor;
 	}
 
@@ -23,7 +23,7 @@
 			DefOfHelper.EnsureInitializedInCtor(typeof(Moyo2_ThingDefOfs));
 		}
 
-		public static ThingDef Moyo_FishTank;
+		public static ThingDef Moyo2_FishTank;
 		public static ThingDef Moyo2_HadalSpire;
 		public static ThingDef Moyo2_DeepDrill;
 	}

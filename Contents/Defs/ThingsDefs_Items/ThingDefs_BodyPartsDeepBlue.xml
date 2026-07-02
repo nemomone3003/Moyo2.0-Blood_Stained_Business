@@ -13,7 +13,7 @@
 			<li>
 				<painOffset>0.05</painOffset>
 				<statOffsets>
-					<DeepblueStatSpeed>1</DeepblueStatSpeed>
+					<Moyo2_DeepblueStatSpeed>1</Moyo2_DeepblueStatSpeed>
 				</statOffsets>
 			</li>
 		</stages>
@@ -23,7 +23,7 @@
 		</tags>
 	</HediffDef>
 	<ThoughtDef>
-		<defName>Thought_Moyo2_DeepBlueExtracter_Crude</defName>
+		<defName>Moyo2_Thought_DeepBlueExtracter_Crude</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>Moyo2_DeepBlueExtracter_Crude</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -99,7 +99,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<DeepblueStatSpeed>1</DeepblueStatSpeed>
+					<Moyo2_DeepblueStatSpeed>1</Moyo2_DeepblueStatSpeed>
 				</statOffsets>
 			</li>
 		</stages>
@@ -108,7 +108,7 @@
 		</tags>
 	</HediffDef>
 	<ThoughtDef>
-		<defName>Thought_Moyo2_DeepBlueExtracter</defName>
+		<defName>Moyo2_Thought_DeepBlueExtracter</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>Moyo2_DeepBlueExtracter</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -184,7 +184,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<DeepblueStatSpeed>1</DeepblueStatSpeed>
+					<Moyo2_DeepblueStatSpeed>1</Moyo2_DeepblueStatSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -246,7 +246,7 @@
 	</ThingDef>
 	<!-- 블루버스터 수확기 -->
 	<!-- <ThingDef ParentName="BodyPartProstheticMakeableBase"> -->
-	<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
+	<!-- <defName>Moyo2_DeepBlueExtracter_Blueburst</defName> -->
 	<!-- <label>blueburster deepblue harvester</label> -->
 	<!-- <description>A deepblue extractor. Install this to a moyo to begin deepblue production.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
 	<!-- <techLevel>Industrial</techLevel> -->
@@ -268,20 +268,20 @@
 	<!-- </techHediffsTags> -->
 	<!-- </ThingDef> -->
 	<!-- <HediffDef ParentName="ImplantHediffBase"> -->
-	<!-- <defName>DeepBlueExtracter_Blueburst</defName> -->
+	<!-- <defName>Moyo2_DeepBlueExtracter_Blueburst</defName> -->
 	<!-- <label>blueburster deepblue harvester</label> -->
 	<!-- <labelNoun>a deepblue extractor</labelNoun> -->
 	<!-- <description>A deepblue extractor installed. It will produce deepblue every often.\n\nA less barbaric way to extract deepblue from one's body. This is the most used model in the lighthouse being affordable without big drawbacks. Install one today!</description> -->
 	<!-- <descriptionHyperlinks> -->
-	<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
+	<!-- <ThingDef>Moyo2_DeepBlueExtracter_Blueburst</ThingDef> -->
 	<!-- </descriptionHyperlinks> -->
-	<!-- <spawnThingOnRemoved>DeepBlueExtracter_Blueburst</spawnThingOnRemoved> -->
+	<!-- <spawnThingOnRemoved>Moyo2_DeepBlueExtracter_Blueburst</spawnThingOnRemoved> -->
 	<!-- <stages> -->
 	<!-- <li> -->
 	<!-- <painOffset>0.3</painOffset> -->
 	<!-- <statOffsets> -->
-	<!-- <DeepblueStatSpeed>1</DeepblueStatSpeed> -->
-	<!-- <DeepblueStat>0.5</DeepblueStat> -->
+	<!-- <Moyo2_DeepblueStatSpeed>1</Moyo2_DeepblueStatSpeed> -->
+	<!-- <Moyo2_DeepblueStat>0.5</Moyo2_DeepblueStat> -->
 	<!-- </statOffsets> -->
 	<!-- <capMods> -->
 	<!-- <li> -->
@@ -296,9 +296,9 @@
 	<!-- </tags> -->
 	<!-- </HediffDef> -->
 	<!-- <ThoughtDef> -->
-	<!-- <defName>Thought_DeepBlueExtracter_Blueburst</defName> -->
+	<!-- <defName>Moyo2_Thought_DeepBlueExtracter_Blueburst</defName> -->
 	<!-- <workerClass>ThoughtWorker_Hediff</workerClass> -->
-	<!-- <hediff>DeepBlueExtracter_Blueburst</hediff> -->
+	<!-- <hediff>Moyo2_DeepBlueExtracter_Blueburst</hediff> -->
 	<!-- <validWhileDespawned>true</validWhileDespawned> -->
 	<!-- <nullifyingTraits> -->
 	<!-- <li>Masochist</li> -->

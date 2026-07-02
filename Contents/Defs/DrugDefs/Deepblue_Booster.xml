@@ -2,14 +2,14 @@
 <Defs>
 	<!-- 바이탈 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
-		<defName>DBBooster_Medi</defName>
+		<defName>Moyo2_DBBooster_Medi</defName>
 		<label>medi booster</label>
 		<description>A medical drug offering advantages of rapid injection and swift onset of effects. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections. Some experts say this drug is helpful for curing and preventing cancer, diabetes, alzheimers and also aiding in weight loss, increase of strength and vigor.\n\nIf prolonged injections haven't granted your desired effects, we advise to inject additional doses.</description>
 		<descriptionHyperlinks>
-			<HediffDef>DBHediff_Medi</HediffDef>
-			<ThingDef>BlueSerum</ThingDef>
-			<HediffDef>DeepBlueTolerance</HediffDef>
-			<HediffDef>DeepBlueAddiction</HediffDef>
+			<HediffDef>Moyo2_DBBooster_Medi</HediffDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
+			<HediffDef>Moyo2_DeepBlueTolerance</HediffDef>
+			<HediffDef>Moyo2_DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/MediBooster</texPath>
@@ -22,7 +22,7 @@
 		</statBases>
 		<stackLimit>25</stackLimit>
 		<costList>
-			<BlueSerum>1</BlueSerum>
+			<Moyo2_BlueSerum>1</Moyo2_BlueSerum>
 			<MedicineHerbal>2</MedicineHerbal>
 			<Neutroamine>3</Neutroamine>
 		</costList>
@@ -46,12 +46,12 @@
 			<ingestSound>Ingest_Inject</ingestSound>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DBHediff_Medi</hediffDef>
+					<hediffDef>Moyo2_DBBooster_Medi</hediffDef>
 					<severity>0.6</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DeepBlueTolerance</hediffDef>
+					<hediffDef>Moyo2_DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>false</divideByBodySize>
 				</li>
@@ -59,7 +59,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>DeepBlue</chemical>
+				<chemical>Moyo2_DeepBlue</chemical>
 				<addictiveness>1</addictiveness>
 				<minToleranceToAddict>0.059</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
@@ -75,13 +75,13 @@
 		</thingCategories>
 	</ThingDef>
 	<HediffDef>
-		<defName>DBHediff_Medi</defName>
+		<defName>Moyo2_DBBooster_Medi</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>active medi booster</label>
 		<labelNoun>active medi booster</labelNoun>
 		<description>Active medi booster in the bloodstream. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.</description>
 		<descriptionHyperlinks>
-			<ThingDef>DBBooster_Medi</ThingDef>
+			<ThingDef>Moyo2_DBBooster_Medi</ThingDef>
 		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -141,14 +141,14 @@
 	</HediffDef>
 	<!-- 오르카 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
-		<defName>DBBooster_Orca</defName>
+		<defName>Moyo2_DBBooster_Orca</defName>
 		<label>orca booster</label>
 		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for fighters to boost their performance, It increases melee combat abilities. Its effects gets more potent with subsequent doeses. Most of the matches now relies on who has more of quality orca boosters. Also the consumers were thrilled about more dynamic and brutal trade between the fighters.\n\nTheUseOfOrcaBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
 		<descriptionHyperlinks>
-			<HediffDef>DBHediff_Orca</HediffDef>
-			<ThingDef>BlueSerum</ThingDef>
-			<HediffDef>DeepBlueTolerance</HediffDef>
-			<HediffDef>DeepBlueAddiction</HediffDef>
+			<HediffDef>Moyo2_DBHediff_Orca</HediffDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
+			<HediffDef>Moyo2_DeepBlueTolerance</HediffDef>
+			<HediffDef>Moyo2_DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/OrcaBooster</texPath>
@@ -161,7 +161,7 @@
 		</statBases>
 		<stackLimit>25</stackLimit>
 		<costList>
-			<BlueSerum>1</BlueSerum>
+			<Moyo2_BlueSerum>1</Moyo2_BlueSerum>
 			<GoJuice>1</GoJuice>
 			<Neutroamine>3</Neutroamine>
 		</costList>
@@ -192,12 +192,12 @@
 					<offset>0.15</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DBHediff_Orca</hediffDef>
+					<hediffDef>Moyo2_DBHediff_Orca</hediffDef>
 					<severity>0.6</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DeepBlueTolerance</hediffDef>
+					<hediffDef>Moyo2_DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>false</divideByBodySize>
 				</li>
@@ -205,7 +205,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>DeepBlue</chemical>
+				<chemical>Moyo2_DeepBlue</chemical>
 				<addictiveness>1</addictiveness>
 				<minToleranceToAddict>0.059</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
@@ -221,13 +221,13 @@
 		</thingCategories>
 	</ThingDef>
 	<HediffDef>
-		<defName>DBHediff_Orca</defName>
+		<defName>Moyo2_DBHediff_Orca</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on orca booster</label>
 		<labelNoun>a orca booster high</labelNoun>
 		<description>Active orca booster in the bloodstreams. It increases melee combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
-			<ThingDef>DBBooster_Orca</ThingDef>
+			<ThingDef>Moyo2_DBBooster_Orca</ThingDef>
 		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -308,14 +308,14 @@
 	</HediffDef>
 	<!-- 히드라 부스터 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
-		<defName>DBBooster_Hydra</defName>
+		<defName>Moyo2_DBBooster_Hydra</defName>
 		<label>hydra booster</label>
 		<description>A combat oriented drug offering advantages of rapid injection and swift onset of effects. Designed for sharpshooters to boost their performance, It increases ranged combat abilities. Its effects gets more potent with subsequent doeses. Even granting an ordinary person a bull's eye, even the council decided to utilise it for military use.\n\nTheUseOfHydraBoosterMeansAgreeingToTheTermsOfTheCompanyHoldingNoResponsibilitiesForTheIssuesItMayCause.</description>
 		<descriptionHyperlinks>
-			<HediffDef>DBHediff_Hydra</HediffDef>
-			<ThingDef>BlueSerum</ThingDef>
-			<HediffDef>DeepBlueTolerance</HediffDef>
-			<HediffDef>DeepBlueAddiction</HediffDef>
+			<HediffDef>Moyo2_DBHediff_Hydra</HediffDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
+			<HediffDef>Moyo2_DeepBlueTolerance</HediffDef>
+			<HediffDef>Moyo2_DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/HydraBooster</texPath>
@@ -328,7 +328,7 @@
 		</statBases>
 		<stackLimit>25</stackLimit>
 		<costList>
-			<BlueSerum>1</BlueSerum>
+			<Moyo2_BlueSerum>1</Moyo2_BlueSerum>
 			<GoJuice>1</GoJuice>
 			<Neutroamine>3</Neutroamine>
 		</costList>
@@ -357,12 +357,12 @@
 					<offset>0.15</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DBHediff_Hydra</hediffDef>
+					<hediffDef>Moyo2_DBHediff_Hydra</hediffDef>
 					<severity>0.6</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DeepBlueTolerance</hediffDef>
+					<hediffDef>Moyo2_DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>false</divideByBodySize>
 				</li>
@@ -370,7 +370,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>DeepBlue</chemical>
+				<chemical>Moyo2_DeepBlue</chemical>
 				<addictiveness>1</addictiveness>
 				<minToleranceToAddict>0.059</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
@@ -386,13 +386,13 @@
 		</thingCategories>
 	</ThingDef>
 	<HediffDef>
-		<defName>DBHediff_Hydra</defName>
+		<defName>Moyo2_DBHediff_Hydra</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on hydra booster</label>
 		<labelNoun>a hydra booster high</labelNoun>
 		<description>Active hydra booster in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.</description>
 		<descriptionHyperlinks>
-			<ThingDef>DBBooster_Hydra</ThingDef>
+			<ThingDef>Moyo2_DBBooster_Hydra</ThingDef>
 		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -484,14 +484,14 @@
 	</HediffDef>
 	<!-- 블루버스트 -->
 	<ThingDef ParentName="MakeableDrugPillBase">
-		<defName>DBBooster_Blueburst</defName>
+		<defName>Moyo2_DBBooster_Blueburst</defName>
 		<label>blueburst booster</label>
 		<description>A medical drug offering advantages of rapid injection and swift onset of effects. Designed as a catalyst for more potent drugs, it has a potential to be mixed with other drugs, creating more potent effect. But injected alone, it overloads cardiovascular system of the victim, potentially causing cardiac arrest. So don't.\n\nTheCompanyDoesNotHoldAnyResponsibilitiesWheneverThisProductIsUsedOutsideOfItsIntendedPurpose.</description>
 		<descriptionHyperlinks>
-			<HediffDef>DBHediff_Blueburst</HediffDef>
-			<ThingDef>BlueSerum</ThingDef>
-			<HediffDef>DeepBlueTolerance</HediffDef>
-			<HediffDef>DeepBlueAddiction</HediffDef>
+			<HediffDef>Moyo2_DBHediff_Blueburst</HediffDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
+			<HediffDef>Moyo2_DeepBlueTolerance</HediffDef>
+			<HediffDef>Moyo2_DeepBlueAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Item/BlueBurst</texPath>
@@ -504,7 +504,7 @@
 		</statBases>
 		<stackLimit>25</stackLimit>
 		<costList>
-			<BlueSerum>1</BlueSerum>
+			<Moyo2_BlueSerum>1</Moyo2_BlueSerum>
 			<GoJuice>1</GoJuice>
 			<Neutroamine>3</Neutroamine>
 		</costList>
@@ -526,12 +526,12 @@
 			<drugCategory>Hard</drugCategory>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DBHediff_Blueburst</hediffDef>
+					<hediffDef>Moyo2_DBHediff_Blueburst</hediffDef>
 					<severity>0.6</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>DeepBlueTolerance</hediffDef>
+					<hediffDef>Moyo2_DeepBlueTolerance</hediffDef>
 					<severity>0.02</severity>
 					<divideByBodySize>false</divideByBodySize>
 				</li>
@@ -539,7 +539,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>DeepBlue</chemical>
+				<chemical>Moyo2_DeepBlue</chemical>
 				<addictiveness>1</addictiveness>
 				<minToleranceToAddict>0.059</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.125</existingAddictionSeverityOffset>
@@ -555,13 +555,13 @@
 		</thingCategories>
 	</ThingDef>
 	<HediffDef>
-		<defName>DBHediff_Blueburst</defName>
+		<defName>Moyo2_DBHediff_Blueburst</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on blueburst booster</label>
 		<labelNoun>a blueburst booster high</labelNoun>
 		<description>Active blueburst booster in the bloodstreams. It overloads cardiovascular system of the victim, potentially causing cardiac arrest. Why have you done this?</description>
 		<descriptionHyperlinks>
-			<ThingDef>DBBooster_Hydra</ThingDef>
+			<ThingDef>Moyo2_DBBooster_Hydra</ThingDef>
 		</descriptionHyperlinks>
 		<defaultLabelColor>(80,125,222)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>

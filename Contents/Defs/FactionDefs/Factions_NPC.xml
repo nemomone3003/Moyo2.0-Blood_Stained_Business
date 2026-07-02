@@ -15,7 +15,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Spacer</techLevel>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
-		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
+		<raidLootMaker>Moyo2_RaidLootMaker</raidLootMaker>
 		<allowedCultures>
 			<li>Moyo2_RefugeeCulture</li>
 		</allowedCultures>
@@ -259,7 +259,7 @@
 		</pawnGroupMakers>
 	</FactionDef>
 	<ThingSetMakerDef>
-		<defName>MoyoRaidLootMaker</defName>
+		<defName>Moyo2_RaidLootMaker</defName>
 		<root Class="ThingSetMaker_MarketValue">
 			<fixedParams>
 				<filter>

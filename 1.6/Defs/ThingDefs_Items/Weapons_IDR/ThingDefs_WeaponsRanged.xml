@@ -36,7 +36,7 @@
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<range>11.9</range>
-				<soundCast>Industrial_Nailgun</soundCast>
+				<soundCast>Moyo2_Industrial_Nailgun</soundCast>
 				<!-- <soundCastTail>GunTail_Light</soundCastTail> -->
 				<!-- <muzzleFlashScale>1</muzzleFlashScale> -->
 			</li>
@@ -94,7 +94,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_IDRFireC</effecterDef>
+				<effecterDef>Moyo2_Effecter_IDRFireC</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -132,7 +132,7 @@
 				<defaultProjectile>Moyo2_Bullet_SpearGun</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
 				<range>24.9</range>
-				<soundCast>Industrial_SpearGun</soundCast>
+				<soundCast>Moyo2_Industrial_SpearGun</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<!-- <muzzleFlashScale>1</muzzleFlashScale> -->
 			</li>
@@ -189,7 +189,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_IDRFireA</effecterDef>
+				<effecterDef>Moyo2_Effecter_IDRFireA</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -226,7 +226,7 @@
 				<defaultProjectile>Moyo2_Bullet_HarpoonGun</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<range>37.9</range>
-				<soundCast>Industrial_HarpoonGun</soundCast>
+				<soundCast>Moyo2_Industrial_HarpoonGun</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<!-- <muzzleFlashScale>1</muzzleFlashScale> -->
 			</li>
@@ -284,7 +284,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_IDRFireB</effecterDef>
+				<effecterDef>Moyo2_Effecter_IDRFireB</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -297,7 +297,7 @@
 			<texPath>Weapon/IDR_Rifle2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -333,7 +333,7 @@
 				<range>30.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Laminar_CRifle</soundCast>
+				<soundCast>Moyo2_Laminar_CRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -379,7 +379,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_CLMRFireA</effecterDef>
+				<effecterDef>Moyo2_Effecter_CLMRFireA</effecterDef>
 			</li>
 		</comps>		
 	</ThingDef>	

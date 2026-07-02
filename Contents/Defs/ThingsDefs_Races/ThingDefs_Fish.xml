@@ -213,7 +213,7 @@
 		</ingestible>
 		<butcherProducts>
 			<Meat_Alien_Moyo>120</Meat_Alien_Moyo>
-			<BlueBloodBag>2</BlueBloodBag>
+			<Moyo2_BlueBloodBag>2</Moyo2_BlueBloodBag>
 		</butcherProducts>
 		<researchPrerequisites>
 			<li>Moyo2_Abysstech_DeepblueSynthesis</li>

@@ -4,7 +4,7 @@
 	<!-- ==================== YP ================================ -->
 	<!-- 조작음 -->
 	<SoundDef>
-		<defName>Laminar_Activate</defName>
+		<defName>Moyo2_Laminar_Activate</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -23,7 +23,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Laminar_Activate2</defName>
+		<defName>Moyo2_Laminar_Activate2</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -43,7 +43,7 @@
 	</SoundDef>
 	<!-- 충전음 -->
 	<SoundDef>
-		<defName>Laminar_Charge</defName>
+		<defName>Moyo2_Laminar_Charge</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<sustain>true</sustain>
@@ -64,7 +64,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Laminar_Chargeup</defName>
+		<defName>Moyo2_Laminar_Chargeup</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<sustain>true</sustain>
@@ -85,7 +85,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Laminar_Chargeup2</defName>
+		<defName>Moyo2_Laminar_Chargeup2</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<sustain>true</sustain>
@@ -106,7 +106,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Laminar_Chargeup3</defName>
+		<defName>Moyo2_Laminar_Chargeup3</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<sustain>true</sustain>
@@ -128,7 +128,7 @@
 	</SoundDef>		
 	<!-- 사격음 -->
 	<SoundDef>
-		<defName>Industrial_WrenchThrow</defName>
+		<defName>Moyo2_Industrial_WrenchThrow</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -147,7 +147,7 @@
 		</subSounds>
 	</SoundDef>		
 	<SoundDef>
-		<defName>Industrial_Nailgun</defName>
+		<defName>Moyo2_Industrial_Nailgun</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -166,7 +166,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Industrial_SpearGun</defName>
+		<defName>Moyo2_Industrial_SpearGun</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -185,7 +185,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Industrial_HarpoonGun</defName>
+		<defName>Moyo2_Industrial_HarpoonGun</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -204,7 +204,7 @@
 		</subSounds>
 	</SoundDef>	
 	<SoundDef>
-		<defName>Laminar_Pistol</defName>
+		<defName>Moyo2_Laminar_Pistol</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -223,7 +223,7 @@
 		</subSounds>
 	</SoundDef>		
 	<SoundDef>
-		<defName>Laminar_Rifle</defName>
+		<defName>Moyo2_Laminar_Rifle</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -242,7 +242,7 @@
 		</subSounds>
 	</SoundDef>	
 	<SoundDef>
-		<defName>Laminar_Balista</defName>
+		<defName>Moyo2_Laminar_Balista</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -261,7 +261,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Laminar_Colider</defName>
+		<defName>Moyo2_Laminar_Colider</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -280,7 +280,7 @@
 		</subSounds>
 	</SoundDef>			
 	<SoundDef>
-		<defName>Laminar_CRifle</defName>
+		<defName>Moyo2_Laminar_CRifle</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -299,7 +299,7 @@
 		</subSounds>
 	</SoundDef>	
 	<SoundDef>
-		<defName>Laminar_CLance</defName>
+		<defName>Moyo2_Laminar_CLance</defName>
 		<eventNames />
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>

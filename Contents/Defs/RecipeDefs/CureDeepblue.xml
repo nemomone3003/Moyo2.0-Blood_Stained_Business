@@ -11,7 +11,7 @@
 		<hideBodyPartNames>true</hideBodyPartNames>
 		<isViolation>false</isViolation>
 		<targetsBodyPart>false</targetsBodyPart>
-		<removesHediff>DeepBlueTolerance</removesHediff>
+		<removesHediff>Moyo2_DeepBlueTolerance</removesHediff>
 		<successfullyRemovedHediffMessage>{0} has successfully cleared {1}'s deepblue buildup.</successfullyRemovedHediffMessage>
 		<surgerySuccessChanceFactor>4</surgerySuccessChanceFactor>
 		<skillRequirements>

@@ -19,7 +19,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_CLMRFireA</effecterDef>
+				<effecterDef>Moyo2_Effecter_CLMRFireA</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -31,7 +31,7 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<!-- - -->
 		<statBases>
 			<WorkToMake>72000</WorkToMake>
@@ -99,7 +99,7 @@
 				<range>24.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<soundCast>Laminar_CRifle</soundCast>
+				<soundCast>Moyo2_Laminar_CRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>5</muzzleFlashScale>
 			</li>
@@ -128,7 +128,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_CLMRFireB</effecterDef>
+				<effecterDef>Moyo2_Effecter_CLMRFireB</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -140,7 +140,7 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<!-- - -->
 		<statBases>
 			<WorkToMake>72000</WorkToMake>
@@ -208,7 +208,7 @@
 				<range>15.9</range>
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<soundCast>Laminar_CRifle</soundCast>
+				<soundCast>Moyo2_Laminar_CRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>5</muzzleFlashScale>
 			</li>
@@ -238,7 +238,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_CLMRFireB</effecterDef>
+				<effecterDef>Moyo2_Effecter_CLMRFireB</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -250,7 +250,7 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<!-- - -->
 		<statBases>
 			<WorkToMake>72000</WorkToMake>
@@ -318,7 +318,7 @@
 				<range>24.9</range>
 				<burstShotCount>1</burstShotCount>
 				<!-- <ticksBetweenBurstShots>5</ticksBetweenBurstShots>	 -->
-				<soundCast>Laminar_CLance</soundCast>
+				<soundCast>Moyo2_Laminar_CLance</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -348,7 +348,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_CLMRFireC</effecterDef>
+				<effecterDef>Moyo2_Effecter_CLMRFireC</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -360,7 +360,7 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<!-- - -->
 		<statBases>
 			<WorkToMake>72000</WorkToMake>
@@ -429,7 +429,7 @@
 				<range>64.9</range>
 				<burstShotCount>1</burstShotCount>
 				<!-- <ticksBetweenBurstShots>5</ticksBetweenBurstShots>	 -->
-				<soundCast>Laminar_CLance</soundCast>
+				<soundCast>Moyo2_Laminar_CLance</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

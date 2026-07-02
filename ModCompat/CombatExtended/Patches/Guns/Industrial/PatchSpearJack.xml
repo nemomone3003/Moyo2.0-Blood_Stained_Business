@@ -18,7 +18,7 @@
             <defaultProjectile>Moyo2_Projectile_SteelPile</defaultProjectile>
             <warmupTime>1.1</warmupTime>
             <range>16</range>
-            <soundCast>Industrial_SpearGun</soundCast>
+            <soundCast>Moyo2_Industrial_SpearGun</soundCast>
             <soundCastTail>GunTail_Light</soundCastTail>
         </Properties>
         <AmmoUser>

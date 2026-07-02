@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<DamageDef ParentName="Bullet">
-		<defName>Moyo_DemolishBullet</defName>
+		<defName>Moyo2_DemolishBullet</defName>
 		<label>heavy bolt</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
@@ -18,7 +18,7 @@
 		<plantDamageFactor>2</plantDamageFactor>
 	</DamageDef>
 	<DamageDef ParentName="Bullet">
-		<defName>Moyo_ColiderBullet</defName>
+		<defName>Moyo2_ColiderBullet</defName>
 		<label>concentrated laminar field</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
@@ -35,6 +35,6 @@
 		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
 		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
 		<plantDamageFactor>2</plantDamageFactor>
-		<!-- <damageEffecter>Effecter_LMRColider</damageEffecter> -->
+		<!-- <damageEffecter>Moyo2_Effecter_LMRColider</damageEffecter> -->
 	</DamageDef>
 </Defs>

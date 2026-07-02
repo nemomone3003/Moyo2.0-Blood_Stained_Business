@@ -96,7 +96,7 @@
 	  <!-- Drugs -->
 	  
       <li Class="StockGenerator_SingleDef">
-        <thingDef>BlueSerum</thingDef>
+        <thingDef>Moyo2_BlueSerum</thingDef>
         <countRange>25~70</countRange>
       </li>
       <!-- vanilla Drugs -->
@@ -105,7 +105,7 @@
         <thingDefCountRange>1~3</thingDefCountRange>
         <totalPriceRange>250~1100</totalPriceRange>
         <excludedThingDefs>
-          <li>BlueSerum</li>
+          <li>Moyo2_BlueSerum</li>
         </excludedThingDefs>		
       </li>
       <!-- simple Drugs -->

@@ -17,7 +17,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireB</effecterDef>
+				<effecterDef>Moyo2_Effecter_LMRFireB</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -42,7 +42,7 @@
 		</projectile>
 		<comps>
 			<li Class="CompProperties_ProjectileEffecter">
-				<effecterDef>Effecter_LMRFireB</effecterDef>
+				<effecterDef>Moyo2_Effecter_LMRFireB</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -54,7 +54,7 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
-		<soundInteract>Laminar_Activate</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate</soundInteract>
 		<!-- - -->
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
@@ -107,7 +107,7 @@
 				<defaultProjectile>Moyo2_Bullet_LMRSlugB</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>26.5</range>
-				<soundCast>Laminar_Rifle</soundCast>
+				<soundCast>Moyo2_Laminar_Rifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
 			</li>
@@ -125,7 +125,7 @@
 						<thingDef>Moyo2_LMRPistolOver</thingDef>
 						<transformCooldown>100</transformCooldown>
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
-						<soundOnTransform>Laminar_Activate</soundOnTransform>
+						<soundOnTransform>Moyo2_Laminar_Activate</soundOnTransform>
 					</li>
 				</transformDatas>
 			</li>
@@ -161,8 +161,8 @@
 				<forcedMissRadius>0.01</forcedMissRadius>
 				<warmupTime>0.9</warmupTime>
 				<range>31.9</range>
-				<soundAiming>Laminar_Chargeup2</soundAiming>
-				<soundCast>Laminar_Pistol</soundCast>
+				<soundAiming>Moyo2_Laminar_Chargeup2</soundAiming>
+				<soundCast>Moyo2_Laminar_Pistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
 			</li>
@@ -178,7 +178,7 @@
 					<description>Gun system overloading.</description>
 					<thingDef>Moyo2_LMRPistolDown</thingDef>
 					<revertAfterTicks>900</revertAfterTicks>
-					<soundOnTransform>Laminar_Activate</soundOnTransform>
+					<soundOnTransform>Moyo2_Laminar_Activate</soundOnTransform>
 				</revertData>
 				<transformDatas>
 					<li>
@@ -187,7 +187,7 @@
 						<thingDef>Moyo2_LMRPistolDown</thingDef>
 						<transformCooldown>100</transformCooldown>
 						<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
-						<soundOnTransform>Laminar_Activate</soundOnTransform>
+						<soundOnTransform>Moyo2_Laminar_Activate</soundOnTransform>
 					</li>
 				</transformDatas>
 			</li>
@@ -220,7 +220,7 @@
 					<thingDef>Moyo2_LMRPistol</thingDef>
 					<revertAfterTicks>1500</revertAfterTicks>
 					<!-- <moteOnTransform>Mote_YuranFlower_Hit_Staff</moteOnTransform> -->
-					<soundOnTransform>Laminar_Activate</soundOnTransform>
+					<soundOnTransform>Moyo2_Laminar_Activate</soundOnTransform>
 				</revertData>
 			</li>
 		</comps>

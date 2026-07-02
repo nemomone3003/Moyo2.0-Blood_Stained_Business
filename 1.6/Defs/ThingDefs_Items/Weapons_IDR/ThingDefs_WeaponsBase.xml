@@ -156,11 +156,11 @@
 	<DamageDef ParentName="BluntBase">
 		<defName>Moyo2_Damage_WrenchThrow</defName>
 		<label>blunt</label>
-		<impactSoundType>WrenchThrow</impactSoundType>
+		<impactSoundType>Moyo2_WrenchThrow</impactSoundType>
 	</DamageDef>
 	<ImpactSoundTypeDef>
-		<defName>WrenchThrow</defName>
+		<defName>Moyo2_WrenchThrow</defName>
 		<playOnlyIfHitPawn>true</playOnlyIfHitPawn>
-		<soundDef>Industrial_WrenchThrow</soundDef>
+		<soundDef>Moyo2_Industrial_WrenchThrow</soundDef>
 	</ImpactSoundTypeDef>
 </Defs>

@@ -5,7 +5,7 @@
 		<label>Moyo hair</label>
 	</StyleItemCategoryDef>
 	<!-- <StyleItemCategoryDef> -->
-		<!-- <defName>Moyo_HairCategory</defName> -->
+		<!-- <defName>Moyo2_HairCategory</defName> -->
 		<!-- <label>Moyo hair</label> -->
 	<!-- </StyleItemCategoryDef>	 -->
 
@@ -19,7 +19,7 @@
 	</HairDef>	
 
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_DesignTwin</defName> -->
+		<!-- <defName>Moyo2_hair_DesignTwin</defName> -->
 		<!-- <label>Moyo_DesignTwin</label> -->
 		<!-- <styleGender>Female</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYDesignTwin</texPath> -->
@@ -28,7 +28,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_Fluffy</defName> -->
+		<!-- <defName>Moyo2_hair_Fluffy</defName> -->
 		<!-- <label>Moyo_Fluffy</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYFluffy</texPath> -->
@@ -37,7 +37,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef>	 -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_HalfShave</defName> -->
+		<!-- <defName>Moyo2_hair_HalfShave</defName> -->
 		<!-- <label>Moyo_halfshaved</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYHalfShave</texPath> -->
@@ -46,7 +46,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_LongBun</defName> -->
+		<!-- <defName>Moyo2_hair_LongBun</defName> -->
 		<!-- <label>Moyo_LongBun</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYLongBun</texPath> -->
@@ -55,7 +55,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_LongBun2</defName> -->
+		<!-- <defName>Moyo2_hair_LongBun2</defName> -->
 		<!-- <label>Moyo_LongBun2</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYLongBun2</texPath> -->
@@ -64,7 +64,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef>	 -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_LongFluff</defName> -->
+		<!-- <defName>Moyo2_hair_LongFluff</defName> -->
 		<!-- <label>Moyo_LongFluff</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYLongFluff</texPath> -->
@@ -73,7 +73,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_LongShade</defName> -->
+		<!-- <defName>Moyo2_hair_LongShade</defName> -->
 		<!-- <label>Moyo_LongShade</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYLongShade</texPath> -->
@@ -82,7 +82,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_LongTwin</defName> -->
+		<!-- <defName>Moyo2_hair_LongTwin</defName> -->
 		<!-- <label>Moyo_LongTwin</label> -->
 		<!-- <styleGender>Female</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYLongTwin</texPath> -->
@@ -91,7 +91,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_LowTwin</defName> -->
+		<!-- <defName>Moyo2_hair_LowTwin</defName> -->
 		<!-- <label>Moyo_LowTwin</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYLowTwin</texPath> -->
@@ -100,7 +100,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_Ponytail</defName> -->
+		<!-- <defName>Moyo2_hair_Ponytail</defName> -->
 		<!-- <label>Moyo_Ponytail</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYPonytail</texPath> -->
@@ -109,7 +109,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_ShortBun</defName> -->
+		<!-- <defName>Moyo2_hair_ShortBun</defName> -->
 		<!-- <label>Moyo_ShortBun</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYShortBun</texPath> -->
@@ -118,7 +118,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_ShortFluff</defName> -->
+		<!-- <defName>Moyo2_hair_ShortFluff</defName> -->
 		<!-- <label>Moyo_ShortFluff</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYShortFluff</texPath> -->
@@ -127,7 +127,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_ShortShade</defName> -->
+		<!-- <defName>Moyo2_hair_ShortShade</defName> -->
 		<!-- <label>Moyo_ShortShade</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYShortShade</texPath> -->
@@ -136,7 +136,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_Sidetail</defName> -->
+		<!-- <defName>Moyo2_hair_Sidetail</defName> -->
 		<!-- <label>Moyo_Sidetail</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYSidetail</texPath> -->
@@ -145,7 +145,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_SingleBun</defName> -->
+		<!-- <defName>Moyo2_hair_SingleBun</defName> -->
 		<!-- <label>Moyo_SingleBun</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYSingleBun</texPath> -->
@@ -154,7 +154,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_ShortWave</defName> -->
+		<!-- <defName>Moyo2_hair_ShortWave</defName> -->
 		<!-- <label>Moyo_ShortWave</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYShortWave</texPath> -->
@@ -163,7 +163,7 @@
 		<!-- </styleTags> -->
 	<!-- </HairDef> -->
 	<!-- <HairDef> -->
-		<!-- <defName>Moyohair_SemiLong</defName> -->
+		<!-- <defName>Moyo2_hair_SemiLong</defName> -->
 		<!-- <label>Moyo_SemiLong</label> -->
 		<!-- <styleGender>Any</styleGender> -->
 		<!-- <texPath>Moyo/Hairs/MYSemiLong</texPath> -->

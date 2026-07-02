@@ -18,7 +18,7 @@
 			<defaultProjectile>Moyo2_Projectile_LaminarSlug</defaultProjectile>
 			<warmupTime>1.9</warmupTime>
 			<range>31</range>
-			<soundCast>Laminar_Pistol</soundCast>
+			<soundCast>Moyo2_Laminar_Pistol</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
@@ -58,8 +58,8 @@
 					<defaultProjectile>Moyo2_Projectile_LaminarSlug</defaultProjectile> CHANGE
 					<warmupTime>3.6</warmupTime>
 					<range>37</range>
-					<soundCast>Laminar_Pistol</soundCast>
-					<soundAiming>Laminar_Chargeup2</soundAiming>
+					<soundCast>Moyo2_Laminar_Pistol</soundCast>
+					<soundAiming>Moyo2_Laminar_Chargeup2</soundAiming>
 					<soundCastTail>GunTail_Medium</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>

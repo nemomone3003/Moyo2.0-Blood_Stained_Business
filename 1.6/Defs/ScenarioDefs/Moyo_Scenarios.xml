@@ -63,32 +63,32 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DBPearl_Joy</thingDef>
+					<thingDef>Moyo2_DBPearl_Joy</thingDef>
 					<count>20</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DBPearl_Crystal</thingDef>
+					<thingDef>Moyo2_DBPearl_Crystal</thingDef>
 					<count>4</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DBPearl_Thinker</thingDef>
+					<thingDef>Moyo2_DBPearl_Thinker</thingDef>
 					<count>4</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DBBooster_Hydra</thingDef>
+					<thingDef>Moyo2_DBBooster_Hydra</thingDef>
 					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DBBooster_Orca</thingDef>
+					<thingDef>Moyo2_DBBooster_Orca</thingDef>
 					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DBBooster_Medi</thingDef>
+					<thingDef>Moyo2_DBBooster_Medi</thingDef>
 					<count>3</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">

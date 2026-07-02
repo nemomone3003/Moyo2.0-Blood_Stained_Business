@@ -14,7 +14,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Spacer</techLevel>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
-		<raidLootMaker>MoyoCartelRaidLootMaker</raidLootMaker>
+		<raidLootMaker>Moyo2_CartelRaidLootMaker</raidLootMaker>
 		<allowedCultures>
 			<li>Moyo2_CartelCulture</li>
 		</allowedCultures>
@@ -182,7 +182,7 @@
 		<defName>Moyo2_CartelFaction</defName>
 		<label>Cartel surface division</label>
 		<description>This is the Ground Operations Division of the Cartel, one of the major factions of the Lighthouse. Leveraging abundant resources and advanced technology, the Cartel continues to expand its ventures across the surface, interacting with neighboring factions through a strictly business-oriented mindset. Whether you become their newest partner and client—or choose to plunder their wealth and technological assets—is entirely up to you. Just remember: they show no mercy to those who stand in their way.\n\nThe Cartel's primary enterprise is the distribution of surface-world goods into the Lighthouse. This activity directly violates the Lighthouse Elders' long-standing policy of isolationism and is strictly forbidden. Despite this, the Cartel's influence continues to grow. Armed with cutting-edge equipment and experimental products of the Lighthouse's megacorps, they openly advocate for the abolition of isolationist policies. In response, the Elders branded them the "Cartel" and placed bounties on every one of its members.</description>
-		<factionNameMaker>CartelFactionNamer</factionNameMaker>
+		<factionNameMaker>Moyo2_CartelFactionNamer</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<settlementTexturePath>Icon/Icon_C_A</settlementTexturePath>
 		<factionIconPath>Icon/Icon_C_A</factionIconPath>
@@ -208,7 +208,7 @@
 		</pawnGroupMakers>
 	</FactionDef>
 	<ThingSetMakerDef>
-		<defName>MoyoCartelRaidLootMaker</defName>
+		<defName>Moyo2_CartelRaidLootMaker</defName>
 		<root Class="ThingSetMaker_MarketValue">
 			<fixedParams>
 				<filter>

@@ -2,7 +2,7 @@
 <Defs>
 	<!-- 빔 이펙트 -->
 	<ThingDef ParentName="MoteBase">
-		<defName>Mote_LMRColider_Beam</defName>
+		<defName>Moyo2_Mote_LMRColider_Beam</defName>
 		<thingClass>MoteDualAttached</thingClass>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
@@ -27,7 +27,7 @@
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">
-		<defName>Mote_LMRColider_Charge</defName>
+		<defName>Moyo2_Mote_LMRColider_Charge</defName>
 		<thingClass>MoteAttached</thingClass>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
@@ -60,18 +60,18 @@
 		</graphicData>
 		<thingClass>Beam</thingClass>
 		<projectile>
-			<damageDef>Moyo_ColiderBullet</damageDef>
+			<damageDef>Moyo2_ColiderBullet</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
-			<beamMoteDef>Mote_LMRColider_Beam</beamMoteDef>
+			<beamMoteDef>Moyo2_Mote_LMRColider_Beam</beamMoteDef>
 			<beamStartOffset>0.8</beamStartOffset>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
 			<speed>9999999</speed>
-			<landedEffecter>Effecter_LMRColider</landedEffecter>
+			<landedEffecter>Moyo2_Effecter_LMRColider</landedEffecter>
 		</projectile>
 		<!-- <comps> -->
 			<!-- <li Class="CompProperties_ProjectileEffecter"> -->
-				<!-- <effecterDef>Effecter_LMRColider</effecterDef> -->
+				<!-- <effecterDef>Moyo2_Effecter_LMRColider</effecterDef> -->
 			<!-- </li> -->
 		<!-- </comps> -->
 	</ThingDef>
@@ -84,7 +84,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<statBases>
 			<WorkToMake>75000</WorkToMake>
 			<Mass>9.5</Mass>
@@ -135,7 +135,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 		<uiIconScale>1</uiIconScale>
-		<soundInteract>Laminar_Activate2</soundInteract>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
 		<statBases>
 			<WorkToMake>120000</WorkToMake>
 			<Mass>9.5</Mass>
@@ -152,11 +152,11 @@
 				<defaultProjectile>Moyo2_Bullet_LMRColider</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<range>40</range>
-				<soundAiming>Laminar_Chargeup3</soundAiming>
-				<soundCast>Laminar_Colider</soundCast>
+				<soundAiming>Moyo2_Laminar_Chargeup3</soundAiming>
+				<soundCast>Moyo2_Laminar_Colider</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
-				<aimingChargeMote>Mote_LMRColider_Charge</aimingChargeMote>
+				<aimingChargeMote>Moyo2_Mote_LMRColider_Charge</aimingChargeMote>
 				<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
 			</li>
 		</verbs>
@@ -172,7 +172,7 @@
 						<description>initiate overcharge.</description>
 						<thingDef>Moyo2_LMRColiderOver</thingDef>
 						<transformCooldown>100</transformCooldown>
-						<soundOnTransform>Laminar_Activate2</soundOnTransform>
+						<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
 					</li>
 				</transformDatas>
 			</li>
@@ -206,11 +206,11 @@
 				<defaultProjectile>Moyo2_Bullet_LMRColider</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<range>40</range>
-				<soundAiming>Laminar_Chargeup3</soundAiming>
-				<soundCast>Laminar_Colider</soundCast>
+				<soundAiming>Moyo2_Laminar_Chargeup3</soundAiming>
+				<soundCast>Moyo2_Laminar_Colider</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
-				<aimingChargeMote>Mote_LMRColider_Charge</aimingChargeMote>
+				<aimingChargeMote>Moyo2_Mote_LMRColider_Charge</aimingChargeMote>
 				<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
 			</li>
 		</verbs>
@@ -225,7 +225,7 @@
 					<description>Gun system overloading.</description>
 					<thingDef>Moyo2_LMRColiderDown</thingDef>
 					<revertAfterTicks>450</revertAfterTicks>
-					<soundOnTransform>Laminar_Activate2</soundOnTransform>
+					<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
 				</revertData>
 				<transformDatas>
 					<li>
@@ -233,7 +233,7 @@
 						<description>Disable overcharge.</description>
 						<thingDef>Moyo2_LMRColiderDown</thingDef>
 						<transformCooldown>100</transformCooldown>
-						<soundOnTransform>Laminar_Activate2</soundOnTransform>
+						<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
 					</li>
 				</transformDatas>
 			</li>
@@ -271,7 +271,7 @@
 					<description>gun system cooling.</description>
 					<thingDef>Moyo2_LMRColider</thingDef>
 					<revertAfterTicks>1800</revertAfterTicks>
-					<soundOnTransform>Laminar_Activate2</soundOnTransform>
+					<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
 				</revertData>
 			</li>
 		</comps>

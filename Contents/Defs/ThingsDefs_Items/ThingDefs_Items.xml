@@ -7,7 +7,7 @@
 		<label>Bluemed</label>
 		<description>Potent medicine utilizing deepblue. deepblue increases the medicine's effectiveness while having no worries of deepblue dependancy.</description>
 		<descriptionHyperlinks>
-			<ThingDef>BlueSerum</ThingDef>
+			<ThingDef>Moyo2_BlueSerum</ThingDef>
 		</descriptionHyperlinks>				
 		<graphicData>
 			<texPath>Item/BlueMedicine</texPath>
@@ -26,7 +26,7 @@
 		</statBases>
 		<costList>
 			<MedicineIndustrial>1</MedicineIndustrial>
-			<BlueSerum>2</BlueSerum>
+			<Moyo2_BlueSerum>2</Moyo2_BlueSerum>
 			<Neutroamine>2</Neutroamine>
 		</costList>
 		<recipeMaker>

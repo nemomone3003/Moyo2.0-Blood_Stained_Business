@@ -160,7 +160,7 @@
 			<skipChance>0.2</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>DBPearl_Joy</thingDef>
+					<thingDef>Moyo2_DBPearl_Joy</thingDef>
 					<countRange>1~2</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -251,7 +251,7 @@
 		<inventoryOptions>
 			<subOptionsChooseOne Inherit="False">
 				<li>
-					<thingDef>DBBooster_Hydra</thingDef>
+					<thingDef>Moyo2_DBBooster_Hydra</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -275,7 +275,7 @@
 		<inventoryOptions>
 			<subOptionsChooseOne Inherit="False">
 				<li>
-					<thingDef>DBBooster_Hydra</thingDef>
+					<thingDef>Moyo2_DBBooster_Hydra</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -350,7 +350,7 @@
 		<inventoryOptions>
 			<subOptionsChooseOne Inherit="False">
 				<li>
-					<thingDef>DBBooster_Hydra</thingDef>
+					<thingDef>Moyo2_DBBooster_Hydra</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -426,7 +426,7 @@
 		<inventoryOptions>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>DBBooster_Hydra</thingDef>
+					<thingDef>Moyo2_DBBooster_Hydra</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -469,7 +469,7 @@
 		<inventoryOptions Inherit="false">
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>DBBooster_Orca</thingDef>
+					<thingDef>Moyo2_DBBooster_Orca</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>

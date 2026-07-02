@@ -5,7 +5,7 @@
 		<label>Moyo</label>
 		<description>Inhabitants of the 'Lighthouse', a city submerged beneath the waves, have emerged to pursue their own interests. A substance known as Deepblue flows in their veins, serving a variety of pharmaceutical and medical purposes, not to mention producing drugs.</description>
 		<descriptionHyperlinks>
-			<ThingDef>BlueBloodBag</ThingDef>
+			<ThingDef>Moyo2_BlueBloodBag</ThingDef>
 		</descriptionHyperlinks>
 		<alienRace>
 			<generalSettings>
@@ -13,10 +13,10 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<chemicalSettings>
 					<li>
-						<chemical>DeepBlue</chemical>
+						<chemical>Moyo2_DeepBlue</chemical>
 						<reactions>
 							<li Class="IngestionOutcomeDoer_GiveHediff">
-								<hediffDef>DeepBlueOverFlow</hediffDef>
+								<hediffDef>Moyo2_DeepBlueOverFlow</hediffDef>
 								<severity>0.1</severity>
 							</li>
 						</reactions>
@@ -1116,13 +1116,13 @@
 			<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
 		</statBases>
 		<butcherProducts>
-			<BlueBloodBag>2</BlueBloodBag>
+			<Moyo2_BlueBloodBag>2</Moyo2_BlueBloodBag>
 		</butcherProducts>
 		<!--=============================================================================================================================-->
 		<comps>
 			<li Class="Moyo2_HPF.CompProperties_ResourceHarvestable">
 				<harvestJobDef>Moyo2_ExtractDeepBlue_Job</harvestJobDef>
-				<thingDef>BlueSerum</thingDef>
+				<thingDef>Moyo2_BlueSerum</thingDef>
 				<intervalDays>8</intervalDays>
 				<amount>2</amount>
 				<translationKey>Moyo2_HPF_inspectText</translationKey>
@@ -1132,14 +1132,14 @@
 				</constraint>
 				<productAffectedStats>
 					<li>
-						<statDef>DeepblueStat</statDef>
+						<statDef>Moyo2_DeepblueStat</statDef>
 						<multiplier>1.0</multiplier>
 						<offset>-1.0</offset>
 					</li>
 				</productAffectedStats>
 				<speedAffectedStats>
 					<li>
-						<statDef>DeepblueStatSpeed</statDef>
+						<statDef>Moyo2_DeepblueStatSpeed</statDef>
 						<multiplier>1.0</multiplier>
 						<offset>0</offset>
 					</li>

@@ -4,7 +4,7 @@ namespace Moyo2
 {
 	public class WorkGiver_EmptyFishTank : WorkGiver_Scanner
 	{
-		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_ThingDefOfs.Moyo_FishTank);
+		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(Moyo2_ThingDefOfs.Moyo2_FishTank);
 
 		public override PathEndMode PathEndMode => PathEndMode.Touch;
 
@@ -36,7 +36,7 @@ namespace Moyo2
 
 		public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
 		{
-			return JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo_EmptyFishTank, t);
+			return JobMaker.MakeJob(Moyo2_JobDefOfs.Moyo2_EmptyFishTank, t);
 		}
 	}
 }

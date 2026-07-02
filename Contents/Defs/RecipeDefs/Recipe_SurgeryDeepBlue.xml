@@ -187,19 +187,19 @@
 	</RecipeDef>
 	<!-- 블루버스터 수확기 -->
 	<!-- <RecipeDef ParentName="SurgeryInstallImplant_Moyo"> -->
-		<!-- <defName>Install_DeepBlueExtracter_Blueburst</defName> -->
+		<!-- <defName>Moyo2_Install_DeepBlueExtracter_Blueburst</defName> -->
 		<!-- <label>install blueburster harvester</label> -->
 		<!-- <description>Install a blueburster harvester.</description> -->
 		<!-- <descriptionHyperlinks> -->
-			<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
-			<!-- <HediffDef>DeepBlueExtracter_Blueburst</HediffDef> -->
+			<!-- <ThingDef>Moyo2_DeepBlueExtracter_Blueburst</ThingDef> -->
+			<!-- <HediffDef>Moyo2_DeepBlueExtracter_Blueburst</HediffDef> -->
 		<!-- </descriptionHyperlinks> -->
 		<!-- <jobString>Installing blueburster harvester.</jobString> -->
 		<!-- <ingredients> -->
 			<!-- <li> -->
 				<!-- <filter> -->
 					<!-- <thingDefs> -->
-						<!-- <li>DeepBlueExtracter_Blueburst</li> -->
+						<!-- <li>Moyo2_DeepBlueExtracter_Blueburst</li> -->
 					<!-- </thingDefs> -->
 				<!-- </filter> -->
 				<!-- <count>1</count> -->
@@ -207,26 +207,26 @@
 		<!-- </ingredients> -->
 		<!-- <fixedIngredientFilter> -->
 			<!-- <thingDefs> -->
-				<!-- <li>DeepBlueExtracter_Blueburst</li> -->
+				<!-- <li>Moyo2_DeepBlueExtracter_Blueburst</li> -->
 			<!-- </thingDefs> -->
 		<!-- </fixedIngredientFilter> -->
 		<!-- <appliedOnFixedBodyParts> -->
 			<!-- <li>Torso</li> -->
 		<!-- </appliedOnFixedBodyParts> -->
-		<!-- <addsHediff>DeepBlueExtracter_Blueburst</addsHediff> -->
+		<!-- <addsHediff>Moyo2_DeepBlueExtracter_Blueburst</addsHediff> -->
 		<!-- <incompatibleWithHediffTags> -->
 			<!-- <li>DeepBlueExtracter</li> -->
 		<!-- </incompatibleWithHediffTags> -->
 	<!-- </RecipeDef> -->
 	<!-- <RecipeDef ParentName="SurgeryRemoveImplant_Moyo"> -->
-		<!-- <defName>Remove_DeepBlueExtracter_Blueburst</defName> -->
+		<!-- <defName>Moyo2_Remove_DeepBlueExtracter_Blueburst</defName> -->
 		<!-- <label>remove blueburster harvester</label> -->
 		<!-- <description>Remove blueburster harvester.</description> -->
 		<!-- <descriptionHyperlinks> -->
-			<!-- <ThingDef>DeepBlueExtracter_Blueburst</ThingDef> -->
-			<!-- <HediffDef>DeepBlueExtracter_Blueburst</HediffDef> -->
+			<!-- <ThingDef>Moyo2_DeepBlueExtracter_Blueburst</ThingDef> -->
+			<!-- <HediffDef>Moyo2_DeepBlueExtracter_Blueburst</HediffDef> -->
 		<!-- </descriptionHyperlinks> -->
 		<!-- <jobString>Removing blueburster harvester.</jobString> -->
-		<!-- <removesHediff>DeepBlueExtracter_Blueburst</removesHediff> -->
+		<!-- <removesHediff>Moyo2_DeepBlueExtracter_Blueburst</removesHediff> -->
 	<!-- </RecipeDef>	 -->
 </Defs>

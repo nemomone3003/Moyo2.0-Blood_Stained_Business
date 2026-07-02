@@ -18,7 +18,7 @@
             <defaultProjectile>Moyo2_Projectile_HeavySteelPile</defaultProjectile>
             <warmupTime>2.6</warmupTime>
             <range>13</range>
-            <soundCast>Industrial_HarpoonGun</soundCast>
+            <soundCast>Moyo2_Industrial_HarpoonGun</soundCast>
             <soundCastTail>GunTail_Light</soundCastTail>
         </Properties>
         <AmmoUser>

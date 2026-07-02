@@ -33,7 +33,7 @@
 		</techHediffsTags>
 	</ThingDef>
 	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-		<defName>Install_Moyo2_TailProsthesis</defName>
+		<defName>Moyo2_Install_TailProsthesis</defName>
 		<label>install moyo tail prosthesis</label>
 		<description>Install tail prosthesis.</description>
 		<descriptionHyperlinks>
@@ -81,7 +81,7 @@
 		<label>moyo bionic tail</label>
 		<description>artificial tail made with advanced technology. This tail is indistinguishable by looks and its powerful servo combined with neural interface makes it superior compared to natural ones.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>Install_Moyo2_TailBionic</RecipeDef>
+			<RecipeDef>Moyo2_Install_TailBionic</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Moyo2_Cloth_Depthweave>40</Moyo2_Cloth_Depthweave>
@@ -93,7 +93,7 @@
 		</statBases>
 	</ThingDef>
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>Install_Moyo2_TailBionic</defName>
+		<defName>Moyo2_Install_TailBionic</defName>
 		<label>install moyo bionic tail</label>
 		<description>Install a bionic tail.</description>
 		<descriptionHyperlinks>

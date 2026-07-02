@@ -248,8 +248,8 @@
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<statFactors>
-			<DeepblueStatSpeed>0</DeepblueStatSpeed>
-			<DeepblueStat>0</DeepblueStat>
+			<Moyo2_DeepblueStatSpeed>0</Moyo2_DeepblueStatSpeed>
+			<Moyo2_DeepblueStat>0</Moyo2_DeepblueStat>
 		</statFactors>
 		<biostatMet>5</biostatMet>
 		<biostatCpx>7</biostatCpx>

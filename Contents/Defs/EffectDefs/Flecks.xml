@@ -2,14 +2,14 @@
 <Defs>
 	<!-- 모요도축레시피 -->
 	<ThingDef ParentName="FoodBitBase">
-		<defName>Mote_FoodBitMeatMoyo</defName>
+		<defName>Moyo2_Mote_FoodBitMeatMoyo</defName>
 		<graphicData>
 			<texPath>Icon/FoodBitMeatMoyo</texPath>
 			<shaderType>Mote</shaderType>
 		</graphicData>
 	</ThingDef>
 	<EffecterDef>
-		<defName>MoyoButcherEffect</defName>
+		<defName>Moyo2_MoyoButcherEffect</defName>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
@@ -17,13 +17,13 @@
 				<ticksBetweenMotes>20</ticksBetweenMotes>
 				<positionLerpFactor>0.6</positionLerpFactor>
 				<positionRadius>0.6</positionRadius>
-				<moteDef>Mote_FoodBitMeatMoyo</moteDef>
+				<moteDef>Moyo2_Mote_FoodBitMeatMoyo</moteDef>
 			</li>
 		</children>
 	</EffecterDef>
 	<!-- 딥블루 거부감 -->
 	<ThingDef ParentName="MoteBase">
-		<defName>Mote_MoyoDrunk</defName>
+		<defName>Moyo2_Mote_MoyoDrunk</defName>
 		<graphicData>
 			<texPath>Icon/MoyoDrunk</texPath>
 		</graphicData>
@@ -37,14 +37,14 @@
 		</mote>
 	</ThingDef>
 	<EffecterDef>
-		<defName>MoyoDrunk</defName>
+		<defName>Moyo2_MoyoDrunk</defName>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
 				<scale>0.5~0.7</scale>
 				<chancePerTick>0.03</chancePerTick>
 				<positionRadius>0.3</positionRadius>
-				<moteDef>Mote_MoyoDrunk</moteDef>
+				<moteDef>Moyo2_Mote_MoyoDrunk</moteDef>
 				<speed>0.18~0.18</speed>
 				<angle>10~80</angle>
 			</li>
@@ -53,7 +53,7 @@
 	<!-- 무기 이펙터 -->
 	<!-- 기본 파티클 -->
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_ParticleA</defName>
+		<defName>Moyo2_MoyoFire_ParticleA</defName>
 		<graphicData>
 			<texPath>Icon/MoyoFire_particle1</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -66,7 +66,7 @@
 		<fadeOutTime>0.2</fadeOutTime>
 	</FleckDef>
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_ParticleB</defName>
+		<defName>Moyo2_Fire_ParticleB</defName>
 		<graphicData>
 			<texPath>Icon/MoyoFire_particle1</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -80,7 +80,7 @@
 	</FleckDef>
 	<!-- 발사 이펙트 -->
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_BurstA</defName>
+		<defName>Moyo2_Fire_BurstA</defName>
 		<graphicData>
 			<texPath>Icon/MoyoFire_burst1</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -92,7 +92,7 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_BurstB</defName>
+		<defName>Moyo2_Fire_BurstB</defName>
 		<graphicData>
 			<texPath>Icon/MoyoFire_burst2</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -105,7 +105,7 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoCFire_BurstA</defName>
+		<defName>Moyo2_CFire_BurstA</defName>
 		<graphicData>
 			<texPath>Icon/MoyoCFire_burst1</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -117,7 +117,7 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoCFire_BurstB</defName>
+		<defName>Moyo2_CFire_BurstB</defName>
 		<graphicData>
 			<texPath>Icon/MoyoCFire_burst2</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -130,7 +130,7 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>	
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_Pulse</defName>
+		<defName>Moyo2_Fire_Pulse</defName>
 		<graphicData>
 			<texPath>Icon/MoyoFire_pulse1</texPath>
 			<shaderType>TransparentPostLight</shaderType>
@@ -142,12 +142,12 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>
 	<EffecterDef>
-		<defName>Effecter_CustomFire</defName>
+		<defName>Moyo2_Effecter_CustomFire</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -161,7 +161,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -176,12 +176,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_LMRFireA</defName>
+		<defName>Moyo2_Effecter_LMRFireA</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -195,7 +195,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -209,7 +209,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-				<fleckDef>MoyoFire_ParticleA</fleckDef>
+				<fleckDef>Moyo2_MoyoFire_ParticleA</fleckDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>0.5~1</scale>
@@ -221,7 +221,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-				<fleckDef>MoyoFire_ParticleB</fleckDef>
+				<fleckDef>Moyo2_Fire_ParticleB</fleckDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>0.5~1</scale>
@@ -234,12 +234,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_LMRFireB</defName>
+		<defName>Moyo2_Effecter_LMRFireB</defName>
 		<offsetTowardsTarget>0.7</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -253,7 +253,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -267,7 +267,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-				<fleckDef>MoyoFire_ParticleA</fleckDef>
+				<fleckDef>Moyo2_MoyoFire_ParticleA</fleckDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>0.5~1</scale>
@@ -279,7 +279,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-				<fleckDef>MoyoFire_ParticleB</fleckDef>
+				<fleckDef>Moyo2_Fire_ParticleB</fleckDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>0.5~1</scale>
@@ -292,12 +292,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_LMRFireC</defName>
+		<defName>Moyo2_Effecter_LMRFireC</defName>
 		<offsetTowardsTarget>1.1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -311,7 +311,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_Fire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -325,7 +325,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-				<fleckDef>MoyoFire_ParticleA</fleckDef>
+				<fleckDef>Moyo2_MoyoFire_ParticleA</fleckDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>0.5~1</scale>
@@ -337,7 +337,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-				<fleckDef>MoyoFire_ParticleB</fleckDef>
+				<fleckDef>Moyo2_Fire_ParticleB</fleckDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>0.5~1</scale>
@@ -350,12 +350,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_CLMRFireA</defName>
+		<defName>Moyo2_Effecter_CLMRFireA</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoCFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_CFire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -369,7 +369,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoCFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_CFire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -384,12 +384,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_CLMRFireB</defName>
+		<defName>Moyo2_Effecter_CLMRFireB</defName>
 		<offsetTowardsTarget>0.85</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoCFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_CFire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -403,7 +403,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoCFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_CFire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -418,12 +418,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_CLMRFireC</defName>
+		<defName>Moyo2_Effecter_CLMRFireC</defName>
 		<offsetTowardsTarget>1.2</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoCFire_BurstA</fleckDef>
+				<fleckDef>Moyo2_CFire_BurstA</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -437,7 +437,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoCFire_BurstB</fleckDef>
+				<fleckDef>Moyo2_CFire_BurstB</fleckDef>
 				<scale>2</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -452,7 +452,7 @@
 		</children>
 	</EffecterDef>	
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_SmokeA</defName>
+		<defName>Moyo2_Fire_SmokeA</defName>
 		<graphicData>
 			<texPath>Things/Mote/Smoke</texPath>
 			<shaderType>Transparent</shaderType>
@@ -466,7 +466,7 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>
 	<FleckDef ParentName="FleckBase_Thrown">
-		<defName>MoyoFire_SmokeB</defName>
+		<defName>Moyo2_Fire_SmokeB</defName>
 		<graphicData>
 			<texPath>Things/Mote/Smoke</texPath>
 			<shaderType>Transparent</shaderType>
@@ -480,12 +480,12 @@
 		<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
 	</FleckDef>
 	<EffecterDef>
-		<defName>Effecter_IDRFireA</defName>
+		<defName>Moyo2_Effecter_IDRFireA</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_SmokeA</fleckDef>
+				<fleckDef>Moyo2_Fire_SmokeA</fleckDef>
 				<scale>0.7</scale>
 				<burstCount>3</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -502,12 +502,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_IDRFireB</defName>
+		<defName>Moyo2_Effecter_IDRFireB</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_SmokeA</fleckDef>
+				<fleckDef>Moyo2_Fire_SmokeA</fleckDef>
 				<scale>0.7</scale>
 				<burstCount>3</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -523,7 +523,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_SmokeB</fleckDef>
+				<fleckDef>Moyo2_Fire_SmokeB</fleckDef>
 				<scale>0.3</scale>
 				<burstCount>3</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -540,12 +540,12 @@
 		</children>
 	</EffecterDef>
 	<EffecterDef>
-		<defName>Effecter_IDRFireC</defName>
+		<defName>Moyo2_Effecter_IDRFireC</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>MoyoFire_SmokeA</fleckDef>
+				<fleckDef>Moyo2_Fire_SmokeA</fleckDef>
 				<scale>0.5</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -563,7 +563,7 @@
 	</EffecterDef>
 	<!-- 화면 왜곡 -->
 	<FleckDef ParentName="FleckGlowDistortBackground" Name="FleckPsycastAreaEffect">
-		<defName>Moyo_Distortion</defName>
+		<defName>Moyo2_Distortion</defName>
 		<altitudeLayer>MoteLow</altitudeLayer>
 		<fadeInTime>0.02</fadeInTime>
 		<fadeOutTime>0.8</fadeOutTime>
@@ -579,12 +579,12 @@
 		</graphicData>
 	</FleckDef>
 	<EffecterDef>
-		<defName>Effecter_LMRColider</defName>
+		<defName>Moyo2_Effecter_LMRColider</defName>
 		<offsetTowardsTarget>1</offsetTowardsTarget>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>Moyo_Distortion</fleckDef>
+				<fleckDef>Moyo2_Distortion</fleckDef>
 				<scale>0.5</scale>
 				<burstCount>1</burstCount>
 				<!-- <spawnLocType>OnSource</spawnLocType> -->
