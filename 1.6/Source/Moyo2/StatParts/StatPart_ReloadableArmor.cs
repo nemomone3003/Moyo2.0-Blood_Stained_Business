@@ -9,6 +9,8 @@ namespace Moyo2
 
 		protected Comp_ReloadableArmor GetComp(StatRequest req)
 		{
+			if (req.Thing is null) return null;
+
 			if (!Cache.TryGetValue(req.Thing, out var comp))
 			{
 				Cache.Add(req.Thing, req.Thing.TryGetComp<Comp_ReloadableArmor>());
