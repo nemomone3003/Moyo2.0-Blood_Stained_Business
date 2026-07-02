@@ -559,8 +559,6 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
 			<li>Moyo2_FabricationBench</li>
-			<li>ElectricTailoringBench</li>
-			<li>HandTailoringBench</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -610,8 +608,6 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
 			<li>Moyo2_FabricationBench</li>
-			<li>ElectricTailoringBench</li>
-			<li>HandTailoringBench</li>
 		</recipeUsers>
 		<ingredients>
 			<li>

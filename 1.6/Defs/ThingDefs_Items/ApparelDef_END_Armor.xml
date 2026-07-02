@@ -62,18 +62,8 @@
 			</drawData>
 		</apparel>
 		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>15</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<recipeMaker Inherit="False">
 		</recipeMaker>
-		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
-			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
-			<Moyo2_Cloth_Depthweave>50</Moyo2_Cloth_Depthweave>
-		</costList>
 	</ThingDef>
 	<!--  헤이달 레이스 요원 헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -125,18 +115,8 @@
 			</tags>
 		</apparel>
 		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<recipeMaker Inherit="False">
 		</recipeMaker>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
-			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
-		</costList>
 	</ThingDef>
 	<!-- 심층 잠수용 쉘-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -202,18 +182,8 @@
 			</tags>
 		</apparel>
 		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<recipeMaker Inherit="False">
 		</recipeMaker>
-		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
-			<Moyo2_Abyssteel>130</Moyo2_Abyssteel>
-			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
-		</costList>
 	</ThingDef>
 	<!-- 심층 잠수용 헬멧-->
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
@@ -267,17 +237,7 @@
 			</tags>
 		</apparel>
 		<!-- - -->
-		<recipeMaker>
-			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<recipeMaker Inherit="False">
 		</recipeMaker>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Moyo2_Abyssteel>50</Moyo2_Abyssteel>
-			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
-		</costList>
 	</ThingDef>
 </Defs>
