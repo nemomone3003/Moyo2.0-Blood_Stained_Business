@@ -64,9 +64,6 @@
 		<smeltable>true</smeltable>
 		<burnableByRecipe>true</burnableByRecipe>
 		<!-- - -->
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
 		<comps>
 			<li>
 				<compClass>CompQuality</compClass>

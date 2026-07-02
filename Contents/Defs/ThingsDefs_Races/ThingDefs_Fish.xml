@@ -198,7 +198,7 @@
 		<graphicData>
 			<texPath>Pawn/FleshMass/MoyoFish_FleshMass</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<thingCategories Inherit="False">
 			<li>CorpsesAnimal</li>

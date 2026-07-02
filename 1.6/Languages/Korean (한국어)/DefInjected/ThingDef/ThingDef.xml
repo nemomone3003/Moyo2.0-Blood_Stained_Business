@@ -22,8 +22,6 @@
 	<Moyo2_LMRColiderOver.tools.1.label>총구</Moyo2_LMRColiderOver.tools.1.label>
 	<!--Original=라미너 오토캐논-->
 	<Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>라미너 역장 충돌기</Moyo2_LMRColiderOver.verbs.Verb_Shoot.label>
-	<!--English=initiate overcharge.-->
-	<Moyo2_LMRColider.comps.CompFormChange.transformDatas.0.description>과충전 시작.</Moyo2_LMRColider.comps.CompFormChange.transformDatas.0.description>
 	<!-- 어비스테크 라이플 -->
 	<Moyo2_Gun_AbysstechRifle.label>어비스테크 라이플</Moyo2_Gun_AbysstechRifle.label>
 	<Moyo2_Gun_AbysstechRifle.description>어비스테크가 접목된 범용적인 돌격소총입니다.</Moyo2_Gun_AbysstechRifle.description>
@@ -114,9 +112,9 @@
 	<Moyo2_CCCShell.label>카르텔 화학증강 쉘</Moyo2_CCCShell.label>
 	<Moyo2_CCCShell.description>카르텔의 화학전 특수대 쉘 입니다.</Moyo2_CCCShell.description>
 	<!--English=Scari-Abyss-->
-	<Moyo2_CCCShell.comps.CompApparelReloadable.chargeNoun/>
+	<Moyo2_CCCShell.comps.CompApparelReloadable.chargeNoun>스카리-어비스</Moyo2_CCCShell.comps.CompApparelReloadable.chargeNoun>
 	<!--English=on cooldown-->
-	<Moyo2_CCCShell.comps.CompApparelReloadable.cooldownGerund/>
+	<Moyo2_CCCShell.comps.CompApparelReloadable.cooldownGerund>재충전</Moyo2_CCCShell.comps.CompApparelReloadable.cooldownGerund>
 	<Moyo2_CCCHelmet.label>카르텔 화학증강 헬멧</Moyo2_CCCHelmet.label>
 	<Moyo2_CCCHelmet.description>카르텔의 화학전 특수대 헬멧입니다.</Moyo2_CCCHelmet.description>
 	<!-- 응애옷 -->
@@ -129,9 +127,6 @@
 	<!--English=A thick Depthweave cloak with an attached hood, primarily used by cartel agents operating in the shadows of the Lighthouse. It also has limited bulletproof capabilities.\n\nThe term "cartel" refers to large corporations that currently oppose the ruling order of the Lighthouse, the Council. The cartel's influence has grown to rival that of the Council, and while both sides understand that their conflict could lead to the lighthouse's downfall, they have agreed to cooperate—for now, at least on the surface.-->
 	<Moyo2_Childclothes_B.description>어린 모요들을 위한 인형 옷 입니다. 다양한 해양생물을 본따 만든 이 귀여운 옷은, 아이들을 보호하기 위해 많은 기능을 탑재했습니다. 아이들이 마음껏 구르고 넘어져도 괜찮을 보호 기능과, 내부 온도를 일정하게 유지할 온도 조절 장치까지 달려있습니다.\n\n등대의 여유있는 부모라면, 자신의 아이들에게 꼭 선물해주어야 할 제품입니다. 당신의 아이들도 분명 좋아할 것입니다. 일단 구매하고 선물해보세요!</Moyo2_Childclothes_B.description>
 	<!-- - -->
-	<!-- 메카노이드 몸 -->
-	<Moyo2_Hexapod.label>헥사포드</Moyo2_Hexapod.label>
-	<Moyo2_Spheripod.label>스페리포드</Moyo2_Spheripod.label>
 	<!--English=hexapod-->
 	<Moyo2_Hexapod_Default.label>헥사포드</Moyo2_Hexapod_Default.label>
 	<!--English=헥사포드.-->

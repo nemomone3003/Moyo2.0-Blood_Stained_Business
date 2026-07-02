@@ -23,7 +23,13 @@
 	<Moyo2_Spheripod.corePart.parts.front_left_leg-1.customLabel>왼쪽 뒷다리</Moyo2_Spheripod.corePart.parts.front_left_leg-1.customLabel>
 	<!--English=front right leg-->
 	<Moyo2_Spheripod.corePart.parts.front_right_leg-1.customLabel>오른쪽 뒷다리</Moyo2_Spheripod.corePart.parts.front_right_leg-1.customLabel>
+	<!--English=back left leg-->
+	<Moyo2_Spheripod.corePart.parts.back_left_leg.customLabel>왼쪽 뒷다리</Moyo2_Spheripod.corePart.parts.back_left_leg.customLabel>
+	<!--English=back right leg-->
+	<Moyo2_Spheripod.corePart.parts.back_right_leg.customLabel>오른쪽 뒷다리</Moyo2_Spheripod.corePart.parts.back_right_leg.customLabel>
 	<!-- 헥사포드 -->
+	<!--English=Hexapod-->
+	<Moyo2_Hexapod.label>헥사포드</Moyo2_Hexapod.label>
 	<!--English=first tentacle joint-->
 	<Moyo2_Hexapod.corePart.parts.first_tentacle_joint.customLabel>1번 촉수 연결부</Moyo2_Hexapod.corePart.parts.first_tentacle_joint.customLabel>
 	<!--English=first tentacle-->
@@ -48,6 +54,22 @@
 	<Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.customLabel>6번 촉수 연결부</Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.customLabel>
 	<!--English=sixth tentacle-->
 	<Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.parts.sixth_tentacle.customLabel>6번 촉수</Moyo2_Hexapod.corePart.parts.sixth_tentacle_joint.parts.sixth_tentacle.customLabel>
+	<!--English=left first sight sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_first_sight_sensor.customLabel>왼쪽 1번 시각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_first_sight_sensor.customLabel>
+	<!--English=left second sight sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_second_sight_sensor.customLabel>왼쪽 2번 시각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_second_sight_sensor.customLabel>
+	<!--English=left third sight sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_third_sight_sensor.customLabel>왼쪽 3번 시각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_third_sight_sensor.customLabel>
+	<!--English=right first sight sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_first_sight_sensor.customLabel>오른쪽 1번 시각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_first_sight_sensor.customLabel>
+	<!--English=right second sight sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_second_sight_sensor.customLabel>오른쪽 2번 시각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_second_sight_sensor.customLabel>
+	<!--English=right third sight sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_third_sight_sensor.customLabel>오른쪽 3번 시각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_third_sight_sensor.customLabel>
+	<!--English=left hearing sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_hearing_sensor.customLabel>왼쪽 청각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.left_hearing_sensor.customLabel>
+	<!--English=right hearing sensor-->
+	<Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_hearing_sensor.customLabel>왼쪽 청각 센서</Moyo2_Hexapod.corePart.parts.HexapodHeadShell.parts.right_hearing_sensor.customLabel>
 	<!-- 모요 -->
 	<Moyo2_MoyoBody.label>모요</Moyo2_MoyoBody.label>
 	<Moyo2_MoyoBody.corePart.parts.4.customLabel>꼬리</Moyo2_MoyoBody.corePart.parts.4.customLabel>
