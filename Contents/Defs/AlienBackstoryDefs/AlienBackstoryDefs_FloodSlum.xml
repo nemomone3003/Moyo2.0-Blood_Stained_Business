@@ -92,8 +92,8 @@
 	<!-- 모요 좀도둑 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryChild">
 		<defName>Moyo2_PettyTheif</defName>
-		<title>Moyo Petty theif</title>
-		<titleShort>Petty theif</titleShort>
+		<title>Moyo petty thief</title>
+		<titleShort>Petty thief</titleShort>
 		<baseDesc>The flood slum is a place where you cannot survive without skills. That's why {PAWN_nameDef} has honed their thieving abilities. After all, you need to have something in hand to eat or sell. Of course, knowing that being caught means having every drop of blood drained from their body, {PAWN_pronoun} had to be extremely meticulous.</baseDesc>
 		<skillGains>
 			<Shooting>2</Shooting>

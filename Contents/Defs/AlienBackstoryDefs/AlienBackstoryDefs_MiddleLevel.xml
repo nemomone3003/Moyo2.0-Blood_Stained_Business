@@ -442,7 +442,7 @@
 		<defName>Moyo2_CoreMiner</defName>
 		<title>Moyo Core miner</title>
 		<titleShort>Core miner</titleShort>
-		<baseDesc>{PAWN_nameDef} is a notorious core miner of the Lighthouse. Wearing thick diving suits, {PAWN_pronoun} descends to the darkest depths to extract minerals, making it one of the most dreaded jobs in the Lighthouse. However, the high pay drew {PAWN_possessive} to this occupation, and {PAWN_pronoun} was assigned to mine hadal shards. {PAWN_pronoun} said that {PAWN_pronoun} went through a horrifying experience down in the shard trenches.</baseDesc>
+		<baseDesc>{PAWN_nameDef} is a notorious core miner of the Lighthouse. Wearing thick diving suits, {PAWN_pronoun} used to descend to the darkest depths to extract materials. Despite this being one of the most dreaded jobs in the Lighthouse, the pay drew {PAWN_objective} to the job, where {PAWN_pronoun} was assigned to mine hadal shards. {PAWN_pronoun} claims {PAWN_pronoun} went through a horrifying experience down in the shard trenches.</baseDesc>
 		<skillGains>
 			<Mining>7</Mining>
 			<Plants>-5</Plants>
@@ -462,8 +462,8 @@
 	<!-- 모요 메카노이드 정비공 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
 		<defName>Moyo2_MechanoidMantainer</defName>
-		<title>Moyo Mechanoid mantainer</title>
-		<titleShort>Mechanoid mantainer</titleShort>
+		<title>Moyo mechanoid maintainer</title>
+		<titleShort>Mechanoid maintainer</titleShort>
 		<baseDesc>Mechanoids are essential workers who have been part of the Lighthouse's history. {PAWN_nameDef} maintained these Mechanoids and suffered under the heavy workload it brought, developing a deep admiration for the tireless Mechanodoids, who, despite minor malfunctions, never seem to tire.</baseDesc>
 		<skillGains>
 			<Plants>-2</Plants>

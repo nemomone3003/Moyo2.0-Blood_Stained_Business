@@ -64,9 +64,9 @@
 	<!-- 성년기 -->
 	<!-- 모요 수석 생물학자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
-		<defName>Moyo2_CheifBiologist</defName>
-		<title>Moyo Cheif biologist</title>
-		<titleShort>Cheif biologist</titleShort>
+		<defName>Moyo2_CheifBiologist</defName> <!-- haha the defname got a typo -->
+		<title>Moyo chief biologist</title>
+		<titleShort>chief biologist</titleShort>
 		<baseDesc>{PAWN_nameDef} excelled in various fields of science and was recognized by the council, becoming a chief researcher. {PAWN_pronoun} was assigned to a research project with full support from the council. However, after seeing the project's content, {PAWN_pronoun} realized that {PAWN_pronoun} would eventually be silenced and decided to flee.\n\nThe project's name was Hadium-blue.</baseDesc>
 		<skillGains>
 			<Plants>1</Plants>
@@ -87,8 +87,8 @@
 	<!-- 모요 수석 공학자 -->
 	<AlienRace.AlienBackstoryDef ParentName="Moyo2_BackstoryAdult">
 		<defName>Moyo2_CheifEngineer</defName>
-		<title>Moyo Cheif engineer</title>
-		<titleShort>Cheif engineer</titleShort>
+		<title>Moyo chief engineer</title>
+		<titleShort>chief engineer</titleShort>
 		<baseDesc>{PAWN_nameDef} excelled in engineering and was recognized by the council, becoming a chief engineer. {PAWN_pronoun} was assigned to a project with full support from the council. Advanced technology, different from the existing Abyss Tech, was developed, but the project itself was discontinued. To maintain secrecy, the council tried to control every aspect of {PAWN_possessive} life, but not wanting this, {PAWN_pronoun} fled to a place beyond the council's reach.\n\nThe project's name was Moondiver.</baseDesc>
 		<skillGains>
 			<Construction>6</Construction>
