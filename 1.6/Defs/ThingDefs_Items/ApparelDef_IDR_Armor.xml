@@ -381,6 +381,8 @@
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<Mass>0.7</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>			
 			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.16</ArmorRating_Heat>
