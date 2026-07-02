@@ -298,7 +298,6 @@
 		<useHitPoints>false</useHitPoints>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>32000</WorkToMake>
 			<Mass>2.5</Mass>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -377,10 +376,10 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
+		<useHitPoints>false</useHitPoints>
 		<!-- - -->
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>16000</WorkToMake>
 			<Mass>0.7</Mass>
 			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>

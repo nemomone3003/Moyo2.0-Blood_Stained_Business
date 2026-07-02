@@ -552,18 +552,6 @@
 				<li>Moyo2_CCCSuitAbility</li>
 			</abilities>
 		</apparel>
-		<comps>
-			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>2</maxCharges>
-				<ammoDef>Moyo2_DBBooster_Blueburst</ammoDef>
-				<ammoCountToRefill>2</ammoCountToRefill>
-				<baseReloadTicks>60</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>Scari-Abyss</chargeNoun>
-				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-			</li>
-		</comps>
 		<recipeMaker>
 			<researchPrerequisite>Moyo2_Abysstech_DivingShell</researchPrerequisite>
 			<skillRequirements>
