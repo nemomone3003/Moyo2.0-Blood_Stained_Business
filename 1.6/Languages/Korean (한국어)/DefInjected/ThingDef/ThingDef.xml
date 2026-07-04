@@ -105,7 +105,7 @@
 	<Moyo2_CSShell.description>카르텔의 상급 전투부대인 타격대의 제식 방어구입니다. 카르텔의 주요 전략인 게릴라전에 특화된 장비로, 기동성과 유연성을 중시한 경량 방어구입니다. 등대의 잠수복들에 비해 부피가 작기 때문에, 외부에 추가적인 장비를 착용할 수 있습니다.\n\n카르텔의 기원은 알려지지 않았습니다. 현재 카르텔이라 불리는 집단이 처음으로 목격된 것은 이 장비를 착용한 인원들이 의회의 시설에 파괴공작을 벌인 때였습니다. 의회는 이들의 무장 상태와 조직적 움직임을 큰 위협으로 여겼고, 즉시 이들을 제압하기 위해 움직였습니다.</Moyo2_CSShell.description>
 	<!--English=Cartel striker helmet-->
 	<Moyo2_CSHelmet.label>카르텔 타격대 헬멧</Moyo2_CSHelmet.label>
-	<!--English=Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.-->
+	<!--English=Diving helmet of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.-->
 	<Moyo2_CSHelmet.description>카르텔의 상급 전투부대인 타격대의 제식 헬멧입니다. 카르텔의 주요 전략인 게릴라전에 특화된 장비로, 기동성과 유연성을 중시한 경량 방어구입니다.\w\w카르텔의 엘리트 요원들인 타격대는 등대의 그림자 속에서 카르텔의 이익을 위해 움직입니다. 의회는 이들을 생포하기 위해 노력하고 있으나, 카르텔의 극단적인 기밀유지 수단에 의해 난항을 겪고 있습니다.</Moyo2_CSHelmet.description>
 	<!-- - -->
 	<!-- 카르텔 화학전 -->

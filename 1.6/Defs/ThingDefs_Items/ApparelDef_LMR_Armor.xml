@@ -92,7 +92,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_StreamlineDivingHelmet</defName>
 		<label>streamlined diving helmet</label>
-		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
+		<description>Diving helmet of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorLMR/SDHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -252,7 +252,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_DeepDivingHelmet</defName>
 		<label>depth diving helmet</label>
-		<description>Heavy diving helmetof the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished. The built-in oxygen respirator has been removed.\n\nThe deep-sea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.</description>
+		<description>Heavy diving helmet of the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the point where the suit would remain intact even if the wearer perished. The built-in oxygen respirator has been removed.\n\nThe deep-sea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorLMR/DDHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -569,7 +569,7 @@
 	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
 		<defName>Moyo2_CCCHelmet</defName>
 		<label>Cartel Chemwar commando helmet</label>
-		<description>Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
+		<description>Diving helmet of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The built-in oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit's design has evolved into a combat-capable diving suit as the Lighthouse becomes increasingly chaotic.</description>
 		<graphicData>
 			<texPath>Apparel/ArmorLMR/CCCHelmet1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

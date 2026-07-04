@@ -181,7 +181,7 @@
 	<Moyo2_StreamlineDivingShell.description>활동성을 중시한 등대의 잠수복입니다. 기동성을 크게 희생하지 않으면서 상당한 방어력을 제공합니다. 잠수복 표면의 저항을 줄이는 설계를 통해, 물 속에서도 비교적 편하게 움직일 수 있습니다. 지상에서는 아무 의미 없는 기능입니다.\n\n잠수복의 어비스틸 장갑판은 훌륭한 방어구이기도 합니다. 등대의 치안유지군에 의해 전투용으로 사용되기 시작하며 이러한 경향은 등대 전체로 퍼졌습니다.</Moyo2_StreamlineDivingShell.description>
 	<!--Original=streamline diving helmet-->
 	<Moyo2_StreamlineDivingHelmet.label>유선형 잠수복 헬멧</Moyo2_StreamlineDivingHelmet.label>
-	<!--Original=Diving helmetof the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The builtーin oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit&apos;s design has evolved into a combatーcapable diving suit as the Lighthouse becomes increasingly chaotic.-->
+	<!--Original=Diving helmet of the lighthouse that prioritizes agility. It provides significant protection without greatly sacrificing mobility. The builtーin oxygen respirator has been removed.\n\nOriginally designed purely for work purposes, the suit&apos;s design has evolved into a combatーcapable diving suit as the Lighthouse becomes increasingly chaotic.-->
 	<Moyo2_StreamlineDivingHelmet.description>활동성을 중시한 등대의 잠수복 헬멧입니다. 기동성을 크게 희생하지 않으면서 상당한 방어력을 제공합니다. 자체적인 산소 호흡기는 제거되었습니다.\n\n잠수복의 설계는 순수한 작업용도에서 시작했으나, 등대가 점점 혼란스러워지며 잠수가 가능한 전투복으로 방향성이 변해가는 경향을 보이고 있습니다.</Moyo2_StreamlineDivingHelmet.description>
 	<!--Original=depth diving shell-->
 	<Moyo2_DeepDivingShell.label>심층 잠수복 쉘</Moyo2_DeepDivingShell.label>
@@ -189,7 +189,7 @@
 	<Moyo2_DeepDivingShell.description>바다 밑바닥에서 활동하기 위한 등대의 중량 잠수복입니다. 움직임이 많이 둔해지지만 그만큼 뛰어난 방어력을 자랑해 만일 착용자가 사망하더라도 이 잠수복은 멀쩡할 겁니다.\n\n등대에서 마주할 수 있는 가장 극한의 상황에 투입되는 보호구로 주로 바다 밑바닥, 고열의 유독성 환경 그리고 적의 집중포화 속에 있는 모습을 자주 볼 수 있습니다. 그렇기에 등대의 대부분이 이 잠수복을 입고 싶어하지 않습니다.</Moyo2_DeepDivingShell.description>
 	<!--Original=depth diving helmet-->
 	<Moyo2_DeepDivingHelmet.label>심층 잠수복 헬멧</Moyo2_DeepDivingHelmet.label>
-	<!--Original=Heavy diving helmetof the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the 칼끝 where the suit would remain intact even if the wearer perished. The builtーin oxygen respirator has been removed.\n\nThe deepーsea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.-->
+	<!--Original=Heavy diving helmet of the lighthouse designed for activities on the ocean floor. Although it significantly hinders movement, it offers exceptional protection, to the 칼끝 where the suit would remain intact even if the wearer perished. The builtーin oxygen respirator has been removed.\n\nThe deepーsea diving suit, also used in hadal Shard mining operations, has effectively protected miners and performed its role admirably. However, the problem arose when, after several workers went missing, this helmet was found crushed like a tin can.-->
 	<Moyo2_DeepDivingHelmet.description>바다 밑바닥에서 활동하기 위한 등대의 중량 잠수복 헬멧입니다. 움직임이 많이 둔해지지만 그만큼 뛰어난 방어력을 자랑해 만일 착용자가 사망하더라도 이 잠수복은 멀쩡할 겁니다. 자체적인 산소 호흡기는 제거되었습니다.\n\n헤이달 샤드 채굴 작업에도 투입된 심층 잠수복은 광부들을 보호하며 매우 휼륭하게 역할을 수행했습니다. 문제는 몇몇 인부들이 실종된 이후 깡통처럼 구겨진 이 헬멧이 발견되었다는 것입니다.</Moyo2_DeepDivingHelmet.description>
 	<!--Original=moyo tail prosthesis-->
 	<Moyo2_TailProsthesis.label>모요 꼬리 보철물</Moyo2_TailProsthesis.label>
