@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
-	<name>Moyo2.0-Blood stained business</name>
+	<name>Moyo2.0-Blood stained business_Dev</name>
 	<author>Nemonian</author>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Nemonian.MY2</packageId>
+	<packageId>Nemonian.MY2.Dev</packageId>
 	<description>
 Moyo-Blood stained business
 

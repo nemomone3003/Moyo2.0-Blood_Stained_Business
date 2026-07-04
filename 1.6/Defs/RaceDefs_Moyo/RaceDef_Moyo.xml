@@ -489,8 +489,8 @@
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Blue">Moyo/Head/MoyoAtennaGlow_Left</Gene>
-								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlow1_Left</Gene>
-								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlow2_Left</Gene>
+								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlowA_Left</Gene>
+								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlowB_Left</Gene>
 							</extendedGraphics>
 						</li>
 						<li>
@@ -545,8 +545,8 @@
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Blue">Moyo/Head/MoyoAtennaGlow_Right</Gene>
-								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlow1_Right</Gene>
-								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlow2_Right</Gene>
+								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoAtennaGlowA_Right</Gene>
+								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoAtennaGlowB_Right</Gene>
 							</extendedGraphics>
 						</li>
 						<!-- 머리 발광 -->
@@ -585,8 +585,8 @@
 							<userCustomizable>false</userCustomizable>
 							<extendedGraphics>
 								<Gene For="Moyo2_Glow_Blue">Moyo/Head/MoyoHeadGlow</Gene>
-								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoHeadGlow1</Gene>
-								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoHeadGlow2</Gene>
+								<Gene For="Moyo2_Glow_Purple">Moyo/Head/MoyoHeadGlowA</Gene>
+								<Gene For="Moyo2_Glow_Violet">Moyo/Head/MoyoHeadGlowB</Gene>
 							</extendedGraphics>
 						</li>
 						<!-- 몸 발광 -->

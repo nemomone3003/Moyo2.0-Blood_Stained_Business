@@ -93,11 +93,11 @@
 	<Moyo2_CBsuit.label>방탄갑옷(카르텔)</Moyo2_CBsuit.label>
 	<Moyo2_CBsuit.description>카르텔 요원들의 제식 방탄갑옷입니다. 방탄 젤로 충전된 갑옷은 높은 방어력을 제공하지만 지속적으로 젤을 충전해주어야 합니다.\n\n카르텔이 지상으로 사업을 확장할 계획을 세움에 따라, 요원들에게 보급할 장비의 부족이 대두되었습니다. 카르텔은 부유하지만, 모든 이들에게 발전된 장비를 보급할 수는 없었기에 카르텔은 더욱 저렴한 대안을 물색했습니다.</Moyo2_CBsuit.description>
 	<!--English=Armor Durability-->
-	<Moyo2_CBhelmet.comps.Comp_ReloadableArmor.gizmoLabel>방탄젤(방탄복)</Moyo2_CBhelmet.comps.Comp_ReloadableArmor.gizmoLabel>
+	<Moyo2_CBsuit.comps.Comp_ReloadableArmor.gizmoLabel>방탄젤(방탄복)</Moyo2_CBsuit.comps.Comp_ReloadableArmor.gizmoLabel>
 	<Moyo2_CBhelmet.label>방탄헬멧(카르텔)</Moyo2_CBhelmet.label>
 	<Moyo2_CBhelmet.description>카르텔 요원들의 제식 방탄헬멧입니다. 방탄 젤로 충전된 헬멧은 높은 방어력을 제공하지만 지속적으로 젤을 충전해주어야 합니다.\n\n지상에서 목격한 방탄장비를 모방한 이 방어구는 등대의 새로운 기술인 젤테크가 접목된 시제품입니다. 이들은 제품의 성능 테스트를 조건으로 막대한 후원을 받아 이 방어구를 제작하였고, 성능에 만족한 카르텔은 이 시리즈를 제식으로 채용했습니다.</Moyo2_CBhelmet.description>
 	<!--English=Armor Durability-->
-	<Moyo2_CBsuit.comps.Comp_ReloadableArmor.gizmoLabel>방탄젤(헬멧)</Moyo2_CBsuit.comps.Comp_ReloadableArmor.gizmoLabel>
+	<Moyo2_CBhelmet.comps.Comp_ReloadableArmor.gizmoLabel>방탄젤(헬멧)</Moyo2_CBhelmet.comps.Comp_ReloadableArmor.gizmoLabel>
 	<!-- 카르텔 타격대 -->
 	<!--English=Cartel striker shell-->
 	<Moyo2_CSShell.label>카르텔 타격대 쉘</Moyo2_CSShell.label>

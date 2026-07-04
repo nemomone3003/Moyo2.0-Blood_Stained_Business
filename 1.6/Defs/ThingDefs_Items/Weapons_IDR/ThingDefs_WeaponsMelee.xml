@@ -38,7 +38,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<comps>
+		<comps Inherit="False">	
 			<li Class="CompProperties_EquippableAbilityReloadable">
 				<abilityDef>Moyo2_WrenchThrow</abilityDef>
 				<maxCharges>1</maxCharges>
@@ -48,6 +48,16 @@
 				<ammoCountPerCharge>5</ammoCountPerCharge>
 				<baseReloadTicks>200</baseReloadTicks>
 			</li>
+			<li Class="CompProperties_Forbiddable"/>	
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>		
 		</comps>
 		<!-- - -->
 		<recipeMaker>

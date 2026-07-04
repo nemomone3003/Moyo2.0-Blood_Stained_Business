@@ -145,7 +145,7 @@
 		<graphicData>
 			<texPath>Apparel/Misc/CartelCloak1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.1</drawSize>
 		</graphicData>
 		<uiIconScale>1.2</uiIconScale>
 		<!-- - -->
