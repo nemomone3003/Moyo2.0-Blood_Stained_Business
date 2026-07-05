@@ -318,7 +318,7 @@
 				<minSeverity>0.6</minSeverity>
 				<statOffsets>
 					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
-					<MentalBreakThreshold>0.9</MentalBreakThreshold>
+					<MentalBreakThreshold>0.09</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>
 					<GlobalLearningFactor>0.55</GlobalLearningFactor>
