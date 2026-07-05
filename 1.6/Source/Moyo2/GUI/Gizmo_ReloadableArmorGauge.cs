@@ -5,7 +5,7 @@ namespace Moyo2
 	public class Gizmo_ReloadableArmorGauge : Gizmo_Slider
 	{
 		private readonly Comp_ReloadableArmor reloadableArmor;
-		private static bool draggingBar;
+		private bool draggingBar;
 
 
 		protected override float Target
@@ -33,10 +33,10 @@ namespace Moyo2
 
 		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
 		{
-			Rect rect = new(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
-			if (!Mouse.IsOver(rect))
+			if (reloadableArmor.Props.maxDurability == 80)
 			{
-				DraggingBar = false;
+				Log.Message(reloadableArmor.Props.maxDurability == 80);
+				topLeft += new Vector2(1, 1);
 			}
 			return base.GizmoOnGUI(topLeft, maxWidth, parms);
 		}
