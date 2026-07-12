@@ -2,82 +2,68 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases</xpath>
         <value>
             <Bulk>85</Bulk>
-            <WornBulk>15</WornBulk>
+            <WornBulk>23</WornBulk>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/Mass</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/Mass</xpath>
         <value>
-            <Mass>40</Mass>
+            <Mass>67</Mass>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>14.9</ArmorRating_Sharp>
+            <ArmorRating_Sharp>26</ArmorRating_Sharp>
             <ArmorRating_Electric>0.55</ArmorRating_Electric>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/ArmorRating_Blunt</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>37</ArmorRating_Blunt>
+            <ArmorRating_Blunt>53.7</ArmorRating_Blunt>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/statBases/Flammability</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/Flammability</xpath>
         <value>
             <Flammability>0</Flammability>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/equippedStatOffsets</xpath>
         <value>
-            <equippedStatOffsets>
-                <CarryWeight>50</CarryWeight>
-                <CarryBulk>10</CarryBulk>
-                <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-            </equippedStatOffsets>
+            <CarryWeight>85</CarryWeight>
+            <CarryBulk>15</CarryBulk>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]/apparel/bodyPartGroups</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/apparel/bodyPartGroups</xpath>
         <value>
             <li>Hands</li>
             <li>Feet</li>
         </value>
     </Operation>
 
-    <!-- ask safa -->
+
     <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="Moyo2_StreamlineDivingShell"]</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]</xpath>
         <value>
             <li Class="CombatExtended.PartialArmorExt">
                 <stats>
                     <li>
-                        <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-                        <parts>
-                            <li>Neck</li>
-                        </parts>
-                    </li>
-                    <li>
-                        <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
-                        <parts>
-                            <li>Neck</li>
-                        </parts>
-                    </li>
-                    <li>
                         <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
                         <parts>
+                            <li>Neck</li>
                             <li>Leg</li>
                             <li>Arm</li>
                         </parts>
@@ -85,6 +71,7 @@
                     <li>
                         <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
                         <parts>
+                            <li>Neck</li>
                             <li>Leg</li>
                             <li>Arm</li>
                         </parts>

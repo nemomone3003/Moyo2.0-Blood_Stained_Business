@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/statBases</xpath>
+        <value>
+            <Bulk>5</Bulk>
+            <WornBulk>5</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/statBases/Mass</xpath>
+        <value>
+            <Mass>4.5</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>1</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>2</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/comps/li[@Class="Moyo2.CompProperties_ReloadableArmor"]/armorOverrideSharp</xpath>
+        <value>
+            <armorOverrideSharp>12</armorOverrideSharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/comps/li[@Class="Moyo2.CompProperties_ReloadableArmor"]/armorOverrideBlunt</xpath>
+        <value>
+            <armorOverrideSharp>26</armorOverrideSharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBhelmet"]/apparel/layers</xpath>
+        <value>
+            <layers>
+                <li>OnHead</li>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+</Patch>

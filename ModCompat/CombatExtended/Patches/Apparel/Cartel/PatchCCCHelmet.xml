@@ -1,63 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+    <!-- Not done -->
+
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/statBases</xpath>
         <value>
             <Bulk>6</Bulk>
-            <WornBulk>1</WornBulk>
+            <WornBulk>3</WornBulk>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/statBases/Mass</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/statBases/Mass</xpath>
         <value>
             <Mass>5</Mass>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>18.8</ArmorRating_Sharp>
+            <ArmorRating_Sharp>18</ArmorRating_Sharp>
             <ArmorRating_Electric>0.3</ArmorRating_Electric>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>40</ArmorRating_Blunt>
+            <ArmorRating_Blunt>41.5</ArmorRating_Blunt>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/statBases/Flammability</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/statBases/Flammability</xpath>
         <value>
             <Flammability>0</Flammability>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/apparel/immuneToToxGasExposure</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/apparel/immuneToToxGasExposure</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/apparel</xpath>
+            <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/apparel</xpath>
             <value>
                 <immuneToToxGasExposure>true</immuneToToxGasExposure>
             </value>
         </nomatch>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/equippedStatOffsets/MoveSpeed</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/equippedStatOffsets</xpath>
         <value>
             <SmokeSensitivity>-1</SmokeSensitivity>
-            <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingHelmet"]/apparel/layers</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCHelmet"]/apparel/layers</xpath>
         <value>
             <layers>
                 <li>OnHead</li>

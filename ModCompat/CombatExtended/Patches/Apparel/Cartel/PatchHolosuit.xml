@@ -2,7 +2,7 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit_Cartel"]/statBases</xpath>
         <value>
             <Bulk>6.5</Bulk>
             <WornBulk>1.5</WornBulk>
@@ -10,21 +10,21 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit_Cartel"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>6.59</ArmorRating_Sharp>
+            <ArmorRating_Sharp>4.5</ArmorRating_Sharp>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit"]/statBases/ArmorRating_Blunt</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit_Cartel"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>10.02</ArmorRating_Blunt>
+            <ArmorRating_Blunt>12.32</ArmorRating_Blunt>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit"]/apparel/bodyPartGroups</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_HoloSuit_Cartel"]/apparel/bodyPartGroups</xpath>
         <value>
             <li>Hands</li>
             <li>Feet</li>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- Not done -->
+     
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/statBases</xpath>
+        <value>
+            <Bulk>6</Bulk>
+            <WornBulk>3</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/statBases/Mass</xpath>
+        <value>
+            <Mass>5</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>8.92</ArmorRating_Sharp>
+            <ArmorRating_Electric>0.21</ArmorRating_Electric>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>22.45</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/apparel/immuneToToxGasExposure</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/apparel</xpath>
+            <value>
+                <immuneToToxGasExposure>true</immuneToToxGasExposure>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/equippedStatOffsets</xpath>
+        <value>
+            <SmokeSensitivity>-1</SmokeSensitivity>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CSHelmet"]/apparel/layers</xpath>
+        <value>
+            <layers>
+                <li>OnHead</li>
+                <li>StrappedHead</li>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+</Patch>

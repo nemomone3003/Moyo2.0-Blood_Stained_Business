@@ -1,63 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+    <!-- Not done -->
+     
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/statBases</xpath>
         <value>
-            <Bulk>90</Bulk>
-            <WornBulk>15</WornBulk>
+            <Bulk>85</Bulk>
+            <WornBulk>23</WornBulk>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/Mass</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/statBases/Mass</xpath>
         <value>
-            <Mass>75</Mass>
+            <Mass>67</Mass>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/ArmorRating_Sharp</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/statBases/ArmorRating_Sharp</xpath>
         <value>
-            <ArmorRating_Sharp>21</ArmorRating_Sharp>
-            <ArmorRating_Electric>0.55</ArmorRating_Electric>
+            <ArmorRating_Sharp>13.67</ArmorRating_Sharp>
+            <ArmorRating_Electric>0.43</ArmorRating_Electric>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/ArmorRating_Blunt</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/statBases/ArmorRating_Blunt</xpath>
         <value>
-            <ArmorRating_Blunt>53.7</ArmorRating_Blunt>
+            <ArmorRating_Blunt>29.87</ArmorRating_Blunt>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/statBases/Flammability</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/statBases/Flammability</xpath>
         <value>
             <Flammability>0</Flammability>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/equippedStatOffsets</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/equippedStatOffsets</xpath>
         <value>
-            <CarryWeight>85</CarryWeight>
+            <CarryWeight>45</CarryWeight>
             <CarryBulk>10</CarryBulk>
-            <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]/apparel/bodyPartGroups</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]/apparel/bodyPartGroups</xpath>
         <value>
             <li>Hands</li>
             <li>Feet</li>
         </value>
     </Operation>
 
-    <!-- ask safa -->
+
     <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="Moyo2_DeepDivingShell"]</xpath>
+        <xpath>Defs/ThingDef[defName="Moyo2_CSShell"]</xpath>
         <value>
             <li Class="CombatExtended.PartialArmorExt">
                 <stats>

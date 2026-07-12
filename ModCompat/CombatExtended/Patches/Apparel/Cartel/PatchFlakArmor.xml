@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]/statBases</xpath>
+        <value>
+            <Bulk>6</Bulk>
+            <WornBulk>6</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]/statBases/Mass</xpath>
+        <value>
+            <Mass>13</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>3</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]/comps/li[@Class="Moyo2.CompProperties_ReloadableArmor"]/armorOverrideSharp</xpath>
+        <value>
+            <armorOverrideSharp>16</armorOverrideSharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CBsuit"]/comps/li[@Class="Moyo2.CompProperties_ReloadableArmor"]/armorOverrideBlunt</xpath>
+        <value>
+            <armorOverrideSharp>34</armorOverrideSharp>
+        </value>
+    </Operation>
+
+</Patch>

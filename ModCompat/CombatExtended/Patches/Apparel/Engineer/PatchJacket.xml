@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <!-- ASK NEMO -->
-
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Moyo2_EGJacket"]/statBases</xpath>
         <value>

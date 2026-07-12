@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- Not done -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/statBases</xpath>
+        <value>
+            <Bulk>85</Bulk>
+            <WornBulk>23</WornBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/statBases/Mass</xpath>
+        <value>
+            <Mass>67</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>23.87</ArmorRating_Sharp>
+            <ArmorRating_Electric>0.5</ArmorRating_Electric>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>50.96</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/equippedStatOffsets</xpath>
+        <value>
+            <CarryWeight>85</CarryWeight>
+            <CarryBulk>10</CarryBulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]/apparel/bodyPartGroups</xpath>
+        <value>
+            <li>Hands</li>
+            <li>Feet</li>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Moyo2_CCCShell"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                        <parts>
+                            <li>Neck</li>
+                            <li>Leg</li>
+                            <li>Arm</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                        <parts>
+                            <li>Neck</li>
+                            <li>Leg</li>
+                            <li>Arm</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

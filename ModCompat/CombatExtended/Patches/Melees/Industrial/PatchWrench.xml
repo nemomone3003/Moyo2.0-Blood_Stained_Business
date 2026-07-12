@@ -36,7 +36,7 @@
                     <capacities>
                         <li>Blunt</li>
                     </capacities>
-                    <power>19</power>
+                    <power>12</power>
                     <cooldownTime>2.61</cooldownTime>
                     <armorPenetrationBlunt>7.605</armorPenetrationBlunt>
                 </li>
@@ -48,27 +48,12 @@
     <!-- ========== Ability ========== -->
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/AbilityDef[defName="Moyo2_WrenchThrow"]/verbProperties</xpath>
-        <value>
-            <verbProperties Class="CombatExtended.VerbPropertiesCE">
-                <soundCast>ThrowGrenade</soundCast>
-                <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
-                <range>5.5</range>
-                <defaultProjectile>Moyo2_Bullet_WrenchThrow</defaultProjectile>
-                <warmupTime>0.5</warmupTime>
-                <burstShotCount>1</burstShotCount>
-                <stopBurstWithoutLos>false</stopBurstWithoutLos>
-            </verbProperties>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Moyo2_Bullet_WrenchThrow"]/projectile</xpath>
         <value>
             <thingClass>CombatExtended.BulletCE</thingClass>
             <projectile Class="CombatExtended.ProjectilePropertiesCE">
                 <damageDef>Moyo2_Damage_WrenchThrow</damageDef>
-                <damageAmountBase>19</damageAmountBase>
+                <damageAmountBase>10</damageAmountBase>
                 <speed>30</speed>
                 <armorPenetrationSharp>0</armorPenetrationSharp>
                 <armorPenetrationBlunt>7.605</armorPenetrationBlunt>
