@@ -24,7 +24,7 @@
 	<Moyo2_DBBooster_Medi.label>메디 부스터</Moyo2_DBBooster_Medi.label>
 	<!--Original=active medi booster-->
 	<Moyo2_DBBooster_Medi.labelNoun>메디 부스터</Moyo2_DBBooster_Medi.labelNoun>
-	<!--Original=Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doeses and even being able to heal permanent scars with prolonged injections.-->
+	<!--Original=Active medi booster in the bloodstreams. It boosts healing capabilities of the body for quick recovery from wounds and illness. Its effects gets more potent with subsequent doses and even being able to heal permanent scars with prolonged injections.-->
 	<Moyo2_DBBooster_Medi.description>혈액에 메디 부스터의 활성성분이 존재합니다. 신체의 회복능력을 강화해 상처와 질병을 빠르게 극복할 수 있도록 도와줍니다. 중복해서 복용하면 효과가 더욱 좋으며 지속적으로 투여할 시 흉터 역시 치유가 가능합니다.\n\n부상 회복 속도: 150%~300%\n\n항체 생성 속도: +50%~+200%\n\n의식: 100%~60%\n\n영구적 흉터 제거 가능</Moyo2_DBBooster_Medi.description>
 	<Moyo2_DBBooster_Medi.stages.low_potency.label>약한 효과</Moyo2_DBBooster_Medi.stages.low_potency.label>
 	<Moyo2_DBBooster_Medi.stages.medium_potency.label>적당한 효과</Moyo2_DBBooster_Medi.stages.medium_potency.label>
@@ -33,7 +33,7 @@
 	<Moyo2_DBHediff_Orca.label>오르카 부스터</Moyo2_DBHediff_Orca.label>
 	<!--Original=a orca booster high-->
 	<Moyo2_DBHediff_Orca.labelNoun>오르카 부스터</Moyo2_DBHediff_Orca.labelNoun>
-	<!--Original=Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doeses.-->
+	<!--Original=Active orca booster in the bloodstreams.  It increases melee combat abilities. Its effects gets more potent with subsequent doses.-->
 	<Moyo2_DBHediff_Orca.description>혈액에 오르카 부스터의 활성성분이 존재합니다. 근접 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다.\n\n근접 명중률: +2~+5\n\n근접 회피율:+2~+5\n\n받는 피해 계수: +0%~-15%\n\n의식: +15%~30%\n\n이동: +40%~60%</Moyo2_DBHediff_Orca.description>
 	<Moyo2_DBHediff_Orca.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Orca.stages.low_potency.label>
 	<Moyo2_DBHediff_Orca.stages.medium_potency.label>적당한 효과</Moyo2_DBHediff_Orca.stages.medium_potency.label>
@@ -42,7 +42,7 @@
 	<Moyo2_DBHediff_Hydra.label>히드라 부스터</Moyo2_DBHediff_Hydra.label>
 	<!--Original=a hydra booster high-->
 	<Moyo2_DBHediff_Hydra.labelNoun>히드라 부스터</Moyo2_DBHediff_Hydra.labelNoun>
-	<!--Original=Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doeses.-->
+	<!--Original=Active hydra pearl in the bloodstreams. It increases ranged combat abilities. Its effects gets more potent with subsequent doses.-->
 	<Moyo2_DBHediff_Hydra.description>혈액에 히드라 부스터의 활성성분이 존재합니다. 원거리 전투 능력을 강화합니다. 중복해서 복용하면 효과가 더욱 좋습니다.\n\n조준 지연: -10%~-20%\n\n원거리 재사용 대기시간 배수: -10%~-20%\n\n의식: +15%~30%\n\n이동: +5%~20%\n\n시력: +15%~30%</Moyo2_DBHediff_Hydra.description>
 	<Moyo2_DBHediff_Hydra.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Hydra.stages.low_potency.label>
 	<Moyo2_DBHediff_Hydra.stages.medium_potency.label>적당한 효과</Moyo2_DBHediff_Hydra.stages.medium_potency.label>
@@ -51,7 +51,7 @@
 	<Moyo2_DBHediff_Joy.label>조이펄</Moyo2_DBHediff_Joy.label>
 	<!--Original=a joypearl high-->
 	<Moyo2_DBHediff_Joy.labelNoun>조이펄</Moyo2_DBHediff_Joy.labelNoun>
-	<!--Original=Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<!--Original=Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
 	<Moyo2_DBHediff_Joy.description>혈액에 조이펄의 활성성분이 존재합니다. 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n무드 효과: +18~+77\n\n통증: *100%~*10%\n\n의식: +0%~-35%</Moyo2_DBHediff_Joy.description>
 	<Moyo2_DBHediff_Joy.stages.content.label>만족함</Moyo2_DBHediff_Joy.stages.content.label>
 	<Moyo2_DBHediff_Joy.stages.joy.label>즐거움</Moyo2_DBHediff_Joy.stages.joy.label>
@@ -62,7 +62,7 @@
 	<Moyo2_DBHediff_Crystal.label>크리스탈 펄</Moyo2_DBHediff_Crystal.label>
 	<!--Original=a crystal pearl high-->
 	<Moyo2_DBHediff_Crystal.labelNoun>크리스탈 펄</Moyo2_DBHediff_Crystal.labelNoun>
-	<!--Original=Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<!--Original=Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
 	<Moyo2_DBHediff_Crystal.description>혈액에 크리스탈 펄의 활성성분이 존재합니다.  작업 능률을 올려주며 부작용의 우려 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n전역 작업 속도: +15%~+75%\n\n정신이상 임계치: +0~+15%\n\n전역 학습 속도: +0%~-80%\n\n의식: +0%~+35%</Moyo2_DBHediff_Crystal.description>
 	<Moyo2_DBHediff_Crystal.stages.fading.label>희미함</Moyo2_DBHediff_Crystal.stages.fading.label>
 	<Moyo2_DBHediff_Crystal.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Crystal.stages.low_potency.label>
@@ -73,7 +73,7 @@
 	<Moyo2_DBHediff_Thinker.label>싱커 펄</Moyo2_DBHediff_Thinker.label>
 	<!--Original=a thinker pearl high-->
 	<Moyo2_DBHediff_Thinker.labelNoun>싱커 펄</Moyo2_DBHediff_Thinker.labelNoun>
-	<!--Original=Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<!--Original=Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
 	<Moyo2_DBHediff_Thinker.description>혈액에 싱커 펄의 활성성분이 존재합니다. 학습 능률을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n연구 속도: +10%~+45%\n\n해킹 속도: +5%~+55%\n\n전역 학습 속도: +10~+65%\n\n정신이상 임계치: +0~+15%\n\의식: +0~+20%</Moyo2_DBHediff_Thinker.description>
 	<Moyo2_DBHediff_Thinker.stages.fading.label>희미함</Moyo2_DBHediff_Thinker.stages.fading.label>
 	<Moyo2_DBHediff_Thinker.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Thinker.stages.low_potency.label>
@@ -84,7 +84,7 @@
 	<Moyo2_DBHediff_Alluring.label>알루링 펄</Moyo2_DBHediff_Alluring.label>
 	<!--Original=a alluring pearl high-->
 	<Moyo2_DBHediff_Alluring.labelNoun>알루링 펄</Moyo2_DBHediff_Alluring.labelNoun>
-	<!--Original=Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<!--Original=Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
 	<Moyo2_DBHediff_Alluring.description>혈액에 알루링 펄의 활성성분이 존재합니다. 매력을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n사회적 영향력: +10%~+55%\n\n매력: +0~+2\n\n정신이상 임계치: +0~+15%\n\n가벼운 정신불안 가능</Moyo2_DBHediff_Alluring.description>
 	<Moyo2_DBHediff_Alluring.stages.fading.label>희미함</Moyo2_DBHediff_Alluring.stages.fading.label>
 	<Moyo2_DBHediff_Alluring.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Alluring.stages.low_potency.label>
@@ -95,7 +95,7 @@
 	<Moyo2_DBHediff_Numb.label>넘 펄</Moyo2_DBHediff_Numb.label>
 	<!--Original=a numb pearl high-->
 	<Moyo2_DBHediff_Numb.labelNoun>넘 펄</Moyo2_DBHediff_Numb.labelNoun>
-	<!--Original=Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.-->
+	<!--Original=Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
 	<Moyo2_DBHediff_Numb.description>혈액에 조이펄의 활성성분이 존재합니다. 가볍게 기분을 띄워주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n통증: *70%~*0%\n\n의식: +0%~-30%\n\n기억 상실 가능\n\n마비성 동면 가능</Moyo2_DBHediff_Numb.description>
 	<Moyo2_DBHediff_Numb.stages.fading.label>희미함</Moyo2_DBHediff_Numb.stages.fading.label>
 	<Moyo2_DBHediff_Numb.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Numb.stages.low_potency.label>

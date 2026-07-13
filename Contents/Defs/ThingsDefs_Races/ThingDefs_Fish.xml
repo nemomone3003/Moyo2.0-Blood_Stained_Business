@@ -194,7 +194,7 @@
 		<defName>Moyo2_FleshMass</defName>
 		<!-- 모요 배양체 -->
 		<label>cultured Moyo mass</label>
-		<description>A cultured mass of Moyo cells. Taking a very long time to grow, it can be used to extact deepblue or various organs.\n\nDemands for deepblue is always high, while keeping prodiction to meet that demand is challanging. So the brightest minds came up with a solution.</description>
+		<description>A cultured mass of Moyo cells. Taking a very long time to grow, it can be used to extact deepblue or various organs.\n\nDemands for deepblue is always high, while keeping prodiction to meet that demand is challenging. So the brightest minds came up with a solution.</description>
 		<graphicData>
 			<texPath>Pawn/FleshMass/MoyoFish_FleshMass</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

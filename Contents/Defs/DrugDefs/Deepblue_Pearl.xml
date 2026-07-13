@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>Moyo2_DBPearl_Joy</defName>
 		<label>joypearl</label>
-		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
+		<description>"Objectively the best way to start your day" - an advertisement in the lighthouse\n\nA pill of deepblue compound. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doses. As a best seller drug in the lighthouse, its the go-to of moyos to start their day.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByExcessHapiness.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Moyo2_DBHediff_Joy</HediffDef>
 			<ThingDef>Moyo2_BlueSerum</ThingDef>
@@ -83,7 +83,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on joypearl</label>
 		<labelNoun>a joypearl high</labelNoun>
-		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active joypearl in the bloodstreams. It lightens the mood without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DBPearl_Joy</ThingDef>
 		</descriptionHyperlinks>
@@ -168,7 +168,7 @@
 			</li>
 			<li>
 				<label>high on joypearl(glee)</label>
-				<description>there are no excess for hapiness. More the merrier.</description>
+				<description>There is no excess for happiness. More the merrier.</description>
 				<baseMoodEffect>37</baseMoodEffect>
 			</li>
 			<li>
@@ -187,7 +187,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>Moyo2_DBPearl_Crystal</defName>
 		<label>crystal pearl</label>
-		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.</description>
+		<description>"For your potential to shine like a gem!" - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByWorkingFrenzy.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Moyo2_DBHediff_Crystal</HediffDef>
 			<ThingDef>Moyo2_BlueSerum</ThingDef>
@@ -264,7 +264,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on crystal pearl</label>
 		<labelNoun>a crystal pearl high</labelNoun>
-		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active crystal pearl in the bloodstreams. It boosts productivity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DBPearl_Crystal</ThingDef>
 		</descriptionHyperlinks>
@@ -360,7 +360,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>Moyo2_DBPearl_Thinker</defName>
 		<label>thinker pearl</label>
-		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.</description>
+		<description>"Enlightenment is just a pill away." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Eternal partner of moyos seeking to achieve more.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByParanoidSearchOfTruth.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Moyo2_DBHediff_Thinker</HediffDef>
 			<ThingDef>Moyo2_BlueSerum</ThingDef>
@@ -437,7 +437,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on thinker pearl</label>
 		<labelNoun>a thinker pearl high</labelNoun>
-		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.</description>
+		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DBPearl_Thinker</ThingDef>
 		</descriptionHyperlinks>
@@ -540,7 +540,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>Moyo2_DBPearl_Alluring</defName>
 		<label>alluring pearl</label>
-		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.\n\nMinor mental break MTB</description>
+		<description>"Struggling to be the center of the party?guess why." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Only a fool will try to charm others without this.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByDestructiveNarcissism.\n\nMinor mental break MTB</description>
 		<descriptionHyperlinks>
 			<HediffDef>Moyo2_DBHediff_Alluring</HediffDef>
 			<ThingDef>Moyo2_BlueSerum</ThingDef>
@@ -617,7 +617,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on alluring pearl</label>
 		<labelNoun>a alluring pearl high</labelNoun>
-		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nMinor mental break MTB</description>
+		<description>Active alluring pearl in the bloodstreams. It boosts Social and physical attractiveness without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.\n\nMinor mental break MTB</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DBPearl_Alluring</ThingDef>
 		</descriptionHyperlinks>
@@ -706,7 +706,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>Moyo2_DBPearl_Numb</defName>
 		<label>numb pearl</label>
-		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of Moyo2_DeepBlue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doeses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
+		<description>"True friend of the poor and suffering." - an advertisement in the lighthouse.\n\nA pill of deepblue compound. It clears away pain and worries with little worries of harmful side effects. Its effects gets more potent with subsequent doses. Countless moyos are able to live another day thanks to this little friend of yours.\n\nTheConsumerHasAllResponsibilitiesOfConsequencesCausedByLossOfSenseAndFeelings.\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
 		<descriptionHyperlinks>
 			<HediffDef>Moyo2_DBHediff_Numb</HediffDef>
 			<ThingDef>Moyo2_BlueSerum</ThingDef>
@@ -783,7 +783,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on numb pearl</label>
 		<labelNoun>a numb pearl high</labelNoun>
-		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doeses. Sometimes, way too potent.\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
+		<description>Active numb pearl in the bloodstreams. It clears away pain and worries without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.\n\nForget Memory MTB\n\nNumbing hibernation chance</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DBPearl_Numb</ThingDef>
 		</descriptionHyperlinks>
