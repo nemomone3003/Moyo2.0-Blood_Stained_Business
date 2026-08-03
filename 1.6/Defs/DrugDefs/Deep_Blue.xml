@@ -21,7 +21,7 @@
 	<!-- 혈액팩 -->
 	<ThingDef ParentName="ResourceBase">
 		<defName>Moyo2_BlueBloodBag</defName>
-		<label>blue bloodbag</label>
+		<label>blue blood bag</label>
 		<description>A bag of moyo blood, can be refined to produce deepblue.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Alien_Moyo</ThingDef>

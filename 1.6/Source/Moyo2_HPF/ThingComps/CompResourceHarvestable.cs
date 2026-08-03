@@ -18,12 +18,7 @@ namespace Moyo2_HPF
 		public float Fullness
 		{
 			get => fullness;
-			set
-			{
-				if (value > 1f) fullness = 1f;
-				else if (value < 0f) fullness = 0f;
-				else fullness = value;
-			}
+			set => fullness = Mathf.Clamp01(value);
 		}
 		public bool ActiveAndFull => Active && Fullness >= 1f;
 
