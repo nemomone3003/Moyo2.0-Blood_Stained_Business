@@ -12,5 +12,12 @@
 			<li>Moyo2_HexapodRecipe</li>
 			<li>Moyo2_SpheripodRecipe</li>
 		</value>
-	</Operation>	
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Moyo2_Hexapod_Default</li>
+			<li>Corpse_Moyo2_Spheripod_Default</li>
+		</value>
+	</Operation>
 </Patch>
