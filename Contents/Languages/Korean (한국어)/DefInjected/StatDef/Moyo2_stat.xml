@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!--Original=Deeplbue production amount-->
+  <!--Original=Deepblue production amount-->
   <Moyo2_DeepblueStat.label>딥블루 생산량</Moyo2_DeepblueStat.label>
   <!--Original=How much deepblue this pawn provides.-->
   <Moyo2_DeepblueStat.description>생산되는 딥블루의 양입니다.</Moyo2_DeepblueStat.description>
-  <!--Original=Deeplbue production speed-->
+  <!--Original=Deepblue production speed-->
   <Moyo2_DeepblueStatSpeed.label>딥블루 생산속도</Moyo2_DeepblueStatSpeed.label>
   <!--Original=How fast this pawn provides deepblue.-->
   <Moyo2_DeepblueStatSpeed.description>딥블루를 생산하는 속도입니다.</Moyo2_DeepblueStatSpeed.description>

@@ -2,7 +2,7 @@
 <Defs>
   <StatDef>
     <defName>Moyo2_DeepblueStat</defName>
-    <label>Deeplbue production amount</label>
+    <label>Deepblue production amount</label>
     <description>How much deepblue this pawn provides.</description>
     <category>BasicsPawn</category>
     <defaultBaseValue>1.0</defaultBaseValue>
@@ -15,7 +15,7 @@
   </StatDef>
   <StatDef>
     <defName>Moyo2_DeepblueStatSpeed</defName>
-    <label>Deeplbue production speed</label>
+    <label>Deepblue production speed</label>
     <description>How fast this pawn provides deepblue.</description>
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
