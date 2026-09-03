@@ -548,9 +548,9 @@
 	<!-- 방탄젤 -->
 	<RecipeDef>
 		<defName>Moyo2_Make_BGelPack</defName>
-		<label>make balistic gel pack</label>
-		<description>Make balistic gel pack.</description>
-		<jobString>Making balistic gel pack.</jobString>
+		<label>make ballistic gel pack</label>
+		<description>Make ballistic gel pack.</description>
+		<jobString>Making ballistic gel pack.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Tailor</effectWorking>
@@ -597,9 +597,9 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>Moyo2_Make_BGelPackBulk</defName>
-		<label>make balistic gel pack X4</label>
-		<description>Bulk make balistic gel pack.</description>
-		<jobString>Bulk making balistic gel pack.</jobString>
+		<label>make ballistic gel pack X4</label>
+		<description>Bulk make ballistic gel pack.</description>
+		<jobString>Bulk making ballistic gel pack.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Tailor</effectWorking>

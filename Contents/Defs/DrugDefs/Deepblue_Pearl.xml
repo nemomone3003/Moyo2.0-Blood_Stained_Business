@@ -437,7 +437,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>high on thinker pearl</label>
 		<labelNoun>a thinker pearl high</labelNoun>
-		<description>Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.</description>
+		<description>Active thinker pearl in the bloodstream. It boosts clarity without worrying about harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Moyo2_DBPearl_Thinker</ThingDef>
 		</descriptionHyperlinks>

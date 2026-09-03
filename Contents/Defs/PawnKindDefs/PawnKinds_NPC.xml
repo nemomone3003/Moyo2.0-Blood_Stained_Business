@@ -175,7 +175,7 @@
 	</PawnKindDef>
 	<!-- 모요 중급 전투원 -->
 	<PawnKindDef ParentName="Moyo2_NPCBase" Name="Moyo2_NPCFighterMid" Abstract="true">
-		<combatPower>100</combatPower>
+		<combatPower>50</combatPower>
 		<isFighter>true</isFighter>
 		<apparelTags>
 			<li>Moyo2_Engineer</li>
@@ -227,7 +227,7 @@
 	<PawnKindDef ParentName="Moyo2_NPCFighterMid">
 		<defName>Moyo2_NPCOutlaw</defName>
 		<label>moyo outlaw</label>
-		<combatPower>110</combatPower>
+		<combatPower>55</combatPower>
 		<weaponMoney>500~800</weaponMoney>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>105~160</techHediffsMoney>
@@ -235,7 +235,7 @@
 	<PawnKindDef ParentName="Moyo2_NPCFighterMid">
 		<defName>Moyo2_NPCOutlawJunkie</defName>
 		<label>moyo outlaw junkie</label>
-		<combatPower>110</combatPower>
+		<combatPower>60</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<apparelTags>
 			<li>Moyo2_SuitBasic</li>
@@ -269,7 +269,7 @@
 	</PawnKindDef>
 	<!-- 모요 중급+ 전투원 -->
 	<PawnKindDef ParentName="Moyo2_NPCFighterMid" Name="Moyo2_NPCFighterMidPlus" Abstract="true">
-		<combatPower>130</combatPower>
+		<combatPower>110</combatPower>
 		<itemQuality>Good</itemQuality>
 		<apparelTags Inherit="false">
 			<li>Moyo2_Engineer</li>

@@ -27,4 +27,7 @@
 
     <Moyo2_ReloadableArmor_InspectTabLabel>Gel level: {0} / {1}</Moyo2_ReloadableArmor_InspectTabLabel>
 
+    <Moyo2_CantWearApparel_GenderLocked>This apparel can't be worn by {0}</Moyo2_CantWearApparel_GenderLocked>
+
+
 </LanguageData>

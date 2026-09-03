@@ -170,7 +170,7 @@
 	<!-- 카르텔 전투원 -->
 	<!-- 카르텔 무장요원 베이스-->
 	<PawnKindDef ParentName="Moyo2_NPCCartelBase" Name="Moyo2_NPCCartelSec" Abstract="true">
-		<combatPower>100</combatPower>
+		<combatPower>60</combatPower>
 		<isFighter>true</isFighter>
 		<apparelTags>
 			<li>Moyo2_SuitBasic</li>
@@ -237,7 +237,7 @@
 	<PawnKindDef ParentName="Moyo2_NPCCartelSec">
 		<defName>Moyo2_NPCCartelArmOpsElite</defName>
 		<label>moyo Cartel Armed operator elite</label>
-		<combatPower>130</combatPower>
+		<combatPower>80</combatPower>
 		<apparelRequired>
 			<li>Moyo2_CBsuit</li>
 			<li>Moyo2_CBhelmet</li>
@@ -284,7 +284,7 @@
 
 	<!-- 카르텔 타격대 베이스-->
 	<PawnKindDef ParentName="Moyo2_NPCCartelBase" Name="Moyo2_NPCCartelStr" Abstract="true">
-		<combatPower>150</combatPower>
+		<combatPower>125</combatPower>
 		<isFighter>true</isFighter>
 		<apparelTags>
 			<li>Moyo2_SuitAdvanced</li>

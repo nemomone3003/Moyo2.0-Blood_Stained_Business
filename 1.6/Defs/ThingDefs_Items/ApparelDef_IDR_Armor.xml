@@ -356,7 +356,7 @@
 				<armorOverrideBlunt>1.05</armorOverrideBlunt>
 				<maxDurability>80</maxDurability>
 				<initialDurabilityTargetValue>40</initialDurabilityTargetValue>
-				<gizmoLabel>Balistic gel(Armor)</gizmoLabel>
+				<gizmoLabel>Ballistic gel(Armor)</gizmoLabel>
 			</li>
 			<li>
 				<compClass>CompColorable</compClass>
@@ -430,7 +430,7 @@
 				<armorOverrideBlunt>0.85</armorOverrideBlunt>
 				<maxDurability>40</maxDurability>
 				<initialDurabilityTargetValue>20</initialDurabilityTargetValue>
-				<gizmoLabel>Balistic gel(Helmet)</gizmoLabel>
+				<gizmoLabel>Ballistic gel(Helmet)</gizmoLabel>
 			</li>
 			<li>
 				<compClass>CompColorable</compClass>

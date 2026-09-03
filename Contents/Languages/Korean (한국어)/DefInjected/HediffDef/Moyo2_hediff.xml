@@ -73,7 +73,7 @@
 	<Moyo2_DBHediff_Thinker.label>싱커 펄</Moyo2_DBHediff_Thinker.label>
 	<!--Original=a thinker pearl high-->
 	<Moyo2_DBHediff_Thinker.labelNoun>싱커 펄</Moyo2_DBHediff_Thinker.labelNoun>
-	<!--Original=Active thinker pearl in the bloodstreams. It boosts clarity without the worries of harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
+	<!--Original=Active thinker pearl in the bloodstream. It boosts clarity without worrying about harmful side effects. Its effects gets more potent with subsequent doses. Sometimes, way too potent.-->
 	<Moyo2_DBHediff_Thinker.description>혈액에 싱커 펄의 활성성분이 존재합니다. 학습 능률을 올려주며 부작용 또한 없습니다. 중복해서 복용하면 효과가 더욱 좋습니다. 너무 먹으면 효과가 지나치게 좋아집니다.\n\n연구 속도: +10%~+45%\n\n해킹 속도: +5%~+55%\n\n전역 학습 속도: +10~+65%\n\n정신이상 임계치: +0~+15%\n\의식: +0~+20%</Moyo2_DBHediff_Thinker.description>
 	<Moyo2_DBHediff_Thinker.stages.fading.label>희미함</Moyo2_DBHediff_Thinker.stages.fading.label>
 	<Moyo2_DBHediff_Thinker.stages.low_potency.label>약한 효과</Moyo2_DBHediff_Thinker.stages.low_potency.label>

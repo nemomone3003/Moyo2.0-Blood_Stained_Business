@@ -44,7 +44,7 @@
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>Moyo2_BGelPack</defName>
-		<label>balistic gel pack</label>
+		<label>ballistic gel pack</label>
 		<description>This is a ballistic gel pack used to recharge Cartel ballistic armor. Non-newtonian nature of this dense fluid provides excellent protection from sudden impacts..\n\nThe fluid is a prototype of a new technology known as GelTech. Outside of the Cartel, no known faction within the Lighthouse has been observed applying this technology in any form.</description>
 		<graphicData>
 			<texPath>Item/BGelPack</texPath>
