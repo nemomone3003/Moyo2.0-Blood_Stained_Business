@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <JobDef>
+        <defName>Moyo2_ReloadArmor</defName>
+        <driverClass>Moyo2.JobDriver_ReloadableArmor</driverClass>
+        <reportString>reloading armor with TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+</Defs>

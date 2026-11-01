@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 빔 이펙트 -->
+	<ThingDef ParentName="MoteBase">
+		<defName>Moyo2_Mote_LMRColider_Beam</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+			<solidTime>0.1</solidTime>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+		</mote>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Weapon/ColiderBeam_3</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteBeam</shaderType>
+			<shaderParameters>
+				<_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+				<_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+				<_ScrollSpeedA>0</_ScrollSpeedA>
+				<_ScrollSpeedB>0</_ScrollSpeedB>
+				<_Intensity>2</_Intensity>
+			</shaderParameters>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Moyo2_Mote_LMRColider_Charge</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.15</fadeInTime>
+			<fadeOutTime>0.7</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+		</mote>
+		<graphicData>
+			<texPath>Weapon/ColiderCharge_1</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteHellfireCannon_Charge</shaderType>
+			<shaderParameters>
+				<_RandomTex>/Things/Mote/RandomFlicker</_RandomTex>
+				<_FlickerFrequency>0.25</_FlickerFrequency>
+				<_FlickerAmount>0.6</_FlickerAmount>
+				<_InnerCircleIntensity>0.1</_InnerCircleIntensity>
+				<_InnerCircleSize>0.2</_InnerCircleSize>
+				<_InnerCircleShimmerAmount>0.14</_InnerCircleShimmerAmount>
+			</shaderParameters>
+		</graphicData>
+	</ThingDef>
+	<!--모요 볼트 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_LMRColider</defName>
+		<label>concentrated laminar field</label>
+		<graphicData>
+			<texPath>Weapon/MoyoBullet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Beam</thingClass>
+		<projectile>
+			<damageDef>Moyo2_ColiderBullet</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<beamMoteDef>Moyo2_Mote_LMRColider_Beam</beamMoteDef>
+			<beamStartOffset>0.8</beamStartOffset>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>9999999</speed>
+			<landedEffecter>Moyo2_Effecter_LMRColider</landedEffecter>
+		</projectile>
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_ProjectileEffecter"> -->
+				<!-- <effecterDef>Moyo2_Effecter_LMRColider</effecterDef> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	</ThingDef>
+	<!-- 라미너 역장 충돌기 -->
+	<ThingDef ParentName="MoyoBaseGunLMR" Name="Moyo2_LMRcolider" Abstract="True">
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Weapon/LMR_Colider</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>9.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo2_Abyssteel>80</Moyo2_Abyssteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRcolider">
+		<defName>Moyo2_LMRColider</defName>
+		<label>laminar field colider</label>
+		<description>An experimental weapon concept from the Lighthouse that strikes targets using a concentrated laminar field. It is heavy and difficult to operate, but guarantees high accuracy and destructive power.\n\nThe idea behind this weapon emerged from the notion that if a sufficiently strong laminar field can exert meaningful physical force on objects, then instead of using it to guide projectiles, the field itself could be used to directly strike the target. The need for a large field generator and power source to realize this naturally resulted in a weapon that is very large and heavy.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Colider</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
+		<statBases>
+			<WorkToMake>120000</WorkToMake>
+			<Mass>9.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRColider</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>40</range>
+				<soundAiming>Moyo2_Laminar_Chargeup3</soundAiming>
+				<soundCast>Moyo2_Laminar_Colider</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<aimingChargeMote>Moyo2_Mote_LMRColider_Charge</aimingChargeMote>
+				<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<transformDatas>
+					<li>
+						<label>overcharge</label>
+						<description>initiate overcharge.</description>
+						<thingDef>Moyo2_LMRColiderOver</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
+					</li>
+				</transformDatas>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>Moyo2_GunLMRSpecial</li>
+			<li>Moyo2_ColiderMR</li>
+		</weaponTags>
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRcolider">
+		<defName>Moyo2_LMRColiderOver</defName>
+		<label>laminar field colider(overcharged)</label>
+		<description>An overcharged laminar field colider. Shoots powerful explosive shot but gets overloaded after a short period.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_ColiderOver</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker Inherit="False"/>
+		<thingCategories Inherit="False"/>
+		<tradeTags Inherit="False"/>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_LMRColider</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>40</range>
+				<soundAiming>Moyo2_Laminar_Chargeup3</soundAiming>
+				<soundCast>Moyo2_Laminar_Colider</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<aimingChargeMote>Moyo2_Mote_LMRColider_Charge</aimingChargeMote>
+				<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>overload</label>
+					<description>Gun system overloading.</description>
+					<thingDef>Moyo2_LMRColiderDown</thingDef>
+					<revertAfterTicks>450</revertAfterTicks>
+					<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
+				</revertData>
+				<transformDatas>
+					<li>
+						<label>quick discharge</label>
+						<description>Disable overcharge.</description>
+						<thingDef>Moyo2_LMRColiderDown</thingDef>
+						<transformCooldown>100</transformCooldown>
+						<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
+					</li>
+				</transformDatas>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags Inherit="False">
+			<li>NoRelic</li>
+		</weaponTags>
+	</ThingDef>
+	<ThingDef ParentName="Moyo2_LMRcolider">
+		<defName>Moyo2_LMRColiderDown</defName>
+		<label>laminar field colider(overloaded)</label>
+		<description>An overloaded laminar field colider. Firing is temporarily disabled until the system is restored. It's an expensive pillar in the meantime.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_ColiderDown</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker Inherit="False"/>
+		<thingCategories Inherit="False"/>
+		<tradeTags Inherit="False"/>
+		<comps>
+			<li Class="Moyo2_ItemFormChange.CompPropertiesFormChange">
+				<sharedComps>
+					<li>CompQuality</li>
+					<li>CompArt</li>
+				</sharedComps>
+				<revertData>
+					<label>cooling</label>
+					<description>gun system cooling.</description>
+					<thingDef>Moyo2_LMRColider</thingDef>
+					<revertAfterTicks>1800</revertAfterTicks>
+					<soundOnTransform>Moyo2_Laminar_Activate2</soundOnTransform>
+				</revertData>
+			</li>
+		</comps>
+		<relicChance>0</relicChance>
+		<weaponTags Inherit="False">
+			<li>NoRelic</li>
+		</weaponTags>
+	</ThingDef>
+</Defs>

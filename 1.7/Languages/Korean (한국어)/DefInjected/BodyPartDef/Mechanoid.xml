@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!--English=head-->
+    <Moyo2_HexapodHead.label>머리</Moyo2_HexapodHead.label>
+    <!--English=head-->
+    <Moyo2_HexapodHeadShell.label>머리</Moyo2_HexapodHeadShell.label>
+    <!--English=tentacle joint-->
+    <Moyo2_Hexapod_TentacleJoint.label>촉수 연결부</Moyo2_Hexapod_TentacleJoint.label>
+    <!--English=tentacle-->
+    <Moyo2_Hexapod_Tentacle.label>촉수</Moyo2_Hexapod_Tentacle.label>
+    <!--English=arm joint-->
+    <Moyo2_Spheripod_ArmJoint.label>팔 연결부</Moyo2_Spheripod_ArmJoint.label>
+    <!--English=club-->
+    <Moyo2_Spheripod_Arm.label>곤봉</Moyo2_Spheripod_Arm.label>
+    <!--English=leg-->
+    <Moyo2_Spheripod_Leg.label>다리</Moyo2_Spheripod_Leg.label>
+    <!--English=spheripod body-->
+    <Moyo2_Spheripod_Body.label>스페리포드 동체</Moyo2_Spheripod_Body.label>
+    <!--English=spheripod body-->
+    <Moyo2_Spheripod_Body.labelShort>스페리포드 동체</Moyo2_Spheripod_Body.labelShort>
+
+</LanguageData>

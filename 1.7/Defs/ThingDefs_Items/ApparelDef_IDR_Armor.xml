@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 등대 -->
+	<!-- 엔지니어 하네스-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_EGHarness</defName>
+		<label>depth engineer harness</label>
+		<description>This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage.\n\nIndustrial zone workers are strongly encouraged to have protective gear while working. Attempting self-harm for insurance claims not only results in voided insurance but also leads to prosecution.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorIDR/EGharness1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>3.5</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorIDR/EGharness</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Moyo2_Engineer</li>
+				<li>Moyo2_EngineerNoHead</li>
+				<li>Moyo2_HideBodyGlow</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>45</Steel>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
+		</costList>
+		<!-- - -->
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 엔지니어 재킷-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_EGJacket</defName>
+		<label>depth engineer jacket</label>
+		<description>This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage. Some wears this for fashion purpose.n\nThis gear is designed to be worn in conjunction with a bodysuit. Failure to adhere to this can lead to concerns of abrasions and bruises.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorIDR/EGjacket1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>21</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorIDR/EGjacket</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Moyo2_Engineer</li>
+				<li>Moyo2_EngineerNoHead</li>
+				<li>Moyo2_HideBodyGlow</li>
+			</tags>
+			<drawData>
+				<dataNorth>
+					<layer>60</layer>
+				</dataNorth>
+			</drawData>			
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>45</Steel>
+			<Moyo2_Cloth_Depthweave>80</Moyo2_Cloth_Depthweave>
+		</costList>
+		<!-- - -->
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 엔지니어 헬멧-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
+		<defName>Moyo2_EGHelmet</defName>
+		<label>depth engineer welding helmet</label>
+		<description>This protective gear is favored by technicians and workers at the lighthouse. For a reasonable price, it shields users from both scalding heat and dangerous situations, oil stains too. It also comes with lots of pockets for storage.\n\nThis product is an upgraded model that enhances design without compromising performance compared to its predecessor. It's designed for those who want to look stylish even amidst oil stains.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorIDR/EGhelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>3.5</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<wornGraphicPath>Apparel/ArmorIDR/EGhelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderNodeProperties>
+				<li Class="Moyo2.PawnRenderNodeProperties_DraftedVariant">
+					<workerClass>Moyo2.PawnRenderNodeWorker_HeadDraftedVariant</workerClass>
+					<undraftedTexPath>Apparel/ArmorIDR/EGvisor_up</undraftedTexPath>
+					<draftedTexPath>Apparel/ArmorIDR/EGvisor_down</draftedTexPath>
+					<visibleFacing>
+						<li>East</li>
+						<li>North</li>
+						<li>West</li>
+						<li>South</li>
+					</visibleFacing>
+					<baseLayer>73</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<bodyPartGroups>
+				<!-- <li>FullHead</li> -->
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_Engineer</li>
+				<li>Moyo2_HideAntenna</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>60</Steel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+		</costList>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 엔지니어 마스크-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
+		<defName>Moyo2_EGMask</defName>
+		<label>depth engineer rebreather</label>
+		<description>This breathing apparatus is favored by engineers and workers at the lighthouses. It offers protection against toxic gases from factories at a reasonable price and can be used as an underwater breathing device when connected to an oxygen tank. Made from high-strength materials, it also provides some degree of protection against physical hazards.\n\nThe lifespan of the respirator in industrial areas is 30 minutes. Users are strongly advised to familiarize themselves with the proper use of the respirator filter.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorIDR/EGmask1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Mass>0.4</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<Insulation_Cold>1.5</Insulation_Cold>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Mouth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorIDR/EGmask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_Engineer</li>
+				<li>Moyo2_HideFaceGlow</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>20</Steel>
+			<Moyo2_Cloth_Depthweave>10</Moyo2_Cloth_Depthweave>
+		</costList>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>1</weight>
+					<only>(41,43,67)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- 등대 -->
+	
+	<!-- 카르텔 -->
+	<!--방탄복-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouse">
+		<defName>Moyo2_CBsuit</defName>
+		<label>Flak bodyarmor(cartel)</label>
+		<description>The standard-issue ballistic armor used by Cartel operatives. When filled with ballistic gel, the armor provides a high level of protection, though it requires regular replenishment of the gel to maintain its effectiveness.\n\nAs the Cartel began planning to expand its operations onto the surface, a shortage of equipment for its operatives became an increasingly pressing issue. While the Cartel possessed considerable wealth, it could not afford to supply every member with advanced gear. As a result, the organization began searching for a more cost-effective alternative.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorIDR/CBSuit1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<useHitPoints>false</useHitPoints>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>2.5</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorIDR/CBSuit</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Moyo2_CartelArmor</li>
+			</tags>
+			<!-- <drawData> -->
+				<!-- <dataNorth> -->
+					<!-- <layer>21</layer> -->
+				<!-- </dataNorth> -->
+			<!-- </drawData> -->
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Moyo2_Abysstech_Pneumatic</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Moyo2_BGelPack>2</Moyo2_BGelPack>
+			<Plasteel>20</Plasteel>
+			<Moyo2_Cloth_Depthweave>60</Moyo2_Cloth_Depthweave>
+		</costList>
+		<comps Inherit="False">
+			<li Class="Moyo2.CompProperties_ReloadableArmor">
+				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
+				<armor>Moyo2_BGelPack</armor>
+				<valuePerArmor>40</valuePerArmor>
+				<armorOverrideSharp>1.4</armorOverrideSharp>
+				<armorOverrideBlunt>1.05</armorOverrideBlunt>
+				<maxDurability>80</maxDurability>
+				<initialDurabilityTargetValue>40</initialDurabilityTargetValue>
+				<gizmoLabel>Ballistic gel(Armor)</gizmoLabel>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>			
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable" />			
+		</comps>
+	</ThingDef>
+	<!--방탄헬멧-->
+	<ThingDef ParentName="Moyo2_ApparelCategory_LightHouseHead">
+		<defName>Moyo2_CBhelmet</defName>
+		<label>Flak helmet(cartel)</label>
+		<description>The standard-issue ballistic helmet used by Cartel operatives. When filled with ballistic gel, the helmet provides a high level of protection, though it requires regular replenishment of the gel to maintain its effectiveness.\n\nThis armor is a prototype that combines GelTech, a new technology developed within the Lighthouse, with a design inspired by ballistic equipment observed on the surface. Developed with substantial financial backing in exchange for field performance data, the armor underwent extensive testing by Cartel personnel. Satisfied with its performance, the Cartel officially adopted the series as standard-issue equipment.</description>
+		<graphicData>
+			<texPath>Apparel/ArmorIDR/CBHelmet1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<useHitPoints>false</useHitPoints>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>0.7</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>			
+			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.16</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<!-- - -->
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/ArmorIDR/CBHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Moyo2_CartelArmor</li>
+			</tags>
+		</apparel>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Moyo2_Abysstech_Pneumatic</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Moyo2_BGelPack>1</Moyo2_BGelPack>
+			<Plasteel>10</Plasteel>
+			<Moyo2_Cloth_Depthweave>30</Moyo2_Cloth_Depthweave>
+		</costList>
+		<comps Inherit="False">
+			<li Class="Moyo2.CompProperties_ReloadableArmor">
+				<!-- Translation key for the button is Moyo2_ReloadableArmor_GizmoLabel -->
+				<armor>Moyo2_BGelPack</armor>
+				<!-- <armor>Moyo2_TunaMeat</armor> -->
+				<valuePerArmor>40</valuePerArmor>
+				<armorOverrideSharp>1.2</armorOverrideSharp>
+				<armorOverrideBlunt>0.85</armorOverrideBlunt>
+				<maxDurability>40</maxDurability>
+				<initialDurabilityTargetValue>20</initialDurabilityTargetValue>
+				<gizmoLabel>Ballistic gel(Helmet)</gizmoLabel>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>			
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable" />					
+		</comps>		
+	</ThingDef>
+	<!-- - -->
+	<!-- 카르텔 -->
+</Defs>

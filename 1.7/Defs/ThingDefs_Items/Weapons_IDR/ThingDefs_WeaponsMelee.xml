@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 근접 -->
+	<!-- 모요 렌치 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_Wrench</defName>
+		<label>depthtool heavy wrench</label>
+		<description>It's a heavy wrench designed to be wielded with both hands. While its primary purpose is tightening bolts, its weight allows it to double as a hammer. It would inflict significant pain if thrown.\n\nIt significantly boosts construction efficiency. Despite being almost a staple among workers, it continues to be a steady seller, leaving many to wonder what it's being used for.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Wrench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.2</ConstructionSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>19.2</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<comps Inherit="False">	
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>Moyo2_WrenchThrow</abilityDef>
+				<maxCharges>1</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>wrench</chargeNoun>
+				<ammoDef>Steel</ammoDef>
+				<ammoCountPerCharge>5</ammoCountPerCharge>
+				<baseReloadTicks>200</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>	
+			<li Class="CompProperties_Styleable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>		
+		</comps>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_WrenchIDR</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+	</ThingDef>
+	<AbilityDef>
+		<defName>Moyo2_WrenchThrow</defName>
+		<label>wrench throw</label>
+		<description>Throw a wrench at your target. That should hurt.</description>
+		<iconPath>Weapon/IDR_Wrench</iconPath>
+		<displayOrder>201</displayOrder>
+		<aiCanUse>false</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>5.5</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>ThrowGrenade</soundCast>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Moyo2_Bullet_WrenchThrow</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_WrenchThrow</defName>
+		<label>thrown wrench</label>
+		<graphicData>
+			<texPath>Weapon/WrenchThrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Moyo2_Damage_WrenchThrow</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>30</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>5</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	<!-- 모요 나이프 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_Knife</defName>
+		<label>depthtool diving knife</label>
+		<description>This knife features a blade made of plasteel. It is an excellent product that resists corrosion and maintains its edge well. It is an essential tool for divers and is also favored by chefs. Beware of imitations.\n\nIt boosts cooking and butchering efficiency. With various designs and limited editions, it has become a valuable collectible in the Lighthouse. Rumor has it that top customers of these knives will have the opportunity to buy a prototype of the Laminar hyper-oscillating knife.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.1</CookSpeed>
+			<ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>20</Steel>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_KnifeIDR</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+	</ThingDef>
+	<!-- 모요 톱 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_Saw</defName>
+		<label>depthtool sawjack</label>
+		<description>A rotary saw with incredible cutting power. Its blade, made from ultra-hard materials, can cut and grind through various substances.\n\nIt significantly boosts production efficiency. It was featured as a sponsored tool in the Lighthouse's famous horror media, "Rotary Saw Killer." Please use the tool for its intended purposes.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Saw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+		</equippedStatOffsets>
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>		 -->
+		<tools>
+			<li>
+				<label>sawblade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>0.3</cooldownTime>
+				<armorPenetration>0.01</armorPenetration>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>40</Steel>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_SawIDR</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+	</ThingDef>
+	<!-- 카르텔 컴뱃 나이프 -->
+	<ThingDef ParentName="MoyoBaseMeleeIDR">
+		<defName>Moyo2_CKnife</defName>
+		<label>Cartel combat knife</label>
+		<description>A large combat knife forged with a cold, sharp edge. A handy tool and an effective weapon in one.\n\nDesigned with the intention to be used on the surface, this knife was made bigger and heavier than regular diving knife. It came with a bonus of menacing shape.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_CKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeIDR</li>
+			<li>Moyo2_MeleeCartel</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+	</ThingDef>
+	<!-- 라미너 글레이브 -->
+	<ThingDef ParentName="MoyoBaseMeleeLMR">
+		<defName>Moyo2_LMRGlaive</defName>
+		<label>laminar glaive</label>
+		<description>A large spear made with abyssteel. It is large and heavy, but easy to handle thanks to a powerful laminar force field generator. Additionally, using the force field, you can fix the angle of the strike for a much stronger blow, capable of even splitting diving suit helmets. With a brief charge, you can unleash a devastating cleaving attack. or so they says in RnD.\n\nDue to its intimidating appearance, this weapon is issued to the guards of the council.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Glaive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<!-- - -->
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>6</Mass>
+		</statBases>
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			 -->
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>34</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeLMR</li>
+			<li>Moyo2_GlaiveLMR</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+	</ThingDef>
+	<!-- 모요 파워건틀릿 -->
+	<ThingDef ParentName="MoyoBaseMeleeLMR">
+		<defName>Moyo2_LMRFist</defName>
+		<label>depthtool power gauntlet</label>
+		<description>A large gauntlet made with abyssteel. It can crumple steel plates like paper using hydraulic systems and a laminar force field generator. It is ideal for clearing obstacles such as walls and people in front of you. Just charge it briefly and strike.\n\nThis equipment is compatible with diving suits, and bare-handed use is not recommended. But of course, not many people adhere to this guideline.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_Gauntlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>6</Mass>
+		</statBases>
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound> -->
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+			<CarryingCapacity>45</CarryingCapacity>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>Fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo2_Abyssteel>70</Moyo2_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeLMR</li>
+			<li>Moyo2_GaunteltLMR</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+	</ThingDef>
+	<!-- 카르텔 라미너 엣지 -->
+	<ThingDef ParentName="MoyoBaseMeleeLMR">
+		<defName>Moyo2_CLMREdge</defName>
+		<label>laminar edge</label>
+		<description>A thin blade inspired by a particular surface weapon equipped with a vibroblade. As a masterwork of the Cartel, it even cuts through thick armored plates with ease. Rumors say Cartel's mysterious elite operatives are armed with it.\n\n...Others say that there is a red vibroblade that was forged by a legendary smith of the lighthouse.</description>
+		<graphicData>
+			<texPath>Weapon/LMR_CBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<!-- <equippedAngleOffset>0</equippedAngleOffset> -->
+		<!-- - -->
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<!-- <soundInteract>Interact_MonoSword</soundInteract> -->
+		<!-- <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>			 -->
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.2</cooldownTime>
+				<!-- <armorPenetration>0.5</armorPenetration> -->
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>2.2</cooldownTime>
+				<!-- <armorPenetration>0.5</armorPenetration> -->
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_LaminarManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<Moyo2_Abyssteel>25</Moyo2_Abyssteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<!-- - -->
+		<weaponTags>
+			<li>Moyo2_MeleeCLMR</li>
+			<li>Moyo2_CLMREdge</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+	</ThingDef>
+</Defs>

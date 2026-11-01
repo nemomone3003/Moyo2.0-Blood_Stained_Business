@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 원거리 -->
+	<!-- 모요 네일건 -->
+	<ThingDef ParentName="MoyoBaseGunIDR">
+		<defName>Moyo2_NailGun</defName>
+		<label>depthtool nailgun</label>
+		<description>It's a common lighthouse nail gun. It shoots nails with powerful hydraulics. It's best to spray and pray due to its poor damage and accuracy.\n\nIt boosts construction and production efficiency. Each seemingly trivial tool like this has contributed to the shining lighthouses we see today. Get one for your settlement too!</description>
+		<graphicData>
+			<texPath>Weapon/IDR_NailGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- <soundInteract>moyo_smallWeaponInteract</soundInteract> -->
+		<!-- - -->
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.25</AccuracyShort>
+			<AccuracyMedium>0.05</AccuracyMedium>
+			<AccuracyLong>0.01</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		</equippedStatOffsets>		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_NailGun</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<range>11.9</range>
+				<soundCast>Moyo2_Industrial_Nailgun</soundCast>
+				<!-- <soundCastTail>GunTail_Light</soundCastTail> -->
+				<!-- <muzzleFlashScale>1</muzzleFlashScale> -->
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags Inherit="False">
+			<li>MoyoBasicGun</li>
+		</weaponTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_NailGun</defName>
+		<label>nailgun rivet</label>
+		<graphicData>
+			<texPath>Weapon/MoyoNail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>3</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Moyo2_Effecter_IDRFireC</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 모요 스피어잭 -->
+	<ThingDef ParentName="MoyoBaseGunIDR">
+		<defName>Moyo2_SpearGun</defName>
+		<label>depthtool spearjack</label>
+		<description>It's a tool that shoots metal piles with powerful hydraulics to pierce through metal plates. Charging and firing are slow, but the destructive power is considerable. While it's a niche application, it can also double as a melee weapon when fired at point-blank range.\n\nIt increases efficiency in construction and mining. However, the use of projectiles modified with explosives or similar alterations is unauthorized and poses serious risks to both personal safety and the company's interests.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Spearjack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<!-- <soundInteract>moyo_smallWeaponInteract</soundInteract> -->
+		<!-- - -->
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<MiningSpeed>0.1</MiningSpeed>
+		</equippedStatOffsets>		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_SpearGun</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>24.9</range>
+				<soundCast>Moyo2_Industrial_SpearGun</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<!-- <muzzleFlashScale>1</muzzleFlashScale> -->
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>pile</label>
+				<capacities>
+				<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags Inherit="False">
+			<li>MoyoBasicGun</li>
+		</weaponTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_SpearGun</defName>
+		<label>spearjack spear</label>
+		<graphicData>
+			<texPath>Weapon/MoyoSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Moyo2_Effecter_IDRFireA</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 모요 쉽잭 -->
+	<ThingDef ParentName="MoyoBaseGunIDR">
+		<defName>Moyo2_HarpoonGun</defName>
+		<label>depthtool ship-jack</label>
+		<description>It's an upscaled Spearjack, horrendously heavy and cumbersome to use, yet it fires piles that can pierce through even a submarine's hull. It's the perfect tool for demolishing something. While it's a niche application that can't be recommended, it can also double as a melee weapon when fired at point-blank range.\n\nIt significantly boosts mining efficiency. The tool's name originates from its primary use in ship dismantling.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Harpoonjack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<!-- <soundInteract>moyo_smallWeaponInteract</soundInteract> -->
+		<!-- - -->
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.2</MiningSpeed>
+			<DeepDrillingSpeed>0.2</DeepDrillingSpeed>
+		</equippedStatOffsets>			
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_HarpoonGun</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>37.9</range>
+				<soundCast>Moyo2_Industrial_HarpoonGun</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<!-- <muzzleFlashScale>1</muzzleFlashScale> -->
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>pile</label>
+				<capacities>
+				<li>Stab</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>7</cooldownTime>
+			</li>
+		</tools>
+		<!-- - -->
+		<recipeMaker>
+			<researchPrerequisite>Moyo2_Abysstech_Pneumatic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<!-- - -->
+		<weaponTags Inherit="False">
+			<li>MoyoBasicGun</li>
+		</weaponTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_HarpoonGun</defName>
+		<label>spear-jack harpoon</label>
+		<graphicData>
+			<texPath>Weapon/MoyoHarpoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Moyo2_Damage_MoyoHarpoon</damageDef>
+			<damageAmountBase>36</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Moyo2_Effecter_IDRFireB</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- 어비스테크 라이플 -->
+	<ThingDef ParentName="MoyoBaseGunIDR">
+		<defName>Moyo2_Gun_AbysstechRifle</defName>
+		<label>Abysstech rifle</label>
+		<description>A general-purpose assault rifle of cartel design. Limited use of abysstech improves performance while keeping costs reasonable.</description>
+		<graphicData>
+			<texPath>Weapon/IDR_Rifle2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Moyo2_Laminar_Activate2</soundInteract>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisites>
+			<li>Moyo2_Abysstech_Pneumatic</li>
+			<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Moyo2_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Moyo2_Bullet_AbysstechRifle</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Moyo2_Laminar_CRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<relicChance>0</relicChance>
+		<weaponTags Inherit="False">
+			<li>NoRelic</li>
+			<li>Moyo2_GunIDR</li>
+		</weaponTags>		
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Moyo2_Bullet_AbysstechRifle</defName>
+		<label>abysstech rifle bullet</label>
+		<graphicData>
+			<texPath>Weapon/MoyoCBullet2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Moyo2_Effecter_CLMRFireA</effecterDef>
+			</li>
+		</comps>		
+	</ThingDef>	
+</Defs>

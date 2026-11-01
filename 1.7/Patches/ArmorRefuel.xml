@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- Adding the reload job to the pawn's thinktree -->
+    <Operation Class="PatchOperationInsert">
+        <xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_Reload"]</xpath>
+        <order>Append</order>
+        <value>
+            <li Class="Moyo2.JobGiver_ReloadArmor" />
+        </value>
+    </Operation>
+
+    <!-- Adding the statparts to the armor's stats for the override when they're full of gel -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="ArmorRating_Sharp"]/parts</xpath>
+        <value>
+            <li Class="Moyo2.StatPart_ReloadableArmor_Sharp" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="ArmorRating_Blunt"]/parts</xpath>
+        <value>
+            <li Class="Moyo2.StatPart_ReloadableArmor_Blunt" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="ArmorRating_Heat"]/parts</xpath>
+        <value>
+            <li Class="Moyo2.StatPart_ReloadableArmor_Heat" />
+        </value>
+    </Operation>
+
+</Patch>

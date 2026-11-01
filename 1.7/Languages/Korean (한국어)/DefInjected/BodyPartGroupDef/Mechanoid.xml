@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!--English=right club-->
+    <Moyo2_RightClub.label>오른쪽 곤봉</Moyo2_RightClub.label>
+    <!--English=club-->
+    <Moyo2_RightClub.labelShort>곤봉</Moyo2_RightClub.labelShort>
+    <!--English=left club-->
+    <Moyo2_LeftClub.label>왼쪽 곤봉</Moyo2_LeftClub.label>
+    <!--English=club-->
+    <Moyo2_LeftClub.labelShort>곤봉</Moyo2_LeftClub.labelShort>
+
+</LanguageData>

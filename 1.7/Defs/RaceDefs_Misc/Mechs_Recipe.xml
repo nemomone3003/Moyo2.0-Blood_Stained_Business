@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef Name="HexapodMechanoidRecipe" ParentName="HeavyMechanoidRecipe" Abstract="True">
+    <gestationCycles>6</gestationCycles>
+    <researchPrerequisites>
+		<li>HighMechtech</li>
+		<li>Moyo2_Abysstech_Foundry</li>
+	</researchPrerequisites>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>255</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Moyo2_Abyssteel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="HexapodMechanoidRecipe">
+    <defName>Moyo2_HexapodRecipe</defName>
+    <label>gestate hexapod</label>
+    <description>Gestate a hexapod.</description>
+    <products>
+      <Moyo2_Hexapod_Default>1</Moyo2_Hexapod_Default>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Moyo2_Hexapod_Default</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  
+  <RecipeDef Name="SpheripodMechanoidRecipe" ParentName="HeavyMechanoidRecipe" Abstract="True">
+    <gestationCycles>6</gestationCycles>
+    <researchPrerequisites>
+		<li>HighMechtech</li>
+		<li>Moyo2_Abysstech_Foundry</li>
+	</researchPrerequisites>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Moyo2_Abyssteel</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="HexapodMechanoidRecipe">
+    <defName>Moyo2_SpheripodRecipe</defName>
+    <label>gestate spheripod</label>
+    <description>Gestate a spheripod.</description>
+    <products>
+      <Moyo2_Spheripod_Default>1</Moyo2_Spheripod_Default>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Moyo2_Spheripod_Default</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>  
+
+
+</Defs>

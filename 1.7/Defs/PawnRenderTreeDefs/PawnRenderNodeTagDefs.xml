@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnRenderNodeTagDef>
+		<defName>Moyo2_ApparelHead</defName>
+	</PawnRenderNodeTagDef>
+	<PawnRenderNodeTagDef>
+		<defName>Moyo2_ApparelBody</defName>
+	</PawnRenderNodeTagDef>
+	<RenderSkipFlagDef>
+		<defName>Moyo2_ApparelHead</defName>
+	</RenderSkipFlagDef>
+	<RenderSkipFlagDef>
+		<defName>Moyo2_ApparelBody</defName>
+	</RenderSkipFlagDef>
+</Defs>
