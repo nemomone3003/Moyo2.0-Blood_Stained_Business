@@ -21,10 +21,7 @@ namespace Moyo2
 					ThingRequest.ForGroup(ThingRequestGroup.Pawn),
 					PathEndMode.OnCell,
 					TraverseParms.For(pawn),
-					validator: (thing) =>
-					{
-						return thing is Pawn p && p.RaceProps.Humanlike && p.Downed && !p.Dead && p.Spawned;
-					});
+					validator: (thing) => thing is Pawn p && p.RaceProps.Humanlike && p.Downed && !p.Dead && p.Spawned);
 
 				if (found is not null)
 				{
