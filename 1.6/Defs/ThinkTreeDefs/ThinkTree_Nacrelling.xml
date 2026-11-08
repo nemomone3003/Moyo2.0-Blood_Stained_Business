@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Custom ThinkTreeDef for Nacrellings. -->
+    <!-- Changes:
+        the Animal ThinkTreeDef MentalStateNonCritical tree for a custom one, priorizes swallowing downed humanlikes first before attacking others
+        the SatisfyBasicNeeds tree for a custom one, to swallow pawns animals until they die -->
+    <!-- . -->
+    <ThinkTreeDef>
+        <defName>Moyo2_NacrellingMain</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <!-- Keep lying down if we have to -->
+                <li Class="ThinkNode_ConditionalMustKeepLyingDown">
+                    <subNodes>
+                        <!-- Do a queued job if possible -->
+                        <li Class="ThinkNode_QueuedJob">
+                            <inBedOnly>true</inBedOnly>
+                        </li>
+
+                        <!-- Keep lying down -->
+                        <li Class="JobGiver_KeepLyingDown" />
+                    </subNodes>
+                </li>
+
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Downed</treeDef>
+                </li>
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>BurningResponse</treeDef>
+                </li>
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>MentalStateCritical</treeDef>
+                </li>
+
+                <!-- React to close melee threat -->
+                <li Class="JobGiver_ReactToCloseMeleeThreat" />
+
+                <!-- Do a queued job -->
+                <li Class="ThinkNode_QueuedJob" />
+
+                <!-- Wild animals dig out if no path to map edge and starving -->
+                <li Class="ThinkNode_ConditionalHasFaction">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalStarving">
+                            <subNodes>
+                                <li Class="ThinkNode_ConditionalBodySize">
+                                    <min>0.7</min>
+                                    <subNodes>
+                                        <li Class="ThinkNode_Subtree">
+                                            <treeDef>DigOutIfCannotReachMapEdge</treeDef>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Leave if timed out -->
+                <li Class="ThinkNode_ConditionalExitTimedOut">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ExitMapRandom">
+                                    <defaultLocomotion>Walk</defaultLocomotion>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Mental state non critical -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Moyo2_NacrellingMentalStateNonCritical</treeDef>
+                </li>
+
+                <!-- Forced goto -->
+                <li Class="ThinkNode_ConditionalForcedGoto">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ForcedGoto" />
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Behavior when roped -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>RopedPawn</treeDef>
+                </li>
+
+                <!-- Lord directives -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>LordDuty</treeDef>
+                </li>
+
+                <!-- Insertion hook for modders -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Animal_PreMain</insertTag>
+                </li>
+
+                <!-- Wild animals leave map in some conditions -->
+                <li Class="ThinkNode_ConditionalHasFaction">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LeaveIfWrongSeason</treeDef>
+                        </li>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LeaveIfStarving</treeDef>
+                        </li>
+
+                        <!-- Wild animals randomly leave map -->
+                        <li Class="ThinkNode_ChancePerHour_Constant">
+                            <mtbDays>60</mtbDays>
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_ExitMapRandom">
+                                            <defaultLocomotion>Walk</defaultLocomotion>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Animals of a faction that's not the players without a lord leave randomly -->
+                <li Class="ThinkNode_ConditionalOfPlayerFaction">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalHasFaction">
+                            <subNodes>
+                                <li Class="ThinkNode_ConditionalNoLord">
+                                    <subNodes>
+                                        <li Class="ThinkNode_ChancePerHour_Constant">
+                                            <mtbDays>60</mtbDays>
+                                            <subNodes>
+                                                <li Class="ThinkNode_Tagger">
+                                                    <tagToGive>Misc</tagToGive>
+                                                    <subNodes>
+                                                        <li Class="JobGiver_ExitMapRandom">
+                                                            <defaultLocomotion>Walk</defaultLocomotion>
+                                                        </li>
+                                                    </subNodes>
+                                                </li>
+                                            </subNodes>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Lay eggs you need to -->
+                <li Class="JobGiver_LayEgg" />
+
+                <!-- Tame animal -->
+                <li Class="ThinkNode_ConditionalOfPlayerFaction">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>TrainedAnimalBehavior</tagToGive>
+                            <subNodes>
+                                <!-- Trained behavior: obedience: Follow and defend master -->
+                                <li Class="ThinkNode_ConditionalTrainableCompleted">
+                                    <trainable>Obedience</trainable>
+                                    <subNodes>
+                                        <li Class="ThinkNode_ConditionalShouldFollowMaster">
+                                            <subNodes>
+                                                <li Class="JobGiver_AIDefendMaster">
+                                                    <attackMeleeThreatEvenIfNotHostile>true</attackMeleeThreatEvenIfNotHostile>
+                                                </li>
+                                                <li Class="JobGiver_AIFollowMaster" />
+                                                <li Class="JobGiver_WanderNearMaster" />
+                                            </subNodes>
+                                        </li>
+                                    </subNodes>
+                                </li>
+
+                                <!-- Trained behavior: Rescue-->
+                                <li Class="ThinkNode_ConditionalTrainableCompleted">
+                                    <trainable>Rescue</trainable>
+                                    <subNodes>
+                                        <li Class="JobGiver_RescueNearby">
+                                            <radius>75</radius>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- Take care of critical needs (below rescue - so heroic!)-->
+
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>RestingForMedicalReasons</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_PatientGoToBed" />
+                            </subNodes>
+                        </li>
+
+                        <li Class="JobGiver_SeekAllowedArea" />
+                        <li Class="JobGiver_SeekSafeTemperature" />
+
+                    </subNodes>
+                </li>
+
+                <!-- Eat random things out of curiosity -->
+                <li Class="ThinkNode_ChancePerHour_Constant">
+                    <mtbDays>60</mtbDays>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>SatisfyingNeeds</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_EatRandom" />
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Satisfy basic needs -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Moyo2_NacrellingSatisfyBasicNeeds</treeDef>
+                </li>
+
+                <!-- Tame animal: do useful things for the colony-->
+                <li Class="ThinkNode_ConditionalHasFaction">
+                    <subNodes>
+
+                        <!-- Try to mate -->
+                        <li Class="ThinkNode_ChancePerHour_Mate">
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>SatisfyingNeeds</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_Mate" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- Nuzzle randoms -->
+                        <li Class="ThinkNode_ChancePerHour_Nuzzle">
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_Nuzzle" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- Roamers gonna roam -->
+                        <li Class="ThinkNode_ChancePerDay_Roam">
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_StartRoaming" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- Trained behavior: Haul-->
+                        <li Class="ThinkNode_ChancePerHour_Constant">
+                            <mtbHours>1.5</mtbHours>
+                            <subNodes>
+                                <li Class="ThinkNode_ConditionalRequireCapacities">
+                                    <requiredCapacities>
+                                        <li>Manipulation</li>
+                                    </requiredCapacities>
+                                    <subNodes>
+                                        <li Class="ThinkNode_ConditionalTrainableCompleted">
+                                            <trainable>Haul</trainable>
+                                            <subNodes>
+                                                <li Class="ThinkNode_Tagger">
+                                                    <tagToGive>TrainedAnimalBehavior</tagToGive>
+                                                    <subNodes>
+                                                        <li Class="JobGiver_Haul" />
+                                                    </subNodes>
+                                                </li>
+                                            </subNodes>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- Trained behavior: Forage -->
+                        <li Class="ThinkNode_ConditionalTrainableCompleted" MayRequire="Ludeon.RimWorld.Odyssey">
+                            <trainable>Forage</trainable>
+                            <subNodes>
+                                <li Class="ThinkNode_ChancePerHour_Forage">
+                                    <subNodes>
+                                        <li Class="ThinkNode_ConditionalAnimalShouldForage">
+                                            <subNodes>
+                                                <li Class="JobGiver_Forage" />
+                                            </subNodes>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- Trained behavior: Mine -->
+                        <li Class="ThinkNode_ConditionalTrainableCompleted" MayRequire="Ludeon.RimWorld.Odyssey">
+                            <trainable>Dig</trainable>
+                            <subNodes>
+                                <li Class="ThinkNode_ConditionalAnimalShouldDig">
+                                    <subNodes>
+                                        <li Class="JobGiver_Mine" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                    </subNodes>
+                </li>
+
+                <!-- Insertion hook for modders -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Animal_PreWander</insertTag>
+                </li>
+
+                <!-- Tame animal: wander near colony if possible -->
+                <li Class="ThinkNode_ConditionalOfPlayerFaction">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <!-- Wander near your current position if in hostile map -->
+                                <li Class="ThinkNode_ConditionalAnyEnemyInHostileMap">
+                                    <subNodes>
+                                        <li Class="JobGiver_WanderAnywhere">
+                                            <maxDanger>None</maxDanger>
+                                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                        </li>
+                                    </subNodes>
+                                </li>
+
+                                <li Class="ThinkNode_ConditionalRoamer">
+                                    <subNodes>
+                                        <li Class="JobGiver_WanderInRoofedCellsInPen">
+                                            <maxDanger>None</maxDanger>
+                                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                            <expiryInterval>500</expiryInterval>
+                                        </li>
+
+                                        <!-- tame roamers should not wander too far, and if unenclosed wander near a suitable pen marker 10% of the time -->
+                                        <li Class="ThinkNode_ConditionalRandom">
+                                            <chance>0.1</chance>
+                                            <subNodes>
+                                                <li Class="JobGiver_WanderInPen">
+                                                    <maxDanger>None</maxDanger>
+                                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                                    <expiryInterval>500</expiryInterval>
+                                                </li>
+                                            </subNodes>
+                                        </li>
+
+                                        <li Class="JobGiver_WanderAnywhere">
+                                            <maxDanger>None</maxDanger>
+                                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                        </li>
+                                    </subNodes>
+                                </li>
+
+                                <!-- Wander near colony -->
+                                <li Class="JobGiver_WanderColony">
+                                    <maxDanger>None</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Of neutral faction: rest and then exit the map -->
+                <li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>RestingForMedicalReasons</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_PatientGoToBed" />
+                            </subNodes>
+                        </li>
+
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ExitMapBest">
+                                    <defaultLocomotion>Walk</defaultLocomotion>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Wander -->
+                <li Class="ThinkNode_Tagger">
+                    <tagToGive>Idle</tagToGive>
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalHerdAnimal">
+                            <subNodes>
+                                <li Class="JobGiver_WanderHerd">
+                                    <maxDanger>Deadly</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Deadly</maxDanger>
+                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <li Class="JobGiver_IdleError" />
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+
+    <ThinkTreeDef>
+        <defName>Moyo2_NacrellingMentalStateNonCritical</defName>
+        <thinkRoot Class="ThinkNode_Tagger">
+            <tagToGive>InMentalState</tagToGive>
+            <subNodes>
+                <!-- Play with cube (results in potential coma if not priortized)  -->
+                <li Class="JobGiver_PlayWithGoldenCube" MayRequire="Ludeon.RimWorld.Anomaly" />
+
+                <!-- Various wanders  -->
+                <li Class="ThinkNode_ConditionalMentalStates">
+                    <states>
+                        <li>Wander_Psychotic</li>
+                        <li>Wander_Sad</li>
+                        <li>WanderConfused</li>
+                        <li MayRequire="Ludeon.RimWorld.Anomaly">DarkVisions</li>
+                        <li MayRequire="Ludeon.RimWorld.Anomaly">InsaneRamblings</li>
+                    </states>
+                    <subNodes>
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Deadly</maxDanger>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Hide in room -->
+                <li Class="ThinkNode_ConditionalMentalStates">
+                    <states>
+                        <li>Wander_OwnRoom</li>
+                        <li MayRequire="Ludeon.RimWorld.Anomaly">HumanityBreak</li>
+                    </states>
+                    <subNodes>
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderOwnRoom">
+                            <maxDanger>Deadly</maxDanger>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Binging on drug -->
+                <li Class="ThinkNode_ConditionalMentalStates">
+                    <states>
+                        <li>Binging_DrugMajor</li>
+                        <li>Binging_DrugExtreme</li>
+                    </states>
+                    <subNodes>
+                        <!-- We can't put GetRest in the priority sorter because then the player can just assign the pawn to sleep,
+                and they'll go to sleep immediately and end the binging state. So, instead, we have the pawn sleep if and only if
+                exhausted-->
+                        <li Class="ThinkNode_ConditionalExhausted">
+                            <subNodes>
+                                <li Class="JobGiver_GetRest" />
+                            </subNodes>
+                        </li>
+                        <li Class="ThinkNode_PrioritySorter">
+                            <minPriority>0.5</minPriority>
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget"/>
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_SatisfyChemicalNeed" />
+                                <li Class="JobGiver_SatifyChemicalDependency" MayRequire="Ludeon.RimWorld.Biotech" />
+                                <li Class="ThinkNode_Priority_GetJoy">
+                                    <subNodes>
+                                        <li Class="JobGiver_GetJoy" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_BingeDrug" />
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Binging on food -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>Binging_Food</state>
+                    <subNodes>
+                        <li Class="ThinkNode_PrioritySorter">
+                            <minPriority>0.5</minPriority>
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_SatisfyChemicalNeed" />
+                                <li Class="JobGiver_SatifyChemicalDependency" MayRequire="Ludeon.RimWorld.Biotech" />
+                                <li Class="ThinkNode_Priority_GetJoy">
+                                    <subNodes>
+                                        <li Class="JobGiver_GetJoy" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_BingeFood" />
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Manhunter -->
+                <li Class="ThinkNode_ConditionalMentalStateClass">
+                    <stateClass>MentalState_Manhunter</stateClass>
+                    <subNodes>
+                        <li Class="ThinkNode_Priority">
+                            <subNodes>
+                                <li Class="ThinkNode_PrioritySorter">
+                                    <subNodes>
+                                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" /> <!-- Only activates if the pawn is hungry -->
+                                        <li Class="Moyo2.JobGiver_NacrellingDigest" /> <!-- Has a special case where it'll priorize swallowing over manhunting-->
+                                    </subNodes>
+                                </li>
+                                <li Class="JobGiver_Manhunter" />
+                                <li Class="JobGiver_WanderAnywhere">
+                                    <maxDanger>Deadly</maxDanger>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Panic flee -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>PanicFlee</state>
+                    <subNodes>
+                        <li Class="JobGiver_ExitMapPanic" />
+                        <li Class="JobGiver_WanderAnywhere">
+                            <!-- Can happen if there is no way to exit the map -->
+                            <maxDanger>Some</maxDanger>
+                            <locomotionUrgency>Jog</locomotionUrgency>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Flee fire -->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Biotech">
+                    <state>PanicFleeFire</state>
+                    <subNodes>
+                        <li Class="JobGiver_FleeFire" />
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Some</maxDanger>
+                            <locomotionUrgency>Jog</locomotionUrgency>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Flee in terror -->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Odyssey">
+                    <state>Terror</state>
+                    <subNodes>
+                        <li Class="JobGiver_FleeTerror" />
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Some</maxDanger>
+                            <locomotionUrgency>Jog</locomotionUrgency>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Terrifying hallucinations -->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Anomaly">
+                    <state>TerrifyingHallucinations</state>
+                    <subNodes>
+                        <li Class="ThinkNode_Priority">
+                            <subNodes>
+                                <li Class="JobGiver_FleeAllPawns" />
+                                <li Class="ThinkNode_PrioritySorter">
+                                    <subNodes>
+                                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                        <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                        <li Class="JobGiver_GetRest">
+                                            <maxLevelPercentage>0.15</maxLevelPercentage>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                                <li Class="JobGiver_WanderAnywhere">
+                                    <maxDanger>Some</maxDanger>
+                                    <locomotionUrgency>Jog</locomotionUrgency>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Give up and leave -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>GiveUpExit</state>
+                    <subNodes>
+                        <li Class="JobGiver_ExitMapRandom">
+                            <defaultLocomotion>Walk</defaultLocomotion>
+                        </li>
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Deadly</maxDanger>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Roaming: slowly wander to edge then exit -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>Roaming</state>
+                    <subNodes>
+                        <li Class="ThinkNode_Priority">
+                            <subNodes>
+                                <!--
+                 Roaming animals should willingly follow their roper, if any, rather than wandering off.
+                 Roamers will exit the roaming mental state when they enter an enclosed area.
+                 -->
+                                <li Class="ThinkNode_ConditionalRoped">
+                                    <subNodes>
+                                        <li Class="JobGiver_FollowRoper" />
+                                        <li Class="ThinkNode_ForbidOutsideFlagRadius">
+                                            <maxDistToSquadFlag>8</maxDistToSquadFlag><!-- to be kept in sync with Pawn_RopeTracker.RopeLength -->
+                                            <subNodes>
+                                                <li Class="ThinkNode_PrioritySorter">
+                                                    <subNodes>
+                                                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                                        <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                                        <li Class="JobGiver_GetRest">
+                                                            <minCategory>Tired</minCategory>
+                                                        </li>
+                                                    </subNodes>
+                                                </li>
+                                            </subNodes>
+                                        </li>
+                                        <li Class="JobGiver_WanderRoped" />
+                                    </subNodes>
+                                </li>
+                                <li Class="ThinkNode_PrioritySorter">
+                                    <subNodes>
+                                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                        <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                        <li Class="JobGiver_GetRest">
+                                            <minCategory>VeryTired</minCategory>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                                <li Class="ThinkNode_ConditionalRandom">
+                                    <chance>0.5</chance>
+                                    <subNodes>
+                                        <li Class="JobGiver_WanderAnywhere">
+                                            <locomotionUrgency>Amble</locomotionUrgency>
+                                            <expiryInterval>560</expiryInterval>
+                                            <ticksBetweenWandersRange>125~200</ticksBetweenWandersRange>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                                <li Class="JobGiver_WanderNearRoamingExit">
+                                    <locomotionUrgency>Amble</locomotionUrgency>
+                                    <ticksBetweenWandersRange>125~200</ticksBetweenWandersRange>
+                                    <expiryInterval>560</expiryInterval>
+                                </li>
+                                <li Class="JobGiver_ExitMapBest">
+                                    <defaultLocomotion>Amble</defaultLocomotion>
+                                    <jobMaxDuration>1200</jobMaxDuration>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- Fire starting spree -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>FireStartingSpree</state>
+                    <subNodes>
+                        <li Class="JobGiver_FireStartingSpree" />
+                    </subNodes>
+                </li>
+
+                <!-- Insulting spree -->
+                <li Class="ThinkNode_ConditionalMentalStateClass">
+                    <stateClass>MentalState_InsultingSpree</stateClass>
+                    <subNodes>
+                        <li Class="JobGiver_InsultingSpree" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Tantrum -->
+                <li Class="ThinkNode_ConditionalMentalStateClass">
+                    <stateClass>MentalState_Tantrum</stateClass>
+                    <subNodes>
+                        <li Class="JobGiver_Tantrum" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Corpse obsession -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>CorpseObsession</state>
+                    <subNodes>
+                        <li Class="JobGiver_HaulCorpseToPublicPlace" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Jailbreaker -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>Jailbreaker</state>
+                    <subNodes>
+                        <li Class="JobGiver_InducePrisonerToEscape" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Slaughterer -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>Slaughterer</state>
+                    <subNodes>
+                        <li Class="JobGiver_SlaughterRandomAnimal" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Slaughterer -->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Anomaly">
+                    <state>EntityKiller</state>
+                    <subNodes>
+                        <li Class="JobGiver_SlaughterEntity" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Release entity -->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Anomaly">
+                    <state>EntityLiberator</state>
+                    <subNodes>
+                        <li Class="JobGiver_ReleaseEntity" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Murderous rage -->
+                <li Class="ThinkNode_ConditionalMentalState">
+                    <state>MurderousRage</state>
+                    <subNodes>
+                        <li Class="JobGiver_MurderousRage" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Slave rebel -->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Ideology">
+                    <state>Rebellion</state>
+                    <subNodes>
+                        <li Class="JobGiver_InduceSlaveToRebel" />
+                        <li Class="ThinkNode_PrioritySorter">
+                            <subNodes>
+                                <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                                <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                <li Class="JobGiver_GetRest">
+                                    <maxLevelPercentage>0.15</maxLevelPercentage>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderColony" />
+                    </subNodes>
+                </li>
+
+                <!-- Cube obsession-->
+                <li Class="ThinkNode_ConditionalMentalState" MayRequire="Ludeon.RimWorld.Anomaly">
+                    <state>CubeSculpting</state>
+                    <subNodes>
+                        <li Class="JobGiver_CubeSculpting" />
+                    </subNodes>
+                </li>
+
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+
+    <ThinkTreeDef>
+        <defName>Moyo2_NacrellingSatisfyBasicNeeds</defName>
+        <thinkRoot Class="ThinkNode_Tagger">
+            <tagToGive>SatisfyingNeeds</tagToGive>
+            <subNodes>
+                <li Class="ThinkNode_PrioritySorter">
+                    <subNodes>
+                        <!-- Get Food changes into down pawn > swallow and digest. Digesting increases the hunger bar. -->
+                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
+                        <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                        <!-- -->
+
+                        <li Class="JobGiver_GetRest" />
+                        <li Class="JobGiver_SatisfyChemicalNeed" />
+                        <li Class="JobGiver_SatifyChemicalDependency" MayRequire="Ludeon.RimWorld.Biotech" />
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef> 
+</Defs>

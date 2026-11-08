@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <JobDef>
+        <defName>Moyo2_NecrallingDownPrey</defName>
+        <driverClass>Moyo2.JobDriver_NacrellingDownTarget</driverClass>
+        <reportString>hunting TargetA.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+        <checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+        <neverFleeFromEnemies>true</neverFleeFromEnemies>
+    </JobDef>
+    <JobDef>
+        <defName>Moyo2_NecrallingDigest</defName>
+        <driverClass>Moyo2.JobDriver_NacrellingDigest</driverClass>
+        <reportString>digesting TargetA.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+        <checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+        <neverFleeFromEnemies>true</neverFleeFromEnemies>
+    </JobDef>
+
+</Defs>

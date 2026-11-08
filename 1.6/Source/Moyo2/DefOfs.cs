@@ -12,6 +12,8 @@
 		public static JobDef Moyo2_GrowFish;
 		public static JobDef Moyo2_EmptyFishTank;
 		public static JobDef Moyo2_ReloadArmor;
+		public static JobDef Moyo2_NecrallingDownPrey;
+		public static JobDef Moyo2_NecrallingDigest;
 	}
 
 
