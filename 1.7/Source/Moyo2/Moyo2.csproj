@@ -28,7 +28,7 @@
 		<WarningLevel>4</WarningLevel>
 		<GenerateDependencyFile>false</GenerateDependencyFile>
 		<NoWarn>
-			IDE0130;IDE0032;IDE0008;IDE0290;IDE0011;IDE0046;IDE0022
+			IDE0130;IDE0032;IDE0008;IDE0290;IDE0011;IDE0046;IDE0022;CA1852
 			<!--CA1000;CA1010;CA1304;CA1305;CA1310;CA1311;CA1707;CA1708;CA1710;CA1711;CA1715;CA1716;CA1720;CA1725;
 			CA1852;CA2201;CA3075;IDE0040;IDE0130;IDE0290;IDE0008;IDE0032-->
 		</NoWarn>
@@ -68,6 +68,7 @@
 	<ItemGroup>
 	  <Reference Include="AlienRace">
 	    <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.7\Assemblies\AlienRace.dll</HintPath>
+	    <Private>False</Private>
 	  </Reference>
 	</ItemGroup>
 </Project>
