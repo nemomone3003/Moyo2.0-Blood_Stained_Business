@@ -3,8 +3,8 @@
 
     <!-- Custom ThinkTreeDef for Nacrellings. -->
     <!-- Changes:
-        the Animal ThinkTreeDef MentalStateNonCritical tree for a custom one, to swallow downed pawns until they die, locking up into place
-        the SatisfyBasicNeeds tree for a custom one, to swallow downed animals until they die, locking up into place -->
+        the Animal ThinkTreeDef MentalStateNonCritical tree for a custom one, priorizes swallowing downed humanlikes first before attacking others
+        the SatisfyBasicNeeds tree for a custom one, to swallow pawns animals until they die -->
     <!-- . -->
     <ThinkTreeDef>
         <defName>Moyo2_NacrellingMain</defName>
@@ -551,8 +551,8 @@
                             <subNodes>
                                 <li Class="ThinkNode_PrioritySorter">
                                     <subNodes>
-                                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" />
-                                        <li Class="Moyo2.JobGiver_NacrellingDigest" />
+                                        <li Class="Moyo2.JobGiver_NacrellingDownTarget" /> <!-- Only activates if the pawn is hungry -->
+                                        <li Class="Moyo2.JobGiver_NacrellingDigest" /> <!-- Has a special case where it'll priorize swallowing over manhunting-->
                                     </subNodes>
                                 </li>
                                 <li Class="JobGiver_Manhunter" />

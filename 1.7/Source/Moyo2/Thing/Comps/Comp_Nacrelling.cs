@@ -124,7 +124,7 @@ namespace Moyo2
 						DamageInfo dinfo = new(DamageDefOf.AcidBurn, 300f, 0f, -1f, Pawn);
 						dinfo.SetApplyAllDamage(value: true);
 						pawn.TakeDamage(dinfo);
-						string str = Pawn.Dead ? Props.messageColonistEmergedDied : Props.messageColonistEmerged;
+						string str = pawn.Dead ? Props.messageColonistEmergedDied : Props.messageColonistEmerged;
 						if (!str.NullOrEmpty())
 						{
 							str = str.Formatted(pawn.Named("PAWN"));
@@ -146,8 +146,12 @@ namespace Moyo2
 					}
 				}
 
-
-				 Spawn pearls here
+				foreach (var product in Props.digestionProducts)
+				{
+					var insProduct = ThingMaker.MakeThing(product.thingDef, product.stuff);
+					insProduct.stackCount = product.count;
+					GenSpawn.Spawn(insProduct, Pawn.Position, Pawn.Map, WipeMode.VanishOrMoveAside);
+				}
 			}
 		}
 

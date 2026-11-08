@@ -282,7 +282,11 @@
 				<messageColonistEmerged>{PAWN_nameDef} emerged from the devourer.</messageColonistEmerged>
 				<messageColonistEmergedDied>{PAWN_nameDef} emerged from the devourer dead.</messageColonistEmergedDied>
 				<nutritionPerTick>0.001</nutritionPerTick>
-				<bodySizeDigestTimeCurve>
+				<digestionDamage>AcidBurn</digestionDamage>
+				<digestionProducts>
+					<ComponentIndustrial>30</ComponentIndustrial>
+				</digestionProducts>
+				<bodySizeDigestTimeCurve> <!-- Time to digest a pawn -->
 					<points>
 						<!--size, seconds -->
 						<li>(0.2, 10)</li>
@@ -290,7 +294,7 @@
 						<li>(3.5, 60)</li>
 					</points>
 				</bodySizeDigestTimeCurve>
-				<timeDamageCurve>
+				<timeDamageCurve> <!-- Damage done to a pawn if saved before full digestion (full digestion deals 300 dmg btw) -->
 					<points>
 						<!-- time, damage-->
 						<li>(0, 10)</li>

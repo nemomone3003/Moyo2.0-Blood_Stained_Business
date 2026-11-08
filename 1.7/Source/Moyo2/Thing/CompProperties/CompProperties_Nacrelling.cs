@@ -12,8 +12,10 @@
 		public string messageColonistSwallowed;
 		public float nutritionPerTick;
 
-		public SimpleCurve bodySizeDigestTimeCurve;
+		public DamageDef digestionDamage;
+		public List<ThingDefCountClass> digestionProducts;
 
+		public SimpleCurve bodySizeDigestTimeCurve;
 		public SimpleCurve timeDamageCurve;
 	}
 }
